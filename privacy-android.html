@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - EZer: Your Smart Finance Companion</title>
+    <title>Privacy Policy - EZer for Android</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
         body { font-family: 'Inter', sans-serif; }
-        .tab-content { display: none; }
-        .tab-content.active { display: block; }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -27,7 +25,7 @@
                     <a href="security.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Security</a>
                     <a href="pricing.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Pricing</a>
                     <a href="blog.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Blog</a>
-                    <a href="privacy-android.html" class="px-3 py-2 rounded-lg transition-colors text-sm bg-indigo-100 text-indigo-600 font-semibold">Privacy Policy</a>
+                    <a href="privacy.html" class="px-3 py-2 rounded-lg transition-colors text-sm bg-indigo-100 text-indigo-600 font-semibold">Privacy Policy</a>
                     <a href="terms.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Terms & Conditions</a>
                     <a href="feedback.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Feedback</a>
                     <a href="report.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Report Issue</a>
@@ -38,20 +36,14 @@
 
     <!-- Main Content -->
     <div class="container mx-auto px-4 py-12 max-w-5xl">
-        <h1 class="text-4xl font-bold mb-8 text-center">Privacy Policy</h1>
-        
-        <!-- Platform Tabs -->
-        <div class="flex justify-center gap-4 mb-8">
-            <button onclick="showTab('android')" id="androidTab" class="px-6 py-3 rounded-lg font-semibold transition-colors bg-green-600 text-white">
-                Android Version
-            </button>
-            <button onclick="showTab('ios')" id="iosTab" class="px-6 py-3 rounded-lg font-semibold transition-colors bg-gray-200 text-gray-700 hover:bg-gray-300">
-                iOS Version
-            </button>
+        <div class="flex items-center justify-between mb-8">
+            <h1 class="text-4xl font-bold">Privacy Policy for Android</h1>
+            <a href="privacy-ios.html" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-semibold">
+                View iOS Version →
+            </a>
         </div>
 
-        <!-- Android Content -->
-        <div id="androidContent" class="tab-content active prose prose-lg max-w-none">
+        <div class="prose prose-lg max-w-none">
             <div class="bg-green-50 border-l-4 border-green-600 p-4 mb-6 not-prose">
                 <p class="font-semibold text-green-800">Privacy Policy for Android</p>
                 <p class="text-sm text-green-700">Effective Date: January 1, 2025 | Version 1.0</p>
@@ -59,9 +51,9 @@
 
             <h2 class="text-2xl font-bold mt-8 mb-4">Introduction</h2>
             <p class="mb-4">Welcome to EZer. We are committed to protecting your privacy and ensuring the security of your personal financial data. This Privacy Policy explains how we collect, use, store, and protect your information when you use the EZer mobile application on Android devices.</p>
-            
+
             <h2 class="text-2xl font-bold mt-8 mb-4">1. Information We Collect</h2>
-            
+
             <h3 class="text-xl font-bold mt-6 mb-3">1.1 Information You Provide Directly</h3>
             <p class="mb-4"><strong>Account Information:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
@@ -86,7 +78,7 @@
             </div>
 
             <h3 class="text-xl font-bold mt-6 mb-3">1.2 Information Collected Automatically (Android-Specific)</h3>
-            
+
             <p class="mb-4"><strong>SMS Messages (Android Only - Requires Your Permission):</strong></p>
             <p class="mb-4">When you grant SMS permission, EZer reads your SMS messages to automatically extract financial transaction information.</p>
 
@@ -113,7 +105,7 @@
             </ul>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">3. How We Store Your Information</h2>
-            
+
             <h3 class="text-xl font-bold mt-6 mb-3">3.1 Local Storage (Android Device)</h3>
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li><strong>Encrypted Database:</strong> All financial data stored in encrypted SQLCipher database</li>
@@ -122,8 +114,17 @@
                 <li>Data cannot be accessed without biometric authentication or PIN</li>
             </ul>
 
+            <h3 class="text-xl font-bold mt-6 mb-3">3.2 Security Features</h3>
+            <ul class="list-disc pl-6 mb-4 space-y-2">
+                <li><strong>End-to-End Encryption:</strong> All data encrypted before storage</li>
+                <li><strong>Biometric Protection:</strong> Fingerprint or face unlock required</li>
+                <li><strong>Auto-Lock:</strong> App locks automatically when idle</li>
+                <li><strong>No Cloud Storage:</strong> Your data stays on your device by default</li>
+                <li><strong>Optional Encrypted Backup:</strong> If you choose, backups are encrypted before cloud upload</li>
+            </ul>
+
             <h2 class="text-2xl font-bold mt-8 mb-4">4. Android-Specific Permissions</h2>
-            
+
             <div class="overflow-x-auto mb-6 not-prose">
                 <table class="min-w-full bg-white border border-gray-300">
                     <thead class="bg-gray-100">
@@ -136,23 +137,38 @@
                     <tbody>
                         <tr>
                             <td class="border border-gray-300 px-4 py-2"><strong>READ_SMS</strong></td>
-                            <td class="border border-gray-300 px-4 py-2">Automatic transaction capture</td>
+                            <td class="border border-gray-300 px-4 py-2">Automatic transaction capture from bank SMS</td>
+                            <td class="border border-gray-300 px-4 py-2 text-orange-600">Optional</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2"><strong>RECEIVE_SMS</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Real-time transaction capture</td>
                             <td class="border border-gray-300 px-4 py-2 text-orange-600">Optional</td>
                         </tr>
                         <tr>
                             <td class="border border-gray-300 px-4 py-2"><strong>CAMERA</strong></td>
-                            <td class="border border-gray-300 px-4 py-2">Scan receipts</td>
+                            <td class="border border-gray-300 px-4 py-2">Scan receipts and documents</td>
                             <td class="border border-gray-300 px-4 py-2 text-orange-600">Optional</td>
                         </tr>
                         <tr>
                             <td class="border border-gray-300 px-4 py-2"><strong>USE_BIOMETRIC</strong></td>
-                            <td class="border border-gray-300 px-4 py-2">Secure app lock</td>
+                            <td class="border border-gray-300 px-4 py-2">Secure app lock with fingerprint/face</td>
                             <td class="border border-gray-300 px-4 py-2 text-orange-600">Optional</td>
                         </tr>
                         <tr>
                             <td class="border border-gray-300 px-4 py-2"><strong>INTERNET</strong></td>
-                            <td class="border border-gray-300 px-4 py-2">Cloud backup, app updates</td>
+                            <td class="border border-gray-300 px-4 py-2">Cloud backup, app updates, support</td>
                             <td class="border border-gray-300 px-4 py-2 text-green-600">Required</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2"><strong>READ_EXTERNAL_STORAGE</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Import bank statements (CSV/PDF)</td>
+                            <td class="border border-gray-300 px-4 py-2 text-orange-600">Optional</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2"><strong>WRITE_EXTERNAL_STORAGE</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Export financial reports</td>
+                            <td class="border border-gray-300 px-4 py-2 text-orange-600">Optional</td>
                         </tr>
                     </tbody>
                 </table>
@@ -165,148 +181,70 @@
                 <li>✅ Export your data (CSV, JSON, Excel, PDF formats)</li>
                 <li>✅ Delete specific transactions or all data</li>
                 <li>✅ Modify or correct any information</li>
-                <li>✅ Withdraw consent for SMS access anytime</li>
+                <li>✅ Withdraw consent for SMS access anytime (revoke in Android Settings)</li>
+                <li>✅ Request account deletion with all associated data</li>
             </ul>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">6. Data Sharing</h2>
-            
+
             <div class="grid md:grid-cols-2 gap-4 mb-6 not-prose">
                 <div class="bg-red-50 border border-red-300 p-4 rounded-lg">
                     <h4 class="font-bold text-red-800 mb-2">❌ What We DON'T Do</h4>
                     <ul class="text-sm text-red-700 space-y-1">
-                        <li>• Store your SMS messages</li>
+                        <li>• Store your SMS messages on servers</li>
                         <li>• Sell your data to third parties</li>
                         <li>• Share data with advertisers</li>
-                        <li>• Require bank passwords</li>
+                        <li>• Require bank passwords or credentials</li>
+                        <li>• Track you across other apps</li>
+                        <li>• Use your data for marketing</li>
                     </ul>
                 </div>
                 <div class="bg-green-50 border border-green-300 p-4 rounded-lg">
                     <h4 class="font-bold text-green-800 mb-2">✅ What We DO</h4>
                     <ul class="text-sm text-green-700 space-y-1">
                         <li>• Encrypt all data with bank-level security</li>
-                        <li>• Process SMS locally on device</li>
+                        <li>• Process SMS locally on your device</li>
                         <li>• Give you complete data control</li>
-                        <li>• Provide easy data export</li>
+                        <li>• Provide easy data export options</li>
+                        <li>• Delete data when you request it</li>
+                        <li>• Respect your privacy choices</li>
                     </ul>
                 </div>
             </div>
 
-            <h2 class="text-2xl font-bold mt-8 mb-4">7. Contact Us</h2>
+            <h2 class="text-2xl font-bold mt-8 mb-4">7. Data Retention</h2>
+            <ul class="list-disc pl-6 mb-4 space-y-2">
+                <li>Financial data: Stored locally until you delete it</li>
+                <li>Account data: Retained while your account is active</li>
+                <li>Backup data: Deleted when you delete your account</li>
+                <li>SMS-extracted data: Original SMS deleted immediately after processing</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">8. Third-Party Services</h2>
+            <p class="mb-4">EZer may use the following third-party services:</p>
+            <ul class="list-disc pl-6 mb-4 space-y-2">
+                <li><strong>Firebase (Google):</strong> Authentication, crash reporting (no financial data shared)</li>
+                <li><strong>Cloud Storage Providers:</strong> Only if you enable encrypted backups (data is encrypted before upload)</li>
+            </ul>
+            <p class="mb-4">We ensure all third-party services comply with GDPR and similar privacy regulations.</p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">9. Children's Privacy</h2>
+            <p class="mb-4">EZer is not intended for users under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">10. Changes to This Policy</h2>
+            <p class="mb-4">We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+            <ul class="list-disc pl-6 mb-4 space-y-2">
+                <li>Posting the new Privacy Policy in the app</li>
+                <li>Sending an email notification (if you've provided an email)</li>
+                <li>Displaying an in-app notification</li>
+            </ul>
+            <p class="mb-4">Changes take effect immediately upon posting unless otherwise specified.</p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">11. Contact Us</h2>
             <p class="mb-2"><strong>Email:</strong> privacy@ezer.app</p>
             <p class="mb-2"><strong>Support:</strong> support@ezer.app</p>
-            <p class="mb-2"><strong>Website:</strong> https://ezer.app/privacy</p>
+            <p class="mb-2"><strong>Website:</strong> https://ezer.app/privacy-android</p>
             <p class="mb-4"><strong>Response Time:</strong> Within 7 business days for privacy requests</p>
-
-            <div class="bg-gray-100 p-6 rounded-lg mt-8 not-prose">
-                <p class="text-sm text-gray-700 text-center">
-                    <strong>Last Updated:</strong> January 1, 2025 | <strong>Next Review:</strong> July 1, 2025
-                </p>
-                <p class="text-xs text-gray-600 text-center mt-2">
-                    © 2025 EZer. All rights reserved.
-                </p>
-            </div>
-        </div>
-
-        <!-- iOS Content -->
-        <div id="iosContent" class="tab-content prose prose-lg max-w-none">
-            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6 not-prose">
-                <p class="font-semibold text-blue-800">Privacy Policy for iOS</p>
-                <p class="text-sm text-blue-700">Effective Date: January 1, 2025 | Version 1.0</p>
-            </div>
-
-            <h2 class="text-2xl font-bold mt-8 mb-4">Introduction</h2>
-            <p class="mb-4">Welcome to EZer. We are committed to protecting your privacy and ensuring the security of your personal financial data. This Privacy Policy explains how we collect, use, store, and protect your information when you use the EZer mobile application on iOS devices (iPhone and iPad).</p>
-
-            <div class="bg-yellow-50 border-l-4 border-yellow-600 p-4 mb-6 not-prose">
-                <p class="font-semibold text-yellow-800 mb-2">Important iOS Limitation:</p>
-                <p class="text-sm text-yellow-700">Unlike the Android version, EZer for iOS does <strong>NOT</strong> have automatic SMS parsing or notification reading capabilities. This is an iOS platform restriction for user privacy.</p>
-            </div>
-
-            <h2 class="text-2xl font-bold mt-8 mb-4">1. Information We Collect</h2>
-            
-            <h3 class="text-xl font-bold mt-6 mb-3">1.1 Information You Provide Directly</h3>
-            <p class="mb-4">Same as Android version - account information, manually entered financial data, and receipt images.</p>
-
-            <div class="bg-red-50 border-l-4 border-red-600 p-4 mb-6 not-prose">
-                <p class="font-semibold text-red-800">Important: We NEVER ask for or store:</p>
-                <ul class="list-disc pl-6 text-red-700 text-sm mt-2">
-                    <li>Bank account passwords or login credentials</li>
-                    <li>Credit/debit card numbers, CVV/PIN codes</li>
-                    <li>Social Security Numbers or Government ID numbers</li>
-                </ul>
-            </div>
-
-            <h2 class="text-2xl font-bold mt-8 mb-4">2. How We Store Your Information</h2>
-            
-            <h3 class="text-xl font-bold mt-6 mb-3">2.1 Local Storage (iOS Device)</h3>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li><strong>Encrypted Database:</strong> All financial data stored in encrypted SQLCipher database</li>
-                <li><strong>AES-256 encryption</strong> standard</li>
-                <li>Encryption keys stored in <strong>iOS Keychain</strong> (never leave your device)</li>
-                <li>Data protected by <strong>Secure Enclave</strong></li>
-                <li>Cannot be accessed without Face ID, Touch ID, or passcode</li>
-            </ul>
-
-            <h2 class="text-2xl font-bold mt-8 mb-4">3. iOS-Specific Permissions</h2>
-            
-            <div class="overflow-x-auto mb-6 not-prose">
-                <table class="min-w-full bg-white border border-gray-300">
-                    <thead class="bg-gray-100">
-                        <tr>
-                            <th class="border border-gray-300 px-4 py-2 text-left">Permission</th>
-                            <th class="border border-gray-300 px-4 py-2 text-left">Purpose</th>
-                            <th class="border border-gray-300 px-4 py-2 text-left">Required?</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="border border-gray-300 px-4 py-2"><strong>Camera</strong></td>
-                            <td class="border border-gray-300 px-4 py-2">Scan receipts</td>
-                            <td class="border border-gray-300 px-4 py-2 text-orange-600">Optional</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-gray-300 px-4 py-2"><strong>Face ID / Touch ID</strong></td>
-                            <td class="border border-gray-300 px-4 py-2">Secure app lock</td>
-                            <td class="border border-gray-300 px-4 py-2 text-orange-600">Optional</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-gray-300 px-4 py-2"><strong>Internet Access</strong></td>
-                            <td class="border border-gray-300 px-4 py-2">Cloud backup, updates</td>
-                            <td class="border border-gray-300 px-4 py-2 text-green-600">Required</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="bg-blue-50 border border-blue-300 p-4 rounded-lg mb-6 not-prose">
-                <h4 class="font-bold text-blue-800 mb-2">Notable Differences from Android:</h4>
-                <ul class="text-sm text-blue-700 space-y-1">
-                    <li>❌ No SMS access (iOS does not allow third-party apps to read SMS)</li>
-                    <li>❌ No notification listener (iOS platform limitation)</li>
-                    <li>✅ All transactions must be entered manually or imported</li>
-                    <li>✅ More privacy-focused by design due to iOS limitations</li>
-                </ul>
-            </div>
-
-            <h2 class="text-2xl font-bold mt-8 mb-4">4. Data Entry Methods (iOS)</h2>
-            <p class="mb-4">Since iOS does not allow automatic SMS parsing, you have these options:</p>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li><strong>Manual entry:</strong> Add transactions using quick-add buttons</li>
-                <li><strong>Bank statement import:</strong> Import PDF, CSV, or Excel files</li>
-                <li><strong>Receipt scanning:</strong> Take photos for automatic OCR extraction</li>
-            </ul>
-
-            <h2 class="text-2xl font-bold mt-8 mb-4">5. iOS-Specific Privacy Features</h2>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li><strong>App Privacy Report:</strong> View EZer's data access in iOS Settings</li>
-                <li><strong>Privacy Labels:</strong> See our privacy nutrition label on App Store</li>
-                <li><strong>No Tracking:</strong> We don't track you across apps or websites</li>
-            </ul>
-
-            <h2 class="text-2xl font-bold mt-8 mb-4">6. Contact Us</h2>
-            <p class="mb-2"><strong>Email:</strong> privacy@ezer.app</p>
-            <p class="mb-2"><strong>Support:</strong> support@ezer.app</p>
-            <p class="mb-2"><strong>Website:</strong> https://ezer.app/privacy</p>
 
             <div class="bg-gray-100 p-6 rounded-lg mt-8 not-prose">
                 <p class="text-sm text-gray-700 text-center">
@@ -328,7 +266,7 @@
                     <p class="text-gray-400 text-sm mb-4">Your Smart Finance Companion. Helping you achieve your financial goals.</p>
                     <p class="text-indigo-400 font-semibold">Launching November 12, 2025</p>
                 </div>
-                
+
                 <div>
                     <h4 class="font-semibold mb-4">Product</h4>
                     <div class="space-y-2 text-gray-400 text-sm">
@@ -337,15 +275,16 @@
                         <a href="pricing.html" class="block hover:text-white">Pricing</a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h4 class="font-semibold mb-4">Legal</h4>
                     <div class="space-y-2 text-gray-400 text-sm">
-                        <a href="privacy.html" class="block hover:text-white">Privacy Policy</a>
+                        <a href="privacy-android.html" class="block hover:text-white">Privacy Policy (Android)</a>
+                        <a href="privacy-ios.html" class="block hover:text-white">Privacy Policy (iOS)</a>
                         <a href="terms.html" class="block hover:text-white">Terms & Conditions</a>
                     </div>
                 </div>
-                
+
                 <div>
                     <h4 class="font-semibold mb-4">Support</h4>
                     <div class="space-y-2 text-gray-400 text-sm">
@@ -355,37 +294,12 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
                 <p>© 2025 EZer. All rights reserved.</p>
                 <p class="mt-2">Email: support@ezer.app | Website: https://ezer.app</p>
             </div>
         </div>
     </footer>
-
-    <script>
-        function showTab(platform) {
-            // Hide all tab contents
-            document.getElementById('androidContent').classList.remove('active');
-            document.getElementById('iosContent').classList.remove('active');
-            
-            // Remove active styling from all tabs
-            document.getElementById('androidTab').classList.remove('bg-green-600', 'text-white');
-            document.getElementById('androidTab').classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
-            document.getElementById('iosTab').classList.remove('bg-blue-600', 'text-white');
-            document.getElementById('iosTab').classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
-            
-            // Show selected tab content
-            if (platform === 'android') {
-                document.getElementById('androidContent').classList.add('active');
-                document.getElementById('androidTab').classList.remove('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
-                document.getElementById('androidTab').classList.add('bg-green-600', 'text-white');
-            } else {
-                document.getElementById('iosContent').classList.add('active');
-                document.getElementById('iosTab').classList.remove('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
-                document.getElementById('iosTab').classList.add('bg-blue-600', 'text-white');
-            }
-        }
-    </script>
 </body>
 </html>
