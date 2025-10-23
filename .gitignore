@@ -1,0 +1,15 @@
+# Ignore everything except HTML files
+*.js
+*.sh
+*.py
+*.md
+*.json
+ezer_complete_website.html
+ezer_full_website.html
+homepage.html
+homepage_complete.html
+deploy*.js
+*.txt
+
+# Keep these
+!.gitignore

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - EZer: Your Smart Finance Companion</title>
+    <meta name="description" content="Explore EZer's powerful features including smart transaction management, AI-powered insights, budgeting tools, and more.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .nav-link {
+            transition: all 0.2s ease;
+        }
+        
+        .nav-link:hover {
+            color: #4f46e5;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <div class="text-2xl font-bold text-indigo-600">EZer</div>
+                    <div class="text-xs text-gray-500 hidden sm:block">Helping you.</div>
+                </div>
+                
+                <div class="hidden lg:flex gap-6">
+                    <a href="index.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Home</a>
+                    <a href="features.html" class="nav-link px-3 py-2 rounded-lg bg-indigo-100 text-indigo-600 font-semibold text-sm">Features</a>
+                    <a href="security.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Security</a>
+                    <a href="pricing.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Pricing</a>
+                    <a href="blog.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Blog</a>
+                    <a href="privacy-android.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Privacy Policy</a>
+                    <a href="terms.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Terms & Conditions</a>
+                    <a href="feedback.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Feedback</a>
+                    <a href="report.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Report Issue</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="lg:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t">
+                <a href="index.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Home</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg bg-indigo-100 text-indigo-600 font-semibold">Features</a>
+                <a href="security.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Security</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Pricing</a>
+                <a href="blog.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Blog</a>
+                <a href="privacy-android.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Privacy Policy</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Terms & Conditions</a>
+                <a href="feedback.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Feedback</a>
+                <a href="report.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Report Issue</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center">All Features</h1>
+            <p class="text-xl text-center text-indigo-100 max-w-3xl mx-auto">
+                Discover how EZer helps you manage your money smarter with powerful automation and intelligent insights
+            </p>
+        </div>
+    </div>
+
+    <!-- Features Content -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <!-- Feature 1: Smart Transaction Management -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600">
+                        <i data-lucide="smartphone" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold">Smart Transaction Management</h2>
+                        <p class="text-gray-600">Never miss a transaction again</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    Automatic SMS parsing for instant transaction capture with support for 35+ banks and payment methods including UPI, credit/debit cards, and wallets.
+                </p>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Features</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li>• Automatic SMS parsing</li>
+                            <li>• 35+ bank support</li>
+                            <li>• Quick add templates</li>
+                            <li>• Transaction splitting</li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Benefits</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li>• Save hours monthly</li>
+                            <li>• Zero manual entry</li>
+                            <li>• AI categorization</li>
+                            <li>• Real-time tracking</li>
+                        </ul>
+                    </div>
+                    <div class="bg-purple-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Dashboard</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li>• Recent transactions</li>
+                            <li>• Smart filters</li>
+                            <li>• Quick search</li>
+                            <li>• Visual indicators</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2: Bank Statement Import -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center text-purple-600">
+                        <i data-lucide="receipt" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold">Bank Statement Import</h2>
+                        <p class="text-gray-600">Import years of history in seconds</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    Multi-format support for PDF, CSV, and Excel. Smart OCR technology extracts data from scanned PDFs with support for 35+ banks globally including India, Singapore, Malaysia, Middle East, and USA.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-purple-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Supported Formats</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li>• PDF statements (with OCR)</li>
+                            <li>• CSV files</li>
+                            <li>• Excel spreadsheets</li>
+                            <li>• Scanned documents</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Smart Processing</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li>• Automatic format detection</li>
+                            <li>• Duplicate prevention</li>
+                            <li>• Category mapping</li>
+                            <li>• Error correction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: AI-Powered Insights -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-pink-600">
+                        <i data-lucide="brain" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold">AI-Powered Insights</h2>
+                        <p class="text-gray-600">Understand your finances like never before</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    Comprehensive analytics, budget monitoring, anomaly detection, and personalized savings recommendations. Get daily summaries and weekly digest reports with actionable insights.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-pink-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Analytics</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li>• Spending patterns</li>
+                            <li>• Category breakdown</li>
+                            <li>• Trend analysis</li>
+                            <li>• Comparison reports</li>
+                        </ul>
+                    </div>
+                    <div class="bg-orange-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Smart Alerts</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li>• Unusual spending</li>
+                            <li>• Budget warnings</li>
+                            <li>• Savings opportunities</li>
+                            <li>• Bill reminders</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4: Smart Budgeting -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                        <i data-lucide="trending-up" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold">Smart Budgeting</h2>
+                        <p class="text-gray-600">Stay on track with intelligent budget monitoring</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    Create unlimited budgets for any category or time period. Get progressive alerts at 50%, 75%, 90%, and 100% thresholds. Visual dashboards show your budget health at a glance.
+                </p>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Budget Types</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li>• Monthly budgets</li>
+                            <li>• Category budgets</li>
+                            <li>• Custom periods</li>
+                            <li>• Rolling budgets</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Monitoring</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li>• Real-time tracking</li>
+                            <li>• Visual indicators</li>
+                            <li>• Progress bars</li>
+                            <li>• Spending velocity</li>
+                        </ul>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Alerts</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li>• 50% threshold</li>
+                            <li>• 75% threshold</li>
+                            <li>• 90% threshold</li>
+                            <li>• 100% exceeded</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 5: Bills & Subscriptions -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                        <i data-lucide="calendar" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold">Bills & Subscriptions</h2>
+                        <p class="text-gray-600">Never miss a payment again</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    Automatic bill detection from SMS and transactions. Track all recurring bills, subscriptions, and EMIs. Get smart reminders 3 days before, 1 day before, and on due date. Identify unused subscriptions to save money.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Bill Tracking</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li>• Automatic detection</li>
+                            <li>• Recurring patterns</li>
+                            <li>• Due date tracking</li>
+                            <li>• Payment history</li>
+                        </ul>
+                    </div>
+                    <div class="bg-teal-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Subscription Management</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li>• Netflix, Prime, Spotify</li>
+                            <li>• Usage analytics</li>
+                            <li>• Cost per use</li>
+                            <li>• Cancellation reminders</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 6: Goals & Savings -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center text-amber-600">
+                        <i data-lucide="target" class="w-8 h-8"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold">Goals & Savings</h2>
+                        <p class="text-gray-600">Turn financial dreams into reality</p>
+                    </div>
+                </div>
+                <p class="text-gray-700 mb-6">
+                    Create unlimited savings goals with target amounts and deadlines. Track progress with beautiful visualizations. Get milestone celebrations. See exactly how much to save monthly to reach your goals on time.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-amber-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Goal Types</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li>• Emergency fund</li>
+                            <li>• Vacation savings</li>
+                            <li>• Home down payment</li>
+                            <li>• Custom goals</li>
+                        </ul>
+                    </div>
+                    <div class="bg-lime-50 p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2">Tracking</h4>
+                        <ul class="text-sm space-y-1 text-gray-700">
+                            <li>• Progress visualization</li>
+                            <li>• Milestone tracking</li>
+                            <li>• Automated contributions</li>
+                            <li>• Achievement badges</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="py-16 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Experience All These Features?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto text-indigo-100">
+                Start your 30-day free trial today. No credit card required.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold hover:bg-indigo-50 transition-colors shadow-lg">
+                    Download Now
+                </button>
+                <a href="pricing.html" class="bg-indigo-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-800 transition-colors shadow-lg border-2 border-white inline-block">
+                    View Pricing
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">EZer</div>
+                    <p class="text-gray-400 text-sm mb-4">Your Smart Finance Companion. Helping you achieve your financial goals.</p>
+                    <p class="text-indigo-400 font-semibold">Launching November 12, 2025</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <a href="features.html" class="block hover:text-white">Features</a>
+                        <a href="security.html" class="block hover:text-white">Security</a>
+                        <a href="pricing.html" class="block hover:text-white">Pricing</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <a href="privacy-android.html" class="block hover:text-white">Privacy Policy</a>
+                        <a href="terms.html" class="block hover:text-white">Terms & Conditions</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <a href="feedback.html" class="block hover:text-white">Feedback</a>
+                        <a href="report.html" class="block hover:text-white">Report Issue</a>
+                        <a href="mailto:support@ezer.app" class="block hover:text-white">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2025 EZer. All rights reserved.</p>
+                <p class="mt-2">Email: support@ezer.app | Website: https://ezer.app</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+        
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
