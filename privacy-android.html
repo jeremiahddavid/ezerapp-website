@@ -459,10 +459,10 @@
 
             <h3 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">6.2 How SMS Processing Works on Android</h3>
             <ol class="list-decimal pl-6 mb-6 space-y-2 text-gray-700">
-                <li>You grant READ_SMS permission through Android's system permission dialog</li>
-                <li>EZer scans SMS messages for banking transaction patterns using regex</li>
+                <li>You grant SMS access permission through Android's system permission dialog</li>
+                <li>EZer scans SMS messages for banking transaction patterns</li>
                 <li>Only messages from known financial institutions are processed</li>
-                <li>Transaction details (amount, merchant, date) are extracted using on-device parsing</li>
+                <li>Transaction details (amount, merchant, date) are extracted on your device</li>
                 <li>A transaction draft is created for your review</li>
                 <li>SMS messages are <strong>never transmitted to external servers</strong></li>
             </ol>
@@ -494,8 +494,8 @@
                 <li><strong>Spending Insights:</strong> Weekly or monthly spending summaries</li>
             </ul>
             <p class="text-gray-700 mb-4">
-                All notifications are generated locally using Android's NotificationManager. You can customize notification
-                channels in Android Settings → Apps → EZer → Notifications.
+                All notifications are generated locally on your device. You can customize notification
+                settings in Android Settings → Apps → EZer → Notifications.
             </p>
 
             <h3 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">7.2 Notification Listener (Optional - Android Only)</h3>
@@ -506,10 +506,10 @@
                 </p>
                 <ul class="text-purple-800 text-sm space-y-1 list-disc pl-4">
                     <li>EZer can read notifications from banking and payment apps</li>
-                    <li>Transaction notifications are parsed locally to auto-create transactions</li>
+                    <li>Transaction notifications are processed locally to auto-create transactions</li>
                     <li>Notification content is never transmitted to external servers</li>
                     <li>Only financial app notifications are processed - other app notifications are ignored</li>
-                    <li>Requires BIND_NOTIFICATION_LISTENER_SERVICE permission (granted via Android Settings)</li>
+                    <li>You can enable this feature in Android Settings</li>
                 </ul>
             </div>
 
@@ -517,20 +517,20 @@
             <h2 id="section8" class="text-3xl font-bold text-gray-900 mt-12 mb-6">8. Camera and Storage Permissions (Android)</h2>
 
             <h3 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">8.1 Camera Access (Android)</h3>
-            <p class="text-gray-700 mb-4">Camera permission (android.permission.CAMERA) is used exclusively for:</p>
+            <p class="text-gray-700 mb-4">Camera access is used exclusively for:</p>
             <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-                <li>Capturing receipt photos using Android Camera2 API</li>
+                <li>Capturing receipt photos</li>
                 <li>Scanning documents related to financial transactions</li>
             </ul>
             <p class="text-gray-700 mb-4">
-                EZer does not access your camera for any other purpose, nor does it record videos or access photo metadata (EXIF data).
+                EZer does not access your camera for any other purpose, nor does it record videos or access photo metadata.
             </p>
 
             <h3 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">8.2 Photo Library Access (Android Storage)</h3>
-            <p class="text-gray-700 mb-4">Storage permission allows you to:</p>
+            <p class="text-gray-700 mb-4">Storage access allows you to:</p>
             <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-                <li><strong>Android 13+:</strong> Uses scoped storage (READ_MEDIA_IMAGES) - access only to selected images</li>
-                <li><strong>Android 12 and below:</strong> READ_EXTERNAL_STORAGE for selecting receipt images</li>
+                <li><strong>Android 13+:</strong> Access only to selected images you choose</li>
+                <li><strong>Android 12 and below:</strong> Select receipt images from your photo library</li>
                 <li>Export financial reports to Downloads folder</li>
                 <li>Save backup files locally</li>
             </ul>
