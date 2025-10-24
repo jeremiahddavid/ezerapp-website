@@ -302,35 +302,12 @@
         </div>
     </footer>
 
+    <!-- Form Handler Script -->
+    <script src="form-handler.js"></script>
     <script>
         function handleSubmit(event) {
-            event.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const issueType = document.getElementById('issueType').value;
-            const device = document.getElementById('device').value;
-            const description = document.getElementById('description').value;
-            
-            if (name && email && subject && issueType && description) {
-                // Show success message
-                document.getElementById('successMessage').classList.remove('hidden');
-                
-                // Reset form
-                document.getElementById('issueForm').reset();
-                
-                // Scroll to success message
-                document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                
-                // Hide success message after 7 seconds
-                setTimeout(() => {
-                    document.getElementById('successMessage').classList.add('hidden');
-                }, 7000);
-                
-                // In a real implementation, you would send this data to your backend
-                console.log('Issue reported:', { name, email, subject, issueType, device, description });
-            }
+            // Call the form handler with form type 'bug'
+            handleFormSubmit(event, 'bug');
         }
     </script>
 </body>
