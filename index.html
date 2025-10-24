@@ -103,7 +103,7 @@
                     <a href="report.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Report Issue</a>
                 </div>
                 
-                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors border-2 border-red-500" aria-label="Open menu" onclick="alert('Button clicked!'); document.getElementById('mobile-menu').classList.toggle('hidden');">
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';">
                     <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -111,7 +111,7 @@
             </div>
             
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t bg-white">
+            <div id="mobile-menu" style="display: none;" class="lg:hidden py-4 border-t bg-white">
                 <a href="index.html" class="block px-4 py-3 rounded-lg bg-indigo-100 text-indigo-600 font-semibold">Home</a>
                 <a href="features.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Features</a>
                 <a href="security.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Security</a>
@@ -587,27 +587,8 @@
             lucide.createIcons();
         }
 
-        // Mobile menu toggle - wrapped in try-catch for debugging
-        try {
-            const menuBtn = document.getElementById('mobile-menu-btn');
-            const menu = document.getElementById('mobile-menu');
-
-            console.log('Menu button found:', menuBtn);
-            console.log('Menu found:', menu);
-
-            if (menuBtn && menu) {
-                menuBtn.addEventListener('click', function() {
-                    console.log('Menu button clicked!');
-                    menu.classList.toggle('hidden');
-                    console.log('Menu hidden class:', menu.classList.contains('hidden'));
-                });
-                console.log('Mobile menu initialized successfully');
-            } else {
-                console.error('Mobile menu elements not found!', { menuBtn, menu });
-            }
-        } catch (error) {
-            console.error('Error initializing mobile menu:', error);
-        }
+        // Mobile menu is now handled by inline onclick
+        // No additional JavaScript needed
     </script>
 </body>
 </html>
