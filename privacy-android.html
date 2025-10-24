@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - EZer for Android</title>
-    <meta name="description" content="Comprehensive Privacy Policy for EZer Android app. Learn how we protect your financial data with local encryption, privacy-first design, and full GDPR/DPDP compliance.">
+    <meta name="description" content="Comprehensive Privacy Policy for EZer Android app. Learn how we protect your financial data with local encryption, privacy-first design, and full GDPR and international privacy law compliance.">
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -160,8 +160,8 @@
             <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6 rounded-r-lg not-prose">
                 <p class="font-semibold text-blue-900 mb-2">📱 Android-Specific Feature</p>
                 <p class="text-blue-800 text-sm">
-                    <strong>SMS permission is entirely optional and Android-exclusive.</strong> This feature is especially useful
-                    in India where banking SMS is the primary transaction notification method.
+                    <strong>SMS permission is entirely optional and Android-exclusive.</strong> This feature is useful
+                    in regions where banking SMS is a common transaction notification method.
                 </p>
             </div>
 
@@ -169,10 +169,10 @@
                 <strong>If you grant SMS permission on Android, EZer will:</strong>
             </p>
             <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-                <li>Read SMS messages from known financial institutions (banks, payment apps like Google Pay, PhonePe, Paytm, credit card companies)</li>
+                <li>Read SMS messages from known financial institutions (banks, payment apps, digital wallets, credit card companies)</li>
                 <li>Extract transaction details (amount, merchant, date, account) to automatically create transaction records</li>
                 <li>Process SMS messages <strong>locally on your device</strong> - messages are never transmitted to external servers</li>
-                <li>Only read messages that match banking transaction patterns (using regex patterns for Indian banks, UPI apps)</li>
+                <li>Only read messages that match banking transaction patterns from recognized financial institutions</li>
             </ul>
 
             <div class="bg-amber-50 border-l-4 border-amber-500 p-6 mb-6 rounded-r-lg not-prose">
@@ -200,8 +200,8 @@
             <div class="bg-purple-50 border-l-4 border-purple-500 p-6 mb-6 rounded-r-lg not-prose">
                 <p class="font-semibold text-purple-900 mb-2">🔔 Android Notification Listener</p>
                 <p class="text-purple-800 text-sm">
-                    If you enable automatic transaction detection, EZer can read notifications from banking apps
-                    (Google Pay, PhonePe, Paytm, bank apps) to automatically log transactions. All processing is done locally on your device.
+                    If you enable automatic transaction detection, EZer can read notifications from banking and payment apps
+                    to automatically log transactions. All processing is done locally on your device.
                 </p>
             </div>
 
@@ -441,8 +441,8 @@
             <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6 rounded-r-lg not-prose">
                 <p class="font-semibold text-blue-900 mb-2">📱 Android-Exclusive Feature</p>
                 <p class="text-blue-800 text-sm">
-                    SMS auto-import is a convenience feature available only on Android. It's especially useful in India
-                    where banking SMS is the primary transaction notification method (UPI, IMPS, NEFT notifications).
+                    SMS auto-import is a convenience feature available only on Android in supported regions where
+                    banking SMS notifications are commonly used for transaction alerts.
                 </p>
             </div>
 
@@ -451,10 +451,10 @@
                 SMS auto-import saves you time by automatically detecting banking transaction SMS from:
             </p>
             <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-                <li>Major Indian banks (SBI, HDFC, ICICI, Axis, Kotak, etc.)</li>
-                <li>UPI apps (Google Pay, PhonePe, Paytm, BHIM, Amazon Pay)</li>
-                <li>Digital wallets (Paytm Wallet, Mobikwik, Freecharge)</li>
-                <li>Credit card companies (HDFC Bank, ICICI Bank, SBI Card, etc.)</li>
+                <li>Banks and financial institutions</li>
+                <li>Payment apps and digital wallets</li>
+                <li>Credit card companies</li>
+                <li>Other recognized financial service providers</li>
             </ul>
 
             <h3 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">6.2 How SMS Processing Works on Android</h3>
@@ -505,10 +505,10 @@
                     If you enable automatic transaction detection from banking app notifications:
                 </p>
                 <ul class="text-purple-800 text-sm space-y-1 list-disc pl-4">
-                    <li>EZer can read notifications from banking apps (Google Pay, PhonePe, Paytm, bank apps)</li>
+                    <li>EZer can read notifications from banking and payment apps</li>
                     <li>Transaction notifications are parsed locally to auto-create transactions</li>
                     <li>Notification content is never transmitted to external servers</li>
-                    <li>Only banking app notifications are processed - other app notifications are ignored</li>
+                    <li>Only financial app notifications are processed - other app notifications are ignored</li>
                     <li>Requires BIND_NOTIFICATION_LISTENER_SERVICE permission (granted via Android Settings)</li>
                 </ul>
             </div>
@@ -785,32 +785,7 @@
             <!-- Section 16 -->
             <h2 id="section16" class="text-3xl font-bold text-gray-900 mt-12 mb-6">16. Regional Compliance</h2>
 
-            <h3 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">16.1 India - Digital Personal Data Protection Act (DPDP) 2023</h3>
-            <div class="bg-orange-50 border-l-4 border-orange-500 p-6 mb-6 rounded-r-lg not-prose">
-                <p class="font-semibold text-orange-900 mb-2">🇮🇳 India Compliance</p>
-                <p class="text-orange-800 text-sm mb-2">For Android users in India, EZer complies with DPDP Act requirements:</p>
-                <ul class="text-orange-800 text-sm space-y-1 list-disc pl-4">
-                    <li>Explicit, informed consent for all data processing (especially SMS)</li>
-                    <li>Purpose limitation - data used only for specified purposes</li>
-                    <li>Data minimization - only necessary data collected</li>
-                    <li>Right to access - view and export your data anytime</li>
-                    <li>Right to correction - edit your data within the app</li>
-                    <li>Right to erasure - delete all your data permanently</li>
-                    <li>Right to grievance redressal - contact our Data Protection Officer</li>
-                </ul>
-            </div>
-
-            <h3 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">16.2 Singapore - Personal Data Protection Act (PDPA)</h3>
-            <p class="text-gray-700 mb-4">For Android users in Singapore:</p>
-            <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-                <li>Consent obtained before collecting personal data</li>
-                <li>Purpose of data collection clearly communicated</li>
-                <li>Reasonable security measures implemented (Android Keystore encryption)</li>
-                <li>Data retention limited to necessary period</li>
-                <li>Right to access and correction</li>
-            </ul>
-
-            <h3 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">16.3 European Union - General Data Protection Regulation (GDPR)</h3>
+            <h3 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">16.1 European Union - General Data Protection Regulation (GDPR)</h3>
             <p class="text-gray-700 mb-4">For Android users in the EU/EEA:</p>
             <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
                 <li><strong>Legal Basis:</strong> Consent and Legitimate Interest</li>
@@ -819,7 +794,7 @@
                 <li><strong>Data Breach Notification:</strong> 72-hour notification if applicable</li>
             </ul>
 
-            <h3 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">16.4 United States - State Privacy Laws</h3>
+            <h3 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">16.2 United States - State Privacy Laws</h3>
             <p class="text-gray-700 mb-4">For Android users in California (CCPA/CPRA), Virginia (VCDPA), and other US states:</p>
             <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
                 <li>Right to know what personal information we collect</li>
@@ -828,13 +803,13 @@
                 <li>No discrimination for exercising privacy rights</li>
             </ul>
 
-            <h3 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">16.5 Malaysia - Personal Data Protection Act (PDPA)</h3>
-            <p class="text-gray-700 mb-4">For Android users in Malaysia:</p>
+            <h3 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">16.3 Asia-Pacific Region</h3>
+            <p class="text-gray-700 mb-4">For Android users in Singapore, Malaysia, and India:</p>
             <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-                <li>Compliance with PDPA data protection principles</li>
-                <li>Consent-based data processing</li>
-                <li>Right to access and correction</li>
-                <li>Secure data storage and processing using Android security features</li>
+                <li><strong>Singapore PDPA:</strong> Consent-based processing, purpose limitation, reasonable security measures</li>
+                <li><strong>Malaysia PDPA:</strong> Data protection principles, consent requirements, access and correction rights</li>
+                <li><strong>India DPDP Act 2023:</strong> Explicit consent, purpose limitation, data minimization, rights to access, correction, and erasure</li>
+                <li>All implementations use Android Keystore encryption and secure storage</li>
             </ul>
 
             <!-- Section 17 -->
