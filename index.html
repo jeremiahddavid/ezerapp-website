@@ -580,15 +580,34 @@
         </div>
     </footer>
 
-    <!-- Initialize Lucide Icons -->
+    <!-- Initialize Lucide Icons and Mobile Menu -->
     <script>
-        lucide.createIcons();
+        // Initialize Lucide icons
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
 
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+        // Mobile menu toggle - wrapped in try-catch for debugging
+        try {
+            const menuBtn = document.getElementById('mobile-menu-btn');
             const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
+
+            console.log('Menu button found:', menuBtn);
+            console.log('Menu found:', menu);
+
+            if (menuBtn && menu) {
+                menuBtn.addEventListener('click', function() {
+                    console.log('Menu button clicked!');
+                    menu.classList.toggle('hidden');
+                    console.log('Menu hidden class:', menu.classList.contains('hidden'));
+                });
+                console.log('Mobile menu initialized successfully');
+            } else {
+                console.error('Mobile menu elements not found!', { menuBtn, menu });
+            }
+        } catch (error) {
+            console.error('Error initializing mobile menu:', error);
+        }
     </script>
 </body>
 </html>
