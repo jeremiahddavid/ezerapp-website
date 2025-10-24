@@ -30,10 +30,14 @@
                 <div class="flex items-center gap-3">
                     <img src="logo-192.png" alt="EZer Logo" class="h-10 w-10">
                     <div>
-                        <div class="text-2xl font-bold text-indigo-600">EZer</div>
-                        <div class="text-xs text-gray-500 hidden sm:block -mt-1">Helping you.</div>
-                    </div>
-                </div>
+                        <div class="text-2xl font-bold text-indigo-600">EZer<button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+                        <div class="text-xs text-gray-500 hidden sm:block -mt-1">Helping you.<button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+                    <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
                 <div class="hidden lg:flex gap-6">
                     <a href="index.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Home</a>
                     <a href="features.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Features</a>
@@ -44,7 +48,31 @@
                     <a href="terms.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Terms & Conditions</a>
                     <a href="feedback.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Feedback</a>
                     <a href="report.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Report Issue</a>
-                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';">
+                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" style="display: none;" class="lg:hidden py-4 border-t bg-white">
+                <a href="index.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Home</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Features</a>
+                <a href="security.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Security</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Pricing</a>
+                <a href="blog.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Blog</a>
+                <a href="privacy-android.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Privacy Policy</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Terms & Conditions</a>
+                <a href="feedback.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Feedback</a>
+                <a href="report.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Report Issue</a>
             </div>
         </div>
     </nav>
@@ -58,7 +86,8 @@
             <p class="text-center text-gray-700 max-w-2xl mx-auto">
                 We use military-grade encryption and privacy-first design to ensure your financial data stays secure and private.
             </p>
-        </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
 
         <div class="space-y-6">
             <!-- SQLCipher Database Encryption -->
@@ -75,6 +104,7 @@
                     <li>• Unique encryption keys per user</li>
                     <li>• No plaintext data storage</li>
                 </ul>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
             </div>
 
             <!-- Biometric Authentication -->
@@ -91,6 +121,7 @@
                     <li>• Session timeout protection</li>
                     <li>• Device-level biometric security</li>
                 </ul>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
             </div>
 
             <!-- Privacy Protection -->
@@ -107,6 +138,7 @@
                     <li>• GDPR compliant data handling</li>
                     <li>• Screenshot prevention on sensitive screens (Android)</li>
                 </ul>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
             </div>
 
             <!-- Secure Backup -->
@@ -123,6 +155,7 @@
                     <li>• Optional encrypted cloud backup</li>
                     <li>• Complete control over your data</li>
                 </ul>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
             </div>
 
             <!-- Network Security -->
@@ -139,6 +172,7 @@
                     <li>• No sensitive data in network logs</li>
                     <li>• Encrypted data transmission</li>
                 </ul>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
             </div>
 
             <!-- Device Security -->
@@ -155,8 +189,10 @@
                     <li>• Session timeout and auto-lock</li>
                     <li>• Biometric-protected app access</li>
                 </ul>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
             </div>
-        </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
 
         <!-- What We Do vs Don't Do -->
         <div class="mt-12 max-w-4xl mx-auto">
@@ -174,7 +210,8 @@
                         <li>✗ Track your location</li>
                         <li>✗ Access your contacts</li>
                     </ul>
-                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4 text-green-600">What We DO</h3>
                     <ul class="space-y-2 text-gray-700">
@@ -187,28 +224,42 @@
                         <li>✓ Regular security audits</li>
                         <li>✓ Transparent privacy practices</li>
                     </ul>
-                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
             </div>
-        </div>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
 
         <!-- Security Standards -->
         <div class="mt-12 bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-2xl">
             <h2 class="text-2xl font-bold mb-4 text-center">Industry-Leading Security Standards</h2>
             <div class="grid md:grid-cols-3 gap-6 mt-6">
                 <div class="text-center">
-                    <div class="text-3xl font-bold mb-2">256-bit</div>
-                    <div class="text-indigo-100">AES Encryption</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-3xl font-bold mb-2">GDPR</div>
-                    <div class="text-indigo-100">Compliant</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-3xl font-bold mb-2">100%</div>
-                    <div class="text-indigo-100">Local Processing</div>
-                </div>
+                    <div class="text-3xl font-bold mb-2">256-bit<button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
             </div>
-        </div>
+                    <div class="text-indigo-100">AES Encryption<button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold mb-2">GDPR<button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+                    <div class="text-indigo-100">Compliant<button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold mb-2">100%<button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+                    <div class="text-indigo-100">Local Processing<button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
 
         <!-- Security FAQ -->
         <div class="mt-12">
@@ -217,25 +268,32 @@
                 <div class="bg-white p-6 rounded-xl shadow-lg">
                     <h4 class="font-bold text-lg mb-2">Is my financial data safe?</h4>
                     <p class="text-gray-700">Yes. All your financial data is encrypted with military-grade 256-bit AES encryption and stored locally on your device. We use the same encryption standards as banks and financial institutions.</p>
-                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
                 <div class="bg-white p-6 rounded-xl shadow-lg">
                     <h4 class="font-bold text-lg mb-2">Can EZer access my bank account?</h4>
                     <p class="text-gray-700">No. EZer never asks for or stores your bank login credentials. We only read transaction SMS messages that your bank sends you, and this happens entirely on your device.</p>
-                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
                 <div class="bg-white p-6 rounded-xl shadow-lg">
                     <h4 class="font-bold text-lg mb-2">What happens to my SMS messages?</h4>
                     <p class="text-gray-700">SMS messages are processed locally on your device to extract transaction information. The SMS content is never stored or uploaded to our servers. Only the extracted transaction details (amount, merchant, date) are saved.</p>
-                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
                 <div class="bg-white p-6 rounded-xl shadow-lg">
                     <h4 class="font-bold text-lg mb-2">How is cloud backup secured?</h4>
                     <p class="text-gray-700">Cloud backups are completely optional. If you enable them, your data is encrypted with AES-256 before upload. The encryption key stays on your device, so even we cannot decrypt your backup.</p>
-                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
                 <div class="bg-white p-6 rounded-xl shadow-lg">
                     <h4 class="font-bold text-lg mb-2">Can I delete my data?</h4>
                     <p class="text-gray-700">Yes. You have complete control over your data. You can export all your data at any time and delete your account along with all associated data permanently.</p>
-                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
             </div>
-        </div>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
 
         <!-- CTA -->
         <div class="mt-16 text-center bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-2xl">
@@ -244,8 +302,10 @@
             <button class="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
                 Download EZer Now
             </button>
-        </div>
-    </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+    <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12 mt-20">
@@ -254,11 +314,14 @@
                 <div>
                     <div class="flex items-center gap-3 mb-4">
                         <img src="logo-192.png" alt="EZer Logo" class="h-12 w-12">
-                        <div class="text-2xl font-bold">EZer</div>
-                    </div>
+                        <div class="text-2xl font-bold">EZer<button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+                    <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
                     <p class="text-gray-400 text-sm mb-4">Your Smart Finance Companion. Helping you achieve your financial goals.</p>
                     <p class="text-indigo-400 font-semibold">Launching November 12, 2025</p>
-                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
                 
                 <div>
                     <h4 class="font-semibold mb-4">Product</h4>
@@ -266,16 +329,20 @@
                         <a href="features.html" class="block hover:text-white">Features</a>
                         <a href="security.html" class="block hover:text-white">Security</a>
                         <a href="pricing.html" class="block hover:text-white">Pricing</a>
-                    </div>
-                </div>
+                    <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
                 
                 <div>
                     <h4 class="font-semibold mb-4">Legal</h4>
                     <div class="space-y-2 text-gray-400 text-sm">
                         <a href="privacy.html" class="block hover:text-white">Privacy Policy</a>
                         <a href="terms.html" class="block hover:text-white">Terms & Conditions</a>
-                    </div>
-                </div>
+                    <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
                 
                 <div>
                     <h4 class="font-semibold mb-4">Support</h4>
@@ -283,15 +350,20 @@
                         <a href="feedback.html" class="block hover:text-white">Feedback</a>
                         <a href="report.html" class="block hover:text-white">Report Issue</a>
                         <a href="mailto:support@ezerapp.com" class="block hover:text-white">Contact Us</a>
-                    </div>
-                </div>
+                    <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
             </div>
             
             <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
                 <p>© 2025 EZer. All rights reserved.</p>
                 <p class="mt-2">Email: support@ezerapp.com | Website: https://www.ezerapp.com</p>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
             </div>
-        </div>
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';"><svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+            </div>
     </footer>
 </body>
 </html>
