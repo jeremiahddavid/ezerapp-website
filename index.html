@@ -580,37 +580,14 @@
         </div>
     </footer>
 
-    <!-- Initialize Lucide Icons and Mobile Menu -->
+    <!-- Initialize Lucide Icons -->
     <script>
-        // Wait for DOM to be fully loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            // Initialize Lucide icons
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
-            }
+        lucide.createIcons();
 
-            // Mobile menu toggle
-            const menuBtn = document.getElementById('mobile-menu-btn');
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
             const menu = document.getElementById('mobile-menu');
-
-            if (menuBtn && menu) {
-                menuBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    menu.classList.toggle('hidden');
-
-                    // Toggle icon (optional - change to X when open)
-                    const icon = menuBtn.querySelector('svg');
-                    if (menu.classList.contains('hidden')) {
-                        // Hamburger icon
-                        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
-                        menuBtn.setAttribute('aria-label', 'Open menu');
-                    } else {
-                        // X icon
-                        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
-                        menuBtn.setAttribute('aria-label', 'Close menu');
-                    }
-                });
-            }
+            menu.classList.toggle('hidden');
         });
     </script>
 </body>
