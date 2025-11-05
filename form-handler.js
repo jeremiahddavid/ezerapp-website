@@ -46,7 +46,10 @@ async function handleFormSubmit(event, formType) {
         name: document.getElementById('name').value.trim(),
         email: document.getElementById('email').value.trim(),
         category: issueType,
-        message: `**Subject:** ${subject}\n\n**Issue Type:** ${issueType}\n\n**Device:** ${device}\n\n**Description:**\n${description}`,
+        subject: subject,
+        issue_type: issueType,
+        device_info: device,
+        message: description,
         timestamp: new Date().toISOString()
       };
     }
