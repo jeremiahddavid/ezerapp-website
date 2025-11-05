@@ -88,31 +88,46 @@
                         type="text"
                         id="name"
                         required
+                        maxlength="100"
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                         placeholder="Your name"
+                        oninput="updateCounter('name', 'nameCounter', 100)"
                     />
+                    <div class="text-right text-xs text-gray-500 mt-1">
+                        <span id="nameCounter">0/100</span>
+                    </div>
                 </div>
-                
+
                 <div class="mb-6">
                     <label class="block text-sm font-semibold mb-2">Email</label>
                     <input
                         type="email"
                         id="email"
                         required
+                        maxlength="254"
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                         placeholder="your.email@example.com"
+                        oninput="updateCounter('email', 'emailCounter', 254)"
                     />
+                    <div class="text-right text-xs text-gray-500 mt-1">
+                        <span id="emailCounter">0/254</span>
+                    </div>
                 </div>
-                
+
                 <div class="mb-6">
                     <label class="block text-sm font-semibold mb-2">Subject</label>
                     <input
                         type="text"
                         id="subject"
                         required
+                        maxlength="150"
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                         placeholder="Brief description of the issue"
+                        oninput="updateCounter('subject', 'subjectCounter', 150)"
                     />
+                    <div class="text-right text-xs text-gray-500 mt-1">
+                        <span id="subjectCounter">0/150</span>
+                    </div>
                 </div>
 
                 <div class="mb-6">
@@ -138,20 +153,30 @@
                     <input
                         type="text"
                         id="device"
+                        maxlength="200"
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                         placeholder="e.g., Samsung Galaxy S21, Android 12"
+                        oninput="updateCounter('device', 'deviceCounter', 200)"
                     />
+                    <div class="text-right text-xs text-gray-500 mt-1">
+                        <span id="deviceCounter">0/200</span>
+                    </div>
                 </div>
-                
+
                 <div class="mb-6">
                     <label class="block text-sm font-semibold mb-2">Issue Description</label>
                     <textarea
                         id="description"
                         required
+                        maxlength="3000"
                         rows="6"
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                         placeholder="Please provide detailed information about the issue, including steps to reproduce if applicable..."
+                        oninput="updateCounter('description', 'descriptionCounter', 3000)"
                     ></textarea>
+                    <div class="text-right text-xs text-gray-500 mt-1">
+                        <span id="descriptionCounter">0/3000</span>
+                    </div>
                 </div>
                 
                 <button
@@ -329,6 +354,23 @@
         function handleSubmit(event) {
             // Call the form handler with form type 'bug'
             handleFormSubmit(event, 'bug');
+        }
+
+        // Character counter function
+        function updateCounter(fieldId, counterId, maxLength) {
+            const field = document.getElementById(fieldId);
+            const counter = document.getElementById(counterId);
+            const currentLength = field.value.length;
+            counter.textContent = `${currentLength}/${maxLength}`;
+
+            // Change color when approaching limit
+            if (currentLength > maxLength * 0.9) {
+                counter.classList.add('text-red-500');
+                counter.classList.remove('text-gray-500');
+            } else {
+                counter.classList.add('text-gray-500');
+                counter.classList.remove('text-red-500');
+            }
         }
     </script>
 </body>
