@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - EZer: Smart Finance Tips & Guides</title>
+    <meta name="description" content="Practical money management tips, app guides, and financial wisdom for Indians. Learn budgeting, saving, and smart financial strategies.">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ezerapp.com/blog.html">
+    <meta property="og:title" content="EZer - Your Smart Finance Companion">
+    <meta property="og:description" content="Take control of your finances with intelligent insights, automated tracking, and secure data management.">
+    <meta property="og:image" content="https://www.ezerapp.com/logo-512.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .nav-link {
+            transition: all 0.2s ease;
+        }
+        
+        .nav-link:hover {
+            color: #4f46e5;
+        }
+        
+        .category-btn {
+            transition: all 0.2s ease;
+        }
+        
+        .category-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <img src="logo-192.png" alt="EZer Logo" class="h-10 w-10">
+                    <div>
+                        <div class="text-2xl font-bold text-indigo-600">EZer</div>
+                        <div class="text-xs text-gray-500 hidden sm:block -mt-1">Helping you.</div>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex gap-6">
+                    <a href="index.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Home</a>
+                    <a href="features.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Features</a>
+                    <a href="security.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Security</a>
+                    <a href="pricing.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Pricing</a>
+                    <a href="blog.html" class="nav-link px-3 py-2 rounded-lg bg-indigo-100 text-indigo-600 font-semibold text-sm">Blog</a>
+                    <a href="privacy-android.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Privacy Policy</a>
+                    <a href="terms.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Terms & Conditions</a>
+                    <a href="feedback.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Feedback</a>
+                    <a href="report.html" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Report Issue</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="lg:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t">
+                <a href="index.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Home</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Features</a>
+                <a href="security.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Security</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Pricing</a>
+                <a href="blog.html" class="block px-4 py-3 rounded-lg bg-indigo-100 text-indigo-600 font-semibold">Blog</a>
+                <a href="privacy-android.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Privacy Policy</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Terms & Conditions</a>
+                <a href="feedback.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Feedback</a>
+                <a href="report.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Report Issue</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">EZer Blog</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                Practical money management tips, app guides, and financial wisdom for Indians
+            </p>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="flex flex-wrap gap-3 justify-center mb-12">
+            <button onclick="filterPosts('All')" class="category-btn px-4 py-2 rounded-full bg-indigo-600 text-white font-semibold" data-category="All">
+                All
+            </button>
+            <button onclick="filterPosts('Personal Finance')" class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-category="Personal Finance">
+                Personal Finance
+            </button>
+            <button onclick="filterPosts('App Features')" class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-category="App Features">
+                App Features
+            </button>
+            <button onclick="filterPosts('Real-World')" class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-category="Real-World">
+                Real-World
+            </button>
+            <button onclick="filterPosts('Money Tips')" class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-category="Money Tips">
+                Money Tips
+            </button>
+            <button onclick="filterPosts('Seasonal')" class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-category="Seasonal">
+                Seasonal
+            </button>
+            <button onclick="filterPosts('Indian Finance')" class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-category="Indian Finance">
+                Indian Finance
+            </button>
+            <button onclick="filterPosts('Cultural')" class="category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300" data-category="Cultural">
+                Cultural
+            </button>
+        </div>
+
+        <!-- Blog Grid -->
+        <div id="blog-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            <!-- Blog Post Cards will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="logo-192.png" alt="EZer Logo" class="h-12 w-12">
+                        <div class="text-2xl font-bold">EZer</div>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">Your Smart Finance Companion. Helping you achieve your financial goals.</p>
+                    <p class="text-indigo-400 font-semibold">Launching November 12, 2025</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <a href="features.html" class="block hover:text-white">Features</a>
+                        <a href="security.html" class="block hover:text-white">Security</a>
+                        <a href="pricing.html" class="block hover:text-white">Pricing</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <a href="privacy-android.html" class="block hover:text-white">Privacy Policy</a>
+                        <a href="terms.html" class="block hover:text-white">Terms & Conditions</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <a href="feedback.html" class="block hover:text-white">Feedback</a>
+                        <a href="report.html" class="block hover:text-white">Report Issue</a>
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-white">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>© 2025 EZer. All rights reserved.</p>
+                <p class="mt-2">Email: support@ezerapp.com | Website: https://www.ezerapp.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Blog posts data
+        const blogPosts = [
+            {
+                id: 1,
+                title: "5 Common Money Mistakes Indians Make (And How to Fix Them)",
+                category: "Personal Finance",
+                excerpt: "From not tracking small UPI payments to missing EMI due dates, discover the most common financial mistakes Indians make and learn how to avoid them. Save ₹1-2 lakhs annually with smart money management.",
+                date: "November 15, 2025",
+                readTime: "5 min read",
+                gradient: "from-red-400 to-pink-500",
+                link: "blog-money-mistakes.html"
+            },
+            {
+                id: 2,
+                title: "How to Create Your First Budget with Your Monthly Salary",
+                category: "Personal Finance",
+                excerpt: "Step-by-step guide to creating a realistic budget based on your Indian salary. Learn the 50/30/20 rule adapted for Indian expenses including rent, EMIs, and household costs.",
+                date: "October 24, 2025",
+                readTime: "6 min read",
+                gradient: "from-green-400 to-emerald-500",
+                link: "blog-first-budget.html"
+            },
+            {
+                id: 3,
+                title: "The 50/30/20 Rule: Budgeting for Indian Income Levels",
+                category: "Personal Finance",
+                excerpt: "Understand how to apply the popular 50/30/20 budgeting rule to Indian income levels. Practical examples with real salary ranges from ₹25,000 to ₹1,00,000.",
+                date: "November 13, 2025",
+                readTime: "4 min read",
+                gradient: "from-blue-400 to-indigo-500",
+                link: "#"
+            },
+            {
+                id: 4,
+                title: "Why Track Every UPI Payment? (Even Those ₹50 Chai Transactions)",
+                category: "Personal Finance",
+                excerpt: "Those daily ₹50 chai and ₹100 lunch payments add up! Discover how tracking small UPI transactions can reveal where ₹10,000+ goes every month.",
+                date: "November 12, 2025",
+                readTime: "4 min read",
+                gradient: "from-amber-400 to-orange-500",
+                link: "#"
+            },
+            {
+                id: 5,
+                title: "How Automatic SMS Parsing Saves You 5 Hours Every Month",
+                category: "App Features",
+                excerpt: "EZer automatically reads your bank SMS and captures transactions from 35+ Indian banks. No more manual entry - just automatic tracking of every rupee.",
+                date: "November 11, 2025",
+                readTime: "5 min read",
+                gradient: "from-purple-400 to-pink-500",
+                link: "#"
+            },
+            {
+                id: 6,
+                title: "Never Miss EMI or Credit Card Payments: Smart Reminders",
+                category: "App Features",
+                excerpt: "Late fees cost you thousands! Learn how EZer's smart bill reminders ensure you never miss home loan EMIs, credit card bills, or utility payments again.",
+                date: "November 10, 2025",
+                readTime: "5 min read",
+                gradient: "from-cyan-400 to-blue-500",
+                link: "#"
+            },
+            {
+                id: 7,
+                title: "Import Bank Statements from HDFC, ICICI, SBI & 32 Other Banks",
+                category: "App Features",
+                excerpt: "Import years of transaction history in minutes. EZer supports PDF, CSV, and Excel statements from all major Indian banks including HDFC, ICICI, SBI, Axis, and more.",
+                date: "November 9, 2025",
+                readTime: "6 min read",
+                gradient: "from-teal-400 to-green-500",
+                link: "#"
+            },
+            {
+                id: 8,
+                title: "Diwali Shopping? Track Your Festival Expenses with Goals",
+                category: "App Features",
+                excerpt: "Set a Diwali shopping budget, track gifts, decorations, and sweets expenses. Stay within your festival budget with EZer's goal tracking feature.",
+                date: "November 8, 2025",
+                readTime: "4 min read",
+                gradient: "from-yellow-400 to-amber-500",
+                link: "#"
+            },
+            {
+                id: 9,
+                title: "Splitting Flat Rent, Electricity & Groceries with Roommates",
+                category: "Real-World",
+                excerpt: "Living in Mumbai or Bangalore with roommates? Use EZer's household sharing feature to split rent, electricity, groceries, and maid expenses fairly.",
+                date: "November 7, 2025",
+                readTime: "5 min read",
+                gradient: "from-rose-400 to-red-500",
+                link: "#"
+            },
+            {
+                id: 10,
+                title: "How I Saved ₹30,000 in 3 Months by Tracking OTT Subscriptions",
+                category: "Real-World",
+                excerpt: "Netflix, Prime, Hotstar, Spotify, and more. Real story of how tracking subscriptions revealed ₹10,000/month in unused services. Cancel what you don't use!",
+                date: "November 6, 2025",
+                readTime: "6 min read",
+                gradient: "from-violet-400 to-purple-500",
+                link: "#"
+            }
+        ];
+
+        // Render blog posts
+        function renderBlogPosts(posts) {
+            const grid = document.getElementById('blog-grid');
+            grid.innerHTML = posts.map(post => `
+                <div class="card-hover bg-white rounded-xl shadow-lg overflow-hidden" data-category="${post.category}" onclick="window.location.href='${post.link}'">
+                    <div class="bg-gradient-to-br ${post.gradient} h-48 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/10"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <span class="text-xs font-semibold px-3 py-1 bg-white/90 text-gray-800 rounded-full inline-block">
+                                ${post.category}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs text-gray-500">${post.date}</span>
+                            <span class="text-xs text-gray-500">${post.readTime}</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 line-clamp-2 hover:text-indigo-600 transition-colors">${post.title}</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-3">${post.excerpt}</p>
+                        <button class="text-indigo-600 font-semibold text-sm hover:text-indigo-700 flex items-center gap-1">
+                            Read More 
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Filter posts by category
+        function filterPosts(category) {
+            const buttons = document.querySelectorAll('.category-btn');
+            buttons.forEach(btn => {
+                if (btn.dataset.category === category) {
+                    btn.className = 'category-btn px-4 py-2 rounded-full bg-indigo-600 text-white font-semibold';
+                } else {
+                    btn.className = 'category-btn px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300';
+                }
+            });
+
+            const filteredPosts = category === 'All' 
+                ? blogPosts 
+                : blogPosts.filter(post => post.category === category);
+            
+            renderBlogPosts(filteredPosts);
+        }
+
+        // Initialize
+        renderBlogPosts(blogPosts);
+        lucide.createIcons();
+        
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

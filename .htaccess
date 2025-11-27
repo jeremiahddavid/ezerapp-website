@@ -1,0 +1,168 @@
+# EZer Website - Clean URLs Configuration
+# This file enables URLs without .html extensions
+
+<IfModule mod_rewrite.c>
+    # Enable Rewrite Engine
+    RewriteEngine On
+    RewriteBase /
+
+    # ================================================================
+    # CLEAN URLs - Remove .html Extension
+    # ================================================================
+
+    # Redirect .html URLs to clean URLs (301 permanent redirect)
+    # Example: /features.html → /features
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+    RewriteRule ^([^.]+)\.html$ /$1 [R=301,L]
+
+    # Serve .html files for clean URLs
+    # Example: /features → serves features.html
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^(.+)$ $1.html [L,QSA]
+
+    # ================================================================
+    # INDEX FILE HANDLING
+    # ================================================================
+
+    # Remove index.html from URLs
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP
+    RewriteRule ^index\.html$ / [R=301,L]
+
+    # ================================================================
+    # SECURITY
+    # ================================================================
+
+    # Force HTTPS (redirect HTTP to HTTPS)
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Force www (redirect non-www to www)
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteCond %{HTTP_HOST} !^localhost [NC]
+    RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+</IfModule>
+
+# ================================================================
+# SECURITY - Deny Access to Sensitive Files
+# ================================================================
+
+# Deny access to hidden files (starting with .)
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Deny access to backup files
+<FilesMatch "\.(bak|backup|old|tmp|swp)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect .htaccess itself
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# ================================================================
+# PERFORMANCE - Browser Caching
+# ================================================================
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # Images
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Fonts
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+
+    # CSS and JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+
+    # HTML
+    ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# ================================================================
+# PERFORMANCE - Gzip Compression
+# ================================================================
+
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript, Text, XML, and fonts
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+
+    # Remove browser bugs (only needed for old browsers)
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    Header append Vary User-Agent
+</IfModule>
+
+# ================================================================
+# ERROR PAGES
+# ================================================================
+
+# Custom error pages (create these files if desired)
+# ErrorDocument 404 /404.html
+# ErrorDocument 500 /500.html
+
+# ================================================================
+# MIME TYPES
+# ================================================================
+
+<IfModule mod_mime.c>
+    # Proper MIME types for various files
+    AddType application/javascript js
+    AddType text/css css
+    AddType image/svg+xml svg svgz
+    AddType image/webp webp
+    AddType font/ttf ttf
+    AddType font/otf otf
+    AddType font/woff woff
+    AddType font/woff2 woff2
+</IfModule>
+
+# ================================================================
+# NOTES
+# ================================================================
+
+# This configuration file:
+# 1. Removes .html from all URLs
+# 2. Redirects old .html URLs to clean URLs
+# 3. Forces HTTPS
+# 4. Enables caching for better performance
+# 5. Compresses files for faster loading
+# 6. Protects sensitive files
+
+# To test if mod_rewrite is working:
+# Visit: https://www.ezerapp.com/features
+# Should serve features.html without showing .html in URL
+
+# To disable clean URLs temporarily, comment out the
+# "CLEAN URLs" section above or rename this file

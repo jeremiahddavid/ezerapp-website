@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZer - Your Smart Finance Companion | Budget & Expense Tracker</title>
+    <meta name="description" content="EZer is a smart budget and expense tracker available in 75+ countries. Track spending, manage budgets, and achieve your financial goals.">
+
+    <!-- Canonical & hreflang -->
+    <link rel="canonical" href="https://www.ezerapp.com/">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ezerapp.com/">
+    <meta property="og:title" content="EZer - Your Smart Finance Companion">
+    <meta property="og:description" content="Smart budget and expense tracker available in 75+ countries.">
+    <meta property="og:image" content="https://www.ezerapp.com/logo-512.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-hero { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero -->
+    <div class="gradient-hero text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <img src="logo-192.png" alt="EZer Logo" class="h-20 w-20 mx-auto mb-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">EZer</h1>
+            <p class="text-xl text-indigo-100 mb-2">Your Smart Finance Companion</p>
+            <p class="text-lg text-white/80">Available in 75+ countries</p>
+        </div>
+    </div>
+
+    <!-- Country Selector -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-2">Select Your Country</h2>
+            <p class="text-gray-600 text-center mb-8">Choose your location to see local pricing and features</p>
+
+            <div id="detecting" class="text-center py-8 hidden">
+                <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
+                <p class="mt-4 text-gray-600">Detecting your location...</p>
+            </div>
+
+            <div id="country-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-2 max-h-96 overflow-y-auto border rounded-xl p-4 bg-white shadow-lg">
+                <a href="/ar/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇦🇷</span><span class="font-medium">Argentina</span><span class="text-gray-500 text-sm ml-auto">AR$1999/mo</span></a>
+                <a href="/au/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇦🇺</span><span class="font-medium">Australia</span><span class="text-gray-500 text-sm ml-auto">A$4.99/mo</span></a>
+                <a href="/at/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇦🇹</span><span class="font-medium">Austria</span><span class="text-gray-500 text-sm ml-auto">€4.49/mo</span></a>
+                <a href="/bh/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇧🇭</span><span class="font-medium">Bahrain</span><span class="text-gray-500 text-sm ml-auto">.د.ب1.9/mo</span></a>
+                <a href="/bd/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇧🇩</span><span class="font-medium">Bangladesh</span><span class="text-gray-500 text-sm ml-auto">৳299/mo</span></a>
+                <a href="/be/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇧🇪</span><span class="font-medium">Belgium</span><span class="text-gray-500 text-sm ml-auto">€4.49/mo</span></a>
+                <a href="/br/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇧🇷</span><span class="font-medium">Brazil</span><span class="text-gray-500 text-sm ml-auto">R$19.90/mo</span></a>
+                <a href="/ca/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇨🇦</span><span class="font-medium">Canada</span><span class="text-gray-500 text-sm ml-auto">C$4.99/mo</span></a>
+                <a href="/cl/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇨🇱</span><span class="font-medium">Chile</span><span class="text-gray-500 text-sm ml-auto">CL$1999/mo</span></a>
+                <a href="/cn/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇨🇳</span><span class="font-medium">China</span><span class="text-gray-500 text-sm ml-auto">¥29/mo</span></a>
+                <a href="/co/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇨🇴</span><span class="font-medium">Colombia</span><span class="text-gray-500 text-sm ml-auto">CO$19900/mo</span></a>
+                <a href="/cr/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇨🇷</span><span class="font-medium">Costa Rica</span><span class="text-gray-500 text-sm ml-auto">₡2499/mo</span></a>
+                <a href="/cz/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇨🇿</span><span class="font-medium">Czech Republic</span><span class="text-gray-500 text-sm ml-auto">Kč99/mo</span></a>
+                <a href="/dk/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇩🇰</span><span class="font-medium">Denmark</span><span class="text-gray-500 text-sm ml-auto">kr35/mo</span></a>
+                <a href="/do/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇩🇴</span><span class="font-medium">Dominican Republic</span><span class="text-gray-500 text-sm ml-auto">RD$199/mo</span></a>
+                <a href="/ec/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇪🇨</span><span class="font-medium">Ecuador</span><span class="text-gray-500 text-sm ml-auto">$4.99/mo</span></a>
+                <a href="/eg/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇪🇬</span><span class="font-medium">Egypt</span><span class="text-gray-500 text-sm ml-auto">E£149/mo</span></a>
+                <a href="/et/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇪🇹</span><span class="font-medium">Ethiopia</span><span class="text-gray-500 text-sm ml-auto">Br99/mo</span></a>
+                <a href="/fi/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇫🇮</span><span class="font-medium">Finland</span><span class="text-gray-500 text-sm ml-auto">€4.49/mo</span></a>
+                <a href="/fr/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇫🇷</span><span class="font-medium">France</span><span class="text-gray-500 text-sm ml-auto">€4.49/mo</span></a>
+                <a href="/de/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇩🇪</span><span class="font-medium">Germany</span><span class="text-gray-500 text-sm ml-auto">€4.49/mo</span></a>
+                <a href="/gh/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇬🇭</span><span class="font-medium">Ghana</span><span class="text-gray-500 text-sm ml-auto">₵19/mo</span></a>
+                <a href="/gr/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇬🇷</span><span class="font-medium">Greece</span><span class="text-gray-500 text-sm ml-auto">€4.49/mo</span></a>
+                <a href="/gt/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇬🇹</span><span class="font-medium">Guatemala</span><span class="text-gray-500 text-sm ml-auto">Q39/mo</span></a>
+                <a href="/hk/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇭🇰</span><span class="font-medium">Hong Kong</span><span class="text-gray-500 text-sm ml-auto">HK$39/mo</span></a>
+                <a href="/hu/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇭🇺</span><span class="font-medium">Hungary</span><span class="text-gray-500 text-sm ml-auto">Ft1499/mo</span></a>
+                <a href="/in/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇮🇳</span><span class="font-medium">India</span><span class="text-gray-500 text-sm ml-auto">₹99/mo</span></a>
+                <a href="/id/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇮🇩</span><span class="font-medium">Indonesia</span><span class="text-gray-500 text-sm ml-auto">Rp79000/mo</span></a>
+                <a href="/iq/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇮🇶</span><span class="font-medium">Iraq</span><span class="text-gray-500 text-sm ml-auto">ع.د4999/mo</span></a>
+                <a href="/ie/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇮🇪</span><span class="font-medium">Ireland</span><span class="text-gray-500 text-sm ml-auto">€4.49/mo</span></a>
+                <a href="/il/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇮🇱</span><span class="font-medium">Israel</span><span class="text-gray-500 text-sm ml-auto">₪19/mo</span></a>
+                <a href="/it/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇮🇹</span><span class="font-medium">Italy</span><span class="text-gray-500 text-sm ml-auto">€4.49/mo</span></a>
+                <a href="/jm/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇯🇲</span><span class="font-medium">Jamaica</span><span class="text-gray-500 text-sm ml-auto">J$699/mo</span></a>
+                <a href="/jp/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇯🇵</span><span class="font-medium">Japan</span><span class="text-gray-500 text-sm ml-auto">¥500/mo</span></a>
+                <a href="/jo/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇯🇴</span><span class="font-medium">Jordan</span><span class="text-gray-500 text-sm ml-auto">د.ا3.5/mo</span></a>
+                <a href="/ke/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇰🇪</span><span class="font-medium">Kenya</span><span class="text-gray-500 text-sm ml-auto">KSh499/mo</span></a>
+                <a href="/kw/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇰🇼</span><span class="font-medium">Kuwait</span><span class="text-gray-500 text-sm ml-auto">د.ك1.5/mo</span></a>
+                <a href="/my/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇲🇾</span><span class="font-medium">Malaysia</span><span class="text-gray-500 text-sm ml-auto">RM19/mo</span></a>
+                <a href="/mx/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇲🇽</span><span class="font-medium">Mexico</span><span class="text-gray-500 text-sm ml-auto">MX$79/mo</span></a>
+                <a href="/ma/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇲🇦</span><span class="font-medium">Morocco</span><span class="text-gray-500 text-sm ml-auto">د.م.49/mo</span></a>
+                <a href="/np/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇳🇵</span><span class="font-medium">Nepal</span><span class="text-gray-500 text-sm ml-auto">रू299/mo</span></a>
+                <a href="/nl/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇳🇱</span><span class="font-medium">Netherlands</span><span class="text-gray-500 text-sm ml-auto">€4.49/mo</span></a>
+                <a href="/nz/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇳🇿</span><span class="font-medium">New Zealand</span><span class="text-gray-500 text-sm ml-auto">NZ$4.99/mo</span></a>
+                <a href="/ng/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇳🇬</span><span class="font-medium">Nigeria</span><span class="text-gray-500 text-sm ml-auto">₦1999/mo</span></a>
+                <a href="/no/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇳🇴</span><span class="font-medium">Norway</span><span class="text-gray-500 text-sm ml-auto">kr49/mo</span></a>
+                <a href="/om/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇴🇲</span><span class="font-medium">Oman</span><span class="text-gray-500 text-sm ml-auto">ر.ع.1.9/mo</span></a>
+                <a href="/pk/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇵🇰</span><span class="font-medium">Pakistan</span><span class="text-gray-500 text-sm ml-auto">Rs499/mo</span></a>
+                <a href="/pa/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇵🇦</span><span class="font-medium">Panama</span><span class="text-gray-500 text-sm ml-auto">$4.99/mo</span></a>
+                <a href="/pe/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇵🇪</span><span class="font-medium">Peru</span><span class="text-gray-500 text-sm ml-auto">S/19/mo</span></a>
+                <a href="/ph/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇵🇭</span><span class="font-medium">Philippines</span><span class="text-gray-500 text-sm ml-auto">₱149/mo</span></a>
+                <a href="/pl/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇵🇱</span><span class="font-medium">Poland</span><span class="text-gray-500 text-sm ml-auto">zł19/mo</span></a>
+                <a href="/pt/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇵🇹</span><span class="font-medium">Portugal</span><span class="text-gray-500 text-sm ml-auto">€4.49/mo</span></a>
+                <a href="/qa/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇶🇦</span><span class="font-medium">Qatar</span><span class="text-gray-500 text-sm ml-auto">ر.ق15/mo</span></a>
+                <a href="/ro/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇷🇴</span><span class="font-medium">Romania</span><span class="text-gray-500 text-sm ml-auto">lei19/mo</span></a>
+                <a href="/ru/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇷🇺</span><span class="font-medium">Russia</span><span class="text-gray-500 text-sm ml-auto">₽299/mo</span></a>
+                <a href="/rw/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇷🇼</span><span class="font-medium">Rwanda</span><span class="text-gray-500 text-sm ml-auto">RF1999/mo</span></a>
+                <a href="/sa/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇸🇦</span><span class="font-medium">Saudi Arabia</span><span class="text-gray-500 text-sm ml-auto">ر.س15/mo</span></a>
+                <a href="/sg/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇸🇬</span><span class="font-medium">Singapore</span><span class="text-gray-500 text-sm ml-auto">S$5/mo</span></a>
+                <a href="/za/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇿🇦</span><span class="font-medium">South Africa</span><span class="text-gray-500 text-sm ml-auto">R79/mo</span></a>
+                <a href="/kr/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇰🇷</span><span class="font-medium">South Korea</span><span class="text-gray-500 text-sm ml-auto">₩5900/mo</span></a>
+                <a href="/es/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇪🇸</span><span class="font-medium">Spain</span><span class="text-gray-500 text-sm ml-auto">€4.49/mo</span></a>
+                <a href="/lk/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇱🇰</span><span class="font-medium">Sri Lanka</span><span class="text-gray-500 text-sm ml-auto">Rs999/mo</span></a>
+                <a href="/se/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇸🇪</span><span class="font-medium">Sweden</span><span class="text-gray-500 text-sm ml-auto">kr49/mo</span></a>
+                <a href="/ch/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇨🇭</span><span class="font-medium">Switzerland</span><span class="text-gray-500 text-sm ml-auto">CHF4.99/mo</span></a>
+                <a href="/tw/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇹🇼</span><span class="font-medium">Taiwan</span><span class="text-gray-500 text-sm ml-auto">NT$149/mo</span></a>
+                <a href="/tz/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇹🇿</span><span class="font-medium">Tanzania</span><span class="text-gray-500 text-sm ml-auto">TSh4999/mo</span></a>
+                <a href="/th/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇹🇭</span><span class="font-medium">Thailand</span><span class="text-gray-500 text-sm ml-auto">฿99/mo</span></a>
+                <a href="/tt/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇹🇹</span><span class="font-medium">Trinidad and Tobago</span><span class="text-gray-500 text-sm ml-auto">TT$29/mo</span></a>
+                <a href="/tr/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇹🇷</span><span class="font-medium">Turkey</span><span class="text-gray-500 text-sm ml-auto">₺99/mo</span></a>
+                <a href="/ug/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇺🇬</span><span class="font-medium">Uganda</span><span class="text-gray-500 text-sm ml-auto">USh4999/mo</span></a>
+                <a href="/ae/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇦🇪</span><span class="font-medium">United Arab Emirates</span><span class="text-gray-500 text-sm ml-auto">د.إ15/mo</span></a>
+                <a href="/uk/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇬🇧</span><span class="font-medium">United Kingdom</span><span class="text-gray-500 text-sm ml-auto">£3.99/mo</span></a>
+                <a href="/us/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇺🇸</span><span class="font-medium">United States</span><span class="text-gray-500 text-sm ml-auto">$4.99/mo</span></a>
+                <a href="/uy/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇺🇾</span><span class="font-medium">Uruguay</span><span class="text-gray-500 text-sm ml-auto">UY$199/mo</span></a>
+                <a href="/vn/" class="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors"><span class="text-2xl">🇻🇳</span><span class="font-medium">Vietnam</span><span class="text-gray-500 text-sm ml-auto">₫99000/mo</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2025 EZer. All rights reserved.</p>
+            <p class="text-gray-500 text-sm mt-2">support@ezerapp.com</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Country code mapping
+        const countryMap = {"us": "us", "gb": "uk", "in": "in", "ca": "ca", "au": "au", "de": "de", "fr": "fr", "it": "it", "es": "es", "jp": "jp", "kr": "kr", "cn": "cn", "hk": "hk", "tw": "tw", "sg": "sg", "my": "my", "id": "id", "th": "th", "vn": "vn", "ph": "ph", "nz": "nz", "ae": "ae", "sa": "sa", "qa": "qa", "kw": "kw", "bh": "bh", "om": "om", "jo": "jo", "eg": "eg", "za": "za", "ng": "ng", "ke": "ke", "gh": "gh", "ug": "ug", "tz": "tz", "rw": "rw", "et": "et", "ma": "ma", "br": "br", "mx": "mx", "ar": "ar", "cl": "cl", "co": "co", "pe": "pe", "ec": "ec", "uy": "uy", "pa": "pa", "cr": "cr", "do": "do", "gt": "gt", "jm": "jm", "tt": "tt", "pk": "pk", "bd": "bd", "np": "np", "lk": "lk", "ru": "ru", "tr": "tr", "pl": "pl", "nl": "nl", "be": "be", "at": "at", "ch": "ch", "se": "se", "no": "no", "dk": "dk", "fi": "fi", "ie": "ie", "pt": "pt", "gr": "gr", "cz": "cz", "hu": "hu", "ro": "ro", "il": "il", "iq": "iq"};
+
+        // Geo-detection (optional - can be disabled)
+        const enableGeoDetection = false; // Set to true to auto-redirect
+
+        if (enableGeoDetection) {
+            document.getElementById('detecting').classList.remove('hidden');
+            document.getElementById('country-grid').classList.add('hidden');
+
+            fetch('https://ipapi.co/json/')
+                .then(r => r.json())
+                .then(data => {
+                    const code = data.country_code?.toLowerCase();
+                    if (code && countryMap[code]) {
+                        window.location.href = '/' + countryMap[code] + '/';
+                    } else {
+                        document.getElementById('detecting').classList.add('hidden');
+                        document.getElementById('country-grid').classList.remove('hidden');
+                    }
+                })
+                .catch(() => {
+                    document.getElementById('detecting').classList.add('hidden');
+                    document.getElementById('country-grid').classList.remove('hidden');
+                });
+        }
+    </script>
+</body>
+</html>

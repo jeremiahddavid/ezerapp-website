@@ -1,0 +1,519 @@
+<p>    EZer &#8211; Your Smart Finance Companion</p>
+<p>    <!-- Favicons --></p>
+<p>    <!-- Open Graph / Social Media --></p>
+<p>    <!-- Twitter Card --></p>
+<p>    <!-- Optimized Fonts - Only 3 weights with display=swap --></p>
+<p>    <!-- Preload critical image --></p>
+<p>        /* Compiled Tailwind CSS &#8211; Only used classes */<br />
+        *, ::before, ::after { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }<br />
+        html { line-height: 1.5; -webkit-text-size-adjust: 100%; tab-size: 4; font-family: &#8216;Inter&#8217;, -apple-system, BlinkMacSystemFont, &#8216;Segoe UI&#8217;, sans-serif; }<br />
+        body { margin: 0; line-height: inherit; }<br />
+        h1, h2, h3, h4, p { margin: 0; }<br />
+        a { color: inherit; text-decoration: inherit; }<br />
+        button { font-family: inherit; font-size: 100%; font-weight: inherit; line-height: inherit; color: inherit; margin: 0; padding: 0; background-color: transparent; background-image: none; }<br />
+        button, [role=&#8221;button&#8221;] { cursor: pointer; }<br />
+        svg { display: block; vertical-align: middle; }<br />
+        img { display: block; max-width: 100%; height: auto; }</p>
+<p>        /* Custom Styles */<br />
+        .gradient-hero { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%); }<br />
+        .gradient-cta { background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%); }<br />
+        .gradient-referral { background: linear-gradient(135deg, #faf5ff 0%, #fce7f3 100%); }<br />
+        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }<br />
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }<br />
+        .nav-link { transition: all 0.2s ease; }<br />
+        .nav-link:hover { color: #4f46e5; }<br />
+        .btn-primary { transition: all 0.2s ease; }<br />
+        .btn-primary:hover { transform: scale(1.02); }</p>
+<p>        /* Utility Classes &#8211; Compiled from Tailwind */<br />
+        .container { width: 100%; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }<br />
+        @media (min-width: 640px) { .container { max-width: 640px; } }<br />
+        @media (min-width: 768px) { .container { max-width: 768px; } }<br />
+        @media (min-width: 1024px) { .container { max-width: 1024px; } }<br />
+        @media (min-width: 1280px) { .container { max-width: 1280px; } }</p>
+<p>        .bg-white { background-color: #fff; }<br />
+        .bg-gray-50 { background-color: #f9fafb; }<br />
+        .bg-gray-800 { background-color: #1f2937; }<br />
+        .bg-gray-900 { background-color: #111827; }<br />
+        .bg-indigo-100 { background-color: #e0e7ff; }<br />
+        .bg-indigo-700 { background-color: #4338ca; }<br />
+        .text-white { color: #fff; }<br />
+        .text-gray-300 { color: #d1d5db; }<br />
+        .text-gray-400 { color: #9ca3af; }<br />
+        .text-gray-500 { color: #6b7280; }<br />
+        .text-gray-600 { color: #4b5563; }<br />
+        .text-gray-700 { color: #374151; }<br />
+        .text-indigo-100 { color: #e0e7ff; }<br />
+        .text-indigo-400 { color: #818cf8; }<br />
+        .text-indigo-600 { color: #4f46e5; }<br />
+        .text-green-400 { color: #4ade80; }<br />
+        .text-green-500 { color: #22c55e; }<br />
+        .text-red-400 { color: #f87171; }<br />
+        .text-purple-600 { color: #9333ea; }<br />
+        .text-pink-600 { color: #db2777; }</p>
+<p>        .flex { display: flex; }<br />
+        .inline-block { display: inline-block; }<br />
+        .block { display: block; }<br />
+        .grid { display: grid; }<br />
+        .hidden { display: none; }</p>
+<p>        .h-10 { height: 2.5rem; }<br />
+        .h-12 { height: 3rem; }<br />
+        .h-16 { height: 4rem; }<br />
+        .w-4 { width: 1rem; }<br />
+        .w-5 { width: 1.25rem; }<br />
+        .w-6 { width: 1.5rem; }<br />
+        .w-10 { width: 2.5rem; }<br />
+        .w-12 { width: 3rem; }<br />
+        .max-w-2xl { max-width: 42rem; }<br />
+        .max-w-3xl { max-width: 48rem; }<br />
+        .max-w-4xl { max-width: 56rem; }<br />
+        .max-w-6xl { max-width: 72rem; }</p>
+<p>        .flex-col { flex-direction: column; }<br />
+        .flex-shrink-0 { flex-shrink: 0; }<br />
+        .items-center { align-items: center; }<br />
+        .items-start { align-items: flex-start; }<br />
+        .justify-center { justify-content: center; }<br />
+        .justify-between { justify-content: space-between; }<br />
+        .gap-2 { gap: 0.5rem; }<br />
+        .gap-3 { gap: 0.75rem; }<br />
+        .gap-4 { gap: 1rem; }<br />
+        .gap-6 { gap: 1.5rem; }<br />
+        .gap-8 { gap: 2rem; }<br />
+        .space-y-2 &gt; * + * { margin-top: 0.5rem; }<br />
+        .space-y-3 &gt; * + * { margin-top: 0.75rem; }</p>
+<p>        .rounded-lg { border-radius: 0.5rem; }<br />
+        .rounded-xl { border-radius: 0.75rem; }<br />
+        .rounded-2xl { border-radius: 1rem; }<br />
+        .rounded-full { border-radius: 9999px; }<br />
+        .border-t { border-top-width: 1px; }<br />
+        .border-2 { border-width: 2px; }<br />
+        .border-white { border-color: #fff; }<br />
+        .border-gray-800 { border-color: #1f2937; }</p>
+<p>        .p-6 { padding: 1.5rem; }<br />
+        .p-8 { padding: 2rem; }<br />
+        .px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }<br />
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }<br />
+        .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }<br />
+        .px-8 { padding-left: 2rem; padding-right: 2rem; }<br />
+        .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }<br />
+        .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }<br />
+        .py-4 { padding-top: 1rem; padding-bottom: 1rem; }<br />
+        .py-12 { padding-top: 3rem; padding-bottom: 3rem; }<br />
+        .py-20 { padding-top: 5rem; padding-bottom: 5rem; }<br />
+        .pt-8 { padding-top: 2rem; }<br />
+        .mb-2 { margin-bottom: 0.5rem; }<br />
+        .mb-3 { margin-bottom: 0.75rem; }<br />
+        .mb-4 { margin-bottom: 1rem; }<br />
+        .mb-6 { margin-bottom: 1.5rem; }<br />
+        .mb-8 { margin-bottom: 2rem; }<br />
+        .mb-12 { margin-bottom: 3rem; }<br />
+        .mb-16 { margin-bottom: 4rem; }<br />
+        .mt-1 { margin-top: 0.25rem; }<br />
+        .mt-2 { margin-top: 0.5rem; }<br />
+        .-mt-1 { margin-top: -0.25rem; }<br />
+        .mx-auto { margin-left: auto; margin-right: auto; }</p>
+<p>        .text-xs { font-size: 0.75rem; line-height: 1rem; }<br />
+        .text-sm { font-size: 0.875rem; line-height: 1.25rem; }<br />
+        .text-lg { font-size: 1.125rem; line-height: 1.75rem; }<br />
+        .text-xl { font-size: 1.25rem; line-height: 1.75rem; }<br />
+        .text-2xl { font-size: 1.5rem; line-height: 2rem; }<br />
+        .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }<br />
+        .text-4xl { font-size: 2.25rem; line-height: 2.5rem; }<br />
+        .text-5xl { font-size: 3rem; line-height: 1; }<br />
+        .font-semibold { font-weight: 600; }<br />
+        .font-bold { font-weight: 700; }<br />
+        .text-center { text-align: center; }</p>
+<p>        .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }<br />
+        .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }<br />
+        .backdrop-blur-sm { backdrop-filter: blur(4px); }</p>
+<p>        .sticky { position: sticky; }<br />
+        .top-0 { top: 0; }<br />
+        .z-50 { z-index: 50; }</p>
+<p>        .transition-opacity { transition-property: opacity; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }<br />
+        .transition-colors { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }<br />
+        .hover\:opacity-80:hover { opacity: 0.8; }<br />
+        .hover\:bg-gray-50:hover { background-color: #f9fafb; }<br />
+        .hover\:bg-gray-100:hover { background-color: #f3f4f6; }<br />
+        .hover\:bg-indigo-50:hover { background-color: #eef2ff; }<br />
+        .hover\:bg-indigo-800:hover { background-color: #3730a3; }<br />
+        .hover\:text-white:hover { color: #fff; }</p>
+<p>        @media (min-width: 640px) {<br />
+            .sm\:block { display: block; }<br />
+            .sm\:flex-row { flex-direction: row; }<br />
+        }</p>
+<p>        @media (min-width: 768px) {<br />
+            .md\:text-6xl { font-size: 3.75rem; line-height: 1; }<br />
+            .md\:text-2xl { font-size: 1.5rem; line-height: 2rem; }<br />
+            .md\:text-xl { font-size: 1.25rem; line-height: 1.75rem; }<br />
+            .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }<br />
+        }</p>
+<p>        @media (min-width: 1024px) {<br />
+            .lg\:hidden { display: none; }<br />
+            .lg\:flex { display: flex; }<br />
+            .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }<br />
+            .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }<br />
+        }</p>
+<p>        /* Icon styles */<br />
+        .icon { flex-shrink: 0; }<br />
+        .bg-white\/20 { background-color: rgba(255, 255, 255, 0.2); }<br />
+        .text-white\/90 { color: rgba(255, 255, 255, 0.9); }<br />
+        .bg-indigo-500\/20 { background-color: rgba(99, 102, 241, 0.2); }</p>
+<p>    <!-- Inline Icon Definitions --></p>
+<p>    <!-- Navigation --></p>
+<div class="container mx-auto px-4">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center gap-3">
+                    <img src="logo-192.png" alt="EZer Logo" class="h-10 w-10" width="40" height="40" loading="eager"></p>
+<div>
+<div class="text-2xl font-bold text-indigo-600">EZer</div>
+<div class="text-xs text-gray-500 hidden sm:block -mt-1">Helping you.</div>
+</p></div>
+</p></div>
+<div class="hidden lg:flex gap-6">
+                    <a href="/" class="nav-link px-3 py-2 rounded-lg bg-indigo-100 text-indigo-600 font-semibold text-sm">Home</a><br />
+                    <a href="/features" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Features</a><br />
+                    <a href="/security" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Security</a><br />
+                    <a href="/pricing" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Pricing</a><br />
+                    <a href="/blog" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Blog</a><br />
+                    <a href="/privacy-android" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Privacy Policy</a><br />
+                    <a href="/terms" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Terms &amp; Conditions</a><br />
+                    <a href="/feedback" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Feedback</a><br />
+                    <a href="/report" class="nav-link px-3 py-2 rounded-lg text-gray-600 text-sm">Report Issue</a>
+                </div>
+</p></div>
+<p>            <!-- Mobile Menu --></p>
+<div id="mobile-menu" class="hidden lg:hidden py-4 border-t">
+                <a href="/" class="block px-4 py-3 rounded-lg bg-indigo-100 text-indigo-600 font-semibold">Home</a><br />
+                <a href="/features" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Features</a><br />
+                <a href="/security" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Security</a><br />
+                <a href="/pricing" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Pricing</a><br />
+                <a href="/blog" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Blog</a><br />
+                <a href="/privacy-android" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Privacy Policy</a><br />
+                <a href="/terms" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Terms &amp; Conditions</a><br />
+                <a href="/feedback" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Feedback</a><br />
+                <a href="/report" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Report Issue</a>
+            </div>
+</p></div>
+<p>    <!-- Hero Section --></p>
+<div class="gradient-hero text-white py-20">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center">
+<div class="inline-block bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full text-sm font-semibold mb-6">
+                    Launching November 12, 2025
+                </div>
+<h1 class="text-5xl md:text-6xl font-bold mb-4">
+                    EZer: Your Smart Finance Companion<br />
+                </h1>
+<p class="text-xl md:text-2xl mb-2 text-indigo-100">Helping you.</p>
+<p class="text-lg md:text-xl mb-8 text-white/90 max-w-3xl mx-auto">
+                    Take control of your finances with intelligent insights, automated tracking, and secure data management. Achieve your financial goals, one smart decision at a time.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+<p>                        Download Now &#8211; 30 Days Free</p>
+<p>                        Use Referral Code &#8211; 60 Days Free</p></div>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#" class="inline-block hover:opacity-80 transition-opacity"></p>
+<p>                            Download on the<br />
+                            App Store</p>
+<p>                    </a><br />
+                    <a href="#" class="inline-block hover:opacity-80 transition-opacity"></p>
+<p>                            GET IT ON<br />
+                            Google Play</p>
+<p>                    </a>
+                </div>
+</p></div>
+</p></div>
+</p></div>
+<p>    <!-- Features Section --></p>
+<div class="py-20 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Powerful Features for Smart Finance</h2>
+<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Everything you need to take control of your money, all in one beautifully designed app
+                </p>
+</p></div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Feature 1 --></p>
+<div class="card-hover bg-white p-8 rounded-2xl shadow-lg">
+<div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4 text-indigo-600"></div>
+<h3 class="text-xl font-bold mb-3">Smart Transaction Management</h3>
+<p class="text-gray-600 mb-4">Automatic SMS parsing for instant transaction capture. Support for 35+ banks and payment methods including UPI, credit/debit cards, and wallets.</p>
+<ul class="space-y-2">
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Save hours of manual data entry</span>
+                        </li>
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Never lose track of spending</span>
+                        </li>
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>AI-powered automatic categorization</span>
+                        </li>
+</ul></div>
+<p>                <!-- Feature 2 --></p>
+<div class="card-hover bg-white p-8 rounded-2xl shadow-lg">
+<div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4 text-indigo-600"></div>
+<h3 class="text-xl font-bold mb-3">Bank Statement Import</h3>
+<p class="text-gray-600 mb-4">Import years of transaction history in seconds. Multi-format support for PDF, CSV, and Excel from 35+ banks globally.</p>
+<ul class="space-y-2">
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Import entire history in minutes</span>
+                        </li>
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Smart OCR technology</span>
+                        </li>
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Handles multiple bank formats automatically</span>
+                        </li>
+</ul></div>
+<p>                <!-- Feature 3 --></p>
+<div class="card-hover bg-white p-8 rounded-2xl shadow-lg">
+<div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4 text-indigo-600"></div>
+<h3 class="text-xl font-bold mb-3">AI-Powered Insights</h3>
+<p class="text-gray-600 mb-4">Comprehensive spending analytics, budget monitoring, and personalized savings recommendations tailored to your financial patterns.</p>
+<ul class="space-y-2">
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Discover hidden spending patterns</span>
+                        </li>
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Get actionable insights</span>
+                        </li>
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Proactive alerts before overspending</span>
+                        </li>
+</ul></div>
+<p>                <!-- Feature 4 --></p>
+<div class="card-hover bg-white p-8 rounded-2xl shadow-lg">
+<div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4 text-indigo-600"></div>
+<h3 class="text-xl font-bold mb-3">Smart Budgeting</h3>
+<p class="text-gray-600 mb-4">Category-based budgets with progressive alerts at 50%, 75%, 90%, and 100% thresholds. Never accidentally overspend.</p>
+<ul class="space-y-2">
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Visual budget dashboard</span>
+                        </li>
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Real-time spending tracking</span>
+                        </li>
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Budget health indicators</span>
+                        </li>
+</ul></div>
+<p>                <!-- Feature 5 --></p>
+<div class="card-hover bg-white p-8 rounded-2xl shadow-lg">
+<div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4 text-indigo-600"></div>
+<h3 class="text-xl font-bold mb-3">Bills &amp; Subscriptions</h3>
+<p class="text-gray-600 mb-4">Automatic bill detection from SMS and transactions. Track recurring bills, get payment reminders, and never miss a due date.</p>
+<ul class="space-y-2">
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Never pay late fees again</span>
+                        </li>
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Track all subscriptions in one place</span>
+                        </li>
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Identify unused subscriptions</span>
+                        </li>
+</ul></div>
+<p>                <!-- Feature 6 --></p>
+<div class="card-hover bg-white p-8 rounded-2xl shadow-lg">
+<div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4 text-indigo-600"></div>
+<h3 class="text-xl font-bold mb-3">Goals &amp; Savings</h3>
+<p class="text-gray-600 mb-4">Create multiple savings goals with milestone tracking. See exactly how much to save monthly to reach your financial dreams.</p>
+<ul class="space-y-2">
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Turn wishes into concrete plans</span>
+                        </li>
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Milestone celebrations</span>
+                        </li>
+<li class="flex items-start gap-2 text-sm text-gray-700">
+<p>                            <span>Progress visualization</span>
+                        </li>
+</ul></div>
+</p></div>
+</p></div>
+</p></div>
+<p>    <!-- Referral Program Section --></p>
+<div class="py-20 gradient-referral">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<div class="inline-block bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full text-sm font-semibold mb-4" style="background: linear-gradient(90deg, #9333ea 0%, #db2777 100%)">
+                        Limited Time Offer
+                    </div>
+<h2 class="text-4xl font-bold mb-4">Referral Program &#8211; Earn Free Premium</h2>
+<p class="text-xl text-gray-600">
+                        Share EZer with friends and unlock extended premium access for both of you
+                    </p>
+</p></div>
+<div class="grid md:grid-cols-2 gap-8 mb-12">
+<div class="bg-white p-8 rounded-2xl shadow-lg">
+<div class="text-3xl font-bold text-purple-600 mb-2">60 Days Free</div>
+<h3 class="text-xl font-bold mb-4">For New Users</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<div>
+                                    <strong>30 days</strong> standard trial immediately
+                                </div>
+</li>
+<li class="flex items-start gap-3">
+<div>
+                                    Use referral code during signup
+                                </div>
+</li>
+<li class="flex items-start gap-3">
+<div>
+                                    <strong>+30 bonus days</strong> unlock on Day 31
+                                </div>
+</li>
+<li class="flex items-start gap-3">
+<div>
+                                    <strong>Total: 60 days</strong> of premium features
+                                </div>
+</li>
+</ul></div>
+<div class="bg-white p-8 rounded-2xl shadow-lg">
+<div class="text-3xl font-bold text-pink-600 mb-2">310 Days Max</div>
+<h3 class="text-xl font-bold mb-4">For Referrers</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<div>
+                                    Share your unique referral code
+                                </div>
+</li>
+<li class="flex items-start gap-3">
+<div>
+                                    Earn <strong>31 days</strong> when friend reaches Day 31
+                                </div>
+</li>
+<li class="flex items-start gap-3">
+<div>
+                                    Refer up to <strong>10 friends</strong> maximum
+                                </div>
+</li>
+<li class="flex items-start gap-3">
+<div>
+                                    <strong>Maximum: 310 days free</strong> premium
+                                </div>
+</li>
+</ul></div>
+</p></div>
+<div class="text-white p-8 rounded-2xl text-center" style="background: linear-gradient(90deg, #9333ea 0%, #db2777 100%)">
+<h3 class="text-2xl font-bold mb-4">No Credit Card Required</h3>
+<p class="text-lg mb-6">Start your free trial today and experience all premium features with zero commitment</p>
+<p>                        Get Started Now</p></div>
+</p></div>
+</p></div>
+</p></div>
+<p>    <!-- Security Section --></p>
+<div class="py-20 bg-gray-900 text-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Bank-Level Security</h2>
+<p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Your financial data protected with military-grade encryption and privacy-first design
+                </p>
+</p></div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
+<div class="bg-gray-800 p-6 rounded-xl">
+<div class="w-12 h-12 bg-indigo-500/20 rounded-full flex items-center justify-center mb-4 text-indigo-400"></div>
+<h3 class="text-lg font-bold mb-2">Bank-Level Encryption</h3>
+<p class="text-gray-400 text-sm">Military-grade 256-bit AES encryption for all your data, both at rest and in transit.</p>
+</p></div>
+<div class="bg-gray-800 p-6 rounded-xl">
+<div class="w-12 h-12 bg-indigo-500/20 rounded-full flex items-center justify-center mb-4 text-indigo-400"></div>
+<h3 class="text-lg font-bold mb-2">Biometric Authentication</h3>
+<p class="text-gray-400 text-sm">Fingerprint and Face ID support with app lock on every launch and session timeout protection.</p>
+</p></div>
+<div class="bg-gray-800 p-6 rounded-xl">
+<div class="w-12 h-12 bg-indigo-500/20 rounded-full flex items-center justify-center mb-4 text-indigo-400"></div>
+<h3 class="text-lg font-bold mb-2">Privacy Protection</h3>
+<p class="text-gray-400 text-sm">SMS content processed locally on your device. No messages stored on servers. GDPR compliant.</p>
+</p></div>
+<div class="bg-gray-800 p-6 rounded-xl">
+<div class="w-12 h-12 bg-indigo-500/20 rounded-full flex items-center justify-center mb-4 text-indigo-400"></div>
+<h3 class="text-lg font-bold mb-2">Secure Backup</h3>
+<p class="text-gray-400 text-sm">All backups encrypted with AES-256 before upload. Your data stays protected even in the cloud.</p>
+</p></div>
+</p></div>
+<div class="max-w-4xl mx-auto">
+<div class="grid md:grid-cols-2 gap-8">
+<div>
+<h3 class="text-xl font-bold mb-4 text-red-400">What We DON&#8217;T Do</h3>
+<ul class="space-y-2 text-gray-300">
+<li>✗ Store your SMS messages</li>
+<li>✗ Sell your data to third parties</li>
+<li>✗ Share data with advertisers</li>
+<li>✗ Access bank accounts directly</li>
+<li>✗ Require bank passwords</li>
+</ul></div>
+<div>
+<h3 class="text-xl font-bold mb-4 text-green-400">What We DO</h3>
+<ul class="space-y-2 text-gray-300">
+<li>✓ Encrypt all data with bank-level security</li>
+<li>✓ Process SMS locally on your device</li>
+<li>✓ Offer optional encrypted cloud backup</li>
+<li>✓ Give you complete data control</li>
+<li>✓ Provide easy data export and deletion</li>
+</ul></div>
+</p></div>
+</p></div>
+</p></div>
+</p></div>
+<p>    <!-- CTA Section --></p>
+<div class="py-20 gradient-cta text-white">
+<div class="container mx-auto px-4 text-center">
+<h2 class="text-4xl font-bold mb-4">Ready to Take Control of Your Finances?</h2>
+<p class="text-xl mb-8 max-w-2xl mx-auto">
+                Join thousands of users who are already making smarter financial decisions with EZer
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<p>                    Download Now</p>
+<p>                    Learn More</p></div>
+</p></div>
+</p></div>
+<p>    <!-- Footer --></p>
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid md:grid-cols-4 gap-8 mb-8">
+<div>
+<div class="flex items-center gap-3 mb-4">
+                        <img src="logo-192.png" alt="EZer Logo" class="h-12 w-12" width="48" height="48" loading="lazy"></p>
+<div class="text-2xl font-bold">EZer</div>
+</p></div>
+<p class="text-gray-400 text-sm mb-4">Your Smart Finance Companion. Helping you achieve your financial goals.</p>
+<p class="text-indigo-400 font-semibold">Launching November 12, 2025</p>
+</p></div>
+<div>
+<h4 class="font-semibold mb-4">Product</h4>
+<div class="space-y-2 text-gray-400 text-sm">
+                        <a href="/features" class="block hover:text-white">Features</a><br />
+                        <a href="/security" class="block hover:text-white">Security</a><br />
+                        <a href="/pricing" class="block hover:text-white">Pricing</a>
+                    </div>
+</p></div>
+<div>
+<h4 class="font-semibold mb-4">Legal</h4>
+<div class="space-y-2 text-gray-400 text-sm">
+                        <a href="/privacy-android" class="block hover:text-white">Privacy Policy</a><br />
+                        <a href="/terms" class="block hover:text-white">Terms &amp; Conditions</a>
+                    </div>
+</p></div>
+<div>
+<h4 class="font-semibold mb-4">Support</h4>
+<div class="space-y-2 text-gray-400 text-sm">
+                        <a href="/feedback" class="block hover:text-white">Feedback</a><br />
+                        <a href="/report" class="block hover:text-white">Report Issue</a><br />
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-white">Contact Us</a>
+                    </div>
+</p></div>
+</p></div>
+<div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+<p>© 2025 EZer. All rights reserved.</p>
+<p class="mt-2">Email: <a href="mailto:support@ezerapp.com">support@ezerapp.com</a> | Website: <a href="https://www.ezerapp.com" rel="nofollow">https://www.ezerapp.com</a></p>
+</p></div>
+</p></div>
+</footer>
+<p>    <!-- Mobile menu toggle - Minimal JS --></p>
+<p>        document.getElementById(&#8216;mobile-menu-btn&#8217;).addEventListener(&#8216;click&#8217;, function() {<br />
+            document.getElementById(&#8216;mobile-menu&#8217;).classList.toggle(&#8216;hidden&#8217;);<br />
+        });</p>
