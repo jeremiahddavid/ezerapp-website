@@ -16,6 +16,44 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
+
+        /* Plus Badge - matches app styling exactly */
+        .plus-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px 14px;
+            background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%);
+            border-radius: 50px;
+            border: 1.2px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+            font-weight: 700;
+            color: #4C1D95;
+            font-size: inherit;
+            line-height: 1;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .plus-badge::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 35%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+            animation: shimmer 1.4s infinite;
+        }
+        @keyframes shimmer {
+            0% { left: -35%; }
+            100% { left: 135%; }
+        }
+        .plus-badge-sm {
+            padding: 2px 10px;
+            font-size: 0.75rem;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -108,10 +146,10 @@
                 </p>
                 <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
                     <li><strong>Free Plan:</strong> Basic features with usage limits (3 accounts, 3 budgets, 2 goals, etc.) - free forever</li>
-                    <li><strong>Plus Plan:</strong> Unlimited features at J$699/month for Jamaica</li>
+                    <li><strong><span class="plus-badge plus-badge-sm">Plus</span> Plan:</strong> Unlimited features at J$699/month for Jamaica</li>
                 </ul>
                 <p class="text-gray-700 mb-4">
-                    By subscribing to Plus, you agree to:
+                    By subscribing to <span class="plus-badge plus-badge-sm">Plus</span>, you agree to:
                 </p>
                 <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
                     <li>Payment is charged immediately upon subscription</li>
@@ -119,9 +157,9 @@
                     <li>Cancellation at any time through your app store</li>
                 </ul>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">6. Plus Days Bank & Referral Program</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">6. <span class="plus-badge plus-badge-sm">Plus</span> Days Bank & Referral Program</h2>
                 <p class="text-gray-700 mb-4">
-                    EZer offers a Plus Days Bank where you can earn free Plus days:
+                    EZer offers a <span class="plus-badge plus-badge-sm">Plus</span> Days Bank where you can earn free <span class="plus-badge plus-badge-sm">Plus</span> days:
                 </p>
                 <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
                     <li>New users receive 30 days banked as a welcome bonus</li>

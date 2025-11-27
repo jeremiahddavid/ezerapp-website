@@ -189,6 +189,48 @@
         .btn-primary:hover {
             transform: scale(1.02);
         }
+
+        /* Plus Badge - matches app styling exactly */
+        .plus-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px 14px;
+            background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%);
+            border-radius: 50px;
+            border: 1.2px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+            font-weight: 700;
+            color: #4C1D95;
+            font-size: inherit;
+            line-height: 1;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .plus-badge::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 35%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+            animation: shimmer 1.4s infinite;
+        }
+        @keyframes shimmer {
+            0% { left: -35%; }
+            100% { left: 135%; }
+        }
+        .plus-badge-sm {
+            padding: 2px 10px;
+            font-size: 0.75rem;
+        }
+        .plus-badge-lg {
+            padding: 6px 18px;
+            font-size: 1.1rem;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -267,7 +309,7 @@
                 <!-- Free Badge -->
                 <div class="inline-block bg-white/30 backdrop-blur-sm px-8 py-4 rounded-2xl mb-8">
                     <div class="text-3xl font-bold">Free to Use</div>
-                    <div class="text-sm text-indigo-100">Upgrade to Plus for UY$199/month</div>
+                    <div class="text-sm text-indigo-100">Upgrade to <span class="plus-badge plus-badge-sm">Plus</span> for UY$199/month</div>
                 </div>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -461,7 +503,7 @@
                     </div>
 
                     <div class="text-center mb-6 mt-2">
-                        <div class="text-lg font-semibold text-indigo-200 mb-2">Plus</div>
+                        <div class="mb-2"><span class="plus-badge">Plus</span></div>
                         <div class="text-5xl font-bold mb-2">UY$199</div>
                         <div class="text-indigo-200">per month</div>
                     </div>
@@ -498,7 +540,7 @@
                     </ul>
 
                     <a href="https://play.google.com/store/apps/details?id=com.ezer.ezer&gl=uy" class="block w-full bg-white text-indigo-600 py-4 rounded-xl font-bold text-center hover:bg-indigo-50 transition-colors shadow-lg">
-                        Upgrade to Plus
+                        Upgrade to <span class="plus-badge plus-badge-sm">Plus</span>
                     </a>
                     <p class="text-center text-indigo-200 text-sm mt-3">Cancel anytime</p>
                 </div>
@@ -511,9 +553,9 @@
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold mb-4">Plus Days Bank</h2>
+                    <h2 class="text-4xl font-bold mb-4"><span class="plus-badge plus-badge-lg">Plus</span> Days Bank</h2>
                     <p class="text-xl text-gray-600">
-                        Earn free Plus days that unlock on your 1-year anniversary
+                        Earn free <span class="plus-badge plus-badge-sm">Plus</span> days that unlock on your 1-year anniversary
                     </p>
                 </div>
 
@@ -564,8 +606,8 @@
                 <div class="bg-white/80 p-6 rounded-xl text-center">
                     <p class="text-gray-600">
                         <i data-lucide="info" class="w-5 h-5 inline mr-2 text-indigo-600"></i>
-                        Your Plus Days Bank unlocks automatically on your 1-year anniversary with EZer.
-                        Until then, enjoy the Free tier or upgrade to Plus anytime.
+                        Your <span class="plus-badge plus-badge-sm">Plus</span> Days Bank unlocks automatically on your 1-year anniversary with EZer.
+                        Until then, enjoy the Free tier or upgrade to <span class="plus-badge plus-badge-sm">Plus</span> anytime.
                     </p>
                 </div>
             </div>
@@ -661,7 +703,7 @@
                     </div>
                     <p class="text-gray-400 text-sm mb-4">Your Smart Finance Companion in Uruguay.</p>
                     <p class="text-green-400 font-semibold">Free to use</p>
-                    <p class="text-indigo-400 text-sm">Plus: UY$199/month</p>
+                    <p class="text-sm"><span class="plus-badge plus-badge-sm">Plus</span> <span class="text-gray-400">UY$199/month</span></p>
                 </div>
 
                 <div>
