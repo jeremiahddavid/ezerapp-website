@@ -1,5 +1,4 @@
-# Ignore everything except HTML files
-*.js
+# Ignore everything except HTML files and form handler JS
 *.sh
 *.py
 *.md
@@ -13,3 +12,5 @@ deploy*.js
 
 # Keep these
 !.gitignore
+!form-handler.js
+!form-handler-v2.js
