@@ -23,52 +23,8 @@
     </style>
 </head>
 <body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center gap-3">
-                    <img src="logo-192.png" alt="EZer Logo" class="h-10 w-10">
-                    <div>
-                        <div class="text-2xl font-bold text-indigo-600">EZer</div>
-                        <div class="text-xs text-gray-500 hidden sm:block -mt-1">Helping you.</div>
-                    </div>
-                </div>
-                <div class="hidden lg:flex gap-6">
-                    <a href="index.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Home</a>
-                    <a href="features.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Features</a>
-                    <a href="security.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Security</a>
-                    <a href="pricing.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Pricing</a>
-                    <a href="blog.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Blog</a>
-                    <a href="privacy-android.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Privacy Policy</a>
-                    <a href="terms.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Terms & Conditions</a>
-                    <a href="feedback.html" class="px-3 py-2 rounded-lg transition-colors text-sm text-gray-600 hover:text-indigo-600">Feedback</a>
-                    <a href="report.html" class="px-3 py-2 rounded-lg transition-colors text-sm bg-indigo-100 text-indigo-600 font-semibold">Report Issue</a>
-                </div>
-            </div>
-        </div>
-
-                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu" onclick="var menu = document.getElementById('mobile-menu'); menu.style.display = menu.style.display === 'none' ? 'block' : 'none';">
-                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" style="display: none;" class="lg:hidden py-4 border-t bg-white">
-                <a href="index.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Home</a>
-                <a href="features.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Features</a>
-                <a href="security.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Security</a>
-                <a href="pricing.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Pricing</a>
-                <a href="blog.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Blog</a>
-                <a href="privacy-android.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Privacy Policy</a>
-                <a href="terms.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Terms & Conditions</a>
-                <a href="feedback.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Feedback</a>
-                <a href="report.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Report Issue</a>
-            </div>
-        </div>
-    </nav>
+    <!-- Shared Header -->
+    <div id="shared-header"></div>
 
     <!-- Main Content -->
     <div class="container mx-auto px-4 py-12 max-w-2xl">
@@ -276,52 +232,8 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 mt-20">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="logo-192.png" alt="EZer Logo" class="h-12 w-12">
-                        <div class="text-2xl font-bold">EZer</div>
-                    </div>
-                    <p class="text-gray-400 text-sm mb-4">Your Smart Finance Companion. Helping you achieve your financial goals.</p>
-                    <p class="text-indigo-400 font-semibold">Launching November 12, 2025</p>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Product</h4>
-                    <div class="space-y-2 text-gray-400 text-sm">
-                        <a href="features.html" class="block hover:text-white">Features</a>
-                        <a href="security.html" class="block hover:text-white">Security</a>
-                        <a href="pricing.html" class="block hover:text-white">Pricing</a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Legal</h4>
-                    <div class="space-y-2 text-gray-400 text-sm">
-                        <a href="privacy.html" class="block hover:text-white">Privacy Policy</a>
-                        <a href="terms.html" class="block hover:text-white">Terms & Conditions</a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Support</h4>
-                    <div class="space-y-2 text-gray-400 text-sm">
-                        <a href="feedback.html" class="block hover:text-white">Feedback</a>
-                        <a href="report.html" class="block hover:text-white">Report Issue</a>
-                        <a href="mailto:support@ezerapp.com" class="block hover:text-white">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-                <p>© 2025 EZer. All rights reserved.</p>
-                <p class="mt-2">Email: support@ezerapp.com | Website: https://www.ezerapp.com</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Shared Footer -->
+    <div id="shared-footer"></div>
 
     <!-- Form Handler Script -->
     <script src="form-handler-v2.js"></script>
@@ -330,6 +242,12 @@
             // Call the form handler with form type 'bug'
             handleFormSubmit(event, 'bug');
         }
+    </script>
+
+    <!-- Shared Navigation Script -->
+    <script src="/js/shared-nav.js"></script>
+    <script>
+        initSharedNav({ activePage: null });
     </script>
 </body>
 </html>

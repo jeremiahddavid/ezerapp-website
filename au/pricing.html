@@ -153,15 +153,18 @@
             <div class="flex justify-between items-center h-16">
                 <a href="index.html" class="flex items-center gap-3">
                     <img src="../logo-192.png" alt="EZer Logo" class="h-10 w-10">
-                    <div class="text-2xl font-bold text-indigo-600">EZer</div>
+                    <div>
+                        <div class="text-2xl font-bold text-indigo-600">EZer</div>
+                        <div class="text-xs text-gray-500 hidden sm:block -mt-1">Helping you.</div>
+                    </div>
                 </a>
-                <div class="hidden md:flex gap-4 items-center">
-                    <a href="index.html" class="px-3 py-2 text-gray-600 hover:text-indigo-600">Home</a>
-                    <a href="features.html" class="px-3 py-2 text-gray-600 hover:text-indigo-600">Features</a>
-                    <a href="pricing.html" class="px-3 py-2 bg-indigo-100 text-indigo-600 rounded-lg font-semibold">Pricing</a>
+                <div class="hidden lg:flex gap-4 items-center">
+                    <a href="index.html" class="px-3 py-2 text-gray-600 hover:text-indigo-600 text-sm">Home</a>
+                    <a href="features.html" class="px-3 py-2 text-gray-600 hover:text-indigo-600 text-sm">Features</a>
+                    <a href="pricing.html" class="px-3 py-2 bg-indigo-100 text-indigo-600 rounded-lg font-semibold text-sm">Pricing</a>
                     <!-- Privacy Dropdown -->
                     <div class="relative group">
-                        <button class="px-3 py-2 text-gray-600 hover:text-indigo-600 flex items-center gap-1">
+                        <button class="px-3 py-2 text-gray-600 hover:text-indigo-600 flex items-center gap-1 text-sm">
                             Privacy
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
@@ -171,7 +174,28 @@
                             <a href="../privacy-android.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 rounded-b-lg">Privacy Policy (Android)</a>
                         </div>
                     </div>
+                    <a href="terms.html" class="px-3 py-2 text-gray-600 hover:text-indigo-600 text-sm">Terms</a>
+                    <a href="/blog.html" class="px-3 py-2 text-gray-600 hover:text-indigo-600 text-sm">Blog</a>
                 </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t">
+                <a href="index.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Home</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Features</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg bg-indigo-100 text-indigo-600 font-semibold">Pricing</a>
+                <div class="px-4 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wide">Privacy Policies</div>
+                <a href="privacy.html" class="block px-4 py-3 pl-6 rounded-lg text-gray-600 hover:bg-gray-50">General Privacy Policy</a>
+                <a href="../privacy-ios.html" class="block px-4 py-3 pl-6 rounded-lg text-gray-600 hover:bg-gray-50">Privacy Policy (iOS)</a>
+                <a href="../privacy-android.html" class="block px-4 py-3 pl-6 rounded-lg text-gray-600 hover:bg-gray-50">Privacy Policy (Android)</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Terms</a>
+                <a href="/blog.html" class="block px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-50">Blog</a>
             </div>
         </div>
     </nav>
@@ -203,7 +227,7 @@
 
                     <div class="flex items-center gap-3">
                         <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
-                        <span>Up to <strong>1 account</strong></span>
+                        <span>Up to <strong>3 accounts</strong></span>
                     </div>
                     <div class="flex items-center gap-3">
                         <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
@@ -277,7 +301,7 @@
 
                     <div class="flex items-center gap-3">
                         <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
-                        <span><strong>2</strong> accounts</span>
+                        <span><strong>Unlimited</strong> accounts</span>
                     </div>
                     <div class="flex items-center gap-3">
                         <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
@@ -297,7 +321,7 @@
                     </div>
                     <div class="flex items-center gap-3">
                         <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
-                        <span><strong>Household sharing</strong> (up to 2 members/ 2 accounts)</span>
+                        <span><strong>Household sharing</strong> (up to 6 members)</span>
                     </div>
                     <div class="flex items-center gap-3">
                         <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
@@ -310,6 +334,10 @@
                     <div class="flex items-center gap-3">
                         <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
                         <span><strong>Bill reminders</strong> & notifications</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
+                        <span><strong>Weekly digest</strong> emails</span>
                     </div>
                 </div>
 
@@ -336,8 +364,8 @@
                     <tbody class="divide-y">
                         <tr>
                             <td class="py-4 px-6">Accounts</td>
-                            <td class="text-center py-4 px-6">1</td>
-                            <td class="text-center py-4 px-6 text-indigo-600 font-semibold">2</td>
+                            <td class="text-center py-4 px-6">3</td>
+                            <td class="text-center py-4 px-6 text-indigo-600 font-semibold">Unlimited</td>
                         </tr>
                         <tr class="bg-gray-50">
                             <td class="py-4 px-6">Budgets</td>
@@ -387,7 +415,7 @@
                         <tr>
                             <td class="py-4 px-6">Household Sharing</td>
                             <td class="text-center py-4 px-6"><i data-lucide="x" class="w-5 h-5 text-gray-400 inline"></i></td>
-                            <td class="text-center py-4 px-6">Up to 2 members/ 2 accounts</td>
+                            <td class="text-center py-4 px-6">Up to 6 members</td>
                         </tr>
                         <tr class="bg-gray-50">
                             <td class="py-4 px-6">Excel/PDF Export</td>
@@ -399,52 +427,76 @@
                             <td class="text-center py-4 px-6"><i data-lucide="x" class="w-5 h-5 text-gray-400 inline"></i></td>
                             <td class="text-center py-4 px-6"><i data-lucide="check" class="w-5 h-5 text-green-500 inline"></i></td>
                         </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-4 px-6">Weekly Digest</td>
+                            <td class="text-center py-4 px-6"><i data-lucide="x" class="w-5 h-5 text-gray-400 inline"></i></td>
+                            <td class="text-center py-4 px-6"><i data-lucide="check" class="w-5 h-5 text-green-500 inline"></i></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
         </div>
 
-        <!-- Plus Days Bank -->
-        <div class="max-w-4xl mx-auto">
-            <div class="bg-gradient-to-r from-purple-100 to-pink-100 p-8 rounded-2xl">
-                <div class="text-center mb-8">
-                    <h3 class="text-2xl font-bold mb-2"><span class="plus-badge">Plus</span> Days Bank</h3>
-                    <p class="text-gray-600">Earn free <span class="plus-badge plus-badge-sm">Plus</span> days that unlock on your 1-year anniversary</p>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-6 mb-6">
-                    <div class="bg-white p-6 rounded-xl shadow">
-                        <div class="text-2xl font-bold text-purple-600 mb-2">Up to 60 Days</div>
-                        <h4 class="font-semibold mb-2">New User Bonus</h4>
-                        <p class="text-gray-600 text-sm">30 days welcome bonus + 30 more if you use a referral code. Banked until your 1-year anniversary.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow">
-                        <div class="text-2xl font-bold text-pink-600 mb-2">31 Days Per Referral</div>
-                        <h4 class="font-semibold mb-2">Refer Friends</h4>
-                        <p class="text-gray-600 text-sm">Earn 31 days per successful referral (up to 10). Days added to your bank.</p>
-                    </div>
-                </div>
-
-                <div class="bg-white/80 p-4 rounded-lg text-center text-sm text-gray-600">
-                    Your <span class="plus-badge plus-badge-sm">Plus</span> Days Bank unlocks automatically on your 1-year anniversary with EZer.
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8 mt-12">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-gray-400">&copy; 2025 EZer. All rights reserved.</p>
-            <div class="mt-4 space-x-4 text-sm text-gray-500">
-                <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
-                <a href="terms.html" class="hover:text-white">Terms</a>
-                <a href="/feedback.html" class="hover:text-white">Feedback</a>
-                <a href="/report.html" class="hover:text-white">Report Issue</a>
+    <footer class="bg-gray-900 text-white py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="../logo-192.png" alt="EZer Logo" class="h-12 w-12">
+                        <div class="text-2xl font-bold">EZer</div>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-4">Your Smart Finance Companion in Australia.</p>
+                    <p class="text-green-400 font-semibold">Free to use</p>
+                    <p class="text-sm text-gray-400">Plus A$4.99/month</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <a href="features.html" class="block hover:text-white transition-colors">Features</a>
+                        <a href="pricing.html" class="block hover:text-white transition-colors">Pricing</a>
+                        <a href="/blog.html" class="block hover:text-white transition-colors">Blog</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <a href="privacy.html" class="block hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="terms.html" class="block hover:text-white transition-colors">Terms & Conditions</a>
+                        <a href="/data-deletion.html" class="block hover:text-white transition-colors">Data Deletion</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <a href="/feedback.html" class="block hover:text-white transition-colors">Feedback</a>
+                        <a href="/report.html" class="block hover:text-white transition-colors">Report Issue</a>
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-white transition-colors">Contact Us</a>
+                        <a href="../" class="block hover:text-white transition-colors">Change Country</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 EZer. All rights reserved.</p>
+                <p class="mt-2">Email: support@ezerapp.com | Website: https://www.ezerapp.com</p>
             </div>
         </div>
     </footer>
 
-    <script>lucide.createIcons();</script>
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>

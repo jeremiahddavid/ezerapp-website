@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Deletion Request - EZer</title>
+    <meta name="description" content="Request deletion of your personal data from EZer. Learn how to delete your account data in-app or via email request.">
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -13,189 +14,309 @@
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.ezerapp.com/data-deletion.html">
-    <meta property="og:title" content="EZer - Your Smart Finance Companion">
+    <meta property="og:title" content="Data Deletion Request - EZer">
+    <meta property="og:description" content="Request deletion of your personal data from EZer.">
     <meta property="og:image" content="https://www.ezerapp.com/logo-512.png">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+
+        .nav-link { transition: all 0.2s ease; }
+        .nav-link:hover { color: #4f46e5; }
+    </style>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <a href="index.html" class="back-link">← Back to Home</a>
-            <h1>🗑️ Data Deletion Request</h1>
-            <p class="tagline">Request deletion of your personal data</p>
-        </header>
+<body class="bg-gray-50">
+    <!-- Shared Header -->
+    <div id="shared-header"></div>
 
-        <div class="content">
-            <h2>How to Delete Your Data</h2>
+    <!-- Page Header -->
+    <div class="bg-gradient-to-r from-red-600 to-pink-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Data Deletion Request</h1>
+            <p class="text-xl text-red-100">Request deletion of your personal data</p>
+        </div>
+    </div>
 
-            <h3>Option 1: Delete Data In-App (Recommended)</h3>
-            <p>You can delete all your data directly from the EZer app:</p>
-            <ol>
-                <li>Open EZer app on your Android device</li>
-                <li>Go to <strong>Settings → Privacy → Delete Account</strong></li>
-                <li>Review what will be deleted</li>
-                <li>Tap <strong>"Delete All Data"</strong></li>
-                <li>Confirm by entering your PIN or using biometric authentication</li>
-            </ol>
-
-            <div class="info-box warning">
-                <h4>⚠️ Important</h4>
-                <p>Deleting your data in-app is <strong>immediate and permanent</strong>. This action cannot be undone.</p>
-            </div>
-
-            <h3>What Gets Deleted:</h3>
-            <ul>
-                <li>✅ All financial transactions and records</li>
-                <li>✅ Account information</li>
-                <li>✅ Budget and goal data</li>
-                <li>✅ Scanned receipts and images</li>
-                <li>✅ App preferences and settings</li>
-                <li>✅ Local encrypted database</li>
-            </ul>
-
-            <h3>What Does NOT Get Deleted Automatically:</h3>
-            <ul>
-                <li>❌ Cloud backups in your Google Drive (you must delete these separately)</li>
-                <li>❌ Exported files you've saved to your device</li>
-            </ul>
-
-            <h3>To Delete Cloud Backups:</h3>
-            <ol>
-                <li>Open Google Drive on your device or computer</li>
-                <li>Navigate to <strong>My Drive → EZer Backups</strong></li>
-                <li>Select all backup files</li>
-                <li>Click <strong>Delete</strong> or move to Trash</li>
-                <li>Empty Google Drive Trash to permanently delete</li>
-            </ol>
-
-            <hr>
-
-            <h3>Option 2: Request Data Deletion via Email</h3>
-            <p>If you cannot access the app or need assistance with data deletion, you can request deletion via email:</p>
-
-            <div class="contact-box">
-                <h4>📧 Email Data Deletion Request</h4>
-                <p><strong>To:</strong> <a href="mailto:privacy@ezerapp.com">privacy@ezerapp.com</a></p>
-                <p><strong>Subject:</strong> Data Deletion Request</p>
-
-                <h4>Include the following information:</h4>
-                <ol>
-                    <li>Your name (as registered in the app)</li>
-                    <li>Email address associated with your account</li>
-                    <li>Device ID (if known, found in Settings → About)</li>
-                    <li>Confirmation that you want to delete all data</li>
-                </ol>
-
-                <div class="email-template">
-                    <h5>Email Template:</h5>
-                    <pre>
-Subject: Data Deletion Request
-
-Dear EZer Privacy Team,
-
-I am requesting the deletion of all my personal data associated with my EZer account.
-
-Name: [Your Name]
-Email: [Your Email]
-Device ID: [Your Device ID or "Unknown"]
-
-I understand that this action is permanent and cannot be undone.
-
-Thank you,
-[Your Name]
-                    </pre>
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+        <!-- Option 1: In-App -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold">Option 1: Delete Data In-App</h2>
+                    <span class="text-green-600 font-semibold text-sm">Recommended</span>
                 </div>
             </div>
 
-            <h3>Response Time:</h3>
-            <ul>
-                <li>We will confirm receipt of your request within <strong>48 hours</strong></li>
-                <li>Data deletion will be completed within <strong>7 business days</strong></li>
-                <li>You will receive confirmation once deletion is complete</li>
-            </ul>
+            <p class="text-gray-600 mb-6">You can delete all your data directly from the EZer app:</p>
 
-            <hr>
+            <ol class="space-y-3 mb-6">
+                <li class="flex items-start gap-3">
+                    <span class="flex-shrink-0 w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-sm font-bold">1</span>
+                    <span>Open EZer app on your device</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="flex-shrink-0 w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                    <span>Go to <strong>Settings → Privacy → Delete Account</strong></span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="flex-shrink-0 w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-sm font-bold">3</span>
+                    <span>Review what will be deleted</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="flex-shrink-0 w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-sm font-bold">4</span>
+                    <span>Tap <strong>"Delete All Data"</strong></span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="flex-shrink-0 w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-sm font-bold">5</span>
+                    <span>Confirm by entering your PIN or using biometric authentication</span>
+                </li>
+            </ol>
 
-            <h2>Data Retention Policy</h2>
-
-            <h3>Local Data (On Your Device):</h3>
-            <p>All data is stored locally on your Android device. When you delete data in-app or uninstall EZer, all local data is immediately removed from your device.</p>
-
-            <h3>Cloud Backups (Google Drive):</h3>
-            <p>Cloud backups are stored in <strong>your personal Google Drive account</strong>, not on our servers. You have full control over these backups and can delete them anytime from Google Drive.</p>
-
-            <h3>Analytics Data:</h3>
-            <p>If you opted into analytics, we collect anonymized, aggregated usage data. This data does NOT include:</p>
-            <ul>
-                <li>❌ Your financial transactions</li>
-                <li>❌ Personal information</li>
-                <li>❌ SMS content</li>
-                <li>❌ Any identifiable data</li>
-            </ul>
-            <p>Analytics data is automatically deleted after <strong>90 days</strong>.</p>
-
-            <h3>Legal Retention:</h3>
-            <p>We may retain minimal data if required by law for:</p>
-            <ul>
-                <li>Compliance with legal obligations</li>
-                <li>Resolving disputes</li>
-                <li>Enforcing our Terms of Service</li>
-            </ul>
-            <p>Such retention is limited to the minimum required by law.</p>
-
-            <hr>
-
-            <h2>GDPR Rights (For EU Users)</h2>
-            <p>If you are in the European Union, you have the following rights under GDPR:</p>
-            <ul>
-                <li><strong>Right to Access:</strong> Request a copy of your data</li>
-                <li><strong>Right to Rectification:</strong> Correct inaccurate data</li>
-                <li><strong>Right to Erasure:</strong> Request deletion of your data</li>
-                <li><strong>Right to Portability:</strong> Export your data in a machine-readable format</li>
-                <li><strong>Right to Object:</strong> Object to certain data processing</li>
-                <li><strong>Right to Restriction:</strong> Restrict processing of your data</li>
-            </ul>
-            <p>To exercise any of these rights, contact us at <a href="mailto:dpo@ezerapp.com">dpo@ezerapp.com</a></p>
-
-            <hr>
-
-            <h2>Frequently Asked Questions</h2>
-
-            <h3>Q: Will deleting data in-app also delete my cloud backups?</h3>
-            <p><strong>A:</strong> No. Cloud backups are stored in your Google Drive and must be deleted separately from Google Drive.</p>
-
-            <h3>Q: Can I recover my data after deletion?</h3>
-            <p><strong>A:</strong> No. Data deletion is permanent and cannot be undone. If you have cloud backups and haven't deleted them, you can restore from those backups.</p>
-
-            <h3>Q: What happens if I just uninstall the app?</h3>
-            <p><strong>A:</strong> Uninstalling removes all local data from your device. Cloud backups remain in your Google Drive. If you reinstall EZer and sign in with the same Google account, you can restore from cloud backups.</p>
-
-            <h3>Q: Does EZer keep any data on its servers after I delete my account?</h3>
-            <p><strong>A:</strong> EZer is a local-first app. We don't store your financial data on our servers. All your data is stored locally on your device or in your personal Google Drive (if you enabled cloud backup).</p>
-
-            <h3>Q: How do I export my data before deleting?</h3>
-            <p><strong>A:</strong> Before deleting, go to <strong>Settings → Data & Export</strong>. Export your data in CSV, JSON, Excel, or PDF format. Save the exported files to your device.</p>
-
-            <hr>
-
-            <h2>Contact Us</h2>
-            <p>If you have questions about data deletion or privacy:</p>
-            <ul>
-                <li><strong>Privacy:</strong> <a href="mailto:privacy@ezerapp.com">privacy@ezerapp.com</a></li>
-                <li><strong>Support:</strong> <a href="mailto:support@ezerapp.com">support@ezerapp.com</a></li>
-                <li><strong>Data Protection Officer:</strong> <a href="mailto:dpo@ezerapp.com">dpo@ezerapp.com</a></li>
-            </ul>
-
-            <div class="info-box">
-                <p><strong>Response Time:</strong> We typically respond to data deletion requests within 48 hours and complete the process within 7 business days.</p>
+            <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                <div class="flex items-center gap-2 mb-2">
+                    <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                    <h4 class="font-bold text-amber-800">Important</h4>
+                </div>
+                <p class="text-amber-700 text-sm">Deleting your data in-app is <strong>immediate and permanent</strong>. This action cannot be undone.</p>
             </div>
         </div>
 
-        <footer>
-            <p><a href="index.html">← Back to Home</a> | <a href="privacy-policy.html">Privacy Policy</a></p>
-            <p>&copy; 2025 EZer. All rights reserved.</p>
-        </footer>
+        <!-- What Gets Deleted -->
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h3 class="text-lg font-bold text-green-700 mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                    What Gets Deleted
+                </h3>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> All financial transactions and records</li>
+                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Account information</li>
+                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Budget and goal data</li>
+                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Scanned receipts and images</li>
+                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> App preferences and settings</li>
+                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Local encrypted database</li>
+                </ul>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-6">
+                <h3 class="text-lg font-bold text-red-700 mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                    NOT Deleted Automatically
+                </h3>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Cloud backups in Google Drive</li>
+                    <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Exported files saved to device</li>
+                </ul>
+                <p class="mt-4 text-xs text-gray-500">You must delete these separately from Google Drive.</p>
+            </div>
+        </div>
+
+        <!-- Option 2: Email -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold">Option 2: Request via Email</h2>
+            </div>
+
+            <p class="text-gray-600 mb-6">If you cannot access the app or need assistance, request deletion via email:</p>
+
+            <div class="bg-gray-50 rounded-xl p-6 mb-6">
+                <p class="mb-2"><strong>To:</strong> <a href="mailto:privacy@ezerapp.com" class="text-indigo-600 hover:underline">privacy@ezerapp.com</a></p>
+                <p><strong>Subject:</strong> Data Deletion Request</p>
+            </div>
+
+            <h4 class="font-bold mb-3">Include the following information:</h4>
+            <ul class="space-y-2 text-sm text-gray-700 mb-6">
+                <li class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
+                    Your name (as registered in the app)
+                </li>
+                <li class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
+                    Email address associated with your account
+                </li>
+                <li class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
+                    Device ID (if known, found in Settings → About)
+                </li>
+                <li class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
+                    Confirmation that you want to delete all data
+                </li>
+            </ul>
+
+            <div class="bg-gray-900 text-gray-100 rounded-xl p-6 font-mono text-sm overflow-x-auto">
+                <p class="text-gray-400 mb-2">// Email Template</p>
+                <p class="mb-4">Subject: Data Deletion Request</p>
+                <p>Dear EZer Privacy Team,</p>
+                <p class="mt-2">I am requesting the deletion of all my personal data associated with my EZer account.</p>
+                <p class="mt-4">Name: [Your Name]</p>
+                <p>Email: [Your Email]</p>
+                <p>Device ID: [Your Device ID or "Unknown"]</p>
+                <p class="mt-4">I understand that this action is permanent and cannot be undone.</p>
+                <p class="mt-4">Thank you,<br>[Your Name]</p>
+            </div>
+        </div>
+
+        <!-- Response Time -->
+        <div class="bg-indigo-50 rounded-2xl p-6 mb-8">
+            <h3 class="text-lg font-bold text-indigo-800 mb-4">Response Time</h3>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-semibold">Confirmation</p>
+                        <p class="text-sm text-gray-600">Within 48 hours</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-semibold">Completion</p>
+                        <p class="text-sm text-gray-600">Within 7 business days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GDPR Rights -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold mb-6">GDPR Rights (For EU Users)</h2>
+            <p class="text-gray-600 mb-6">If you are in the European Union, you have the following rights under GDPR:</p>
+
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="flex items-start gap-3">
+                    <span class="text-indigo-600 font-bold">→</span>
+                    <div>
+                        <p class="font-semibold">Right to Access</p>
+                        <p class="text-sm text-gray-600">Request a copy of your data</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-indigo-600 font-bold">→</span>
+                    <div>
+                        <p class="font-semibold">Right to Rectification</p>
+                        <p class="text-sm text-gray-600">Correct inaccurate data</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-indigo-600 font-bold">→</span>
+                    <div>
+                        <p class="font-semibold">Right to Erasure</p>
+                        <p class="text-sm text-gray-600">Request deletion of your data</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-indigo-600 font-bold">→</span>
+                    <div>
+                        <p class="font-semibold">Right to Portability</p>
+                        <p class="text-sm text-gray-600">Export data in machine-readable format</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-indigo-600 font-bold">→</span>
+                    <div>
+                        <p class="font-semibold">Right to Object</p>
+                        <p class="text-sm text-gray-600">Object to certain data processing</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-indigo-600 font-bold">→</span>
+                    <div>
+                        <p class="font-semibold">Right to Restriction</p>
+                        <p class="text-sm text-gray-600">Restrict processing of your data</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mt-6 text-sm text-gray-600">To exercise any of these rights, contact us at <a href="mailto:dpo@ezerapp.com" class="text-indigo-600 hover:underline">dpo@ezerapp.com</a></p>
+        </div>
+
+        <!-- FAQ -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+
+            <div class="space-y-6">
+                <div>
+                    <h3 class="font-bold text-gray-800 mb-2">Will deleting data in-app also delete my cloud backups?</h3>
+                    <p class="text-gray-600">No. Cloud backups are stored in your Google Drive and must be deleted separately from Google Drive.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 mb-2">Can I recover my data after deletion?</h3>
+                    <p class="text-gray-600">No. Data deletion is permanent and cannot be undone. If you have cloud backups and haven't deleted them, you can restore from those backups.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 mb-2">What happens if I just uninstall the app?</h3>
+                    <p class="text-gray-600">Uninstalling removes all local data from your device. Cloud backups remain in your Google Drive. If you reinstall EZer and sign in with the same Google account, you can restore from cloud backups.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 mb-2">Does EZer keep any data on its servers after I delete my account?</h3>
+                    <p class="text-gray-600">EZer is a local-first app. We don't store your financial data on our servers. All your data is stored locally on your device or in your personal Google Drive (if you enabled cloud backup).</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 mb-2">How do I export my data before deleting?</h3>
+                    <p class="text-gray-600">Before deleting, go to <strong>Settings → Data & Export</strong>. Export your data in CSV, JSON, Excel, or PDF format. Save the exported files to your device.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="bg-gray-900 text-white rounded-2xl p-8">
+            <h2 class="text-2xl font-bold mb-6">Contact Us</h2>
+            <p class="text-gray-300 mb-6">If you have questions about data deletion or privacy:</p>
+
+            <div class="grid md:grid-cols-3 gap-4">
+                <a href="mailto:privacy@ezerapp.com" class="bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition-colors">
+                    <p class="font-semibold text-indigo-400">Privacy</p>
+                    <p class="text-sm text-gray-400">privacy@ezerapp.com</p>
+                </a>
+                <a href="mailto:support@ezerapp.com" class="bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition-colors">
+                    <p class="font-semibold text-indigo-400">Support</p>
+                    <p class="text-sm text-gray-400">support@ezerapp.com</p>
+                </a>
+                <a href="mailto:dpo@ezerapp.com" class="bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition-colors">
+                    <p class="font-semibold text-indigo-400">Data Protection Officer</p>
+                    <p class="text-sm text-gray-400">dpo@ezerapp.com</p>
+                </a>
+            </div>
+        </div>
     </div>
+
+    <!-- Shared Footer -->
+    <div id="shared-footer"></div>
+
+    <!-- Shared Navigation Script -->
+    <script src="/js/shared-nav.js"></script>
+    <script>
+        initSharedNav({ activePage: null });
+    </script>
 </body>
 </html>
