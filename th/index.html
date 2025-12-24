@@ -628,29 +628,40 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="site-header">
-        <div class="country-banner">
-            <span class="flag">🇹🇭</span>
-            You're viewing EZer for <strong>Thailand</strong>
-            <a href="../">Change country</a>
-        </div>
-        <nav class="main-nav">
-            <a href="/" class="nav-logo">
-                <div class="nav-logo-placeholder">E</div>
-                <span>EZer</span>
+        <!-- Unified Navigation -->
+    <div class="unified-banner">
+        <span>🇹🇭</span>
+        You're viewing EZer for <strong>Thailand</strong>
+        <a href="../">Change country</a>
+    </div>
+    <nav class="unified-nav">
+        <div class="unified-nav-inner">
+            <a href="./" class="unified-logo">
+                <div class="unified-logo-icon">E</div>
+                <span class="unified-logo-text">EZer</span>
             </a>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="features.html" class="nav-link">Features</a>
-                <a href="pricing.html" class="nav-link">Pricing</a>
+            <div class="unified-links">
+                <a href="./" class="unified-link active">Home</a>
+                <a href="features.html" class="unified-link">Features</a>
+                <a href="pricing.html" class="unified-link">Pricing</a>
+                <a href="privacy.html" class="unified-link">Privacy</a>
+                <a href="terms.html" class="unified-link">Terms</a>
+                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-cta">Download Free</a>
             </div>
-            <a href="#download" class="nav-cta">
-                <span class="material-icons-outlined" style="font-size: 18px;">download</span>
-                Download
-            </a>
-            <button class="mobile-menu-btn"><span class="material-icons-outlined">menu</span></button>
-        </nav>
-    </header>
+            <button class="unified-mobile-btn" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
+                <span class="material-icons-outlined">menu</span>
+            </button>
+        </div>
+        <div class="unified-mobile-menu">
+            <a href="./" class="unified-mobile-link active">Home</a>
+            <a href="features.html" class="unified-mobile-link">Features</a>
+            <a href="pricing.html" class="unified-mobile-link">Pricing</a>
+            <a href="privacy.html" class="unified-mobile-link">Privacy</a>
+            <a href="terms.html" class="unified-mobile-link">Terms</a>
+            <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-mobile-cta">Download Free</a>
+        </div>
+    </nav>
+
 
     <!-- Hero Slider -->
     <section class="hero-section">
@@ -1011,58 +1022,63 @@
     </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
+        <!-- Unified Footer -->
+    <footer class="site-footer" style="background: var(--bg-card); border-top: 1px solid var(--border); padding: 48px 0 24px;">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <div class="footer-logo-icon">E</div>
-                        <span>EZer</span>
-                    </div>
-                    <p>Your Smart Finance Companion in Thailand. Track expenses, set goals, and take control of your money.</p>
-                    <div class="footer-pricing">
-                        <span>Free to use</span>
-                        <span class="plus-badge" style="font-size: 10px; padding: 2px 10px;">Plus</span>
-                        <span>available</span>
-                    </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <a href="./" class="unified-logo" style="margin-bottom: 16px;">
+                        <div class="unified-logo-icon">E</div>
+                        <span class="unified-logo-text">EZer</span>
+                    </a>
+                    <p style="color: var(--text-secondary); font-size: 14px; margin-top: 16px;">
+                        Your Smart Finance Companion in Thailand.
+                    </p>
+                    <p style="color: #22c55e; font-weight: 600; font-size: 14px; margin-top: 12px;">Free to use</p>
                 </div>
-                <div class="footer-column">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                    </ul>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Product</h4>
+                    <a href="features.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Features</a>
+                    <a href="pricing.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Pricing</a>
+                    <a href="../blog.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Blog</a>
                 </div>
-                <div class="footer-column">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="../privacy-ios.html">Privacy (iOS)</a></li>
-                        <li><a href="../privacy-android.html">Privacy (Android)</a></li>
-                        <li><a href="terms.html">Terms</a></li>
-                    </ul>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Legal</h4>
+                    <a href="privacy.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Privacy Policy</a>
+                    <a href="terms.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Terms & Conditions</a>
+                    <a href="../data-deletion.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Data Deletion</a>
                 </div>
-                <div class="footer-column">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="mailto:support@ezerapp.com">Contact Us</a></li>
-                        <li><a href="../">Change Country</a></li>
-                    </ul>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Support</h4>
+                    <a href="../feedback.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Feedback</a>
+                    <a href="../report.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Report Issue</a>
+                    <a href="mailto:support@ezerapp.com" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Contact Us</a>
+                    <a href="../" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Change Country</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 EZer. All rights reserved.</p>
-                <p>Email: <a href="mailto:support@ezerapp.com">support@ezerapp.com</a> | Website: <a href="https://www.ezerapp.com">ezerapp.com</a></p>
-                <div class="theme-toggle-container">
-                    <span class="theme-toggle-label">Appearance</span>
-                    <div class="theme-toggle">
-                        <button class="theme-btn" data-theme="light" title="Light mode"><span class="material-icons-outlined">light_mode</span></button>
-                        <button class="theme-btn" data-theme="system" title="System"><span class="material-icons-outlined">contrast</span></button>
-                        <button class="theme-btn" data-theme="dark" title="Dark mode"><span class="material-icons-outlined">dark_mode</span></button>
-                    </div>
+
+            <!-- Theme Toggle -->
+            <div class="theme-toggle-container">
+                <span class="theme-toggle-label">Appearance</span>
+                <div class="theme-toggle">
+                    <button class="theme-btn" data-theme="light" title="Light mode">
+                        <span class="material-icons-outlined" style="font-size: 18px;">light_mode</span>
+                    </button>
+                    <button class="theme-btn" data-theme="system" title="System">
+                        <span class="material-icons-outlined" style="font-size: 18px;">contrast</span>
+                    </button>
+                    <button class="theme-btn" data-theme="dark" title="Dark mode">
+                        <span class="material-icons-outlined" style="font-size: 18px;">dark_mode</span>
+                    </button>
                 </div>
+            </div>
+
+            <div style="text-align: center; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px;">
+                <p>&copy; 2025 EZer. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
 
     <script>
         // Hero Slider
