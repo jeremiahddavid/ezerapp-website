@@ -22,6 +22,10 @@
     <!-- Theme System (works with Tailwind) -->
     <link rel="stylesheet" href="../css/theme.css">
     <style>
+        /* =============================================
+           DARK MODE OVERRIDES FOR TAILWIND
+           ============================================= */
+
         /* Override Tailwind for themed elements */
         .themed-nav {
             background: var(--header-bg) !important;
@@ -35,43 +39,130 @@
             background: var(--bg-card) !important;
             border-top: 1px solid var(--border);
         }
+
         /* Ensure body respects theme */
         body {
             background: var(--bg-primary) !important;
             color: var(--text-primary);
             transition: background-color 0.3s ease;
         }
-        /* Fix Tailwind grays for dark mode */
+
+        /* ----- DARK MODE STYLES ----- */
+
+        /* Background colors */
         [data-theme="dark"] .bg-gray-50,
         [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
         [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+        [data-theme="dark"] .bg-gray-900 { background: var(--bg-card) !important; }
+
+        /* Colored backgrounds - make them darker/subtler */
+        [data-theme="dark"] .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
+        [data-theme="dark"] .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
+        [data-theme="dark"] .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
+        [data-theme="dark"] .bg-purple-100 { background: rgba(147, 51, 234, 0.15) !important; }
+        [data-theme="dark"] .bg-pink-100 { background: rgba(236, 72, 153, 0.15) !important; }
+        [data-theme="dark"] .bg-blue-100 { background: rgba(59, 130, 246, 0.15) !important; }
+
+        /* Gray text colors */
         [data-theme="dark"] .text-gray-600,
-        [data-theme="dark"] .text-gray-700,
+        [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
         [data-theme="dark"] .text-gray-800,
         [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
         [data-theme="dark"] .text-gray-400,
-        [data-theme="dark"] .text-gray-500 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .text-gray-500 { color: var(--text-muted) !important; }
+
+        /* Colored text - brighten for dark backgrounds */
+        [data-theme="dark"] .text-indigo-600 { color: #818cf8 !important; }
+        [data-theme="dark"] .text-indigo-700 { color: #a5b4fc !important; }
+        [data-theme="dark"] .text-purple-600 { color: #c084fc !important; }
+        [data-theme="dark"] .text-green-600 { color: #4ade80 !important; }
+        [data-theme="dark"] .text-green-800 { color: #86efac !important; }
+        [data-theme="dark"] .text-blue-600 { color: #60a5fa !important; }
+
+        /* Keep white text white on gradients */
+        [data-theme="dark"] .bg-gradient-to-r .text-white,
+        [data-theme="dark"] .bg-gradient-to-br .text-white,
+        [data-theme="dark"] .bg-indigo-600 .text-white,
+        [data-theme="dark"] .bg-indigo-700 .text-white,
+        [data-theme="dark"] .bg-indigo-800 .text-white,
+        [data-theme="dark"] [class*="from-indigo"] .text-white { color: white !important; }
+
+        /* Gradient backgrounds should keep their text colors */
+        [data-theme="dark"] .bg-gradient-to-r .text-indigo-100,
+        [data-theme="dark"] .bg-gradient-to-r .text-indigo-200 { color: rgba(199, 210, 254, 0.9) !important; }
+
+        /* Border colors */
+        [data-theme="dark"] .border-gray-100,
         [data-theme="dark"] .border-gray-200,
-        [data-theme="dark"] .border-gray-100 { border-color: var(--border) !important; }
+        [data-theme="dark"] .border-gray-300 { border-color: var(--border) !important; }
+        [data-theme="dark"] .border-gray-800 { border-color: var(--border-light) !important; }
+
+        /* Shadows */
         [data-theme="dark"] .shadow-sm,
+        [data-theme="dark"] .shadow,
+        [data-theme="dark"] .shadow-md,
         [data-theme="dark"] .shadow-lg { box-shadow: 0 4px 20px var(--card-shadow) !important; }
-        /* Dark mode for footer */
-        [data-theme="dark"] .bg-gray-900 { background: var(--bg-card) !important; }
-        [data-theme="dark"] .text-white { color: var(--text-primary) !important; }
-        [data-theme="dark"] .border-gray-800 { border-color: var(--border) !important; }
-        /* System preference dark mode */
+
+        /* Hover states */
+        [data-theme="dark"] .hover\:bg-gray-50:hover,
+        [data-theme="dark"] .hover\:bg-gray-100:hover { background: var(--bg-elevated) !important; }
+        [data-theme="dark"] .hover\:text-indigo-600:hover { color: #818cf8 !important; }
+
+        /* ----- LIGHT MODE FIXES ----- */
+
+        /* Ensure dark text on light backgrounds */
+        [data-theme="light"] .text-white:not(.bg-gradient-to-r *):not(.bg-gradient-to-br *):not([class*="bg-indigo-"] *) {
+            color: var(--text-primary) !important;
+        }
+
+        /* Keep gradient text white in light mode too */
+        [data-theme="light"] .bg-gradient-to-r .text-white,
+        [data-theme="light"] .bg-gradient-to-br .text-white,
+        [data-theme="light"] .bg-indigo-600 .text-white,
+        [data-theme="light"] .bg-indigo-700 .text-white,
+        [data-theme="light"] [class*="from-indigo"] .text-white { color: white !important; }
+
+        /* ----- SYSTEM PREFERENCE DARK MODE ----- */
         @media (prefers-color-scheme: dark) {
             :root:not([data-theme="light"]) .bg-gray-50,
             :root:not([data-theme="light"]) .bg-gray-100 { background: var(--bg-primary) !important; }
             :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; }
+            :root:not([data-theme="light"]) .bg-gray-900 { background: var(--bg-card) !important; }
+
+            :root:not([data-theme="light"]) .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
+            :root:not([data-theme="light"]) .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
+            :root:not([data-theme="light"]) .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
+
             :root:not([data-theme="light"]) .text-gray-600,
-            :root:not([data-theme="light"]) .text-gray-700,
+            :root:not([data-theme="light"]) .text-gray-700 { color: var(--text-secondary) !important; }
             :root:not([data-theme="light"]) .text-gray-800,
             :root:not([data-theme="light"]) .text-gray-900 { color: var(--text-primary) !important; }
             :root:not([data-theme="light"]) .text-gray-400,
-            :root:not([data-theme="light"]) .text-gray-500 { color: var(--text-secondary) !important; }
+            :root:not([data-theme="light"]) .text-gray-500 { color: var(--text-muted) !important; }
+
+            :root:not([data-theme="light"]) .text-indigo-600 { color: #818cf8 !important; }
+            :root:not([data-theme="light"]) .text-indigo-700 { color: #a5b4fc !important; }
+            :root:not([data-theme="light"]) .text-purple-600 { color: #c084fc !important; }
+            :root:not([data-theme="light"]) .text-green-600 { color: #4ade80 !important; }
+
+            :root:not([data-theme="light"]) .border-gray-100,
             :root:not([data-theme="light"]) .border-gray-200,
-            :root:not([data-theme="light"]) .border-gray-100 { border-color: var(--border) !important; }
+            :root:not([data-theme="light"]) .border-gray-300 { border-color: var(--border) !important; }
+        }
+
+        /* Theme toggle button styles */
+        .theme-btn {
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .theme-btn:hover {
+            color: var(--text-primary);
+        }
+        .theme-btn.active {
+            background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+            color: white;
+            box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
         }
     </style>
 </head>
