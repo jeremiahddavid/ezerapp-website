@@ -11,6 +11,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
 
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
@@ -55,47 +57,112 @@
         }
     </style>
 
-    <!-- Global Theme System -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Theme System (works with Tailwind) -->
     <link rel="stylesheet" href="../css/theme.css">
-    <link rel="stylesheet" href="../css/pages.css">
+    <style>
+        /* Override Tailwind for themed elements */
+        .themed-nav {
+            background: var(--header-bg) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .themed-banner {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%) !important;
+        }
+        .themed-footer {
+            background: var(--bg-card) !important;
+            border-top: 1px solid var(--border);
+        }
+        /* Ensure body respects theme */
+        body {
+            background: var(--bg-primary) !important;
+            color: var(--text-primary);
+            transition: background-color 0.3s ease;
+        }
+        /* Fix Tailwind grays for dark mode */
+        [data-theme="dark"] .bg-gray-50,
+        [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
+        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+        [data-theme="dark"] .text-gray-600,
+        [data-theme="dark"] .text-gray-700,
+        [data-theme="dark"] .text-gray-800,
+        [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
+        [data-theme="dark"] .text-gray-400,
+        [data-theme="dark"] .text-gray-500 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .border-gray-200,
+        [data-theme="dark"] .border-gray-100 { border-color: var(--border) !important; }
+        [data-theme="dark"] .shadow-sm,
+        [data-theme="dark"] .shadow-lg { box-shadow: 0 4px 20px var(--card-shadow) !important; }
+        /* Dark mode for footer */
+        [data-theme="dark"] .bg-gray-900 { background: var(--bg-card) !important; }
+        [data-theme="dark"] .text-white { color: var(--text-primary) !important; }
+        [data-theme="dark"] .border-gray-800 { border-color: var(--border) !important; }
+        /* System preference dark mode */
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .bg-gray-50,
+            :root:not([data-theme="light"]) .bg-gray-100 { background: var(--bg-primary) !important; }
+            :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; }
+            :root:not([data-theme="light"]) .text-gray-600,
+            :root:not([data-theme="light"]) .text-gray-700,
+            :root:not([data-theme="light"]) .text-gray-800,
+            :root:not([data-theme="light"]) .text-gray-900 { color: var(--text-primary) !important; }
+            :root:not([data-theme="light"]) .text-gray-400,
+            :root:not([data-theme="light"]) .text-gray-500 { color: var(--text-secondary) !important; }
+            :root:not([data-theme="light"]) .border-gray-200,
+            :root:not([data-theme="light"]) .border-gray-100 { border-color: var(--border) !important; }
+        }
+    </style>
 </head>
-<body class="themed-page">
-        <!-- Site Header -->
-    <header class="site-header">
-        <div class="country-banner">
-            <span class="flag">🇫🇷</span>
-            Viewing Terms for <strong>France</strong>
-            <a href="../">Change country</a>
-        </div>
-        <nav class="main-nav">
-            <a href="./" class="nav-logo">
-                <div class="nav-logo-icon">E</div>
-                <span class="nav-logo-text">EZer</span>
-            </a>
-            <div class="nav-links">
-                <a href="./" class="nav-link">Home</a>
-                <a href="features.html" class="nav-link">Features</a>
-                <a href="pricing.html" class="nav-link">Pricing</a>
-                <a href="privacy.html" class="nav-link">Privacy</a>
-                <a href="terms.html" class="nav-link active">Terms</a>
-                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="nav-cta">Download Free</a>
+<body class="bg-gray-50">
+        <!-- Themed Navigation -->
+    <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
+        <span class="mr-2">🇫🇷</span>
+        Terms of Service for <strong>France</strong>
+        <a href="../" class="text-indigo-600 hover:underline ml-2">Change country</a>
+    </div>
+
+    <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="h-10 w-10 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-xl flex items-center justify-center text-white font-black text-lg">E</div>
+                    <div>
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer</div>
+                    </div>
+                </a>
+                <div class="hidden lg:flex gap-1 items-center">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Home</a>
+                    <a href="features.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Features</a>
+                    <a href="pricing.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Pricing</a>
+                    <a href="privacy.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Privacy</a>
+                    <a href="terms.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50 text-indigo-600 bg-indigo-100 text-indigo-600 font-semibold">Terms</a>
+                    <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702"
+                       class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:shadow-lg transition-all">
+                        Download Free
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
-            <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-            </button>
-        </nav>
-        <div class="mobile-nav">
-            <a href="./" class="mobile-nav-link">Home</a>
-            <a href="features.html" class="mobile-nav-link">Features</a>
-            <a href="pricing.html" class="mobile-nav-link">Pricing</a>
-            <a href="privacy.html" class="mobile-nav-link">Privacy</a>
-            <a href="terms.html" class="mobile-nav-link active">Terms</a>
-            <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="mobile-nav-cta">Download Free</a>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-gray-200">
+                <a href="index.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Home</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Features</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Pricing</a>
+                <a href="privacy.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Privacy</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50 bg-indigo-100 text-indigo-600 font-semibold">Terms</a>
+                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702"
+                   class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold">
+                    Download Free
+                </a>
+            </div>
         </div>
-    </header>
+    </nav>
 <!-- Content -->
     <div class="container mx-auto px-4 py-12">
         <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
@@ -191,67 +258,80 @@
         </div>
     </div>
 
-        <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <a href="./" class="nav-logo" style="margin-bottom: 16px;">
-                        <div class="nav-logo-icon">E</div>
-                        <span class="nav-logo-text">EZer</span>
-                    </a>
-                    <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 12px;">
-                        Your Smart Finance Companion in France.
-                    </p>
-                    <p style="color: #22c55e; font-weight: 600; font-size: 14px;">Free to use</p>
-                    <p style="color: var(--text-muted); font-size: 13px;">Plus $4.99/month</p>
+        <!-- Themed Footer -->
+    <footer class="themed-footer py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="h-12 w-12 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 rounded-xl flex items-center justify-center text-white font-black text-xl">E</div>
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer</div>
+                    </div>
+                    <p class="text-sm mb-4" style="color: var(--text-secondary);">Your Smart Finance Companion in France.</p>
+                    <p class="text-green-500 font-semibold">Free to use</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Product</h4>
-                    <a href="features.html" class="footer-link">Features</a>
-                    <a href="pricing.html" class="footer-link">Pricing</a>
-                    <a href="../blog.html" class="footer-link">Blog</a>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Product</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="features.html" class="block hover:text-indigo-600 transition-colors">Features</a>
+                        <a href="pricing.html" class="block hover:text-indigo-600 transition-colors">Pricing</a>
+                        <a href="../blog.html" class="block hover:text-indigo-600 transition-colors">Blog</a>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <a href="privacy.html" class="footer-link">Privacy Policy</a>
-                    <a href="terms.html" class="footer-link">Terms & Conditions</a>
-                    <a href="../data-deletion.html" class="footer-link">Data Deletion</a>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Legal</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="privacy.html" class="block hover:text-indigo-600 transition-colors">Privacy Policy</a>
+                        <a href="terms.html" class="block hover:text-indigo-600 transition-colors">Terms & Conditions</a>
+                        <a href="../data-deletion.html" class="block hover:text-indigo-600 transition-colors">Data Deletion</a>
+                    </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <a href="../feedback.html" class="footer-link">Feedback</a>
-                    <a href="../report.html" class="footer-link">Report Issue</a>
-                    <a href="mailto:support@ezerapp.com" class="footer-link">Contact Us</a>
-                    <a href="../" class="footer-link">Change Country</a>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Support</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="../feedback.html" class="block hover:text-indigo-600 transition-colors">Feedback</a>
+                        <a href="../report.html" class="block hover:text-indigo-600 transition-colors">Report Issue</a>
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600 transition-colors">Contact Us</a>
+                        <a href="../" class="block hover:text-indigo-600 transition-colors">Change Country</a>
+                    </div>
                 </div>
             </div>
 
             <!-- Theme Toggle -->
-            <div class="theme-toggle-container">
-                <span class="theme-toggle-label">Appearance</span>
-                <div class="theme-toggle">
-                    <button class="theme-btn" data-theme="light" title="Light mode">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <div class="theme-toggle-container flex items-center justify-center gap-3 py-5 border-t" style="border-color: var(--border);">
+                <span class="text-sm" style="color: var(--text-muted);">Appearance</span>
+                <div class="theme-toggle flex items-center gap-1 p-1 rounded-full" style="background: var(--bg-elevated); border: 1px solid var(--border);">
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="light" title="Light">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
                     </button>
-                    <button class="theme-btn" data-theme="system" title="System">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="system" title="System">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
                     </button>
-                    <button class="theme-btn" data-theme="dark" title="Dark mode">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="dark" title="Dark">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     </button>
                 </div>
             </div>
 
-            <div class="footer-bottom">
+            <div class="text-center pt-6 text-sm" style="color: var(--text-muted); border-top: 1px solid var(--border);">
                 <p>&copy; 2025 EZer. All rights reserved.</p>
-                <p style="margin-top: 8px;">Email: support@ezerapp.com | Website: https://www.ezerapp.com</p>
             </div>
         </div>
     </footer>
 
-    <!-- Theme Script -->
+    <!-- Theme & Mobile Menu Scripts -->
     <script src="../js/theme.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu')?.classList.toggle('hidden');
+        });
+        // Initialize Lucide icons if present
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    </script>
 
 
     <script>
