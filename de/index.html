@@ -241,12 +241,10 @@
         }
 
         .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        .nav-logo-placeholder {
+        .nav-logo-img {
             width: 44px; height: 44px;
-            background: var(--gradient-hero);
             border-radius: 12px;
-            display: flex; align-items: center; justify-content: center;
-            font-weight: 900; font-size: 20px; color: white;
+            object-fit: contain;
         }
         .nav-logo span {
             font-size: 26px; font-weight: 800;
@@ -497,7 +495,7 @@
         .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
         .footer-brand { display: flex; flex-direction: column; gap: 16px; }
         .footer-logo { display: flex; align-items: center; gap: 12px; }
-        .footer-logo-icon { width: 48px; height: 48px; background: var(--gradient-hero); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 22px; color: white; }
+        .footer-logo-img { width: 48px; height: 48px; border-radius: 14px; object-fit: contain; }
         .footer-logo span { font-size: 24px; font-weight: 800; background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .footer-brand p { color: var(--text-secondary); font-size: 14px; line-height: 1.7; }
         .footer-pricing { display: flex; gap: 16px; margin-top: 8px; }
@@ -637,7 +635,7 @@
     <nav class="unified-nav">
         <div class="unified-nav-inner">
             <a href="./" class="unified-logo">
-                <div class="unified-logo-icon">E</div>
+                <img src="../logo.png" alt="EZer" class="unified-logo-img">
                 <span class="unified-logo-text">EZer</span>
             </a>
             <div class="unified-links">
@@ -1033,7 +1031,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
                 <div>
                     <a href="./" class="unified-logo" style="margin-bottom: 16px;">
-                        <div class="unified-logo-icon">E</div>
+                        <img src="../logo.png" alt="EZer" class="unified-logo-img">
                         <span class="unified-logo-text">EZer</span>
                     </a>
                     <p style="color: var(--text-secondary); font-size: 14px; margin-top: 16px;">
