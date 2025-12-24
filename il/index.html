@@ -243,7 +243,191 @@
         }
 
         .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        .unified-logo-img { width: 44px; height: 44px; border-radius: 12px; object-fit: contain; }
+        
+        /* Unified Navigation Styles */
+        .unified-banner {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 8px 16px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .unified-banner a { color: var(--indigo); text-decoration: none; margin-left: 8px; font-weight: 500; }
+        .unified-banner a:hover { text-decoration: underline; }
+
+        .unified-nav {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .unified-nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px max(16px, 4vw);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .unified-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        .unified-logo-img {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            object-fit: contain;
+        }
+        .unified-logo-text {
+            font-size: 24px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .unified-links {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .unified-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .unified-link:hover { color: var(--indigo); background: rgba(79, 70, 229, 0.1); }
+        .unified-link.active { color: var(--indigo); background: rgba(79, 70, 229, 0.1); }
+
+        .unified-cta {
+            background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%);
+            color: white !important;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-left: 16px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+        }
+        .unified-cta:hover { transform: scale(1.02); box-shadow: 0 6px 25px rgba(79, 70, 229, 0.4); }
+
+        .unified-mobile-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .unified-mobile-menu {
+            display: none;
+            background: var(--bg-card);
+            border-top: 1px solid var(--border);
+            padding: 16px;
+        }
+        .unified-mobile-menu.open { display: block; }
+        .unified-mobile-link {
+            display: block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 14px 16px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .unified-mobile-link:hover, .unified-mobile-link.active {
+            color: var(--indigo);
+            background: rgba(79, 70, 229, 0.1);
+        }
+        .unified-mobile-cta {
+            display: block;
+            background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%);
+            color: white !important;
+            padding: 14px 24px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .unified-links { display: none; }
+            .unified-cta { display: none; }
+            .unified-mobile-btn { display: block; }
+        }
+
+        /* Unified Footer Styles */
+        .unified-footer {
+            background: var(--bg-card);
+            border-top: 1px solid var(--border);
+            padding: 60px 24px 30px;
+        }
+        .unified-footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .unified-footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+        @media (max-width: 768px) {
+            .unified-footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+        }
+        @media (max-width: 480px) {
+            .unified-footer-grid { grid-template-columns: 1fr; }
+        }
+        .unified-footer h4 {
+            color: var(--text-primary);
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+        }
+        .unified-footer a {
+            display: block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            padding: 6px 0;
+            transition: color 0.2s;
+        }
+        .unified-footer a:hover { color: var(--indigo); }
+        .unified-footer-bottom {
+            border-top: 1px solid var(--border);
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .unified-footer-copy {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
         .nav-logo-img {
             width: 44px; height: 44px;
             border-radius: 12px;
