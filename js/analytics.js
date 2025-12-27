@@ -2,7 +2,7 @@
  * EZer Website Analytics - Google Analytics 4
  * Privacy-friendly configuration
  * 
- * Measurement ID: G-W1MTLWPXJX
+ * Measurement ID: G-QSMLH8YQKG
  * Property: EZer Website
  */
 
@@ -11,7 +11,7 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
-const GA_MEASUREMENT_ID = 'G-W1MTLWPXJX';
+const GA_MEASUREMENT_ID = 'G-QSMLH8YQKG';
 
 gtag('config', GA_MEASUREMENT_ID, {
     'anonymize_ip': true,
