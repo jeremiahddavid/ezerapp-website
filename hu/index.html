@@ -675,6 +675,44 @@
         .store-badge .text span { font-size: 18px; font-weight: 700; }
         .download-qr { margin-top: 40px; padding-top: 40px; border-top: 1px solid rgba(255, 255, 255, 0.15); }
         .download-qr p { font-size: 14px; color: rgba(255, 255, 255, 0.7); margin-bottom: 16px; }
+        /* Coming Soon Badge for App Store */
+        .store-badge.coming-soon {
+            position: relative;
+            opacity: 0.7;
+            cursor: default;
+            pointer-events: none;
+        }
+        .store-badge.coming-soon:hover {
+            transform: none;
+            box-shadow: none;
+        }
+        .coming-soon-ribbon {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+        /* Mobile sticky CTA coming soon */
+        .mobile-sticky-cta .btn.coming-soon {
+            position: relative;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        .mobile-sticky-cta .coming-soon-label {
+            font-size: 8px;
+            display: block;
+            margin-top: 2px;
+            opacity: 0.8;
+        }
 
         .site-footer { background: var(--bg-card); border-top: 1px solid var(--border); padding: 60px 0 30px; }
         .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
@@ -1193,13 +1231,14 @@
                 <h2>Start Tracking Today</h2>
                 <p>Download EZer app free on iOS or Android. No sign-up required. Your data stays on your device.</p>
                 <div class="download-badges">
-                    <a href="https://apps.apple.com/HU/app/ezer-budget-expense-tracker/id6738029702" class="store-badge" target="_blank" rel="noopener">
+                    <div class="store-badge coming-soon">
+                        <span class="coming-soon-ribbon">Coming Soon</span>
                         <span class="material-icons-outlined icon">apple</span>
                         <div class="text">
                             <small>Download on the</small>
                             <span>App Store</span>
                         </div>
-                    </a>
+                    </div>
                     <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=HU" class="store-badge" target="_blank" rel="noopener">
                         <span class="material-icons-outlined icon">shop</span>
                         <div class="text">
@@ -1350,10 +1389,10 @@
 
     <!-- Mobile Sticky CTA -->
     <div class="mobile-sticky-cta">
-        <a href="https://apps.apple.com/HU/app/ezer-budget-expense-tracker/id6738029702" class="btn btn-secondary" target="_blank" rel="noopener">
+        <div class="btn btn-secondary coming-soon">
             <span class="material-icons-outlined">apple</span>
-            iOS
-        </a>
+            <div>iOS<span class="coming-soon-label">Coming Soon</span></div>
+        </div>
         <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=HU" class="btn btn-primary" target="_blank" rel="noopener">
             <span class="material-icons-outlined">shop</span>
             Android
