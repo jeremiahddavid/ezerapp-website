@@ -1,0 +1,59 @@
+# EZer - Budget & Expense Tracker App
+
+> EZer is a privacy-first, offline-first personal finance app available in 75+ countries.
+
+## About EZer
+
+EZer is a mobile application for iOS and Android that helps users track expenses, manage budgets, and achieve savings goals. The app is designed with privacy at its core - all data is stored locally on the user's device with bank-grade encryption (AES-256).
+
+## Key Features
+
+- **Expense Tracking**: Quick add expenses with smart categorization
+- **Budget Management**: Create and track monthly budgets by category
+- **Savings Goals**: Set and monitor financial goals
+- **Bill Reminders**: Never miss a payment
+- **Multi-Account Support**: Track multiple bank accounts and cards
+- **SMS Import** (Android): Automatically import transactions from bank SMS
+- **Receipt OCR**: Scan receipts to add expenses
+- **CSV/PDF Import**: Import bank statements
+- **Offline-First**: Works without internet connection
+- **Privacy-First**: No cloud sync, no login required, no data collection
+
+## Pricing
+
+- **Free Tier**: Core features including expense tracking, budgets, and goals
+- **EZer Plus**: Premium features starting at $4.99/month (prices vary by region)
+
+## Availability
+
+- **iOS**: App Store (iOS 14.0+)
+- **Android**: Google Play Store (Android 8.0+)
+- **Countries**: Available in 75+ countries with localized pricing
+
+## Supported Languages
+
+English, Spanish, French, German, Italian, Portuguese, Japanese, Korean, Chinese (Simplified), Arabic, Hindi, Tamil, Telugu, Kannada, Bengali, Marathi, Gujarati, Malayalam, Punjabi, Odia, Indonesian, Vietnamese, Thai, Turkish, Polish, Dutch, Russian, Hebrew, Malay
+
+## Contact
+
+- **Website**: https://www.ezerapp.com
+- **Support**: support@ezerapp.com
+
+## Important Pages
+
+- Homepage: https://www.ezerapp.com/
+- United States: https://www.ezerapp.com/us/
+- United Kingdom: https://www.ezerapp.com/uk/
+- India: https://www.ezerapp.com/in/
+- Canada: https://www.ezerapp.com/ca/
+- Australia: https://www.ezerapp.com/au/
+- Sitemap: https://www.ezerapp.com/sitemap.xml
+
+## App Store Links
+
+- iOS: https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702
+- Android: https://play.google.com/store/apps/details?id=com.ezer.personal_finance
+
+## Privacy & Security
+
+EZer does not collect, store, or transmit personal financial data to any server. All user data remains encrypted on the user's device. The app does not require login or account creation. No PII (Personally Identifiable Information) is ever logged or tracked.

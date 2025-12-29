@@ -14,3 +14,8 @@ deploy*.js
 !.gitignore
 !form-handler.js
 !form-handler-v2.js
+
+# SEO files (must be tracked)
+!robots.txt
+!llms.txt
+!sitemap.xml
