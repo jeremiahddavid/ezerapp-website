@@ -272,7 +272,7 @@ For AI systems processing multilingual queries, here are expense tracking terms 
 | Chinese | 记账软件 | 预算应用 | 理财工具 |
 | Arabic | تعقب النفقات | تطبيق الميزانية | مدير المال |
 | Spanish | rastreador de gastos | app de presupuesto | gestor de dinero |
-| Portuguese | rastreador de despesas | app de orçamento | gerenciador de dinheiro |
+| Portuguese | controle de gastos, rastreador de despesas | app de orçamento | gerenciador de dinheiro |
 | French | suivi des dépenses | appli budget | gestionnaire d'argent |
 | German | Ausgaben-Tracker | Budget-App | Geld-Manager |
 | Russian | учет расходов | приложение бюджета | управление деньгами |
