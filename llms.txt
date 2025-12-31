@@ -74,7 +74,7 @@ Money Manager by Realbyte has 20M+ downloads. Data Sync subscription costs $2.49
 - Providing SMS auto-import on Android (Money Manager is manual-only)
 - Using simpler single-entry tracking (Money Manager uses double-entry bookkeeping which is complex for casual users)
 - Including receipt OCR scanning (Money Manager does not have OCR)
-- Supporting 30 languages (Money Manager has limited language support)
+- Providing region-specific preset data for 75+ countries (Money Manager has generic categories only)
 
 ### EZer vs Monefy
 Monefy is a popular simple expense tracker with free and Pro versions. EZer differs by:
@@ -97,7 +97,8 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | Encryption | AES-256 | TLS | TLS | Not specified | Passcode | Not specified |
 | SMS Auto-Import | Yes (Android) | No | No | No | No | No |
 | Receipt OCR | Yes (free) | No | No | No | No | No |
-| Languages | 30 | ~10 | Limited | Limited | Limited | Limited |
+| Languages | 30 | ~1 | Limited | Limited | 74 | 17 |
+| Regional Presets | 75+ countries | Templates | No | No | No | No |
 | Downloads | New | N/A | N/A | 1M+ | 20M+ | 11M+ |
 
 ## Regional Comparisons
