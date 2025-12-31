@@ -15,12 +15,18 @@
     <link rel="canonical" href="https://www.ezerapp.com/in/">
 
     <!-- Language Alternates -->
-    <link rel="alternate" hreflang="en-IN" href="https://www.ezerapp.com/in/?lang=en">
-    <link rel="alternate" hreflang="hi-IN" href="https://www.ezerapp.com/in/?lang=hi">
-    <link rel="alternate" hreflang="ta-IN" href="https://www.ezerapp.com/in/?lang=ta">
-    <link rel="alternate" hreflang="te-IN" href="https://www.ezerapp.com/in/?lang=te">
-    <link rel="alternate" hreflang="kn-IN" href="https://www.ezerapp.com/in/?lang=kn">
-    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+    <link rel="alternate" hreflang="en-IN" href="https://www.ezerapp.com/in/">
+    <link rel="alternate" hreflang="hi-IN" href="https://www.ezerapp.com/in/hi/">
+    <link rel="alternate" hreflang="ta-IN" href="https://www.ezerapp.com/in/ta/">
+    <link rel="alternate" hreflang="te-IN" href="https://www.ezerapp.com/in/te/">
+    <link rel="alternate" hreflang="kn-IN" href="https://www.ezerapp.com/in/kn/">
+    <link rel="alternate" hreflang="bn-IN" href="https://www.ezerapp.com/in/bn/">
+    <link rel="alternate" hreflang="mr-IN" href="https://www.ezerapp.com/in/mr/">
+    <link rel="alternate" hreflang="gu-IN" href="https://www.ezerapp.com/in/gu/">
+    <link rel="alternate" hreflang="ml-IN" href="https://www.ezerapp.com/in/ml/">
+    <link rel="alternate" hreflang="pa-IN" href="https://www.ezerapp.com/in/pa/">
+    <link rel="alternate" hreflang="or-IN" href="https://www.ezerapp.com/in/or/">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/in/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -1573,27 +1579,20 @@
             observer.observe(downloadSection);
         }
 
-        // Language Detection for India
+        // Language Detection for India - Redirect to language-specific pages
         (function() {
-            // Language configuration for India
-            const langConfig = {
-                // Languages with hero slides (index matches slide order)
-                slideLangs: {
-                    'en': { index: 0, name: 'English', native: 'English' },
-                    'hi': { index: 1, name: 'Hindi', native: 'हिंदी' },
-                    'ta': { index: 2, name: 'Tamil', native: 'தமிழ்' },
-                    'te': { index: 3, name: 'Telugu', native: 'తెలుగు' },
-                    'kn': { index: 4, name: 'Kannada', native: 'ಕನ್ನಡ' }
-                },
-                // Languages supported in app but no slides yet
-                appOnlyLangs: {
-                    'bn': { name: 'Bengali', native: 'বাংলা' },
-                    'mr': { name: 'Marathi', native: 'मराठी' },
-                    'gu': { name: 'Gujarati', native: 'ગુજરાતી' },
-                    'ml': { name: 'Malayalam', native: 'മലയാളം' },
-                    'pa': { name: 'Punjabi', native: 'ਪੰਜਾਬੀ' },
-                    'or': { name: 'Odia', native: 'ଓଡ଼ିଆ' }
-                }
+            // All supported Indian languages with dedicated pages
+            const supportedLangs = {
+                'hi': { name: 'Hindi', native: 'हिंदी', url: '/in/hi/' },
+                'ta': { name: 'Tamil', native: 'தமிழ்', url: '/in/ta/' },
+                'te': { name: 'Telugu', native: 'తెలుగు', url: '/in/te/' },
+                'kn': { name: 'Kannada', native: 'ಕನ್ನಡ', url: '/in/kn/' },
+                'bn': { name: 'Bengali', native: 'বাংলা', url: '/in/bn/' },
+                'mr': { name: 'Marathi', native: 'मराठी', url: '/in/mr/' },
+                'gu': { name: 'Gujarati', native: 'ગુજરાતી', url: '/in/gu/' },
+                'ml': { name: 'Malayalam', native: 'മലയാളം', url: '/in/ml/' },
+                'pa': { name: 'Punjabi', native: 'ਪੰਜਾਬੀ', url: '/in/pa/' },
+                'or': { name: 'Odia', native: 'ଓଡ଼ିଆ', url: '/in/or/' }
             };
 
             // Get browser language (e.g., "hi-IN" -> "hi")
@@ -1601,29 +1600,13 @@
 
             // Check if user has already made a choice
             const langChoice = localStorage.getItem('ezer-lang-choice-in');
-            if (langChoice) return; // User already chose, don't show popup
+            if (langChoice) return;
 
-            // Check if browser language matches a slide language
-            if (langConfig.slideLangs[browserLang] && browserLang !== 'en') {
-                // Auto-switch to their language slide
-                const langInfo = langConfig.slideLangs[browserLang];
-                setTimeout(() => {
-                    showSlide(langInfo.index);
-                    // Also update the language chip
-                    const chips = document.querySelectorAll('.lang-chip');
-                    chips.forEach((c, i) => c.classList.toggle('active', i === langInfo.index));
-                }, 500);
+            // Check if browser language matches a supported language
+            if (supportedLangs[browserLang]) {
+                const langInfo = supportedLangs[browserLang];
 
-                // Remember this choice
-                localStorage.setItem('ezer-lang-choice-in', browserLang);
-                return;
-            }
-
-            // Check if browser language matches an app-only language
-            if (langConfig.appOnlyLangs[browserLang]) {
-                const langInfo = langConfig.appOnlyLangs[browserLang];
-
-                // Show popup after a short delay
+                // Show popup offering to switch to their language page
                 setTimeout(() => {
                     const popup = document.getElementById('langPopup');
                     const popupTitle = document.getElementById('popupTitle');
@@ -1634,19 +1617,18 @@
 
                     popupTitle.textContent = `${langInfo.native} में देखें?`;
                     popupNative.textContent = `View in ${langInfo.name}?`;
-                    popupDesc.textContent = `EZer app is fully available in ${langInfo.name}. Download the app to use it in your preferred language.`;
-                    popupSwitch.textContent = `Download App in ${langInfo.name}`;
+                    popupDesc.textContent = `This page is available in ${langInfo.name}. Switch for a better experience.`;
+                    popupSwitch.textContent = `Switch to ${langInfo.name}`;
 
                     popup.classList.add('show');
 
-                    // Handle switch button - go to download
+                    // Handle switch button - redirect to language page
                     popupSwitch.onclick = () => {
                         localStorage.setItem('ezer-lang-choice-in', browserLang);
-                        popup.classList.remove('show');
-                        document.getElementById('download').scrollIntoView({ behavior: 'smooth' });
+                        window.location.href = langInfo.url;
                     };
 
-                    // Handle dismiss
+                    // Handle dismiss - stay on English
                     popupDismiss.onclick = () => {
                         localStorage.setItem('ezer-lang-choice-in', 'en');
                         popup.classList.remove('show');
@@ -1659,7 +1641,7 @@
                             popup.classList.remove('show');
                         }
                     };
-                }, 1500);
+                }, 1000);
             }
         })();
     </script>

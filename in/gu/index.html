@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>EZer - ખર્ચ ટ્રેકર એપ | ગુજરાતીમાં</title>
+    <meta name="description" content="દરેક રૂપિયાનો હિસાબ રાખો. 100% ઓફલાઈન, UPI, Google Pay સાથે કામ કરે છે. મફત ડાઉનલોડ કરો.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.ezerapp.com/in/gu/">
+
+    <!-- Language Alternates -->
+    <link rel="alternate" hreflang="en-IN" href="https://www.ezerapp.com/in/">
+    <link rel="alternate" hreflang="hi-IN" href="https://www.ezerapp.com/in/hi/">
+    <link rel="alternate" hreflang="ta-IN" href="https://www.ezerapp.com/in/ta/">
+    <link rel="alternate" hreflang="te-IN" href="https://www.ezerapp.com/in/te/">
+    <link rel="alternate" hreflang="kn-IN" href="https://www.ezerapp.com/in/kn/">
+    <link rel="alternate" hreflang="bn-IN" href="https://www.ezerapp.com/in/bn/">
+    <link rel="alternate" hreflang="mr-IN" href="https://www.ezerapp.com/in/mr/">
+    <link rel="alternate" hreflang="gu-IN" href="https://www.ezerapp.com/in/gu/">
+    <link rel="alternate" hreflang="ml-IN" href="https://www.ezerapp.com/in/ml/">
+    <link rel="alternate" hreflang="pa-IN" href="https://www.ezerapp.com/in/pa/">
+    <link rel="alternate" hreflang="or-IN" href="https://www.ezerapp.com/in/or/">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/in/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ezerapp.com/in/gu/">
+    <meta property="og:title" content="EZer - ખર્ચ ટ્રેકર એપ | ગુજરાતીમાં">
+    <meta property="og:description" content="દરેક રૂપિયાનો હિસાબ રાખો. 100% ઓફલાઈન, UPI, Google Pay સાથે કામ કરે છે. મફત ડાઉનલોડ કરો.">
+    <meta property="og:image" content="https://www.ezerapp.com/og-image.png">
+    <meta property="og:locale" content="gu_IN">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <style>
+        :root {
+            --indigo: #4f46e5;
+            --purple: #9333ea;
+            --pink: #ec4899;
+            --gradient-hero: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 50%, var(--pink) 100%);
+            --gradient-cta: linear-gradient(90deg, var(--indigo) 0%, var(--purple) 100%);
+            --gradient-text: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 50%, var(--pink) 100%);
+            --bg-dark: #0f0f1a;
+            --bg-card: #1a1a2e;
+            --bg-elevated: #242442;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --border: rgba(255, 255, 255, 0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Navigation */
+        .nav {
+            background: rgba(15, 15, 26, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        .nav-logo img {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+        }
+        .nav-logo span {
+            font-size: 24px;
+            font-weight: 800;
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-links {
+            display: flex;
+            gap: 8px;
+        }
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .nav-link:hover {
+            color: var(--indigo);
+            background: rgba(79, 70, 229, 0.1);
+        }
+        .nav-cta {
+            background: var(--gradient-cta);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* Language Banner */
+        .lang-banner {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 24px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .lang-banner a {
+            color: var(--indigo);
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 8px;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 24px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.3;
+            pointer-events: none;
+        }
+        .hero-orb.purple {
+            width: 500px;
+            height: 500px;
+            background: var(--purple);
+            top: -150px;
+            right: -100px;
+        }
+        .hero-orb.pink {
+            width: 400px;
+            height: 400px;
+            background: var(--pink);
+            bottom: -100px;
+            left: -100px;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(79, 70, 229, 0.15);
+            border: 1px solid rgba(79, 70, 229, 0.3);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            color: #a5b4fc;
+            margin-bottom: 24px;
+        }
+        .hero-title {
+            font-size: clamp(32px, 6vw, 56px);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-subtitle {
+            font-size: clamp(16px, 2vw, 20px);
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 28px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: var(--gradient-cta);
+            color: white;
+            box-shadow: 0 4px 20px rgba(79, 70, 229, 0.4);
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(79, 70, 229, 0.5);
+        }
+        .btn-secondary {
+            background: var(--bg-elevated);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+
+        /* Features */
+        .section {
+            padding: 80px 0;
+        }
+        .section-alt {
+            background: var(--bg-card);
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .section-title {
+            font-size: clamp(24px, 4vw, 36px);
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+        .section-subtitle {
+            color: var(--text-secondary);
+            font-size: 18px;
+        }
+
+        /* Trust Box */
+        .trust-box {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(236, 72, 153, 0.05));
+            border: 1px solid rgba(79, 70, 229, 0.25);
+            border-radius: 24px;
+            padding: 48px;
+            text-align: center;
+        }
+        .trust-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-top: 32px;
+            text-align: left;
+        }
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+        }
+        .trust-item .material-icons-outlined {
+            color: #a5b4fc;
+        }
+
+        /* Download */
+        .download {
+            background: var(--gradient-hero);
+            padding: 80px 24px;
+            text-align: center;
+        }
+        .download h2 {
+            font-size: clamp(28px, 5vw, 42px);
+            font-weight: 900;
+            color: white;
+            margin-bottom: 16px;
+        }
+        .download p {
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 32px;
+            font-size: 18px;
+        }
+        .download-badges {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .store-badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 14px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .store-badge:hover {
+            background: rgba(0, 0, 0, 0.5);
+            transform: translateY(-3px);
+        }
+        .store-badge .icon {
+            font-size: 32px;
+        }
+        .store-badge .text small {
+            font-size: 12px;
+            opacity: 0.8;
+            display: block;
+        }
+        .store-badge .text span {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .store-badge.coming-soon {
+            opacity: 0.7;
+            pointer-events: none;
+            position: relative;
+        }
+        .coming-soon-ribbon {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-card);
+            border-top: 1px solid var(--border);
+            padding: 48px 24px 24px;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .footer-links a:hover {
+            color: var(--indigo);
+        }
+        .footer-copy {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .nav-cta { display: none; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; max-width: 280px; justify-content: center; }
+        }
+    </style>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body>
+    <!-- Language Banner -->
+    <div class="lang-banner">
+        🇮🇳 ગુજરાતી में EZer देखें
+        <a href="../">English में बदलें</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="../" class="nav-logo">
+                <img src="../../logo.png" alt="EZer">
+                <span>EZer</span>
+            </a>
+            <div class="nav-links">
+                <a href="../" class="nav-link">Home</a>
+                <a href="../features.html" class="nav-link">Features</a>
+                <a href="../pricing.html" class="nav-link">Pricing</a>
+            </div>
+            <a href="#download" class="nav-cta">મફત ડાઉનલોડ કરો - ₹0</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-orb purple"></div>
+        <div class="hero-orb pink"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="material-icons-outlined">verified_user</span>
+                100% Private • Offline • No Login
+            </div>
+            <h1 class="hero-title">દરેક રૂપિયાનો હિસાબ રાખો.</h1>
+            <p class="hero-subtitle">ઓફલાઈન કામ કરતું પ્રાઈવેટ ખર્ચ ટ્રેકર. લોગિન નહીં. ક્લાઉડ નહીં.</p>
+            <div class="hero-buttons">
+                <a href="#download" class="btn btn-primary">
+                    <span class="material-icons-outlined">download</span>
+                    મફત ડાઉનલોડ કરો - ₹0
+                </a>
+                <a href="../features.html" class="btn btn-secondary">વધુ જાણો</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="section">
+        <div class="container">
+            <div class="trust-box">
+                <div class="trust-icon">🔒</div>
+                <h2 class="section-title">Your data stays on your phone</h2>
+                <p class="section-subtitle">Bank-grade security, 100% offline</p>
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">wifi_off</span>
+                        <span>100% offline - works without internet</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">person_off</span>
+                        <span>No account or login required</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">enhanced_encryption</span>
+                        <span>Bank-grade AES-256 encryption</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">cloud_off</span>
+                        <span>No data uploaded to any server</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section class="download" id="download">
+        <div class="container">
+            <h2>આજે જ ટ્રેકિંગ શરૂ કરો</h2>
+            <p>Download EZer free. No sign-up required.</p>
+            <div class="download-badges">
+                <div class="store-badge coming-soon">
+                    <span class="coming-soon-ribbon">Coming Soon</span>
+                    <span class="material-icons-outlined icon">apple</span>
+                    <div class="text">
+                        <small>Download on the</small>
+                        <span>App Store</span>
+                    </div>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=IN" class="store-badge" target="_blank" rel="noopener">
+                    <span class="material-icons-outlined icon">shop</span>
+                    <div class="text">
+                        <small>Get it on</small>
+                        <span>Google Play</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="../">Home</a>
+            <a href="../features.html">Features</a>
+            <a href="../pricing.html">Pricing</a>
+            <a href="../privacy.html">Privacy</a>
+            <a href="../terms.html">Terms</a>
+        </div>
+        <p class="footer-copy">&copy; 2025 EZer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
