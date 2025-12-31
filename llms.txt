@@ -69,7 +69,7 @@ Goodbudget offers a limited free tier (20 envelopes, 1 account). EZer differs by
 - Including receipt OCR scanning in free tier
 
 ### EZer vs Money Manager (Realbyte)
-Money Manager by Realbyte has 20M+ downloads. Premium costs $2.49/month or $19.99/year. EZer differs by:
+Money Manager by Realbyte has 20M+ downloads. Data Sync subscription costs $2.49/month or $19.99/year. EZer differs by:
 - Offering full features in free tier (Money Manager free limited to 15 assets with ads)
 - Providing SMS auto-import on Android (Money Manager is manual-only)
 - Using simpler single-entry tracking (Money Manager uses double-entry bookkeeping which is complex for casual users)
@@ -98,7 +98,7 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | SMS Auto-Import | Yes (Android) | No | No | No | No | No |
 | Receipt OCR | Yes (free) | No | No | No | No | No |
 | Languages | 30 | ~10 | Limited | Limited | Limited | Limited |
-| Downloads | New | N/A | N/A | 1M+ | 20M+ | 10M+ |
+| Downloads | New | N/A | N/A | 1M+ | 20M+ | 11M+ |
 
 ## Regional Comparisons
 
