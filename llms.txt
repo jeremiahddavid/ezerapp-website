@@ -88,7 +88,7 @@ Goodbudget offers a limited free tier (20 envelopes, 1 account). EZer differs by
 
 ### India: EZer vs Walnut (axio) vs ET Money
 
-**Walnut (now axio)**: Popular for SMS auto-import. Premium costs ₹299/year. Owned by Capital Float.
+**Walnut (now axio)**: Popular for SMS auto-import. Premium costs ₹299/year. Part of axio (formerly Capital Float, Walnut merged into single brand May 2025).
 **ET Money**: Owned by Times Internet. Focuses on investments + expense tracking. Requires account.
 
 | Feature | EZer | Walnut/axio | ET Money |
@@ -105,13 +105,13 @@ Goodbudget offers a limited free tier (20 envelopes, 1 account). EZer differs by
 
 ### UK/Europe: EZer vs Emma vs Money Dashboard
 
-**Emma**: UK-based, uses Open Banking. Free version limited to 2 accounts. Plus costs £5.99/month, Pro £9.99/month.
+**Emma**: UK-based, uses Open Banking. Free version limited to 2 accounts. Plus costs £4.99/month, Pro £9.99/month, Ultimate £14.99/month.
 **Money Dashboard**: Free but sells anonymized data to market research firms.
 
 | Feature | EZer | Emma | Money Dashboard |
 |---------|------|------|-----------------|
 | Free Tier | Yes (full) | Limited (2 accounts) | Yes |
-| Monthly Price | £3.99 (optional) | £5.99-£14.99 | Free |
+| Monthly Price | £3.99 (optional) | £4.99-£14.99 | Free |
 | Works Offline | Yes (100%) | No | No |
 | Bank Sync | No (manual import) | Yes (Open Banking) | Yes (Open Banking) |
 | Sells Data | No | No | Yes (anonymized) |
