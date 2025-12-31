@@ -29,7 +29,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
         body { font-family: 'Inter', sans-serif; }
 
-        /* Plus Badge - matches app styling exactly */
         .plus-badge {
             display: inline-flex;
             align-items: center;
@@ -73,14 +72,8 @@
         }
     </style>
 
-    <!-- Theme System (works with Tailwind) -->
     <link rel="stylesheet" href="../../css/theme.css">
     <style>
-        /* =============================================
-           DARK MODE OVERRIDES FOR TAILWIND
-           ============================================= */
-
-        /* Override Tailwind for themed elements */
         .themed-nav {
             background: var(--header-bg) !important;
             backdrop-filter: blur(20px);
@@ -94,22 +87,17 @@
             border-top: 1px solid var(--border);
         }
 
-        /* Ensure body respects theme */
         body {
             background: var(--bg-primary) !important;
             color: var(--text-primary);
             transition: background-color 0.3s ease;
         }
 
-        /* ----- DARK MODE STYLES ----- */
-
-        /* Background colors */
         [data-theme="dark"] .bg-gray-50,
         [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
         [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
         [data-theme="dark"] .bg-gray-900 { background: var(--bg-card) !important; }
 
-        /* Colored backgrounds - make them darker/subtler */
         [data-theme="dark"] .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
         [data-theme="dark"] .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
         [data-theme="dark"] .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
@@ -117,7 +105,6 @@
         [data-theme="dark"] .bg-pink-100 { background: rgba(236, 72, 153, 0.15) !important; }
         [data-theme="dark"] .bg-blue-100 { background: rgba(59, 130, 246, 0.15) !important; }
 
-        /* Gray text colors */
         [data-theme="dark"] .text-gray-600,
         [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
         [data-theme="dark"] .text-gray-800,
@@ -125,7 +112,6 @@
         [data-theme="dark"] .text-gray-400,
         [data-theme="dark"] .text-gray-500 { color: var(--text-muted) !important; }
 
-        /* Colored text - brighten for dark backgrounds */
         [data-theme="dark"] .text-indigo-600 { color: #818cf8 !important; }
         [data-theme="dark"] .text-indigo-700 { color: #a5b4fc !important; }
         [data-theme="dark"] .text-purple-600 { color: #c084fc !important; }
@@ -133,7 +119,6 @@
         [data-theme="dark"] .text-green-800 { color: #86efac !important; }
         [data-theme="dark"] .text-blue-600 { color: #60a5fa !important; }
 
-        /* Keep white text white on gradients */
         [data-theme="dark"] .bg-gradient-to-r .text-white,
         [data-theme="dark"] .bg-gradient-to-br .text-white,
         [data-theme="dark"] .bg-indigo-600 .text-white,
@@ -141,42 +126,33 @@
         [data-theme="dark"] .bg-indigo-800 .text-white,
         [data-theme="dark"] [class*="from-indigo"] .text-white { color: white !important; }
 
-        /* Gradient backgrounds should keep their text colors */
         [data-theme="dark"] .bg-gradient-to-r .text-indigo-100,
         [data-theme="dark"] .bg-gradient-to-r .text-indigo-200 { color: rgba(199, 210, 254, 0.9) !important; }
 
-        /* Border colors */
         [data-theme="dark"] .border-gray-100,
         [data-theme="dark"] .border-gray-200,
         [data-theme="dark"] .border-gray-300 { border-color: var(--border) !important; }
         [data-theme="dark"] .border-gray-800 { border-color: var(--border-light) !important; }
 
-        /* Shadows */
         [data-theme="dark"] .shadow-sm,
         [data-theme="dark"] .shadow,
         [data-theme="dark"] .shadow-md,
         [data-theme="dark"] .shadow-lg { box-shadow: 0 4px 20px var(--card-shadow) !important; }
 
-        /* Hover states */
         [data-theme="dark"] .hover\:bg-gray-50:hover,
         [data-theme="dark"] .hover\:bg-gray-100:hover { background: var(--bg-elevated) !important; }
         [data-theme="dark"] .hover\:text-indigo-600:hover { color: #818cf8 !important; }
 
-        /* ----- LIGHT MODE FIXES ----- */
-
-        /* Ensure dark text on light backgrounds */
         [data-theme="light"] .text-white:not(.bg-gradient-to-r *):not(.bg-gradient-to-br *):not([class*="bg-indigo-"] *) {
             color: var(--text-primary) !important;
         }
 
-        /* Keep gradient text white in light mode too */
         [data-theme="light"] .bg-gradient-to-r .text-white,
         [data-theme="light"] .bg-gradient-to-br .text-white,
         [data-theme="light"] .bg-indigo-600 .text-white,
         [data-theme="light"] .bg-indigo-700 .text-white,
         [data-theme="light"] [class*="from-indigo"] .text-white { color: white !important; }
 
-        /* ----- SYSTEM PREFERENCE DARK MODE ----- */
         @media (prefers-color-scheme: dark) {
             :root:not([data-theme="light"]) .bg-gray-50,
             :root:not([data-theme="light"]) .bg-gray-100 { background: var(--bg-primary) !important; }
@@ -204,7 +180,6 @@
             :root:not([data-theme="light"]) .border-gray-300 { border-color: var(--border) !important; }
         }
 
-        /* Theme toggle button styles */
         .theme-btn {
             color: var(--text-muted);
             cursor: pointer;
@@ -219,15 +194,14 @@
             box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
         }
     </style>
-    <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
 </head>
 <body class="bg-gray-50">
-        <!-- Themed Navigation -->
+    <!-- Themed Navigation -->
     <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
         <span class="mr-2">🇮🇳</span>
-        विशेषताएं <strong>India</strong> <span class="text-indigo-600 font-medium">(हिंदी)</span>
+        विशेषताएं <strong>भारत</strong> <span class="text-indigo-600 font-medium">(हिंदी)</span>
         <a href="../../" class="text-indigo-600 hover:underline ml-2">देश बदलें</a>
     </div>
 
@@ -242,13 +216,13 @@
                 </a>
                 <div class="hidden lg:flex gap-1 items-center">
                     <a href="./" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">होम</a>
-                    <a href="./features.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50 text-indigo-600 bg-indigo-100 text-indigo-600 font-semibold">विशेषताएं</a>
+                    <a href="./features.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50 text-indigo-600 bg-indigo-100 font-semibold">विशेषताएं</a>
                     <a href="./pricing.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">मूल्य</a>
                     <a href="./privacy.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">गोपनीयता</a>
                     <a href="./terms.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">शर्तें</a>
                     <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702"
                        class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:shadow-lg transition-all">
-                        Download Free
+                        मुफ्त डाउनलोड
                     </a>
                 </div>
 
@@ -268,12 +242,13 @@
                 <a href="./terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">शर्तें</a>
                 <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702"
                    class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold">
-                    Download Free
+                    मुफ्त डाउनलोड
                 </a>
             </div>
         </div>
     </nav>
-<!-- Hero -->
+
+    <!-- Hero -->
     <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-16">
         <div class="container mx-auto px-4 text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">विशेषताएं</h1>
@@ -281,7 +256,7 @@
             <div class="mt-4 inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full">
                 <span class="text-green-300 font-semibold">उपयोग के लिए मुफ्त</span>
                 <span class="text-indigo-200">|</span>
-                <span class="text-indigo-100"><span class="plus-badge plus-badge-sm">Plus</span> available for ₹99/mo</span>
+                <span class="text-indigo-100"><span class="plus-badge plus-badge-sm">Plus</span> ₹99/माह में उपलब्ध</span>
             </div>
         </div>
     </div>
@@ -291,9 +266,9 @@
         <div class="max-w-4xl mx-auto">
 
             <div class="text-center mb-12">
-                <div class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">FREE FEATURES</div>
-                <h2 class="text-3xl font-bold mb-2">Everything You Need to Get Started</h2>
-                <p class="text-gray-600">All these features are included in the free plan</p>
+                <div class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">मुफ्त विशेषताएं</div>
+                <h2 class="text-3xl font-bold mb-2">शुरू करने के लिए सब कुछ</h2>
+                <p class="text-gray-600">ये सभी सुविधाएं मुफ्त प्लान में शामिल हैं</p>
             </div>
 
             <div class="space-y-16">
@@ -304,29 +279,29 @@
                         <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6">
                             <i data-lucide="plus-circle" class="w-8 h-8 text-indigo-600"></i>
                         </div>
-                        <h3 class="text-3xl font-bold mb-4">Easy Expense & Income Entry</h3>
+                        <h3 class="text-3xl font-bold mb-4">आसान खर्च और आय एंट्री</h3>
                         <p class="text-gray-600 mb-4">
-                            Add your transactions quickly with just a few taps. Simple, fast, and intuitive.
-                            Track exactly where your money comes from and where it goes.
+                            बस कुछ टैप में अपने लेनदेन जोड़ें। सरल, तेज़ और सहज।
+                            ट्रैक करें कि आपका पैसा कहाँ से आता है और कहाँ जाता है।
                         </p>
                         <ul class="space-y-2">
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                Add transactions in seconds
+                                सेकंड में लेनदेन जोड़ें
                             </li>
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                Categorize your spending
+                                अपने खर्च को वर्गीकृत करें
                             </li>
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                Track multiple income sources
+                                कई आय स्रोतों को ट्रैक करें
                             </li>
                         </ul>
                     </div>
                     <div class="bg-white p-8 rounded-2xl shadow-lg">
                         <div class="text-center text-6xl mb-4">💰</div>
-                        <div class="text-center text-gray-500">Quick & Simple Entry</div>
+                        <div class="text-center text-gray-500">त्वरित और सरल एंट्री</div>
                     </div>
                 </div>
 
@@ -334,32 +309,32 @@
                 <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div class="order-2 md:order-1 bg-white p-8 rounded-2xl shadow-lg">
                         <div class="text-center text-6xl mb-4">⚡</div>
-                        <div class="text-center text-gray-500">One-Tap Templates</div>
+                        <div class="text-center text-gray-500">एक-टैप टेम्पलेट्स</div>
                     </div>
                     <div class="order-1 md:order-2">
                         <div class="flex items-center gap-3 mb-6">
                             <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center">
                                 <i data-lucide="copy" class="w-8 h-8 text-purple-600"></i>
                             </div>
-                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">3 templates on Free</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">मुफ्त में 3 टेम्पलेट्स</span>
                         </div>
-                        <h3 class="text-3xl font-bold mb-4">Quick Add Templates</h3>
+                        <h3 class="text-3xl font-bold mb-4">क्विक एड टेम्पलेट्स</h3>
                         <p class="text-gray-600 mb-4">
-                            Save time with reusable templates for your frequent transactions.
-                            Create templates for rent, groceries, subscriptions - add them with one tap!
+                            अपने बार-बार होने वाले लेनदेन के लिए पुन: प्रयोज्य टेम्पलेट्स के साथ समय बचाएं।
+                            किराया, किराने का सामान, सब्सक्रिप्शन के लिए टेम्पलेट बनाएं - एक टैप में जोड़ें!
                         </p>
                         <ul class="space-y-2">
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                Create custom templates
+                                कस्टम टेम्पलेट्स बनाएं
                             </li>
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                One-tap recurring expenses
+                                एक-टैप आवर्ती खर्च
                             </li>
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                Never forget regular transactions
+                                नियमित लेनदेन कभी न भूलें
                             </li>
                         </ul>
                     </div>
@@ -372,31 +347,31 @@
                             <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center">
                                 <i data-lucide="bar-chart-3" class="w-8 h-8 text-green-600"></i>
                             </div>
-                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">6 months history on Free</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">मुफ्त में 6 महीने का इतिहास</span>
                         </div>
-                        <h3 class="text-3xl font-bold mb-4">Analytics Hub</h3>
+                        <h3 class="text-3xl font-bold mb-4">एनालिटिक्स हब</h3>
                         <p class="text-gray-600 mb-4">
-                            See exactly where your money goes with visual charts and breakdowns.
-                            Understand your spending patterns and make smarter financial decisions.
+                            विज़ुअल चार्ट और ब्रेकडाउन के साथ देखें कि आपका पैसा कहाँ जाता है।
+                            अपने खर्च पैटर्न को समझें और स्मार्ट वित्तीय निर्णय लें।
                         </p>
                         <ul class="space-y-2">
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                Spending breakdown by category
+                                श्रेणी के अनुसार खर्च विश्लेषण
                             </li>
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                Visual charts & graphs
+                                विज़ुअल चार्ट और ग्राफ़
                             </li>
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                Track trends over time
+                                समय के साथ ट्रेंड ट्रैक करें
                             </li>
                         </ul>
                     </div>
                     <div class="bg-white p-8 rounded-2xl shadow-lg">
                         <div class="text-center text-6xl mb-4">📊</div>
-                        <div class="text-center text-gray-500">Visual Spending Insights</div>
+                        <div class="text-center text-gray-500">विज़ुअल खर्च इनसाइट्स</div>
                     </div>
                 </div>
 
@@ -404,32 +379,32 @@
                 <div class="grid md:grid-cols-2 gap-8 items-center">
                     <div class="order-2 md:order-1 bg-white p-8 rounded-2xl shadow-lg">
                         <div class="text-center text-6xl mb-4">🎯</div>
-                        <div class="text-center text-gray-500">Track Your Progress</div>
+                        <div class="text-center text-gray-500">अपनी प्रगति ट्रैक करें</div>
                     </div>
                     <div class="order-1 md:order-2">
                         <div class="flex items-center gap-3 mb-6">
                             <div class="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center">
                                 <i data-lucide="target" class="w-8 h-8 text-pink-600"></i>
                             </div>
-                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">2 goals on Free</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">मुफ्त में 2 लक्ष्य</span>
                         </div>
-                        <h3 class="text-3xl font-bold mb-4">Savings Goals</h3>
+                        <h3 class="text-3xl font-bold mb-4">बचत लक्ष्य</h3>
                         <p class="text-gray-600 mb-4">
-                            Set savings goals and track your progress. Know exactly where you stand
-                            and where your funds are allocated for each goal.
+                            बचत लक्ष्य निर्धारित करें और अपनी प्रगति ट्रैक करें। जानें कि आप कहाँ खड़े हैं
+                            और प्रत्येक लक्ष्य के लिए आपके फंड कहाँ आवंटित हैं।
                         </p>
                         <ul class="space-y-2">
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                Multiple savings goals
+                                कई बचत लक्ष्य
                             </li>
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                Track fund allocation
+                                फंड आवंटन ट्रैक करें
                             </li>
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                See progress at a glance
+                                एक नज़र में प्रगति देखें
                             </li>
                         </ul>
                     </div>
@@ -442,31 +417,31 @@
                             <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center">
                                 <i data-lucide="wallet" class="w-8 h-8 text-blue-600"></i>
                             </div>
-                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">3 budgets on Free</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">मुफ्त में 3 बजट</span>
                         </div>
-                        <h3 class="text-3xl font-bold mb-4">Budget Tracking</h3>
+                        <h3 class="text-3xl font-bold mb-4">बजट ट्रैकिंग</h3>
                         <p class="text-gray-600 mb-4">
-                            Set budgets for each spending category and track your progress in real-time.
-                            Stay on top of your finances and avoid overspending.
+                            प्रत्येक खर्च श्रेणी के लिए बजट निर्धारित करें और रीयल-टाइम में अपनी प्रगति ट्रैक करें।
+                            अपने वित्त पर नियंत्रण रखें और अतिव्यय से बचें।
                         </p>
                         <ul class="space-y-2">
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                Category-based budgets
+                                श्रेणी-आधारित बजट
                             </li>
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                Real-time tracking
+                                रीयल-टाइम ट्रैकिंग
                             </li>
                             <li class="flex items-center gap-2 text-gray-700">
                                 <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
-                                Visual progress bars
+                                विज़ुअल प्रगति बार
                             </li>
                         </ul>
                     </div>
                     <div class="bg-white p-8 rounded-2xl shadow-lg">
                         <div class="text-center text-6xl mb-4">📈</div>
-                        <div class="text-center text-gray-500">Stay On Budget</div>
+                        <div class="text-center text-gray-500">बजट में रहें</div>
                     </div>
                 </div>
 
@@ -480,9 +455,9 @@
             <div class="max-w-4xl mx-auto">
 
                 <div class="text-center mb-12">
-                    <div class="mb-4"><span class="plus-badge plus-badge-lg">Plus</span> FEATURES</div>
-                    <h2 class="text-3xl font-bold mb-2">Unlock More with <span class="plus-badge">Plus</span></h2>
-                    <p class="text-gray-600">₹99/month</p>
+                    <div class="mb-4"><span class="plus-badge plus-badge-lg">Plus</span> विशेषताएं</div>
+                    <h2 class="text-3xl font-bold mb-2"><span class="plus-badge">Plus</span> के साथ और अनलॉक करें</h2>
+                    <p class="text-gray-600">₹99/माह</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -491,55 +466,55 @@
                         <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
                             <i data-lucide="infinity" class="w-6 h-6 text-indigo-600"></i>
                         </div>
-                        <h4 class="font-bold mb-2">Unlimited Everything</h4>
-                        <p class="text-gray-600 text-sm">Unlimited accounts, budgets, goals, templates, and more.</p>
+                        <h4 class="font-bold mb-2">असीमित सब कुछ</h4>
+                        <p class="text-gray-600 text-sm">असीमित खाते, बजट, लक्ष्य, टेम्पलेट्स, और बहुत कुछ।</p>
                     </div>
 
                     <div class="bg-white p-6 rounded-xl shadow-lg">
                         <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
                             <i data-lucide="cloud" class="w-6 h-6 text-indigo-600"></i>
                         </div>
-                        <h4 class="font-bold mb-2">Cloud Backup & Sync</h4>
-                        <p class="text-gray-600 text-sm">Encrypted backup and sync across all your devices.</p>
+                        <h4 class="font-bold mb-2">क्लाउड बैकअप और सिंक</h4>
+                        <p class="text-gray-600 text-sm">एन्क्रिप्टेड बैकअप और आपके सभी डिवाइस में सिंक।</p>
                     </div>
 
                     <div class="bg-white p-6 rounded-xl shadow-lg">
                         <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
                             <i data-lucide="users" class="w-6 h-6 text-indigo-600"></i>
                         </div>
-                        <h4 class="font-bold mb-2">Household Sharing</h4>
-                        <p class="text-gray-600 text-sm">Share finances with up to 6 family members.</p>
+                        <h4 class="font-bold mb-2">पारिवारिक शेयरिंग</h4>
+                        <p class="text-gray-600 text-sm">6 परिवार के सदस्यों के साथ वित्त साझा करें।</p>
                     </div>
 
                     <div class="bg-white p-6 rounded-xl shadow-lg">
                         <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
                             <i data-lucide="tags" class="w-6 h-6 text-indigo-600"></i>
                         </div>
-                        <h4 class="font-bold mb-2">Custom Categories</h4>
-                        <p class="text-gray-600 text-sm">Create your own spending categories.</p>
+                        <h4 class="font-bold mb-2">कस्टम श्रेणियां</h4>
+                        <p class="text-gray-600 text-sm">अपनी खर्च श्रेणियां बनाएं।</p>
                     </div>
 
                     <div class="bg-white p-6 rounded-xl shadow-lg">
                         <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
                             <i data-lucide="file-spreadsheet" class="w-6 h-6 text-indigo-600"></i>
                         </div>
-                        <h4 class="font-bold mb-2">Advanced Export</h4>
-                        <p class="text-gray-600 text-sm">Export to Excel, PDF, and more formats.</p>
+                        <h4 class="font-bold mb-2">उन्नत निर्यात</h4>
+                        <p class="text-gray-600 text-sm">Excel, PDF और अधिक फॉर्मेट में निर्यात करें।</p>
                     </div>
 
                     <div class="bg-white p-6 rounded-xl shadow-lg">
                         <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
                             <i data-lucide="bell" class="w-6 h-6 text-indigo-600"></i>
                         </div>
-                        <h4 class="font-bold mb-2">Bill Reminders</h4>
-                        <p class="text-gray-600 text-sm">Never miss a bill with smart notifications.</p>
+                        <h4 class="font-bold mb-2">बिल रिमाइंडर</h4>
+                        <p class="text-gray-600 text-sm">स्मार्ट नोटिफिकेशन के साथ कोई बिल न चूकें।</p>
                     </div>
 
                 </div>
 
                 <div class="text-center mt-8">
                     <a href="./pricing.html" class="inline-block bg-indigo-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
-                        View All <span class="plus-badge plus-badge-sm">Plus</span> Features
+                        सभी <span class="plus-badge plus-badge-sm">Plus</span> विशेषताएं देखें
                     </a>
                 </div>
 
@@ -550,20 +525,20 @@
     <!-- CTA -->
     <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-16">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-4">Start Tracking Your Finances Today</h2>
-            <p class="text-xl text-indigo-100 mb-8">Free to download - no credit card required</p>
+            <h2 class="text-3xl font-bold mb-4">आज ही अपने वित्त ट्रैक करना शुरू करें</h2>
+            <p class="text-xl text-indigo-100 mb-8">मुफ्त डाउनलोड - क्रेडिट कार्ड की आवश्यकता नहीं</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="https://apps.apple.com/in/app/ezer-budget-expense-tracker/id6738029702" class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold hover:bg-indigo-50">
-                    Download Free for iOS
+                    iOS के लिए मुफ्त डाउनलोड
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=in" class="bg-indigo-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-800 border-2 border-white">
-                    Download Free for Android
+                    Android के लिए मुफ्त डाउनलोड
                 </a>
             </div>
         </div>
     </div>
 
-        <!-- Themed Footer -->
+    <!-- Themed Footer -->
     <footer class="themed-footer py-12">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
@@ -577,7 +552,7 @@
                 </div>
 
                 <div>
-                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Product</h4>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">उत्पाद</h4>
                     <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
                         <a href="./features.html" class="block hover:text-indigo-600 transition-colors">विशेषताएं</a>
                         <a href="./pricing.html" class="block hover:text-indigo-600 transition-colors">मूल्य</a>
@@ -585,43 +560,43 @@
                 </div>
 
                 <div>
-                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Legal</h4>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">कानूनी</h4>
                     <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
-                        <a href="./privacy.html" class="block hover:text-indigo-600 transition-colors">Privacy Policy</a>
-                        <a href="./terms.html" class="block hover:text-indigo-600 transition-colors">Terms & Conditions</a>
-                        <a href="../../data-deletion.html" class="block hover:text-indigo-600 transition-colors">Data Deletion</a>
+                        <a href="./privacy.html" class="block hover:text-indigo-600 transition-colors">गोपनीयता नीति</a>
+                        <a href="./terms.html" class="block hover:text-indigo-600 transition-colors">नियम और शर्तें</a>
+                        <a href="../../data-deletion.html" class="block hover:text-indigo-600 transition-colors">डेटा हटाना</a>
                     </div>
                 </div>
 
                 <div>
-                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Support</h4>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">सहायता</h4>
                     <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
-                        <a href="../../feedback.html" class="block hover:text-indigo-600 transition-colors">Feedback</a>
-                        <a href="../../report.html" class="block hover:text-indigo-600 transition-colors">Report Issue</a>
-                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600 transition-colors">Contact Us</a>
-                        <a href="../../" class="block hover:text-indigo-600 transition-colors">Change Country</a>
+                        <a href="../../feedback.html" class="block hover:text-indigo-600 transition-colors">फीडबैक</a>
+                        <a href="../../report.html" class="block hover:text-indigo-600 transition-colors">समस्या रिपोर्ट करें</a>
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600 transition-colors">संपर्क करें</a>
+                        <a href="../../" class="block hover:text-indigo-600 transition-colors">देश बदलें</a>
                     </div>
                 </div>
             </div>
 
             <!-- Theme Toggle -->
             <div class="theme-toggle-container flex items-center justify-center gap-3 py-5 border-t" style="border-color: var(--border);">
-                <span class="text-sm" style="color: var(--text-muted);">Appearance</span>
+                <span class="text-sm" style="color: var(--text-muted);">थीम</span>
                 <div class="theme-toggle flex items-center gap-1 p-1 rounded-full" style="background: var(--bg-elevated); border: 1px solid var(--border);">
-                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="light" title="Light">
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="light" title="लाइट">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
                     </button>
-                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="system" title="System">
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="system" title="सिस्टम">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
                     </button>
-                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="dark" title="Dark">
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="dark" title="डार्क">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
                     </button>
                 </div>
             </div>
 
             <div class="text-center pt-6 text-sm" style="color: var(--text-muted); border-top: 1px solid var(--border);">
-                <p>&copy; 2025 EZer. All rights reserved.</p>
+                <p>&copy; 2025 EZer. सर्वाधिकार सुरक्षित।</p>
             </div>
         </div>
     </footer>
@@ -629,15 +604,10 @@
     <!-- Theme & Mobile Menu Scripts -->
     <script src="../../js/theme.js"></script>
     <script>
-        // Mobile menu toggle
         document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
             document.getElementById('mobile-menu')?.classList.toggle('hidden');
         });
-        // Initialize Lucide icons if present
         if (typeof lucide !== 'undefined') lucide.createIcons();
     </script>
-
-
-    
 </body>
 </html>
