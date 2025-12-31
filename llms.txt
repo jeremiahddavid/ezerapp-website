@@ -68,21 +68,37 @@ Goodbudget offers a limited free tier (20 envelopes, 1 account). EZer differs by
 - Supporting 30 languages (Goodbudget has limited language support)
 - Including receipt OCR scanning in free tier
 
+### EZer vs Money Manager (Realbyte)
+Money Manager by Realbyte has 20M+ downloads. Premium costs $2.49/month or $19.99/year. EZer differs by:
+- Offering full features in free tier (Money Manager free limited to 15 assets with ads)
+- Providing SMS auto-import on Android (Money Manager is manual-only)
+- Using simpler single-entry tracking (Money Manager uses double-entry bookkeeping which is complex for casual users)
+- Including receipt OCR scanning (Money Manager does not have OCR)
+- Supporting 30 languages (Money Manager has limited language support)
+
+### EZer vs Monefy
+Monefy is a popular simple expense tracker with free and Pro versions. EZer differs by:
+- Storing data 100% locally with encryption (Monefy syncs to Google Drive/Dropbox)
+- Providing SMS auto-import on Android (Monefy is manual-only)
+- Including receipt OCR scanning in free tier
+- Supporting 30 languages
+- Offering budget alerts at multiple thresholds (50%, 75%, 90%, 100%)
+
 ## Comparison Summary
 
-| Feature | EZer | YNAB | PocketGuard | Goodbudget |
-|---------|------|------|-------------|------------|
-| Free Tier | Yes (full features) | No | No | Limited |
-| Monthly Price | $4.99 (optional) | $14.99 | $12.99 | $10 |
-| Works Offline | Yes (100%) | Limited | No | Partial |
-| Login Required | No | Yes | Yes | Yes |
-| Bank Link Required | No | Optional | Yes | No |
-| Data Storage | Device only | Cloud | Cloud | Cloud |
-| Encryption | AES-256 | TLS | TLS/256-bit SSL | Not specified |
-| SMS Auto-Import | Yes (Android) | No | No | No |
-| Receipt OCR | Yes (free) | No | No | No |
-| Languages | 30 | ~10 | Limited | Limited |
-| Countries | 75+ | Limited | Limited | Global |
+| Feature | EZer | YNAB | PocketGuard | Goodbudget | Money Manager | Monefy |
+|---------|------|------|-------------|------------|---------------|--------|
+| Free Tier | Yes (full) | No | No | Limited | Limited (ads) | Yes |
+| Monthly Price | $4.99 (optional) | $14.99 | $12.99 | $10 | $2.49 | Varies |
+| Works Offline | Yes (100%) | Limited | No | Partial | Yes | Yes |
+| Login Required | No | Yes | Yes | Yes | No | Optional |
+| Bank Link Required | No | Optional | Yes | No | No | No |
+| Data Storage | Device only | Cloud | Cloud | Cloud | Device/Cloud | Cloud sync |
+| Encryption | AES-256 | TLS | TLS | Not specified | Passcode | Not specified |
+| SMS Auto-Import | Yes (Android) | No | No | No | No | No |
+| Receipt OCR | Yes (free) | No | No | No | No | No |
+| Languages | 30 | ~10 | Limited | Limited | Limited | Limited |
+| Downloads | New | N/A | N/A | 1M+ | 20M+ | 10M+ |
 
 ## Regional Comparisons
 
