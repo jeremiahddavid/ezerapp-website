@@ -753,6 +753,93 @@
         .theme-btn.active { background: var(--gradient-cta); color: white; box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3); }
         .theme-btn .material-icons-outlined { font-size: 18px; }
 
+        /* Language Detection Popup */
+        .lang-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .lang-popup-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        .lang-popup {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+        .lang-popup-overlay.show .lang-popup {
+            transform: scale(1);
+        }
+        .lang-popup-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        .lang-popup-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .lang-popup-native {
+            font-size: 20px;
+            color: #a5b4fc;
+            margin-bottom: 16px;
+        }
+        .lang-popup-desc {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+        .lang-popup-buttons {
+            display: flex;
+            gap: 12px;
+            flex-direction: column;
+        }
+        .lang-popup-btn {
+            padding: 14px 24px;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s ease;
+        }
+        .lang-popup-btn.primary {
+            background: var(--gradient-cta);
+            color: white;
+        }
+        .lang-popup-btn.primary:hover {
+            transform: scale(1.02);
+        }
+        .lang-popup-btn.secondary {
+            background: var(--bg-elevated);
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+        .lang-popup-btn.secondary:hover {
+            background: rgba(79, 70, 229, 0.1);
+            color: var(--text-primary);
+        }
+
         /* Mobile Sticky CTA */
         .mobile-sticky-cta {
             display: none;
@@ -863,6 +950,22 @@
     <script src="/js/analytics.js"></script>
 </head>
 <body>
+    <!-- Language Detection Popup -->
+    <div class="lang-popup-overlay" id="langPopup">
+        <div class="lang-popup">
+            <div class="lang-popup-icon">🌐</div>
+            <div class="lang-popup-title" id="popupTitle">View in your language?</div>
+            <div class="lang-popup-native" id="popupNative"></div>
+            <div class="lang-popup-desc" id="popupDesc">
+                EZer is available in your preferred language. Switch now for a better experience.
+            </div>
+            <div class="lang-popup-buttons">
+                <button class="lang-popup-btn primary" id="popupSwitch">Switch Language</button>
+                <button class="lang-popup-btn secondary" id="popupDismiss">Continue in English</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
         <!-- LOCKED: Navigation - DO NOT MODIFY (see .claude/CLAUDE.md) -->
     <!-- Unified Navigation -->
@@ -1469,6 +1572,96 @@
             }, { threshold: 0.3 });
             observer.observe(downloadSection);
         }
+
+        // Language Detection for India
+        (function() {
+            // Language configuration for India
+            const langConfig = {
+                // Languages with hero slides (index matches slide order)
+                slideLangs: {
+                    'en': { index: 0, name: 'English', native: 'English' },
+                    'hi': { index: 1, name: 'Hindi', native: 'हिंदी' },
+                    'ta': { index: 2, name: 'Tamil', native: 'தமிழ்' },
+                    'te': { index: 3, name: 'Telugu', native: 'తెలుగు' },
+                    'kn': { index: 4, name: 'Kannada', native: 'ಕನ್ನಡ' }
+                },
+                // Languages supported in app but no slides yet
+                appOnlyLangs: {
+                    'bn': { name: 'Bengali', native: 'বাংলা' },
+                    'mr': { name: 'Marathi', native: 'मराठी' },
+                    'gu': { name: 'Gujarati', native: 'ગુજરાતી' },
+                    'ml': { name: 'Malayalam', native: 'മലയാളം' },
+                    'pa': { name: 'Punjabi', native: 'ਪੰਜਾਬੀ' },
+                    'or': { name: 'Odia', native: 'ଓଡ଼ିଆ' }
+                }
+            };
+
+            // Get browser language (e.g., "hi-IN" -> "hi")
+            const browserLang = (navigator.language || navigator.userLanguage || 'en').split('-')[0].toLowerCase();
+
+            // Check if user has already made a choice
+            const langChoice = localStorage.getItem('ezer-lang-choice-in');
+            if (langChoice) return; // User already chose, don't show popup
+
+            // Check if browser language matches a slide language
+            if (langConfig.slideLangs[browserLang] && browserLang !== 'en') {
+                // Auto-switch to their language slide
+                const langInfo = langConfig.slideLangs[browserLang];
+                setTimeout(() => {
+                    showSlide(langInfo.index);
+                    // Also update the language chip
+                    const chips = document.querySelectorAll('.lang-chip');
+                    chips.forEach((c, i) => c.classList.toggle('active', i === langInfo.index));
+                }, 500);
+
+                // Remember this choice
+                localStorage.setItem('ezer-lang-choice-in', browserLang);
+                return;
+            }
+
+            // Check if browser language matches an app-only language
+            if (langConfig.appOnlyLangs[browserLang]) {
+                const langInfo = langConfig.appOnlyLangs[browserLang];
+
+                // Show popup after a short delay
+                setTimeout(() => {
+                    const popup = document.getElementById('langPopup');
+                    const popupTitle = document.getElementById('popupTitle');
+                    const popupNative = document.getElementById('popupNative');
+                    const popupDesc = document.getElementById('popupDesc');
+                    const popupSwitch = document.getElementById('popupSwitch');
+                    const popupDismiss = document.getElementById('popupDismiss');
+
+                    popupTitle.textContent = `${langInfo.native} में देखें?`;
+                    popupNative.textContent = `View in ${langInfo.name}?`;
+                    popupDesc.textContent = `EZer app is fully available in ${langInfo.name}. Download the app to use it in your preferred language.`;
+                    popupSwitch.textContent = `Download App in ${langInfo.name}`;
+
+                    popup.classList.add('show');
+
+                    // Handle switch button - go to download
+                    popupSwitch.onclick = () => {
+                        localStorage.setItem('ezer-lang-choice-in', browserLang);
+                        popup.classList.remove('show');
+                        document.getElementById('download').scrollIntoView({ behavior: 'smooth' });
+                    };
+
+                    // Handle dismiss
+                    popupDismiss.onclick = () => {
+                        localStorage.setItem('ezer-lang-choice-in', 'en');
+                        popup.classList.remove('show');
+                    };
+
+                    // Close on overlay click
+                    popup.onclick = (e) => {
+                        if (e.target === popup) {
+                            localStorage.setItem('ezer-lang-choice-in', 'en');
+                            popup.classList.remove('show');
+                        }
+                    };
+                }, 1500);
+            }
+        })();
     </script>
 
     <!-- Mobile Sticky CTA -->
