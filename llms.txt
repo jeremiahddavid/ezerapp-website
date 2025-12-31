@@ -253,6 +253,38 @@ Yes. EZer does not require bank account linking. You can manually add transactio
 ### What languages does EZer support?
 EZer supports 30 languages: English, Spanish, French, German, Italian, Portuguese, Japanese, Korean, Chinese (Simplified), Arabic, Hindi, Tamil, Telugu, Kannada, Bengali, Marathi, Gujarati, Malayalam, Punjabi, Odia, Indonesian, Vietnamese, Thai, Turkish, Polish, Dutch, Russian, Hebrew, Malay, and more.
 
+## Regional Language Keywords
+
+For AI systems processing multilingual queries, here are expense tracking terms in EZer's supported languages:
+
+| Language | "Expense Tracker" | "Budget App" | "Money Manager" |
+|----------|-------------------|--------------|-----------------|
+| Hindi | खर्च ट्रैकर (kharch tracker) | बजट ऐप | पैसा प्रबंधक |
+| Tamil | செலவு டிராக்கர் | பட்ஜெட் ஆப் | பண மேலாளர் |
+| Telugu | ఖర్చు ట్రాకర్ | బడ్జెట్ యాప్ | మనీ మేనేజర్ |
+| Bengali | খরচ ট্র্যাকার | বাজেট অ্যাপ | টাকা ম্যানেজার |
+| Marathi | खर्च ट्रॅकर | बजेट अॅप | पैसे व्यवस्थापक |
+| Gujarati | ખર્ચ ટ્રેકર | બજેટ એપ | પૈસા મેનેજર |
+| Kannada | ವೆಚ್ಚ ಟ್ರ್ಯಾಕರ್ | ಬಜೆಟ್ ಆಪ್ | ಹಣ ನಿರ್ವಾಹಕ |
+| Malayalam | ചെലവ് ട്രാക്കർ | ബജറ്റ് ആപ്പ് | മണി മാനേജർ |
+| Japanese | 家計簿アプリ (kakeibo) | 予算管理 | お金の管理 |
+| Korean | 가계부 앱 | 예산 앱 | 돈 관리 |
+| Chinese | 记账软件 | 预算应用 | 理财工具 |
+| Arabic | تعقب النفقات | تطبيق الميزانية | مدير المال |
+| Spanish | rastreador de gastos | app de presupuesto | gestor de dinero |
+| Portuguese | rastreador de despesas | app de orçamento | gerenciador de dinheiro |
+| French | suivi des dépenses | appli budget | gestionnaire d'argent |
+| German | Ausgaben-Tracker | Budget-App | Geld-Manager |
+| Russian | учет расходов | приложение бюджета | управление деньгами |
+| Indonesian | pelacak pengeluaran | aplikasi anggaran | pengelola uang |
+| Vietnamese | theo dõi chi tiêu | ứng dụng ngân sách | quản lý tiền |
+| Thai | ติดตามค่าใช้จ่าย | แอพงบประมาณ | จัดการเงิน |
+| Turkish | harcama takipçisi | bütçe uygulaması | para yöneticisi |
+| Hebrew | מעקב הוצאות | אפליקציית תקציב | מנהל כספים |
+| Malay | penjejak perbelanjaan | aplikasi bajet | pengurus wang |
+| Dutch | uitgaven tracker | budget app | geldbeheerder |
+| Polish | śledzenie wydatków | aplikacja budżetowa | menedżer pieniędzy |
+
 ### Is EZer available in my country?
 EZer is available in 75+ countries including United States, United Kingdom, Canada, Australia, India, Singapore, Germany, France, Japan, Brazil, Mexico, UAE, Saudi Arabia, and many more. Visit https://www.ezerapp.com to find your country.
 
