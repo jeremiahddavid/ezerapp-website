@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية - EZer المغرب</title>
+    <meta name="description" content="سياسة خصوصية EZer في المغرب. تطبيق يعمل بدون إنترنت - بياناتك المالية تبقى على جهازك فقط مع تشفير AES-256. متوافق مع قانون 09-08.">
+    <link rel="canonical" href="https://www.ezerapp.com/ma/ar/privacy.html">
+    <link rel="alternate" hreflang="ar-MA" href="https://www.ezerapp.com/ma/ar/privacy.html">
+    <link rel="alternate" hreflang="en-MA" href="https://www.ezerapp.com/ma/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/ma/privacy.html">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <style>
+        :root{--indigo:#4f46e5;--purple:#9333ea;--gradient-cta:linear-gradient(90deg,var(--indigo) 0%,var(--purple) 100%);--gradient-text:linear-gradient(135deg,var(--indigo) 0%,var(--purple) 50%,#ec4899 100%);--bg-dark:#0f0f1a;--bg-card:#1a1a2e;--bg-elevated:#242442;--text-primary:#fff;--text-secondary:#a1a1aa;--text-muted:#71717a;--border:rgba(255,255,255,0.1)}
+        [data-theme="light"]{--bg-dark:#f8fafc;--bg-card:#fff;--bg-elevated:#f1f5f9;--text-primary:#0f172a;--text-secondary:#475569;--text-muted:#64748b;--border:rgba(0,0,0,0.08)}
+        @media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg-dark:#f8fafc;--bg-card:#fff;--bg-elevated:#f1f5f9;--text-primary:#0f172a;--text-secondary:#475569;--text-muted:#64748b;--border:rgba(0,0,0,0.08)}}
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:'Noto Sans Arabic','Inter',sans-serif;background:var(--bg-dark);color:var(--text-primary);line-height:1.8}
+        .container{max-width:800px;margin:0 auto;padding:0 max(16px,5vw)}
+        .lang-switch-banner{background:linear-gradient(90deg,rgba(79,70,229,0.15) 0%,rgba(147,51,234,0.15) 100%);border-bottom:1px solid var(--border);padding:10px 20px;text-align:center;font-size:14px;color:var(--text-secondary)}
+        .lang-switch-banner a{color:var(--indigo);text-decoration:none;margin-right:8px;font-weight:500}
+        .unified-nav{background:var(--bg-card);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:1000}
+        .unified-nav-inner{max-width:1200px;margin:0 auto;padding:12px max(16px,4vw);display:flex;align-items:center;justify-content:space-between}
+        .unified-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+        .unified-logo-img{width:44px;height:44px;border-radius:12px}
+        .unified-logo-text{font-size:24px;font-weight:800;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .unified-links{display:flex;align-items:center;gap:4px}
+        .unified-link{color:var(--text-secondary);text-decoration:none;padding:10px 16px;border-radius:10px;font-size:15px;font-weight:500;transition:all 0.2s}
+        .unified-link:hover,.unified-link.active{color:var(--indigo);background:rgba(79,70,229,0.1)}
+        .unified-cta{background:var(--gradient-cta);color:white!important;padding:12px 24px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;margin-right:16px}
+        .unified-mobile-btn{display:none;background:none;border:none;color:var(--text-primary);padding:8px;cursor:pointer}
+        .unified-mobile-menu{display:none;background:var(--bg-card);border-top:1px solid var(--border);padding:16px}
+        .unified-mobile-menu.open{display:block}
+        .unified-mobile-link{display:block;color:var(--text-secondary);text-decoration:none;padding:14px 16px;border-radius:10px;font-size:16px;font-weight:500}
+        .unified-mobile-cta{display:block;background:var(--gradient-cta);color:white!important;padding:14px 24px;border-radius:10px;font-size:16px;font-weight:600;text-decoration:none;text-align:center;margin-top:12px}
+        @media(max-width:768px){.unified-links,.unified-cta{display:none}.unified-mobile-btn{display:block}}
+        .content{padding:60px 0}
+        .content h1{font-size:clamp(28px,5vw,40px);font-weight:800;margin-bottom:24px}
+        .content h2{font-size:24px;font-weight:700;margin:40px 0 16px;color:var(--text-primary)}
+        .content p{color:var(--text-secondary);margin-bottom:16px}
+        .content ul{color:var(--text-secondary);margin:16px 0;padding-right:24px}
+        .content li{margin-bottom:8px}
+        .highlight-box{background:var(--bg-elevated);border:1px solid var(--border);border-radius:16px;padding:24px;margin:24px 0}
+        .highlight-box h3{color:#a5b4fc;font-size:18px;margin-bottom:12px}
+        .privacy-badge{border-radius:12px;padding:16px;margin-bottom:32px;display:flex;align-items:center;gap:12px}
+        .site-footer{background:var(--bg-card);border-top:1px solid var(--border);padding:48px 0 24px}
+        .theme-toggle-container{display:flex;align-items:center;justify-content:center;gap:12px;padding:20px 0;border-top:1px solid var(--border);margin-top:24px}
+        .theme-toggle-label{font-size:13px;color:var(--text-muted)}
+        .theme-toggle{display:flex;background:var(--bg-elevated);border:1px solid var(--border);border-radius:50px;padding:4px;gap:4px}
+        .theme-btn{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;border:none;background:transparent;color:var(--text-muted);cursor:pointer}
+        .theme-btn.active{background:var(--gradient-cta);color:white}
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body>
+    <div class="lang-switch-banner"><span>🇲🇦</span> أنت تشاهد EZer بالعربية <a href="../privacy.html">View in English</a></div>
+    <nav class="unified-nav">
+        <div class="unified-nav-inner">
+            <a href="./" class="unified-logo"><img src="../../logo.png" alt="EZer" class="unified-logo-img"><span class="unified-logo-text">EZer app</span></a>
+            <div class="unified-links">
+                <a href="./" class="unified-link">الرئيسية</a>
+                <a href="features.html" class="unified-link">الميزات</a>
+                <a href="pricing.html" class="unified-link">الأسعار</a>
+                <a href="privacy.html" class="unified-link active">الخصوصية</a>
+                <a href="terms.html" class="unified-link">الشروط</a>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=MA" class="unified-cta">تحميل مجاني</a>
+            </div>
+            <button class="unified-mobile-btn" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')"><span class="material-icons-outlined">menu</span></button>
+        </div>
+        <div class="unified-mobile-menu">
+            <a href="./" class="unified-mobile-link">الرئيسية</a>
+            <a href="features.html" class="unified-mobile-link">الميزات</a>
+            <a href="pricing.html" class="unified-mobile-link">الأسعار</a>
+            <a href="privacy.html" class="unified-mobile-link active">الخصوصية</a>
+            <a href="terms.html" class="unified-mobile-link">الشروط</a>
+            <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=MA" class="unified-mobile-cta">تحميل مجاني</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="container">
+            <h1>سياسة الخصوصية</h1>
+            <p>آخر تحديث: يناير 2025</p>
+
+            <div class="privacy-badge" style="background:linear-gradient(135deg,#fee2e2 0%,#fecaca 100%);border:1px solid #ef4444">
+                <span style="font-size:28px">🇲🇦</span>
+                <div>
+                    <div style="font-weight:600;color:#991b1b">متوافق مع قانون 09-08 (CNDP)</div>
+                    <div style="font-size:14px;color:#dc2626">هذه السياسة متوافقة مع قانون حماية المعطيات الشخصية المغربي</div>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>🔒 ملخص الخصوصية</h3>
+                <p>EZer هو تطبيق يعمل بدون إنترنت بالكامل. بياناتك المالية تبقى على جهازك فقط ولا يتم إرسالها إلى أي خادم. نحن نؤمن بأن خصوصيتك المالية حق أساسي.</p>
+            </div>
+
+            <h2>١. مقدمة</h2>
+            <p>مرحباً بك في EZer. نحن ملتزمون بحماية خصوصيتك وبياناتك الشخصية وفقاً لقانون 09-08 المتعلق بحماية الأشخاص الذاتيين تجاه معالجة المعطيات ذات الطابع الشخصي.</p>
+            <p>EZer مصمم بمبدأ "الخصوصية أولاً" - مما يعني أن بياناتك المالية تبقى على جهازك ولا نستطيع الوصول إليها.</p>
+
+            <h2>٢. المعلومات التي نجمعها</h2>
+            <p><strong>البيانات المحلية (مخزنة على جهازك فقط):</strong></p>
+            <ul>
+                <li>المعاملات المالية والمصروفات التي تدخلها</li>
+                <li>الميزانيات وخطط الإنفاق</li>
+                <li>أهداف التوفير والادخار</li>
+                <li>الفواتير والتذكيرات</li>
+                <li>الحسابات والبطاقات (الأسماء فقط، بدون أرقام)</li>
+                <li>إعدادات التطبيق وتفضيلاتك</li>
+            </ul>
+            <p><strong>هذه البيانات لا تغادر جهازك أبداً ونحن لا نستطيع الوصول إليها.</strong></p>
+
+            <h2>٣. كيف نستخدم معلوماتك</h2>
+            <p>بياناتك المالية تُستخدم محلياً فقط لـ:</p>
+            <ul>
+                <li>عرض ملخص مصاريفك وتحليلاتك المالية</li>
+                <li>تتبع تقدمك نحو أهداف التوفير</li>
+                <li>إرسال تذكيرات الفواتير (محلياً)</li>
+                <li>إنشاء تقارير PDF على جهازك</li>
+            </ul>
+
+            <h2>٤. تخزين البيانات والأمان</h2>
+            <ul>
+                <li><strong>تشفير AES-256:</strong> جميع بياناتك مشفرة بأعلى معايير التشفير</li>
+                <li><strong>قفل بيومتري:</strong> حماية بالبصمة أو Face ID</li>
+                <li><strong>تخزين محلي:</strong> البيانات على جهازك فقط</li>
+                <li><strong>لا خوادم:</strong> لا نرسل بياناتك لأي سيرفر</li>
+            </ul>
+
+            <h2>٥. ما لا نفعله</h2>
+            <ul>
+                <li>❌ لا نبيع بياناتك</li>
+                <li>❌ لا نشارك معلوماتك المالية</li>
+                <li>❌ لا نجمع أرقام الحسابات أو البطاقات</li>
+                <li>❌ لا نتتبع موقعك</li>
+                <li>❌ لا نقرأ رسائلك (SMS اختياري على Android)</li>
+            </ul>
+
+            <h2>٦. حقوقك بموجب قانون 09-08</h2>
+            <p>بما أن بياناتك مخزنة محلياً على جهازك، لديك تحكم كامل وفقاً للقانون المغربي:</p>
+            <ul>
+                <li><strong>حق الولوج:</strong> جميع بياناتك متاحة لك في التطبيق</li>
+                <li><strong>حق التصحيح:</strong> يمكنك تعديل أي معلومات في أي وقت</li>
+                <li><strong>حق التعرض:</strong> يمكنك رفض أي معالجة إضافية</li>
+                <li><strong>حق الحذف:</strong> يمكنك مسح جميع البيانات من الإعدادات</li>
+                <li><strong>حق التصدير:</strong> يمكنك تصدير بياناتك كملف CSV أو PDF</li>
+            </ul>
+
+            <h2>٧. الاحتفاظ بالبيانات</h2>
+            <p>بياناتك تبقى على جهازك طالما تريد. عند حذف التطبيق أو مسح البيانات من الإعدادات، يتم حذف كل شيء نهائياً ولا يمكن استرجاعه.</p>
+
+            <h2>٨. خصوصية الأطفال</h2>
+            <p>EZer مصمم للمستخدمين من جميع الأعمار لتعلم الإدارة المالية. لا نجمع أي بيانات شخصية من الأطفال.</p>
+
+            <h2>٩. تغييرات على هذه السياسة</h2>
+            <p>قد نحدث هذه السياسة من وقت لآخر. سنعلمك بأي تغييرات جوهرية من خلال التطبيق.</p>
+
+            <h2>١٠. اتصل بنا</h2>
+            <p>لأي استفسارات حول الخصوصية أو لممارسة حقوقك:</p>
+            <ul>
+                <li>البريد الإلكتروني: <a href="mailto:privacy@ezerapp.com" style="color:var(--indigo)">privacy@ezerapp.com</a></li>
+                <li>الدعم: <a href="mailto:support@ezerapp.com" style="color:var(--indigo)">support@ezerapp.com</a></li>
+            </ul>
+            <p style="margin-top:16px;font-size:14px">للمزيد من المعلومات حول حقوقك، يمكنك التواصل مع اللجنة الوطنية لمراقبة حماية المعطيات ذات الطابع الشخصي (CNDP).</p>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container" style="max-width:1200px">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;margin-bottom:40px">
+                <div><a href="./" class="unified-logo"><img src="../../logo.png" alt="EZer" class="unified-logo-img"><span class="unified-logo-text">EZer app</span></a><p style="color:var(--text-secondary);font-size:14px;margin-top:12px">تطبيق إدارة المالية الشخصية رقم ١ في المغرب</p></div>
+                <div><h4 style="color:var(--text-primary);font-size:14px;font-weight:600;margin-bottom:16px">المنتج</h4><a href="features.html" style="display:block;color:var(--text-secondary);text-decoration:none;font-size:14px;padding:6px 0">الميزات</a><a href="pricing.html" style="display:block;color:var(--text-secondary);text-decoration:none;font-size:14px;padding:6px 0">الأسعار</a></div>
+                <div><h4 style="color:var(--text-primary);font-size:14px;font-weight:600;margin-bottom:16px">قانوني</h4><a href="privacy.html" style="display:block;color:var(--text-secondary);text-decoration:none;font-size:14px;padding:6px 0">سياسة الخصوصية</a><a href="terms.html" style="display:block;color:var(--text-secondary);text-decoration:none;font-size:14px;padding:6px 0">الشروط والأحكام</a></div>
+                <div><h4 style="color:var(--text-primary);font-size:14px;font-weight:600;margin-bottom:16px">الدعم</h4><a href="mailto:support@ezerapp.com" style="display:block;color:var(--text-secondary);text-decoration:none;font-size:14px;padding:6px 0">اتصل بنا</a><a href="../" style="display:block;color:var(--text-secondary);text-decoration:none;font-size:14px;padding:6px 0">View in English</a></div>
+            </div>
+            <div class="theme-toggle-container"><span class="theme-toggle-label">المظهر</span><div class="theme-toggle"><button class="theme-btn" data-theme="light"><span class="material-icons-outlined" style="font-size:18px">light_mode</span></button><button class="theme-btn" data-theme="system"><span class="material-icons-outlined" style="font-size:18px">contrast</span></button><button class="theme-btn" data-theme="dark"><span class="material-icons-outlined" style="font-size:18px">dark_mode</span></button></div></div>
+            <div style="text-align:center;padding-top:24px;border-top:1px solid var(--border);color:var(--text-muted);font-size:13px"><p>&copy; 2025 EZer. جميع الحقوق محفوظة.</p></div>
+        </div>
+    </footer>
+    <script>const themeBtns=document.querySelectorAll('.theme-btn'),html=document.documentElement;function applyTheme(t){'system'===t?html.removeAttribute('data-theme'):html.setAttribute('data-theme',t);themeBtns.forEach(b=>b.classList.toggle('active',b.dataset.theme===t));localStorage.setItem('ezer-theme',t)}applyTheme(localStorage.getItem('ezer-theme')||'system');themeBtns.forEach(b=>b.addEventListener('click',()=>applyTheme(b.dataset.theme)))</script>
+</body>
+</html>

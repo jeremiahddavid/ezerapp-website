@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الميزات - EZer | تتبع المصروفات المجاني لقطر</title>
+    <meta name="description" content="ميزات EZer: تتبع المصروفات المجاني، قوالب الإضافة السريعة، مركز التحليلات، أهداف التوفير، وإدارة الميزانية. متوفر في قطر بـ ر.ق15/شهر للـ Plus.">
+
+    <link rel="canonical" href="https://www.ezerapp.com/qa/ar/features.html">
+    <link rel="alternate" hreflang="ar-QA" href="https://www.ezerapp.com/qa/ar/features.html">
+    <link rel="alternate" hreflang="en-QA" href="https://www.ezerapp.com/qa/features.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/qa/features.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Noto Sans Arabic', sans-serif; }
+
+        .plus-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+            padding: 4px 14px;
+            background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%);
+            border-radius: 50px;
+            border: 1.2px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+            font-weight: 700;
+            color: #4C1D95;
+            font-size: inherit;
+            line-height: 1;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .plus-badge::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -100%;
+            width: 35%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+            animation: shimmer 1.4s infinite;
+        }
+        @keyframes shimmer {
+            0% { right: -35%; }
+            100% { right: 135%; }
+        }
+        .plus-badge-sm { padding: 2px 10px; font-size: 0.75rem; }
+        .plus-badge-lg { padding: 6px 18px; font-size: 1.1rem; }
+    </style>
+
+    <link rel="stylesheet" href="../../css/theme.css">
+    <style>
+        .themed-nav { background: var(--header-bg) !important; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .themed-banner { background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%) !important; }
+        .themed-footer { background: var(--bg-card) !important; border-top: 1px solid var(--border); }
+        body { background: var(--bg-primary) !important; color: var(--text-primary); transition: background-color 0.3s ease; }
+
+        [data-theme="dark"] .bg-gray-50, [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
+        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+        [data-theme="dark"] .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
+        [data-theme="dark"] .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
+        [data-theme="dark"] .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
+        [data-theme="dark"] .bg-purple-100 { background: rgba(147, 51, 234, 0.15) !important; }
+        [data-theme="dark"] .bg-pink-100 { background: rgba(236, 72, 153, 0.15) !important; }
+        [data-theme="dark"] .bg-blue-100 { background: rgba(59, 130, 246, 0.15) !important; }
+
+        [data-theme="dark"] .text-gray-600, [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .text-gray-800, [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
+        [data-theme="dark"] .text-gray-400, [data-theme="dark"] .text-gray-500 { color: var(--text-muted) !important; }
+        [data-theme="dark"] .text-indigo-600 { color: #818cf8 !important; }
+        [data-theme="dark"] .text-green-600 { color: #4ade80 !important; }
+        [data-theme="dark"] .text-green-800 { color: #86efac !important; }
+
+        [data-theme="dark"] .bg-gradient-to-l .text-white,
+        [data-theme="dark"] .bg-gradient-to-br .text-white,
+        [data-theme="dark"] [class*="from-indigo"] .text-white { color: white !important; }
+
+        [data-theme="dark"] .border-gray-100, [data-theme="dark"] .border-gray-200 { border-color: var(--border) !important; }
+        [data-theme="dark"] .shadow-sm, [data-theme="dark"] .shadow, [data-theme="dark"] .shadow-lg { box-shadow: 0 4px 20px var(--card-shadow) !important; }
+
+        [data-theme="light"] .bg-gradient-to-l .text-white,
+        [data-theme="light"] [class*="from-indigo"] .text-white { color: white !important; }
+
+        .theme-btn { color: var(--text-muted); cursor: pointer; transition: all 0.2s; }
+        .theme-btn:hover { color: var(--text-primary); }
+        .theme-btn.active { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%); color: white; box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3); }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
+        <span class="ml-2">🇶🇦</span>
+        الميزات في <strong>قطر</strong>
+        <a href="../features.html" class="text-indigo-600 hover:underline mr-2">View in English</a>
+    </div>
+
+    <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="../../logo.png" alt="EZer" class="h-10 w-10 rounded-xl object-contain">
+                    <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                </a>
+                <div class="hidden lg:flex gap-1 items-center">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">الرئيسية</a>
+                    <a href="features.html" class="px-4 py-2 rounded-lg text-sm transition-colors bg-indigo-100 text-indigo-600 font-semibold">الميزات</a>
+                    <a href="pricing.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">الأسعار</a>
+                    <a href="privacy.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">الخصوصية</a>
+                    <a href="terms.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">الشروط</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=QA" class="mr-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:shadow-lg transition-all">تحميل مجاني</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <span class="material-icons-outlined">menu</span>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-gray-200">
+                <a href="index.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">الرئيسية</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg bg-indigo-100 text-indigo-600 font-semibold">الميزات</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">الأسعار</a>
+                <a href="privacy.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">الخصوصية</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">الشروط</a>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=QA" class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold">تحميل مجاني</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="bg-gradient-to-l from-indigo-600 to-purple-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">الميزات</h1>
+            <p class="text-xl text-indigo-100">أدوات بسيطة لإدارة أموالك بالريال القطري</p>
+            <div class="mt-4 inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full">
+                <span class="text-green-300 font-semibold">مجاني للاستخدام</span>
+                <span class="text-indigo-200">|</span>
+                <span class="text-indigo-100"><span class="plus-badge plus-badge-sm">Plus</span> متوفر بـ ر.ق15/شهر</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Free Features -->
+    <div class="container mx-auto px-4 py-16">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">الميزات المجانية</div>
+                <h2 class="text-3xl font-bold mb-2">كل ما تحتاجه للبدء</h2>
+                <p class="text-gray-600">جميع هذه الميزات متضمنة في الخطة المجانية</p>
+            </div>
+
+            <div class="space-y-16">
+                <!-- Feature 1: Easy Entry -->
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6">
+                            <span class="material-icons-outlined text-3xl text-indigo-600">add_circle</span>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">إدخال المصروفات والدخل بسهولة</h3>
+                        <p class="text-gray-600 mb-4">أضف معاملاتك بسرعة بنقرات قليلة. بسيط وسريع وبديهي. تتبع بالضبط من أين تأتي أموالك وأين تذهب.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>أضف المعاملات في ثوانٍ</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>صنّف إنفاقك</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>تتبع مصادر دخل متعددة</li>
+                        </ul>
+                    </div>
+                    <div class="order-1 md:order-2 bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="text-center text-6xl mb-4">💰</div>
+                        <div class="text-center text-gray-500">إدخال سريع وبسيط</div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Quick Add Templates -->
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="text-center text-6xl mb-4">⚡</div>
+                        <div class="text-center text-gray-500">قوالب بنقرة واحدة</div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center">
+                                <span class="material-icons-outlined text-3xl text-purple-600">content_copy</span>
+                            </div>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">3 قوالب في المجاني</span>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">قوالب الإضافة السريعة</h3>
+                        <p class="text-gray-600 mb-4">وفّر الوقت مع قوالب قابلة لإعادة الاستخدام لمعاملاتك المتكررة. أنشئ قوالب للإيجار والبقالة والاشتراكات - أضفها بنقرة واحدة!</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>إنشاء قوالب مخصصة</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>مصروفات متكررة بنقرة واحدة</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>لا تنسَ المعاملات المنتظمة</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Analytics Hub -->
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center">
+                                <span class="material-icons-outlined text-3xl text-green-600">bar_chart</span>
+                            </div>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">سجل 6 أشهر في المجاني</span>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">مركز التحليلات</h3>
+                        <p class="text-gray-600 mb-4">شاهد بالضبط أين تذهب أموالك مع الرسوم البيانية والتفاصيل. افهم أنماط إنفاقك واتخذ قرارات مالية أذكى.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>تفصيل الإنفاق حسب الفئة</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>رسوم بيانية مرئية</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>تتبع الاتجاهات عبر الوقت</li>
+                        </ul>
+                    </div>
+                    <div class="order-1 md:order-2 bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="text-center text-6xl mb-4">📊</div>
+                        <div class="text-center text-gray-500">رؤى إنفاق مرئية</div>
+                    </div>
+                </div>
+
+                <!-- Feature 4: Savings Goals -->
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="text-center text-6xl mb-4">🎯</div>
+                        <div class="text-center text-gray-500">تتبع تقدمك</div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center">
+                                <span class="material-icons-outlined text-3xl text-pink-600">flag</span>
+                            </div>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">هدفان في المجاني</span>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">أهداف التوفير</h3>
+                        <p class="text-gray-600 mb-4">حدد أهداف التوفير وتتبع تقدمك. اعرف بالضبط أين تقف وأين يتم تخصيص أموالك لكل هدف.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>أهداف توفير متعددة</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>تتبع تخصيص الأموال</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>شاهد التقدم بنظرة سريعة</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature 5: Budget Tracking -->
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center">
+                                <span class="material-icons-outlined text-3xl text-blue-600">account_balance_wallet</span>
+                            </div>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">3 ميزانيات في المجاني</span>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">تتبع الميزانية</h3>
+                        <p class="text-gray-600 mb-4">حدد ميزانيات لكل فئة إنفاق وتتبع تقدمك في الوقت الفعلي. ابقَ على اطلاع بأموالك وتجنب الإفراط في الإنفاق.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>ميزانيات حسب الفئة</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>تتبع في الوقت الفعلي</li>
+                            <li class="flex items-center gap-2 text-gray-700"><span class="material-icons-outlined text-green-500">check</span>أشرطة تقدم مرئية</li>
+                        </ul>
+                    </div>
+                    <div class="order-1 md:order-2 bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="text-center text-6xl mb-4">📈</div>
+                        <div class="text-center text-gray-500">التزم بالميزانية</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Plus Features -->
+    <div class="bg-gradient-to-br from-indigo-50 to-purple-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="mb-4"><span class="plus-badge plus-badge-lg">Plus</span> الميزات</div>
+                    <h2 class="text-3xl font-bold mb-2">افتح المزيد مع <span class="plus-badge">Plus</span></h2>
+                    <p class="text-gray-600">ر.ق15/شهر</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                            <span class="material-icons-outlined text-indigo-600">all_inclusive</span>
+                        </div>
+                        <h4 class="font-bold mb-2">كل شيء غير محدود</h4>
+                        <p class="text-gray-600 text-sm">حسابات وميزانيات وأهداف وقوالب غير محدودة والمزيد.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                            <span class="material-icons-outlined text-indigo-600">cloud</span>
+                        </div>
+                        <h4 class="font-bold mb-2">النسخ الاحتياطي والمزامنة السحابية</h4>
+                        <p class="text-gray-600 text-sm">نسخ احتياطي مشفر ومزامنة عبر جميع أجهزتك.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                            <span class="material-icons-outlined text-indigo-600">groups</span>
+                        </div>
+                        <h4 class="font-bold mb-2">مشاركة العائلة</h4>
+                        <p class="text-gray-600 text-sm">شارك الأموال مع ما يصل إلى 6 أفراد من العائلة.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                            <span class="material-icons-outlined text-indigo-600">sell</span>
+                        </div>
+                        <h4 class="font-bold mb-2">فئات مخصصة</h4>
+                        <p class="text-gray-600 text-sm">أنشئ فئات الإنفاق الخاصة بك.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                            <span class="material-icons-outlined text-indigo-600">description</span>
+                        </div>
+                        <h4 class="font-bold mb-2">تصدير متقدم</h4>
+                        <p class="text-gray-600 text-sm">تصدير إلى Excel و PDF والمزيد من الصيغ.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                            <span class="material-icons-outlined text-indigo-600">notifications</span>
+                        </div>
+                        <h4 class="font-bold mb-2">تذكيرات الفواتير</h4>
+                        <p class="text-gray-600 text-sm">لا تفوّت أي فاتورة مع الإشعارات الذكية.</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <a href="pricing.html" class="inline-block bg-indigo-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
+                        عرض جميع ميزات <span class="plus-badge plus-badge-sm">Plus</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-gradient-to-l from-indigo-600 to-purple-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">ابدأ تتبع أموالك اليوم</h2>
+            <p class="text-xl text-indigo-100 mb-8">مجاني للتحميل - لا حاجة لبطاقة ائتمان</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://apps.apple.com/qa/app/ezer-budget-expense-tracker/id6738029702" class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold hover:bg-indigo-50">تحميل مجاني لـ iOS</a>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=QA" class="bg-indigo-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-800 border-2 border-white">تحميل مجاني لـ Android</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="themed-footer py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain">
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                    <p class="text-sm mb-4" style="color: var(--text-secondary);">رفيقك المالي الذكي في قطر.</p>
+                    <p class="text-green-500 font-semibold">مجاني للاستخدام</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">المنتج</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="features.html" class="block hover:text-indigo-600 transition-colors">الميزات</a>
+                        <a href="pricing.html" class="block hover:text-indigo-600 transition-colors">الأسعار</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">قانوني</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="privacy.html" class="block hover:text-indigo-600 transition-colors">سياسة الخصوصية</a>
+                        <a href="terms.html" class="block hover:text-indigo-600 transition-colors">الشروط والأحكام</a>
+                        <a href="../../data-deletion.html" class="block hover:text-indigo-600 transition-colors">حذف البيانات</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">الدعم</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="../../feedback.html" class="block hover:text-indigo-600 transition-colors">التعليقات</a>
+                        <a href="../../report.html" class="block hover:text-indigo-600 transition-colors">الإبلاغ عن مشكلة</a>
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600 transition-colors">اتصل بنا</a>
+                        <a href="../features.html" class="block hover:text-indigo-600 transition-colors">View in English</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="theme-toggle-container flex items-center justify-center gap-3 py-5 border-t" style="border-color: var(--border);">
+                <span class="text-sm" style="color: var(--text-muted);">المظهر</span>
+                <div class="theme-toggle flex items-center gap-1 p-1 rounded-full" style="background: var(--bg-elevated); border: 1px solid var(--border);">
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="light" title="فاتح"><span class="material-icons-outlined" style="font-size: 18px;">light_mode</span></button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="system" title="النظام"><span class="material-icons-outlined" style="font-size: 18px;">contrast</span></button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="dark" title="داكن"><span class="material-icons-outlined" style="font-size: 18px;">dark_mode</span></button>
+                </div>
+            </div>
+
+            <div class="text-center pt-6 text-sm" style="color: var(--text-muted); border-top: 1px solid var(--border);">
+                <p>&copy; 2025 EZer. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/theme.js"></script>
+    <script>
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu')?.classList.toggle('hidden');
+        });
+        const themeBtns = document.querySelectorAll('.theme-btn');
+        const html = document.documentElement;
+        function applyTheme(t) {
+            if (t === 'system') html.removeAttribute('data-theme');
+            else html.setAttribute('data-theme', t);
+            themeBtns.forEach(b => b.classList.toggle('active', b.dataset.theme === t));
+            localStorage.setItem('ezer-theme', t);
+        }
+        applyTheme(localStorage.getItem('ezer-theme') || 'system');
+        themeBtns.forEach(b => b.addEventListener('click', () => applyTheme(b.dataset.theme)));
+    </script>
+</body>
+</html>

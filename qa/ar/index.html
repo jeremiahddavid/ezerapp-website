@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>EZer - أفضل تطبيق لتتبع المصروفات في قطر | الميزانية والتوفير</title>
+    <meta name="description" content="تتبع كل ريال بأكثر تطبيق خصوصية في قطر. يعمل بدون إنترنت، لا يحتاج تسجيل دخول. مجاني للاستخدام.">
+    <meta name="keywords" content="تتبع المصروفات، تطبيق الميزانية، التوفير، الإمارات، إدارة المال، التمويل الشخصي">
+    <meta name="author" content="EZer">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.ezerapp.com/qa/ar/">
+
+    <!-- Language Alternates -->
+    <link rel="alternate" hreflang="ar-QA" href="https://www.ezerapp.com/qa/ar/">
+    <link rel="alternate" hreflang="en-QA" href="https://www.ezerapp.com/qa/">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/qa/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ezerapp.com/qa/ar/">
+    <meta property="og:title" content="EZer - تتبع كل ريال بخصوصية في قطر">
+    <meta property="og:description" content="تطبيق تتبع المصروفات الذي لا يرفع بياناتك أبداً. يعمل بدون إنترنت. متوفر بالعربية.">
+    <meta property="og:image" content="https://www.ezerapp.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ar_AE">
+    <meta property="og:site_name" content="EZer">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.ezerapp.com/qa/ar/">
+    <meta name="twitter:title" content="EZer - تتبع كل ريال بخصوصية في قطر">
+    <meta name="twitter:description" content="تطبيق تتبع المصروفات الذي لا يرفع بياناتك أبداً. يعمل بدون إنترنت. متوفر بالعربية.">
+    <meta name="twitter:image" content="https://www.ezerapp.com/og-image.png">
+
+    <!-- App Links -->
+    <meta property="al:ios:url" content="ezer://"/>
+    <meta property="al:ios:app_store_id" content="id6738029702"/>
+    <meta property="al:ios:app_name" content="EZer"/>
+    <meta property="al:android:url" content="ezer://"/>
+    <meta property="al:android:package" content="com.ezer.personal_finance"/>
+    <meta property="al:android:app_name" content="EZer"/>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "EZer - الميزانية وتتبع المصروفات",
+        "operatingSystem": "iOS 14.0+, Android 8.0+",
+        "applicationCategory": "FinanceApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "AED"
+        },
+        "availableLanguage": ["ar", "en"],
+        "countryOfOrigin": "AE",
+        "inLanguage": "ar"
+    }
+    </script>
+
+    <style>
+        :root {
+            --indigo: #4f46e5;
+            --purple: #9333ea;
+            --pink: #ec4899;
+            --gradient-hero: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 50%, var(--pink) 100%);
+            --gradient-cta: linear-gradient(90deg, var(--indigo) 0%, var(--purple) 100%);
+            --gradient-text: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 50%, var(--pink) 100%);
+            --gold-start: #FBBF24;
+            --gold-end: #F59E0B;
+            --plus-text: #4C1D95;
+            --bg-dark: #0f0f1a;
+            --bg-card: #1a1a2e;
+            --bg-elevated: #242442;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --border: rgba(255, 255, 255, 0.1);
+            --border-light: rgba(255, 255, 255, 0.15);
+            --hero-accent: #a5b4fc;
+            --card-shadow: rgba(0, 0, 0, 0.3);
+        }
+
+        [data-theme="light"] {
+            --bg-dark: #f8fafc;
+            --bg-card: #ffffff;
+            --bg-elevated: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --border: rgba(0, 0, 0, 0.08);
+            --border-light: rgba(0, 0, 0, 0.12);
+            --hero-accent: var(--indigo);
+            --card-shadow: rgba(0, 0, 0, 0.08);
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root:not([data-theme="dark"]) {
+                --bg-dark: #f8fafc;
+                --bg-card: #ffffff;
+                --bg-elevated: #f1f5f9;
+                --text-primary: #0f172a;
+                --text-secondary: #475569;
+                --text-muted: #64748b;
+                --border: rgba(0, 0, 0, 0.08);
+                --border-light: rgba(0, 0, 0, 0.12);
+                --hero-accent: var(--indigo);
+                --card-shadow: rgba(0, 0, 0, 0.08);
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Noto Sans Arabic', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 max(16px, 5vw); }
+        .section { padding: clamp(48px, 10vw, 100px) 0; }
+
+        /* Language Switcher Banner */
+        .lang-switch-banner {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .lang-switch-banner a { color: var(--indigo); text-decoration: none; margin-right: 8px; font-weight: 500; }
+        .lang-switch-banner a:hover { text-decoration: underline; }
+
+        /* Navigation */
+        .unified-nav {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .unified-nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px max(16px, 4vw);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .unified-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .unified-logo-img { width: 44px; height: 44px; border-radius: 12px; object-fit: contain; }
+        .unified-logo-text {
+            font-size: 24px; font-weight: 800;
+            background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .unified-links { display: flex; align-items: center; gap: 4px; }
+        .unified-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .unified-link:hover { color: var(--indigo); background: rgba(79, 70, 229, 0.1); }
+        .unified-link.active { color: var(--indigo); background: rgba(79, 70, 229, 0.1); }
+        .unified-cta {
+            background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%);
+            color: white !important;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-right: 16px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+        }
+        .unified-cta:hover { transform: scale(1.02); box-shadow: 0 6px 25px rgba(79, 70, 229, 0.4); }
+        .unified-mobile-btn { display: none; background: none; border: none; color: var(--text-primary); padding: 8px; cursor: pointer; }
+        .unified-mobile-menu { display: none; background: var(--bg-card); border-top: 1px solid var(--border); padding: 16px; }
+        .unified-mobile-menu.open { display: block; }
+        .unified-mobile-link { display: block; color: var(--text-secondary); text-decoration: none; padding: 14px 16px; border-radius: 10px; font-size: 16px; font-weight: 500; }
+        .unified-mobile-link:hover, .unified-mobile-link.active { color: var(--indigo); background: rgba(79, 70, 229, 0.1); }
+        .unified-mobile-cta { display: block; background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%); color: white !important; padding: 14px 24px; border-radius: 10px; font-size: 16px; font-weight: 600; text-decoration: none; text-align: center; margin-top: 12px; }
+
+        @media (max-width: 768px) {
+            .unified-links { display: none; }
+            .unified-cta { display: none; }
+            .unified-mobile-btn { display: block; }
+        }
+
+        /* Hero Section */
+        .hero-section {
+            min-height: calc(100vh - 130px);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 24px;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1035 40%, var(--bg-dark) 100%);
+        }
+        .hero-orb { position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.5; pointer-events: none; }
+        .hero-orb.purple { width: 500px; height: 500px; background: var(--purple); top: -150px; left: -100px; opacity: 0.3; }
+        .hero-orb.pink { width: 400px; height: 400px; background: var(--pink); bottom: -100px; right: -100px; opacity: 0.2; }
+        .hero-content { position: relative; z-index: 2; text-align: center; max-width: 900px; }
+        .hero-eyebrow {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: rgba(79, 70, 229, 0.15);
+            border: 1px solid rgba(79, 70, 229, 0.3);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 14px; font-weight: 500;
+            color: #a5b4fc;
+            margin-bottom: 28px;
+        }
+        .hero-eyebrow .material-icons-outlined { font-size: 18px; color: var(--indigo); }
+        .hero-title { font-size: clamp(36px, 7vw, 64px); font-weight: 900; line-height: 1.1; margin-bottom: 20px; }
+        .hero-title .gradient { background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-subtitle { font-size: clamp(16px, 2vw, 20px); color: var(--text-secondary); max-width: 600px; margin: 0 auto 36px; line-height: 1.7; }
+        .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        .btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 16px 28px; border-radius: 12px;
+            font-size: 16px; font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer; border: none;
+        }
+        .btn-primary { background: var(--gradient-cta); color: white; box-shadow: 0 4px 20px rgba(79, 70, 229, 0.4); }
+        .btn-primary:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 8px 30px rgba(79, 70, 229, 0.5); }
+        .btn-secondary { background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border-light); }
+        .btn-secondary:hover { background: rgba(79, 70, 229, 0.15); border-color: var(--indigo); transform: translateY(-2px); }
+
+        /* Social Proof */
+        .social-proof-bar {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
+            padding: clamp(16px, 4vw, 24px) 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .social-proof-inner { display: flex; justify-content: center; align-items: center; gap: clamp(24px, 6vw, 48px); flex-wrap: wrap; }
+        .proof-item { display: flex; align-items: center; gap: 10px; color: var(--text-secondary); font-size: 14px; }
+        .proof-item .material-icons-outlined { color: #a5b4fc; font-size: 20px; }
+        .proof-value { font-weight: 700; color: var(--text-primary); font-size: 18px; }
+
+        /* Sections */
+        .section-alt { background: var(--bg-card); }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-eyebrow { display: inline-block; font-size: 13px; font-weight: 600; color: #a5b4fc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px; }
+        .section-title { font-size: clamp(28px, 5vw, 44px); font-weight: 800; margin-bottom: 16px; }
+        .section-subtitle { font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+
+        /* Cards */
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+        .card {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); border-color: rgba(79, 70, 229, 0.3); }
+        .card-icon {
+            width: 56px; height: 56px;
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(147, 51, 234, 0.1));
+            border-radius: 16px;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 20px;
+            color: #a5b4fc;
+            font-size: 28px;
+        }
+        .card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+        .card p { color: var(--text-secondary); font-size: 15px; line-height: 1.6; }
+
+        /* Goals */
+        .goal-card { display: flex; align-items: flex-start; gap: 20px; }
+        .goal-emoji { font-size: 40px; line-height: 1; }
+        .goal-amount { display: inline-block; background: rgba(79, 70, 229, 0.15); color: #a5b4fc; padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-top: 8px; }
+        .goal-desc { font-size: 14px; color: var(--text-muted); margin-top: 6px; }
+
+        /* Payments Box */
+        .payments-box {
+            background: linear-gradient(135deg, var(--bg-elevated), var(--bg-card));
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 60px;
+            text-align: center;
+        }
+        .payments-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px; }
+        .payment-item { text-align: center; }
+        .payment-icon {
+            width: 72px; height: 72px;
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.15), rgba(236, 72, 153, 0.1));
+            border: 1px solid rgba(79, 70, 229, 0.2);
+            border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 12px;
+            color: #a5b4fc;
+            font-size: 32px;
+            transition: all 0.3s ease;
+        }
+        .payment-item:hover .payment-icon { transform: scale(1.1); border-color: var(--indigo); }
+        .payment-name { font-weight: 600; margin-bottom: 4px; }
+        .payment-examples { font-size: 12px; color: var(--text-muted); }
+
+        /* Trust Box */
+        .trust-box {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(236, 72, 153, 0.05));
+            border: 1px solid rgba(79, 70, 229, 0.25);
+            border-radius: 28px;
+            padding: 60px;
+        }
+        .trust-header { display: flex; align-items: center; gap: 24px; margin-bottom: 40px; }
+        .trust-icon { width: 80px; height: 80px; background: var(--gradient-hero); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+        .trust-header h2 { font-size: 28px; font-weight: 800; }
+        .trust-header p { color: var(--text-secondary); }
+        .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+        .trust-item { display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: rgba(0, 0, 0, 0.2); border-radius: 14px; }
+        .trust-item .material-icons-outlined { color: #a5b4fc; font-size: 22px; }
+        [data-theme="light"] .trust-item { background: rgba(79, 70, 229, 0.05); }
+
+        /* Pricing */
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 750px; margin: 0 auto; }
+        .pricing-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 24px; padding: 40px; text-align: center; }
+        .pricing-card.featured { background: linear-gradient(135deg, rgba(79, 70, 229, 0.15), rgba(147, 51, 234, 0.1)); border-color: rgba(79, 70, 229, 0.4); transform: scale(1.02); }
+        .pricing-card h3 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+        .pricing-price { font-size: 52px; font-weight: 900; background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .pricing-period { color: var(--text-muted); margin-bottom: 24px; }
+        .pricing-desc { color: var(--text-secondary); margin-bottom: 24px; }
+        .pricing-note { margin-top: 16px; background: rgba(0, 0, 0, 0.2); padding: 12px; border-radius: 10px; font-size: 14px; color: var(--text-secondary); }
+        .pricing-note strong { color: #a5b4fc; }
+        .plus-badge {
+            display: inline-flex; align-items: center; gap: 4px;
+            background: linear-gradient(135deg, var(--gold-start) 0%, var(--gold-end) 100%);
+            color: var(--plus-text);
+            padding: 4px 14px;
+            border-radius: 50px;
+            font-size: 12px; font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Download Section */
+        .download-section { background: var(--gradient-hero); padding: 100px 0; position: relative; overflow: hidden; }
+        .download-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); opacity: 0.3; }
+        .download-inner { position: relative; z-index: 1; text-align: center; max-width: 700px; margin: 0 auto; }
+        .download-inner h2 { font-size: clamp(32px, 5vw, 48px); font-weight: 900; color: white; margin-bottom: 16px; }
+        .download-inner p { font-size: 18px; color: rgba(255, 255, 255, 0.85); margin-bottom: 40px; }
+        .download-badges { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .store-badge { display: flex; align-items: center; gap: 14px; background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.2); padding: 14px 28px; border-radius: 14px; text-decoration: none; color: white; transition: all 0.3s ease; backdrop-filter: blur(10px); }
+        .store-badge:hover { background: rgba(0, 0, 0, 0.5); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+        .store-badge .icon { font-size: 36px; }
+        .store-badge .text { text-align: right; }
+        .store-badge .text small { font-size: 12px; opacity: 0.8; display: block; }
+        .store-badge .text span { font-size: 18px; font-weight: 700; }
+        .store-badge.coming-soon { position: relative; opacity: 0.7; cursor: default; pointer-events: none; }
+        .coming-soon-ribbon { position: absolute; top: -8px; left: -8px; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 4px 10px; border-radius: 6px; font-size: 10px; font-weight: 700; text-transform: uppercase; }
+
+        /* Footer */
+        .site-footer { background: var(--bg-card); border-top: 1px solid var(--border); padding: 48px 0 24px; }
+        .theme-toggle-container { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 0; border-top: 1px solid var(--border); margin-top: 24px; }
+        .theme-toggle-label { font-size: 13px; color: var(--text-muted); }
+        .theme-toggle { display: flex; align-items: center; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 50px; padding: 4px; gap: 4px; }
+        .theme-btn { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; border: none; background: transparent; color: var(--text-muted); cursor: pointer; transition: all 0.2s ease; }
+        .theme-btn:hover { color: var(--text-primary); }
+        .theme-btn.active { background: var(--gradient-cta); color: white; box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3); }
+
+        /* Mobile Sticky CTA */
+        .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; padding: 12px 16px; background: rgba(15, 15, 26, 0.98); backdrop-filter: blur(20px); border-top: 1px solid var(--border); z-index: 999; gap: 12px; }
+        [data-theme="light"] .mobile-sticky-cta { background: rgba(255, 255, 255, 0.98); }
+        .mobile-sticky-cta .btn { flex: 1; justify-content: center; padding: 14px 20px; }
+        .mobile-sticky-cta .btn.coming-soon { opacity: 0.6; pointer-events: none; }
+        .mobile-sticky-cta .coming-soon-label { font-size: 8px; display: block; margin-top: 2px; opacity: 0.8; }
+
+        @media (max-width: 768px) {
+            .mobile-sticky-cta { display: flex; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; max-width: 280px; justify-content: center; }
+            .payments-box, .trust-box { padding: clamp(24px, 6vw, 40px); }
+            .trust-header { flex-direction: column; text-align: center; }
+            .download-section { padding-bottom: 100px; }
+        }
+
+        @media (max-width: 640px) {
+            .card-grid { grid-template-columns: 1fr; gap: 16px; }
+            .pricing-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body>
+    <!-- Language Switch Banner -->
+    <div class="lang-switch-banner">
+        <span>🇶🇦</span>
+        أنت تشاهد EZer بالعربية
+        <a href="../">View in English</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="unified-nav">
+        <div class="unified-nav-inner">
+            <a href="./" class="unified-logo">
+                <img src="../../logo.png" alt="EZer" class="unified-logo-img">
+                <span class="unified-logo-text">EZer app</span>
+            </a>
+            <div class="unified-links">
+                <a href="./" class="unified-link active">الرئيسية</a>
+                <a href="features.html" class="unified-link">الميزات</a>
+                <a href="pricing.html" class="unified-link">الأسعار</a>
+                <a href="privacy.html" class="unified-link">الخصوصية</a>
+                <a href="terms.html" class="unified-link">الشروط</a>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=QA" class="unified-cta">تحميل مجاني</a>
+            </div>
+            <button class="unified-mobile-btn" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
+                <span class="material-icons-outlined">menu</span>
+            </button>
+        </div>
+        <div class="unified-mobile-menu">
+            <a href="./" class="unified-mobile-link active">الرئيسية</a>
+            <a href="features.html" class="unified-mobile-link">الميزات</a>
+            <a href="pricing.html" class="unified-mobile-link">الأسعار</a>
+            <a href="privacy.html" class="unified-mobile-link">الخصوصية</a>
+            <a href="terms.html" class="unified-mobile-link">الشروط</a>
+            <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=QA" class="unified-mobile-cta">تحميل مجاني</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-orb purple"></div>
+        <div class="hero-orb pink"></div>
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <span class="material-icons-outlined">verified_user</span>
+                خاص 100%. يعمل بدون إنترنت. لا يحتاج تسجيل دخول.
+            </div>
+            <h1 class="hero-title"><span class="gradient">تتبع كل ريال.</span><br>وفّر لما يهم.</h1>
+            <p class="hero-subtitle">تطبيق تتبع المصروفات الخاص الذي يعمل بدون إنترنت. لا تسجيل دخول. لا سحابة. فقط أنت ومالك.</p>
+            <div class="hero-buttons">
+                <a href="#download" class="btn btn-primary">
+                    <span class="material-icons-outlined">download</span>
+                    تحميل مجاني - ر.ق0
+                </a>
+                <a href="#features" class="btn btn-secondary">اعرف المزيد</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Bar -->
+    <section class="social-proof-bar">
+        <div class="container">
+            <div class="social-proof-inner">
+                <div class="proof-item">
+                    <span class="material-icons-outlined">language</span>
+                    <span><span class="proof-value">29</span> لغة</span>
+                </div>
+                <div class="proof-item">
+                    <span class="material-icons-outlined">public</span>
+                    <span><span class="proof-value">76</span> دولة</span>
+                </div>
+                <div class="proof-item">
+                    <span class="material-icons-outlined">cloud_off</span>
+                    <span><span class="proof-value">100%</span> بدون إنترنت</span>
+                </div>
+                <div class="proof-item">
+                    <span class="material-icons-outlined">enhanced_encryption</span>
+                    <span>تشفير <span class="proof-value">AES-256</span></span>
+                </div>
+                <div class="proof-item">
+                    <span class="material-icons-outlined">person_off</span>
+                    <span><span class="proof-value">لا</span> حساب مطلوب</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expenses Section -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">تتبع المصروفات</span>
+                <h2 class="section-title">تتبع ما ينفقه الناس في قطر فعلاً</h2>
+                <p class="section-subtitle">فئات جاهزة للمصروفات اليومية في قطر</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">restaurant</span></div>
+                    <h3>الغداء في الجامعة</h3>
+                    <p>تتبع مصروفات المطاعم</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">directions_car</span></div>
+                    <h3>بطاقة نول مترو دبي</h3>
+                    <p>تتبع مصروفات التنقل</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">school</span></div>
+                    <h3>كتب من كينوكونيا</h3>
+                    <p>تتبع مصروفات التعليم</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">movie</span></div>
+                    <h3>فيلم في ڤوكس سينما</h3>
+                    <p>تتبع مصروفات الترفيه</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">phone_android</span></div>
+                    <h3>شحن موبايل دو</h3>
+                    <p>تتبع مصروفات الهاتف</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">home</span></div>
+                    <h3>إيجار شقة دبي مارينا</h3>
+                    <p>تتبع مصروفات الإيجار</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">toll</span></div>
+                    <h3>رسوم سالك</h3>
+                    <p>تتبع رسوم الطرق</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">local_parking</span></div>
+                    <h3>رسوم مواقف المول</h3>
+                    <p>تتبع مصروفات المواقف</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">أهداف التوفير</span>
+                <h2 class="section-title">وفّر لأهداف تهمك</h2>
+                <p class="section-subtitle">الناس في قطر يوفرون لهذه الأهداف مع EZer</p>
+            </div>
+            <div class="card-grid">
+                <div class="card goal-card">
+                    <div class="goal-emoji">🛒</div>
+                    <div>
+                        <h3>ماك بوك جديد</h3>
+                        <span class="goal-amount">7,200 ر.ق</span>
+                        <p class="goal-desc">وفّر 4,361 ر.ق لهدفك</p>
+                    </div>
+                </div>
+                <div class="card goal-card">
+                    <div class="goal-emoji">🛡️</div>
+                    <div>
+                        <h3>صندوق الطوارئ</h3>
+                        <span class="goal-amount">30,000 ر.ق</span>
+                        <p class="goal-desc">وفّر 14,400 ر.ق لهدفك</p>
+                    </div>
+                </div>
+                <div class="card goal-card">
+                    <div class="goal-emoji">🏖️</div>
+                    <div>
+                        <h3>إجازة المالديف</h3>
+                        <span class="goal-amount">25,000 ر.ق</span>
+                        <p class="goal-desc">وفّر 9,000 ر.ق لهدفك</p>
+                    </div>
+                </div>
+                <div class="card goal-card">
+                    <div class="goal-emoji">🎓</div>
+                    <div>
+                        <h3>صندوق تعليم الأطفال</h3>
+                        <span class="goal-amount">150,000 ر.ق</span>
+                        <p class="goal-desc">وفّر 69,001 ر.ق لهدفك</p>
+                    </div>
+                </div>
+                <div class="card goal-card">
+                    <div class="goal-emoji">✈️</div>
+                    <div>
+                        <h3>إجازة أوروبا</h3>
+                        <span class="goal-amount">35,000 ر.ق</span>
+                        <p class="goal-desc">وفّر 15,374 ر.ق لهدفك</p>
+                    </div>
+                </div>
+                <div class="card goal-card">
+                    <div class="goal-emoji">💼</div>
+                    <div>
+                        <h3>صندوق طوارئ العمل</h3>
+                        <span class="goal-amount">50,000 ر.ق</span>
+                        <p class="goal-desc">وفّر 32,229 ر.ق لهدفك</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payments -->
+    <section class="section">
+        <div class="container">
+            <div class="payments-box">
+                <h2 style="font-size: 28px; font-weight: 700; margin-bottom: 8px;">يعمل مع طريقة الدفع في قطر</h2>
+                <p style="color: var(--text-secondary);">تتبع كل معاملة، بأي طريقة تدفع</p>
+                <div class="payments-grid">
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">credit_card</span></div>
+                        <div class="payment-name">بطاقات الائتمان والخصم</div>
+                        <div class="payment-examples">فيزا، ماستركارد، أمريكان إكسبرس</div>
+                    </div>
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">contactless</span></div>
+                        <div class="payment-name">Apple Pay و Samsung Pay</div>
+                        <div class="payment-examples">الدفع بالنقر</div>
+                    </div>
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">payments</span></div>
+                        <div class="payment-name">نقداً</div>
+                        <div class="payment-examples">تتبع الدراهم</div>
+                    </div>
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">account_balance</span></div>
+                        <div class="payment-name">تحويل بنكي</div>
+                        <div class="payment-examples">الإمارات دبي الوطني، FAB، المشرق</div>
+                    </div>
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">account_balance_wallet</span></div>
+                        <div class="payment-name">PayBy و Careem Pay</div>
+                        <div class="payment-examples">Spotii، Tabby</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="trust-box">
+                <div class="trust-header">
+                    <div class="trust-icon">🔒</div>
+                    <div>
+                        <h2>بياناتك لا تغادر هاتفك أبداً</h2>
+                        <p>أمان بمستوى البنوك</p>
+                    </div>
+                </div>
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">wifi_off</span>
+                        <span>يعمل بدون إنترنت 100%</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">person_off</span>
+                        <span>لا يحتاج حساب أو تسجيل دخول</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">enhanced_encryption</span>
+                        <span>تشفير AES-256 بمستوى البنوك</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">cloud_off</span>
+                        <span>لا يتم رفع أي بيانات لأي خادم</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">fingerprint</span>
+                        <span>متوافق مع قانون حماية البيانات القطري</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">الأسعار</span>
+                <h2 class="section-title">أسعار بسيطة وشفافة</h2>
+                <p class="section-subtitle">ابدأ مجاناً، وقم بالترقية عند الحاجة</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>مجاني</h3>
+                    <div class="pricing-price">ر.ق0</div>
+                    <div class="pricing-period">للأبد</div>
+                    <p class="pricing-desc">كل ما تحتاجه لبدء التتبع</p>
+                    <a href="#download" class="btn btn-secondary" style="width: 100%; justify-content: center;">ابدأ الآن</a>
+                </div>
+                <div class="pricing-card featured">
+                    <span class="plus-badge">بلس</span>
+                    <h3 style="margin-top: 12px;">بلس</h3>
+                    <div class="pricing-price">ر.ق15</div>
+                    <div class="pricing-period">شهرياً</div>
+                    <p class="pricing-desc">كل شيء بلا حدود للموفرين الجادين</p>
+                    <a href="#download" class="btn btn-primary" style="width: 100%; justify-content: center;">ترقية إلى بلس</a>
+                    <div class="pricing-note">أقل من سعر كرك ستاربكس</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section class="download-section" id="download">
+        <div class="container">
+            <div class="download-inner">
+                <h2>ابدأ التتبع اليوم</h2>
+                <p>حمّل تطبيق EZer مجاناً على iOS أو Android. لا حاجة للتسجيل. بياناتك تبقى على جهازك.</p>
+                <div class="download-badges">
+                    <div class="store-badge coming-soon">
+                        <span class="coming-soon-ribbon">قريباً</span>
+                        <span class="material-icons-outlined icon">apple</span>
+                        <div class="text">
+                            <small>حمّل من</small>
+                            <span>App Store</span>
+                        </div>
+                    </div>
+                    <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=QA" class="store-badge" target="_blank" rel="noopener">
+                        <span class="material-icons-outlined icon">shop</span>
+                        <div class="text">
+                            <small>احصل عليه من</small>
+                            <span>Google Play</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <a href="./" class="unified-logo" style="margin-bottom: 16px;">
+                        <img src="../../logo.png" alt="EZer" class="unified-logo-img">
+                        <span class="unified-logo-text">EZer app</span>
+                    </a>
+                    <p style="color: var(--text-secondary); font-size: 14px; margin-top: 16px;">
+                        رفيقك المالي الذكي في قطر.
+                    </p>
+                    <p style="color: #22c55e; font-weight: 600; font-size: 14px; margin-top: 12px;">مجاني للاستخدام</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">المنتج</h4>
+                    <a href="features.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">الميزات</a>
+                    <a href="pricing.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">الأسعار</a>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">قانوني</h4>
+                    <a href="privacy.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">سياسة الخصوصية</a>
+                    <a href="terms.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">الشروط والأحكام</a>
+                    <a href="../../data-deletion.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">حذف البيانات</a>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">الدعم</h4>
+                    <a href="../../feedback.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">ملاحظات</a>
+                    <a href="../../report.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">الإبلاغ عن مشكلة</a>
+                    <a href="mailto:support@ezerapp.com" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">اتصل بنا</a>
+                    <a href="../" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">View in English</a>
+                </div>
+            </div>
+
+            <!-- Theme Toggle -->
+            <div class="theme-toggle-container">
+                <span class="theme-toggle-label">المظهر</span>
+                <div class="theme-toggle">
+                    <button class="theme-btn" data-theme="light" title="فاتح">
+                        <span class="material-icons-outlined" style="font-size: 18px;">light_mode</span>
+                    </button>
+                    <button class="theme-btn" data-theme="system" title="النظام">
+                        <span class="material-icons-outlined" style="font-size: 18px;">contrast</span>
+                    </button>
+                    <button class="theme-btn" data-theme="dark" title="داكن">
+                        <span class="material-icons-outlined" style="font-size: 18px;">dark_mode</span>
+                    </button>
+                </div>
+            </div>
+
+            <div style="text-align: center; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px;">
+                <p>&copy; 2025 EZer. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Theme Toggle
+        const themeBtns = document.querySelectorAll('.theme-btn');
+        const html = document.documentElement;
+
+        function getSavedTheme() { return localStorage.getItem('ezer-theme') || 'system'; }
+
+        function applyTheme(theme) {
+            if (theme === 'system') { html.removeAttribute('data-theme'); }
+            else { html.setAttribute('data-theme', theme); }
+            themeBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.theme === theme));
+            localStorage.setItem('ezer-theme', theme);
+        }
+
+        applyTheme(getSavedTheme());
+        themeBtns.forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.theme)));
+
+        // Hide mobile CTA when near download section
+        const mobileCta = document.querySelector('.mobile-sticky-cta');
+        const downloadSection = document.querySelector('#download');
+        if (mobileCta && downloadSection) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    mobileCta.style.transform = entry.isIntersecting ? 'translateY(100%)' : 'translateY(0)';
+                });
+            }, { threshold: 0.3 });
+            observer.observe(downloadSection);
+        }
+    </script>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-sticky-cta">
+        <div class="btn btn-secondary coming-soon">
+            <span class="material-icons-outlined">apple</span>
+            <div>iOS<span class="coming-soon-label">قريباً</span></div>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=QA" class="btn btn-primary" target="_blank" rel="noopener">
+            <span class="material-icons-outlined">shop</span>
+            Android
+        </a>
+    </div>
+</body>
+</html>
