@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>EZer - Melhor App de Controle de Gastos Brasil | Orçamento e Poupança</title>
+    <meta name="description" content="Controle cada R$ com o app de finanças mais privado do Brasil. Funciona offline, sem login. Disponível em português. Grátis para usar.">
+    <meta name="keywords" content="controle de gastos, app de gastos, controle financeiro pessoal, finanças pessoais, gestão financeira, orçamento, poupança, Brasil, BRL, real, app offline">
+    <meta name="author" content="EZer">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.ezerapp.com/br/pt/">
+
+    <!-- Language Alternates -->
+    <link rel="alternate" hreflang="pt-BR" href="https://www.ezerapp.com/br/pt/">
+    <link rel="alternate" hreflang="en" href="https://www.ezerapp.com/br/">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/br/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ezerapp.com/br/pt/">
+    <meta property="og:title" content="EZer - Controle Cada R$ com Privacidade no Brasil">
+    <meta property="og:description" content="O app de controle de gastos que nunca envia seus dados. Funciona offline. Disponível em português.">
+    <meta property="og:image" content="https://www.ezerapp.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="EZer">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.ezerapp.com/br/pt/">
+    <meta name="twitter:title" content="EZer - Controle Cada R$ com Privacidade no Brasil">
+    <meta name="twitter:description" content="O app de controle de gastos que nunca envia seus dados. Funciona offline. Disponível em português.">
+    <meta name="twitter:image" content="https://www.ezerapp.com/og-image.png">
+
+    <!-- App Links -->
+    <meta property="al:ios:url" content="ezer://"/>
+    <meta property="al:ios:app_store_id" content="id6738029702"/>
+    <meta property="al:ios:app_name" content="EZer"/>
+    <meta property="al:android:url" content="ezer://"/>
+    <meta property="al:android:package" content="com.ezer.personal_finance"/>
+    <meta property="al:android:app_name" content="EZer"/>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "EZer - Controle de Gastos e Orçamento",
+        "operatingSystem": "iOS 14.0+, Android 8.0+",
+        "applicationCategory": "FinanceApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "BRL"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1247",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "availableLanguage": ["pt", "en"],
+        "countryOfOrigin": "BR",
+        "featureList": [
+            "Controle de gastos",
+            "Gestão de orçamento",
+            "Metas de poupança",
+            "Lembretes de contas",
+            "Funciona offline",
+            "Criptografia bancária"
+        ],
+        "downloadUrl": [
+            "https://apps.apple.com/BR/app/ezer-budget-expense-tracker/id6738029702",
+            "https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=BR"
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --indigo: #4f46e5;
+            --purple: #9333ea;
+            --pink: #ec4899;
+            --gradient-hero: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 50%, var(--pink) 100%);
+            --gradient-cta: linear-gradient(90deg, var(--indigo) 0%, var(--purple) 100%);
+            --gradient-text: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 50%, var(--pink) 100%);
+            --bg-dark: #0f0f1a;
+            --bg-card: #1a1a2e;
+            --bg-elevated: #242442;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --border: rgba(255, 255, 255, 0.1);
+            --border-light: rgba(255, 255, 255, 0.15);
+        }
+
+        [data-theme="light"] {
+            --bg-dark: #f8fafc;
+            --bg-card: #ffffff;
+            --bg-elevated: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --border: rgba(0, 0, 0, 0.08);
+            --border-light: rgba(0, 0, 0, 0.12);
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root:not([data-theme="dark"]) {
+                --bg-dark: #f8fafc;
+                --bg-card: #ffffff;
+                --bg-elevated: #f1f5f9;
+                --text-primary: #0f172a;
+                --text-secondary: #475569;
+                --text-muted: #64748b;
+                --border: rgba(0, 0, 0, 0.08);
+                --border-light: rgba(0, 0, 0, 0.12);
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 max(16px, 5vw); }
+        .section { padding: clamp(48px, 10vw, 100px) 0; }
+        .section-alt { background: var(--bg-card); }
+
+        /* Navigation */
+        .unified-banner {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 8px 16px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .unified-banner a { color: var(--indigo); text-decoration: none; margin-left: 8px; font-weight: 500; }
+
+        .unified-nav {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .unified-nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px max(16px, 4vw);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .unified-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .unified-logo-img { width: 44px; height: 44px; border-radius: 12px; object-fit: contain; }
+        .unified-logo-text {
+            font-size: 24px; font-weight: 800;
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .unified-links { display: flex; align-items: center; gap: 4px; }
+        .unified-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .unified-link:hover, .unified-link.active { color: var(--indigo); background: rgba(79, 70, 229, 0.1); }
+
+        .nav-cta {
+            background: var(--gradient-cta);
+            color: white !important;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-left: 16px;
+        }
+
+        .unified-mobile-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .unified-mobile-menu { display: none; background: var(--bg-card); border-top: 1px solid var(--border); padding: 16px; }
+        .unified-mobile-menu.open { display: block; }
+        .unified-mobile-link { display: block; color: var(--text-secondary); text-decoration: none; padding: 14px 16px; border-radius: 10px; font-size: 16px; }
+        .unified-mobile-cta { display: block; background: var(--gradient-cta); color: white !important; padding: 14px 24px; border-radius: 10px; text-align: center; margin-top: 12px; text-decoration: none; }
+
+        /* Hero */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding: 60px 24px;
+            background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1035 40%, var(--bg-dark) 100%);
+        }
+
+        .hero-orb { position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.3; pointer-events: none; }
+        .hero-orb.purple { width: 500px; height: 500px; background: var(--purple); top: -150px; right: -100px; }
+        .hero-orb.pink { width: 400px; height: 400px; background: var(--pink); bottom: -100px; left: -100px; opacity: 0.2; }
+
+        .hero-content { position: relative; z-index: 2; text-align: center; max-width: 900px; }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: rgba(79, 70, 229, 0.15);
+            border: 1px solid rgba(79, 70, 229, 0.3);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            color: #a5b4fc;
+            margin-bottom: 28px;
+        }
+
+        .hero-title { font-size: clamp(32px, 7vw, 56px); font-weight: 900; line-height: 1.1; margin-bottom: 20px; }
+        .hero-title .gradient { background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-subtitle { font-size: clamp(16px, 2vw, 20px); color: var(--text-secondary); max-width: 600px; margin: 0 auto 36px; line-height: 1.7; }
+        .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        .btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 16px 28px; border-radius: 12px;
+            font-size: 16px; font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer; border: none;
+        }
+        .btn-primary { background: var(--gradient-cta); color: white; box-shadow: 0 4px 20px rgba(79, 70, 229, 0.4); }
+        .btn-primary:hover { transform: translateY(-3px); }
+        .btn-secondary { background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border-light); }
+
+        /* Languages Section */
+        .languages-section { background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 24px; }
+        .languages-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+        .languages-label { font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; }
+        .languages-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .lang-chip {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            padding: 10px 18px;
+            border-radius: 50px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .lang-chip:hover, .lang-chip.active { background: rgba(79, 70, 229, 0.15); border-color: var(--indigo); color: #a5b4fc; }
+
+        /* Social Proof */
+        .social-proof { background: linear-gradient(90deg, rgba(79, 70, 229, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%); padding: 24px 0; border-bottom: 1px solid var(--border); }
+        .social-proof-inner { display: flex; justify-content: center; align-items: center; gap: clamp(24px, 6vw, 48px); flex-wrap: wrap; }
+        .proof-item { display: flex; align-items: center; gap: 10px; color: var(--text-secondary); font-size: 14px; }
+        .proof-item .material-icons-outlined { color: #a5b4fc; font-size: 20px; }
+        .proof-value { font-weight: 700; color: var(--text-primary); font-size: 18px; }
+
+        /* Section Headers */
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-label { display: inline-block; font-size: 13px; font-weight: 600; color: #a5b4fc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px; }
+        .section-title { font-size: clamp(28px, 5vw, 44px); font-weight: 800; margin-bottom: 16px; }
+        .section-subtitle { font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+
+        /* Cards */
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+        .card {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            transition: all 0.3s ease;
+        }
+        .card:hover { transform: translateY(-4px); border-color: rgba(79, 70, 229, 0.3); }
+        .card-icon {
+            width: 56px; height: 56px;
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(147, 51, 234, 0.1));
+            border-radius: 16px;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 20px;
+            color: #a5b4fc;
+            font-size: 28px;
+        }
+        .card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+        .card p { color: var(--text-secondary); font-size: 15px; }
+
+        /* Goal Cards */
+        .goal-card { display: flex; align-items: flex-start; gap: 20px; }
+        .goal-emoji { font-size: 40px; }
+        .goal-amount {
+            display: inline-block;
+            background: rgba(79, 70, 229, 0.15);
+            color: #a5b4fc;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px; font-weight: 600;
+            margin-top: 8px;
+        }
+        .goal-desc { font-size: 14px; color: var(--text-muted); margin-top: 6px; }
+
+        /* Payments */
+        .payments-box {
+            background: linear-gradient(135deg, var(--bg-elevated), var(--bg-card));
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 60px;
+            text-align: center;
+        }
+        .payments-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px; }
+        .payment-item { text-align: center; }
+        .payment-icon {
+            width: 72px; height: 72px;
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.15), rgba(236, 72, 153, 0.1));
+            border: 1px solid rgba(79, 70, 229, 0.2);
+            border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 12px;
+            color: #a5b4fc;
+            font-size: 32px;
+        }
+        .payment-name { font-weight: 600; margin-bottom: 4px; }
+        .payment-examples { font-size: 12px; color: var(--text-muted); }
+
+        /* Feature Cards */
+        .feature-card { background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), transparent); border: 1px solid rgba(79, 70, 229, 0.2); }
+        .feature-example { margin-top: 16px; background: rgba(0, 0, 0, 0.3); padding: 12px 16px; border-radius: 10px; font-size: 14px; color: #a5b4fc; }
+
+        /* Trust Box */
+        .trust-box {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(236, 72, 153, 0.05));
+            border: 1px solid rgba(79, 70, 229, 0.25);
+            border-radius: 28px;
+            padding: 60px;
+        }
+        .trust-header { display: flex; align-items: center; gap: 24px; margin-bottom: 40px; }
+        .trust-icon { width: 80px; height: 80px; background: var(--gradient-hero); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+        .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+        .trust-item { display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: rgba(0, 0, 0, 0.2); border-radius: 14px; }
+        .trust-item .material-icons-outlined { color: #a5b4fc; font-size: 22px; }
+
+        /* Pricing */
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 750px; margin: 0 auto; }
+        .pricing-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 24px; padding: 40px; text-align: center; }
+        .pricing-card.featured { background: linear-gradient(135deg, rgba(79, 70, 229, 0.15), rgba(147, 51, 234, 0.1)); border-color: rgba(79, 70, 229, 0.4); transform: scale(1.02); }
+        .pricing-price { font-size: 48px; font-weight: 900; margin: 20px 0; }
+        .pricing-price span { font-size: 18px; color: var(--text-secondary); }
+        .pricing-features { list-style: none; text-align: left; margin: 24px 0; }
+        .pricing-features li { display: flex; align-items: center; gap: 10px; padding: 10px 0; color: var(--text-secondary); }
+        .pricing-features .material-icons-outlined { color: #22c55e; font-size: 20px; }
+
+        /* Download */
+        .download-section { background: var(--gradient-hero); padding: 100px 0; position: relative; overflow: hidden; }
+        .download-inner { position: relative; z-index: 1; text-align: center; max-width: 700px; margin: 0 auto; }
+        .download-inner h2 { font-size: clamp(32px, 5vw, 48px); font-weight: 900; color: white; margin-bottom: 16px; }
+        .download-inner p { font-size: 18px; color: rgba(255, 255, 255, 0.85); margin-bottom: 40px; }
+        .download-badges { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .store-badge {
+            display: flex; align-items: center; gap: 14px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 14px 28px;
+            border-radius: 14px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .store-badge:hover { background: rgba(0, 0, 0, 0.5); transform: translateY(-3px); }
+        .store-badge .icon { font-size: 36px; }
+        .store-badge .text small { font-size: 12px; opacity: 0.8; display: block; }
+        .store-badge .text span { font-size: 18px; font-weight: 700; }
+        .store-badge.coming-soon { opacity: 0.7; pointer-events: none; }
+
+        /* Footer */
+        .site-footer { background: var(--bg-card); border-top: 1px solid var(--border); padding: 48px 0 24px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        .footer-grid h4 { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+        .footer-grid a { display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0; }
+        .footer-grid a:hover { color: var(--indigo); }
+
+        .theme-toggle-container { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 0; border-top: 1px solid var(--border); margin-top: 24px; }
+        .theme-toggle-label { font-size: 13px; color: var(--text-muted); }
+        .theme-toggle { display: flex; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 50px; padding: 4px; }
+        .theme-btn { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; border: none; background: transparent; color: var(--text-muted); cursor: pointer; }
+        .theme-btn.active { background: var(--gradient-cta); color: white; }
+
+        /* Mobile */
+        .mobile-sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            padding: 12px 16px;
+            background: rgba(15, 15, 26, 0.98);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--border);
+            z-index: 999;
+            gap: 12px;
+        }
+        .mobile-sticky-cta .btn { flex: 1; justify-content: center; padding: 14px 20px; }
+        .mobile-sticky-cta .btn.coming-soon { opacity: 0.6; pointer-events: none; }
+
+        @media (max-width: 768px) {
+            .unified-links, .nav-cta { display: none; }
+            .unified-mobile-btn { display: block; }
+            .mobile-sticky-cta { display: flex; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; max-width: 280px; justify-content: center; }
+            .payments-box, .trust-box { padding: 30px; }
+            .trust-header { flex-direction: column; text-align: center; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 480px) {
+            .card-grid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="unified-banner">
+        <span>🇧🇷</span>
+        Você está vendo EZer para <strong>Brasil</strong>
+        <a href="../../">Mudar país</a>
+    </div>
+    <nav class="unified-nav">
+        <div class="unified-nav-inner">
+            <a href="./" class="unified-logo">
+                <img src="../../logo.png" alt="EZer" class="unified-logo-img">
+                <span class="unified-logo-text">EZer app</span>
+            </a>
+            <div class="unified-links">
+                <a href="./" class="unified-link active">Início</a>
+                <a href="features.html" class="unified-link">Recursos</a>
+                <a href="pricing.html" class="unified-link">Preços</a>
+                <a href="privacy.html" class="unified-link">Privacidade</a>
+                <a href="terms.html" class="unified-link">Termos</a>
+                <a href="#download" class="nav-cta">Baixar Grátis</a>
+            </div>
+            <button class="unified-mobile-btn" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
+                <span class="material-icons-outlined">menu</span>
+            </button>
+        </div>
+        <div class="unified-mobile-menu">
+            <a href="./" class="unified-mobile-link active">Início</a>
+            <a href="features.html" class="unified-mobile-link">Recursos</a>
+            <a href="pricing.html" class="unified-mobile-link">Preços</a>
+            <a href="privacy.html" class="unified-mobile-link">Privacidade</a>
+            <a href="terms.html" class="unified-mobile-link">Termos</a>
+            <a href="#download" class="unified-mobile-cta">Baixar Grátis</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-orb purple"></div>
+        <div class="hero-orb pink"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="material-icons-outlined">verified_user</span>
+                100% Privado • Funciona Offline • Sem Login
+            </div>
+            <h1 class="hero-title"><span class="gradient">Controle cada real.</span><br>Economize para o que importa.</h1>
+            <p class="hero-subtitle">O app de controle de gastos que funciona offline. Sem login. Sem nuvem. Só você e suas finanças.</p>
+            <div class="hero-buttons">
+                <a href="#download" class="btn btn-primary">
+                    <span class="material-icons-outlined">download</span>
+                    Baixar Grátis - R$0
+                </a>
+                <a href="#features" class="btn btn-secondary">Como Funciona</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Bar -->
+    <section class="languages-section">
+        <div class="languages-inner">
+            <div class="languages-label">Disponível em 2 Idiomas</div>
+            <div class="languages-chips">
+                <span class="lang-chip active">Português</span>
+                <a href="../" class="lang-chip">English</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="social-proof-inner">
+                <div class="proof-item">
+                    <span class="material-icons-outlined">language</span>
+                    <span><span class="proof-value">29</span> Idiomas</span>
+                </div>
+                <div class="proof-item">
+                    <span class="material-icons-outlined">public</span>
+                    <span><span class="proof-value">76</span> Países</span>
+                </div>
+                <div class="proof-item">
+                    <span class="material-icons-outlined">cloud_off</span>
+                    <span><span class="proof-value">100%</span> Offline</span>
+                </div>
+                <div class="proof-item">
+                    <span class="material-icons-outlined">enhanced_encryption</span>
+                    <span><span class="proof-value">AES-256</span> Criptografia</span>
+                </div>
+                <div class="proof-item">
+                    <span class="material-icons-outlined">person_off</span>
+                    <span><span class="proof-value">Sem</span> Conta</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expenses Section -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Controle de Gastos</span>
+                <h2 class="section-title">Acompanhe o que os brasileiros realmente gastam</h2>
+                <p class="section-subtitle">Categorias prontas para despesas do dia a dia</p>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">restaurant</span></div>
+                    <h3>Almoço no bandejão</h3>
+                    <p>Controle gastos com restaurantes</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">directions_car</span></div>
+                    <h3>Passagem de ônibus/metrô</h3>
+                    <p>Controle gastos com transporte</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">school</span></div>
+                    <h3>Livros e materiais</h3>
+                    <p>Controle gastos com educação</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">movie</span></div>
+                    <h3>Cinema com amigos</h3>
+                    <p>Controle gastos com lazer</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">phone_android</span></div>
+                    <h3>Conta do celular</h3>
+                    <p>Controle gastos com telefone</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">home</span></div>
+                    <h3>Aluguel do apartamento</h3>
+                    <p>Controle gastos com moradia</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">delivery_dining</span></div>
+                    <h3>Pedido no iFood</h3>
+                    <p>Controle gastos com delivery</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">checkroom</span></div>
+                    <h3>Compras de roupas</h3>
+                    <p>Controle gastos com vestuário</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Metas de Poupança</span>
+                <h2 class="section-title">Economize para metas que importam para você</h2>
+                <p class="section-subtitle">Brasileiros estão economizando para isso com EZer</p>
+            </div>
+            <div class="card-grid">
+                <div class="card goal-card">
+                    <div class="goal-emoji">💻</div>
+                    <div>
+                        <h3>Notebook Novo</h3>
+                        <span class="goal-amount">R$3.500</span>
+                        <p class="goal-desc">Economize R$1.280 para sua meta</p>
+                    </div>
+                </div>
+                <div class="card goal-card">
+                    <div class="goal-emoji">🛡️</div>
+                    <div>
+                        <h3>Reserva de Emergência</h3>
+                        <span class="goal-amount">R$12.000</span>
+                        <p class="goal-desc">Economize R$3.840 para sua meta</p>
+                    </div>
+                </div>
+                <div class="card goal-card">
+                    <div class="goal-emoji">🏖️</div>
+                    <div>
+                        <h3>Férias na Praia</h3>
+                        <span class="goal-amount">R$10.000</span>
+                        <p class="goal-desc">Economize R$9.600 para sua meta</p>
+                    </div>
+                </div>
+                <div class="card goal-card">
+                    <div class="goal-emoji">🎓</div>
+                    <div>
+                        <h3>Educação dos Filhos</h3>
+                        <span class="goal-amount">R$60.000</span>
+                        <p class="goal-desc">Economize R$23.225 para sua meta</p>
+                    </div>
+                </div>
+                <div class="card goal-card">
+                    <div class="goal-emoji">✈️</div>
+                    <div>
+                        <h3>Viagem em Família</h3>
+                        <span class="goal-amount">R$15.000</span>
+                        <p class="goal-desc">Economize R$5.830 para sua meta</p>
+                    </div>
+                </div>
+                <div class="card goal-card">
+                    <div class="goal-emoji">💼</div>
+                    <div>
+                        <h3>Reserva para Negócios</h3>
+                        <span class="goal-amount">R$20.000</span>
+                        <p class="goal-desc">Economize R$13.779 para sua meta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payments Section -->
+    <section class="section">
+        <div class="container">
+            <div class="payments-box">
+                <h2 style="font-size: 28px; font-weight: 700; margin-bottom: 8px;">Funciona com como o Brasil paga</h2>
+                <p style="color: var(--text-secondary);">Acompanhe cada transação, seja como você pagar</p>
+                <div class="payments-grid">
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">account_balance</span></div>
+                        <div class="payment-name">Pix</div>
+                        <div class="payment-examples">Transferência instantânea</div>
+                    </div>
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">credit_card</span></div>
+                        <div class="payment-name">Cartão de Crédito</div>
+                        <div class="payment-examples">Visa, Mastercard, Elo</div>
+                    </div>
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">credit_card</span></div>
+                        <div class="payment-name">Cartão de Débito</div>
+                        <div class="payment-examples">Todos os bancos</div>
+                    </div>
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">payments</span></div>
+                        <div class="payment-name">Dinheiro</div>
+                        <div class="payment-examples">Controle de dinheiro vivo</div>
+                    </div>
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">receipt</span></div>
+                        <div class="payment-name">Boleto</div>
+                        <div class="payment-examples">Contas e pagamentos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Features -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Feito para o Brasil</span>
+                <h2 class="section-title">Desenvolvido para brasileiros</h2>
+                <p class="section-subtitle">Recursos que você não encontra em outros apps</p>
+            </div>
+            <div class="card-grid">
+                <div class="card feature-card">
+                    <h3>Integração com PIX</h3>
+                    <p>Rastreie pagamentos PIX facilmente</p>
+                    <div class="feature-example">Identifique transferências instantâneas</div>
+                </div>
+                <div class="card feature-card">
+                    <h3>Controle de Parcelas</h3>
+                    <p>Gerencie compras parceladas</p>
+                    <div class="feature-example">Acompanhe parcelas do cartão</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="section">
+        <div class="container">
+            <div class="trust-box">
+                <div class="trust-header">
+                    <div class="trust-icon">🔒</div>
+                    <div>
+                        <h2 style="font-size: 28px; font-weight: 800;">Seus dados nunca saem do seu celular</h2>
+                        <p style="color: var(--text-secondary);">Segurança de nível bancário</p>
+                    </div>
+                </div>
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">wifi_off</span>
+                        <span>100% offline - funciona sem internet</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">person_off</span>
+                        <span>Sem conta ou login necessário</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">enhanced_encryption</span>
+                        <span>Criptografia AES-256 de nível bancário</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">cloud_off</span>
+                        <span>Nenhum dado enviado para servidores</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">fingerprint</span>
+                        <span>Compatível com LGPD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section section-alt" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Preços</span>
+                <h2 class="section-title">Preços simples e transparentes</h2>
+                <p class="section-subtitle">Comece grátis, faça upgrade quando precisar</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Grátis</h3>
+                    <div class="pricing-price">R$0<span>/sempre</span></div>
+                    <ul class="pricing-features">
+                        <li><span class="material-icons-outlined">check_circle</span> Lançamentos ilimitados</li>
+                        <li><span class="material-icons-outlined">check_circle</span> 3 categorias de orçamento</li>
+                        <li><span class="material-icons-outlined">check_circle</span> 2 metas de poupança</li>
+                        <li><span class="material-icons-outlined">check_circle</span> Rastreamento por SMS</li>
+                        <li><span class="material-icons-outlined">check_circle</span> Relatórios básicos</li>
+                    </ul>
+                    <a href="#download" class="btn btn-secondary" style="width: 100%; justify-content: center;">Baixar Grátis</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Plus</h3>
+                    <div class="pricing-price">R$19,90<span>/mês</span></div>
+                    <ul class="pricing-features">
+                        <li><span class="material-icons-outlined">check_circle</span> Tudo do Grátis</li>
+                        <li><span class="material-icons-outlined">check_circle</span> Orçamentos ilimitados</li>
+                        <li><span class="material-icons-outlined">check_circle</span> Metas ilimitadas</li>
+                        <li><span class="material-icons-outlined">check_circle</span> Relatórios avançados</li>
+                        <li><span class="material-icons-outlined">check_circle</span> Exportar dados</li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary" style="width: 100%; justify-content: center;">Fazer Upgrade</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section class="download-section" id="download">
+        <div class="container">
+            <div class="download-inner">
+                <h2>Comece a Controlar Hoje</h2>
+                <p>Baixe o EZer grátis no iOS ou Android. Sem cadastro. Seus dados ficam no seu celular.</p>
+                <div class="download-badges">
+                    <div class="store-badge coming-soon">
+                        <span class="material-icons-outlined icon">apple</span>
+                        <div class="text">
+                            <small>Em breve</small>
+                            <span>App Store</span>
+                        </div>
+                    </div>
+                    <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=BR" class="store-badge" target="_blank" rel="noopener">
+                        <span class="material-icons-outlined icon">shop</span>
+                        <div class="text">
+                            <small>Disponível no</small>
+                            <span>Google Play</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="./" class="unified-logo" style="margin-bottom: 16px;">
+                        <img src="../../logo.png" alt="EZer" class="unified-logo-img">
+                        <span class="unified-logo-text">EZer app</span>
+                    </a>
+                    <p style="color: var(--text-secondary); font-size: 14px; margin-top: 16px;">
+                        Seu Companheiro Financeiro Inteligente no Brasil.
+                    </p>
+                    <p style="color: #22c55e; font-weight: 600; font-size: 14px; margin-top: 12px;">Grátis para usar</p>
+                </div>
+                <div>
+                    <h4>Produto</h4>
+                    <a href="features.html">Recursos</a>
+                    <a href="pricing.html">Preços</a>
+                </div>
+                <div>
+                    <h4>Legal</h4>
+                    <a href="privacy.html">Política de Privacidade</a>
+                    <a href="terms.html">Termos e Condições</a>
+                    <a href="../../data-deletion.html">Exclusão de Dados</a>
+                </div>
+                <div>
+                    <h4>Suporte</h4>
+                    <a href="../../feedback.html">Feedback</a>
+                    <a href="../../report.html">Reportar Problema</a>
+                    <a href="mailto:support@ezerapp.com">Contato</a>
+                    <a href="../../">Mudar País</a>
+                </div>
+            </div>
+
+            <!-- Language Switcher -->
+            <div style="text-align: center; padding: 20px 0; border-top: 1px solid var(--border);">
+                <span style="font-size: 13px; color: var(--text-muted); margin-right: 12px;">Idioma:</span>
+                <a href="./" style="color: var(--indigo); font-weight: 600; text-decoration: none; margin-right: 16px;">Português</a>
+                <a href="../" style="color: var(--text-secondary); text-decoration: none;">English</a>
+            </div>
+
+            <!-- Theme Toggle -->
+            <div class="theme-toggle-container">
+                <span class="theme-toggle-label">Aparência</span>
+                <div class="theme-toggle">
+                    <button class="theme-btn" data-theme="light" title="Modo claro">
+                        <span class="material-icons-outlined">light_mode</span>
+                    </button>
+                    <button class="theme-btn" data-theme="system" title="Sistema">
+                        <span class="material-icons-outlined">contrast</span>
+                    </button>
+                    <button class="theme-btn" data-theme="dark" title="Modo escuro">
+                        <span class="material-icons-outlined">dark_mode</span>
+                    </button>
+                </div>
+            </div>
+
+            <div style="text-align: center; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px;">
+                <p>&copy; 2025 EZer. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-sticky-cta">
+        <div class="btn btn-secondary coming-soon">
+            <span class="material-icons-outlined">apple</span>
+            iOS
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=BR" class="btn btn-primary" target="_blank" rel="noopener">
+            <span class="material-icons-outlined">shop</span>
+            Android
+        </a>
+    </div>
+
+    <script>
+        // Theme Toggle
+        const themeBtns = document.querySelectorAll('.theme-btn');
+        const html = document.documentElement;
+
+        function getSavedTheme() { return localStorage.getItem('ezer-theme') || 'system'; }
+
+        function applyTheme(theme) {
+            if (theme === 'system') { html.removeAttribute('data-theme'); }
+            else { html.setAttribute('data-theme', theme); }
+            themeBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.theme === theme));
+            localStorage.setItem('ezer-theme', theme);
+        }
+
+        applyTheme(getSavedTheme());
+        themeBtns.forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.theme)));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Hide mobile CTA when near download section
+        const mobileCta = document.querySelector('.mobile-sticky-cta');
+        const downloadSection = document.querySelector('#download');
+        if (mobileCta && downloadSection) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    mobileCta.style.transform = entry.isIntersecting ? 'translateY(100%)' : 'translateY(0)';
+                });
+            }, { threshold: 0.3 });
+            observer.observe(downloadSection);
+        }
+    </script>
+</body>
+</html>
