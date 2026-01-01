@@ -1,51 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary SEO Meta Tags -->
-    <title>EZer - Best Expense Tracker App Jordan | Budget & Savings</title>
-    <meta name="description" content="Track every د.ا with Jordan's most private expense tracker. Works offline, no login required. Available in 2 languages. Free to use.">
-    <meta name="keywords" content="">
+    <title>EZer - नेपाल का सबसे अच्छा खर्च ट्रैकर ऐप | बजट और बचत</title>
+    <meta name="description" content="नेपाल के सबसे निजी खर्च ट्रैकर से हर रू ट्रैक करें। ऑफलाइन काम करता है, लॉगिन की जरूरत नहीं। 2 भाषाओं में उपलब्ध। उपयोग मुफ्त।">
+    <meta name="keywords" content="खर्च ट्रैकर, बजट ऐप, बचत लक्ष्य, नेपाल, हिंदी">
     <meta name="author" content="EZer">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.ezerapp.com/jordan/">
+    <link rel="canonical" href="https://www.ezerapp.com/np/hi/">
 
     <!-- Language Alternates -->
-    <link rel="alternate" hreflang="ar-JO" href="https://www.ezerapp.com/jo/ar/">
-    <link rel="alternate" hreflang="en-JO" href="https://www.ezerapp.com/jo/">
-    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/jo/">
-    <!-- Auto-redirect for Arabic speakers -->
-    <script>
-    (function() {
-        if (sessionStorage.getItem('ezer-lang-redirect')) return;
-        var lang = navigator.language || navigator.userLanguage || '';
-        if (lang.toLowerCase().startsWith('ar')) {
-            sessionStorage.setItem('ezer-lang-redirect', 'true');
-            window.location.href = './ar/';
-        }
-    })();
-    </script>
+    <link rel="alternate" hreflang="hi-NP" href="https://www.ezerapp.com/np/hi/">
+    <link rel="alternate" hreflang="en-NP" href="https://www.ezerapp.com/np/">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/np/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.ezerapp.com/jordan/">
-    <meta property="og:title" content="EZer - Track Every د.ا Privately in Jordan">
-    <meta property="og:description" content="The expense tracker that never uploads your data. Works offline. Available in 2 languages.">
+    <meta property="og:url" content="https://www.ezerapp.com/np/hi/">
+    <meta property="og:title" content="EZer - नेपाल में हर रू को निजी तौर पर ट्रैक करें">
+    <meta property="og:description" content="खर्च ट्रैकर जो कभी आपका डेटा अपलोड नहीं करता। ऑफलाइन काम करता है। 2 भाषाओं में उपलब्ध।">
     <meta property="og:image" content="https://www.ezerapp.com/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="en_JO">
+    <meta property="og:locale" content="hi_NP">
     <meta property="og:site_name" content="EZer">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.ezerapp.com/jordan/">
-    <meta name="twitter:title" content="EZer - Track Every د.ا Privately in Jordan">
-    <meta name="twitter:description" content="The expense tracker that never uploads your data. Works offline. Available in 2 languages.">
+    <meta name="twitter:url" content="https://www.ezerapp.com/np/hi/">
+    <meta name="twitter:title" content="EZer - नेपाल में हर रू को निजी तौर पर ट्रैक करें">
+    <meta name="twitter:description" content="खर्च ट्रैकर जो कभी आपका डेटा अपलोड नहीं करता। ऑफलाइन काम करता है। 2 भाषाओं में उपलब्ध।">
     <meta name="twitter:image" content="https://www.ezerapp.com/og-image.png">
 
     <!-- App Links -->
@@ -63,10 +52,10 @@
     <!-- Preconnect & Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" as="style">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
     <!-- Structured Data -->
@@ -74,13 +63,13 @@
     {
         "@context": "https://schema.org",
         "@type": "MobileApplication",
-        "name": "EZer - Budget & Expense Tracker",
+        "name": "EZer - बजट और खर्च ट्रैकर",
         "operatingSystem": "iOS 14.0+, Android 8.0+",
         "applicationCategory": "FinanceApplication",
         "offers": {
                 "@type": "Offer",
                 "price": "0",
-                "priceCurrency": "JOD"
+                "priceCurrency": "NPR"
         },
         "aggregateRating": {
                 "@type": "AggregateRating",
@@ -90,60 +79,23 @@
                 "worstRating": "1"
         },
         "availableLanguage": [
-                "ar",
-                "en"
+                "ne",
+                "en",
+                "hi"
         ],
-        "countryOfOrigin": "JO",
-        "screenshot": [
-                "https://www.ezerapp.com/assets/screenshots/jo-home.webp",
-                "https://www.ezerapp.com/assets/screenshots/jo-analytics.webp"
-        ],
+        "countryOfOrigin": "NP",
         "featureList": [
-                "Expense tracking",
-                "Budget management",
-                "Savings goals",
-                "Bill reminders",
-                "Offline-first",
-                "Bank-grade encryption"
+                "खर्च ट्रैकिंग",
+                "बजट प्रबंधन",
+                "बचत लक्ष्य",
+                "बिल रिमाइंडर",
+                "ऑफलाइन-फर्स्ट",
+                "बैंक-ग्रेड एन्क्रिप्शन"
         ],
         "softwareVersion": "1.0",
         "downloadUrl": [
-                "https://apps.apple.com/JO/app/ezer-budget-expense-tracker/id6738029702",
-                "https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=JO"
-        ]
-}
-    </script>
-
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-                {
-                        "@type": "Question",
-                        "name": "Is EZer app free to use in Jordan?",
-                        "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Yes, EZer app is completely free to download and use. All core features including expense tracking, budgeting, and savings goals are free."
-                        }
-                },
-                {
-                        "@type": "Question",
-                        "name": "Does EZer app work offline?",
-                        "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Yes, EZer app works 100% offline. Your data is stored only on your phone with bank-grade encryption. No internet connection is required."
-                        }
-                },
-                {
-                        "@type": "Question",
-                        "name": "Which languages does EZer support in Jordan?",
-                        "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "EZer app supports 2 languages including Arabic, English."
-                        }
-                }
+                "https://apps.apple.com/NP/app/ezer-budget-expense-tracker/id6738029702",
+                "https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=NP"
         ]
 }
     </script>
@@ -202,7 +154,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Noto Sans Devanagari', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--bg-dark);
             color: var(--text-primary);
             line-height: 1.6;
@@ -252,7 +204,7 @@
         }
 
         .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        
+
         /* Unified Navigation Styles */
         .unified-banner {
             background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%);
@@ -549,18 +501,6 @@
         .btn-secondary { background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border-light); }
         .btn-secondary:hover { background: rgba(79, 70, 229, 0.15); border-color: var(--indigo); transform: translateY(-2px); }
 
-        .slider-controls { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 12px; z-index: 10; }
-        .slider-lang { font-size: 13px; color: var(--text-muted); }
-        .slider-dots { display: flex; gap: 10px; }
-        .slider-dot {
-            width: 10px; height: 10px; border-radius: 50%;
-            background: var(--bg-elevated);
-            border: 2px solid var(--border-light);
-            cursor: pointer; transition: all 0.3s ease;
-        }
-        .slider-dot:hover { border-color: var(--purple); }
-        .slider-dot.active { background: var(--purple); border-color: var(--purple); transform: scale(1.3); }
-
         .languages-section { background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 24px; }
         .languages-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
         .languages-label { font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; }
@@ -577,7 +517,6 @@
         }
         .lang-chip:hover, .lang-chip.active { background: rgba(79, 70, 229, 0.15); border-color: var(--indigo); color: #a5b4fc; }
 
-        /* container and section defined above with responsive values */
         .section-alt { background: var(--bg-card); }
         .section-header { text-align: center; margin-bottom: 60px; }
         .section-eyebrow { display: inline-block; font-size: 13px; font-weight: 600; color: #a5b4fc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px; }
@@ -792,39 +731,6 @@
         .proof-item .material-icons-outlined { color: #a5b4fc; font-size: 20px; }
         .proof-value { font-weight: 700; color: var(--text-primary); font-size: 18px; }
 
-        /* App Preview Section */
-        .app-preview {
-            padding: clamp(40px, 8vw, 80px) 0;
-            text-align: center;
-            background: var(--bg-card);
-        }
-        .app-preview h2 {
-            font-size: clamp(24px, 5vw, 36px);
-            font-weight: 800;
-            margin-bottom: 16px;
-        }
-        .app-preview p {
-            color: var(--text-secondary);
-            margin-bottom: 32px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .app-mockups {
-            display: flex;
-            justify-content: center;
-            gap: clamp(16px, 4vw, 32px);
-            flex-wrap: wrap;
-        }
-        .app-mockup {
-            width: clamp(140px, 30vw, 200px);
-            height: auto;
-            border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease;
-        }
-        .app-mockup:hover { transform: translateY(-8px) scale(1.02); }
-
         @media (max-width: 1024px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
 
         @media (max-width: 768px) {
@@ -836,7 +742,7 @@
             .payments-box, .trust-box { padding: clamp(24px, 6vw, 40px); }
             .trust-header { flex-direction: column; text-align: center; }
             .footer-grid { grid-template-columns: 1fr; gap: 32px; }
-            .download-section { padding-bottom: 100px; } /* Space for sticky CTA */
+            .download-section { padding-bottom: 100px; }
         }
 
         @media (max-width: 640px) {
@@ -862,93 +768,63 @@
     <script src="/js/analytics.js"></script>
 </head>
 <body>
-    <!-- Header -->
-        <!-- LOCKED: Navigation - DO NOT MODIFY (see .claude/CLAUDE.md) -->
-    <!-- Unified Navigation -->
+    <!-- Language Switch Banner -->
     <div class="unified-banner">
-        <span>🇯🇴</span>
-        You're viewing EZer for <strong>Jordan</strong>
-        <a href="../">Change country</a>
+        <span>🇳🇵</span>
+        आप <strong>नेपाल</strong> के लिए EZer हिंदी में देख रहे हैं
+        <a href="../">English में देखें</a>
     </div>
+
+    <!-- Navigation -->
     <nav class="unified-nav">
         <div class="unified-nav-inner">
             <a href="./" class="unified-logo">
-                <img src="../logo.png" alt="EZer" class="unified-logo-img">
+                <img src="../../logo.png" alt="EZer" class="unified-logo-img">
                 <span class="unified-logo-text">EZer app</span>
             </a>
             <div class="unified-links">
-                <a href="./" class="unified-link active">Home</a>
-                <a href="features.html" class="unified-link">Features</a>
-                <a href="pricing.html" class="unified-link">Pricing</a>
-                <a href="privacy.html" class="unified-link">Privacy</a>
-                <a href="terms.html" class="unified-link">Terms</a>
-                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-cta">Download Free</a>
+                <a href="./" class="unified-link active">होम</a>
+                <a href="features.html" class="unified-link">सुविधाएं</a>
+                <a href="pricing.html" class="unified-link">मूल्य</a>
+                <a href="privacy.html" class="unified-link">गोपनीयता</a>
+                <a href="terms.html" class="unified-link">नियम</a>
+                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-cta">मुफ्त डाउनलोड करें</a>
             </div>
             <button class="unified-mobile-btn" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
                 <span class="material-icons-outlined">menu</span>
             </button>
         </div>
         <div class="unified-mobile-menu">
-            <a href="./" class="unified-mobile-link active">Home</a>
-            <a href="features.html" class="unified-mobile-link">Features</a>
-            <a href="pricing.html" class="unified-mobile-link">Pricing</a>
-            <a href="privacy.html" class="unified-mobile-link">Privacy</a>
-            <a href="terms.html" class="unified-mobile-link">Terms</a>
-            <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-mobile-cta">Download Free</a>
+            <a href="./" class="unified-mobile-link active">होम</a>
+            <a href="features.html" class="unified-mobile-link">सुविधाएं</a>
+            <a href="pricing.html" class="unified-mobile-link">मूल्य</a>
+            <a href="privacy.html" class="unified-mobile-link">गोपनीयता</a>
+            <a href="terms.html" class="unified-mobile-link">नियम</a>
+            <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-mobile-cta">मुफ्त डाउनलोड करें</a>
         </div>
     </nav>
 
-
-    <!-- Hero Slider -->
+    <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-slider" id="heroSlider">
-            <div class="hero-slide active" data-lang="ar" style="background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1035 40%, var(--bg-dark) 100%);">
+            <div class="hero-slide active" data-lang="hi" style="background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1035 40%, var(--bg-dark) 100%);">
                 <div class="hero-orb purple"></div>
                 <div class="hero-orb pink"></div>
                 <div class="hero-content">
                     <div class="hero-eyebrow">
                         <span class="material-icons-outlined">verified_user</span>
-                        خاص 100%. يعمل بدون إنترنت.
+                        100% निजी। ऑफलाइन काम करता है। लॉगिन की जरूरत नहीं।
                     </div>
-                    <h1 class="hero-title"><span class='gradient'>تتبع كل درهم.</span></h1>
-                    <p class="hero-native">Track Every د.ا. Save for What Matters.</p>
-                    <p class="hero-subtitle">The private expense tracker that works offline. No login. No cloud. Just you and your finances.</p>
+                    <h1 class="hero-title">हर रुपये को ट्रैक करें।<br><span class='gradient'>जो मायने रखता है उसके लिए बचत करें।</span></h1>
+                    <p class="hero-subtitle">निजी खर्च ट्रैकर जो ऑफलाइन काम करता है। कोई लॉगिन नहीं। कोई क्लाउड नहीं। बस आप और आपकी वित्त।</p>
                     <div class="hero-buttons">
                         <a href="#download" class="btn btn-primary">
                             <span class="material-icons-outlined">download</span>
-                            تحميل مجاني - د.ا0
+                            मुफ्त डाउनलोड करें - रू0
                         </a>
-                        <a href="#features" class="btn btn-secondary">اعرف المزيد</a>
+                        <a href="#features" class="btn btn-secondary">देखें कैसे काम करता है</a>
                     </div>
                 </div>
-            </div>
-            <div class="hero-slide " data-lang="en" style="background: linear-gradient(135deg, var(--bg-dark) 0%, #2a1030 40%, var(--bg-dark) 100%);">
-                <div class="hero-orb purple"></div>
-                <div class="hero-orb pink"></div>
-                <div class="hero-content">
-                    <div class="hero-eyebrow">
-                        <span class="material-icons-outlined">verified_user</span>
-                        100% Private. Works Offline. No Login Required.
-                    </div>
-                    <h1 class="hero-title">Track Every د.</span>ا.<br><span class='gradient'>Save for What Matters.</h1>
-                    
-                    <p class="hero-subtitle">The private expense tracker that works offline. No login. No cloud. Just you and your finances.</p>
-                    <div class="hero-buttons">
-                        <a href="#download" class="btn btn-primary">
-                            <span class="material-icons-outlined">download</span>
-                            Download Free - د.ا0
-                        </a>
-                        <a href="#features" class="btn btn-secondary">See How It Works</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slider-controls">
-            <div class="slider-lang">Swipe or click to see in your language</div>
-            <div class="slider-dots">
-                <button class="slider-dot active" data-index="0" title="العربية"></button>
-                <button class="slider-dot " data-index="1" title="English"></button>
-                
             </div>
         </div>
     </section>
@@ -956,11 +832,11 @@
     <!-- Languages Bar -->
     <section class="languages-section">
         <div class="languages-inner">
-            <div class="languages-label">Available in 2 Languages</div>
+            <div class="languages-label">2 भाषाओं में उपलब्ध</div>
             <div class="languages-chips">
-                <span class="lang-chip active">العربية</span>
-                <span class="lang-chip ">English</span>
-                
+                <span class="lang-chip">नेपाली</span>
+                <span class="lang-chip active">हिंदी</span>
+                <span class="lang-chip">English</span>
             </div>
         </div>
     </section>
@@ -971,23 +847,23 @@
             <div class="social-proof-inner">
                 <div class="proof-item">
                     <span class="material-icons-outlined">language</span>
-                    <span><span class="proof-value">29</span> Languages</span>
+                    <span><span class="proof-value">29</span> भाषाएं</span>
                 </div>
                 <div class="proof-item">
                     <span class="material-icons-outlined">public</span>
-                    <span><span class="proof-value">76</span> Countries</span>
+                    <span><span class="proof-value">76</span> देश</span>
                 </div>
                 <div class="proof-item">
                     <span class="material-icons-outlined">cloud_off</span>
-                    <span><span class="proof-value">100%</span> Offline</span>
+                    <span><span class="proof-value">100%</span> ऑफलाइन</span>
                 </div>
                 <div class="proof-item">
                     <span class="material-icons-outlined">enhanced_encryption</span>
-                    <span><span class="proof-value">AES-256</span> Encryption</span>
+                    <span><span class="proof-value">AES-256</span> एन्क्रिप्शन</span>
                 </div>
                 <div class="proof-item">
                     <span class="material-icons-outlined">person_off</span>
-                    <span><span class="proof-value">No</span> Account Required</span>
+                    <span><span class="proof-value">कोई</span> अकाउंट नहीं</span>
                 </div>
             </div>
         </div>
@@ -997,50 +873,50 @@
     <section class="section" id="features">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">Expense Tracking</span>
-                <h2 class="section-title">Track what people in Jordan actually spend on</h2>
-                <p class="section-subtitle">Pre-built categories for everyday Jordan expenses</p>
+                <span class="section-eyebrow">खर्च ट्रैकिंग</span>
+                <h2 class="section-title">नेपाल में लोग जिस पर खर्च करते हैं उसे ट्रैक करें</h2>
+                <p class="section-subtitle">रोजमर्रा के नेपाल खर्चों के लिए पहले से बनी श्रेणियां</p>
             </div>
             <div class="card-grid">
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">restaurant</span></div>
-                    <h3>Lunch at university</h3>
-                    <p>Track restaurants expenses</p>
+                    <h3>कैंपस कैंटीन में लंच</h3>
+                    <p>रेस्टोरेंट खर्च ट्रैक करें</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">directions_car</span></div>
-                    <h3>Bus fare</h3>
-                    <p>Track travel expenses</p>
+                    <h3>माइक्रो बस किराया</h3>
+                    <p>यात्रा खर्च ट्रैक करें</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">school</span></div>
-                    <h3>Textbooks</h3>
-                    <p>Track education expenses</p>
+                    <h3>मंडला से पाठ्यपुस्तकें</h3>
+                    <p>शिक्षा खर्च ट्रैक करें</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">movie</span></div>
-                    <h3>Grand Cinemas movie</h3>
-                    <p>Track entertainment expenses</p>
+                    <h3>QFX में सिनेमा</h3>
+                    <p>मनोरंजन खर्च ट्रैक करें</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">phone_android</span></div>
-                    <h3>Zain mobile</h3>
-                    <p>Track phone expenses</p>
+                    <h3>Ncell रिचार्ज</h3>
+                    <p>फोन खर्च ट्रैक करें</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">home</span></div>
-                    <h3>Apartment rent</h3>
-                    <p>Track rent/mortgage expenses</p>
+                    <h3>काठमांडू में कमरे का किराया</h3>
+                    <p>किराया/मॉर्गेज खर्च ट्रैक करें</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">delivery_dining</span></div>
-                    <h3>Talabat delivery</h3>
-                    <p>Track food delivery expenses</p>
+                    <h3>Foodmandu ऑर्डर</h3>
+                    <p>फूड डिलीवरी खर्च ट्रैक करें</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">checkroom</span></div>
-                    <h3>Shopping</h3>
-                    <p>Track clothing expenses</p>
+                    <h3>Daraz शॉपिंग</h3>
+                    <p>कपड़ों का खर्च ट्रैक करें</p>
                 </div>
             </div>
         </div>
@@ -1050,57 +926,57 @@
     <section class="section section-alt">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">Savings Goals</span>
-                <h2 class="section-title">Save for goals that matter to you</h2>
-                <p class="section-subtitle">People in Jordan are saving for these with EZer app</p>
+                <span class="section-eyebrow">बचत लक्ष्य</span>
+                <h2 class="section-title">अपने लिए महत्वपूर्ण लक्ष्यों के लिए बचत करें</h2>
+                <p class="section-subtitle">नेपाल में लोग EZer ऐप से इनके लिए बचत कर रहे हैं</p>
             </div>
             <div class="card-grid">
                 <div class="card goal-card">
                     <div class="goal-emoji">🛒</div>
                     <div>
-                        <h3>New Laptop</h3>
-                        <span class="goal-amount">JOD 450</span>
-                        <p class="goal-desc">Save JOD 200 for your goal</p>
+                        <h3>नया लैपटॉप</h3>
+                        <span class="goal-amount">रू 80,000</span>
+                        <p class="goal-desc">अपने लक्ष्य के लिए रू 12,000 बचाएं</p>
                     </div>
                 </div>
                 <div class="card goal-card">
                     <div class="goal-emoji">🛡️</div>
                     <div>
-                        <h3>Emergency Fund</h3>
-                        <span class="goal-amount">JOD 2,000</span>
-                        <p class="goal-desc">Save JOD 600 for your goal</p>
+                        <h3>आपातकालीन फंड</h3>
+                        <span class="goal-amount">रू 300,000</span>
+                        <p class="goal-desc">अपने लक्ष्य के लिए रू 36,000 बचाएं</p>
                     </div>
                 </div>
                 <div class="card goal-card">
                     <div class="goal-emoji">🏖️</div>
                     <div>
-                        <h3>Aqaba Vacation</h3>
-                        <span class="goal-amount">JOD 1,500</span>
-                        <p class="goal-desc">Save JOD 753 for your goal</p>
+                        <h3>पोखरा ट्रिप</h3>
+                        <span class="goal-amount">रू 250,000</span>
+                        <p class="goal-desc">अपने लक्ष्य के लिए रू 90,000 बचाएं</p>
                     </div>
                 </div>
                 <div class="card goal-card">
                     <div class="goal-emoji">🎓</div>
                     <div>
-                        <h3>Kids Education Fund</h3>
-                        <span class="goal-amount">JOD 10,000</span>
-                        <p class="goal-desc">Save JOD 7,484 for your goal</p>
+                        <h3>बच्चों की शिक्षा फंड</h3>
+                        <span class="goal-amount">रू 1,500,000</span>
+                        <p class="goal-desc">अपने लक्ष्य के लिए रू 11.5 L बचाएं</p>
                     </div>
                 </div>
                 <div class="card goal-card">
                     <div class="goal-emoji">🏖️</div>
                     <div>
-                        <h3>Family Vacation</h3>
-                        <span class="goal-amount">JOD 2,200</span>
-                        <p class="goal-desc">Save JOD 1,235 for your goal</p>
+                        <h3>पारिवारिक छुट्टी</h3>
+                        <span class="goal-amount">रू 350,000</span>
+                        <p class="goal-desc">अपने लक्ष्य के लिए रू 1.4 L बचाएं</p>
                     </div>
                 </div>
                 <div class="card goal-card">
                     <div class="goal-emoji">🛡️</div>
                     <div>
-                        <h3>Business Emergency Fund</h3>
-                        <span class="goal-amount">JOD 3,500</span>
-                        <p class="goal-desc">Save JOD 3,300 for your goal</p>
+                        <h3>बिज़नेस इमरजेंसी फंड</h3>
+                        <span class="goal-amount">रू 500,000</span>
+                        <p class="goal-desc">अपने लक्ष्य के लिए रू 2.0 L बचाएं</p>
                     </div>
                 </div>
             </div>
@@ -1111,33 +987,33 @@
     <section class="section">
         <div class="container">
             <div class="payments-box">
-                <h2 style="font-size: 28px; font-weight: 700; margin-bottom: 8px;">Works with how Jordan pays</h2>
-                <p style="color: var(--text-secondary);">Track every transaction, however you pay</p>
+                <h2 style="font-size: 28px; font-weight: 700; margin-bottom: 8px;">नेपाल के भुगतान तरीकों के साथ काम करता है</h2>
+                <p style="color: var(--text-secondary);">हर लेनदेन को ट्रैक करें, चाहे आप कैसे भी भुगतान करें</p>
                 <div class="payments-grid">
                     <div class="payment-item">
                         <div class="payment-icon"><span class="material-icons-outlined">credit_card</span></div>
-                        <div class="payment-name">Credit Cards</div>
+                        <div class="payment-name">क्रेडिट कार्ड</div>
                         <div class="payment-examples">Visa, Mastercard</div>
                     </div>
                     <div class="payment-item">
                         <div class="payment-icon"><span class="material-icons-outlined">credit_card</span></div>
-                        <div class="payment-name">Debit Cards</div>
-                        <div class="payment-examples">All banks</div>
+                        <div class="payment-name">डेबिट कार्ड</div>
+                        <div class="payment-examples">सभी बैंक</div>
                     </div>
                     <div class="payment-item">
                         <div class="payment-icon"><span class="material-icons-outlined">account_balance_wallet</span></div>
-                        <div class="payment-name">Digital Wallets</div>
-                        <div class="payment-examples">Mobile payments</div>
+                        <div class="payment-name">डिजिटल वॉलेट</div>
+                        <div class="payment-examples">मोबाइल भुगतान</div>
                     </div>
                     <div class="payment-item">
                         <div class="payment-icon"><span class="material-icons-outlined">payments</span></div>
-                        <div class="payment-name">Cash</div>
-                        <div class="payment-examples">Cash tracking</div>
+                        <div class="payment-name">नकद</div>
+                        <div class="payment-examples">नकद ट्रैकिंग</div>
                     </div>
                     <div class="payment-item">
                         <div class="payment-icon"><span class="material-icons-outlined">account_balance</span></div>
-                        <div class="payment-name">Bank Transfer</div>
-                        <div class="payment-examples">Direct transfers</div>
+                        <div class="payment-name">बैंक ट्रांसफर</div>
+                        <div class="payment-examples">सीधे ट्रांसफर</div>
                     </div>
                 </div>
             </div>
@@ -1148,22 +1024,20 @@
     <section class="section section-alt">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">Made for Jordan</span>
-                <h2 class="section-title">Built for Jordan</h2>
-                <p class="section-subtitle">Features you won't find elsewhere</p>
+                <span class="section-eyebrow">नेपाल के लिए बनाया गया</span>
+                <h2 class="section-title">नेपाल के लिए बनाया गया</h2>
+                <p class="section-subtitle">ऐसी सुविधाएं जो आपको कहीं और नहीं मिलेंगी</p>
             </div>
             <div class="card-grid">
                 <div class="card feature-card">
-                    
-                    <h3>Bill Reminders</h3>
-                    <p>Never miss a payment</p>
-                    <div class="feature-example">Set reminders for recurring bills</div>
+                    <h3>बिल रिमाइंडर</h3>
+                    <p>कोई भुगतान न छूटे</p>
+                    <div class="feature-example">बार-बार आने वाले बिलों के लिए रिमाइंडर सेट करें</div>
                 </div>
                 <div class="card feature-card">
-                    
-                    <h3>Receipt OCR</h3>
-                    <p>Scan receipts automatically</p>
-                    <div class="feature-example">Snap photos to track cash expenses</div>
+                    <h3>रसीद OCR</h3>
+                    <p>रसीदों को स्वचालित रूप से स्कैन करें</p>
+                    <div class="feature-example">नकद खर्चों को ट्रैक करने के लिए फोटो लें</div>
                 </div>
             </div>
         </div>
@@ -1176,30 +1050,30 @@
                 <div class="trust-header">
                     <div class="trust-icon">🔒</div>
                     <div>
-                        <h2>Your data never leaves your phone</h2>
-                        <p>Bank-grade security</p>
+                        <h2>आपका डेटा कभी आपके फोन से बाहर नहीं जाता</h2>
+                        <p>बैंक-ग्रेड सुरक्षा</p>
                     </div>
                 </div>
                 <div class="trust-grid">
                     <div class="trust-item">
                         <span class="material-icons-outlined">wifi_off</span>
-                        <span>100% offline - works without internet</span>
+                        <span>100% ऑफलाइन - इंटरनेट के बिना काम करता है</span>
                     </div>
                     <div class="trust-item">
                         <span class="material-icons-outlined">person_off</span>
-                        <span>No account or login required</span>
+                        <span>कोई अकाउंट या लॉगिन की जरूरत नहीं</span>
                     </div>
                     <div class="trust-item">
                         <span class="material-icons-outlined">enhanced_encryption</span>
-                        <span>Bank-grade AES-256 encryption</span>
+                        <span>बैंक-ग्रेड AES-256 एन्क्रिप्शन</span>
                     </div>
                     <div class="trust-item">
                         <span class="material-icons-outlined">cloud_off</span>
-                        <span>No data uploaded to any server</span>
+                        <span>कोई डेटा किसी सर्वर पर अपलोड नहीं होता</span>
                     </div>
                     <div class="trust-item">
                         <span class="material-icons-outlined">fingerprint</span>
-                        <span>Draft PDPL compliant</span>
+                        <span>गोपनीयता कानून अनुपालन</span>
                     </div>
                 </div>
             </div>
@@ -1210,26 +1084,26 @@
     <section class="section section-alt" id="pricing">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">Pricing</span>
-                <h2 class="section-title">Simple, transparent pricing</h2>
-                <p class="section-subtitle">Start free, upgrade when you need more</p>
+                <span class="section-eyebrow">मूल्य</span>
+                <h2 class="section-title">सरल, पारदर्शी मूल्य</h2>
+                <p class="section-subtitle">मुफ्त शुरू करें, जब जरूरत हो अपग्रेड करें</p>
             </div>
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3>Free</h3>
-                    <div class="pricing-price">د.ا0</div>
-                    <div class="pricing-period">forever</div>
-                    <p class="pricing-desc">Everything you need to start tracking</p>
-                    <a href="#download" class="btn btn-secondary" style="width: 100%; justify-content: center;">Get Started</a>
+                    <h3>मुफ्त</h3>
+                    <div class="pricing-price">रू0</div>
+                    <div class="pricing-period">हमेशा के लिए</div>
+                    <p class="pricing-desc">ट्रैकिंग शुरू करने के लिए जो कुछ भी चाहिए</p>
+                    <a href="#download" class="btn btn-secondary" style="width: 100%; justify-content: center;">शुरू करें</a>
                 </div>
                 <div class="pricing-card featured">
-                    <span class="plus-badge">Plus</span>
-                    <h3 style="margin-top: 12px;">Plus</h3>
-                    <div class="pricing-price">د.ا3.5</div>
-                    <div class="pricing-period">per month</div>
-                    <p class="pricing-desc">Unlimited everything for serious savers</p>
-                    <a href="#download" class="btn btn-primary" style="width: 100%; justify-content: center;">Upgrade to Plus</a>
-                    <div class="pricing-note">Less than a coffee</div>
+                    <span class="plus-badge">प्लस</span>
+                    <h3 style="margin-top: 12px;">प्लस</h3>
+                    <div class="pricing-price">रू299</div>
+                    <div class="pricing-period">प्रति माह</div>
+                    <p class="pricing-desc">गंभीर बचतकर्ताओं के लिए असीमित सब कुछ</p>
+                    <a href="#download" class="btn btn-primary" style="width: 100%; justify-content: center;">प्लस में अपग्रेड करें</a>
+                    <div class="pricing-note">एक कॉफी से भी कम</div>
                 </div>
             </div>
         </div>
@@ -1239,21 +1113,21 @@
     <section class="download-section" id="download">
         <div class="container">
             <div class="download-inner">
-                <h2>Start Tracking Today</h2>
-                <p>Download EZer app free on iOS or Android. No sign-up required. Your data stays on your device.</p>
+                <h2>आज ही ट्रैकिंग शुरू करें</h2>
+                <p>iOS या Android पर EZer ऐप मुफ्त डाउनलोड करें। साइन-अप की जरूरत नहीं। आपका डेटा आपके डिवाइस पर रहता है।</p>
                 <div class="download-badges">
                     <div class="store-badge coming-soon">
-                        <span class="coming-soon-ribbon">Coming Soon</span>
+                        <span class="coming-soon-ribbon">जल्द आ रहा है</span>
                         <span class="material-icons-outlined icon">apple</span>
                         <div class="text">
-                            <small>Download on the</small>
+                            <small>पर डाउनलोड करें</small>
                             <span>App Store</span>
                         </div>
                     </div>
-                    <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=JO" class="store-badge" target="_blank" rel="noopener">
+                    <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=NP" class="store-badge" target="_blank" rel="noopener">
                         <span class="material-icons-outlined icon">shop</span>
                         <div class="text">
-                            <small>Get it on</small>
+                            <small>पर प्राप्त करें</small>
                             <span>Google Play</span>
                         </div>
                     </a>
@@ -1263,103 +1137,62 @@
     </section>
 
     <!-- Footer -->
-        <!-- Unified Footer -->
     <footer class="site-footer" style="background: var(--bg-card); border-top: 1px solid var(--border); padding: 48px 0 24px;">
         <div class="container">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
                 <div>
                     <a href="./" class="unified-logo" style="margin-bottom: 16px;">
-                        <img src="../logo.png" alt="EZer" class="unified-logo-img">
+                        <img src="../../logo.png" alt="EZer" class="unified-logo-img">
                         <span class="unified-logo-text">EZer app</span>
                     </a>
                     <p style="color: var(--text-secondary); font-size: 14px; margin-top: 16px;">
-                        Your Smart Finance Companion in Jordan.
+                        नेपाल में आपका स्मार्ट वित्त साथी।
                     </p>
-                    <p style="color: #22c55e; font-weight: 600; font-size: 14px; margin-top: 12px;">Free to use</p>
+                    <p style="color: #22c55e; font-weight: 600; font-size: 14px; margin-top: 12px;">उपयोग मुफ्त</p>
                 </div>
                 <div>
-                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Product</h4>
-                    <a href="features.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Features</a>
-                    <a href="pricing.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Pricing</a>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">उत्पाद</h4>
+                    <a href="features.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">सुविधाएं</a>
+                    <a href="pricing.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">मूल्य</a>
                 </div>
                 <div>
-                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Legal</h4>
-                    <a href="privacy.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Privacy Policy</a>
-                    <a href="terms.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Terms & Conditions</a>
-                    <a href="../data-deletion.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Data Deletion</a>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">कानूनी</h4>
+                    <a href="privacy.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">गोपनीयता नीति</a>
+                    <a href="terms.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">नियम और शर्तें</a>
+                    <a href="../../data-deletion.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">डेटा हटाना</a>
                 </div>
                 <div>
-                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Support</h4>
-                    <a href="../feedback.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Feedback</a>
-                    <a href="../report.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Report Issue</a>
-                    <a href="mailto:support@ezerapp.com" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Contact Us</a>
-                    <a href="../" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Change Country</a>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">सहायता</h4>
+                    <a href="../../feedback.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">फीडबैक</a>
+                    <a href="../../report.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">समस्या की रिपोर्ट करें</a>
+                    <a href="mailto:support@ezerapp.com" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">संपर्क करें</a>
+                    <a href="../../" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">देश बदलें</a>
                 </div>
             </div>
 
             <!-- Theme Toggle -->
             <div class="theme-toggle-container">
-                <span class="theme-toggle-label">Appearance</span>
+                <span class="theme-toggle-label">दिखावट</span>
                 <div class="theme-toggle">
-                    <button class="theme-btn" data-theme="light" title="Light mode">
+                    <button class="theme-btn" data-theme="light" title="लाइट मोड">
                         <span class="material-icons-outlined" style="font-size: 18px;">light_mode</span>
                     </button>
-                    <button class="theme-btn" data-theme="system" title="System">
+                    <button class="theme-btn" data-theme="system" title="सिस्टम">
                         <span class="material-icons-outlined" style="font-size: 18px;">contrast</span>
                     </button>
-                    <button class="theme-btn" data-theme="dark" title="Dark mode">
+                    <button class="theme-btn" data-theme="dark" title="डार्क मोड">
                         <span class="material-icons-outlined" style="font-size: 18px;">dark_mode</span>
                     </button>
                 </div>
             </div>
 
             <div style="text-align: center; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px;">
-                <p>&copy; 2025 EZer. All rights reserved.</p>
+                <p>&copy; 2025 EZer. सर्वाधिकार सुरक्षित।</p>
             </div>
         </div>
     </footer>
 
-
     <script>
-        // Hero Slider
-        const slides = document.querySelectorAll('.hero-slide');
-        const dots = document.querySelectorAll('.slider-dot');
-        let currentSlide = 0;
-        let autoSlideInterval;
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
-            dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
-            currentSlide = index;
-        }
-
-        function nextSlide() { showSlide((currentSlide + 1) % slides.length); }
-        function startAutoSlide() { autoSlideInterval = setInterval(nextSlide, 5000); }
-        function stopAutoSlide() { clearInterval(autoSlideInterval); }
-
-        dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                stopAutoSlide();
-                showSlide(parseInt(dot.dataset.index));
-                startAutoSlide();
-            });
-        });
-
-        const langChips = document.querySelectorAll('.lang-chip');
-        langChips.forEach((chip, index) => {
-            chip.addEventListener('click', () => {
-                if (index < slides.length) {
-                    stopAutoSlide();
-                    showSlide(index);
-                    startAutoSlide();
-                }
-                langChips.forEach(c => c.classList.remove('active'));
-                chip.classList.add('active');
-            });
-        });
-
-        startAutoSlide();
-
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -1402,9 +1235,9 @@
     <div class="mobile-sticky-cta">
         <div class="btn btn-secondary coming-soon">
             <span class="material-icons-outlined">apple</span>
-            <div>iOS<span class="coming-soon-label">Coming Soon</span></div>
+            <div>iOS<span class="coming-soon-label">जल्द आ रहा है</span></div>
         </div>
-        <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=JO" class="btn btn-primary" target="_blank" rel="noopener">
+        <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=NP" class="btn btn-primary" target="_blank" rel="noopener">
             <span class="material-icons-outlined">shop</span>
             Android
         </a>

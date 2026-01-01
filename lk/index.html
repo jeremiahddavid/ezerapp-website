@@ -7,7 +7,7 @@
     <!-- Primary SEO Meta Tags -->
     <title>EZer - Best Expense Tracker App Sri Lanka | Budget & Savings</title>
     <meta name="description" content="Track every Rs with Sri Lanka's most private expense tracker. Works offline, no login required. Available in 3 languages. Free to use.">
-    <meta name="keywords" content="expense tracker, budget app, money manager, Sri Lanka, LKR, rupee, offline expense tracker">
+    <meta name="keywords" content="">
     <meta name="author" content="EZer">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
@@ -15,10 +15,25 @@
     <link rel="canonical" href="https://www.ezerapp.com/lk/">
 
     <!-- Language Alternates -->
-    <link rel="alternate" hreflang="si-LK" href="https://www.ezerapp.com/lk/?lang=si">
-    <link rel="alternate" hreflang="ta-LK" href="https://www.ezerapp.com/lk/?lang=ta">
-    <link rel="alternate" hreflang="en-LK" href="https://www.ezerapp.com/lk/?lang=en">
-    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+    <link rel="alternate" hreflang="ta-LK" href="https://www.ezerapp.com/lk/ta/">
+    <link rel="alternate" hreflang="en-LK" href="https://www.ezerapp.com/lk/">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/lk/">
+
+    <!-- Browser Language Auto-Redirect -->
+    <script>
+    (function() {
+        // Skip if user came from Tamil page or explicitly chose
+        if (document.referrer.includes('/lk/ta/') || sessionStorage.getItem('lang_chosen')) return;
+
+        // Get browser language
+        var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+
+        // Redirect Tamil speakers to Tamil page
+        if (lang.startsWith('ta')) {
+            window.location.replace('/lk/ta/');
+        }
+    })();
+    </script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">

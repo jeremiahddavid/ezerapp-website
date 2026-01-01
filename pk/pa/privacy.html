@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ਗੋਪਨੀਯਤਾ ਨੀਤੀ - EZer ਪਾਕਿਸਤਾਨ</title>
+    <meta name="description" content="ਪਾਕਿਸਤਾਨ ਲਈ EZer ਗੋਪਨੀਯਤਾ ਨੀਤੀ। ਜਾਣੋ ਅਸੀਂ ਤੁਹਾਡੇ ਵਿੱਤੀ ਡਾਟਾ ਦੀ ਰੱਖਿਆ ਕਿਵੇਂ ਕਰਦੇ ਹਾਂ। ਗੋਪਨੀਯਤਾ ਸੁਰੱਖਿਅਤ।">
+
+    <link rel="canonical" href="https://www.ezerapp.com/pk/pa/privacy.html">
+    <link rel="alternate" hreflang="pa-PK" href="https://www.ezerapp.com/pk/pa/privacy.html">
+    <link rel="alternate" hreflang="hi-PK" href="https://www.ezerapp.com/pk/hi/privacy.html">
+    <link rel="alternate" hreflang="en-PK" href="https://www.ezerapp.com/pk/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/pk/privacy.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Gurmukhi:wght@400;500;600;700&display=swap');
+        body { font-family: 'Noto Sans Gurmukhi', 'Inter', sans-serif; }
+    </style>
+
+    <link rel="stylesheet" href="../../css/theme.css">
+    <style>
+        .themed-nav {
+            background: var(--header-bg) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .themed-banner {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%) !important;
+        }
+        .themed-footer {
+            background: var(--bg-card) !important;
+            border-top: 1px solid var(--border);
+        }
+
+        body {
+            background: var(--bg-primary) !important;
+            color: var(--text-primary);
+            transition: background-color 0.3s ease;
+        }
+
+        [data-theme="dark"] .bg-gray-50,
+        [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
+        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+
+        [data-theme="dark"] .bg-red-50 { background: rgba(239, 68, 68, 0.15) !important; }
+
+        [data-theme="dark"] .text-gray-600,
+        [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .text-gray-800,
+        [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
+        [data-theme="dark"] .text-gray-400,
+        [data-theme="dark"] .text-gray-500 { color: var(--text-muted) !important; }
+
+        [data-theme="dark"] .text-indigo-600 { color: #818cf8 !important; }
+
+        [data-theme="dark"] .border-gray-100,
+        [data-theme="dark"] .border-gray-200,
+        [data-theme="dark"] .border-gray-300 { border-color: var(--border) !important; }
+
+        [data-theme="dark"] .shadow-sm,
+        [data-theme="dark"] .shadow,
+        [data-theme="dark"] .shadow-md,
+        [data-theme="dark"] .shadow-lg { box-shadow: 0 4px 20px var(--card-shadow) !important; }
+
+        .theme-btn {
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .theme-btn:hover { color: var(--text-primary); }
+        .theme-btn.active {
+            background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+            color: white;
+            box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .bg-gray-50,
+            :root:not([data-theme="light"]) .bg-gray-100 { background: var(--bg-primary) !important; }
+            :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; }
+            :root:not([data-theme="light"]) .text-gray-600,
+            :root:not([data-theme="light"]) .text-gray-700 { color: var(--text-secondary) !important; }
+            :root:not([data-theme="light"]) .text-gray-800,
+            :root:not([data-theme="light"]) .text-gray-900 { color: var(--text-primary) !important; }
+            :root:not([data-theme="light"]) .border-gray-100,
+            :root:not([data-theme="light"]) .border-gray-200 { border-color: var(--border) !important; }
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Language Banner -->
+    <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
+        <span class="mr-2">🇵🇰</span>
+        <strong>ਪਾਕਿਸਤਾਨ</strong> ਲਈ ਗੋਪਨੀਯਤਾ ਨੀਤੀ |
+        <a href="../privacy.html" class="text-indigo-600 hover:underline ml-2">English</a>
+        <a href="../hi/privacy.html" class="text-indigo-600 hover:underline ml-2">हिंदी</a>
+    </div>
+
+    <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="../../logo.png" alt="EZer" class="h-10 w-10 rounded-xl object-contain">
+                    <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                </a>
+                <div class="hidden lg:flex gap-1 items-center">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">ਘਰ</a>
+                    <a href="features.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ</a>
+                    <a href="pricing.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">ਕੀਮਤ</a>
+                    <a href="privacy.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50 text-indigo-600 bg-indigo-100 font-semibold">ਗੋਪਨੀਯਤਾ</a>
+                    <a href="terms.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">ਸ਼ਰਤਾਂ</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=pk"
+                       class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:shadow-lg transition-all">
+                        ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-gray-200">
+                <a href="index.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">ਘਰ</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">ਕੀਮਤ</a>
+                <a href="privacy.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50 bg-indigo-100 text-indigo-600 font-semibold">ਗੋਪਨੀਯਤਾ</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">ਸ਼ਰਤਾਂ</a>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=pk"
+                   class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold">
+                    ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            <h1 class="text-4xl font-bold mb-2">ਗੋਪਨੀਯਤਾ ਨੀਤੀ</h1>
+            <p class="text-gray-500 mb-8">ਆਖਰੀ ਅੱਪਡੇਟ: ਨਵੰਬਰ 2025</p>
+
+            <div class="prose prose-lg max-w-none">
+                <h2 class="text-2xl font-bold mt-8 mb-4">ਜਾਣ-ਪਛਾਣ</h2>
+                <p class="text-gray-700 mb-4">
+                    EZer ("ਅਸੀਂ", "ਸਾਡਾ", ਜਾਂ "ਸਾਨੂੰ") ਤੁਹਾਡੀ ਗੋਪਨੀਯਤਾ ਦੀ ਰੱਖਿਆ ਕਰਨ ਲਈ ਵਚਨਬੱਧ ਹੈ। ਇਹ ਗੋਪਨੀਯਤਾ ਨੀਤੀ ਦੱਸਦੀ ਹੈ ਕਿ ਜਦੋਂ ਤੁਸੀਂ ਸਾਡੀ ਮੋਬਾਈਲ ਐਪਲੀਕੇਸ਼ਨ ਵਰਤਦੇ ਹੋ ਤਾਂ ਅਸੀਂ ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਕਿਵੇਂ ਇਕੱਠੀ, ਵਰਤਦੇ ਅਤੇ ਸੁਰੱਖਿਅਤ ਕਰਦੇ ਹਾਂ।
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">ਅਸੀਂ ਕੀ ਜਾਣਕਾਰੀ ਇਕੱਠੀ ਕਰਦੇ ਹਾਂ</h2>
+                <p class="text-gray-700 mb-4">ਅਸੀਂ ਹੇਠ ਲਿਖੀਆਂ ਕਿਸਮਾਂ ਦੀ ਜਾਣਕਾਰੀ ਇਕੱਠੀ ਕਰਦੇ ਹਾਂ:</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li><strong>ਅਕਾਊਂਟ ਜਾਣਕਾਰੀ:</strong> ਜਦੋਂ ਤੁਸੀਂ ਅਕਾਊਂਟ ਬਣਾਉਂਦੇ ਹੋ ਤਾਂ ਈਮੇਲ ਪਤਾ ਅਤੇ ਨਾਮ</li>
+                    <li><strong>ਵਿੱਤੀ ਡਾਟਾ:</strong> ਖਰਚੇ ਅਤੇ ਆਮਦਨ ਐਂਟਰੀਆਂ ਜੋ ਤੁਸੀਂ ਐਪ ਵਿੱਚ ਹੱਥੀਂ ਜੋੜਦੇ ਹੋ</li>
+                    <li><strong>ਟੀਚਿਆਂ ਦਾ ਡਾਟਾ:</strong> ਬੱਚਤ ਟੀਚੇ ਅਤੇ ਫੰਡ ਅਲਾਟਮੈਂਟ ਜੋ ਤੁਸੀਂ ਬਣਾਉਂਦੇ ਹੋ</li>
+                    <li><strong>ਬਜਟ ਡਾਟਾ:</strong> ਬਜਟ ਸ਼੍ਰੇਣੀਆਂ ਅਤੇ ਸੀਮਾਵਾਂ ਜੋ ਤੁਸੀਂ ਸੈੱਟ ਕਰਦੇ ਹੋ</li>
+                    <li><strong>ਵਰਤੋਂ ਡਾਟਾ:</strong> ਤੁਸੀਂ ਐਪ ਨਾਲ ਕਿਵੇਂ ਇੰਟਰੈਕਟ ਕਰਦੇ ਹੋ ਸਾਡੀ ਸੇਵਾ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">ਅਸੀਂ ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਕਿਵੇਂ ਵਰਤਦੇ ਹਾਂ</h2>
+                <p class="text-gray-700 mb-4">ਅਸੀਂ ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਇਸ ਲਈ ਵਰਤਦੇ ਹਾਂ:</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>EZer ਸੇਵਾ ਪ੍ਰਦਾਨ ਕਰਨ ਅਤੇ ਬਣਾਈ ਰੱਖਣ ਲਈ</li>
+                    <li>ਐਪ ਵਿੱਚ ਤੁਹਾਡਾ ਵਿੱਤੀ ਡਾਟਾ ਦਿਖਾਉਣ ਲਈ</li>
+                    <li>ਤੁਹਾਡੇ ਖਰਚਿਆਂ ਬਾਰੇ ਐਨਾਲਿਟਿਕਸ ਅਤੇ ਇਨਸਾਈਟਸ ਬਣਾਉਣ ਲਈ</li>
+                    <li>ਡਿਵਾਈਸਾਂ 'ਤੇ ਤੁਹਾਡਾ ਡਾਟਾ ਸਿੰਕ ਕਰਨ ਲਈ (ਜੇ ਤੁਸੀਂ ਕਲਾਊਡ ਬੈਕਅੱਪ ਚਾਲੂ ਕਰਦੇ ਹੋ)</li>
+                    <li>ਮਹੱਤਵਪੂਰਨ ਸੇਵਾ ਸੂਚਨਾਵਾਂ ਭੇਜਣ ਲਈ</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">ਡਾਟਾ ਸਟੋਰੇਜ ਅਤੇ ਸੁਰੱਖਿਆ</h2>
+                <p class="text-gray-700 mb-4">
+                    ਤੁਹਾਡਾ ਵਿੱਤੀ ਡਾਟਾ ਡਿਫਾਲਟ ਤੌਰ 'ਤੇ ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ ਸਥਾਨਕ ਤੌਰ 'ਤੇ ਸਟੋਰ ਹੁੰਦਾ ਹੈ। ਜੇ ਤੁਸੀਂ ਕਲਾਊਡ ਬੈਕਅੱਪ ਚਾਲੂ ਕਰਦੇ ਹੋ:
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>ਡਾਟਾ ਅੱਪਲੋਡ ਤੋਂ ਪਹਿਲਾਂ AES-256 ਐਨਕ੍ਰਿਪਸ਼ਨ ਨਾਲ ਐਨਕ੍ਰਿਪਟ ਕੀਤਾ ਜਾਂਦਾ ਹੈ</li>
+                    <li>ਅਸੀਂ ਸੁਰੱਖਿਅਤ ਕਲਾਊਡ ਬੁਨਿਆਦੀ ਢਾਂਚਾ (Google Firebase) ਵਰਤਦੇ ਹਾਂ</li>
+                    <li>ਡਾਟਾ ਟ੍ਰਾਂਜ਼ਿਟ ਅਤੇ ਰੈਸਟ ਦੋਵਾਂ ਵਿੱਚ ਐਨਕ੍ਰਿਪਟ ਕੀਤਾ ਜਾਂਦਾ ਹੈ</li>
+                    <li>ਅਸੀਂ ਤੁਹਾਡਾ ਡਾਟਾ ਕਦੇ ਵੀ ਬਿਨਾਂ ਐਨਕ੍ਰਿਪਟ ਕੀਤੇ ਸਟੋਰ ਨਹੀਂ ਕਰਦੇ</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">ਅਸੀਂ ਕੀ ਨਹੀਂ ਕਰਦੇ</h2>
+                <div class="bg-red-50 border-l-4 border-red-400 p-4 mb-4">
+                    <ul class="text-gray-700 space-y-2">
+                        <li>ਅਸੀਂ ਤੁਹਾਡਾ ਡਾਟਾ ਤੀਜੀਆਂ ਧਿਰਾਂ ਨੂੰ <strong>ਨਹੀਂ ਵੇਚਦੇ</strong></li>
+                        <li>ਅਸੀਂ ਤੁਹਾਡਾ ਡਾਟਾ ਇਸ਼ਤਿਹਾਰਬਾਜ਼ਾਂ ਨਾਲ <strong>ਨਹੀਂ ਸਾਂਝਾ ਕਰਦੇ</strong></li>
+                        <li>ਅਸੀਂ ਤੁਹਾਡੇ ਬੈਂਕ ਅਕਾਊਂਟਾਂ ਤੱਕ ਸਿੱਧੀ ਪਹੁੰਚ <strong>ਨਹੀਂ ਕਰਦੇ</strong></li>
+                        <li>ਅਸੀਂ ਤੁਹਾਡੇ ਬੈਂਕ ਪਾਸਵਰਡ <strong>ਨਹੀਂ ਸਟੋਰ ਕਰਦੇ</strong></li>
+                        <li>ਅਸੀਂ SMS ਸੁਨੇਹੇ <strong>ਨਹੀਂ ਪੜ੍ਹਦੇ</strong> (iOS) ਜਾਂ SMS ਸਮੱਗਰੀ ਸਰਵਰਾਂ 'ਤੇ ਨਹੀਂ ਸਟੋਰ ਕਰਦੇ</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">ਤੁਹਾਡੇ ਹੱਕ</h2>
+                <p class="text-gray-700 mb-4">ਤੁਹਾਡੇ ਕੋਲ ਆਪਣੇ ਡਾਟਾ ਬਾਰੇ ਹੇਠ ਲਿਖੇ ਹੱਕ ਹਨ:</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li><strong>ਪਹੁੰਚ:</strong> ਆਪਣੇ ਡਾਟਾ ਦੀ ਕਾਪੀ ਦੀ ਬੇਨਤੀ ਕਰੋ</li>
+                    <li><strong>ਮਿਟਾਉਣਾ:</strong> ਐਪ ਵਿੱਚੋਂ ਆਪਣਾ ਅਕਾਊਂਟ ਅਤੇ ਸਾਰਾ ਡਾਟਾ ਮਿਟਾਓ</li>
+                    <li><strong>ਐਕਸਪੋਰਟ:</strong> ਐਪ ਤੋਂ ਆਪਣਾ ਡਾਟਾ ਐਕਸਪੋਰਟ ਕਰੋ</li>
+                </ul>
+                <p class="text-gray-700 mb-4">ਇਹ ਹੱਕ ਵਰਤਣ ਲਈ, ਸਾਡੇ ਨਾਲ privacy@ezerapp.com 'ਤੇ ਸੰਪਰਕ ਕਰੋ</p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">ਡਾਟਾ ਰੱਖਣਾ</h2>
+                <p class="text-gray-700 mb-4">
+                    ਅਸੀਂ ਤੁਹਾਡਾ ਡਾਟਾ ਉਦੋਂ ਤੱਕ ਰੱਖਦੇ ਹਾਂ ਜਦੋਂ ਤੱਕ ਤੁਹਾਡਾ ਅਕਾਊਂਟ ਸਰਗਰਮ ਹੈ। ਤੁਸੀਂ ਐਪ ਵਿੱਚੋਂ ਕਿਸੇ ਵੀ ਸਮੇਂ ਆਪਣਾ ਅਕਾਊਂਟ ਅਤੇ ਸਾਰਾ ਸੰਬੰਧਿਤ ਡਾਟਾ ਮਿਟਾ ਸਕਦੇ ਹੋ।
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">ਬੱਚਿਆਂ ਦੀ ਗੋਪਨੀਯਤਾ</h2>
+                <p class="text-gray-700 mb-4">
+                    EZer 13 ਸਾਲ ਤੋਂ ਘੱਟ ਉਮਰ ਦੇ ਬੱਚਿਆਂ ਲਈ ਨਹੀਂ ਹੈ। ਅਸੀਂ ਜਾਣਬੁੱਝ ਕੇ 13 ਸਾਲ ਤੋਂ ਘੱਟ ਉਮਰ ਦੇ ਬੱਚਿਆਂ ਤੋਂ ਜਾਣਕਾਰੀ ਇਕੱਠੀ ਨਹੀਂ ਕਰਦੇ।
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">ਇਸ ਨੀਤੀ ਵਿੱਚ ਬਦਲਾਅ</h2>
+                <p class="text-gray-700 mb-4">
+                    ਅਸੀਂ ਸਮੇਂ-ਸਮੇਂ 'ਤੇ ਇਸ ਗੋਪਨੀਯਤਾ ਨੀਤੀ ਨੂੰ ਅੱਪਡੇਟ ਕਰ ਸਕਦੇ ਹਾਂ। ਅਸੀਂ ਤੁਹਾਨੂੰ ਨਵੀਂ ਗੋਪਨੀਯਤਾ ਨੀਤੀ ਇਸ ਪੰਨੇ 'ਤੇ ਪੋਸਟ ਕਰਕੇ ਅਤੇ "ਆਖਰੀ ਅੱਪਡੇਟ" ਤਾਰੀਖ ਅੱਪਡੇਟ ਕਰਕੇ ਕਿਸੇ ਵੀ ਬਦਲਾਅ ਬਾਰੇ ਸੂਚਿਤ ਕਰਾਂਗੇ।
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ</h2>
+                <p class="text-gray-700 mb-4">
+                    ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਇਸ ਗੋਪਨੀਯਤਾ ਨੀਤੀ ਬਾਰੇ ਸਵਾਲ ਹਨ, ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਸਾਡੇ ਨਾਲ ਇੱਥੇ ਸੰਪਰਕ ਕਰੋ:
+                </p>
+                <p class="text-gray-700">
+                    <strong>ਈਮੇਲ:</strong> <a href="mailto:privacy@ezerapp.com" class="text-indigo-600 hover:underline">privacy@ezerapp.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="themed-footer py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain">
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                    <p class="text-sm mb-4" style="color: var(--text-secondary);">ਪਾਕਿਸਤਾਨ ਵਿੱਚ ਤੁਹਾਡਾ ਸਮਾਰਟ ਫਾਈਨੈਂਸ ਸਾਥੀ।</p>
+                    <p class="text-green-500 font-semibold">ਵਰਤਣ ਲਈ ਮੁਫ਼ਤ</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">ਉਤਪਾਦ</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="features.html" class="block hover:text-indigo-600 transition-colors">ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ</a>
+                        <a href="pricing.html" class="block hover:text-indigo-600 transition-colors">ਕੀਮਤ</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">ਕਾਨੂੰਨੀ</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="privacy.html" class="block hover:text-indigo-600 transition-colors">ਗੋਪਨੀਯਤਾ ਨੀਤੀ</a>
+                        <a href="terms.html" class="block hover:text-indigo-600 transition-colors">ਨਿਯਮ ਅਤੇ ਸ਼ਰਤਾਂ</a>
+                        <a href="../../data-deletion.html" class="block hover:text-indigo-600 transition-colors">ਡਾਟਾ ਮਿਟਾਉਣਾ</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">ਸਹਾਇਤਾ</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="../../feedback.html" class="block hover:text-indigo-600 transition-colors">ਫੀਡਬੈਕ</a>
+                        <a href="../../report.html" class="block hover:text-indigo-600 transition-colors">ਸਮੱਸਿਆ ਦੱਸੋ</a>
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600 transition-colors">ਸੰਪਰਕ ਕਰੋ</a>
+                        <a href="../" class="block hover:text-indigo-600 transition-colors">English ਵਿੱਚ ਦੇਖੋ</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Theme Toggle -->
+            <div class="theme-toggle-container flex items-center justify-center gap-3 py-5 border-t" style="border-color: var(--border);">
+                <span class="text-sm" style="color: var(--text-muted);">ਦਿੱਖ</span>
+                <div class="theme-toggle flex items-center gap-1 p-1 rounded-full" style="background: var(--bg-elevated); border: 1px solid var(--border);">
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="light" title="ਲਾਈਟ">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="system" title="ਸਿਸਟਮ">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="dark" title="ਡਾਰਕ">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center pt-6 text-sm" style="color: var(--text-muted); border-top: 1px solid var(--border);">
+                <p>&copy; 2025 EZer। ਸਾਰੇ ਹੱਕ ਰਾਖਵੇਂ ਹਨ।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/theme.js"></script>
+    <script>
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu')?.classList.toggle('hidden');
+        });
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    </script>
+</body>
+</html>

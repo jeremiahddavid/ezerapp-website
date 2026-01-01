@@ -7,22 +7,33 @@
     <!-- Primary SEO Meta Tags -->
     <title>EZer - Best Expense Tracker App Morocco | Budget & Savings</title>
     <meta name="description" content="Track every د.م. with Morocco's most private expense tracker. Works offline, no login required. Available in 3 languages. Free to use.">
-    <meta name="keywords" content="expense tracker, budget app, مصاريف, gestion budget, suivi dépenses, Morocco, MAD, dirham, offline expense tracker">
+    <meta name="keywords" content="">
     <meta name="author" content="EZer">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.ezerapp.com/ma/">
+    <link rel="canonical" href="https://www.ezerapp.com/morocco/">
 
     <!-- Language Alternates -->
-    <link rel="alternate" hreflang="ar-MA" href="https://www.ezerapp.com/ma/?lang=ar">
-    <link rel="alternate" hreflang="fr-MA" href="https://www.ezerapp.com/ma/?lang=fr">
-    <link rel="alternate" hreflang="en-MA" href="https://www.ezerapp.com/ma/?lang=en">
-    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+    <link rel="alternate" hreflang="ar-MA" href="https://www.ezerapp.com/ma/ar/">
+    <link rel="alternate" hreflang="fr-MA" href="https://www.ezerapp.com/ma/">
+    <link rel="alternate" hreflang="en-MA" href="https://www.ezerapp.com/ma/">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/ma/">
+    <!-- Auto-redirect for Arabic speakers -->
+    <script>
+    (function() {
+        if (sessionStorage.getItem('ezer-lang-redirect')) return;
+        var lang = navigator.language || navigator.userLanguage || '';
+        if (lang.toLowerCase().startsWith('ar')) {
+            sessionStorage.setItem('ezer-lang-redirect', 'true');
+            window.location.href = './ar/';
+        }
+    })();
+    </script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.ezerapp.com/ma/">
+    <meta property="og:url" content="https://www.ezerapp.com/morocco/">
     <meta property="og:title" content="EZer - Track Every د.م. Privately in Morocco">
     <meta property="og:description" content="The expense tracker that never uploads your data. Works offline. Available in 3 languages.">
     <meta property="og:image" content="https://www.ezerapp.com/og-image.png">
@@ -33,7 +44,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.ezerapp.com/ma/">
+    <meta name="twitter:url" content="https://www.ezerapp.com/morocco/">
     <meta name="twitter:title" content="EZer - Track Every د.م. Privately in Morocco">
     <meta name="twitter:description" content="The expense tracker that never uploads your data. Works offline. Available in 3 languages.">
     <meta name="twitter:image" content="https://www.ezerapp.com/og-image.png">

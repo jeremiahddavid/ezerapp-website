@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सुविधाएं - नेपाल के लिए EZer मुफ्त खर्च ट्रैकर</title>
+    <meta name="description" content="EZer सुविधाएं: मुफ्त खर्च ट्रैकिंग, क्विक एड टेम्पलेट्स, एनालिटिक्स हब, बचत लक्ष्य, और बजट प्रबंधन। नेपाल में उपलब्ध।">
+
+    <link rel="canonical" href="https://www.ezerapp.com/np/hi/features.html">
+    <link rel="alternate" hreflang="hi-NP" href="https://www.ezerapp.com/np/hi/features.html">
+    <link rel="alternate" hreflang="en-NP" href="https://www.ezerapp.com/np/features.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/np/features.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Noto Sans Devanagari', 'Inter', sans-serif; }
+
+        /* Plus Badge - matches app styling exactly */
+        .plus-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+            padding: 4px 14px;
+            background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%);
+            border-radius: 50px;
+            border: 1.2px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+            font-weight: 700;
+            color: #4C1D95;
+            font-size: inherit;
+            line-height: 1;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .plus-badge::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 35%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+            animation: shimmer 1.4s infinite;
+        }
+        @keyframes shimmer {
+            0% { left: -35%; }
+            100% { left: 135%; }
+        }
+        .plus-badge-sm {
+            padding: 2px 10px;
+            font-size: 0.75rem;
+        }
+        .plus-badge-lg {
+            padding: 6px 18px;
+            font-size: 1.1rem;
+        }
+    </style>
+
+    <!-- Theme System (works with Tailwind) -->
+    <link rel="stylesheet" href="../../css/theme.css">
+    <style>
+        /* Override Tailwind for themed elements */
+        .themed-nav {
+            background: var(--header-bg) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .themed-banner {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%) !important;
+        }
+        .themed-footer {
+            background: var(--bg-card) !important;
+            border-top: 1px solid var(--border);
+        }
+
+        body {
+            background: var(--bg-primary) !important;
+            color: var(--text-primary);
+            transition: background-color 0.3s ease;
+        }
+
+        [data-theme="dark"] .bg-gray-50,
+        [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
+        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+        [data-theme="dark"] .bg-gray-900 { background: var(--bg-card) !important; }
+
+        [data-theme="dark"] .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
+        [data-theme="dark"] .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
+        [data-theme="dark"] .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
+        [data-theme="dark"] .bg-purple-100 { background: rgba(147, 51, 234, 0.15) !important; }
+        [data-theme="dark"] .bg-pink-100 { background: rgba(236, 72, 153, 0.15) !important; }
+        [data-theme="dark"] .bg-blue-100 { background: rgba(59, 130, 246, 0.15) !important; }
+
+        [data-theme="dark"] .text-gray-600,
+        [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .text-gray-800,
+        [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
+        [data-theme="dark"] .text-gray-400,
+        [data-theme="dark"] .text-gray-500 { color: var(--text-muted) !important; }
+
+        [data-theme="dark"] .text-indigo-600 { color: #818cf8 !important; }
+        [data-theme="dark"] .text-indigo-700 { color: #a5b4fc !important; }
+        [data-theme="dark"] .text-purple-600 { color: #c084fc !important; }
+        [data-theme="dark"] .text-green-600 { color: #4ade80 !important; }
+        [data-theme="dark"] .text-green-800 { color: #86efac !important; }
+        [data-theme="dark"] .text-blue-600 { color: #60a5fa !important; }
+
+        [data-theme="dark"] .bg-gradient-to-r .text-white,
+        [data-theme="dark"] .bg-gradient-to-br .text-white,
+        [data-theme="dark"] .bg-indigo-600 .text-white,
+        [data-theme="dark"] .bg-indigo-700 .text-white,
+        [data-theme="dark"] .bg-indigo-800 .text-white,
+        [data-theme="dark"] [class*="from-indigo"] .text-white { color: white !important; }
+
+        [data-theme="dark"] .bg-gradient-to-r .text-indigo-100,
+        [data-theme="dark"] .bg-gradient-to-r .text-indigo-200 { color: rgba(199, 210, 254, 0.9) !important; }
+
+        [data-theme="dark"] .border-gray-100,
+        [data-theme="dark"] .border-gray-200,
+        [data-theme="dark"] .border-gray-300 { border-color: var(--border) !important; }
+        [data-theme="dark"] .border-gray-800 { border-color: var(--border-light) !important; }
+
+        [data-theme="dark"] .shadow-sm,
+        [data-theme="dark"] .shadow,
+        [data-theme="dark"] .shadow-md,
+        [data-theme="dark"] .shadow-lg { box-shadow: 0 4px 20px var(--card-shadow) !important; }
+
+        [data-theme="dark"] .hover\:bg-gray-50:hover,
+        [data-theme="dark"] .hover\:bg-gray-100:hover { background: var(--bg-elevated) !important; }
+        [data-theme="dark"] .hover\:text-indigo-600:hover { color: #818cf8 !important; }
+
+        [data-theme="light"] .text-white:not(.bg-gradient-to-r *):not(.bg-gradient-to-br *):not([class*="bg-indigo-"] *) {
+            color: var(--text-primary) !important;
+        }
+
+        [data-theme="light"] .bg-gradient-to-r .text-white,
+        [data-theme="light"] .bg-gradient-to-br .text-white,
+        [data-theme="light"] .bg-indigo-600 .text-white,
+        [data-theme="light"] .bg-indigo-700 .text-white,
+        [data-theme="light"] [class*="from-indigo"] .text-white { color: white !important; }
+
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .bg-gray-50,
+            :root:not([data-theme="light"]) .bg-gray-100 { background: var(--bg-primary) !important; }
+            :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; }
+            :root:not([data-theme="light"]) .bg-gray-900 { background: var(--bg-card) !important; }
+
+            :root:not([data-theme="light"]) .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
+            :root:not([data-theme="light"]) .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
+            :root:not([data-theme="light"]) .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
+
+            :root:not([data-theme="light"]) .text-gray-600,
+            :root:not([data-theme="light"]) .text-gray-700 { color: var(--text-secondary) !important; }
+            :root:not([data-theme="light"]) .text-gray-800,
+            :root:not([data-theme="light"]) .text-gray-900 { color: var(--text-primary) !important; }
+            :root:not([data-theme="light"]) .text-gray-400,
+            :root:not([data-theme="light"]) .text-gray-500 { color: var(--text-muted) !important; }
+
+            :root:not([data-theme="light"]) .text-indigo-600 { color: #818cf8 !important; }
+            :root:not([data-theme="light"]) .text-indigo-700 { color: #a5b4fc !important; }
+            :root:not([data-theme="light"]) .text-purple-600 { color: #c084fc !important; }
+            :root:not([data-theme="light"]) .text-green-600 { color: #4ade80 !important; }
+
+            :root:not([data-theme="light"]) .border-gray-100,
+            :root:not([data-theme="light"]) .border-gray-200,
+            :root:not([data-theme="light"]) .border-gray-300 { border-color: var(--border) !important; }
+        }
+
+        .theme-btn {
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .theme-btn:hover {
+            color: var(--text-primary);
+        }
+        .theme-btn.active {
+            background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+            color: white;
+            box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+        }
+    </style>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Themed Navigation -->
+    <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
+        <span class="mr-2">🇳🇵</span>
+        <strong>नेपाल</strong> के लिए सुविधाएं
+        <a href="../features.html" class="text-indigo-600 hover:underline ml-2">English में देखें</a>
+    </div>
+
+    <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="../../logo.png" alt="EZer" class="h-10 w-10 rounded-xl object-contain">
+                    <div>
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                </a>
+                <div class="hidden lg:flex gap-1 items-center">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">होम</a>
+                    <a href="features.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50 text-indigo-600 bg-indigo-100 font-semibold">सुविधाएं</a>
+                    <a href="pricing.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">मूल्य</a>
+                    <a href="privacy.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">गोपनीयता</a>
+                    <a href="terms.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">नियम</a>
+                    <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702"
+                       class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:shadow-lg transition-all">
+                        मुफ्त डाउनलोड करें
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-gray-200">
+                <a href="index.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">होम</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50 bg-indigo-100 text-indigo-600 font-semibold">सुविधाएं</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">मूल्य</a>
+                <a href="privacy.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">गोपनीयता</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">नियम</a>
+                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702"
+                   class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold">
+                    मुफ्त डाउनलोड करें
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">सुविधाएं</h1>
+            <p class="text-xl text-indigo-100">रू में अपने पैसे का प्रबंधन करने के लिए सरल उपकरण</p>
+            <div class="mt-4 inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full">
+                <span class="text-green-300 font-semibold">उपयोग मुफ्त</span>
+                <span class="text-indigo-200">|</span>
+                <span class="text-indigo-100"><span class="plus-badge plus-badge-sm">प्लस</span> रू299/माह में उपलब्ध</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Free Features -->
+    <div class="container mx-auto px-4 py-16">
+        <div class="max-w-4xl mx-auto">
+
+            <div class="text-center mb-12">
+                <div class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">मुफ्त सुविधाएं</div>
+                <h2 class="text-3xl font-bold mb-2">शुरू करने के लिए जो कुछ भी चाहिए</h2>
+                <p class="text-gray-600">ये सभी सुविधाएं मुफ्त प्लान में शामिल हैं</p>
+            </div>
+
+            <div class="space-y-16">
+
+                <!-- Feature 1: Easy Entry -->
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="plus-circle" class="w-8 h-8 text-indigo-600"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">आसान खर्च और आय एंट्री</h3>
+                        <p class="text-gray-600 mb-4">
+                            कुछ ही टैप में अपने लेनदेन जोड़ें। सरल, तेज़ और सहज।
+                            सटीक रूप से ट्रैक करें कि आपका पैसा कहां से आता है और कहां जाता है।
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                सेकंडों में लेनदेन जोड़ें
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                अपने खर्चों को वर्गीकृत करें
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                कई आय स्रोतों को ट्रैक करें
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="text-center text-6xl mb-4">💰</div>
+                        <div class="text-center text-gray-500">त्वरित और सरल एंट्री</div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Quick Add Templates -->
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1 bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="text-center text-6xl mb-4">⚡</div>
+                        <div class="text-center text-gray-500">एक-टैप टेम्पलेट्स</div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center">
+                                <i data-lucide="copy" class="w-8 h-8 text-purple-600"></i>
+                            </div>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">मुफ्त में 3 टेम्पलेट्स</span>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">क्विक एड टेम्पलेट्स</h3>
+                        <p class="text-gray-600 mb-4">
+                            अपने बार-बार होने वाले लेनदेन के लिए पुन: प्रयोज्य टेम्पलेट्स से समय बचाएं।
+                            किराया, किराना, सब्सक्रिप्शन के लिए टेम्पलेट बनाएं - एक टैप में जोड़ें!
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                कस्टम टेम्पलेट्स बनाएं
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                एक-टैप आवर्ती खर्च
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                नियमित लेनदेन कभी न भूलें
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Analytics Hub -->
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center">
+                                <i data-lucide="bar-chart-3" class="w-8 h-8 text-green-600"></i>
+                            </div>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">मुफ्त में 6 महीने का इतिहास</span>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">एनालिटिक्स हब</h3>
+                        <p class="text-gray-600 mb-4">
+                            विजुअल चार्ट और ब्रेकडाउन से देखें कि आपका पैसा कहां जाता है।
+                            अपने खर्च पैटर्न को समझें और स्मार्ट वित्तीय निर्णय लें।
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                श्रेणी के अनुसार खर्च विश्लेषण
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                विजुअल चार्ट और ग्राफ
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                समय के साथ रुझान ट्रैक करें
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="text-center text-6xl mb-4">📊</div>
+                        <div class="text-center text-gray-500">विजुअल खर्च अंतर्दृष्टि</div>
+                    </div>
+                </div>
+
+                <!-- Feature 4: Savings Goals -->
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1 bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="text-center text-6xl mb-4">🎯</div>
+                        <div class="text-center text-gray-500">अपनी प्रगति ट्रैक करें</div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center">
+                                <i data-lucide="target" class="w-8 h-8 text-pink-600"></i>
+                            </div>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">मुफ्त में 2 लक्ष्य</span>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">बचत लक्ष्य</h3>
+                        <p class="text-gray-600 mb-4">
+                            बचत लक्ष्य सेट करें और अपनी प्रगति ट्रैक करें। जानें कि आप कहां हैं
+                            और प्रत्येक लक्ष्य के लिए आपके फंड कहां आवंटित हैं।
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                कई बचत लक्ष्य
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                फंड आवंटन ट्रैक करें
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                एक नज़र में प्रगति देखें
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature 5: Budget Tracking -->
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center">
+                                <i data-lucide="wallet" class="w-8 h-8 text-blue-600"></i>
+                            </div>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm">मुफ्त में 3 बजट</span>
+                        </div>
+                        <h3 class="text-3xl font-bold mb-4">बजट ट्रैकिंग</h3>
+                        <p class="text-gray-600 mb-4">
+                            प्रत्येक खर्च श्रेणी के लिए बजट सेट करें और रीयल-टाइम में अपनी प्रगति ट्रैक करें।
+                            अपने वित्त के शीर्ष पर रहें और अधिक खर्च से बचें।
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                श्रेणी-आधारित बजट
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                रीयल-टाइम ट्रैकिंग
+                            </li>
+                            <li class="flex items-center gap-2 text-gray-700">
+                                <i data-lucide="check" class="w-5 h-5 text-green-500"></i>
+                                विजुअल प्रोग्रेस बार
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="text-center text-6xl mb-4">📈</div>
+                        <div class="text-center text-gray-500">बजट में रहें</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Plus Features -->
+    <div class="bg-gradient-to-br from-indigo-50 to-purple-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+
+                <div class="text-center mb-12">
+                    <div class="mb-4"><span class="plus-badge plus-badge-lg">प्लस</span> सुविधाएं</div>
+                    <h2 class="text-3xl font-bold mb-2"><span class="plus-badge">प्लस</span> के साथ और अनलॉक करें</h2>
+                    <p class="text-gray-600">रू299/माह</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="infinity" class="w-6 h-6 text-indigo-600"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">असीमित सब कुछ</h4>
+                        <p class="text-gray-600 text-sm">असीमित अकाउंट, बजट, लक्ष्य, टेम्पलेट्स और बहुत कुछ।</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="cloud" class="w-6 h-6 text-indigo-600"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">क्लाउड बैकअप और सिंक</h4>
+                        <p class="text-gray-600 text-sm">एन्क्रिप्टेड बैकअप और आपके सभी डिवाइसों में सिंक।</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="users" class="w-6 h-6 text-indigo-600"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">परिवार शेयरिंग</h4>
+                        <p class="text-gray-600 text-sm">6 परिवार के सदस्यों के साथ वित्त साझा करें।</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="tags" class="w-6 h-6 text-indigo-600"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">कस्टम श्रेणियां</h4>
+                        <p class="text-gray-600 text-sm">अपनी खर्च श्रेणियां बनाएं।</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="file-spreadsheet" class="w-6 h-6 text-indigo-600"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">उन्नत निर्यात</h4>
+                        <p class="text-gray-600 text-sm">Excel, PDF और अन्य प्रारूपों में निर्यात करें।</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="bell" class="w-6 h-6 text-indigo-600"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">बिल रिमाइंडर</h4>
+                        <p class="text-gray-600 text-sm">स्मार्ट नोटिफिकेशन से कोई बिल न छूटे।</p>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-8">
+                    <a href="pricing.html" class="inline-block bg-indigo-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
+                        सभी <span class="plus-badge plus-badge-sm">प्लस</span> सुविधाएं देखें
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">आज ही अपना वित्त ट्रैक करना शुरू करें</h2>
+            <p class="text-xl text-indigo-100 mb-8">डाउनलोड मुफ्त - क्रेडिट कार्ड की जरूरत नहीं</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://apps.apple.com/np/app/ezer-budget-expense-tracker/id6738029702" class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-semibold hover:bg-indigo-50">
+                    iOS के लिए मुफ्त डाउनलोड करें
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=np" class="bg-indigo-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-800 border-2 border-white">
+                    Android के लिए मुफ्त डाउनलोड करें
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Themed Footer -->
+    <footer class="themed-footer py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain">
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                    <p class="text-sm mb-4" style="color: var(--text-secondary);">नेपाल में आपका स्मार्ट वित्त साथी।</p>
+                    <p class="text-green-500 font-semibold">उपयोग मुफ्त</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">उत्पाद</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="features.html" class="block hover:text-indigo-600 transition-colors">सुविधाएं</a>
+                        <a href="pricing.html" class="block hover:text-indigo-600 transition-colors">मूल्य</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">कानूनी</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="privacy.html" class="block hover:text-indigo-600 transition-colors">गोपनीयता नीति</a>
+                        <a href="terms.html" class="block hover:text-indigo-600 transition-colors">नियम और शर्तें</a>
+                        <a href="../../data-deletion.html" class="block hover:text-indigo-600 transition-colors">डेटा हटाना</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">सहायता</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="../../feedback.html" class="block hover:text-indigo-600 transition-colors">फीडबैक</a>
+                        <a href="../../report.html" class="block hover:text-indigo-600 transition-colors">समस्या की रिपोर्ट करें</a>
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600 transition-colors">संपर्क करें</a>
+                        <a href="../../" class="block hover:text-indigo-600 transition-colors">देश बदलें</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Theme Toggle -->
+            <div class="theme-toggle-container flex items-center justify-center gap-3 py-5 border-t" style="border-color: var(--border);">
+                <span class="text-sm" style="color: var(--text-muted);">दिखावट</span>
+                <div class="theme-toggle flex items-center gap-1 p-1 rounded-full" style="background: var(--bg-elevated); border: 1px solid var(--border);">
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="light" title="लाइट">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="system" title="सिस्टम">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="dark" title="डार्क">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center pt-6 text-sm" style="color: var(--text-muted); border-top: 1px solid var(--border);">
+                <p>&copy; 2025 EZer. सर्वाधिकार सुरक्षित।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme & Mobile Menu Scripts -->
+    <script src="../../js/theme.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu')?.classList.toggle('hidden');
+        });
+        // Initialize Lucide icons if present
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    </script>
+</body>
+</html>

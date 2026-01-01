@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>சேவை விதிமுறைகள் - EZer இலங்கை</title>
+    <meta name="description" content="இலங்கைக்கான EZer சேவை விதிமுறைகள். EZer செலவு கண்காணிப்பு செயலியைப் பயன்படுத்துவதற்கான எங்கள் விதிமுறைகள் மற்றும் நிபந்தனைகளைப் படியுங்கள்.">
+
+    <link rel="canonical" href="https://www.ezerapp.com/lk/ta/terms.html">
+    <link rel="alternate" hreflang="ta-LK" href="https://www.ezerapp.com/lk/ta/terms.html">
+    <link rel="alternate" hreflang="en-LK" href="https://www.ezerapp.com/lk/terms.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/lk/terms.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Noto Sans Tamil', 'Inter', sans-serif; }
+
+        /* Plus Badge */
+        .plus-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+            padding: 4px 14px;
+            background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%);
+            border-radius: 50px;
+            border: 1.2px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+            font-weight: 700;
+            color: #4C1D95;
+            font-size: inherit;
+            line-height: 1;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .plus-badge::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 35%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+            animation: shimmer 1.4s infinite;
+        }
+        @keyframes shimmer {
+            0% { left: -35%; }
+            100% { left: 135%; }
+        }
+        .plus-badge-sm {
+            padding: 2px 10px;
+            font-size: 0.75rem;
+        }
+    </style>
+
+    <!-- Theme System -->
+    <link rel="stylesheet" href="../../css/theme.css">
+    <style>
+        .themed-nav {
+            background: var(--header-bg) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .themed-banner {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%) !important;
+        }
+        .themed-footer {
+            background: var(--bg-card) !important;
+            border-top: 1px solid var(--border);
+        }
+
+        body {
+            background: var(--bg-primary) !important;
+            color: var(--text-primary);
+            transition: background-color 0.3s ease;
+        }
+
+        [data-theme="dark"] .bg-gray-50,
+        [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
+        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+        [data-theme="dark"] .bg-yellow-50 { background: rgba(234, 179, 8, 0.15) !important; }
+
+        [data-theme="dark"] .text-gray-600,
+        [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .text-gray-800,
+        [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
+        [data-theme="dark"] .text-gray-400,
+        [data-theme="dark"] .text-gray-500 { color: var(--text-muted) !important; }
+
+        [data-theme="dark"] .text-indigo-600 { color: #818cf8 !important; }
+
+        [data-theme="dark"] .border-gray-100,
+        [data-theme="dark"] .border-gray-200 { border-color: var(--border) !important; }
+        [data-theme="dark"] .border-yellow-400 { border-color: #fbbf24 !important; }
+
+        [data-theme="dark"] .shadow-lg { box-shadow: 0 4px 20px var(--card-shadow) !important; }
+
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .bg-gray-50,
+            :root:not([data-theme="light"]) .bg-gray-100 { background: var(--bg-primary) !important; }
+            :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; }
+            :root:not([data-theme="light"]) .text-gray-600,
+            :root:not([data-theme="light"]) .text-gray-700 { color: var(--text-secondary) !important; }
+            :root:not([data-theme="light"]) .text-gray-800,
+            :root:not([data-theme="light"]) .text-gray-900 { color: var(--text-primary) !important; }
+        }
+
+        .theme-btn {
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .theme-btn:hover { color: var(--text-primary); }
+        .theme-btn.active {
+            background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+            color: white;
+            box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+        }
+    </style>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Language Switch Banner -->
+    <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
+        <span class="mr-2">தமிழில் பார்க்கிறீர்கள்</span>
+        <a href="../terms.html" class="text-indigo-600 hover:underline ml-2">English-ல் பார்க்க</a>
+    </div>
+
+    <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="../../logo.png" alt="EZer" class="h-10 w-10 rounded-xl object-contain">
+                    <div>
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                </a>
+                <div class="hidden lg:flex gap-1 items-center">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">முகப்பு</a>
+                    <a href="features.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">அம்சங்கள்</a>
+                    <a href="pricing.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">விலை</a>
+                    <a href="privacy.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">தனியுரிமை</a>
+                    <a href="terms.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50 text-indigo-600 bg-indigo-100 font-semibold">விதிமுறைகள்</a>
+                    <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702"
+                       class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:shadow-lg transition-all">
+                        இலவசமாக பதிவிறக்கம்
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-gray-200">
+                <a href="index.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">முகப்பு</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">அம்சங்கள்</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">விலை</a>
+                <a href="privacy.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">தனியுரிமை</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50 bg-indigo-100 text-indigo-600 font-semibold">விதிமுறைகள்</a>
+                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702"
+                   class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold">
+                    இலவசமாக பதிவிறக்கம்
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            <h1 class="text-4xl font-bold mb-2">சேவை விதிமுறைகள்</h1>
+            <p class="text-gray-500 mb-8">கடைசியாக புதுப்பிக்கப்பட்டது: நவம்பர் 2025</p>
+
+            <div class="prose prose-lg max-w-none">
+                <h2 class="text-2xl font-bold mt-8 mb-4">1. விதிமுறைகளை ஏற்றுக்கொள்ளுதல்</h2>
+                <p class="text-gray-700 mb-4">
+                    EZer செயலியை ("செயலி") பதிவிறக்கம் செய்வதன், நிறுவுவதன் அல்லது பயன்படுத்துவதன் மூலம், இந்த சேவை விதிமுறைகளுக்கு கட்டுப்படுவதை ஒப்புக்கொள்கிறீர்கள். இந்த விதிமுறைகளை ஒப்புக்கொள்ளவில்லை என்றால், செயலியைப் பயன்படுத்த வேண்டாம்.
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">2. சேவையின் விளக்கம்</h2>
+                <p class="text-gray-700 mb-4">
+                    EZer என்பது உங்களுக்கு உதவும் தனிப்பட்ட நிதி கண்காணிப்பு பயன்பாடு:
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>கைமுறையாக செலவுகள் மற்றும் வருமானத்தை கண்காணிக்க</li>
+                    <li>சேமிப்பு இலக்குகளை உருவாக்கி நிர்வகிக்க</li>
+                    <li>பட்ஜெட்களை அமைத்து கண்காணிக்க</li>
+                    <li>பகுப்பாய்வுகள் மற்றும் செலவு முறைகளைப் பார்க்க</li>
+                    <li>மீண்டும் வரும் பரிவர்த்தனைகளுக்கு விரைவு சேர்க்கை டெம்ப்ளேட்களைப் பயன்படுத்த</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">3. EZer என்ன அல்ல</h2>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+                    <p class="text-gray-700">
+                        <strong>முக்கியமானது:</strong> EZer ஒரு கண்காணிப்பு மற்றும் அமைப்பு கருவி மட்டுமே. EZer செய்யாதவை:
+                    </p>
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mt-2">
+                        <li>நிதி, முதலீடு அல்லது வரி ஆலோசனை வழங்குவது</li>
+                        <li>குறிப்பிட்ட நிதி முடிவுகளை உத்தரவாதம் செய்வது</li>
+                        <li>உங்கள் வங்கி கணக்குகளுடன் நேரடியாக இணைப்பது</li>
+                        <li>பணத்தை நகர்த்துவது அல்லது மாற்றுவது</li>
+                        <li>நீங்கள் உள்ளிடும் தரவின் துல்லியத்தை சரிபார்ப்பது</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">4. பயனர் பொறுப்புகள்</h2>
+                <p class="text-gray-700 mb-4">நீங்கள் பொறுப்பு:</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>நீங்கள் உள்ளிடும் அனைத்து தரவும் துல்லியமானது என்பதை உறுதி செய்வது</li>
+                    <li>உங்கள் கணக்கின் பாதுகாப்பை பராமரிப்பது</li>
+                    <li>உங்கள் சொந்த நிதி முடிவுகளை எடுப்பது</li>
+                    <li>நிதி ஆலோசனைக்கு தகுதியான நிபுணர்களை ஆலோசிப்பது</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">5. திட்டங்கள் & விலை</h2>
+                <p class="text-gray-700 mb-4">
+                    EZer இரண்டு திட்டங்களை வழங்குகிறது:
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li><strong>இலவச திட்டம்:</strong> பயன்பாட்டு வரம்புகளுடன் அடிப்படை அம்சங்கள் (3 கணக்குகள், 3 பட்ஜெட்கள், 2 இலக்குகள், முதலியன) - எப்போதும் இலவசம்</li>
+                    <li><strong><span class="plus-badge plus-badge-sm">பிளஸ்</span> திட்டம்:</strong> இலங்கைக்கு Rs999/மாதம் வரம்பற்ற அம்சங்கள்</li>
+                </ul>
+                <p class="text-gray-700 mb-4">
+                    <span class="plus-badge plus-badge-sm">பிளஸ்</span>-க்கு சந்தா செய்வதன் மூலம், நீங்கள் ஒப்புக்கொள்கிறீர்கள்:
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>சந்தா செய்யும்போது உடனடியாக கட்டணம் வசூலிக்கப்படும்</li>
+                    <li>ரத்து செய்யப்படாவிட்டால் தானியங்கி மாதாந்திர புதுப்பித்தல்</li>
+                    <li>உங்கள் ஆப் ஸ்டோர் மூலம் எந்த நேரத்திலும் ரத்து செய்யலாம்</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">6. அறிவுசார் சொத்து</h2>
+                <p class="text-gray-700 mb-4">
+                    அனைத்து உள்ளடக்கம், அம்சங்கள் மற்றும் செயல்பாடுகள் உட்பட செயலி EZer-க்கு சொந்தமானது மற்றும் பதிப்புரிமை, வர்த்தக முத்திரை மற்றும் பிற அறிவுசார் சொத்துரிமை சட்டங்களால் பாதுகாக்கப்படுகிறது.
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">7. பொறுப்பு வரம்பு</h2>
+                <p class="text-gray-700 mb-4">
+                    சட்டத்தால் அனுமதிக்கப்பட்ட அதிகபட்ச அளவிற்கு, செயலியின் உங்கள் பயன்பாட்டின் விளைவாக ஏற்படும் எந்தவொரு மறைமுக, தற்செயலான, சிறப்பு, விளைவுத் தரும் அல்லது தண்டனைக்குரிய சேதங்களுக்கும் EZer பொறுப்பாகாது.
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">8. மறுப்பு</h2>
+                <p class="text-gray-700 mb-4">
+                    செயலி எந்த வகையான உத்தரவாதமும் இல்லாமல் "உள்ளபடியே" வழங்கப்படுகிறது. செயலி பிழையின்றி அல்லது தடையின்றி இருக்கும் என்று நாங்கள் உத்தரவாதம் அளிக்கவில்லை.
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">9. விதிமுறைகளில் மாற்றங்கள்</h2>
+                <p class="text-gray-700 mb-4">
+                    இந்த விதிமுறைகளை அவ்வப்போது புதுப்பிக்கலாம். மாற்றங்களுக்குப் பிறகு செயலியைத் தொடர்ந்து பயன்படுத்துவது புதிய விதிமுறைகளை ஏற்றுக்கொள்வதாகும்.
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">10. தொடர்பு</h2>
+                <p class="text-gray-700 mb-4">
+                    இந்த விதிமுறைகள் பற்றி கேள்விகளுக்கு, எங்களைத் தொடர்பு கொள்ளுங்கள்:
+                </p>
+                <p class="text-gray-700">
+                    <strong>மின்னஞ்சல்:</strong> <a href="mailto:legal@ezerapp.com" class="text-indigo-600 hover:underline">legal@ezerapp.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="themed-footer py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain">
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                    <p class="text-sm mb-4" style="color: var(--text-secondary);">இலங்கையில் உங்கள் ஸ்மார்ட் நிதி துணைவர்.</p>
+                    <p class="text-green-500 font-semibold">இலவசமாக பயன்படுத்தவும்</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">தயாரிப்பு</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="features.html" class="block hover:text-indigo-600 transition-colors">அம்சங்கள்</a>
+                        <a href="pricing.html" class="block hover:text-indigo-600 transition-colors">விலை</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">சட்டபூர்வமான</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="privacy.html" class="block hover:text-indigo-600 transition-colors">தனியுரிமைக் கொள்கை</a>
+                        <a href="terms.html" class="block hover:text-indigo-600 transition-colors">விதிமுறைகள் & நிபந்தனைகள்</a>
+                        <a href="../../data-deletion.html" class="block hover:text-indigo-600 transition-colors">தரவு நீக்கம்</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">ஆதரவு</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="../../feedback.html" class="block hover:text-indigo-600 transition-colors">கருத்து</a>
+                        <a href="../../report.html" class="block hover:text-indigo-600 transition-colors">சிக்கலைப் புகாரளிக்கவும்</a>
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600 transition-colors">எங்களைத் தொடர்பு கொள்ளுங்கள்</a>
+                        <a href="../../" class="block hover:text-indigo-600 transition-colors">நாட்டை மாற்றுங்கள்</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Theme Toggle -->
+            <div class="theme-toggle-container flex items-center justify-center gap-3 py-5 border-t" style="border-color: var(--border);">
+                <span class="text-sm" style="color: var(--text-muted);">தோற்றம்</span>
+                <div class="theme-toggle flex items-center gap-1 p-1 rounded-full" style="background: var(--bg-elevated); border: 1px solid var(--border);">
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="light" title="ஒளி">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="system" title="கணினி">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="dark" title="இருள்">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center pt-6 text-sm" style="color: var(--text-muted); border-top: 1px solid var(--border);">
+                <p>&copy; 2025 EZer. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme & Mobile Menu Scripts -->
+    <script src="../../js/theme.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu')?.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

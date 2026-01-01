@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মূল্য - EZer বাংলাদেশে ফ্রি ও প্লাস প্ল্যান</title>
+    <meta name="description" content="বাংলাদেশের জন্য EZer মূল্য। ফ্রি প্ল্যান উপলব্ধ! প্লাস ৳২৯৯/মাসে। বৈশিষ্ট্য তুলনা করুন এবং আপনার প্ল্যান বেছে নিন।">
+
+    <link rel="canonical" href="https://www.ezerapp.com/bd/bn/pricing.html">
+    <link rel="alternate" hreflang="bn-BD" href="https://www.ezerapp.com/bd/bn/pricing.html">
+    <link rel="alternate" hreflang="en-BD" href="https://www.ezerapp.com/bd/pricing.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/bd/pricing.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Noto Sans Bengali', 'Inter', sans-serif; }
+
+        /* Plus Badge - matches app styling exactly */
+        .plus-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+            padding: 4px 14px;
+            background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%);
+            border-radius: 50px;
+            border: 1.2px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+            font-weight: 700;
+            color: #4C1D95;
+            font-size: inherit;
+            line-height: 1;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .plus-badge::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 35%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+            animation: shimmer 1.4s infinite;
+        }
+        @keyframes shimmer {
+            0% { left: -35%; }
+            100% { left: 135%; }
+        }
+        .plus-badge-sm {
+            padding: 2px 10px;
+            font-size: 0.75rem;
+        }
+        .plus-badge-lg {
+            padding: 6px 18px;
+            font-size: 1.1rem;
+        }
+    </style>
+
+    <!-- Theme System (works with Tailwind) -->
+    <link rel="stylesheet" href="../../css/theme.css">
+    <style>
+        /* =============================================
+           DARK MODE OVERRIDES FOR TAILWIND
+           ============================================= */
+
+        /* Override Tailwind for themed elements */
+        .themed-nav {
+            background: var(--header-bg) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .themed-banner {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%) !important;
+        }
+        .themed-footer {
+            background: var(--bg-card) !important;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Ensure body respects theme */
+        body {
+            background: var(--bg-primary) !important;
+            color: var(--text-primary);
+            transition: background-color 0.3s ease;
+        }
+
+        /* ----- DARK MODE STYLES ----- */
+
+        /* Background colors */
+        [data-theme="dark"] .bg-gray-50,
+        [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
+        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+        [data-theme="dark"] .bg-gray-900 { background: var(--bg-card) !important; }
+
+        /* Colored backgrounds - make them darker/subtler */
+        [data-theme="dark"] .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
+        [data-theme="dark"] .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
+        [data-theme="dark"] .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
+        [data-theme="dark"] .bg-purple-100 { background: rgba(147, 51, 234, 0.15) !important; }
+        [data-theme="dark"] .bg-pink-100 { background: rgba(236, 72, 153, 0.15) !important; }
+        [data-theme="dark"] .bg-blue-100 { background: rgba(59, 130, 246, 0.15) !important; }
+
+        /* Gray text colors */
+        [data-theme="dark"] .text-gray-600,
+        [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .text-gray-800,
+        [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
+        [data-theme="dark"] .text-gray-400,
+        [data-theme="dark"] .text-gray-500 { color: var(--text-muted) !important; }
+
+        /* Colored text - brighten for dark backgrounds */
+        [data-theme="dark"] .text-indigo-600 { color: #818cf8 !important; }
+        [data-theme="dark"] .text-indigo-700 { color: #a5b4fc !important; }
+        [data-theme="dark"] .text-purple-600 { color: #c084fc !important; }
+        [data-theme="dark"] .text-green-600 { color: #4ade80 !important; }
+        [data-theme="dark"] .text-green-800 { color: #86efac !important; }
+        [data-theme="dark"] .text-blue-600 { color: #60a5fa !important; }
+
+        /* Keep white text white on gradients */
+        [data-theme="dark"] .bg-gradient-to-r .text-white,
+        [data-theme="dark"] .bg-gradient-to-br .text-white,
+        [data-theme="dark"] .bg-indigo-600 .text-white,
+        [data-theme="dark"] .bg-indigo-700 .text-white,
+        [data-theme="dark"] .bg-indigo-800 .text-white,
+        [data-theme="dark"] [class*="from-indigo"] .text-white { color: white !important; }
+
+        /* Gradient backgrounds should keep their text colors */
+        [data-theme="dark"] .bg-gradient-to-r .text-indigo-100,
+        [data-theme="dark"] .bg-gradient-to-r .text-indigo-200 { color: rgba(199, 210, 254, 0.9) !important; }
+
+        /* Border colors */
+        [data-theme="dark"] .border-gray-100,
+        [data-theme="dark"] .border-gray-200,
+        [data-theme="dark"] .border-gray-300 { border-color: var(--border) !important; }
+        [data-theme="dark"] .border-gray-800 { border-color: var(--border-light) !important; }
+
+        /* Shadows */
+        [data-theme="dark"] .shadow-sm,
+        [data-theme="dark"] .shadow,
+        [data-theme="dark"] .shadow-md,
+        [data-theme="dark"] .shadow-lg { box-shadow: 0 4px 20px var(--card-shadow) !important; }
+
+        /* Hover states */
+        [data-theme="dark"] .hover\:bg-gray-50:hover,
+        [data-theme="dark"] .hover\:bg-gray-100:hover { background: var(--bg-elevated) !important; }
+        [data-theme="dark"] .hover\:text-indigo-600:hover { color: #818cf8 !important; }
+
+        /* ----- LIGHT MODE FIXES ----- */
+
+        /* Ensure dark text on light backgrounds */
+        [data-theme="light"] .text-white:not(.bg-gradient-to-r *):not(.bg-gradient-to-br *):not([class*="bg-indigo-"] *) {
+            color: var(--text-primary) !important;
+        }
+
+        /* Keep gradient text white in light mode too */
+        [data-theme="light"] .bg-gradient-to-r .text-white,
+        [data-theme="light"] .bg-gradient-to-br .text-white,
+        [data-theme="light"] .bg-indigo-600 .text-white,
+        [data-theme="light"] .bg-indigo-700 .text-white,
+        [data-theme="light"] [class*="from-indigo"] .text-white { color: white !important; }
+
+        /* ----- SYSTEM PREFERENCE DARK MODE ----- */
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .bg-gray-50,
+            :root:not([data-theme="light"]) .bg-gray-100 { background: var(--bg-primary) !important; }
+            :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; }
+            :root:not([data-theme="light"]) .bg-gray-900 { background: var(--bg-card) !important; }
+
+            :root:not([data-theme="light"]) .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
+            :root:not([data-theme="light"]) .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
+            :root:not([data-theme="light"]) .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
+
+            :root:not([data-theme="light"]) .text-gray-600,
+            :root:not([data-theme="light"]) .text-gray-700 { color: var(--text-secondary) !important; }
+            :root:not([data-theme="light"]) .text-gray-800,
+            :root:not([data-theme="light"]) .text-gray-900 { color: var(--text-primary) !important; }
+            :root:not([data-theme="light"]) .text-gray-400,
+            :root:not([data-theme="light"]) .text-gray-500 { color: var(--text-muted) !important; }
+
+            :root:not([data-theme="light"]) .text-indigo-600 { color: #818cf8 !important; }
+            :root:not([data-theme="light"]) .text-indigo-700 { color: #a5b4fc !important; }
+            :root:not([data-theme="light"]) .text-purple-600 { color: #c084fc !important; }
+            :root:not([data-theme="light"]) .text-green-600 { color: #4ade80 !important; }
+
+            :root:not([data-theme="light"]) .border-gray-100,
+            :root:not([data-theme="light"]) .border-gray-200,
+            :root:not([data-theme="light"]) .border-gray-300 { border-color: var(--border) !important; }
+        }
+
+        /* Theme toggle button styles */
+        .theme-btn {
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .theme-btn:hover {
+            color: var(--text-primary);
+        }
+        .theme-btn.active {
+            background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+            color: white;
+            box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+        }
+    </style>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Language Switch Banner -->
+    <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
+        <span class="mr-2">🇧🇩</span>
+        <strong>বাংলাদেশের</strong> জন্য মূল্য
+        <a href="../pricing.html" class="text-indigo-600 hover:underline ml-2">English এ দেখুন</a>
+    </div>
+
+    <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="./" class="flex items-center gap-3">
+                    <img src="../../logo.png" alt="EZer" class="h-10 w-10 rounded-xl object-contain">
+                    <div>
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                </a>
+                <div class="hidden lg:flex gap-1 items-center">
+                    <a href="./" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">হোম</a>
+                    <a href="features.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">বৈশিষ্ট্য</a>
+                    <a href="pricing.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50 text-indigo-600 bg-indigo-100 font-semibold">মূল্য</a>
+                    <a href="privacy.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">গোপনীয়তা</a>
+                    <a href="terms.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">শর্তাবলী</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=bd"
+                       class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:shadow-lg transition-all">
+                        বিনামূল্যে ডাউনলোড
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-gray-200">
+                <a href="./" class="block px-4 py-3 rounded-lg hover:bg-gray-50">হোম</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">বৈশিষ্ট্য</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50 bg-indigo-100 text-indigo-600 font-semibold">মূল্য</a>
+                <a href="privacy.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">গোপনীয়তা</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">শর্তাবলী</a>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=bd"
+                   class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold">
+                    বিনামূল্যে ডাউনলোড
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">সহজ, স্বচ্ছ মূল্য</h1>
+            <p class="text-xl text-indigo-100">বিনামূল্যে শুরু করুন, প্রস্তুত হলে আপগ্রেড করুন</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-12">
+
+        <!-- Pricing Cards -->
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 mb-16">
+
+            <!-- Free Tier -->
+            <div class="bg-white border-2 border-gray-200 p-8 rounded-3xl shadow-lg">
+                <div class="text-center mb-8">
+                    <div class="inline-block bg-gray-100 text-gray-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">চিরকাল বিনামূল্যে</div>
+                    <div class="text-5xl font-bold mb-2">৳০</div>
+                    <div class="text-gray-500">কোন পেমেন্ট প্রয়োজন নেই</div>
+                </div>
+
+                <div class="space-y-4 mb-8">
+                    <div class="font-semibold text-gray-900 mb-2">কী অন্তর্ভুক্ত:</div>
+
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span>সর্বোচ্চ <strong>৩টি অ্যাকাউন্ট</strong></span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span>সর্বোচ্চ <strong>৩টি বাজেট</strong></span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span>সর্বোচ্চ <strong>২টি সঞ্চয় লক্ষ্য</strong></span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span><strong>৩টি</strong> কুইক-অ্যাড টেমপ্লেট</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span><strong>৩টি</strong> পুনরাবৃত্ত লেনদেন</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span><strong>৬ মাসের</strong> অ্যানালিটিক্স ইতিহাস</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span>সর্বোচ্চ <strong>২টি লোন</strong> ট্র্যাক</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-500 flex-shrink-0"></i>
+                        <span>সর্বোচ্চ <strong>৫টি বিলার</strong></span>
+                    </div>
+
+                    <div class="border-t pt-4 mt-4">
+                        <div class="text-gray-400 text-sm mb-2">অন্তর্ভুক্ত নয়:</div>
+                        <div class="flex items-center gap-3 text-gray-400">
+                            <i data-lucide="x" class="w-5 h-5 flex-shrink-0"></i>
+                            <span>ক্লাউড ব্যাকআপ ও সিঙ্ক</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-400">
+                            <i data-lucide="x" class="w-5 h-5 flex-shrink-0"></i>
+                            <span>পরিবারের সাথে শেয়ার</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-400">
+                            <i data-lucide="x" class="w-5 h-5 flex-shrink-0"></i>
+                            <span>কাস্টম ক্যাটাগরি</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-gray-400">
+                            <i data-lucide="x" class="w-5 h-5 flex-shrink-0"></i>
+                            <span>অ্যাডভান্সড রিপোর্ট ও এক্সপোর্ট</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=bd" class="block w-full bg-gray-100 text-gray-800 py-4 rounded-xl font-bold text-lg text-center hover:bg-gray-200 transition-colors">
+                    বিনামূল্যে ডাউনলোড
+                </a>
+            </div>
+
+            <!-- Plus Tier -->
+            <div class="bg-gradient-to-br from-indigo-600 to-purple-600 text-white p-8 rounded-3xl shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-yellow-400 text-gray-900 px-6 py-2 rounded-bl-2xl font-bold text-sm">
+                    বাংলাদেশ মূল্য
+                </div>
+
+                <div class="text-center mb-8 mt-4">
+                    <div class="mb-4"><span class="plus-badge">Plus</span></div>
+                    <div class="text-5xl font-bold mb-2">৳২৯৯</div>
+                    <div class="text-indigo-200">প্রতি মাসে</div>
+                </div>
+
+                <div class="space-y-4 mb-8">
+                    <div class="font-semibold mb-2">ফ্রি এর সবকিছু, সাথে:</div>
+
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
+                        <span><strong>সীমাহীন</strong> অ্যাকাউন্ট</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
+                        <span><strong>সীমাহীন</strong> বাজেট ও লক্ষ্য</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
+                        <span><strong>সীমাহীন</strong> টেমপ্লেট ও পুনরাবৃত্ত</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
+                        <span><strong>সম্পূর্ণ সময়ের</strong> অ্যানালিটিক্স ইতিহাস</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
+                        <span><strong>ক্লাউড ব্যাকআপ</strong> ও ক্রস-ডিভাইস সিঙ্ক</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
+                        <span><strong>পরিবারের সাথে শেয়ার</strong> (৬ জন সদস্য পর্যন্ত)</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
+                        <span><strong>কাস্টম ক্যাটাগরি</strong></span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
+                        <span><strong>অ্যাডভান্সড রিপোর্ট</strong> ও এক্সেল/পিডিএফ এক্সপোর্ট</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
+                        <span><strong>বিল রিমাইন্ডার</strong> ও নোটিফিকেশন</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-green-300 flex-shrink-0"></i>
+                        <span><strong>সাপ্তাহিক ডাইজেস্ট</strong> ইমেইল</span>
+                    </div>
+                </div>
+
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=bd" class="block w-full bg-white text-indigo-600 py-4 rounded-xl font-bold text-lg text-center hover:bg-indigo-50 transition-colors">
+                    <span class="plus-badge plus-badge-sm">Plus</span> এ আপগ্রেড করুন
+                </a>
+                <p class="text-center text-indigo-200 text-sm mt-3">যেকোনো সময় App Store থেকে বাতিল করুন</p>
+            </div>
+        </div>
+
+        <!-- Feature Comparison Table -->
+        <div class="max-w-4xl mx-auto mb-16">
+            <h2 class="text-2xl font-bold text-center mb-8">বিস্তারিত বৈশিষ্ট্য তুলনা</h2>
+
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-gray-50">
+                            <th class="text-left py-4 px-6 font-semibold">বৈশিষ্ট্য</th>
+                            <th class="text-center py-4 px-6 font-semibold">ফ্রি</th>
+                            <th class="text-center py-4 px-6"><span class="plus-badge plus-badge-sm">Plus</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        <tr>
+                            <td class="py-4 px-6">অ্যাকাউন্ট</td>
+                            <td class="text-center py-4 px-6">৩</td>
+                            <td class="text-center py-4 px-6 text-indigo-600 font-semibold">সীমাহীন</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-4 px-6">বাজেট</td>
+                            <td class="text-center py-4 px-6">৩</td>
+                            <td class="text-center py-4 px-6 text-indigo-600 font-semibold">সীমাহীন</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">সঞ্চয় লক্ষ্য</td>
+                            <td class="text-center py-4 px-6">২</td>
+                            <td class="text-center py-4 px-6 text-indigo-600 font-semibold">সীমাহীন</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-4 px-6">কুইক-অ্যাড টেমপ্লেট</td>
+                            <td class="text-center py-4 px-6">৩</td>
+                            <td class="text-center py-4 px-6 text-indigo-600 font-semibold">সীমাহীন</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">পুনরাবৃত্ত লেনদেন</td>
+                            <td class="text-center py-4 px-6">৩</td>
+                            <td class="text-center py-4 px-6 text-indigo-600 font-semibold">সীমাহীন</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-4 px-6">অ্যানালিটিক্স ইতিহাস</td>
+                            <td class="text-center py-4 px-6">৬ মাস</td>
+                            <td class="text-center py-4 px-6 text-indigo-600 font-semibold">সম্পূর্ণ সময়</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">লোন ট্র্যাক</td>
+                            <td class="text-center py-4 px-6">২</td>
+                            <td class="text-center py-4 px-6 text-indigo-600 font-semibold">সীমাহীন</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-4 px-6">বিলার</td>
+                            <td class="text-center py-4 px-6">৫</td>
+                            <td class="text-center py-4 px-6 text-indigo-600 font-semibold">সীমাহীন</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">কাস্টম ক্যাটাগরি</td>
+                            <td class="text-center py-4 px-6"><i data-lucide="x" class="w-5 h-5 text-gray-400 inline"></i></td>
+                            <td class="text-center py-4 px-6"><i data-lucide="check" class="w-5 h-5 text-green-500 inline"></i></td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-4 px-6">ক্লাউড ব্যাকআপ ও সিঙ্ক</td>
+                            <td class="text-center py-4 px-6"><i data-lucide="x" class="w-5 h-5 text-gray-400 inline"></i></td>
+                            <td class="text-center py-4 px-6"><i data-lucide="check" class="w-5 h-5 text-green-500 inline"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">পরিবারের সাথে শেয়ার</td>
+                            <td class="text-center py-4 px-6"><i data-lucide="x" class="w-5 h-5 text-gray-400 inline"></i></td>
+                            <td class="text-center py-4 px-6">৬ জন সদস্য পর্যন্ত</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-4 px-6">এক্সেল/পিডিএফ এক্সপোর্ট</td>
+                            <td class="text-center py-4 px-6"><i data-lucide="x" class="w-5 h-5 text-gray-400 inline"></i></td>
+                            <td class="text-center py-4 px-6"><i data-lucide="check" class="w-5 h-5 text-green-500 inline"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6">বিল রিমাইন্ডার</td>
+                            <td class="text-center py-4 px-6"><i data-lucide="x" class="w-5 h-5 text-gray-400 inline"></i></td>
+                            <td class="text-center py-4 px-6"><i data-lucide="check" class="w-5 h-5 text-green-500 inline"></i></td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-4 px-6">সাপ্তাহিক ডাইজেস্ট</td>
+                            <td class="text-center py-4 px-6"><i data-lucide="x" class="w-5 h-5 text-gray-400 inline"></i></td>
+                            <td class="text-center py-4 px-6"><i data-lucide="check" class="w-5 h-5 text-green-500 inline"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Themed Footer -->
+    <footer class="themed-footer py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain">
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                    <p class="text-sm mb-4" style="color: var(--text-secondary);">বাংলাদেশে আপনার স্মার্ট ফাইন্যান্স সঙ্গী।</p>
+                    <p class="text-green-500 font-semibold">বিনামূল্যে ব্যবহার</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">পণ্য</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="features.html" class="block hover:text-indigo-600 transition-colors">বৈশিষ্ট্য</a>
+                        <a href="pricing.html" class="block hover:text-indigo-600 transition-colors">মূল্য</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">আইনি</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="privacy.html" class="block hover:text-indigo-600 transition-colors">গোপনীয়তা নীতি</a>
+                        <a href="terms.html" class="block hover:text-indigo-600 transition-colors">শর্তাবলী</a>
+                        <a href="../../data-deletion.html" class="block hover:text-indigo-600 transition-colors">ডেটা মুছে ফেলা</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">সাহায্য</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="../../feedback.html" class="block hover:text-indigo-600 transition-colors">মতামত</a>
+                        <a href="../../report.html" class="block hover:text-indigo-600 transition-colors">সমস্যা রিপোর্ট</a>
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600 transition-colors">যোগাযোগ</a>
+                        <a href="../pricing.html" class="block hover:text-indigo-600 transition-colors">English এ দেখুন</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Theme Toggle -->
+            <div class="theme-toggle-container flex items-center justify-center gap-3 py-5 border-t" style="border-color: var(--border);">
+                <span class="text-sm" style="color: var(--text-muted);">থিম</span>
+                <div class="theme-toggle flex items-center gap-1 p-1 rounded-full" style="background: var(--bg-elevated); border: 1px solid var(--border);">
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="light" title="লাইট">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="system" title="সিস্টেম">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="dark" title="ডার্ক">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center pt-6 text-sm" style="color: var(--text-muted); border-top: 1px solid var(--border);">
+                <p>&copy; ২০২৫ EZer। সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme & Mobile Menu Scripts -->
+    <script src="../../js/theme.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu')?.classList.toggle('hidden');
+        });
+        // Initialize Lucide icons if present
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    </script>
+</body>
+</html>

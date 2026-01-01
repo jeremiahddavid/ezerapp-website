@@ -7,7 +7,7 @@
     <!-- Primary SEO Meta Tags -->
     <title>EZer - Best Expense Tracker App Bangladesh | Budget & Savings</title>
     <meta name="description" content="Track every ৳ with Bangladesh's most private expense tracker. Works offline, no login required. Available in 2 languages. Free to use.">
-    <meta name="keywords" content="expense tracker, budget app, হিসাবের খাতা, খরচ ট্র্যাকার, Bangladesh, BDT, taka, offline expense tracker">
+    <meta name="keywords" content="">
     <meta name="author" content="EZer">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
@@ -15,9 +15,25 @@
     <link rel="canonical" href="https://www.ezerapp.com/bd/">
 
     <!-- Language Alternates -->
-    <link rel="alternate" hreflang="bn-BD" href="https://www.ezerapp.com/bd/?lang=bn">
-    <link rel="alternate" hreflang="en-BD" href="https://www.ezerapp.com/bd/?lang=en">
-    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+    <link rel="alternate" hreflang="bn-BD" href="https://www.ezerapp.com/bd/bn/">
+    <link rel="alternate" hreflang="en-BD" href="https://www.ezerapp.com/bd/">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/bd/">
+
+    <!-- Browser Language Auto-Redirect -->
+    <script>
+    (function() {
+        // Skip if user explicitly chose a language or coming from language page
+        if (document.referrer.includes('/bd/bn/') || sessionStorage.getItem('lang_chosen')) return;
+
+        // Get browser language
+        var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+
+        // Redirect Bengali speakers to Bengali page
+        if (lang.startsWith('bn')) {
+            window.location.replace('/bd/bn/');
+        }
+    })();
+    </script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">

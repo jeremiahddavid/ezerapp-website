@@ -7,21 +7,32 @@
     <!-- Primary SEO Meta Tags -->
     <title>EZer - Best Expense Tracker App Oman | Budget & Savings</title>
     <meta name="description" content="Track every ر.ع. with Oman's most private expense tracker. Works offline, no login required. Available in 2 languages. Free to use.">
-    <meta name="keywords" content="expense tracker, budget app, المصاريف, تتبع النفقات, Oman, OMR, rial, offline expense tracker">
+    <meta name="keywords" content="">
     <meta name="author" content="EZer">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.ezerapp.com/om/">
+    <link rel="canonical" href="https://www.ezerapp.com/oman/">
 
     <!-- Language Alternates -->
-    <link rel="alternate" hreflang="ar-OM" href="https://www.ezerapp.com/om/?lang=ar">
-    <link rel="alternate" hreflang="en-OM" href="https://www.ezerapp.com/om/?lang=en">
-    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+    <link rel="alternate" hreflang="ar-OM" href="https://www.ezerapp.com/om/ar/">
+    <link rel="alternate" hreflang="en-OM" href="https://www.ezerapp.com/om/">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/om/">
+    <!-- Auto-redirect for Arabic speakers -->
+    <script>
+    (function() {
+        if (sessionStorage.getItem('ezer-lang-redirect')) return;
+        var lang = navigator.language || navigator.userLanguage || '';
+        if (lang.toLowerCase().startsWith('ar')) {
+            sessionStorage.setItem('ezer-lang-redirect', 'true');
+            window.location.href = './ar/';
+        }
+    })();
+    </script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.ezerapp.com/om/">
+    <meta property="og:url" content="https://www.ezerapp.com/oman/">
     <meta property="og:title" content="EZer - Track Every ر.ع. Privately in Oman">
     <meta property="og:description" content="The expense tracker that never uploads your data. Works offline. Available in 2 languages.">
     <meta property="og:image" content="https://www.ezerapp.com/og-image.png">
@@ -32,7 +43,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.ezerapp.com/om/">
+    <meta name="twitter:url" content="https://www.ezerapp.com/oman/">
     <meta name="twitter:title" content="EZer - Track Every ر.ع. Privately in Oman">
     <meta name="twitter:description" content="The expense tracker that never uploads your data. Works offline. Available in 2 languages.">
     <meta name="twitter:image" content="https://www.ezerapp.com/og-image.png">

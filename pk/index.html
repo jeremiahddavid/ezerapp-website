@@ -7,7 +7,7 @@
     <!-- Primary SEO Meta Tags -->
     <title>EZer - Best Expense Tracker App Pakistan | Budget & Savings</title>
     <meta name="description" content="Track every ₨ with Pakistan's most private expense tracker. Works offline, no login required. Available in 2 languages. Free to use.">
-    <meta name="keywords" content="expense tracker, budget app, hisab kitab app, خرچ ٹریکر, Pakistan, PKR, rupee, offline expense tracker">
+    <meta name="keywords" content="">
     <meta name="author" content="EZer">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
@@ -15,9 +15,28 @@
     <link rel="canonical" href="https://www.ezerapp.com/pk/">
 
     <!-- Language Alternates -->
-    <link rel="alternate" hreflang="ur-PK" href="https://www.ezerapp.com/pk/?lang=ur">
-    <link rel="alternate" hreflang="en-PK" href="https://www.ezerapp.com/pk/?lang=en">
-    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+    <link rel="alternate" hreflang="pa-PK" href="https://www.ezerapp.com/pk/pa/">
+    <link rel="alternate" hreflang="hi-PK" href="https://www.ezerapp.com/pk/hi/">
+    <link rel="alternate" hreflang="en-PK" href="https://www.ezerapp.com/pk/">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/pk/">
+
+    <!-- Browser Language Auto-Redirect -->
+    <script>
+    (function() {
+        // Skip if user came from a language page or explicitly chose
+        if (document.referrer.includes('/pk/pa/') || document.referrer.includes('/pk/hi/') || sessionStorage.getItem('lang_chosen')) return;
+
+        // Get browser language
+        var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+
+        // Redirect based on browser language
+        if (lang.startsWith('pa')) {
+            window.location.replace('/pk/pa/');
+        } else if (lang.startsWith('hi')) {
+            window.location.replace('/pk/hi/');
+        }
+    })();
+    </script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">

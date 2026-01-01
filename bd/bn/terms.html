@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>শর্তাবলী - EZer বাংলাদেশ</title>
+    <meta name="description" content="বাংলাদেশের জন্য EZer সেবার শর্তাবলী। EZer খরচ ট্র্যাকিং অ্যাপ ব্যবহারের জন্য আমাদের নিয়ম ও শর্তাবলী পড়ুন।">
+
+    <link rel="canonical" href="https://www.ezerapp.com/bd/bn/terms.html">
+    <link rel="alternate" hreflang="bn-BD" href="https://www.ezerapp.com/bd/bn/terms.html">
+    <link rel="alternate" hreflang="en-BD" href="https://www.ezerapp.com/bd/terms.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/bd/terms.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Noto Sans Bengali', 'Inter', sans-serif; }
+
+        /* Plus Badge - matches app styling exactly */
+        .plus-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+            padding: 4px 14px;
+            background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%);
+            border-radius: 50px;
+            border: 1.2px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+            font-weight: 700;
+            color: #4C1D95;
+            font-size: inherit;
+            line-height: 1;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .plus-badge::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 35%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+            animation: shimmer 1.4s infinite;
+        }
+        @keyframes shimmer {
+            0% { left: -35%; }
+            100% { left: 135%; }
+        }
+        .plus-badge-sm {
+            padding: 2px 10px;
+            font-size: 0.75rem;
+        }
+    </style>
+
+    <!-- Theme System (works with Tailwind) -->
+    <link rel="stylesheet" href="../../css/theme.css">
+    <style>
+        /* =============================================
+           DARK MODE OVERRIDES FOR TAILWIND
+           ============================================= */
+
+        /* Override Tailwind for themed elements */
+        .themed-nav {
+            background: var(--header-bg) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .themed-banner {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%) !important;
+        }
+        .themed-footer {
+            background: var(--bg-card) !important;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Ensure body respects theme */
+        body {
+            background: var(--bg-primary) !important;
+            color: var(--text-primary);
+            transition: background-color 0.3s ease;
+        }
+
+        /* ----- DARK MODE STYLES ----- */
+
+        /* Background colors */
+        [data-theme="dark"] .bg-gray-50,
+        [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
+        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+        [data-theme="dark"] .bg-gray-900 { background: var(--bg-card) !important; }
+
+        /* Colored backgrounds - make them darker/subtler */
+        [data-theme="dark"] .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
+        [data-theme="dark"] .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
+        [data-theme="dark"] .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
+        [data-theme="dark"] .bg-purple-100 { background: rgba(147, 51, 234, 0.15) !important; }
+        [data-theme="dark"] .bg-pink-100 { background: rgba(236, 72, 153, 0.15) !important; }
+        [data-theme="dark"] .bg-blue-100 { background: rgba(59, 130, 246, 0.15) !important; }
+        [data-theme="dark"] .bg-yellow-50 { background: rgba(234, 179, 8, 0.15) !important; }
+
+        /* Gray text colors */
+        [data-theme="dark"] .text-gray-600,
+        [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .text-gray-800,
+        [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
+        [data-theme="dark"] .text-gray-400,
+        [data-theme="dark"] .text-gray-500 { color: var(--text-muted) !important; }
+
+        /* Colored text - brighten for dark backgrounds */
+        [data-theme="dark"] .text-indigo-600 { color: #818cf8 !important; }
+        [data-theme="dark"] .text-indigo-700 { color: #a5b4fc !important; }
+        [data-theme="dark"] .text-purple-600 { color: #c084fc !important; }
+        [data-theme="dark"] .text-green-600 { color: #4ade80 !important; }
+        [data-theme="dark"] .text-green-800 { color: #86efac !important; }
+        [data-theme="dark"] .text-blue-600 { color: #60a5fa !important; }
+
+        /* Keep white text white on gradients */
+        [data-theme="dark"] .bg-gradient-to-r .text-white,
+        [data-theme="dark"] .bg-gradient-to-br .text-white,
+        [data-theme="dark"] .bg-indigo-600 .text-white,
+        [data-theme="dark"] .bg-indigo-700 .text-white,
+        [data-theme="dark"] .bg-indigo-800 .text-white,
+        [data-theme="dark"] [class*="from-indigo"] .text-white { color: white !important; }
+
+        /* Gradient backgrounds should keep their text colors */
+        [data-theme="dark"] .bg-gradient-to-r .text-indigo-100,
+        [data-theme="dark"] .bg-gradient-to-r .text-indigo-200 { color: rgba(199, 210, 254, 0.9) !important; }
+
+        /* Border colors */
+        [data-theme="dark"] .border-gray-100,
+        [data-theme="dark"] .border-gray-200,
+        [data-theme="dark"] .border-gray-300 { border-color: var(--border) !important; }
+        [data-theme="dark"] .border-gray-800 { border-color: var(--border-light) !important; }
+        [data-theme="dark"] .border-yellow-400 { border-color: rgba(234, 179, 8, 0.5) !important; }
+
+        /* Shadows */
+        [data-theme="dark"] .shadow-sm,
+        [data-theme="dark"] .shadow,
+        [data-theme="dark"] .shadow-md,
+        [data-theme="dark"] .shadow-lg { box-shadow: 0 4px 20px var(--card-shadow) !important; }
+
+        /* Hover states */
+        [data-theme="dark"] .hover\:bg-gray-50:hover,
+        [data-theme="dark"] .hover\:bg-gray-100:hover { background: var(--bg-elevated) !important; }
+        [data-theme="dark"] .hover\:text-indigo-600:hover { color: #818cf8 !important; }
+
+        /* ----- LIGHT MODE FIXES ----- */
+
+        /* Ensure dark text on light backgrounds */
+        [data-theme="light"] .text-white:not(.bg-gradient-to-r *):not(.bg-gradient-to-br *):not([class*="bg-indigo-"] *) {
+            color: var(--text-primary) !important;
+        }
+
+        /* Keep gradient text white in light mode too */
+        [data-theme="light"] .bg-gradient-to-r .text-white,
+        [data-theme="light"] .bg-gradient-to-br .text-white,
+        [data-theme="light"] .bg-indigo-600 .text-white,
+        [data-theme="light"] .bg-indigo-700 .text-white,
+        [data-theme="light"] [class*="from-indigo"] .text-white { color: white !important; }
+
+        /* ----- SYSTEM PREFERENCE DARK MODE ----- */
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .bg-gray-50,
+            :root:not([data-theme="light"]) .bg-gray-100 { background: var(--bg-primary) !important; }
+            :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; }
+            :root:not([data-theme="light"]) .bg-gray-900 { background: var(--bg-card) !important; }
+
+            :root:not([data-theme="light"]) .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
+            :root:not([data-theme="light"]) .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
+            :root:not([data-theme="light"]) .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
+
+            :root:not([data-theme="light"]) .text-gray-600,
+            :root:not([data-theme="light"]) .text-gray-700 { color: var(--text-secondary) !important; }
+            :root:not([data-theme="light"]) .text-gray-800,
+            :root:not([data-theme="light"]) .text-gray-900 { color: var(--text-primary) !important; }
+            :root:not([data-theme="light"]) .text-gray-400,
+            :root:not([data-theme="light"]) .text-gray-500 { color: var(--text-muted) !important; }
+
+            :root:not([data-theme="light"]) .text-indigo-600 { color: #818cf8 !important; }
+            :root:not([data-theme="light"]) .text-indigo-700 { color: #a5b4fc !important; }
+            :root:not([data-theme="light"]) .text-purple-600 { color: #c084fc !important; }
+            :root:not([data-theme="light"]) .text-green-600 { color: #4ade80 !important; }
+
+            :root:not([data-theme="light"]) .border-gray-100,
+            :root:not([data-theme="light"]) .border-gray-200,
+            :root:not([data-theme="light"]) .border-gray-300 { border-color: var(--border) !important; }
+        }
+
+        /* Theme toggle button styles */
+        .theme-btn {
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .theme-btn:hover {
+            color: var(--text-primary);
+        }
+        .theme-btn.active {
+            background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+            color: white;
+            box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+        }
+    </style>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Language Switch Banner -->
+    <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
+        <span class="mr-2">🇧🇩</span>
+        <strong>বাংলাদেশের</strong> জন্য শর্তাবলী
+        <a href="../terms.html" class="text-indigo-600 hover:underline ml-2">English এ দেখুন</a>
+    </div>
+
+    <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="./" class="flex items-center gap-3">
+                    <img src="../../logo.png" alt="EZer" class="h-10 w-10 rounded-xl object-contain">
+                    <div>
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                </a>
+                <div class="hidden lg:flex gap-1 items-center">
+                    <a href="./" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">হোম</a>
+                    <a href="features.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">বৈশিষ্ট্য</a>
+                    <a href="pricing.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">মূল্য</a>
+                    <a href="privacy.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">গোপনীয়তা</a>
+                    <a href="terms.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50 text-indigo-600 bg-indigo-100 font-semibold">শর্তাবলী</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=bd"
+                       class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:shadow-lg transition-all">
+                        বিনামূল্যে ডাউনলোড
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-gray-200">
+                <a href="./" class="block px-4 py-3 rounded-lg hover:bg-gray-50">হোম</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">বৈশিষ্ট্য</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">মূল্য</a>
+                <a href="privacy.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">গোপনীয়তা</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50 bg-indigo-100 text-indigo-600 font-semibold">শর্তাবলী</a>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=bd"
+                   class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold">
+                    বিনামূল্যে ডাউনলোড
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            <h1 class="text-4xl font-bold mb-2">সেবার শর্তাবলী</h1>
+            <p class="text-gray-500 mb-8">সর্বশেষ আপডেট: নভেম্বর ২০২৫</p>
+
+            <div class="prose prose-lg max-w-none">
+                <h2 class="text-2xl font-bold mt-8 mb-4">১. শর্তাবলী গ্রহণ</h2>
+                <p class="text-gray-700 mb-4">
+                    EZer অ্যাপ ("অ্যাপ") ডাউনলোড, ইনস্টল বা ব্যবহার করে, আপনি এই সেবার শর্তাবলী মেনে চলতে সম্মত হন। আপনি যদি এই শর্তাবলীতে সম্মত না হন, দয়া করে অ্যাপটি ব্যবহার করবেন না।
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">২. সেবার বিবরণ</h2>
+                <p class="text-gray-700 mb-4">
+                    EZer একটি ব্যক্তিগত অর্থ ট্র্যাকিং অ্যাপ্লিকেশন যা আপনাকে সাহায্য করে:
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>ম্যানুয়ালি খরচ এবং আয় ট্র্যাক করতে</li>
+                    <li>সঞ্চয় লক্ষ্য তৈরি এবং পরিচালনা করতে</li>
+                    <li>বাজেট সেট এবং মনিটর করতে</li>
+                    <li>অ্যানালিটিক্স এবং খরচের প্যাটার্ন দেখতে</li>
+                    <li>পুনরাবৃত্ত লেনদেনের জন্য কুইক অ্যাড টেমপ্লেট ব্যবহার করতে</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">৩. EZer কী নয়</h2>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+                    <p class="text-gray-700">
+                        <strong>গুরুত্বপূর্ণ:</strong> EZer শুধুমাত্র একটি ট্র্যাকিং এবং সংগঠন টুল। EZer নিম্নলিখিত কাজ করে না:
+                    </p>
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mt-2">
+                        <li>আর্থিক, বিনিয়োগ বা কর পরামর্শ প্রদান</li>
+                        <li>কোনো নির্দিষ্ট আর্থিক ফলাফলের গ্যারান্টি</li>
+                        <li>সরাসরি আপনার ব্যাংক অ্যাকাউন্টের সাথে সংযোগ</li>
+                        <li>টাকা স্থানান্তর বা ট্রান্সফার</li>
+                        <li>আপনার প্রবেশ করা ডেটার সঠিকতা যাচাই</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">৪. ব্যবহারকারীর দায়িত্ব</h2>
+                <p class="text-gray-700 mb-4">আপনি নিম্নলিখিত বিষয়ের জন্য দায়ী:</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>আপনার প্রবেশ করা সমস্ত ডেটা সঠিক কিনা নিশ্চিত করা</li>
+                    <li>আপনার অ্যাকাউন্টের নিরাপত্তা বজায় রাখা</li>
+                    <li>আপনার নিজের আর্থিক সিদ্ধান্ত নেওয়া</li>
+                    <li>আর্থিক পরামর্শের জন্য যোগ্য পেশাদারদের সাথে পরামর্শ করা</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">৫. প্ল্যান ও মূল্য</h2>
+                <p class="text-gray-700 mb-4">
+                    EZer দুটি প্ল্যান অফার করে:
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li><strong>ফ্রি প্ল্যান:</strong> ব্যবহারের সীমা সহ মৌলিক বৈশিষ্ট্য (৩টি অ্যাকাউন্ট, ৩টি বাজেট, ২টি লক্ষ্য ইত্যাদি) - চিরকাল বিনামূল্যে</li>
+                    <li><strong><span class="plus-badge plus-badge-sm">Plus</span> প্ল্যান:</strong> বাংলাদেশের জন্য ৳২৯৯/মাসে সীমাহীন বৈশিষ্ট্য</li>
+                </ul>
+                <p class="text-gray-700 mb-4">
+                    <span class="plus-badge plus-badge-sm">Plus</span> এ সাবস্ক্রাইব করে, আপনি সম্মত হন:
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>সাবস্ক্রিপশনের সাথে সাথে পেমেন্ট চার্জ করা হয়</li>
+                    <li>বাতিল না করা পর্যন্ত স্বয়ংক্রিয় মাসিক রিনিউয়াল</li>
+                    <li>যেকোনো সময় আপনার অ্যাপ স্টোরের মাধ্যমে বাতিল করা যায়</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">৬. বুদ্ধিবৃত্তিক সম্পত্তি</h2>
+                <p class="text-gray-700 mb-4">
+                    অ্যাপ, সমস্ত বিষয়বস্তু, বৈশিষ্ট্য এবং কার্যকারিতা সহ, EZer এর মালিকানাধীন এবং কপিরাইট, ট্রেডমার্ক এবং অন্যান্য বুদ্ধিবৃত্তিক সম্পত্তি আইন দ্বারা সুরক্ষিত।
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">৭. দায়বদ্ধতার সীমাবদ্ধতা</h2>
+                <p class="text-gray-700 mb-4">
+                    আইন দ্বারা অনুমোদিত সর্বাধিক পরিমাণে, আপনার অ্যাপ ব্যবহারের ফলে কোনো পরোক্ষ, আনুষঙ্গিক, বিশেষ, পরিণামগত বা শাস্তিমূলক ক্ষতির জন্য EZer দায়ী থাকবে না।
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">৮. দাবি পরিত্যাগ</h2>
+                <p class="text-gray-700 mb-4">
+                    অ্যাপটি কোনো ধরনের ওয়ারেন্টি ছাড়াই "যেমন আছে" ভিত্তিতে সরবরাহ করা হয়। আমরা গ্যারান্টি দিই না যে অ্যাপটি ত্রুটিমুক্ত বা নিরবচ্ছিন্ন হবে।
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">৯. শর্তাবলীতে পরিবর্তন</h2>
+                <p class="text-gray-700 mb-4">
+                    আমরা সময়ে সময়ে এই শর্তাবলী আপডেট করতে পারি। পরিবর্তনের পরে অ্যাপের অব্যাহত ব্যবহার নতুন শর্তাবলী গ্রহণ হিসাবে গণ্য হবে।
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">১০. যোগাযোগ</h2>
+                <p class="text-gray-700 mb-4">
+                    এই শর্তাবলী সম্পর্কে প্রশ্নের জন্য, আমাদের সাথে যোগাযোগ করুন:
+                </p>
+                <p class="text-gray-700">
+                    <strong>ইমেইল:</strong> <a href="mailto:legal@ezerapp.com" class="text-indigo-600 hover:underline">legal@ezerapp.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Themed Footer -->
+    <footer class="themed-footer py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain">
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                    <p class="text-sm mb-4" style="color: var(--text-secondary);">বাংলাদেশে আপনার স্মার্ট ফাইন্যান্স সঙ্গী।</p>
+                    <p class="text-green-500 font-semibold">বিনামূল্যে ব্যবহার</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">পণ্য</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="features.html" class="block hover:text-indigo-600 transition-colors">বৈশিষ্ট্য</a>
+                        <a href="pricing.html" class="block hover:text-indigo-600 transition-colors">মূল্য</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">আইনি</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="privacy.html" class="block hover:text-indigo-600 transition-colors">গোপনীয়তা নীতি</a>
+                        <a href="terms.html" class="block hover:text-indigo-600 transition-colors">শর্তাবলী</a>
+                        <a href="../../data-deletion.html" class="block hover:text-indigo-600 transition-colors">ডেটা মুছে ফেলা</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">সাহায্য</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="../../feedback.html" class="block hover:text-indigo-600 transition-colors">মতামত</a>
+                        <a href="../../report.html" class="block hover:text-indigo-600 transition-colors">সমস্যা রিপোর্ট</a>
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600 transition-colors">যোগাযোগ</a>
+                        <a href="../terms.html" class="block hover:text-indigo-600 transition-colors">English এ দেখুন</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Theme Toggle -->
+            <div class="theme-toggle-container flex items-center justify-center gap-3 py-5 border-t" style="border-color: var(--border);">
+                <span class="text-sm" style="color: var(--text-muted);">থিম</span>
+                <div class="theme-toggle flex items-center gap-1 p-1 rounded-full" style="background: var(--bg-elevated); border: 1px solid var(--border);">
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="light" title="লাইট">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="system" title="সিস্টেম">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="dark" title="ডার্ক">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center pt-6 text-sm" style="color: var(--text-muted); border-top: 1px solid var(--border);">
+                <p>&copy; ২০২৫ EZer। সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme & Mobile Menu Scripts -->
+    <script src="../../js/theme.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu')?.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

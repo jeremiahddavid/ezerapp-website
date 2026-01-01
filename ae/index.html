@@ -15,9 +15,21 @@
     <link rel="canonical" href="https://www.ezerapp.com/uae/">
 
     <!-- Language Alternates -->
-    <link rel="alternate" hreflang="en-AE" href="https://www.ezerapp.com/uae/?lang=en">
-    <link rel="alternate" hreflang="ar-AE" href="https://www.ezerapp.com/uae/?lang=ar">
-    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+    <link rel="alternate" hreflang="en-AE" href="https://www.ezerapp.com/ae/">
+    <link rel="alternate" hreflang="ar-AE" href="https://www.ezerapp.com/ae/ar/">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/ae/">
+
+    <!-- Auto-redirect for Arabic speakers -->
+    <script>
+    (function() {
+        if (sessionStorage.getItem('ezer-lang-redirect')) return;
+        var lang = navigator.language || navigator.userLanguage || '';
+        if (lang.toLowerCase().startsWith('ar')) {
+            sessionStorage.setItem('ezer-lang-redirect', 'true');
+            window.location.href = './ar/';
+        }
+    })();
+    </script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
