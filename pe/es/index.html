@@ -1,15 +1,62 @@
 <!DOCTYPE html>
-<html lang="es-PE">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EZer - Mejor App de Control de Gastos Perú | Presupuesto y Ahorro en Soles</title>
-    <meta name="description" content="Controla cada sol con la app de gastos más privada de Perú. Registra gastos en Plaza Vea, Metro, Metropolitano. 100% offline, sin registro. Gratis.">
 
+    <!-- Primary SEO Meta Tags -->
+    <title>EZer - App Control de Gastos Perú | Presupuesto y Ahorro</title>
+    <meta name="description" content="Controla cada peso con la app de gastos más privada de Perú. Funciona offline, sin login. Disponible en 2 idiomas. Gratis para usar.">
+    <meta name="keywords" content="control de gastos, app de presupuesto, finanzas personales, Perú, PEN, sol, app offline, ahorro">
+    <meta name="author" content="EZer">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://www.ezerapp.com/pe/es/">
+
+    <!-- Language Alternates -->
     <link rel="alternate" hreflang="es-PE" href="https://www.ezerapp.com/pe/es/">
     <link rel="alternate" hreflang="en-PE" href="https://www.ezerapp.com/pe/">
     <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/pe/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ezerapp.com/pe/es/">
+    <meta property="og:title" content="EZer - Controla Cada Peso en Perú">
+    <meta property="og:description" content="La app de gastos que nunca sube tus datos. Funciona offline. Disponible en 2 idiomas.">
+    <meta property="og:image" content="https://www.ezerapp.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_PE">
+    <meta property="og:site_name" content="EZer">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.ezerapp.com/pe/es/">
+    <meta name="twitter:title" content="EZer - Controla Cada Peso en Perú">
+    <meta name="twitter:description" content="La app de gastos que nunca sube tus datos. Funciona offline. Disponible en 2 idiomas.">
+    <meta name="twitter:image" content="https://www.ezerapp.com/og-image.png">
+
+    <!-- App Links -->
+    <meta property="al:ios:url" content="ezer://"/>
+    <meta property="al:ios:app_store_id" content="id6738029702"/>
+    <meta property="al:ios:app_name" content="EZer"/>
+    <meta property="al:android:url" content="ezer://"/>
+    <meta property="al:android:package" content="com.ezer.personal_finance"/>
+    <meta property="al:android:app_name" content="EZer"/>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Preconnect & Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" as="style">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -20,28 +67,40 @@
         "operatingSystem": "iOS 14.0+, Android 8.0+",
         "applicationCategory": "FinanceApplication",
         "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "PEN"
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "PEN"
         },
         "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "1247",
-            "bestRating": "5",
-            "worstRating": "1"
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "ratingCount": "1247",
+                "bestRating": "5",
+                "worstRating": "1"
         },
-        "availableLanguage": ["es", "en"],
-        "countryOfOrigin": "PE",
+        "availableLanguage": [
+                "es",
+                "en"
+        ],
+        "countryOfOrigin": "CL",
+        "screenshot": [
+                "https://www.ezerapp.com/assets/screenshots/cl-home.webp",
+                "https://www.ezerapp.com/assets/screenshots/cl-analytics.webp"
+        ],
         "featureList": [
-            "Control de gastos",
-            "Gestión de presupuestos",
-            "Metas de ahorro",
-            "Recordatorios de cuentas",
-            "Funciona offline",
-            "Sin registro requerido"
+                "Control de gastos",
+                "Gestión de presupuestos",
+                "Metas de ahorro",
+                "Recordatorios de cuentas",
+                "Funciona offline",
+                "Encriptación bancaria"
+        ],
+        "softwareVersion": "1.0",
+        "downloadUrl": [
+                "https://apps.apple.com/PE/app/ezer-budget-expense-tracker/id6738029702",
+                "https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=PE"
         ]
-    }
+}
     </script>
 
     <!-- FAQ Schema -->
@@ -50,338 +109,1242 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "¿La app EZer es gratis en Perú?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Sí, EZer es completamente gratis para descargar y usar. Todas las funciones básicas incluyendo control de gastos, presupuestos y metas de ahorro son gratis."
+                {
+                        "@type": "Question",
+                        "name": "¿La app EZer es gratis en Perú?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Sí, EZer es completamente gratis para descargar y usar. Todas las funciones básicas incluyendo control de gastos, presupuestos y metas de ahorro son gratis."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "¿EZer funciona sin internet?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Sí, EZer funciona 100% offline. Tus datos se guardan solo en tu teléfono con encriptación bancaria. No necesitas conexión a internet."
+                        }
+                },
+                {
+                        "@type": "Question",
+                        "name": "¿Qué idiomas soporta EZer en Perú?",
+                        "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "EZer soporta 2 idiomas incluyendo Español e Inglés."
+                        }
                 }
-            },
-            {
-                "@type": "Question",
-                "name": "¿EZer funciona sin internet?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Sí, EZer funciona 100% offline. Tus datos se guardan solo en tu teléfono con encriptación bancaria. No necesitas conexión a internet."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "¿Qué idiomas soporta EZer en Perú?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "EZer soporta 29 idiomas incluyendo Español e Inglés."
-                }
-            }
         ]
-    }
+}
     </script>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/theme.css">
-
     <style>
-        body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); }
-        .themed-nav { background: var(--header-bg) !important; backdrop-filter: blur(20px); }
-        .themed-banner { background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%) !important; }
-        .themed-footer { background: var(--bg-card) !important; border-top: 1px solid var(--border); }
-        .gradient-text { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .plus-badge { display: inline-flex; align-items: center; padding: 2px 10px; background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%); border-radius: 50px; font-weight: 700; color: #4C1D95; font-size: 11px; }
-        .feature-card { background: var(--bg-card); border: 1px solid var(--border); transition: all 0.3s ease; }
-        .feature-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
-        .hero-gradient { background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #ec4899 100%); }
-        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
-        [data-theme="dark"] .text-gray-600, [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
-        [data-theme="dark"] .border-gray-200 { border-color: var(--border) !important; }
-        .theme-btn { color: var(--text-muted); cursor: pointer; }
-        .theme-btn.active { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%); color: white; }
-        .mobile-sticky-cta { display: none; position: fixed; bottom: 0; left: 0; right: 0; padding: 12px 16px; background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); border-top: 1px solid var(--border); z-index: 999; gap: 12px; }
-        [data-theme="dark"] .mobile-sticky-cta { background: rgba(15,15,26,0.98); }
-        @media (max-width: 768px) { .mobile-sticky-cta { display: flex; } .download-section { padding-bottom: 100px; } }
-    </style>
+        :root {
+            --indigo: #4f46e5;
+            --purple: #9333ea;
+            --pink: #ec4899;
+            --gradient-hero: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 50%, var(--pink) 100%);
+            --gradient-cta: linear-gradient(90deg, var(--indigo) 0%, var(--purple) 100%);
+            --gradient-text: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 50%, var(--pink) 100%);
+            --gold-start: #FBBF24;
+            --gold-end: #F59E0B;
+            --plus-text: #4C1D95;
+            --bg-dark: #0f0f1a;
+            --bg-card: #1a1a2e;
+            --bg-elevated: #242442;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --border: rgba(255, 255, 255, 0.1);
+            --border-light: rgba(255, 255, 255, 0.15);
+            --hero-accent: #a5b4fc;
+            --card-shadow: rgba(0, 0, 0, 0.3);
+        }
 
+        [data-theme="light"] {
+            --bg-dark: #f8fafc;
+            --bg-card: #ffffff;
+            --bg-elevated: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --border: rgba(0, 0, 0, 0.08);
+            --border-light: rgba(0, 0, 0, 0.12);
+            --hero-accent: var(--indigo);
+            --card-shadow: rgba(0, 0, 0, 0.08);
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root:not([data-theme="dark"]) {
+                --bg-dark: #f8fafc;
+                --bg-card: #ffffff;
+                --bg-elevated: #f1f5f9;
+                --text-primary: #0f172a;
+                --text-secondary: #475569;
+                --text-muted: #64748b;
+                --border: rgba(0, 0, 0, 0.08);
+                --border-light: rgba(0, 0, 0, 0.12);
+                --hero-accent: var(--indigo);
+                --card-shadow: rgba(0, 0, 0, 0.08);
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .site-header {
+            background: rgba(15, 15, 26, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        [data-theme="light"] .site-header { background: rgba(255, 255, 255, 0.95); }
+        @media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) .site-header { background: rgba(255, 255, 255, 0.95); } }
+
+        .country-banner {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .country-banner .flag { font-size: 16px; margin-right: 6px; }
+        .country-banner a { color: var(--indigo); text-decoration: none; margin-left: 8px; font-weight: 500; }
+        .country-banner a:hover { text-decoration: underline; }
+
+        .main-nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px max(16px, 4vw);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 max(16px, 5vw);
+        }
+
+        .section {
+            padding: clamp(48px, 10vw, 100px) 0;
+        }
+
+        .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+
+        /* Unified Navigation Styles */
+        .unified-banner {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 8px 16px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .unified-banner a { color: var(--indigo); text-decoration: none; margin-left: 8px; font-weight: 500; }
+        .unified-banner a:hover { text-decoration: underline; }
+
+        .unified-nav {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .unified-nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px max(16px, 4vw);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .unified-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        .unified-logo-img {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            object-fit: contain;
+        }
+        .unified-logo-text {
+            font-size: 24px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .unified-links {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .unified-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .unified-link:hover { color: var(--indigo); background: rgba(79, 70, 229, 0.1); }
+        .unified-link.active { color: var(--indigo); background: rgba(79, 70, 229, 0.1); }
+
+        .unified-cta {
+            background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%);
+            color: white !important;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-left: 16px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+        }
+        .unified-cta:hover { transform: scale(1.02); box-shadow: 0 6px 25px rgba(79, 70, 229, 0.4); }
+
+        .unified-mobile-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .unified-mobile-menu {
+            display: none;
+            background: var(--bg-card);
+            border-top: 1px solid var(--border);
+            padding: 16px;
+        }
+        .unified-mobile-menu.open { display: block; }
+        .unified-mobile-link {
+            display: block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 14px 16px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .unified-mobile-link:hover, .unified-mobile-link.active {
+            color: var(--indigo);
+            background: rgba(79, 70, 229, 0.1);
+        }
+        .unified-mobile-cta {
+            display: block;
+            background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%);
+            color: white !important;
+            padding: 14px 24px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .unified-links { display: none; }
+            .unified-cta { display: none; }
+            .unified-mobile-btn { display: block; }
+        }
+
+        /* Unified Footer Styles */
+        .unified-footer {
+            background: var(--bg-card);
+            border-top: 1px solid var(--border);
+            padding: 60px 24px 30px;
+        }
+        .unified-footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .unified-footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+        @media (max-width: 768px) {
+            .unified-footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+        }
+        @media (max-width: 480px) {
+            .unified-footer-grid { grid-template-columns: 1fr; }
+        }
+        .unified-footer h4 {
+            color: var(--text-primary);
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+        }
+        .unified-footer a {
+            display: block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            padding: 6px 0;
+            transition: color 0.2s;
+        }
+        .unified-footer a:hover { color: var(--indigo); }
+        .unified-footer-bottom {
+            border-top: 1px solid var(--border);
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .unified-footer-copy {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .nav-logo-img {
+            width: 44px; height: 44px;
+            border-radius: 12px;
+            object-fit: contain;
+        }
+        .nav-logo span {
+            font-size: 26px; font-weight: 800;
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links { display: flex; align-items: center; gap: 8px; }
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .nav-link:hover { color: var(--indigo); background: rgba(79, 70, 229, 0.1); }
+        .nav-link.active { color: var(--indigo); }
+
+        .nav-cta {
+            background: var(--gradient-cta);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-left: 16px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+        }
+        .nav-cta:hover { transform: scale(1.02); box-shadow: 0 6px 25px rgba(79, 70, 229, 0.4); }
+
+        .mobile-menu-btn { display: none; background: none; border: none; color: var(--text-primary); padding: 8px; cursor: pointer; font-size: 28px; }
+
+        .plus-badge {
+            display: inline-flex; align-items: center; gap: 4px;
+            background: linear-gradient(135deg, var(--gold-start) 0%, var(--gold-end) 100%);
+            color: var(--plus-text);
+            padding: 4px 14px;
+            border-radius: 50px;
+            font-size: 12px; font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 1.2px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+            position: relative; overflow: hidden;
+        }
+        .plus-badge::after {
+            content: '';
+            position: absolute; top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            animation: shimmer 1.4s infinite;
+        }
+        @keyframes shimmer { 0% { left: -100%; } 100% { left: 100%; } }
+
+        .hero-section { min-height: calc(100vh - 130px); position: relative; overflow: hidden; }
+        .hero-slider { position: relative; height: 100%; min-height: calc(100vh - 130px); }
+        .hero-slide {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            opacity: 0; transition: opacity 0.8s ease;
+            display: flex; align-items: center; justify-content: center;
+            padding: 60px 24px;
+        }
+        .hero-slide.active { opacity: 1; }
+
+        .hero-orb { position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.5; pointer-events: none; }
+        .hero-orb.purple { width: 500px; height: 500px; background: var(--purple); top: -150px; right: -100px; opacity: 0.3; }
+        .hero-orb.pink { width: 400px; height: 400px; background: var(--pink); bottom: -100px; left: -100px; opacity: 0.2; }
+
+        .hero-content { position: relative; z-index: 2; text-align: center; max-width: 900px; }
+        .hero-eyebrow {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: rgba(79, 70, 229, 0.15);
+            border: 1px solid rgba(79, 70, 229, 0.3);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 14px; font-weight: 500;
+            color: #a5b4fc;
+            margin-bottom: 28px;
+        }
+        .hero-eyebrow .material-icons-outlined { font-size: 18px; color: var(--indigo); }
+
+        .hero-title { font-size: clamp(36px, 7vw, 64px); font-weight: 900; line-height: 1.1; margin-bottom: 20px; }
+        .hero-title .gradient { background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-native { font-size: clamp(22px, 4vw, 36px); font-weight: 700; color: #a5b4fc; margin-bottom: 20px; }
+        .hero-subtitle { font-size: clamp(16px, 2vw, 20px); color: var(--text-secondary); max-width: 600px; margin: 0 auto 36px; line-height: 1.7; }
+        .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+        .btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 16px 28px; border-radius: 12px;
+            font-size: 16px; font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer; border: none;
+        }
+        .btn-primary {
+            background: var(--gradient-cta); color: white;
+            box-shadow: 0 4px 20px rgba(79, 70, 229, 0.4);
+        }
+        .btn-primary:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 8px 30px rgba(79, 70, 229, 0.5); }
+        .btn-secondary { background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border-light); }
+        .btn-secondary:hover { background: rgba(79, 70, 229, 0.15); border-color: var(--indigo); transform: translateY(-2px); }
+
+        .slider-controls { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 12px; z-index: 10; }
+        .slider-lang { font-size: 13px; color: var(--text-muted); }
+        .slider-dots { display: flex; gap: 10px; }
+        .slider-dot {
+            width: 10px; height: 10px; border-radius: 50%;
+            background: var(--bg-elevated);
+            border: 2px solid var(--border-light);
+            cursor: pointer; transition: all 0.3s ease;
+        }
+        .slider-dot:hover { border-color: var(--purple); }
+        .slider-dot.active { background: var(--purple); border-color: var(--purple); transform: scale(1.3); }
+
+        .languages-section { background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 24px; }
+        .languages-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+        .languages-label { font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; }
+        .languages-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .lang-chip {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            padding: 10px 18px;
+            border-radius: 50px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .lang-chip:hover, .lang-chip.active { background: rgba(79, 70, 229, 0.15); border-color: var(--indigo); color: #a5b4fc; }
+
+        .section-alt { background: var(--bg-card); }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-eyebrow { display: inline-block; font-size: 13px; font-weight: 600; color: #a5b4fc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px; }
+        .section-title { font-size: clamp(28px, 5vw, 44px); font-weight: 800; margin-bottom: 16px; }
+        .section-subtitle { font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+        .card {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); border-color: rgba(79, 70, 229, 0.3); }
+        .card-icon {
+            width: 56px; height: 56px;
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(147, 51, 234, 0.1));
+            border-radius: 16px;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 20px;
+            color: #a5b4fc;
+            font-size: 28px;
+        }
+        .card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
+        .card p { color: var(--text-secondary); font-size: 15px; line-height: 1.6; }
+
+        .goal-card { display: flex; align-items: flex-start; gap: 20px; }
+        .goal-emoji { font-size: 40px; line-height: 1; }
+        .goal-amount {
+            display: inline-block;
+            background: rgba(79, 70, 229, 0.15);
+            color: #a5b4fc;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px; font-weight: 600;
+            margin-top: 8px;
+        }
+        .goal-desc { font-size: 14px; color: var(--text-muted); margin-top: 6px; }
+
+        .payments-box {
+            background: linear-gradient(135deg, var(--bg-elevated), var(--bg-card));
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 60px;
+            text-align: center;
+        }
+        .payments-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px; }
+        .payment-item { text-align: center; }
+        .payment-icon {
+            width: 72px; height: 72px;
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.15), rgba(236, 72, 153, 0.1));
+            border: 1px solid rgba(79, 70, 229, 0.2);
+            border-radius: 20px;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 12px;
+            color: #a5b4fc;
+            font-size: 32px;
+            transition: all 0.3s ease;
+        }
+        .payment-item:hover .payment-icon { transform: scale(1.1); border-color: var(--indigo); }
+        .payment-name { font-weight: 600; margin-bottom: 4px; }
+        .payment-examples { font-size: 12px; color: var(--text-muted); }
+
+        .feature-card { position: relative; background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), transparent); border: 1px solid rgba(79, 70, 229, 0.2); }
+        .feature-badge { position: absolute; top: 20px; right: 20px; background: var(--gradient-cta); color: white; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+        .feature-example { margin-top: 16px; background: rgba(0, 0, 0, 0.3); padding: 12px 16px; border-radius: 10px; font-family: 'SF Mono', monospace; font-size: 14px; color: #a5b4fc; }
+        [data-theme="light"] .feature-example { background: rgba(79, 70, 229, 0.08); color: var(--indigo); }
+
+        .trust-box {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(236, 72, 153, 0.05));
+            border: 1px solid rgba(79, 70, 229, 0.25);
+            border-radius: 28px;
+            padding: 60px;
+        }
+        .trust-header { display: flex; align-items: center; gap: 24px; margin-bottom: 40px; }
+        .trust-icon { width: 80px; height: 80px; background: var(--gradient-hero); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+        .trust-header h2 { font-size: 28px; font-weight: 800; }
+        .trust-header p { color: var(--text-secondary); }
+        .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+        .trust-item { display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: rgba(0, 0, 0, 0.2); border-radius: 14px; }
+        .trust-item .material-icons-outlined { color: #a5b4fc; font-size: 22px; }
+        [data-theme="light"] .trust-item { background: rgba(79, 70, 229, 0.05); }
+
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 750px; margin: 0 auto; }
+        .pricing-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 24px; padding: 40px; text-align: center; }
+        .pricing-card.featured { background: linear-gradient(135deg, rgba(79, 70, 229, 0.15), rgba(147, 51, 234, 0.1)); border-color: rgba(79, 70, 229, 0.4); transform: scale(1.02); }
+        .pricing-card h3 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+        .pricing-price { font-size: 52px; font-weight: 900; background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .pricing-period { color: var(--text-muted); margin-bottom: 24px; }
+        .pricing-desc { color: var(--text-secondary); margin-bottom: 24px; }
+        .pricing-note { margin-top: 16px; background: rgba(0, 0, 0, 0.2); padding: 12px; border-radius: 10px; font-size: 14px; color: var(--text-secondary); }
+        .pricing-note strong { color: #a5b4fc; }
+
+        .download-section { background: var(--gradient-hero); padding: 100px 0; position: relative; overflow: hidden; }
+        .download-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); opacity: 0.3; }
+        .download-inner { position: relative; z-index: 1; text-align: center; max-width: 700px; margin: 0 auto; }
+        .download-inner h2 { font-size: clamp(32px, 5vw, 48px); font-weight: 900; color: white; margin-bottom: 16px; }
+        .download-inner p { font-size: 18px; color: rgba(255, 255, 255, 0.85); margin-bottom: 40px; }
+        .download-badges { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .store-badge { display: flex; align-items: center; gap: 14px; background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.2); padding: 14px 28px; border-radius: 14px; text-decoration: none; color: white; transition: all 0.3s ease; backdrop-filter: blur(10px); }
+        .store-badge:hover { background: rgba(0, 0, 0, 0.5); transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+        .store-badge .icon { font-size: 36px; }
+        .store-badge .text { text-align: left; }
+        .store-badge .text small { font-size: 12px; opacity: 0.8; display: block; }
+        .store-badge .text span { font-size: 18px; font-weight: 700; }
+        .store-badge.coming-soon {
+            position: relative;
+            opacity: 0.7;
+            cursor: default;
+            pointer-events: none;
+        }
+        .store-badge.coming-soon:hover {
+            transform: none;
+            box-shadow: none;
+        }
+        .coming-soon-ribbon {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+        .mobile-sticky-cta .btn.coming-soon {
+            position: relative;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        .mobile-sticky-cta .coming-soon-label {
+            font-size: 8px;
+            display: block;
+            margin-top: 2px;
+            opacity: 0.8;
+        }
+
+        .site-footer { background: var(--bg-card); border-top: 1px solid var(--border); padding: 60px 0 30px; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+        .footer-brand { display: flex; flex-direction: column; gap: 16px; }
+        .footer-logo { display: flex; align-items: center; gap: 12px; }
+        .footer-logo-img { width: 48px; height: 48px; border-radius: 14px; object-fit: contain; }
+        .footer-logo span { font-size: 24px; font-weight: 800; background: var(--gradient-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .footer-brand p { color: var(--text-secondary); font-size: 14px; line-height: 1.7; }
+        .footer-pricing { display: flex; gap: 16px; margin-top: 8px; }
+        .footer-pricing span { font-size: 14px; color: var(--text-secondary); }
+        .footer-column h4 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; color: var(--text-primary); }
+        .footer-column ul { list-style: none; }
+        .footer-column li { margin-bottom: 12px; }
+        .footer-column a { color: var(--text-secondary); text-decoration: none; font-size: 14px; transition: color 0.2s ease; }
+        .footer-column a:hover { color: var(--indigo); }
+        .footer-bottom { padding-top: 30px; border-top: 1px solid var(--border); text-align: center; }
+        .footer-bottom p { color: var(--text-muted); font-size: 13px; margin-bottom: 8px; }
+        .footer-bottom a { color: var(--text-muted); text-decoration: none; }
+        .footer-bottom a:hover { color: var(--indigo); }
+
+        .theme-toggle-container { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 0; border-top: 1px solid var(--border); margin-top: 24px; }
+        .theme-toggle-label { font-size: 13px; color: var(--text-muted); }
+        .theme-toggle { display: flex; align-items: center; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 50px; padding: 4px; gap: 4px; }
+        .theme-btn { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; border: none; background: transparent; color: var(--text-muted); cursor: pointer; transition: all 0.2s ease; }
+        .theme-btn:hover { color: var(--text-primary); }
+        .theme-btn.active { background: var(--gradient-cta); color: white; box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3); }
+        .theme-btn .material-icons-outlined { font-size: 18px; }
+
+        .mobile-sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 12px 16px;
+            background: rgba(15, 15, 26, 0.98);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--border);
+            z-index: 999;
+            gap: 12px;
+        }
+        [data-theme="light"] .mobile-sticky-cta { background: rgba(255, 255, 255, 0.98); }
+        .mobile-sticky-cta .btn { flex: 1; justify-content: center; padding: 14px 20px; }
+
+        .social-proof-bar {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
+            padding: clamp(16px, 4vw, 24px) 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .social-proof-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(24px, 6vw, 48px);
+            flex-wrap: wrap;
+        }
+        .proof-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        .proof-item .material-icons-outlined { color: #a5b4fc; font-size: 20px; }
+        .proof-value { font-weight: 700; color: var(--text-primary); font-size: 18px; }
+
+        @media (max-width: 1024px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+
+        @media (max-width: 768px) {
+            .nav-links, .nav-cta { display: none; }
+            .mobile-menu-btn { display: block; }
+            .mobile-sticky-cta { display: flex; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; max-width: 280px; justify-content: center; }
+            .payments-box, .trust-box { padding: clamp(24px, 6vw, 40px); }
+            .trust-header { flex-direction: column; text-align: center; }
+            .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+            .download-section { padding-bottom: 100px; }
+        }
+
+        @media (max-width: 640px) {
+            .card-grid { grid-template-columns: 1fr; gap: 16px; }
+            .pricing-grid { grid-template-columns: 1fr; }
+            .hero-title { font-size: clamp(28px, 8vw, 48px); }
+            .section-title { font-size: clamp(22px, 6vw, 36px); }
+            .proof-item { font-size: 12px; }
+            .proof-value { font-size: 16px; }
+        }
+
+        @media (max-width: 480px) {
+            .country-banner { font-size: 12px; padding: 8px 12px; }
+            .hero-eyebrow { padding: 8px 14px; font-size: 12px; }
+            .store-badge { padding: 12px 16px; }
+            .store-badge .icon { font-size: 28px; }
+            .store-badge .text span { font-size: 15px; }
+            .social-proof-inner { gap: 16px; }
+        }
+    </style>
+    <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
 </head>
-<body class="bg-gray-50">
-    <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
-        <span class="mr-2">🇵🇪</span>
-        EZer para <strong>Perú</strong>
-        <a href="../" class="text-indigo-600 hover:underline ml-2">View in English</a> |
-        <a href="../../" class="text-indigo-600 hover:underline ml-2">Cambiar país</a>
+<body>
+    <!-- Unified Navigation -->
+    <div class="unified-banner">
+        <span>🇵🇪</span>
+        Estás viendo EZer para <strong>Perú</strong>
+        <a href="../">View in English</a> |
+        <a href="../../">Cambiar país</a>
     </div>
-
-    <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <a href="./" class="flex items-center gap-3">
-                    <img src="../../logo.png" alt="EZer" class="h-10 w-10 rounded-xl object-contain">
-                    <div class="text-2xl font-bold gradient-text">EZer app</div>
-                </a>
-                <div class="hidden lg:flex gap-1 items-center">
-                    <a href="./" class="px-4 py-2 rounded-lg text-sm bg-indigo-100 text-indigo-600 font-semibold">Inicio</a>
-                    <a href="features.html" class="px-4 py-2 rounded-lg text-sm hover:bg-indigo-50">Funciones</a>
-                    <a href="pricing.html" class="px-4 py-2 rounded-lg text-sm hover:bg-indigo-50">Precios</a>
-                    <a href="privacy.html" class="px-4 py-2 rounded-lg text-sm hover:bg-indigo-50">Privacidad</a>
-                    <a href="terms.html" class="px-4 py-2 rounded-lg text-sm hover:bg-indigo-50">Términos</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=PE" class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold">Descargar Gratis</a>
-                </div>
-                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
-                    <span class="material-icons-outlined">menu</span>
-                </button>
+    <nav class="unified-nav">
+        <div class="unified-nav-inner">
+            <a href="./" class="unified-logo">
+                <img src="../../logo.png" alt="EZer" class="unified-logo-img">
+                <span class="unified-logo-text">EZer app</span>
+            </a>
+            <div class="unified-links">
+                <a href="./" class="unified-link active">Inicio</a>
+                <a href="features.html" class="unified-link">Funciones</a>
+                <a href="pricing.html" class="unified-link">Precios</a>
+                <a href="privacy.html" class="unified-link">Privacidad</a>
+                <a href="terms.html" class="unified-link">Términos</a>
+                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-cta">Descargar Gratis</a>
             </div>
-            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-gray-200">
-                <a href="./" class="block px-4 py-3 rounded-lg bg-indigo-100 text-indigo-600 font-semibold">Inicio</a>
-                <a href="features.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Funciones</a>
-                <a href="pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Precios</a>
-                <a href="privacy.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Privacidad</a>
-                <a href="terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Términos</a>
-                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=PE" class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold">Descargar Gratis</a>
-            </div>
+            <button class="unified-mobile-btn" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
+                <span class="material-icons-outlined">menu</span>
+            </button>
+        </div>
+        <div class="unified-mobile-menu">
+            <a href="./" class="unified-mobile-link active">Inicio</a>
+            <a href="features.html" class="unified-mobile-link">Funciones</a>
+            <a href="pricing.html" class="unified-mobile-link">Precios</a>
+            <a href="privacy.html" class="unified-mobile-link">Privacidad</a>
+            <a href="terms.html" class="unified-mobile-link">Términos</a>
+            <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-mobile-cta">Descargar Gratis</a>
         </div>
     </nav>
 
-    <section class="hero-gradient text-white py-20 md:py-32">
-        <div class="container mx-auto px-4 text-center">
-            <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm mb-6">
-                <span class="material-icons-outlined text-lg">verified_user</span>
-                100% Privado • Sin Conexión • Sin Registro
+    <!-- Hero Slider -->
+    <section class="hero-section">
+        <div class="hero-slider" id="heroSlider">
+            <div class="hero-slide active" data-lang="es" style="background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1035 40%, var(--bg-dark) 100%);">
+                <div class="hero-orb purple"></div>
+                <div class="hero-orb pink"></div>
+                <div class="hero-content">
+                    <div class="hero-eyebrow">
+                        <span class="material-icons-outlined">verified_user</span>
+                        100% privado. Funciona sin conexión.
+                    </div>
+                    <h1 class="hero-title"><span class='gradient'>Controla cada peso.</span></h1>
+                    <p class="hero-native">Ahorra para lo que importa.</p>
+                    <p class="hero-subtitle">La app de gastos privada que funciona offline. Sin login. Sin nube. Solo tú y tus finanzas.</p>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary">
+                            <span class="material-icons-outlined">download</span>
+                            Descargar gratis - $0
+                        </a>
+                        <a href="#features" class="btn btn-secondary">Más información</a>
+                    </div>
+                </div>
             </div>
-            <h1 class="text-4xl md:text-6xl font-black mb-6">Controla Cada Sol.</h1>
-            <p class="text-xl md:text-2xl opacity-90 mb-8 max-w-2xl mx-auto">La app de gastos que nunca sube tus datos. Funciona offline. Solo tú y tu plata.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=PE" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-indigo-600 rounded-xl font-bold text-lg hover:bg-gray-100 transition">
-                    <span class="material-icons-outlined">android</span>Google Play
-                </a>
-                <div class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/20 text-white rounded-xl font-bold text-lg cursor-not-allowed relative">
-                    <span class="material-icons-outlined">apple</span>App Store
-                    <span class="absolute -top-2 -right-2 bg-amber-400 text-purple-900 text-xs font-bold px-2 py-1 rounded-full">Próximamente</span>
+            <div class="hero-slide" data-lang="en" style="background: linear-gradient(135deg, var(--bg-dark) 0%, #2a1030 40%, var(--bg-dark) 100%);">
+                <div class="hero-orb purple"></div>
+                <div class="hero-orb pink"></div>
+                <div class="hero-content">
+                    <div class="hero-eyebrow">
+                        <span class="material-icons-outlined">verified_user</span>
+                        100% Private. Works Offline. No Login Required.
+                    </div>
+                    <h1 class="hero-title">Track Every $.<br><span class='gradient'>Save for What Matters.</span></h1>
+                    <p class="hero-subtitle">The private expense tracker that works offline. No login. No cloud. Just you and your finances.</p>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary">
+                            <span class="material-icons-outlined">download</span>
+                            Download Free - $0
+                        </a>
+                        <a href="#features" class="btn btn-secondary">See How It Works</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <div class="slider-lang">Desliza o haz clic para ver en tu idioma</div>
+            <div class="slider-dots">
+                <button class="slider-dot active" data-index="0" title="Español"></button>
+                <button class="slider-dot" data-index="1" title="English"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Bar -->
+    <section class="languages-section">
+        <div class="languages-inner">
+            <div class="languages-label">Disponible en 2 Idiomas</div>
+            <div class="languages-chips">
+                <span class="lang-chip active">Español</span>
+                <span class="lang-chip">English</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Bar -->
+    <section class="social-proof-bar">
+        <div class="container">
+            <div class="social-proof-inner">
+                <div class="proof-item">
+                    <span class="material-icons-outlined">language</span>
+                    <span><span class="proof-value">29</span> Idiomas</span>
+                </div>
+                <div class="proof-item">
+                    <span class="material-icons-outlined">public</span>
+                    <span><span class="proof-value">76</span> Países</span>
+                </div>
+                <div class="proof-item">
+                    <span class="material-icons-outlined">cloud_off</span>
+                    <span><span class="proof-value">100%</span> Offline</span>
+                </div>
+                <div class="proof-item">
+                    <span class="material-icons-outlined">enhanced_encryption</span>
+                    <span><span class="proof-value">AES-256</span> Encriptación</span>
+                </div>
+                <div class="proof-item">
+                    <span class="material-icons-outlined">person_off</span>
+                    <span><span class="proof-value">Sin</span> Cuenta Requerida</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-white py-8 border-b">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
-                <div><div class="text-2xl font-bold text-indigo-600">29</div><div class="text-sm text-gray-600">Idiomas</div></div>
-                <div><div class="text-2xl font-bold text-indigo-600">76</div><div class="text-sm text-gray-600">Países</div></div>
-                <div><div class="text-2xl font-bold text-indigo-600">100%</div><div class="text-sm text-gray-600">Offline</div></div>
-                <div><div class="text-2xl font-bold text-indigo-600">AES-256</div><div class="text-sm text-gray-600">Encriptación</div></div>
-                <div><div class="text-2xl font-bold text-indigo-600">S/0</div><div class="text-sm text-gray-600">Gratis</div></div>
+    <!-- Expenses Section -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Control de Gastos</span>
+                <h2 class="section-title">Registra en qué gastan los peruanos</h2>
+                <p class="section-subtitle">Categorías preconstruidas para gastos cotidianos en Perú</p>
             </div>
-        </div>
-    </section>
-
-    <section class="py-16 md:py-24">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Hecho para <span class="gradient-text">Perú</span></h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Categorías predefinidas para los gastos diarios de los peruanos</p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="feature-card rounded-2xl p-6">
-                    <span class="material-icons-outlined text-indigo-600 text-3xl mb-4">restaurant</span>
-                    <h3 class="font-bold mb-2">Menú del día</h3>
-                    <p class="text-gray-600 text-sm">Registra gastos de comida, desde el menú de S/8 hasta restaurantes</p>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">restaurant</span></div>
+                    <h3>Almuerzo en la U</h3>
+                    <p>Registra gastos de restaurantes</p>
                 </div>
-                <div class="feature-card rounded-2xl p-6">
-                    <span class="material-icons-outlined text-indigo-600 text-3xl mb-4">directions_bus</span>
-                    <h3 class="font-bold mb-2">Combi / Metropolitano</h3>
-                    <p class="text-gray-600 text-sm">Controla tu gasto en transporte público en Lima</p>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">directions_car</span></div>
+                    <h3>Tarjeta BIP metro/micro</h3>
+                    <p>Registra gastos de transporte</p>
                 </div>
-                <div class="feature-card rounded-2xl p-6">
-                    <span class="material-icons-outlined text-indigo-600 text-3xl mb-4">phone_android</span>
-                    <h3 class="font-bold mb-2">Claro / Movistar / Entel</h3>
-                    <p class="text-gray-600 text-sm">Recargas y planes de celular</p>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">school</span></div>
+                    <h3>Libros universitarios</h3>
+                    <p>Registra gastos de educación</p>
                 </div>
-                <div class="feature-card rounded-2xl p-6">
-                    <span class="material-icons-outlined text-indigo-600 text-3xl mb-4">shopping_cart</span>
-                    <h3 class="font-bold mb-2">Plaza Vea / Metro / Tottus</h3>
-                    <p class="text-gray-600 text-sm">Compras del supermercado</p>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">movie</span></div>
+                    <h3>Cine</h3>
+                    <p>Registra gastos de entretenimiento</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Metas de Ahorro</h2>
-                <p class="text-gray-600">Lo que los peruanos están ahorrando con EZer</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <div class="feature-card rounded-2xl p-6 text-center">
-                    <div class="text-4xl mb-4">🏔️</div>
-                    <h3 class="font-bold mb-2">Viaje a Cusco</h3>
-                    <div class="text-2xl font-bold text-indigo-600">S/1,500</div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">phone_android</span></div>
+                    <h3>Entel móvil</h3>
+                    <p>Registra gastos de celular</p>
                 </div>
-                <div class="feature-card rounded-2xl p-6 text-center">
-                    <div class="text-4xl mb-4">🚗</div>
-                    <h3 class="font-bold mb-2">Carro Nuevo</h3>
-                    <div class="text-2xl font-bold text-indigo-600">S/40,000</div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">home</span></div>
+                    <h3>Arriendo departamento</h3>
+                    <p>Registra gastos de arriendo</p>
                 </div>
-                <div class="feature-card rounded-2xl p-6 text-center">
-                    <div class="text-4xl mb-4">🏠</div>
-                    <h3 class="font-bold mb-2">Inicial de Departamento</h3>
-                    <div class="text-2xl font-bold text-indigo-600">S/80,000</div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">delivery_dining</span></div>
+                    <h3>Pedido Rappi</h3>
+                    <p>Registra gastos de delivery</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><span class="material-icons-outlined">checkroom</span></div>
+                    <h3>Ropa</h3>
+                    <p>Registra gastos de vestuario</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Maneja Todas Tus Cuentas</h2>
-                <p class="text-gray-600">Integra tus cuentas de bancos peruanos</p>
+    <!-- Goals Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Metas de Ahorro</span>
+                <h2 class="section-title">Ahorra para metas que te importan</h2>
+                <p class="section-subtitle">Los peruanos están ahorrando para esto con EZer</p>
             </div>
-            <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-                <div class="feature-card rounded-2xl p-6 text-center">
-                    <span class="material-icons-outlined text-blue-600 text-3xl mb-3">account_balance</span>
-                    <h3 class="font-semibold">BCP</h3>
+            <div class="card-grid">
+                <div class="card goal-card">
+                    <div class="goal-emoji">💻</div>
+                    <div>
+                        <h3>Notebook Nuevo</h3>
+                        <span class="goal-amount">$550.000</span>
+                        <p class="goal-desc">Ahorra $300.000 para tu meta</p>
+                    </div>
                 </div>
-                <div class="feature-card rounded-2xl p-6 text-center">
-                    <span class="material-icons-outlined text-green-600 text-3xl mb-3">account_balance</span>
-                    <h3 class="font-semibold">Interbank</h3>
+                <div class="card goal-card">
+                    <div class="goal-emoji">🛡️</div>
+                    <div>
+                        <h3>Fondo de Emergencia</h3>
+                        <span class="goal-amount">$1.800.000</span>
+                        <p class="goal-desc">Ahorra $900.000 para tu meta</p>
+                    </div>
                 </div>
-                <div class="feature-card rounded-2xl p-6 text-center">
-                    <span class="material-icons-outlined text-indigo-600 text-3xl mb-3">account_balance</span>
-                    <h3 class="font-semibold">BBVA</h3>
+                <div class="card goal-card">
+                    <div class="goal-emoji">🏔️</div>
+                    <div>
+                        <h3>Viaje a la Patagonia</h3>
+                        <span class="goal-amount">$1.500.000</span>
+                        <p class="goal-desc">Ahorra $850.000 para tu meta</p>
+                    </div>
                 </div>
-                <div class="feature-card rounded-2xl p-6 text-center">
-                    <span class="material-icons-outlined text-purple-600 text-3xl mb-3">account_balance_wallet</span>
-                    <h3 class="font-semibold">Efectivo</h3>
+                <div class="card goal-card">
+                    <div class="goal-emoji">🎓</div>
+                    <div>
+                        <h3>Fondo Educación Hijos</h3>
+                        <span class="goal-amount">$9.000.000</span>
+                        <p class="goal-desc">Ahorra $5.6M para tu meta</p>
+                    </div>
+                </div>
+                <div class="card goal-card">
+                    <div class="goal-emoji">🏖️</div>
+                    <div>
+                        <h3>Vacaciones Familiares</h3>
+                        <span class="goal-amount">$2.000.000</span>
+                        <p class="goal-desc">Ahorra $840.000 para tu meta</p>
+                    </div>
+                </div>
+                <div class="card goal-card">
+                    <div class="goal-emoji">🏠</div>
+                    <div>
+                        <h3>Pie para Departamento</h3>
+                        <span class="goal-amount">$15.000.000</span>
+                        <p class="goal-desc">Ahorra para el pie de tu depa</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl p-8 md:p-12 text-white">
-                <div class="max-w-3xl mx-auto text-center">
-                    <span class="material-icons-outlined text-5xl mb-6">lock</span>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Tus Datos Nunca Salen de tu Celular</h2>
-                    <p class="text-lg opacity-90 mb-8">Encriptación AES-256 de grado bancario. Sin servidores. Sin cuentas. Cumple con la Ley N° 29733 de Protección de Datos Personales.</p>
-                    <div class="grid md:grid-cols-3 gap-6">
-                        <div class="bg-white/10 rounded-xl p-4">
-                            <span class="material-icons-outlined mb-2">wifi_off</span>
-                            <p class="text-sm">100% Offline</p>
+    <!-- Payments -->
+    <section class="section">
+        <div class="container">
+            <div class="payments-box">
+                <h2 style="font-size: 28px; font-weight: 700; margin-bottom: 8px;">Funciona con cómo paga Perú</h2>
+                <p style="color: var(--text-secondary);">Registra cada transacción, como sea que pagues</p>
+                <div class="payments-grid">
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">credit_card</span></div>
+                        <div class="payment-name">Tarjetas de Crédito</div>
+                        <div class="payment-examples">Visa, Mastercard</div>
+                    </div>
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">credit_card</span></div>
+                        <div class="payment-name">Tarjetas de Débito</div>
+                        <div class="payment-examples">Todos los bancos</div>
+                    </div>
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">account_balance_wallet</span></div>
+                        <div class="payment-name">Billeteras Digitales</div>
+                        <div class="payment-examples">Mach, Tenpo</div>
+                    </div>
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">payments</span></div>
+                        <div class="payment-name">Efectivo</div>
+                        <div class="payment-examples">Control de efectivo</div>
+                    </div>
+                    <div class="payment-item">
+                        <div class="payment-icon"><span class="material-icons-outlined">account_balance</span></div>
+                        <div class="payment-name">Transferencia</div>
+                        <div class="payment-examples">TEF, transferencias</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Features -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Hecho para Perú</span>
+                <h2 class="section-title">Diseñado para peruanos</h2>
+                <p class="section-subtitle">Funciones que no encontrarás en otro lado</p>
+            </div>
+            <div class="card-grid">
+                <div class="card feature-card">
+                    <h3>Recordatorios de Cuentas</h3>
+                    <p>Nunca olvides un pago</p>
+                    <div class="feature-example">Configura alertas para cuentas recurrentes</div>
+                </div>
+                <div class="card feature-card">
+                    <h3>OCR de Boletas</h3>
+                    <p>Escanea boletas automáticamente</p>
+                    <div class="feature-example">Saca fotos para registrar gastos en efectivo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust -->
+    <section class="section">
+        <div class="container">
+            <div class="trust-box">
+                <div class="trust-header">
+                    <div class="trust-icon">🔒</div>
+                    <div>
+                        <h2>Tus datos nunca salen de tu celular</h2>
+                        <p>Seguridad de nivel bancario</p>
+                    </div>
+                </div>
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">wifi_off</span>
+                        <span>100% offline - funciona sin internet</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">person_off</span>
+                        <span>Sin cuenta ni login requerido</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">enhanced_encryption</span>
+                        <span>Encriptación bancaria AES-256</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">cloud_off</span>
+                        <span>Ningún dato sube a ningún servidor</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="material-icons-outlined">fingerprint</span>
+                        <span>Compatible con Ley 29733</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section section-alt" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">Precios</span>
+                <h2 class="section-title">Precios simples y transparentes</h2>
+                <p class="section-subtitle">Empieza gratis, mejora cuando necesites más</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Gratis</h3>
+                    <div class="pricing-price">$0</div>
+                    <div class="pricing-period">para siempre</div>
+                    <p class="pricing-desc">Todo lo que necesitas para empezar</p>
+                    <a href="#download" class="btn btn-secondary" style="width: 100%; justify-content: center;">Comenzar</a>
+                </div>
+                <div class="pricing-card featured">
+                    <span class="plus-badge">Plus</span>
+                    <h3 style="margin-top: 12px;">Plus</h3>
+                    <div class="pricing-price">S/19</div>
+                    <div class="pricing-period">por mes</div>
+                    <p class="pricing-desc">Todo ilimitado para ahorradores serios</p>
+                    <a href="#download" class="btn btn-primary" style="width: 100%; justify-content: center;">Mejorar a Plus</a>
+                    <div class="pricing-note">Menos que un café</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section class="download-section" id="download">
+        <div class="container">
+            <div class="download-inner">
+                <h2>Empieza a Controlar tu Plata Hoy</h2>
+                <p>Descarga EZer gratis en iOS o Android. Sin registro. Tus datos se quedan en tu dispositivo.</p>
+                <div class="download-badges">
+                    <div class="store-badge coming-soon">
+                        <span class="coming-soon-ribbon">Próximamente</span>
+                        <span class="material-icons-outlined icon">apple</span>
+                        <div class="text">
+                            <small>Descargar en</small>
+                            <span>App Store</span>
                         </div>
-                        <div class="bg-white/10 rounded-xl p-4">
-                            <span class="material-icons-outlined mb-2">person_off</span>
-                            <p class="text-sm">Sin Registro</p>
+                    </div>
+                    <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=PE" class="store-badge" target="_blank" rel="noopener">
+                        <span class="material-icons-outlined icon">shop</span>
+                        <div class="text">
+                            <small>Disponible en</small>
+                            <span>Google Play</span>
                         </div>
-                        <div class="bg-white/10 rounded-xl p-4">
-                            <span class="material-icons-outlined mb-2">gavel</span>
-                            <p class="text-sm">Ley N° 29733</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Precios Simples</h2>
-            <p class="text-gray-600 mb-8">Empieza gratis, actualiza cuando quieras</p>
-            <div class="flex flex-col md:flex-row gap-6 justify-center max-w-3xl mx-auto">
-                <div class="feature-card rounded-2xl p-8 flex-1">
-                    <h3 class="text-xl font-bold mb-2">Gratis</h3>
-                    <div class="text-4xl font-black text-indigo-600 mb-4">S/0</div>
-                    <p class="text-gray-600">Para siempre. Todo lo esencial.</p>
+    <!-- Footer -->
+    <footer class="site-footer" style="background: var(--bg-card); border-top: 1px solid var(--border); padding: 48px 0 24px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <a href="./" class="unified-logo" style="margin-bottom: 16px;">
+                        <img src="../../logo.png" alt="EZer" class="unified-logo-img">
+                        <span class="unified-logo-text">EZer app</span>
+                    </a>
+                    <p style="color: var(--text-secondary); font-size: 14px; margin-top: 16px;">
+                        Tu compañero financiero inteligente en Perú.
+                    </p>
+                    <p style="color: #22c55e; font-weight: 600; font-size: 14px; margin-top: 12px;">Gratis para usar</p>
                 </div>
-                <div class="feature-card rounded-2xl p-8 flex-1 border-2 border-indigo-600 relative">
-                    <span class="plus-badge absolute -top-3 left-1/2 -translate-x-1/2">POPULAR</span>
-                    <h3 class="text-xl font-bold mb-2">Plus</h3>
-                    <div class="text-4xl font-black gradient-text mb-4">S/19/mes</div>
-                    <p class="text-gray-600">Todo ilimitado para ahorrar más.</p>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Producto</h4>
+                    <a href="features.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Funciones</a>
+                    <a href="pricing.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Precios</a>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Legal</h4>
+                    <a href="privacy.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Política de Privacidad</a>
+                    <a href="terms.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Términos y Condiciones</a>
+                    <a href="../../data-deletion.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Eliminación de Datos</a>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Soporte</h4>
+                    <a href="../../feedback.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Comentarios</a>
+                    <a href="../../report.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Reportar Problema</a>
+                    <a href="mailto:support@ezerapp.com" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Contáctanos</a>
+                    <a href="../../" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Cambiar País</a>
                 </div>
             </div>
-            <a href="pricing.html" class="inline-block mt-8 text-indigo-600 font-semibold hover:underline">Ver todos los planes →</a>
-        </div>
-    </section>
 
-    <section class="hero-gradient text-white py-16">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Empieza a Controlar Tu Plata Hoy</h2>
-            <p class="text-xl opacity-90 mb-8">Únete a miles de peruanos que ya usan EZer</p>
-            <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=PE" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-indigo-600 rounded-xl font-bold text-lg hover:bg-gray-100 transition">
-                <span class="material-icons-outlined">android</span>Descargar en Google Play
-            </a>
-        </div>
-    </section>
+            <!-- Theme Toggle -->
+            <div class="theme-toggle-container">
+                <span class="theme-toggle-label">Apariencia</span>
+                <div class="theme-toggle">
+                    <button class="theme-btn" data-theme="light" title="Modo claro">
+                        <span class="material-icons-outlined" style="font-size: 18px;">light_mode</span>
+                    </button>
+                    <button class="theme-btn" data-theme="system" title="Sistema">
+                        <span class="material-icons-outlined" style="font-size: 18px;">contrast</span>
+                    </button>
+                    <button class="theme-btn" data-theme="dark" title="Modo oscuro">
+                        <span class="material-icons-outlined" style="font-size: 18px;">dark_mode</span>
+                    </button>
+                </div>
+            </div>
 
-    <footer class="themed-footer py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain">
-                        <div class="text-2xl font-bold gradient-text">EZer app</div>
-                    </div>
-                    <p class="text-sm text-gray-500 mb-4">Tu compañero financiero inteligente en Perú.</p>
-                    <p class="text-green-500 font-semibold">Gratis para usar</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Producto</h4>
-                    <div class="space-y-2 text-sm text-gray-500">
-                        <a href="features.html" class="block hover:text-indigo-600">Funciones</a>
-                        <a href="pricing.html" class="block hover:text-indigo-600">Precios</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Legal</h4>
-                    <div class="space-y-2 text-sm text-gray-500">
-                        <a href="privacy.html" class="block hover:text-indigo-600">Política de Privacidad</a>
-                        <a href="terms.html" class="block hover:text-indigo-600">Términos y Condiciones</a>
-                        <a href="../../data-deletion.html" class="block hover:text-indigo-600">Eliminar Datos</a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Soporte</h4>
-                    <div class="space-y-2 text-sm text-gray-500">
-                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600">Contáctanos</a>
-                        <a href="../../" class="block hover:text-indigo-600">Cambiar País</a>
-                    </div>
-                </div>
-            </div>
-            <div class="flex items-center justify-center gap-3 py-5 border-t border-gray-200">
-                <span class="text-sm text-gray-500">Apariencia</span>
-                <div class="flex items-center gap-1 p-1 rounded-full bg-gray-100 border border-gray-200">
-                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center" data-theme="light"><span class="material-icons-outlined" style="font-size:18px">light_mode</span></button>
-                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center" data-theme="system"><span class="material-icons-outlined" style="font-size:18px">contrast</span></button>
-                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center" data-theme="dark"><span class="material-icons-outlined" style="font-size:18px">dark_mode</span></button>
-                </div>
-            </div>
-            <div class="text-center pt-6 text-sm text-gray-500 border-t border-gray-200">
+            <div style="text-align: center; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px;">
                 <p>&copy; 2025 EZer. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script src="../../js/theme.js"></script>
     <script>
-        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
-            document.getElementById('mobile-menu')?.classList.toggle('hidden');
+        // Hero Slider
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        let currentSlide = 0;
+        let autoSlideInterval;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+            dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+            currentSlide = index;
+        }
+
+        function nextSlide() { showSlide((currentSlide + 1) % slides.length); }
+        function startAutoSlide() { autoSlideInterval = setInterval(nextSlide, 5000); }
+        function stopAutoSlide() { clearInterval(autoSlideInterval); }
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                stopAutoSlide();
+                showSlide(parseInt(dot.dataset.index));
+                startAutoSlide();
+            });
         });
+
+        const langChips = document.querySelectorAll('.lang-chip');
+        langChips.forEach((chip, index) => {
+            chip.addEventListener('click', () => {
+                if (index < slides.length) {
+                    stopAutoSlide();
+                    showSlide(index);
+                    startAutoSlide();
+                }
+                langChips.forEach(c => c.classList.remove('active'));
+                chip.classList.add('active');
+            });
+        });
+
+        startAutoSlide();
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Theme Toggle
+        const themeBtns = document.querySelectorAll('.theme-btn');
+        const html = document.documentElement;
+
+        function getSavedTheme() { return localStorage.getItem('ezer-theme') || 'system'; }
+
+        function applyTheme(theme) {
+            if (theme === 'system') { html.removeAttribute('data-theme'); }
+            else { html.setAttribute('data-theme', theme); }
+            themeBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.theme === theme));
+            localStorage.setItem('ezer-theme', theme);
+        }
+
+        applyTheme(getSavedTheme());
+        themeBtns.forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.theme)));
+
+        // Hide mobile CTA when near download section
+        const mobileCta = document.querySelector('.mobile-sticky-cta');
+        const downloadSection = document.querySelector('#download');
+        if (mobileCta && downloadSection) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    mobileCta.style.transform = entry.isIntersecting ? 'translateY(100%)' : 'translateY(0)';
+                });
+            }, { threshold: 0.3 });
+            observer.observe(downloadSection);
+        }
     </script>
 
     <!-- Mobile Sticky CTA -->
     <div class="mobile-sticky-cta">
-        <div class="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-gray-200 text-gray-500 rounded-xl font-semibold opacity-60 cursor-not-allowed relative">
+        <div class="btn btn-secondary coming-soon">
             <span class="material-icons-outlined">apple</span>
-            <div class="text-center"><div class="text-sm">iOS</div><div class="text-xs opacity-70">Próximamente</div></div>
+            <div>iOS<span class="coming-soon-label">Próximamente</span></div>
         </div>
-        <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=PE" class="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-semibold">
+        <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=PE" class="btn btn-primary" target="_blank" rel="noopener">
             <span class="material-icons-outlined">shop</span>
             Android
         </a>
