@@ -434,15 +434,10 @@
                 <a href="./" class="nav-link">હોમ</a>
                 <a href="./features.html" class="nav-link">ફીચર્સ</a>
                 <a href="./pricing.html" class="nav-link">કિંમત</a>
+                <a href="./privacy.html" class="nav-link">ગોપનીયતા</a>
+                <a href="./terms.html" class="nav-link">શરતો</a>
             </div>
-            <div style="display: flex; align-items: center;">
-                <a href="#download" class="nav-cta">મફત ડાઉનલોડ કરો - ₹0</a>
-                <div class="theme-toggle">
-                    <button onclick="setTheme('light')" title="લાઈટ">☀️</button>
-                    <button onclick="setTheme('dark')" title="ડાર્ક">🌙</button>
-                    <button onclick="setTheme('system')" title="સિસ્ટમ">💻</button>
-                </div>
-            </div>
+            <a href="#download" class="nav-cta">મફત ડાઉનલોડ કરો - ₹0</a>
         </div>
     </nav>
 
@@ -801,13 +796,22 @@
                 <span style="color: var(--text-muted);">|</span>
                 <a href="index.html" style="font-size: 13px; font-weight: 600; color: var(--indigo); text-decoration: none;">ગુજરાતી</a>
             </div>
+            <div class="theme-toggle-container" style="display: flex; align-items: center; justify-content: center; gap: 12px; padding: 16px 0; border-top: 1px solid var(--border);">
+                <span style="font-size: 13px; color: var(--text-muted);">થીમ</span>
+                <div class="theme-toggle" style="display: flex; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 10px; padding: 4px;">
+                    <button class="theme-btn" data-theme="light" title="લાઈટ" style="background: none; border: none; padding: 8px; border-radius: 8px; cursor: pointer; color: var(--text-muted);">
+                        <span class="material-icons-outlined" style="font-size: 18px;">light_mode</span>
+                    </button>
+                    <button class="theme-btn" data-theme="system" title="સિસ્ટમ" style="background: none; border: none; padding: 8px; border-radius: 8px; cursor: pointer; color: var(--text-muted);">
+                        <span class="material-icons-outlined" style="font-size: 18px;">contrast</span>
+                    </button>
+                    <button class="theme-btn" data-theme="dark" title="ડાર્ક" style="background: none; border: none; padding: 8px; border-radius: 8px; cursor: pointer; color: var(--text-muted);">
+                        <span class="material-icons-outlined" style="font-size: 18px;">dark_mode</span>
+                    </button>
+                </div>
+            </div>
             <div class="footer-bottom">
                 <p class="footer-copy">&copy; 2025 EZer. સર્વ હક્ક અનામત.</p>
-                <div class="theme-toggle">
-                    <button onclick="setTheme('light')" title="લાઈટ">☀️</button>
-                    <button onclick="setTheme('dark')" title="ડાર્ક">🌙</button>
-                    <button onclick="setTheme('system')" title="સિસ્ટમ">💻</button>
-                </div>
             </div>
         </div>
     </footer>
@@ -822,41 +826,31 @@
 
     <script>
         // Theme Management
-        function setTheme(theme) {
-            if (theme === 'system') {
-                localStorage.removeItem('theme');
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
-            } else {
-                localStorage.setItem('theme', theme);
-                document.documentElement.setAttribute('data-theme', theme);
-            }
-            updateThemeButtons();
-        }
+        const themeBtns = document.querySelectorAll('.theme-btn');
+        const html = document.documentElement;
 
-        function updateThemeButtons() {
-            const savedTheme = localStorage.getItem('theme');
-            document.querySelectorAll('.theme-toggle button').forEach((btn, index) => {
-                btn.classList.remove('active');
-                if ((index === 0 && savedTheme === 'light') ||
-                    (index === 1 && savedTheme === 'dark') ||
-                    (index === 2 && !savedTheme)) {
-                    btn.classList.add('active');
+        function applyTheme(theme) {
+            if (theme === 'system') {
+                html.removeAttribute('data-theme');
+            } else {
+                html.setAttribute('data-theme', theme);
+            }
+            themeBtns.forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.theme === theme);
+                if (btn.classList.contains('active')) {
+                    btn.style.background = 'linear-gradient(135deg, #4f46e5 0%, #9333ea 100%)';
+                    btn.style.color = 'white';
+                } else {
+                    btn.style.background = 'none';
+                    btn.style.color = 'var(--text-muted)';
                 }
             });
+            localStorage.setItem('ezer-theme', theme);
         }
 
         // Initialize theme
-        (function() {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme) {
-                document.documentElement.setAttribute('data-theme', savedTheme);
-            } else {
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
-            }
-            updateThemeButtons();
-        })();
+        applyTheme(localStorage.getItem('ezer-theme') || 'system');
+        themeBtns.forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.theme)));
 
         // Hide mobile CTA when near download section
         const downloadSection = document.getElementById('download');
