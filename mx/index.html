@@ -845,12 +845,114 @@
             .store-badge .text span { font-size: 15px; }
             .social-proof-inner { gap: 16px; }
         }
+
+        /* Language Detection Popup */
+        .lang-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .lang-popup-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        .lang-popup {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 32px;
+            max-width: 400px;
+            width: 90%;
+            text-align: center;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+        .lang-popup-overlay.show .lang-popup {
+            transform: scale(1);
+        }
+        .lang-popup-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        .lang-popup-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .lang-popup-native {
+            font-size: 20px;
+            color: #a5b4fc;
+            margin-bottom: 16px;
+        }
+        .lang-popup-desc {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+        .lang-popup-buttons {
+            display: flex;
+            gap: 12px;
+            flex-direction: column;
+        }
+        .lang-popup-btn {
+            padding: 14px 24px;
+            border-radius: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s ease;
+        }
+        .lang-popup-btn.primary {
+            background: var(--gradient-cta);
+            color: white;
+        }
+        .lang-popup-btn.primary:hover {
+            transform: scale(1.02);
+        }
+        .lang-popup-btn.secondary {
+            background: var(--bg-elevated);
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+        .lang-popup-btn.secondary:hover {
+            background: rgba(79, 70, 229, 0.1);
+            color: var(--text-primary);
+        }
     </style>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
 </head>
 <body>
+    <!-- Language Detection Popup -->
+    <div class="lang-popup-overlay" id="langPopup">
+        <div class="lang-popup">
+            <div class="lang-popup-icon">🌐</div>
+            <div class="lang-popup-title" id="popupTitle">¿Ver en español?</div>
+            <div class="lang-popup-native" id="popupNative">View in Spanish?</div>
+            <div class="lang-popup-desc" id="popupDesc">
+                EZer is available in Spanish. Switch now for a better experience.
+            </div>
+            <div class="lang-popup-buttons">
+                <button class="lang-popup-btn primary" id="popupSwitch">Cambiar a español</button>
+                <button class="lang-popup-btn secondary" id="popupDismiss">Continue in English</button>
+            </div>
+        </div>
+    </div>
     <!-- Header -->
         <!-- LOCKED: Navigation - DO NOT MODIFY (see .claude/CLAUDE.md) -->
     <!-- Unified Navigation -->
@@ -1386,6 +1488,36 @@
             }, { threshold: 0.3 });
             observer.observe(downloadSection);
         }
+        // Language Detection - Redirect to Spanish page
+        (function() {
+            const browserLang = (navigator.language || navigator.userLanguage || 'en').split('-')[0].toLowerCase();
+            const langChoice = localStorage.getItem('ezer-lang-choice-mx');
+            if (langChoice) return;
+
+            if (browserLang === 'es') {
+                setTimeout(() => {
+                    const popup = document.getElementById('langPopup');
+                    popup.classList.add('show');
+
+                    document.getElementById('popupSwitch').onclick = () => {
+                        localStorage.setItem('ezer-lang-choice-mx', 'es');
+                        window.location.href = '/mx/es/';
+                    };
+
+                    document.getElementById('popupDismiss').onclick = () => {
+                        localStorage.setItem('ezer-lang-choice-mx', 'en');
+                        popup.classList.remove('show');
+                    };
+
+                    popup.onclick = (e) => {
+                        if (e.target === popup) {
+                            localStorage.setItem('ezer-lang-choice-mx', 'en');
+                            popup.classList.remove('show');
+                        }
+                    };
+                }, 1000);
+            }
+        })();
     </script>
 
     <!-- Mobile Sticky CTA -->
