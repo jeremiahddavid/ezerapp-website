@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-GT">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,17 +20,18 @@
     <link rel="stylesheet" href="../../css/theme.css">
 
     <style>
-        body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); }
+        body { font-family: 'Inter', sans-serif; }
         .themed-nav { background: var(--header-bg) !important; backdrop-filter: blur(20px); }
         .themed-banner { background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%) !important; }
         .themed-footer { background: var(--bg-card) !important; border-top: 1px solid var(--border); }
-        .gradient-text { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .plus-badge { display: inline-flex; align-items: center; padding: 2px 10px; background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%); border-radius: 50px; font-weight: 700; color: #4C1D95; font-size: 11px; }
+        body { background: var(--bg-primary) !important; color: var(--text-primary); }
         [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
         [data-theme="dark"] .text-gray-600, [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
         [data-theme="dark"] .border-gray-200 { border-color: var(--border) !important; }
         .theme-btn { color: var(--text-muted); cursor: pointer; }
         .theme-btn.active { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%); color: white; }
+        .gradient-text { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .plus-badge { display: inline-flex; align-items: center; padding: 2px 10px; background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%); border-radius: 50px; font-weight: 700; color: #4C1D95; font-size: 11px; }
     </style>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
@@ -40,8 +41,7 @@
     <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
         <span class="mr-2">🇬🇹</span>
         Términos y Condiciones para <strong>Guatemala</strong>
-        <a href="../terms.html" class="text-indigo-600 hover:underline ml-2">View in English</a> |
-        <a href="../../" class="text-indigo-600 hover:underline ml-2">Cambiar país</a>
+        <a href="../terms.html" class="text-indigo-600 hover:underline ml-2">View in English</a>
     </div>
 
     <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
@@ -86,18 +86,18 @@
                 <h2 class="text-2xl font-bold mt-8 mb-4">2. Descripción del Servicio</h2>
                 <p class="text-gray-700 mb-4">EZer es una aplicación de control de gastos personales que te ayuda a:</p>
                 <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>Registrar gastos e ingresos manualmente</li>
+                    <li>Registrar gastos e ingreeres manualmente</li>
                     <li>Crear y gestionar metas de ahorro</li>
                     <li>Establecer y monitorear presupuestos</li>
                     <li>Ver análisis y patrones de gasto</li>
-                    <li>Usar plantillas de registro rápido para transacciones recurrentes</li>
+                    <li>Usar plantillas de carga rápida para transacciones recurrentes</li>
                 </ul>
 
                 <h2 class="text-2xl font-bold mt-8 mb-4">3. Lo que EZer NO Hace</h2>
                 <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
                     <p class="text-gray-700"><strong>Importante:</strong> EZer es solo una herramienta de seguimiento y organización. EZer NO:</p>
                     <ul class="list-disc pl-6 text-gray-700 space-y-2 mt-2">
-                        <li>Proporciona asesoría financiera, de inversión o tributaria</li>
+                        <li>Proporciona asesoría financiera, de inversión o fiscal</li>
                         <li>Garantiza resultados financieros específicos</li>
                         <li>Se conecta directamente a tus cuentas bancarias</li>
                         <li>Transfiere o mueve dinero</li>
@@ -105,7 +105,16 @@
                     </ul>
                 </div>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">4. Planes y Precios</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">4. Responsabilidades del Usuario</h2>
+                <p class="text-gray-700 mb-4">Eres responsable de:</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>Asegurar la precisión de todos los datos que ingresas</li>
+                    <li>Mantener la seguridad de tu dispositivo</li>
+                    <li>Tomar tus propias decisiones financieras</li>
+                    <li>Consultar profesionales calificados para asesoría financiera</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">5. Planes y Precios</h2>
                 <p class="text-gray-700 mb-4">EZer ofrece dos planes:</p>
                 <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
                     <li><strong>Plan Gratis:</strong> Funciones básicas con límites de uso (3 cuentas, 3 presupuestos, 2 metas, etc.) - gratis para siempre</li>
@@ -115,22 +124,35 @@
                 <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
                     <li>El pago se realiza inmediatamente al suscribirte</li>
                     <li>La renovación automática mensual a menos que canceles</li>
-                    <li>Puedes cancelar en cualquier momento a través de Google Play</li>
+                    <li>Puedes cancelar en cualquier momento a través de la tienda de apps</li>
                 </ul>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">5. Ley Aplicable</h2>
-                <p class="text-gray-700 mb-4">Estos términos se regirán e interpretarán de acuerdo con las leyes de la República de Guatemala. Para cualquier controversia, las partes se someten a la jurisdicción de los tribunales guatemaltecos.</p>
+                <h2 class="text-2xl font-bold mt-8 mb-4">6. Propiedad Intelectual</h2>
+                <p class="text-gray-700 mb-4">La App, incluyendo todo el contenido, funciones y funcionalidad, es propiedad de EZer y está protegida por las leyes de derechos de autor, marcas registradas y otras leyes de propiedad intelectual de Guatemala.</p>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">6. Protección al Consumidor</h2>
-                <p class="text-gray-700 mb-4">Si eres un consumidor en Guatemala, tienes derechos adicionales según la Ley de Protección al Consumidor y Usuario. Estos términos no afectan tus derechos legales como consumidor.</p>
+                <h2 class="text-2xl font-bold mt-8 mb-4">7. Limitación de Responsabilidad</h2>
+                <p class="text-gray-700 mb-4">En la máxima medida permitida por la ley argentina, EZer no será responsable de ningún daño indirecto, incidental, especial, consecuencial o punitivo que resulte de tu uso de la App.</p>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">7. Contacto</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">8. Exención de Garantías</h2>
+                <p class="text-gray-700 mb-4">La App se proporciona "tal cual" sin garantías de ningún tipo. No garantizamos que la App sea libre de errores o sin interrupciones.</p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">9. Ley Aplicable</h2>
+                <p class="text-gray-700 mb-4">Estos términos se regirán e interpretarán de acuerdo con las leyes de la República Guatemala, sin tener en cuenta sus disposiciones sobre conflicto de leyes. Para cualquier controversia, las partes se someten a la jurisdicción de los tribunales ordinarios de la Ciudad de Guatemala.</p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">10. Defensa del Consumidor</h2>
+                <p class="text-gray-700 mb-4">Si eres un consumidor en Guatemala, tienes derechos adicionales según la Ley de Defensa del Consumidor (Ley de Protección al Consumidor). Estos términos no afectan tus derechos legales como consumidor.</p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">11. Cambios a los Términos</h2>
+                <p class="text-gray-700 mb-4">Podemos actualizar estos términos ocasionalmente. Te vamos a notificar de cambios significativos. El uso continuado de la App después de los cambios significa tu aceptación de los nuevos términos.</p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">12. Contáctanos</h2>
                 <p class="text-gray-700 mb-4">Para cualquier pregunta sobre estos términos, contáctanos en:</p>
                 <p class="text-gray-700"><strong>Correo electrónico:</strong> <a href="mailto:legal@ezerapp.com" class="text-indigo-600 hover:underline">legal@ezerapp.com</a></p>
             </div>
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="themed-footer py-12">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
@@ -160,7 +182,7 @@
                     <h4 class="font-semibold mb-4">Soporte</h4>
                     <div class="space-y-2 text-sm text-gray-500">
                         <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600">Contáctanos</a>
-                        <a href="../../" class="block hover:text-indigo-600">Cambiar País</a>
+                        <a href="../terms.html" class="block hover:text-indigo-600">View in English</a>
                     </div>
                 </div>
             </div>
