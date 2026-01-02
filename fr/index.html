@@ -19,6 +19,18 @@
     <link rel="alternate" hreflang="en-FR" href="https://www.ezerapp.com/fr/?lang=en">
     <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
 
+    <!-- Auto-redirect for French speakers -->
+    <script>
+    (function() {
+        if (sessionStorage.getItem('ezer-lang-redirect')) return;
+        var lang = navigator.language || navigator.userLanguage || '';
+        if (lang.toLowerCase().startsWith('fr')) {
+            sessionStorage.setItem('ezer-lang-redirect', 'true');
+            window.location.href = './fr/';
+        }
+    })();
+    </script>
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.ezerapp.com/fr/">
@@ -936,6 +948,31 @@
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
+
+    <style>
+        /* Coming Soon Styling */
+        .coming-soon-btn {
+            position: relative;
+            opacity: 0.6;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        .coming-soon-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+        }
+    </style>
+
 </head>
 <body>
     <!-- Language Detection Popup -->
@@ -973,7 +1010,7 @@
                 <a href="pricing.html" class="unified-link">Pricing</a>
                 <a href="privacy.html" class="unified-link">Privacy</a>
                 <a href="terms.html" class="unified-link">Terms</a>
-                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-cta">Download Free</a>
+                <span class="unified-cta" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; position: relative;"><span class="coming-soon-badge">Bientôt</span>Download Free</span>
             </div>
             <button class="unified-mobile-btn" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
                 <span class="material-icons-outlined">menu</span>
@@ -985,7 +1022,7 @@
             <a href="pricing.html" class="unified-mobile-link">Pricing</a>
             <a href="privacy.html" class="unified-mobile-link">Privacy</a>
             <a href="terms.html" class="unified-mobile-link">Terms</a>
-            <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-mobile-cta">Download Free</a>
+            <span class="unified-mobile-cta" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; position: relative;"><span class="coming-soon-badge">Bientôt</span>Download Free</span>
         </div>
     </nav>
 

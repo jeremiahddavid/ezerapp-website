@@ -804,6 +804,31 @@
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
+
+    <style>
+        /* Coming Soon Styling */
+        .coming-soon-btn {
+            position: relative;
+            opacity: 0.6;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        .coming-soon-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+        }
+    </style>
+
 </head>
 <body>
     <!-- Header -->
@@ -824,7 +849,7 @@
                 <a href="pricing.html" class="unified-link">Tarifs</a>
                 <a href="privacy.html" class="unified-link">Confidentialité</a>
                 <a href="terms.html" class="unified-link">Conditions</a>
-                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-cta">Télécharger gratuitement</a>
+                <span class="unified-cta" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; position: relative;"><span class="coming-soon-badge">Bientôt</span>Télécharger gratuitement</span>
             </div>
             <button class="unified-mobile-btn" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
                 <span class="material-icons-outlined">menu</span>
@@ -836,7 +861,7 @@
             <a href="pricing.html" class="unified-mobile-link">Tarifs</a>
             <a href="privacy.html" class="unified-mobile-link">Confidentialité</a>
             <a href="terms.html" class="unified-mobile-link">Conditions</a>
-            <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-mobile-cta">Télécharger gratuitement</a>
+            <span class="unified-mobile-cta" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; position: relative;"><span class="coming-soon-badge">Bientôt</span>Télécharger gratuitement</span>
         </div>
     </nav>
 

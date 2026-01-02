@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary SEO Meta Tags -->
-    <title>EZer - Beste Ausgaben Tracker App Österreich | Budget <title>EZer - Best Expense Tracker App Austria | Budget & Savings</title> Sparen</title>
+    <title>EZer - Beste Ausgaben Tracker App Österreich | Budget & Sparen</title>
     <meta name="description" content="Verfolge jeden € mit Österreichs privatester Ausgaben-Tracker App. Works offline, no login required. Available in 2 languages. Kostenlos nutzbar.">
     <meta name="keywords" content="expense tracker, budget app, Haushaltsbuch, Ausgaben App, Finanzplaner, Budgetplanung, Geld verwalten, Austria, EUR, offline Haushaltsbuch, kostenlos">
     <meta name="author" content="EZer">
@@ -82,7 +82,7 @@
                 "de",
                 "en"
         ],
-        "countryOfOrigin": "DE",
+        "countryOfOrigin": "AT",
         "screenshot": [
                 "https://www.ezerapp.com/assets/screenshots/de-home.webp",
                 "https://www.ezerapp.com/assets/screenshots/de-analytics.webp"
@@ -98,7 +98,7 @@
         "softwareVersion": "1.0",
         "downloadUrl": [
                 "https://apps.apple.com/AT/app/ezer-budget-expense-tracker/id6738029702",
-                "https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=DEgl=AT"
+                "https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=AT"
         ]
 }
     </script>
@@ -849,6 +849,31 @@
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
+
+    <style>
+        /* Coming Soon Styling */
+        .coming-soon-btn {
+            position: relative;
+            opacity: 0.6;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        .coming-soon-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+        }
+    </style>
+
 </head>
 <body>
     <!-- Header -->
@@ -871,7 +896,7 @@
                 <a href="pricing.html" class="unified-link">Preise</a>
                 <a href="privacy.html" class="unified-link">Datenschutz</a>
                 <a href="terms.html" class="unified-link">AGB</a>
-                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-cta">Kostenlos laden</a>
+                <span class="unified-cta" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; position: relative;"><span class="coming-soon-badge">Demnächst</span>Kostenlos laden</span>
             </div>
             <button class="unified-mobile-btn" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
                 <span class="material-icons-outlined">menu</span>
@@ -883,7 +908,7 @@
             <a href="pricing.html" class="unified-mobile-link">Preise</a>
             <a href="privacy.html" class="unified-mobile-link">Datenschutz</a>
             <a href="terms.html" class="unified-mobile-link">AGB</a>
-            <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-mobile-cta">Kostenlos laden</a>
+            <span class="unified-mobile-cta" style="opacity: 0.6; cursor: not-allowed; pointer-events: none; position: relative;"><span class="coming-soon-badge">Demnächst</span>Kostenlos laden</span>
         </div>
     </nav>
 
@@ -988,7 +1013,7 @@
             <div class="section-header">
                 <span class="section-eyebrow">Ausgabenverfolgung</span>
                 <h2 class="section-title">Verfolge wofür Menschen in Österreich tatsächlich Geld ausgeben</h2>
-                <p class="section-subtitle">Vorgefertigte Kategorien für alltägliche deutsche Ausgaben</p>
+                <p class="section-subtitle">Vorgefertigte Kategorien für alltägliche österreichische Ausgaben</p>
             </div>
             <div class="card-grid">
                 <div class="card">
@@ -998,7 +1023,7 @@
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">directions_car</span></div>
-                    <h3>Semesterticket/BVG</h3>
+                    <h3>Wiener Linien</h3>
                     <p>Reise-Ausgaben verfolgen</p>
                 </div>
                 <div class="card">
@@ -1008,12 +1033,12 @@
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">movie</span></div>
-                    <h3>CinemaxX movie</h3>
+                    <h3>Cineplexx</h3>
                     <p>Unterhaltungs-Ausgaben verfolgen</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">phone_android</span></div>
-                    <h3>O2 mobile</h3>
+                    <h3>A1 Telekom</h3>
                     <p>Telefon-Ausgaben verfolgen</p>
                 </div>
                 <div class="card">
@@ -1023,7 +1048,7 @@
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">delivery_dining</span></div>
-                    <h3>Lieferando order</h3>
+                    <h3>Mjam Lieferung</h3>
                     <p>Lieferservice-Ausgaben verfolgen</p>
                 </div>
                 <div class="card">
@@ -1100,13 +1125,13 @@
     <section class="section">
         <div class="container">
             <div class="payments-box">
-                <h2 style="font-size: 28px; font-weight: 700; margin-bottom: 8px;">Funktioniert mit deutschen Zahlungsmethoden</h2>
+                <h2 style="font-size: 28px; font-weight: 700; margin-bottom: 8px;">Funktioniert mit österreichischen Zahlungsmethoden</h2>
                 <p style="color: var(--text-secondary);">Verfolge jede Transaktion, egal wie du bezahlst</p>
                 <div class="payments-grid">
                     <div class="payment-item">
                         <div class="payment-icon"><span class="material-icons-outlined">credit_card</span></div>
-                        <div class="payment-name">EC-Karte (Girocard)</div>
-                        <div class="payment-examples">Alle deutschen Banken</div>
+                        <div class="payment-name">Bankomatkarte</div>
+                        <div class="payment-examples">Alle österreichischen Banken</div>
                     </div>
                     <div class="payment-item">
                         <div class="payment-icon"><span class="material-icons-outlined">credit_card</span></div>
@@ -1244,7 +1269,7 @@
                             <span>App Store</span>
                         </div>
                     </div>
-                    <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=DEgl=AT" class="store-badge" target="_blank" rel="noopener">
+                    <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=AT" class="store-badge" target="_blank" rel="noopener">
                         <span class="material-icons-outlined icon">shop</span>
                         <div class="text">
                             <small>Jetzt bei</small>
@@ -1406,7 +1431,7 @@
             <span class="material-icons-outlined">apple</span>
             <div>iOS<span class="coming-soon-label">Bald verfügbar</span></div>
         </div>
-        <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=DEgl=AT" class="btn btn-primary" target="_blank" rel="noopener">
+        <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=AT" class="btn btn-primary" target="_blank" rel="noopener">
             <span class="material-icons-outlined">shop</span>
             Android
         </a>
