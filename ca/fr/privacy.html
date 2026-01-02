@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité - EZer Canada</title>
+    <meta name="description" content="Politique de confidentialité EZer pour le Canada. Découvrez comment nous protégeons vos données financières. Conforme à la LPRPDE.">
+
+    <link rel="canonical" href="https://www.ezerapp.com/ca/fr/privacy.html">
+
+    <link rel="alternate" hreflang="en-CA" href="https://www.ezerapp.com/ca/privacy.html">
+    <link rel="alternate" hreflang="fr-CA" href="https://www.ezerapp.com/ca/fr/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <link rel="stylesheet" href="../../css/theme.css">
+    <style>
+        .themed-nav { background: var(--header-bg) !important; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .themed-banner { background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%) !important; }
+        .themed-footer { background: var(--bg-card) !important; border-top: 1px solid var(--border); }
+        body { background: var(--bg-primary) !important; color: var(--text-primary); transition: background-color 0.3s ease; }
+        [data-theme="dark"] .bg-gray-50, [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
+        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+        [data-theme="dark"] .text-gray-600, [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .text-gray-800, [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
+        [data-theme="dark"] .text-gray-400, [data-theme="dark"] .text-gray-500 { color: var(--text-muted) !important; }
+        [data-theme="dark"] .text-indigo-600 { color: #818cf8 !important; }
+        [data-theme="dark"] .border-gray-200 { border-color: var(--border) !important; }
+        [data-theme="dark"] .shadow-lg { box-shadow: 0 4px 20px var(--card-shadow) !important; }
+        .theme-btn { color: var(--text-muted); cursor: pointer; transition: all 0.2s; }
+        .theme-btn:hover { color: var(--text-primary); }
+        .theme-btn.active { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%); color: white; box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3); }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
+        <span class="mr-2">🇨🇦</span>
+        Politique de confidentialité pour le <strong>Canada</strong>
+        <a href="../../" class="text-indigo-600 hover:underline ml-2">Changer de pays</a>
+    </div>
+
+    <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="../../logo.png" alt="EZer" class="h-10 w-10 rounded-xl object-contain">
+                    <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                </a>
+                <div class="hidden lg:flex gap-1 items-center">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Accueil</a>
+                    <a href="features.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Fonctionnalités</a>
+                    <a href="pricing.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Tarifs</a>
+                    <a href="privacy.html" class="px-4 py-2 rounded-lg text-sm bg-indigo-100 text-indigo-600 font-semibold">Confidentialité</a>
+                    <a href="terms.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Conditions</a>
+                    <a href="https://apps.apple.com/ca/app/ezer-budget-expense-tracker/id6738029702" class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:shadow-lg transition-all">Télécharger gratuitement</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-gray-200">
+                <a href="index.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Accueil</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Fonctionnalités</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Tarifs</a>
+                <a href="privacy.html" class="block px-4 py-3 rounded-lg bg-indigo-100 text-indigo-600 font-semibold">Confidentialité</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Conditions</a>
+                <a href="https://apps.apple.com/ca/app/ezer-budget-expense-tracker/id6738029702" class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold">Télécharger gratuitement</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            <h1 class="text-4xl font-bold mb-2">Politique de confidentialité</h1>
+            <p class="text-gray-500 mb-8">Dernière mise à jour : novembre 2025</p>
+
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8 flex items-center gap-3">
+                <span class="text-2xl">🇨🇦</span>
+                <div>
+                    <div class="font-semibold text-blue-900">Conforme à la LPRPDE</div>
+                    <div class="text-sm text-blue-700">Cette politique est conforme à la Loi sur la protection des renseignements personnels et les documents électroniques du Canada</div>
+                </div>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <h2 class="text-2xl font-bold mt-8 mb-4">Introduction</h2>
+                <p class="text-gray-700 mb-4">EZer (« nous », « notre » ou « nos ») s'engage à protéger votre vie privée. Cette Politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations lorsque vous utilisez notre application mobile.</p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Informations que nous collectons</h2>
+                <p class="text-gray-700 mb-4">Nous collectons les types d'informations suivants :</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li><strong>Informations de compte :</strong> Adresse courriel et nom lorsque vous créez un compte</li>
+                    <li><strong>Données financières :</strong> Dépenses et revenus que vous ajoutez manuellement dans l'application</li>
+                    <li><strong>Données d'objectifs :</strong> Objectifs d'épargne et allocations de fonds que vous créez</li>
+                    <li><strong>Données budgétaires :</strong> Catégories de budget et limites que vous définissez</li>
+                    <li><strong>Données d'utilisation :</strong> Comment vous interagissez avec l'application pour améliorer notre service</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Comment nous utilisons vos informations</h2>
+                <p class="text-gray-700 mb-4">Nous utilisons vos informations pour :</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>Fournir et maintenir le service EZer</li>
+                    <li>Afficher vos données financières dans l'application</li>
+                    <li>Générer des analyses et des informations sur vos dépenses</li>
+                    <li>Synchroniser vos données entre appareils (si vous activez la sauvegarde infonuagique)</li>
+                    <li>Envoyer des notifications de service importantes</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Stockage et sécurité des données</h2>
+                <p class="text-gray-700 mb-4">Vos données financières sont stockées localement sur votre appareil par défaut. Si vous activez la sauvegarde infonuagique :</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>Les données sont chiffrées avec un chiffrement AES-256 avant le téléversement</li>
+                    <li>Nous utilisons une infrastructure infonuagique sécurisée (Google Firebase)</li>
+                    <li>Les données sont chiffrées en transit et au repos</li>
+                    <li>Nous ne stockons jamais vos données non chiffrées</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Ce que nous ne faisons PAS</h2>
+                <div class="bg-red-50 border-l-4 border-red-400 p-4 mb-4">
+                    <ul class="text-gray-700 space-y-2">
+                        <li>Nous ne <strong>VENDONS PAS</strong> vos données à des tiers</li>
+                        <li>Nous ne <strong>PARTAGEONS PAS</strong> vos données avec des annonceurs</li>
+                        <li>Nous n'<strong>ACCÉDONS PAS</strong> directement à vos comptes bancaires</li>
+                        <li>Nous ne <strong>STOCKONS PAS</strong> vos mots de passe bancaires</li>
+                        <li>Nous ne <strong>LISONS PAS</strong> les SMS (iOS) et ne stockons pas le contenu des SMS sur les serveurs</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Vos droits (LPRPDE)</h2>
+                <p class="text-gray-700 mb-4">Conformément à la LPRPDE, vous avez les droits suivants :</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li><strong>Droit d'accès :</strong> Demander une copie de vos renseignements personnels</li>
+                    <li><strong>Droit de rectification :</strong> Demander la correction de renseignements inexacts</li>
+                    <li><strong>Droit de retrait du consentement :</strong> Retirer votre consentement à tout moment</li>
+                    <li><strong>Droit de porter plainte :</strong> Déposer une plainte auprès du Commissariat à la protection de la vie privée du Canada</li>
+                </ul>
+                <p class="text-gray-700 mb-4">Pour exercer ces droits, contactez-nous à privacy@ezerapp.com</p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Conservation des données</h2>
+                <p class="text-gray-700 mb-4">Nous conservons vos données tant que votre compte est actif. Vous pouvez supprimer votre compte et toutes les données associées à tout moment depuis l'application.</p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Confidentialité des enfants</h2>
+                <p class="text-gray-700 mb-4">EZer n'est pas destiné aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations auprès d'enfants de moins de 13 ans.</p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Modifications de cette politique</h2>
+                <p class="text-gray-700 mb-4">Nous pouvons mettre à jour cette Politique de confidentialité de temps à autre. Nous vous informerons de tout changement en publiant la nouvelle Politique de confidentialité sur cette page.</p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Nous contacter</h2>
+                <p class="text-gray-700 mb-4">Si vous avez des questions concernant cette Politique de confidentialité, veuillez nous contacter à :</p>
+                <p class="text-gray-700"><strong>Courriel :</strong> <a href="mailto:privacy@ezerapp.com" class="text-indigo-600 hover:underline">privacy@ezerapp.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="themed-footer py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain">
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                    <p class="text-sm mb-4" style="color: var(--text-secondary);">Votre compagnon finance intelligent au Canada.</p>
+                    <p class="text-green-500 font-semibold">Utilisation gratuite</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Produit</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="features.html" class="block hover:text-indigo-600 transition-colors">Fonctionnalités</a>
+                        <a href="pricing.html" class="block hover:text-indigo-600 transition-colors">Tarifs</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Légal</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="privacy.html" class="block hover:text-indigo-600 transition-colors">Politique de confidentialité</a>
+                        <a href="terms.html" class="block hover:text-indigo-600 transition-colors">Conditions générales</a>
+                        <a href="../../data-deletion.html" class="block hover:text-indigo-600 transition-colors">Suppression des données</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Soutien</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="../../feedback.html" class="block hover:text-indigo-600 transition-colors">Commentaires</a>
+                        <a href="../../report.html" class="block hover:text-indigo-600 transition-colors">Signaler un problème</a>
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600 transition-colors">Nous contacter</a>
+                        <a href="../../" class="block hover:text-indigo-600 transition-colors">Changer de pays</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center gap-3 py-4 border-t" style="border-color: var(--border);">
+                <span class="text-sm" style="color: var(--text-muted);">Langue :</span>
+                <a href="privacy.html" class="text-sm font-semibold text-indigo-600">Français</a>
+                <span style="color: var(--text-muted);">|</span>
+                <a href="../privacy.html" class="text-sm hover:text-indigo-600 transition-colors" style="color: var(--text-secondary);">English</a>
+            </div>
+            <div class="theme-toggle-container flex items-center justify-center gap-3 py-5 border-t" style="border-color: var(--border);">
+                <span class="text-sm" style="color: var(--text-muted);">Apparence</span>
+                <div class="theme-toggle flex items-center gap-1 p-1 rounded-full" style="background: var(--bg-elevated); border: 1px solid var(--border);">
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="light" title="Clair">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="system" title="Système">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="dark" title="Sombre">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="text-center pt-6 text-sm" style="color: var(--text-muted); border-top: 1px solid var(--border);">
+                <p>&copy; 2025 EZer. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/theme.js"></script>
+    <script>
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu')?.classList.toggle('hidden');
+        });
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialite - EZer France</title>
+    <meta name="description" content="Politique de confidentialite EZer pour la France. Decouvrez comment nous protegeons vos donnees financieres. Conforme au RGPD.">
+
+    <link rel="canonical" href="https://www.ezerapp.com/fr/fr/privacy.html">
+
+    <link rel="alternate" hreflang="en-FR" href="https://www.ezerapp.com/fr/privacy.html">
+    <link rel="alternate" hreflang="fr-FR" href="https://www.ezerapp.com/fr/fr/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+
+    <!-- Theme System (works with Tailwind) -->
+    <link rel="stylesheet" href="../../css/theme.css">
+    <style>
+        /* =============================================
+           DARK MODE OVERRIDES FOR TAILWIND
+           ============================================= */
+
+        /* Override Tailwind for themed elements */
+        .themed-nav {
+            background: var(--header-bg) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .themed-banner {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%) !important;
+        }
+        .themed-footer {
+            background: var(--bg-card) !important;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Ensure body respects theme */
+        body {
+            background: var(--bg-primary) !important;
+            color: var(--text-primary);
+            transition: background-color 0.3s ease;
+        }
+
+        /* ----- DARK MODE STYLES ----- */
+
+        /* Background colors */
+        [data-theme="dark"] .bg-gray-50,
+        [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
+        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+        [data-theme="dark"] .bg-gray-900 { background: var(--bg-card) !important; }
+
+        /* Colored backgrounds - make them darker/subtler */
+        [data-theme="dark"] .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
+        [data-theme="dark"] .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
+        [data-theme="dark"] .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
+        [data-theme="dark"] .bg-purple-100 { background: rgba(147, 51, 234, 0.15) !important; }
+        [data-theme="dark"] .bg-pink-100 { background: rgba(236, 72, 153, 0.15) !important; }
+        [data-theme="dark"] .bg-blue-100 { background: rgba(59, 130, 246, 0.15) !important; }
+        [data-theme="dark"] .bg-blue-50 { background: rgba(59, 130, 246, 0.1) !important; }
+
+        /* Gray text colors */
+        [data-theme="dark"] .text-gray-600,
+        [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .text-gray-800,
+        [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
+        [data-theme="dark"] .text-gray-400,
+        [data-theme="dark"] .text-gray-500 { color: var(--text-muted) !important; }
+
+        /* Colored text - brighten for dark backgrounds */
+        [data-theme="dark"] .text-indigo-600 { color: #818cf8 !important; }
+        [data-theme="dark"] .text-indigo-700 { color: #a5b4fc !important; }
+        [data-theme="dark"] .text-purple-600 { color: #c084fc !important; }
+        [data-theme="dark"] .text-green-600 { color: #4ade80 !important; }
+        [data-theme="dark"] .text-green-800 { color: #86efac !important; }
+        [data-theme="dark"] .text-blue-600 { color: #60a5fa !important; }
+        [data-theme="dark"] .text-blue-700 { color: #93c5fd !important; }
+        [data-theme="dark"] .text-blue-900 { color: #bfdbfe !important; }
+
+        /* Keep white text white on gradients */
+        [data-theme="dark"] .bg-gradient-to-r .text-white,
+        [data-theme="dark"] .bg-gradient-to-br .text-white,
+        [data-theme="dark"] .bg-indigo-600 .text-white,
+        [data-theme="dark"] .bg-indigo-700 .text-white,
+        [data-theme="dark"] .bg-indigo-800 .text-white,
+        [data-theme="dark"] [class*="from-indigo"] .text-white { color: white !important; }
+
+        /* Gradient backgrounds should keep their text colors */
+        [data-theme="dark"] .bg-gradient-to-r .text-indigo-100,
+        [data-theme="dark"] .bg-gradient-to-r .text-indigo-200 { color: rgba(199, 210, 254, 0.9) !important; }
+
+        /* Border colors */
+        [data-theme="dark"] .border-gray-100,
+        [data-theme="dark"] .border-gray-200,
+        [data-theme="dark"] .border-gray-300 { border-color: var(--border) !important; }
+        [data-theme="dark"] .border-gray-800 { border-color: var(--border-light) !important; }
+        [data-theme="dark"] .border-blue-200 { border-color: rgba(59, 130, 246, 0.3) !important; }
+
+        /* Shadows */
+        [data-theme="dark"] .shadow-sm,
+        [data-theme="dark"] .shadow,
+        [data-theme="dark"] .shadow-md,
+        [data-theme="dark"] .shadow-lg { box-shadow: 0 4px 20px var(--card-shadow) !important; }
+
+        /* Hover states */
+        [data-theme="dark"] .hover\:bg-gray-50:hover,
+        [data-theme="dark"] .hover\:bg-gray-100:hover { background: var(--bg-elevated) !important; }
+        [data-theme="dark"] .hover\:text-indigo-600:hover { color: #818cf8 !important; }
+
+        /* ----- LIGHT MODE FIXES ----- */
+
+        /* Ensure dark text on light backgrounds */
+        [data-theme="light"] .text-white:not(.bg-gradient-to-r *):not(.bg-gradient-to-br *):not([class*="bg-indigo-"] *) {
+            color: var(--text-primary) !important;
+        }
+
+        /* Keep gradient text white in light mode too */
+        [data-theme="light"] .bg-gradient-to-r .text-white,
+        [data-theme="light"] .bg-gradient-to-br .text-white,
+        [data-theme="light"] .bg-indigo-600 .text-white,
+        [data-theme="light"] .bg-indigo-700 .text-white,
+        [data-theme="light"] [class*="from-indigo"] .text-white { color: white !important; }
+
+        /* ----- SYSTEM PREFERENCE DARK MODE ----- */
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .bg-gray-50,
+            :root:not([data-theme="light"]) .bg-gray-100 { background: var(--bg-primary) !important; }
+            :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; }
+            :root:not([data-theme="light"]) .bg-gray-900 { background: var(--bg-card) !important; }
+
+            :root:not([data-theme="light"]) .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
+            :root:not([data-theme="light"]) .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
+            :root:not([data-theme="light"]) .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
+
+            :root:not([data-theme="light"]) .text-gray-600,
+            :root:not([data-theme="light"]) .text-gray-700 { color: var(--text-secondary) !important; }
+            :root:not([data-theme="light"]) .text-gray-800,
+            :root:not([data-theme="light"]) .text-gray-900 { color: var(--text-primary) !important; }
+            :root:not([data-theme="light"]) .text-gray-400,
+            :root:not([data-theme="light"]) .text-gray-500 { color: var(--text-muted) !important; }
+
+            :root:not([data-theme="light"]) .text-indigo-600 { color: #818cf8 !important; }
+            :root:not([data-theme="light"]) .text-indigo-700 { color: #a5b4fc !important; }
+            :root:not([data-theme="light"]) .text-purple-600 { color: #c084fc !important; }
+            :root:not([data-theme="light"]) .text-green-600 { color: #4ade80 !important; }
+
+            :root:not([data-theme="light"]) .border-gray-100,
+            :root:not([data-theme="light"]) .border-gray-200,
+            :root:not([data-theme="light"]) .border-gray-300 { border-color: var(--border) !important; }
+        }
+
+        /* Theme toggle button styles */
+        .theme-btn {
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .theme-btn:hover {
+            color: var(--text-primary);
+        }
+        .theme-btn.active {
+            background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+            color: white;
+            box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+        }
+    </style>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body class="bg-gray-50">
+        <!-- Themed Navigation -->
+    <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
+        <span class="mr-2">🇫🇷</span>
+        Politique de confidentialite pour la <strong>France</strong>
+        <a href="../../" class="text-indigo-600 hover:underline ml-2">Changer de pays</a>
+    </div>
+
+    <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="../../logo.png" alt="EZer" class="h-10 w-10 rounded-xl object-contain">
+                    <div>
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                </a>
+                <div class="hidden lg:flex gap-1 items-center">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Accueil</a>
+                    <a href="features.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Fonctionnalites</a>
+                    <a href="pricing.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Tarifs</a>
+                    <a href="privacy.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50 text-indigo-600 bg-indigo-100 text-indigo-600 font-semibold">Confidentialite</a>
+                    <a href="terms.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Conditions</a>
+                    <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702"
+                       class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:shadow-lg transition-all">
+                        Telecharger gratuitement
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-gray-200">
+                <a href="index.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Accueil</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Fonctionnalites</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Tarifs</a>
+                <a href="privacy.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50 bg-indigo-100 text-indigo-600 font-semibold">Confidentialite</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Conditions</a>
+                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702"
+                   class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold">
+                    Telecharger gratuitement
+                </a>
+            </div>
+        </div>
+    </nav>
+<!-- Content -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            <h1 class="text-4xl font-bold mb-2">Politique de confidentialite</h1>
+            <p class="text-gray-500 mb-8">Derniere mise a jour : novembre 2025</p>
+
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8 flex items-center gap-3">
+                <span class="text-2xl">🇪🇺</span>
+                <div>
+                    <div class="font-semibold text-blue-900">Conforme au RGPD</div>
+                    <div class="text-sm text-blue-700">Cette politique est conforme au Reglement General sur la Protection des Donnees de l'UE</div>
+                </div>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <h2 class="text-2xl font-bold mt-8 mb-4">Introduction</h2>
+                <p class="text-gray-700 mb-4">
+                    EZer ("nous", "notre" ou "nos") s'engage a proteger votre vie privee. Cette Politique de confidentialite explique comment nous collectons, utilisons et protegeons vos informations lorsque vous utilisez notre application mobile.
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Informations que nous collectons</h2>
+                <p class="text-gray-700 mb-4">Nous collectons les types d'informations suivants :</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li><strong>Informations de compte :</strong> Adresse e-mail et nom lorsque vous creez un compte</li>
+                    <li><strong>Donnees financieres :</strong> Depenses et revenus que vous ajoutez manuellement dans l'application</li>
+                    <li><strong>Donnees d'objectifs :</strong> Objectifs d'epargne et allocations de fonds que vous creez</li>
+                    <li><strong>Donnees budgetaires :</strong> Categories de budget et limites que vous definissez</li>
+                    <li><strong>Donnees d'utilisation :</strong> Comment vous interagissez avec l'application pour ameliorer notre service</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Comment nous utilisons vos informations</h2>
+                <p class="text-gray-700 mb-4">Nous utilisons vos informations pour :</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>Fournir et maintenir le service EZer</li>
+                    <li>Afficher vos donnees financieres dans l'application</li>
+                    <li>Generer des analyses et des informations sur vos depenses</li>
+                    <li>Synchroniser vos donnees entre appareils (si vous activez la sauvegarde cloud)</li>
+                    <li>Envoyer des notifications de service importantes</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Stockage et securite des donnees</h2>
+                <p class="text-gray-700 mb-4">
+                    Vos donnees financieres sont stockees localement sur votre appareil par defaut. Si vous activez la sauvegarde cloud :
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>Les donnees sont chiffrees avec un chiffrement AES-256 avant le telechargement</li>
+                    <li>Nous utilisons une infrastructure cloud securisee (Google Firebase)</li>
+                    <li>Les donnees sont chiffrees en transit et au repos</li>
+                    <li>Nous ne stockons jamais vos donnees non chiffrees</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Ce que nous ne faisons PAS</h2>
+                <div class="bg-red-50 border-l-4 border-red-400 p-4 mb-4">
+                    <ul class="text-gray-700 space-y-2">
+                        <li>Nous ne <strong>VENDONS PAS</strong> vos donnees a des tiers</li>
+                        <li>Nous ne <strong>PARTAGEONS PAS</strong> vos donnees avec des annonceurs</li>
+                        <li>Nous n'<strong>ACCES PAS</strong> directement a vos comptes bancaires</li>
+                        <li>Nous ne <strong>STOCKONS PAS</strong> vos mots de passe bancaires</li>
+                        <li>Nous ne <strong>LISONS PAS</strong> les SMS (iOS) et ne stockons pas le contenu des SMS sur les serveurs</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Vos droits (RGPD)</h2>
+                <p class="text-gray-700 mb-4">Conformement au RGPD, vous avez les droits suivants :</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li><strong>Droit d'acces :</strong> Demander une copie de vos donnees personnelles</li>
+                    <li><strong>Droit de rectification :</strong> Demander la correction de donnees inexactes</li>
+                    <li><strong>Droit a l'effacement :</strong> Demander la suppression de vos donnees ("droit a l'oubli")</li>
+                    <li><strong>Droit a la portabilite :</strong> Recevoir vos donnees dans un format portable</li>
+                    <li><strong>Droit d'opposition :</strong> S'opposer au traitement de vos donnees</li>
+                    <li><strong>Droit a la limitation :</strong> Demander la limitation du traitement</li>
+                </ul>
+                <p class="text-gray-700 mb-4">Pour exercer ces droits, contactez-nous a privacy@ezerapp.com</p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Conservation des donnees</h2>
+                <p class="text-gray-700 mb-4">
+                    Nous conservons vos donnees tant que votre compte est actif. Vous pouvez supprimer votre compte et toutes les donnees associees a tout moment depuis l'application.
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Confidentialite des enfants</h2>
+                <p class="text-gray-700 mb-4">
+                    EZer n'est pas destine aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations aupres d'enfants de moins de 13 ans.
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Modifications de cette politique</h2>
+                <p class="text-gray-700 mb-4">
+                    Nous pouvons mettre a jour cette Politique de confidentialite de temps a autre. Nous vous informerons de tout changement en publiant la nouvelle Politique de confidentialite sur cette page et en mettant a jour la date de "Derniere mise a jour".
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">Nous contacter</h2>
+                <p class="text-gray-700 mb-4">
+                    Si vous avez des questions concernant cette Politique de confidentialite, veuillez nous contacter a :
+                </p>
+                <p class="text-gray-700">
+                    <strong>E-mail :</strong> <a href="mailto:privacy@ezerapp.com" class="text-indigo-600 hover:underline">privacy@ezerapp.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Themed Footer -->
+    <footer class="themed-footer py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain">
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                    <p class="text-sm mb-4" style="color: var(--text-secondary);">Votre compagnon finance intelligent en France.</p>
+                    <p class="text-green-500 font-semibold">Utilisation gratuite</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Produit</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="features.html" class="block hover:text-indigo-600 transition-colors">Fonctionnalites</a>
+                        <a href="pricing.html" class="block hover:text-indigo-600 transition-colors">Tarifs</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Legal</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="privacy.html" class="block hover:text-indigo-600 transition-colors">Politique de confidentialite</a>
+                        <a href="terms.html" class="block hover:text-indigo-600 transition-colors">Conditions generales</a>
+                        <a href="../../data-deletion.html" class="block hover:text-indigo-600 transition-colors">Suppression des donnees</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Support</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="../../feedback.html" class="block hover:text-indigo-600 transition-colors">Commentaires</a>
+                        <a href="../../report.html" class="block hover:text-indigo-600 transition-colors">Signaler un probleme</a>
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600 transition-colors">Nous contacter</a>
+                        <a href="../../" class="block hover:text-indigo-600 transition-colors">Changer de pays</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Language Switcher -->
+            <div class="flex items-center justify-center gap-3 py-4 border-t" style="border-color: var(--border);">
+                <span class="text-sm" style="color: var(--text-muted);">Langue :</span>
+                <a href="privacy.html" class="text-sm font-semibold text-indigo-600">Francais</a>
+                <span style="color: var(--text-muted);">|</span>
+                <a href="../privacy.html" class="text-sm hover:text-indigo-600 transition-colors" style="color: var(--text-secondary);">English</a>
+            </div>
+
+            <!-- Theme Toggle -->
+            <div class="theme-toggle-container flex items-center justify-center gap-3 py-5 border-t" style="border-color: var(--border);">
+                <span class="text-sm" style="color: var(--text-muted);">Apparence</span>
+                <div class="theme-toggle flex items-center gap-1 p-1 rounded-full" style="background: var(--bg-elevated); border: 1px solid var(--border);">
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="light" title="Clair">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="system" title="Systeme">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="dark" title="Sombre">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center pt-6 text-sm" style="color: var(--text-muted); border-top: 1px solid var(--border);">
+                <p>&copy; 2025 EZer. Tous droits reserves.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme & Mobile Menu Scripts -->
+    <script src="../../js/theme.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu')?.classList.toggle('hidden');
+        });
+        // Initialize Lucide icons if present
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    </script>
+
+</body>
+</html>
