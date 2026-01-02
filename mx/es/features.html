@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones - EZer App de Control de Gastos México</title>
+    <meta name="description" content="Funciones de EZer: control de gastos gratis, plantillas de entrada rápida, centro de análisis, metas de ahorro y gestión de presupuesto. Disponible en México.">
+
+    <link rel="canonical" href="https://www.ezerapp.com/mx/es/features.html">
+    <link rel="alternate" hreflang="es-MX" href="https://www.ezerapp.com/mx/es/features.html">
+    <link rel="alternate" hreflang="en-MX" href="https://www.ezerapp.com/mx/features.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/mx/features.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/theme.css">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .themed-nav { background: var(--header-bg) !important; backdrop-filter: blur(20px); }
+        .themed-banner { background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%) !important; }
+        .themed-footer { background: var(--bg-card) !important; border-top: 1px solid var(--border); }
+        body { background: var(--bg-primary) !important; color: var(--text-primary); }
+        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+        [data-theme="dark"] .text-gray-600 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .border-gray-200 { border-color: var(--border) !important; }
+        .theme-btn { color: var(--text-muted); cursor: pointer; }
+        .theme-btn.active { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%); color: white; }
+        .plus-badge { display: inline-flex; align-items: center; padding: 4px 14px; background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%); border-radius: 50px; font-weight: 700; color: #4C1D95; font-size: 12px; }
+        .gradient-text { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .feature-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 32px; }
+        .feature-icon { width: 64px; height: 64px; background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(147, 51, 234, 0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #818cf8; font-size: 32px; }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
+        <span class="mr-2">🇲🇽</span>
+        Funciones en <strong>México</strong> — disponible por <strong class="gradient-text">MX$79/mes</strong>
+        <a href="../features.html" class="text-indigo-600 hover:underline ml-2">View in English</a>
+    </div>
+
+    <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="./" class="flex items-center gap-3">
+                    <img src="../../logo.png" alt="EZer" class="h-10 w-10 rounded-xl object-contain">
+                    <div class="text-2xl font-bold gradient-text">EZer app</div>
+                </a>
+                <div class="hidden lg:flex gap-1 items-center">
+                    <a href="./" class="px-4 py-2 rounded-lg text-sm hover:bg-indigo-50">Inicio</a>
+                    <a href="features.html" class="px-4 py-2 rounded-lg text-sm bg-indigo-100 text-indigo-600 font-semibold">Funciones</a>
+                    <a href="pricing.html" class="px-4 py-2 rounded-lg text-sm hover:bg-indigo-50">Precios</a>
+                    <a href="privacy.html" class="px-4 py-2 rounded-lg text-sm hover:bg-indigo-50">Privacidad</a>
+                    <a href="terms.html" class="px-4 py-2 rounded-lg text-sm hover:bg-indigo-50">Términos</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=MX" class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold">Descargar Gratis</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <span class="material-icons-outlined">menu</span>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-gray-200">
+                <a href="./" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Inicio</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg bg-indigo-100 text-indigo-600 font-semibold">Funciones</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Precios</a>
+                <a href="privacy.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Privacidad</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Términos</a>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=MX" class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold">Descargar Gratis</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="py-16 text-center" style="background: linear-gradient(135deg, var(--bg-primary) 0%, #1a1035 100%);">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-black mb-4"><span class="gradient-text">Funciones</span></h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">Todo lo que necesitas para controlar tus finanzas</p>
+        </div>
+    </section>
+
+    <!-- Free Features -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block px-4 py-1 bg-green-100 text-green-700 rounded-full text-sm font-semibold mb-4">FUNCIONES GRATIS</span>
+                <h2 class="text-3xl font-bold">Incluido sin costo</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="feature-card">
+                    <div class="feature-icon"><span class="material-icons-outlined">edit_note</span></div>
+                    <h3 class="text-xl font-bold mb-2">Entrada Fácil de Gastos</h3>
+                    <p class="text-gray-500 mb-4">Registra gastos e ingresos en segundos con nuestra interfaz intuitiva.</p>
+                    <div class="text-sm text-gray-400">✓ Categorías personalizables<br>✓ Notas y etiquetas<br>✓ Fecha y hora</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><span class="material-icons-outlined">bolt</span></div>
+                    <h3 class="text-xl font-bold mb-2">Plantillas de Entrada Rápida</h3>
+                    <p class="text-gray-500 mb-4">Guarda tus gastos frecuentes como plantillas para registro instantáneo.</p>
+                    <div class="text-sm text-gray-400">✓ 3 plantillas en plan Gratis<br>✓ Un toque para registrar<br>✓ Gastos recurrentes</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><span class="material-icons-outlined">analytics</span></div>
+                    <h3 class="text-xl font-bold mb-2">Centro de Análisis</h3>
+                    <p class="text-gray-500 mb-4">Visualiza tus patrones de gasto con gráficos interactivos.</p>
+                    <div class="text-sm text-gray-400">✓ 6 meses de historial en Gratis<br>✓ Gráficos por categoría<br>✓ Tendencias mensuales</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><span class="material-icons-outlined">savings</span></div>
+                    <h3 class="text-xl font-bold mb-2">Metas de Ahorro</h3>
+                    <p class="text-gray-500 mb-4">Establece metas y rastrea tu progreso hacia ellas.</p>
+                    <div class="text-sm text-gray-400">✓ 2 metas en plan Gratis<br>✓ Seguimiento de progreso<br>✓ Fechas objetivo</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><span class="material-icons-outlined">account_balance_wallet</span></div>
+                    <h3 class="text-xl font-bold mb-2">Control de Presupuesto</h3>
+                    <p class="text-gray-500 mb-4">Crea presupuestos por categoría y mantente dentro de tus límites.</p>
+                    <div class="text-sm text-gray-400">✓ 3 presupuestos en Gratis<br>✓ Alertas de límite<br>✓ Resumen mensual</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plus Features -->
+    <section class="py-16" style="background: var(--bg-card);">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="plus-badge mb-4">PLUS</span>
+                <h2 class="text-3xl font-bold">Funciones Plus</h2>
+                <p class="text-gray-500 mt-2">Desbloquea todo por solo <strong class="gradient-text">MX$79/mes</strong></p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="feature-card border-indigo-500/30">
+                    <div class="feature-icon"><span class="material-icons-outlined">all_inclusive</span></div>
+                    <h3 class="text-xl font-bold mb-2">Todo Ilimitado</h3>
+                    <p class="text-gray-500">Plantillas, metas, presupuestos y cuentas sin límites.</p>
+                </div>
+                <div class="feature-card border-indigo-500/30">
+                    <div class="feature-icon"><span class="material-icons-outlined">cloud_sync</span></div>
+                    <h3 class="text-xl font-bold mb-2">Respaldo en la Nube</h3>
+                    <p class="text-gray-500">Sincroniza tus datos de forma segura entre dispositivos.</p>
+                </div>
+                <div class="feature-card border-indigo-500/30">
+                    <div class="feature-icon"><span class="material-icons-outlined">family_restroom</span></div>
+                    <h3 class="text-xl font-bold mb-2">Compartir en Familia</h3>
+                    <p class="text-gray-500">Comparte gastos con tu familia y gestiona finanzas juntos.</p>
+                </div>
+                <div class="feature-card border-indigo-500/30">
+                    <div class="feature-icon"><span class="material-icons-outlined">category</span></div>
+                    <h3 class="text-xl font-bold mb-2">Categorías Personalizadas</h3>
+                    <p class="text-gray-500">Crea categorías ilimitadas que se adapten a tu estilo de vida.</p>
+                </div>
+                <div class="feature-card border-indigo-500/30">
+                    <div class="feature-icon"><span class="material-icons-outlined">file_download</span></div>
+                    <h3 class="text-xl font-bold mb-2">Exportación Avanzada</h3>
+                    <p class="text-gray-500">Exporta a Excel, PDF y CSV para análisis detallado.</p>
+                </div>
+                <div class="feature-card border-indigo-500/30">
+                    <div class="feature-icon"><span class="material-icons-outlined">notifications</span></div>
+                    <h3 class="text-xl font-bold mb-2">Recordatorios de Facturas</h3>
+                    <p class="text-gray-500">Nunca olvides un pago con recordatorios inteligentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 text-center" style="background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-4">¿Listo para controlar tus finanzas?</h2>
+            <p class="text-white/80 mb-8">Descarga EZer gratis hoy</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://apps.apple.com/mx/app/ezer-budget-expense-tracker/id6738029702" class="inline-flex items-center gap-2 bg-white/20 border border-white/30 px-6 py-3 rounded-xl text-white font-semibold hover:bg-white/30 transition">
+                    <span class="material-icons-outlined">apple</span> App Store
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=MX" class="inline-flex items-center gap-2 bg-white/20 border border-white/30 px-6 py-3 rounded-xl text-white font-semibold hover:bg-white/30 transition">
+                    <span class="material-icons-outlined">shop</span> Google Play
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="themed-footer py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain">
+                        <div class="text-2xl font-bold gradient-text">EZer app</div>
+                    </div>
+                    <p class="text-sm text-gray-500 mb-4">Tu compañero financiero inteligente en México.</p>
+                    <p class="text-green-500 font-semibold">Gratis para usar</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Producto</h4>
+                    <div class="space-y-2 text-sm text-gray-500">
+                        <a href="features.html" class="block hover:text-indigo-600">Funciones</a>
+                        <a href="pricing.html" class="block hover:text-indigo-600">Precios</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <div class="space-y-2 text-sm text-gray-500">
+                        <a href="privacy.html" class="block hover:text-indigo-600">Política de Privacidad</a>
+                        <a href="terms.html" class="block hover:text-indigo-600">Términos y Condiciones</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Soporte</h4>
+                    <div class="space-y-2 text-sm text-gray-500">
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600">Contáctanos</a>
+                        <a href="../features.html" class="block hover:text-indigo-600">View in English</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center gap-3 py-5 border-t border-gray-200">
+                <span class="text-sm text-gray-500">Apariencia</span>
+                <div class="flex items-center gap-1 p-1 rounded-full bg-gray-100 border border-gray-200">
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center" data-theme="light"><span class="material-icons-outlined" style="font-size:18px">light_mode</span></button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center" data-theme="system"><span class="material-icons-outlined" style="font-size:18px">contrast</span></button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center" data-theme="dark"><span class="material-icons-outlined" style="font-size:18px">dark_mode</span></button>
+                </div>
+            </div>
+            <div class="text-center pt-6 text-sm text-gray-500 border-t border-gray-200">
+                <p>&copy; 2025 EZer. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/theme.js"></script>
+    <script>
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu')?.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
