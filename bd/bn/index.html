@@ -313,6 +313,29 @@
         .btn-secondary { background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border-light); }
         .btn-secondary:hover { background: rgba(79, 70, 229, 0.15); border-color: var(--indigo); transform: translateY(-2px); }
 
+        /* Languages Section */
+        .languages-section {
+            background: var(--bg-card);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 24px;
+        }
+        .languages-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
+        .languages-label { font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; }
+        .languages-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .lang-chip {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            padding: 10px 18px;
+            border-radius: 50px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+        .lang-chip:hover, .lang-chip.active { background: rgba(79, 70, 229, 0.15); border-color: var(--indigo); color: #a5b4fc; }
+
         /* Social Proof */
         .social-proof-bar {
             background: linear-gradient(90deg, rgba(79, 70, 229, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
@@ -352,6 +375,9 @@
         }
         .card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
         .card p { color: var(--text-secondary); font-size: 15px; line-height: 1.6; }
+        .feature-card { position: relative; background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), transparent); border: 1px solid rgba(79, 70, 229, 0.2); }
+        .feature-example { margin-top: 16px; background: rgba(0, 0, 0, 0.3); padding: 12px 16px; border-radius: 10px; font-size: 14px; color: #a5b4fc; }
+        [data-theme="light"] .feature-example { background: rgba(79, 70, 229, 0.08); color: var(--indigo); }
 
         /* Goals */
         .goal-card { display: flex; align-items: flex-start; gap: 20px; }
@@ -525,6 +551,17 @@
                     বিনামূল্যে ডাউনলোড - ৳০
                 </a>
                 <a href="#features" class="btn btn-secondary">আরও জানুন</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Bar -->
+    <section class="languages-section">
+        <div class="languages-inner">
+            <div class="languages-label">২টি ভাষায় উপলব্ধ</div>
+            <div class="languages-chips">
+                <a href="../" class="lang-chip">English</a>
+                <span class="lang-chip active">বাংলা</span>
             </div>
         </div>
     </section>
@@ -708,8 +745,33 @@
         </div>
     </section>
 
-    <!-- Trust -->
+    <!-- Built for Bangladesh Features -->
     <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">বাংলাদেশের জন্য তৈরি</span>
+                <h2 class="section-title">বাংলাদেশের জন্য নির্মিত</h2>
+                <p class="section-subtitle">অন্য কোথাও পাবেন না এমন বৈশিষ্ট্য</p>
+            </div>
+            <div class="card-grid">
+                <div class="card feature-card">
+                    <div class="card-icon"><span class="material-icons-outlined">notifications_active</span></div>
+                    <h3>বিল রিমাইন্ডার</h3>
+                    <p>কোন পেমেন্ট মিস করবেন না</p>
+                    <div class="feature-example">নিয়মিত বিলের জন্য রিমাইন্ডার সেট করুন</div>
+                </div>
+                <div class="card feature-card">
+                    <div class="card-icon"><span class="material-icons-outlined">document_scanner</span></div>
+                    <h3>রিসিট OCR</h3>
+                    <p>স্বয়ংক্রিয়ভাবে রিসিট স্ক্যান করুন</p>
+                    <div class="feature-example">নগদ খরচ ট্র্যাক করতে ছবি তুলুন</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust -->
+    <section class="section">
         <div class="container">
             <div class="trust-box">
                 <div class="trust-header">
@@ -833,6 +895,14 @@
                     <a href="mailto:support@ezerapp.com" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">যোগাযোগ</a>
                     <a href="../" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">English এ দেখুন</a>
                 </div>
+            </div>
+
+            <!-- Language Switcher -->
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px; padding: 16px 0; border-top: 1px solid var(--border);">
+                <span style="font-size: 13px; color: var(--text-muted);">ভাষা:</span>
+                <a href="../" style="font-size: 13px; color: var(--text-secondary); text-decoration: none;">English</a>
+                <span style="color: var(--text-muted);">|</span>
+                <span style="font-size: 13px; font-weight: 600; color: var(--indigo);">বাংলা</span>
             </div>
 
             <!-- Theme Toggle -->
