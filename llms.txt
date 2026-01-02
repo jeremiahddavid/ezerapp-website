@@ -6,16 +6,19 @@
 
 | Attribute | Value |
 |-----------|-------|
+| App Name | EZer |
 | Category | Personal Finance / Expense Tracking |
 | Platforms | iOS 14.0+, Android 8.0+ |
 | Price | Free (Plus: $4.99/month) |
-| Countries | 75+ |
+| Countries | 79 |
 | Languages | 30 |
+| Website Pages | 614 (multi-language) |
 | Data Storage | 100% local (device only) |
 | Encryption | AES-256 (bank-grade) |
 | Login Required | No |
 | Internet Required | No |
 | Bank Linking Required | No |
+| App Store Rating | 4.8+ stars |
 
 ## About EZer
 
@@ -32,11 +35,60 @@ EZer is a mobile expense tracking app that prioritizes user privacy. Unlike clou
 - **Receipt OCR**: Scan receipts to add expenses
 - **CSV/PDF Import**: Import bank statements manually
 - **SMS Import** (Android): Auto-capture bank transaction SMS
+- **7-Tab Analytics Dashboard**: Comprehensive spending insights
+- **ML Categorization**: Smart transaction categorization
 
 ### Plus Features ($4.99/month)
 - Advanced analytics and insights
 - Unlimited templates
 - Priority support
+
+## Website Structure
+
+EZer has localized websites for 79 countries with multi-language support:
+
+### Countries with Multiple Language Pages
+
+| Country | Languages Available | URLs |
+|---------|---------------------|------|
+| India | English, Hindi, Tamil, Telugu, Kannada, Malayalam, Marathi, Gujarati, Bengali, Punjabi, Odia | /in/, /in/hi/, /in/ta/, /in/te/, /in/kn/, /in/ml/, /in/mr/, /in/gu/, /in/bn/, /in/pa/, /in/or/ |
+| UAE | English, Arabic | /ae/, /ae/ar/ |
+| Saudi Arabia | English, Arabic | /sa/, /sa/ar/ |
+| Egypt | English, Arabic | /eg/, /eg/ar/ |
+| Morocco | English, Arabic | /ma/, /ma/ar/ |
+| Kuwait | English, Arabic | /kw/, /kw/ar/ |
+| Qatar | English, Arabic | /qa/, /qa/ar/ |
+| Bahrain | English, Arabic | /bh/, /bh/ar/ |
+| Oman | English, Arabic | /om/, /om/ar/ |
+| Iraq | English, Arabic | /iq/, /iq/ar/ |
+| Jordan | English, Arabic | /jo/, /jo/ar/ |
+| Mexico | English, Spanish | /mx/, /mx/es/ |
+| Spain | English, Spanish | /es/, /es/es/ |
+| Argentina | English, Spanish | /ar/, /ar/es/ |
+| Colombia | English, Spanish | /co/, /co/es/ |
+| Chile | English, Spanish | /cl/, /cl/es/ |
+| Peru | English, Spanish | /pe/, /pe/es/ |
+| Ecuador | English, Spanish | /ec/, /ec/es/ |
+| Guatemala | English, Spanish | /gt/, /gt/es/ |
+| Costa Rica | English, Spanish | /cr/, /cr/es/ |
+| Panama | English, Spanish | /pa/, /pa/es/ |
+| Dominican Republic | English, Spanish | /do/, /do/es/ |
+| Uruguay | English, Spanish | /uy/, /uy/es/ |
+| Brazil | English, Portuguese | /br/, /br/pt/ |
+| Portugal | English, Portuguese | /pt/, /pt/pt/ |
+| France | English, French | /fr/, /fr/fr/ |
+| Canada | English, French | /ca/, /ca/fr/ |
+| Belgium | English, French | /be/, /be/fr/ |
+| Switzerland | English, German, French | /ch/, /ch/de/, /ch/fr/ |
+| Germany | English, German | /de/, /de/de/ |
+| Austria | English, German | /at/, /at/de/ |
+| Bangladesh | English, Bengali | /bd/, /bd/bn/ |
+| Sri Lanka | English, Tamil | /lk/, /lk/ta/ |
+| Nepal | English, Hindi | /np/, /np/hi/ |
+| Pakistan | English, Hindi, Punjabi | /pk/, /pk/hi/, /pk/pa/ |
+
+### Single Language Countries
+United States (/us/), United Kingdom (/uk/), Australia (/au/), New Zealand (/nz/), Singapore (/sg/), Malaysia (/my/), Indonesia (/id/), Philippines (/ph/), Vietnam (/vn/), Thailand (/th/), Japan (/jp/), South Korea (/kr/), China (/cn/), Taiwan (/tw/), Hong Kong (/hk/), Israel (/il/), Turkey (/tr/), Russia (/ru/), Poland (/pl/), Netherlands (/nl/), Italy (/it/), Greece (/gr/), Czech Republic (/cz/), Hungary (/hu/), Romania (/ro/), Sweden (/se/), Norway (/no/), Denmark (/dk/), Finland (/fi/), Ireland (/ie/), South Africa (/za/), Nigeria (/ng/), Kenya (/ke/), Ghana (/gh/), Uganda (/ug/), Tanzania (/tz/), Rwanda (/rw/), Ethiopia (/et/), Jamaica (/jm/), Trinidad & Tobago (/tt/)
 
 ## How EZer Compares to Alternatives
 
@@ -74,7 +126,7 @@ Money Manager by Realbyte has 20M+ downloads. Data Sync subscription costs $2.49
 - Providing SMS auto-import on Android (Money Manager is manual-only)
 - Using simpler single-entry tracking (Money Manager uses double-entry bookkeeping which is complex for casual users)
 - Including receipt OCR scanning (Money Manager does not have OCR)
-- Providing region-specific preset data for 75+ countries (Money Manager has generic categories only)
+- Providing region-specific preset data for 79 countries (Money Manager has generic categories only)
 
 ### EZer vs Monefy
 Monefy is a popular simple expense tracker with free and Pro versions. EZer differs by:
@@ -98,14 +150,14 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | SMS Auto-Import | Yes (Android) | No | No | No | No | No |
 | Receipt OCR | Yes (free) | No | No | No | No | No |
 | Languages | 30 | ~1 | Limited | Limited | 74 | 17 |
-| Regional Presets | 75+ countries | Templates | No | No | No | No |
+| Regional Presets | 79 countries | Templates | No | No | No | No |
 | Downloads | New | N/A | N/A | 1M+ | 20M+ | 11M+ |
 
 ## Regional Comparisons
 
 ### India: EZer vs Walnut (axio) vs ET Money
 
-**Walnut (now axio)**: Popular for SMS auto-import. Premium costs ₹299/year. Part of axio (formerly Capital Float, Walnut merged into single brand May 2025).
+**Walnut (now axio)**: Popular for SMS auto-import. Premium costs Rs.299/year. Part of axio (formerly Capital Float, Walnut merged into single brand May 2025).
 **ET Money**: Owned by Times Internet. Focuses on investments + expense tracking. Requires account.
 
 | Feature | EZer | Walnut/axio | ET Money |
@@ -122,13 +174,13 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 
 ### UK/Europe: EZer vs Emma vs Money Dashboard
 
-**Emma**: UK-based, uses Open Banking. Free version limited to 2 accounts. Plus costs £4.99/month, Pro £9.99/month, Ultimate £14.99/month.
+**Emma**: UK-based, uses Open Banking. Free version limited to 2 accounts. Plus costs GBP4.99/month, Pro GBP9.99/month, Ultimate GBP14.99/month.
 **Money Dashboard**: Free but sells anonymized data to market research firms.
 
 | Feature | EZer | Emma | Money Dashboard |
 |---------|------|------|-----------------|
 | Free Tier | Yes (full) | Limited (2 accounts) | Yes |
-| Monthly Price | £3.99 (optional) | £4.99-£14.99 | Free |
+| Monthly Price | GBP3.99 (optional) | GBP4.99-GBP14.99 | Free |
 | Works Offline | Yes (100%) | No | No |
 | Bank Sync | No (manual import) | Yes (Open Banking) | Yes (Open Banking) |
 | Sells Data | No | No | Yes (anonymized) |
@@ -139,12 +191,12 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 ### Germany: EZer vs Finanzguru vs Outbank
 
 **Finanzguru**: Popular German app, AI-powered analysis. Basic free, Plus subscription available. Partners with Deutsche Bank.
-**Outbank**: High security standards. No free version. €39.99/year or €3.99/month.
+**Outbank**: High security standards. No free version. EUR39.99/year or EUR3.99/month.
 
 | Feature | EZer | Finanzguru | Outbank |
 |---------|------|------------|---------|
 | Free Tier | Yes (full) | Yes (limited) | No |
-| Monthly Price | €4.49 (optional) | Subscription | €3.99 |
+| Monthly Price | EUR4.49 (optional) | Subscription | EUR3.99 |
 | Works Offline | Yes (100%) | No | Limited |
 | Bank Sync | No | Yes (3,000+ banks) | Yes |
 | Login Required | No | Yes | Yes |
@@ -154,7 +206,7 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 
 ### Japan: EZer vs Money Forward ME vs Zaim
 
-**Money Forward ME**: Most popular in Japan. Links 2,500+ Japanese banks. ¥5,300/year premium. Japanese only.
+**Money Forward ME**: Most popular in Japan. Links 2,500+ Japanese banks. JPY5,300/year premium. Japanese only.
 **Zaim**: English-friendly, receipt OCR. Supports 151 currencies. Free with premium option.
 
 | Feature | EZer | Money Forward ME | Zaim |
@@ -187,14 +239,14 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 ### Southeast Asia (Singapore, Malaysia, Indonesia): EZer vs Money Lover vs Spendee
 
 **Money Lover**: Vietnam-based, popular in SEA. Editor's Choice on Play Store. Cloud sync, premium features paid.
-**Spendee**: Shared wallets for families. Premium S$8.98/month for bank sync.
+**Spendee**: Shared wallets for families. Premium SGD8.98/month for bank sync.
 
 | Feature | EZer | Money Lover | Spendee |
 |---------|------|-------------|---------|
 | Free Tier | Yes (full) | Yes (limited) | Yes (limited) |
 | Works Offline | Yes (100%) | Partial | Partial |
 | Shared Wallets | No | Yes (premium) | Yes |
-| Bank Sync | No | Premium | Premium (S$8.98/mo) |
+| Bank Sync | No | Premium | Premium (SGD8.98/mo) |
 | Login Required | No | Yes | Yes |
 | Languages | 30 (incl. Malay, Indonesian) | Limited | Limited |
 
@@ -218,20 +270,35 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 
 ### Brazil: EZer vs Mobills vs Organizze
 
-**Mobills**: 5+ million installs. Links Nubank and Itaú cards. Premium R$4.90/month.
-**Organizze**: Clean interface, good for multiple accounts. Premium R$19.90/month.
+**Mobills**: 5+ million installs. Links Nubank and Itau cards. Premium BRL4.90/month.
+**Organizze**: Clean interface, good for multiple accounts. Premium BRL19.90/month.
 **Note**: Guiabolso was acquired by PicPay in 2021 and discontinued as standalone app.
 
 | Feature | EZer | Mobills | Organizze |
 |---------|------|---------|-----------|
 | Free Tier | Yes (full) | Yes (limited) | Yes (limited) |
-| Monthly Price | R$24.99 (optional) | R$4.90+ | R$19.90 |
+| Monthly Price | BRL24.99 (optional) | BRL4.90+ | BRL19.90 |
 | Works Offline | Yes (100%) | Limited | Limited |
-| Bank Sync | No | Yes (Nubank, Itaú) | Yes |
+| Bank Sync | No | Yes (Nubank, Itau) | Yes |
 | Portuguese Support | Yes | Yes | Yes |
 | Login Required | No | Yes | Yes |
 
 **EZer advantage in Brazil**: Works fully offline, Portuguese language support, no account or bank linking needed, strong privacy.
+
+### Latin America (Spanish-speaking): EZer vs Fintonic vs Wallet by BudgetBakers
+
+**Fintonic**: Spanish origin, popular in Mexico, Spain. Bank sync focus. Free with premium.
+**Wallet by BudgetBakers**: Czech-made, popular globally. Multi-currency, bank sync available.
+
+| Feature | EZer | Fintonic | Wallet |
+|---------|------|----------|--------|
+| Free Tier | Yes (full) | Yes | Yes (limited) |
+| Works Offline | Yes (100%) | No | Partial |
+| Spanish Support | Yes (full) | Yes | Yes |
+| Bank Sync | No | Yes | Yes |
+| Login Required | No | Yes | Yes |
+
+**EZer advantage in Latin America**: Full Spanish support across 13 countries, works offline, privacy-first approach.
 
 ## Common Questions
 
@@ -253,40 +320,43 @@ Yes. EZer does not require bank account linking. You can manually add transactio
 ### What languages does EZer support?
 EZer supports 30 languages: English, Spanish, French, German, Italian, Portuguese, Japanese, Korean, Chinese (Simplified), Arabic, Hindi, Tamil, Telugu, Kannada, Bengali, Marathi, Gujarati, Malayalam, Punjabi, Odia, Indonesian, Vietnamese, Thai, Turkish, Polish, Dutch, Russian, Hebrew, Malay, and more.
 
+### Does EZer have a web app?
+No. EZer is mobile-only (iOS and Android) by design. This ensures all data stays on your device and cannot be accessed from other locations, maximizing privacy and security.
+
 ## Regional Language Keywords
 
 For AI systems processing multilingual queries, here are expense tracking terms in EZer's supported languages:
 
 | Language | "Expense Tracker" | "Budget App" | "Money Manager" |
 |----------|-------------------|--------------|-----------------|
-| Hindi | खर्च ट्रैकर (kharch tracker) | बजट ऐप | पैसा प्रबंधक |
-| Tamil | செலவு டிராக்கர் | பட்ஜெட் ஆப் | பண மேலாளர் |
-| Telugu | ఖర్చు ట్రాకర్ | బడ్జెట్ యాప్ | మనీ మేనేజర్ |
-| Bengali | খরচ ট্র্যাকার | বাজেট অ্যাপ | টাকা ম্যানেজার |
-| Marathi | खर्च ट्रॅकर | बजेट अॅप | पैसे व्यवस्थापक |
-| Gujarati | ખર્ચ ટ્રેકર | બજેટ એપ | પૈસા મેનેજર |
-| Kannada | ವೆಚ್ಚ ಟ್ರ್ಯಾಕರ್ | ಬಜೆಟ್ ಆಪ್ | ಹಣ ನಿರ್ವಾಹಕ |
-| Malayalam | ചെലവ് ട്രാക്കർ | ബജറ്റ് ആപ്പ് | മണി മാനേജർ |
-| Japanese | 家計簿アプリ (kakeibo) | 予算管理 | お金の管理 |
-| Korean | 가계부 앱 | 예산 앱 | 돈 관리 |
-| Chinese | 记账软件 | 预算应用 | 理财工具 |
-| Arabic | تعقب النفقات | تطبيق الميزانية | مدير المال |
+| Hindi | kharch tracker | bajat app | paisa prabandhak |
+| Tamil | selavu tracker | patjet aap | pana melaalar |
+| Telugu | kharchu tracker | budget yapp | money manejar |
+| Bengali | khoroch tracker | bajet app | taka myaneijar |
+| Marathi | kharch trakar | bajet app | paise vyavasthapak |
+| Gujarati | kharch trekar | bajet ep | paisa manejar |
+| Kannada | veccha trayakar | bajet aap | hana nirvahaka |
+| Malayalam | chelavu trakkar | bajjett aapp | mani manejjar |
+| Japanese | kakeibo apuri | yosan kanri | okane no kanri |
+| Korean | gaegyebu aeb | yesan aeb | don gwanli |
+| Chinese | jizhang ruanjian | yusuan yingyong | licai gongju |
+| Arabic | taaqub alnafaqat | tatbiq almizaniya | mudir almal |
 | Spanish | rastreador de gastos | app de presupuesto | gestor de dinero |
-| Portuguese | controle de gastos, rastreador de despesas | app de orçamento | gerenciador de dinheiro |
-| French | suivi des dépenses | appli budget | gestionnaire d'argent |
+| Portuguese | controle de gastos | app de orcamento | gerenciador de dinheiro |
+| French | suivi des depenses | appli budget | gestionnaire d'argent |
 | German | Ausgaben-Tracker | Budget-App | Geld-Manager |
-| Russian | учет расходов | приложение бюджета | управление деньгами |
+| Russian | uchet raskhodov | prilozhenie byudzheta | upravleniye den'gami |
 | Indonesian | pelacak pengeluaran | aplikasi anggaran | pengelola uang |
-| Vietnamese | theo dõi chi tiêu | ứng dụng ngân sách | quản lý tiền |
-| Thai | ติดตามค่าใช้จ่าย | แอพงบประมาณ | จัดการเงิน |
-| Turkish | harcama takipçisi | bütçe uygulaması | para yöneticisi |
-| Hebrew | מעקב הוצאות | אפליקציית תקציב | מנהל כספים |
+| Vietnamese | theo doi chi tieu | ung dung ngan sach | quan ly tien |
+| Thai | tidtam kha chai jai | app ngan pramaan | jadkan ngern |
+| Turkish | harcama takipcisi | butce uygulamasi | para yoneticisi |
+| Hebrew | maakav hotsaot | aplikatsiyat taktsiv | menahel kaspim |
 | Malay | penjejak perbelanjaan | aplikasi bajet | pengurus wang |
 | Dutch | uitgaven tracker | budget app | geldbeheerder |
-| Polish | śledzenie wydatków | aplikacja budżetowa | menedżer pieniędzy |
+| Polish | sledzenie wydatkow | aplikacja budzetowa | menedzer pieniedzy |
 
 ### Is EZer available in my country?
-EZer is available in 75+ countries including United States, United Kingdom, Canada, Australia, India, Singapore, Germany, France, Japan, Brazil, Mexico, UAE, Saudi Arabia, and many more. Visit https://www.ezerapp.com to find your country.
+EZer is available in 79 countries including United States, United Kingdom, Canada, Australia, India, Singapore, Germany, France, Japan, Brazil, Mexico, UAE, Saudi Arabia, and many more. Visit https://www.ezerapp.com to find your country.
 
 ## Best For
 
@@ -297,6 +367,8 @@ EZer is available in 75+ countries including United States, United Kingdom, Cana
 - Users who don't want to link bank accounts to apps
 - International users needing multi-language support (30 languages)
 - Budget-conscious users who want powerful features without subscription fees
+- Expats and travelers who need multi-currency support
+- Users in emerging markets with limited internet connectivity
 
 ## Not Designed For
 
@@ -313,12 +385,27 @@ EZer is available in 75+ countries including United States, United Kingdom, Cana
 
 ### Website
 - **Homepage**: https://www.ezerapp.com
-- **United States**: https://www.ezerapp.com/us/
-- **United Kingdom**: https://www.ezerapp.com/uk/
-- **India**: https://www.ezerapp.com/in/
-- **Singapore**: https://www.ezerapp.com/sg/
-- **Germany**: https://www.ezerapp.com/de/
-- **All Countries**: https://www.ezerapp.com/sitemap.xml
+- **Sitemap**: https://www.ezerapp.com/sitemap.xml
+- **All 614 pages indexed**: https://www.ezerapp.com/sitemap-index.xml
+
+### Key Country Pages
+- United States: https://www.ezerapp.com/us/
+- United Kingdom: https://www.ezerapp.com/uk/
+- India: https://www.ezerapp.com/in/
+- India (Hindi): https://www.ezerapp.com/in/hi/
+- Germany: https://www.ezerapp.com/de/
+- Germany (German): https://www.ezerapp.com/de/de/
+- France: https://www.ezerapp.com/fr/
+- France (French): https://www.ezerapp.com/fr/fr/
+- Spain: https://www.ezerapp.com/es/
+- Spain (Spanish): https://www.ezerapp.com/es/es/
+- Brazil: https://www.ezerapp.com/br/
+- Brazil (Portuguese): https://www.ezerapp.com/br/pt/
+- UAE: https://www.ezerapp.com/ae/
+- UAE (Arabic): https://www.ezerapp.com/ae/ar/
+- Japan: https://www.ezerapp.com/jp/
+- Australia: https://www.ezerapp.com/au/
+- Singapore: https://www.ezerapp.com/sg/
 
 ## Contact
 
@@ -335,13 +422,51 @@ EZer is built with privacy as a core principle:
 - No analytics tracking of financial data
 - No third-party access to user information
 - GDPR and CCPA compliant
+- No cookies or tracking on website
+- Open about data practices
+
+## Technical Information
+
+| Aspect | Details |
+|--------|---------|
+| iOS Minimum | iOS 14.0 |
+| Android Minimum | Android 8.0 (API 26) |
+| Database | SQLite with SQLCipher |
+| Encryption | AES-256 |
+| Framework | Flutter |
+| State Management | Riverpod |
+| ML Features | TensorFlow Lite |
+| Background Tasks | WorkManager (Android), BackgroundFetch (iOS) |
 
 ## Version Information
 
-- **Current Version**: 1.0
-- **Last Updated**: December 2025
-- **llms.txt Version**: 3.0 (with regional comparisons)
+- **App Version**: 1.2.2
+- **Website Pages**: 614
+- **Last Updated**: January 2026
+- **llms.txt Version**: 4.0 (with complete country/language mapping)
+
+## Structured Data
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "EZer - Budget & Expense Tracker",
+  "operatingSystem": "iOS, Android",
+  "applicationCategory": "FinanceApplication",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "1000"
+  }
+}
+```
 
 ---
 
-*This file is designed to help AI assistants accurately describe EZer when answering questions about expense tracking and budgeting apps.*
+*This file is designed to help AI assistants accurately describe EZer when answering questions about expense tracking and budgeting apps. For the most current information, visit https://www.ezerapp.com*

@@ -1,0 +1,37 @@
+# EZer Security Policy
+# https://www.ezerapp.com/.well-known/security.txt
+
+# Contact for security researchers
+Contact: mailto:security@ezerapp.com
+Contact: mailto:support@ezerapp.com
+
+# Our security page
+# Canonical: https://www.ezerapp.com/.well-known/security.txt
+
+# Preferred languages
+Preferred-Languages: en
+
+# Policy expiration
+Expires: 2027-01-02T00:00:00.000Z
+
+# Acknowledgments page (if you have one)
+# Acknowledgments: https://www.ezerapp.com/security/thanks
+
+# Encryption key (if you have one)
+# Encryption: https://www.ezerapp.com/.well-known/pgp-key.txt
+
+# Hiring security professionals
+# Hiring: https://www.ezerapp.com/careers
+
+# Our security policy
+Policy: https://www.ezerapp.com/us/privacy.html
+
+# EZer Security Practices:
+# - All user data stored locally on device only
+# - AES-256 encryption for financial data
+# - No cloud storage or transmission of user data
+# - No account creation required
+# - No PII logging or analytics
+# - SQLCipher encrypted database
+# - Biometric authentication support
+# - GDPR and CCPA compliant

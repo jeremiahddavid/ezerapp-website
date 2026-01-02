@@ -1,6 +1,6 @@
 # EZer - robots.txt
 # https://www.ezerapp.com
-# Last updated: 2025-12-29
+# Last updated: 2026-01-02
 
 # ===========================================
 # Default: Allow all crawlers
@@ -8,6 +8,7 @@
 User-agent: *
 Allow: /
 Disallow: /backups/
+Disallow: /build/
 Disallow: /*.md$
 
 # ===========================================
@@ -24,11 +25,20 @@ Allow: /
 User-agent: Googlebot-Mobile
 Allow: /
 
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Storebot-Google
+Allow: /
+
 # Bing
 User-agent: Bingbot
 Allow: /
 
 User-agent: msnbot
+Allow: /
+
+User-agent: BingPreview
 Allow: /
 
 # Yahoo
@@ -43,8 +53,33 @@ Allow: /
 User-agent: Yandex
 Allow: /
 
+User-agent: YandexBot
+Allow: /
+
+User-agent: YandexImages
+Allow: /
+
 # Baidu
 User-agent: Baiduspider
+Allow: /
+
+User-agent: Baiduspider-image
+Allow: /
+
+# Naver (Korea)
+User-agent: Yeti
+Allow: /
+
+# Sogou (China)
+User-agent: Sogou
+Allow: /
+
+# Seznam (Czech Republic)
+User-agent: SeznamBot
+Allow: /
+
+# Qwant (France/Europe)
+User-agent: Qwantify
 Allow: /
 
 # ===========================================
@@ -56,6 +91,9 @@ User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 # Anthropic / Claude
@@ -72,6 +110,9 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: Googlebot-Video
+Allow: /
+
 # Perplexity AI
 User-agent: PerplexityBot
 Allow: /
@@ -85,6 +126,9 @@ User-agent: FacebookBot
 Allow: /
 
 User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
 Allow: /
 
 # Cohere
@@ -106,8 +150,36 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
+# Neeva AI
+User-agent: NeevaBot
+Allow: /
+
+# Brave Search
+User-agent: Brave
+Allow: /
+
+# AI21 Labs
+User-agent: AI2Bot
+Allow: /
+
+# Hugging Face
+User-agent: HuggingFaceBot
+Allow: /
+
+# Diffbot (AI data extraction)
+User-agent: Diffbot
+Allow: /
+
 # Common Crawl (used by many AI companies)
 User-agent: CCBot
+Allow: /
+
+# Bytespider (ByteDance/TikTok AI)
+User-agent: Bytespider
+Allow: /
+
+# Omgili (AI news aggregation)
+User-agent: omgili
 Allow: /
 
 # ===========================================
@@ -123,7 +195,13 @@ Allow: /
 User-agent: Pinterest
 Allow: /
 
+User-agent: Pinterestbot
+Allow: /
+
 User-agent: Slackbot
+Allow: /
+
+User-agent: Slackbot-LinkExpanding
 Allow: /
 
 User-agent: WhatsApp
@@ -132,10 +210,45 @@ Allow: /
 User-agent: TelegramBot
 Allow: /
 
+User-agent: Discordbot
+Allow: /
+
+User-agent: vkShare
+Allow: /
+
+User-agent: Embedly
+Allow: /
+
+User-agent: Quora-Bot
+Allow: /
+
+User-agent: redditbot
+Allow: /
+
 # ===========================================
-# Sitemap Location
+# App Store & Commerce Crawlers
 # ===========================================
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+# ===========================================
+# Sitemap Locations
+# ===========================================
+Sitemap: https://www.ezerapp.com/sitemap-index.xml
 Sitemap: https://www.ezerapp.com/sitemap.xml
+Sitemap: https://www.ezerapp.com/sitemap-countries.xml
+
+# ===========================================
+# LLMs.txt (AI-readable summary)
+# ===========================================
+# For AI assistants: https://www.ezerapp.com/llms.txt
 
 # ===========================================
 # Host directive (for search engines that support it)

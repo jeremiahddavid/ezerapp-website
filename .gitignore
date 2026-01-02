@@ -19,3 +19,8 @@ deploy*.js
 !robots.txt
 !llms.txt
 !sitemap.xml
+!sitemap-index.xml
+!sitemap-countries.xml
+!humans.txt
+!.well-known/
+!.well-known/*

@@ -1,0 +1,27 @@
+/* TEAM */
+Creator: EZer Team
+Contact: support@ezerapp.com
+Location: Global
+
+/* SITE */
+Last update: 2026-01-02
+Language: English (primary), 30 languages supported
+Standards: HTML5, CSS3, JavaScript
+Software: Static HTML, GitHub Pages
+Analytics: Minimal (privacy-first)
+
+/* THANKS */
+Flutter Team: For the amazing cross-platform framework
+Open Source Community: For countless libraries and tools
+Our Users: For trusting us with their financial privacy
+
+/* PURPOSE */
+EZer exists to provide a privacy-first expense tracking
+experience. We believe your financial data should stay
+on your device, encrypted, and under your control.
+
+No cloud. No login. No tracking. Just budgeting.
+
+Website: https://www.ezerapp.com
+iOS: https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702
+Android: https://play.google.com/store/apps/details?id=com.ezer.personal_finance
