@@ -237,6 +237,49 @@
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
             z-index: 10;
         }
+    
+/* Mobile Sticky CTA */
+.mobile-sticky-cta {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 16px;
+    background: rgba(15, 15, 26, 0.98);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    z-index: 999;
+    gap: 12px;
+}
+.mobile-sticky-cta .btn-sticky {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.mobile-sticky-cta .btn-sticky-ios {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+.mobile-sticky-cta .btn-sticky-android {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    border: none;
+}
+@media (max-width: 768px) {
+    .mobile-sticky-cta { display: flex; }
+    body { padding-bottom: 80px; }
+}
+
     </style>
 
     <meta name="apple-itunes-app" content="app-id=6738029702">
@@ -605,7 +648,7 @@
             <h2 class="text-3xl font-bold mb-4">আজই আপনার অর্থ ট্র্যাকিং শুরু করুন</h2>
             <p class="text-xl text-indigo-100 mb-8">বিনামূল্যে ডাউনলোড - কোন ক্রেডিট কার্ড প্রয়োজন নেই</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="bg-indigo-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-800 border-2 border-white" target="_blank" rel="noopener">iOS এর জন্য বিনামূল্যে ডাউনলোড</a>
+                <a href="https://apps.apple.com/BD/app/ezer-budget-expense-tracker/id6738029702" class="bg-indigo-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-800 border-2 border-white" target="_blank" rel="noopener">iOS এর জন্য বিনামূল্যে ডাউনলোড</a>
                 <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=bd" class="bg-indigo-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-indigo-800 border-2 border-white">
                     Android এর জন্য বিনামূল্যে ডাউনলোড
                 </a>
@@ -619,7 +662,7 @@
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <div class="flex items-center gap-3 mb-4">
-                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain">
+                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain" loading="lazy">
                         <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
                     </div>
                     <p class="text-sm mb-4" style="color: var(--text-secondary);">বাংলাদেশে আপনার স্মার্ট ফাইন্যান্স সঙ্গী।</p>
@@ -694,5 +737,17 @@
         // Initialize Lucide icons if present
         if (typeof lucide !== 'undefined') lucide.createIcons();
     </script>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-sticky-cta">
+        <a href="https://apps.apple.com/BD/app/ezer-budget-expense-tracker/id6738029702" class="btn-sticky btn-sticky-ios" target="_blank" rel="noopener">
+            <span class="material-icons-outlined" style="font-size:20px;">apple</span>
+            iOS
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=bd" class="btn-sticky btn-sticky-android" target="_blank" rel="noopener">
+            <span class="material-icons-outlined" style="font-size:20px;">shop</span>
+            Android
+        </a>
+    </div>
 </body>
 </html>

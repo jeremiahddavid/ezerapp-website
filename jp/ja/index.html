@@ -53,7 +53,7 @@
     <!-- Preconnect & Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap" as="style">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -192,7 +192,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Noto Sans JP', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--bg-dark);
             color: var(--text-primary);
             line-height: 1.6;
@@ -900,7 +900,7 @@
                 <a href="pricing.html" class="unified-link">料金</a>
                 <a href="privacy.html" class="unified-link">プライバシー</a>
                 <a href="terms.html" class="unified-link">利用規約</a>
-                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-cta">無料ダウンロード</a>
+                <a href="https://apps.apple.com/JP/app/ezer-budget-expense-tracker/id6738029702" class="unified-cta">無料ダウンロード</a>
             </div>
             <button class="unified-mobile-btn" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
                 <span class="material-icons-outlined">menu</span>
@@ -912,7 +912,7 @@
             <a href="pricing.html" class="unified-mobile-link">料金</a>
             <a href="privacy.html" class="unified-mobile-link">プライバシー</a>
             <a href="terms.html" class="unified-mobile-link">利用規約</a>
-            <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="unified-mobile-cta">無料ダウンロード</a>
+            <a href="https://apps.apple.com/JP/app/ezer-budget-expense-tracker/id6738029702" class="unified-mobile-cta">無料ダウンロード</a>
         </div>
     </nav>
 
@@ -1258,8 +1258,19 @@
             <div class="download-inner">
                 <h2>今日から追跡を始めよう</h2>
                 <p>EZerアプリをiOSまたはAndroidで無料ダウンロード。登録不要。データは端末に保存。</p>
-                <div class="download-badges">
-                    <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="store-badge" target="_blank" rel="noopener">
+                                <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;flex-wrap:wrap;">
+                    <div style="display:flex;gap:2px;">
+                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
+                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
+                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
+                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
+                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
+                    </div>
+                    <span style="color:rgba(255,255,255,0.9);font-weight:700;font-size:16px;">4.8</span>
+                    <span style="color:rgba(255,255,255,0.6);font-size:14px;">from 1,200+ users</span>
+                </div>
+<div class="download-badges">
+                    <a href="https://apps.apple.com/JP/app/ezer-budget-expense-tracker/id6738029702" class="store-badge" target="_blank" rel="noopener">
                         <span class="material-icons-outlined icon">apple</span>
                         <div class="text">
                             <small>ダウンロード</small>
@@ -1285,7 +1296,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
                 <div>
                     <a href="./" class="unified-logo" style="margin-bottom: 16px;">
-                        <img src="../logo.png" alt="EZer" class="unified-logo-img">
+                        <img src="../logo.png" alt="EZer" class="unified-logo-img" loading="lazy">
                         <span class="unified-logo-text">EZer app</span>
                     </a>
                     <p style="color: var(--text-secondary); font-size: 14px; margin-top: 16px;">
@@ -1416,7 +1427,7 @@
 
     <!-- Mobile Sticky CTA -->
     <div class="mobile-sticky-cta">
-        <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="btn btn-secondary" target="_blank" rel="noopener">
+        <a href="https://apps.apple.com/JP/app/ezer-budget-expense-tracker/id6738029702" class="btn btn-secondary" target="_blank" rel="noopener">
             <span class="material-icons-outlined">apple</span>
             <div>iOS</div>
         </a>
