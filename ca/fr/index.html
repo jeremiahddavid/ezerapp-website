@@ -44,6 +44,7 @@
     <meta property="al:android:url" content="ezer://"/>
     <meta property="al:android:package" content="com.ezer.personal_finance"/>
     <meta property="al:android:app_name" content="EZer"/>
+    <meta name="apple-itunes-app" content="app-id=6738029702">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png">
@@ -886,6 +887,33 @@
         }
     </style>
 
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+                {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.ezerapp.com/"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Canada",
+                        "item": "https://www.ezerapp.com/ca/"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "French",
+                        "item": "https://www.ezerapp.com/ca/fr/"
+                }
+        ]
+}
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -956,7 +984,7 @@
                         <span class="material-icons-outlined">verified_user</span>
                         100% Private. Works Offline.
                     </div>
-                    <h1 class="hero-title"><span class='gradient'>Track Every C$.</span></h1>
+                    <h2 class="hero-title"><span class='gradient'>Track Every C$.</span></h2>
                     <p class="hero-native">Suivez chaque dollar. Epargnez pour ce qui compte.</p>
                     <p class="hero-subtitle">L'application de suivi des depenses privee qui fonctionne hors ligne. Aucune connexion. Aucun cloud. Juste vous et vos finances.</p>
                     <div class="hero-buttons">

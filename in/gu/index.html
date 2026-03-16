@@ -47,6 +47,7 @@
     <!-- App Links -->
     <meta property="al:android:package" content="com.ezer.personal_finance">
     <meta property="al:android:app_name" content="EZer">
+    <meta name="apple-itunes-app" content="app-id=6738029702">
     <meta property="al:android:url" content="https://play.google.com/store/apps/details?id=com.ezer.personal_finance">
     <meta property="al:ios:app_store_id" content="6740245492">
     <meta property="al:ios:app_name" content="EZer">
@@ -428,6 +429,33 @@
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+                {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.ezerapp.com/"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "India",
+                        "item": "https://www.ezerapp.com/in/"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Gujarati",
+                        "item": "https://www.ezerapp.com/in/gu/"
+                }
+        ]
+}
+    </script>
 </head>
 <body>
     <!-- Language Banner -->

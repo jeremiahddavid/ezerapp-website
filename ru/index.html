@@ -15,8 +15,8 @@
     <link rel="canonical" href="https://www.ezerapp.com/ru/">
 
     <!-- Language Alternates -->
-    <link rel="alternate" hreflang="ru-RU" href="https://www.ezerapp.com/ru/?lang=ru">
-    <link rel="alternate" hreflang="en-RU" href="https://www.ezerapp.com/ru/?lang=en">
+    <link rel="alternate" hreflang="ru-RU" href="https://www.ezerapp.com/ru/">
+    <link rel="alternate" hreflang="en-RU" href="https://www.ezerapp.com/ru/">
     <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
 
     <!-- Open Graph / Facebook -->
@@ -44,6 +44,7 @@
     <meta property="al:android:url" content="ezer://"/>
     <meta property="al:android:package" content="com.ezer.personal_finance"/>
     <meta property="al:android:app_name" content="EZer"/>
+    <meta name="apple-itunes-app" content="app-id=6738029702">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png">
@@ -875,6 +876,27 @@
         }
     </style>
 
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+                {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.ezerapp.com/"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Russia",
+                        "item": "https://www.ezerapp.com/ru/"
+                }
+        ]
+}
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -945,7 +967,7 @@
                         <span class="material-icons-outlined">verified_user</span>
                         100% Private. Works Offline. No Login Required.
                     </div>
-                    <h1 class="hero-title">Track Every ₽.</span><br><span class='gradient'>Save for What Matters.</h1>
+                    <h2 class="hero-title">Track Every ₽.</span><br><span class='gradient'>Save for What Matters.</h2>
                     
                     <p class="hero-subtitle">The private expense tracker that works offline. No login. No cloud. Just you and your finances.</p>
                     <div class="hero-buttons">

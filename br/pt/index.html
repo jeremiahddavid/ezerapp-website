@@ -44,6 +44,7 @@
     <meta property="al:android:url" content="ezer://"/>
     <meta property="al:android:package" content="com.ezer.personal_finance"/>
     <meta property="al:android:app_name" content="EZer"/>
+    <meta name="apple-itunes-app" content="app-id=6738029702">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png">
@@ -492,6 +493,33 @@
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+                {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.ezerapp.com/"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Brazil",
+                        "item": "https://www.ezerapp.com/br/"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Portuguese",
+                        "item": "https://www.ezerapp.com/br/pt/"
+                }
+        ]
+}
+    </script>
 </head>
 <body>
     <!-- Navigation -->

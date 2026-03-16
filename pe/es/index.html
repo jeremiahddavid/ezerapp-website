@@ -44,6 +44,7 @@
     <meta property="al:android:url" content="ezer://"/>
     <meta property="al:android:package" content="com.ezer.personal_finance"/>
     <meta property="al:android:app_name" content="EZer"/>
+    <meta name="apple-itunes-app" content="app-id=6738029702">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png">
@@ -835,6 +836,33 @@
         }
     </style>
 
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+                {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.ezerapp.com/"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Peru",
+                        "item": "https://www.ezerapp.com/pe/"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Spanish",
+                        "item": "https://www.ezerapp.com/pe/es/"
+                }
+        ]
+}
+    </script>
 </head>
 <body>
     <!-- Unified Navigation -->
@@ -903,7 +931,7 @@
                         <span class="material-icons-outlined">verified_user</span>
                         100% Private. Works Offline. No Login Required.
                     </div>
-                    <h1 class="hero-title">Track Every $.<br><span class='gradient'>Save for What Matters.</span></h1>
+                    <h2 class="hero-title">Track Every $.<br><span class='gradient'>Save for What Matters.</span></h2>
                     <p class="hero-subtitle">The private expense tracker that works offline. No login. No cloud. Just you and your finances.</p>
                     <div class="hero-buttons">
                         <a href="#download" class="btn btn-primary">
