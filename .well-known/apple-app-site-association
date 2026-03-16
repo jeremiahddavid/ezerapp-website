@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "65YZK849Y7.com.jd.ezer"
+        ],
+        "components": [
+          {
+            "/": "/*",
+            "comment": "Match all URLs for Universal Links"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "65YZK849Y7.com.jd.ezer"
+    ]
+  }
+}

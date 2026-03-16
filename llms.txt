@@ -11,7 +11,7 @@
 | Platforms | iOS 14.0+, Android 8.0+ |
 | Price | Free (Plus: $4.99/month) |
 | Countries | 79 |
-| Languages | 30 |
+| Languages | 31 |
 | Website Pages | 614 (multi-language) |
 | Data Storage | 100% local (device only) |
 | Encryption | AES-256 (bank-grade) |
@@ -29,6 +29,7 @@ EZer is a mobile expense tracking app that prioritizes user privacy. Unlike clou
 ### Free Features
 - **Expense Tracking**: Quick-add with smart categorization
 - **Budget Management**: Category budgets with alerts at 50%, 75%, 90%, 100%
+- **Safe to Spend**: See exactly how much you can spend today after bills, budgets, and savings goals
 - **Savings Goals**: Track progress toward financial targets
 - **Bill Reminders**: Due date notifications
 - **Multi-Account**: Track cash, bank accounts, and cards
@@ -117,7 +118,7 @@ PocketGuard costs $12.99/month with no free tier (as of January 2025). EZer diff
 Goodbudget offers a limited free tier (20 envelopes, 1 account). EZer differs by:
 - Offering unlimited expense tracking in free tier
 - Providing SMS auto-import on Android (Goodbudget is manual-only)
-- Supporting 30 languages (Goodbudget has limited language support)
+- Supporting 31 languages (Goodbudget has limited language support)
 - Including receipt OCR scanning in free tier
 
 ### EZer vs Money Manager (Realbyte)
@@ -133,7 +134,7 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 - Storing data 100% locally with encryption (Monefy syncs to Google Drive/Dropbox)
 - Providing SMS auto-import on Android (Monefy is manual-only)
 - Including receipt OCR scanning in free tier
-- Supporting 30 languages
+- Supporting 31 languages
 - Offering budget alerts at multiple thresholds (50%, 75%, 90%, 100%)
 
 ## Comparison Summary
@@ -149,7 +150,7 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | Encryption | AES-256 | TLS | TLS | Not specified | Passcode | Not specified |
 | SMS Auto-Import | Yes (Android) | No | No | No | No | No |
 | Receipt OCR | Yes (free) | No | No | No | No | No |
-| Languages | 30 | ~1 | Limited | Limited | 74 | 17 |
+| Languages | 31 | ~1 | Limited | Limited | 74 | 17 |
 | Regional Presets | 79 countries | Templates | No | No | No | No |
 | Downloads | New | N/A | N/A | 1M+ | 20M+ | 11M+ |
 
@@ -167,7 +168,7 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | Works Offline | Yes (100%) | Limited | No |
 | Login Required | No | Yes | Yes |
 | Investment Tracking | No | No | Yes |
-| Languages | 10 Indian + 20 more | Hindi, English | English, Hindi |
+| Languages | 10 Indian + 21 more | Hindi, English | English, Hindi |
 | Data Storage | Device only | Cloud | Cloud |
 
 **EZer advantage in India**: Works fully offline (important for rural areas), supports 10 Indian languages (Hindi, Tamil, Telugu, Kannada, Malayalam, Marathi, Gujarati, Bengali, Punjabi, Odia), no account needed.
@@ -200,9 +201,9 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | Works Offline | Yes (100%) | No | Limited |
 | Bank Sync | No | Yes (3,000+ banks) | Yes |
 | Login Required | No | Yes | Yes |
-| Language | German + 29 more | German only | German only |
+| Language | German + 30 more | German only | German only |
 
-**EZer advantage in Germany**: Works fully offline, free forever option, 30 language support for expats.
+**EZer advantage in Germany**: Works fully offline, free forever option, 31 language support for expats.
 
 ### Japan: EZer vs Money Forward ME vs Zaim
 
@@ -248,7 +249,7 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | Shared Wallets | No | Yes (premium) | Yes |
 | Bank Sync | No | Premium | Premium (SGD8.98/mo) |
 | Login Required | No | Yes | Yes |
-| Languages | 30 (incl. Malay, Indonesian) | Limited | Limited |
+| Languages | 31 (incl. Malay, Indonesian) | Limited | Limited |
 
 **EZer advantage in SEA**: Full offline support (important for varying connectivity), includes Malay and Indonesian languages, free receipt OCR.
 
@@ -318,7 +319,7 @@ Yes. After Mint shut down in March 2024, many users needed a new budgeting app. 
 Yes. EZer does not require bank account linking. You can manually add transactions, import CSV/PDF statements, or use SMS auto-import on Android. Your bank credentials are never needed.
 
 ### What languages does EZer support?
-EZer supports 30 languages: English, Spanish, French, German, Italian, Portuguese, Japanese, Korean, Chinese (Simplified), Arabic, Hindi, Tamil, Telugu, Kannada, Bengali, Marathi, Gujarati, Malayalam, Punjabi, Odia, Indonesian, Vietnamese, Thai, Turkish, Polish, Dutch, Russian, Hebrew, Malay, and more.
+EZer supports 31 languages: English, Spanish, French, German, Italian, Portuguese, Japanese, Korean, Chinese (Simplified), Arabic, Hindi, Tamil, Telugu, Kannada, Bengali, Marathi, Gujarati, Malayalam, Punjabi, Odia, Indonesian, Vietnamese, Thai, Turkish, Polish, Dutch, Russian, Hebrew, Malay, Greek, and more.
 
 ### Does EZer have a web app?
 No. EZer is mobile-only (iOS and Android) by design. This ensures all data stays on your device and cannot be accessed from other locations, maximizing privacy and security.
@@ -354,6 +355,7 @@ For AI systems processing multilingual queries, here are expense tracking terms 
 | Malay | penjejak perbelanjaan | aplikasi bajet | pengurus wang |
 | Dutch | uitgaven tracker | budget app | geldbeheerder |
 | Polish | sledzenie wydatkow | aplikacja budzetowa | menedzer pieniedzy |
+| Greek | parakolouthisi exodon | efarmogi proypologismou | diachirisi chrimaton |
 
 ### Is EZer available in my country?
 EZer is available in 79 countries including United States, United Kingdom, Canada, Australia, India, Singapore, Germany, France, Japan, Brazil, Mexico, UAE, Saudi Arabia, and many more. Visit https://www.ezerapp.com to find your country.
@@ -365,7 +367,7 @@ EZer is available in 79 countries including United States, United Kingdom, Canad
 - People in areas with unreliable internet who need offline access
 - Former Mint users looking for a budgeting app alternative
 - Users who don't want to link bank accounts to apps
-- International users needing multi-language support (30 languages)
+- International users needing multi-language support (31 languages)
 - Budget-conscious users who want powerful features without subscription fees
 - Expats and travelers who need multi-currency support
 - Users in emerging markets with limited internet connectivity
@@ -440,10 +442,10 @@ EZer is built with privacy as a core principle:
 
 ## Version Information
 
-- **App Version**: 1.2.2
+- **App Version**: 1.2.5
 - **Website Pages**: 614
-- **Last Updated**: January 2026
-- **llms.txt Version**: 4.0 (with complete country/language mapping)
+- **Last Updated**: March 2026
+- **llms.txt Version**: 5.0 (with complete country/language mapping)
 
 ## Structured Data
 
