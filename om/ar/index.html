@@ -411,7 +411,26 @@
             .card-grid { grid-template-columns: 1fr; gap: 16px; }
             .pricing-grid { grid-template-columns: 1fr; }
         }
-    </style>
+    
+    /* Skip to content link */
+    .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #4f46e5;
+        color: white;
+        padding: 8px 16px;
+        z-index: 10000;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 0 0 8px 0;
+        transition: top 0.3s;
+    }
+    .skip-to-content:focus {
+        top: 0;
+    }
+</style>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
@@ -444,11 +463,12 @@
     </script>
 </head>
 <body>
+<a href="#main-content" class="skip-to-content">انتقل إلى المحتوى</a>
     <!-- Language Switch Banner -->
     <div class="lang-switch-banner">
         <span>🇴🇲</span>
         أنت تشاهد EZer بالعربية
-        <a href="../">View in English</a>
+        <a href="../">عرض بالإنجليزية</a>
     </div>
 
     <!-- Navigation -->
@@ -466,7 +486,7 @@
                 <a href="terms.html" class="unified-link">الشروط</a>
                 <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=OM" class="unified-cta">تحميل مجاني</a>
             </div>
-            <button class="unified-mobile-btn" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
+            <button class="unified-mobile-btn" aria-label="Open menu" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
                 <span class="material-icons-outlined">menu</span>
             </button>
         </div>
@@ -481,7 +501,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section id="main-content" class="hero-section">
         <div class="hero-orb purple"></div>
         <div class="hero-orb pink"></div>
         <div class="hero-content">
@@ -850,7 +870,7 @@
                     <a href="../../feedback.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">ملاحظات</a>
                     <a href="../../report.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">الإبلاغ عن مشكلة</a>
                     <a href="mailto:support@ezerapp.com" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">اتصل بنا</a>
-                    <a href="../" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">View in English</a>
+                    <a href="../" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">عرض بالإنجليزية</a>
                 </div>
             </div>
 
@@ -865,7 +885,7 @@
             <!-- Theme Toggle -->
             <div class="theme-toggle-container">
                 <span class="theme-toggle-label">المظهر</span>
-                <div class="theme-toggle">
+                <div class="theme-toggle" aria-label="Toggle dark mode">
                     <button class="theme-btn" data-theme="light" title="فاتح">
                         <span class="material-icons-outlined" style="font-size: 18px;">light_mode</span>
                     </button>
@@ -934,5 +954,39 @@
             Android
         </a>
     </div>
+
+    <script>
+    // Smart platform detection - highlight relevant store
+    (function() {
+        var ua = navigator.userAgent || '';
+        var isIOS = /iPhone|iPad|iPod/i.test(ua);
+        var isAndroid = /Android/i.test(ua);
+        // Sticky CTA: highlight the relevant platform
+        var sticky = document.querySelector('.mobile-sticky-cta');
+        if (sticky) {
+            var iosBtn = sticky.querySelector('.btn-sticky-ios') || sticky.querySelector('.btn-secondary');
+            var androidBtn = sticky.querySelector('.btn-sticky-android') || sticky.querySelector('.btn-primary');
+            if (isIOS && iosBtn && androidBtn) {
+                iosBtn.style.background = 'linear-gradient(135deg, #6366f1, #8b5cf6)';
+                iosBtn.style.border = 'none';
+                iosBtn.style.fontWeight = '700';
+                androidBtn.style.background = 'rgba(255,255,255,0.1)';
+                androidBtn.style.border = '1px solid rgba(255,255,255,0.2)';
+                androidBtn.style.fontWeight = '400';
+            }
+        }
+        // Download badges: add subtle highlight
+        var badges = document.querySelectorAll('.store-badge');
+        if (badges.length === 2) {
+            if (isIOS) {
+                badges[0].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
+                badges[0].style.borderColor = 'rgba(99, 102, 241, 0.6)';
+            } else if (isAndroid) {
+                badges[1].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
+                badges[1].style.borderColor = 'rgba(99, 102, 241, 0.6)';
+            }
+        }
+    })();
+    </script>
 </body>
 </html>

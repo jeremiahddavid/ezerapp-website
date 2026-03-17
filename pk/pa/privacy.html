@@ -21,7 +21,26 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Gurmukhi:wght@400;500;600;700&display=swap');
         body { font-family: 'Noto Sans Gurmukhi', 'Inter', sans-serif; }
-    </style>
+    
+    /* Skip to content link */
+    .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #4f46e5;
+        color: white;
+        padding: 8px 16px;
+        z-index: 10000;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 0 0 8px 0;
+        transition: top 0.3s;
+    }
+    .skip-to-content:focus {
+        top: 0;
+    }
+</style>
 
     <link rel="stylesheet" href="../../css/theme.css">
     <style>
@@ -130,6 +149,7 @@
     </script>
 </head>
 <body class="bg-gray-50">
+<a href="#main-content" class="skip-to-content">Skip to content</a>
     <!-- Language Banner -->
     <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
         <span class="mr-2">🇵🇰</span>

@@ -29,13 +29,33 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
         body { font-family: 'Inter', sans-serif; }
         .gradient-hero { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%); }
-    </style>
+    
+    /* Skip to content link */
+    .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #4f46e5;
+        color: white;
+        padding: 8px 16px;
+        z-index: 10000;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 0 0 8px 0;
+        transition: top 0.3s;
+    }
+    .skip-to-content:focus {
+        top: 0;
+    }
+</style>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
     <meta name="apple-itunes-app" content="app-id=6738029702">
 </head>
 <body class="bg-gray-50">
+<a href="#main-content" class="skip-to-content">Skip to content</a>
     <!-- Hero -->
     <div class="gradient-hero text-white py-16">
         <div class="container mx-auto px-4 text-center">

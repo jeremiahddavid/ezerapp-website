@@ -423,7 +423,26 @@
             .lang-chip { padding: 5px 10px; font-size: 12px; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
         }
-    </style>
+    
+    /* Skip to content link */
+    .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #4f46e5;
+        color: white;
+        padding: 8px 16px;
+        z-index: 10000;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 0 0 8px 0;
+        transition: top 0.3s;
+    }
+    .skip-to-content:focus {
+        top: 0;
+    }
+</style>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
@@ -457,6 +476,7 @@
     </script>
 </head>
 <body>
+<a href="#main-content" class="skip-to-content">Skip to content</a>
     <!-- Language Banner -->
     <div class="lang-banner">
         🇮🇳 EZer ਪੰਜਾਬੀ ਵਿੱਚ ਦੇਖੋ
@@ -503,7 +523,7 @@
             </div>
             <div style="display: flex; align-items: center;">
                 <a href="#download" class="nav-cta">ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ - ₹0</a>
-                <div class="theme-toggle">
+                <div class="theme-toggle" aria-label="Toggle dark mode">
                     <button onclick="setTheme('light')" title="ਲਾਈਟ">☀️</button>
                     <button onclick="setTheme('dark')" title="ਡਾਰਕ">🌙</button>
                     <button onclick="setTheme('system')" title="ਸਿਸਟਮ">💻</button>
@@ -513,7 +533,7 @@
     </nav>
 
     <!-- Hero -->
-    <section class="hero">
+    <section id="main-content" class="hero">
         <div class="hero-orb purple"></div>
         <div class="hero-orb pink"></div>
         <div class="hero-content">
@@ -880,7 +900,7 @@
             </div>
             <div class="footer-bottom">
                 <p class="footer-copy">&copy; 2025 EZer. ਸਾਰੇ ਹੱਕ ਰਾਖਵੇਂ ਹਨ।</p>
-                <div class="theme-toggle">
+                <div class="theme-toggle" aria-label="Toggle dark mode">
                     <button onclick="setTheme('light')" title="ਲਾਈਟ">☀️</button>
                     <button onclick="setTheme('dark')" title="ਡਾਰਕ">🌙</button>
                     <button onclick="setTheme('system')" title="ਸਿਸਟਮ">💻</button>
@@ -951,6 +971,40 @@
             }, { threshold: 0.1 });
             observer.observe(downloadSection);
         }
+    </script>
+
+    <script>
+    // Smart platform detection - highlight relevant store
+    (function() {
+        var ua = navigator.userAgent || '';
+        var isIOS = /iPhone|iPad|iPod/i.test(ua);
+        var isAndroid = /Android/i.test(ua);
+        // Sticky CTA: highlight the relevant platform
+        var sticky = document.querySelector('.mobile-sticky-cta');
+        if (sticky) {
+            var iosBtn = sticky.querySelector('.btn-sticky-ios') || sticky.querySelector('.btn-secondary');
+            var androidBtn = sticky.querySelector('.btn-sticky-android') || sticky.querySelector('.btn-primary');
+            if (isIOS && iosBtn && androidBtn) {
+                iosBtn.style.background = 'linear-gradient(135deg, #6366f1, #8b5cf6)';
+                iosBtn.style.border = 'none';
+                iosBtn.style.fontWeight = '700';
+                androidBtn.style.background = 'rgba(255,255,255,0.1)';
+                androidBtn.style.border = '1px solid rgba(255,255,255,0.2)';
+                androidBtn.style.fontWeight = '400';
+            }
+        }
+        // Download badges: add subtle highlight
+        var badges = document.querySelectorAll('.store-badge');
+        if (badges.length === 2) {
+            if (isIOS) {
+                badges[0].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
+                badges[0].style.borderColor = 'rgba(99, 102, 241, 0.6)';
+            } else if (isAndroid) {
+                badges[1].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
+                badges[1].style.borderColor = 'rgba(99, 102, 241, 0.6)';
+            }
+        }
+    })();
     </script>
 </body>
 </html>

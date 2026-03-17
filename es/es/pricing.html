@@ -36,7 +36,26 @@
         .pricing-card:hover { transform: translateY(-4px); }
         .pricing-card.featured { border: 2px solid #9333ea; position: relative; }
         .pricing-card.featured::before { content: 'POPULAR'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(90deg, #9333ea 0%, #ec4899 100%); color: white; font-size: 11px; font-weight: 700; padding: 4px 16px; border-radius: 20px; }
-    </style>
+    
+    /* Skip to content link */
+    .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #4f46e5;
+        color: white;
+        padding: 8px 16px;
+        z-index: 10000;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 0 0 8px 0;
+        transition: top 0.3s;
+    }
+    .skip-to-content:focus {
+        top: 0;
+    }
+</style>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
@@ -144,10 +163,11 @@
     </script>
 </head>
 <body class="bg-gray-50">
+<a href="#main-content" class="skip-to-content">Ir al contenido</a>
     <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
         <span class="mr-2">🇪🇸</span>
         Precios para <strong>España</strong>
-        <a href="../pricing.html" class="text-indigo-600 hover:underline ml-2">View in English</a>
+        <a href="../pricing.html" class="text-indigo-600 hover:underline ml-2">Ver en inglés</a>
     </div>
 
     <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
@@ -181,7 +201,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="py-16 md:py-24">
+    <section id="main-content" class="py-16 md:py-24">
         <div class="container mx-auto px-4 text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-6">
                 Precios <span class="gradient-text">Sencillos y Transparentes</span>
@@ -475,7 +495,7 @@
                     <h4 class="font-semibold mb-4">Soporte</h4>
                     <div class="space-y-2 text-sm text-gray-500">
                         <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600">Contáctanos</a>
-                        <a href="../pricing.html" class="block hover:text-indigo-600">View in English</a>
+                        <a href="../pricing.html" class="block hover:text-indigo-600">Ver en inglés</a>
                     </div>
                 </div>
             </div>
@@ -511,5 +531,39 @@
             Android
         </a>
     </div>
+
+    <script>
+    // Smart platform detection - highlight relevant store
+    (function() {
+        var ua = navigator.userAgent || '';
+        var isIOS = /iPhone|iPad|iPod/i.test(ua);
+        var isAndroid = /Android/i.test(ua);
+        // Sticky CTA: highlight the relevant platform
+        var sticky = document.querySelector('.mobile-sticky-cta');
+        if (sticky) {
+            var iosBtn = sticky.querySelector('.btn-sticky-ios') || sticky.querySelector('.btn-secondary');
+            var androidBtn = sticky.querySelector('.btn-sticky-android') || sticky.querySelector('.btn-primary');
+            if (isIOS && iosBtn && androidBtn) {
+                iosBtn.style.background = 'linear-gradient(135deg, #6366f1, #8b5cf6)';
+                iosBtn.style.border = 'none';
+                iosBtn.style.fontWeight = '700';
+                androidBtn.style.background = 'rgba(255,255,255,0.1)';
+                androidBtn.style.border = '1px solid rgba(255,255,255,0.2)';
+                androidBtn.style.fontWeight = '400';
+            }
+        }
+        // Download badges: add subtle highlight
+        var badges = document.querySelectorAll('.store-badge');
+        if (badges.length === 2) {
+            if (isIOS) {
+                badges[0].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
+                badges[0].style.borderColor = 'rgba(99, 102, 241, 0.6)';
+            } else if (isAndroid) {
+                badges[1].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
+                badges[1].style.borderColor = 'rgba(99, 102, 241, 0.6)';
+            }
+        }
+    })();
+    </script>
 </body>
 </html>

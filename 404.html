@@ -30,10 +30,30 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-    </style>
+    
+    /* Skip to content link */
+    .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #4f46e5;
+        color: white;
+        padding: 8px 16px;
+        z-index: 10000;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 0 0 8px 0;
+        transition: top 0.3s;
+    }
+    .skip-to-content:focus {
+        top: 0;
+    }
+</style>
     <meta name="apple-itunes-app" content="app-id=6738029702">
 </head>
 <body class="bg-gray-50 min-h-screen flex flex-col">
+<a href="#main-content" class="skip-to-content">Skip to content</a>
     <!-- Header -->
     <header class="gradient-hero text-white py-4">
         <div class="container mx-auto px-4">
@@ -45,7 +65,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="flex-grow flex items-center justify-center px-4 py-16">
+    <main id="main-content" class="flex-grow flex items-center justify-center px-4 py-16">
         <div class="text-center max-w-lg">
             <!-- 404 Illustration -->
             <div class="mb-8">
