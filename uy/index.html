@@ -87,7 +87,7 @@
         "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.8",
-                "ratingCount": "1247",
+                "ratingCount": "3000",
                 "bestRating": "5",
                 "worstRating": "1"
         },
@@ -962,6 +962,88 @@
     .skip-to-content:focus {
         top: 0;
     }
+
+    /* How It Works */
+    .how-it-works-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .how-step {
+        text-align: center;
+        padding: 32px 20px;
+    }
+    .how-step-number {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: var(--gradient-hero);
+        color: white;
+        font-weight: 800;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 16px;
+    }
+    .how-step h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: var(--text-primary);
+    }
+    .how-step p {
+        font-size: 14px;
+        color: var(--text-secondary);
+        line-height: 1.6;
+    }
+    .how-step .material-icons-outlined {
+        font-size: 40px;
+        color: #a5b4fc;
+        margin-bottom: 12px;
+    }
+    @media (max-width: 640px) {
+        .how-it-works-grid { grid-template-columns: 1fr; gap: 16px; }
+    }
+
+    /* FAQ Section */
+    .faq-grid {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .faq-item {
+        border-bottom: 1px solid var(--border);
+        padding: 24px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--text-primary);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+    }
+    .faq-question .material-icons-outlined {
+        font-size: 20px;
+        color: var(--text-secondary);
+        transition: transform 0.3s;
+    }
+    .faq-item.active .faq-question .material-icons-outlined {
+        transform: rotate(180deg);
+    }
+    .faq-answer {
+        font-size: 15px;
+        color: var(--text-secondary);
+        line-height: 1.7;
+        margin-top: 12px;
+        display: none;
+    }
+    .faq-item.active .faq-answer { display: block; }
 </style>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
@@ -1378,6 +1460,38 @@
         </div>
     </section>
 
+
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">How It Works</span>
+                <h2 class="section-title">Get started in 30 seconds</h2>
+                <p class="section-subtitle">No sign-up. No credit card. No setup.</p>
+            </div>
+            <div class="how-it-works-grid">
+                <div class="how-step">
+                    <span class="material-icons-outlined">download</span>
+                    <div class="how-step-number">1</div>
+                    <h3>Download Free</h3>
+                    <p>Install EZer from the App Store or Google Play. It's free and takes under 10 seconds.</p>
+                </div>
+                <div class="how-step">
+                    <span class="material-icons-outlined">add_circle</span>
+                    <div class="how-step-number">2</div>
+                    <h3>Add Your First Expense</h3>
+                    <p>Tap the + button, enter the amount, pick a category. Done in 3 taps.</p>
+                </div>
+                <div class="how-step">
+                    <span class="material-icons-outlined">insights</span>
+                    <div class="how-step-number">3</div>
+                    <h3>See Where Your Money Goes</h3>
+                    <p>Instantly see spending breakdowns, track budgets, and watch your savings grow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Pricing -->
     <section class="section section-alt" id="pricing">
         <div class="container">
@@ -1404,6 +1518,70 @@
                     <div class="pricing-note">Less than a coffee</div>
                 </div>
             </div>
+        
+            <div style="text-align:center;margin-top:32px;padding:20px;border-radius:12px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);">
+                <p style="color:var(--text-secondary);font-size:14px;margin:0;">
+                    <span class="material-icons-outlined" style="font-size:16px;vertical-align:middle;margin-right:4px;">compare_arrows</span>
+                    <strong style="color:var(--text-primary);">Why EZer?</strong>
+                    YNAB charges $14.99/mo. Mint shut down. PocketGuard costs $12.99/mo.
+                    <strong style="color:#a5b4fc;">EZer is free forever</strong> — and your data never leaves your device.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">FAQ</span>
+                <h2 class="section-title">Common questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item active">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Is EZer really free?</span>
+                        <span class="material-icons-outlined">expand_more</span>
+                    </div>
+                    <div class="faq-answer">Yes. The free plan includes expense tracking, 3 budgets, 2 savings goals, analytics, and bill reminders. No trial period, no hidden fees. The optional Plus plan ($4.99/mo) unlocks unlimited budgets, goals, and advanced features.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Do I need to create an account?</span>
+                        <span class="material-icons-outlined">expand_more</span>
+                    </div>
+                    <div class="faq-answer">No. EZer works without any account, email, or login. Just download and start tracking. Your data is stored locally on your device — we never see it.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Is my financial data safe?</span>
+                        <span class="material-icons-outlined">expand_more</span>
+                    </div>
+                    <div class="faq-answer">Absolutely. All data is encrypted with AES-256 (bank-grade encryption) and stored only on your device. Nothing is uploaded to any server. You can also enable biometric lock (Face ID / fingerprint) for extra security.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>Does it work offline?</span>
+                        <span class="material-icons-outlined">expand_more</span>
+                    </div>
+                    <div class="faq-answer">Yes, 100%. EZer works completely offline. No internet connection is ever required. This also means your data stays on your device and is never at risk from server breaches.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>How is EZer different from YNAB or Mint?</span>
+                        <span class="material-icons-outlined">expand_more</span>
+                    </div>
+                    <div class="faq-answer">YNAB costs $14.99/month and requires an account. Mint shut down in 2024. EZer is free forever, works offline, requires no login, and your data never leaves your device. It's the most private expense tracker available.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                        <span>What happens if I switch phones?</span>
+                        <span class="material-icons-outlined">expand_more</span>
+                    </div>
+                    <div class="faq-answer">You can export all your data from EZer and import it on your new device. We're also working on optional encrypted cloud backup so you can seamlessly transfer your data.</div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1412,7 +1590,7 @@
         <div class="container">
             <div class="download-inner">
                 <h2>Start Tracking Today</h2>
-                <p>Download EZer app free on iOS or Android. No sign-up required. Your data stays on your device.</p>
+                <p>Join 3,000+ people across 73 countries managing their money privately. Download free — get started in 30 seconds.</p>
                                 <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;flex-wrap:wrap;">
                     <div style="display:flex;gap:2px;">
                         <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
@@ -1422,7 +1600,7 @@
                         <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
                     </div>
                     <span style="color:rgba(255,255,255,0.9);font-weight:700;font-size:16px;">4.8</span>
-                    <span style="color:rgba(255,255,255,0.6);font-size:14px;">from 1,200+ users</span>
+                    <span style="color:rgba(255,255,255,0.6);font-size:14px;">from 3,000+ users</span>
                 </div>
 <div class="download-badges">
                     <a href="https://apps.apple.com/UY/app/ezer-budget-expense-tracker/id6738029702" class="store-badge" target="_blank" rel="noopener">

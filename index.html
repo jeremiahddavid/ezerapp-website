@@ -206,6 +206,88 @@
     .skip-to-content:focus {
         top: 0;
     }
+
+    /* How It Works */
+    .how-it-works-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .how-step {
+        text-align: center;
+        padding: 32px 20px;
+    }
+    .how-step-number {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: var(--gradient-hero);
+        color: white;
+        font-weight: 800;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 16px;
+    }
+    .how-step h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: var(--text-primary);
+    }
+    .how-step p {
+        font-size: 14px;
+        color: var(--text-secondary);
+        line-height: 1.6;
+    }
+    .how-step .material-icons-outlined {
+        font-size: 40px;
+        color: #a5b4fc;
+        margin-bottom: 12px;
+    }
+    @media (max-width: 640px) {
+        .how-it-works-grid { grid-template-columns: 1fr; gap: 16px; }
+    }
+
+    /* FAQ Section */
+    .faq-grid {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .faq-item {
+        border-bottom: 1px solid var(--border);
+        padding: 24px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-question {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--text-primary);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+    }
+    .faq-question .material-icons-outlined {
+        font-size: 20px;
+        color: var(--text-secondary);
+        transition: transform 0.3s;
+    }
+    .faq-item.active .faq-question .material-icons-outlined {
+        transform: rotate(180deg);
+    }
+    .faq-answer {
+        font-size: 15px;
+        color: var(--text-secondary);
+        line-height: 1.7;
+        margin-top: 12px;
+        display: none;
+    }
+    .faq-item.active .faq-answer { display: block; }
 </style>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
