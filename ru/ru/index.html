@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="ru" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary SEO Meta Tags -->
-    <title>EZer - Best Expense Tracker App Russia | Budget & Savings</title>
-    <meta name="description" content="Track every ₽ with Russia's most private expense tracker. Works offline, no login required. Available in 2 languages. Free to use.">
+    <title>EZer - Лучшее приложение для учёта расходов в России | Бюджет и Накопления</title>
+    <meta name="description" content="Отслеживайте каждый рубль с самым приватным трекером расходов в России. Работает офлайн, без регистрации. Доступно на 2 языках. Бесплатно.">
     <meta name="keywords" content="expense tracker, budget app, учет расходов, приложение бюджет, личные финансы, Russia, RUB, ruble, offline expense tracker">
     <meta name="author" content="EZer">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.ezerapp.com/ru/">
+    <link rel="canonical" href="https://www.ezerapp.com/ru/ru/">
 
     <!-- Language Alternates -->
     <link rel="alternate" hreflang="ru-RU" href="https://www.ezerapp.com/ru/ru/">
@@ -21,20 +21,20 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.ezerapp.com/ru/">
-    <meta property="og:title" content="EZer - Track Every ₽ Privately in Russia">
-    <meta property="og:description" content="The expense tracker that never uploads your data. Works offline. Available in 2 languages.">
+    <meta property="og:url" content="https://www.ezerapp.com/ru/ru/">
+    <meta property="og:title" content="EZer - Приватно отслеживайте каждый рубль в России">
+    <meta property="og:description" content="Трекер расходов, который никогда не загружает ваши данные. Работает офлайн. Доступен на 2 языках.">
     <meta property="og:image" content="https://www.ezerapp.com/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="en_RU">
+    <meta property="og:locale" content="ru_RU">
     <meta property="og:site_name" content="EZer">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.ezerapp.com/ru/">
-    <meta name="twitter:title" content="EZer - Track Every ₽ Privately in Russia">
-    <meta name="twitter:description" content="The expense tracker that never uploads your data. Works offline. Available in 2 languages.">
+    <meta name="twitter:url" content="https://www.ezerapp.com/ru/ru/">
+    <meta name="twitter:title" content="EZer - Приватно отслеживайте каждый рубль в России">
+    <meta name="twitter:description" content="Трекер расходов, который никогда не загружает ваши данные. Работает офлайн. Доступен на 2 языках.">
     <meta name="twitter:image" content="https://www.ezerapp.com/og-image.png">
 
     <!-- App Links -->
@@ -85,7 +85,7 @@
         ],
         "countryOfOrigin": "RU",
         "screenshot": [
-                "https://www.ezerapp.com/assets/screenshots/en-US/1_en-US.png",{chr(10)}                "https://www.ezerapp.com/assets/screenshots/en-US/2_en-US.png",{chr(10)}                "https://www.ezerapp.com/assets/screenshots/en-US/3_en-US.png",{chr(10)}                "https://www.ezerapp.com/assets/screenshots/en-US/4_en-US.png",{chr(10)}                "https://www.ezerapp.com/assets/screenshots/en-US/5_en-US.png",{chr(10)}                "https://www.ezerapp.com/assets/screenshots/en-US/6_en-US.png",{chr(10)}                "https://www.ezerapp.com/assets/screenshots/en-US/7_en-US.png",{chr(10)}                "https://www.ezerapp.com/assets/screenshots/en-US/8_en-US.png"
+                "https://www.ezerapp.com/assets/screenshots/ru-RU/1_ru-RU.png",{chr(10)}                "https://www.ezerapp.com/assets/screenshots/ru-RU/2_ru-RU.png",{chr(10)}                "https://www.ezerapp.com/assets/screenshots/ru-RU/3_ru-RU.png",{chr(10)}                "https://www.ezerapp.com/assets/screenshots/ru-RU/4_ru-RU.png",{chr(10)}                "https://www.ezerapp.com/assets/screenshots/ru-RU/5_ru-RU.png",{chr(10)}                "https://www.ezerapp.com/assets/screenshots/ru-RU/6_ru-RU.png",{chr(10)}                "https://www.ezerapp.com/assets/screenshots/ru-RU/7_ru-RU.png",{chr(10)}                "https://www.ezerapp.com/assets/screenshots/ru-RU/8_ru-RU.png"
         ],
         "featureList": [
                 "Expense tracking",
@@ -912,93 +912,7 @@
         top: 0;
     }
 
-        .lang-popup-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(4px);
-            z-index: 10000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-        .lang-popup-overlay.show {
-            opacity: 1;
-            visibility: visible;
-        }
-        .lang-popup {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 32px;
-            max-width: 400px;
-            width: 90%;
-            text-align: center;
-            transform: scale(0.9);
-            transition: transform 0.3s ease;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-        }
-        .lang-popup-overlay.show .lang-popup {
-            transform: scale(1);
-        }
-        .lang-popup-icon {
-            font-size: 48px;
-            margin-bottom: 16px;
-        }
-        .lang-popup-title {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-        .lang-popup-native {
-            font-size: 20px;
-            color: #a5b4fc;
-            margin-bottom: 16px;
-        }
-        .lang-popup-desc {
-            color: var(--text-secondary);
-            font-size: 14px;
-            margin-bottom: 24px;
-            line-height: 1.6;
-        }
-        .lang-popup-buttons {
-            display: flex;
-            gap: 12px;
-            flex-direction: column;
-        }
-        .lang-popup-btn {
-            padding: 14px 24px;
-            border-radius: 12px;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            border: none;
-            transition: all 0.2s ease;
-        }
-        .lang-popup-btn.primary {
-            background: var(--gradient-cta);
-            color: white;
-        }
-        .lang-popup-btn.primary:hover {
-            transform: scale(1.02);
-        }
-        .lang-popup-btn.secondary {
-            background: var(--bg-elevated);
-            color: var(--text-secondary);
-            border: 1px solid var(--border);
-        }
-        .lang-popup-btn.secondary:hover {
-            background: rgba(79, 70, 229, 0.1);
-            color: var(--text-primary);
-        }
-
-    /* How It Works */
+    /* Как это работает */
     .how-it-works-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1125,6 +1039,12 @@
                         "position": 2,
                         "name": "Russia",
                         "item": "https://www.ezerapp.com/ru/"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Russian",
+                        "item": "https://www.ezerapp.com/ru/ru/"
                 }
         ]
 }
@@ -1141,7 +1061,7 @@
                         "@type": "ImageObject",
                         "name": "EZer App - Budgets",
                         "description": "Track monthly budgets by category with progress bars",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/en-US/1_en-US.png",
+                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/ru-RU/1_ru-RU.png",
                         "width": 1344,
                         "height": 2992,
                         "encodingFormat": "image/png"
@@ -1150,7 +1070,7 @@
                         "@type": "ImageObject",
                         "name": "EZer App - Analytics",
                         "description": "Visual spending breakdown with income vs expenses charts",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/en-US/2_en-US.png",
+                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/ru-RU/2_ru-RU.png",
                         "width": 1344,
                         "height": 2992,
                         "encodingFormat": "image/png"
@@ -1159,7 +1079,7 @@
                         "@type": "ImageObject",
                         "name": "EZer App - Transactions",
                         "description": "Full transaction history with search and filters",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/en-US/3_en-US.png",
+                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/ru-RU/3_ru-RU.png",
                         "width": 1344,
                         "height": 2992,
                         "encodingFormat": "image/png"
@@ -1168,7 +1088,7 @@
                         "@type": "ImageObject",
                         "name": "EZer App - Quick Add",
                         "description": "Add expenses in 3 taps with smart categories",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/en-US/4_en-US.png",
+                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/ru-RU/4_ru-RU.png",
                         "width": 1344,
                         "height": 2992,
                         "encodingFormat": "image/png"
@@ -1177,7 +1097,7 @@
                         "@type": "ImageObject",
                         "name": "EZer App - Goals",
                         "description": "Set savings goals and track your progress",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/en-US/5_en-US.png",
+                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/ru-RU/5_ru-RU.png",
                         "width": 1344,
                         "height": 2992,
                         "encodingFormat": "image/png"
@@ -1186,7 +1106,7 @@
                         "@type": "ImageObject",
                         "name": "EZer App - Bills",
                         "description": "Never miss a bill payment with reminders",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/en-US/6_en-US.png",
+                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/ru-RU/6_ru-RU.png",
                         "width": 1344,
                         "height": 2992,
                         "encodingFormat": "image/png"
@@ -1195,7 +1115,7 @@
                         "@type": "ImageObject",
                         "name": "EZer App - Budget Health",
                         "description": "Monitor budget performance and health scores",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/en-US/7_en-US.png",
+                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/ru-RU/7_ru-RU.png",
                         "width": 1344,
                         "height": 2992,
                         "encodingFormat": "image/png"
@@ -1204,7 +1124,7 @@
                         "@type": "ImageObject",
                         "name": "EZer App - Privacy",
                         "description": "Full control over your data permissions",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/en-US/8_en-US.png",
+                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/ru-RU/8_ru-RU.png",
                         "width": 1344,
                         "height": 2992,
                         "encodingFormat": "image/png"
@@ -1214,56 +1134,42 @@
     </script>
 </head>
 <body>
-<a href="#main-content" class="skip-to-content">Skip to content</a>
-    <!-- Language Detection Popup -->
-    <div class="lang-popup-overlay" id="langPopup">
-        <div class="lang-popup">
-            <div class="lang-popup-icon">🌐</div>
-            <div class="lang-popup-title" id="popupTitle">Просмотреть на русском?</div>
-            <div class="lang-popup-native" id="popupNative">View in Russian?</div>
-            <div class="lang-popup-desc" id="popupDesc">
-                EZer is available in Russian. Switch now for a better experience.
-            </div>
-            <div class="lang-popup-buttons">
-                <button class="lang-popup-btn primary" id="popupSwitch">Перейти на русский</button>
-                <button class="lang-popup-btn secondary" id="popupDismiss">Continue in English</button>
-            </div>
-        </div>
-    </div>
-
+<a href="#main-content" class="skip-to-content">Перейти к содержимому</a>
     <!-- Header -->
         <!-- LOCKED: Navigation - DO NOT MODIFY (see .claude/CLAUDE.md) -->
     <!-- Unified Navigation -->
     <div class="unified-banner">
         <span>🇷🇺</span>
-        You're viewing EZer for <strong>Russia</strong>
-        <a href="../">Change country</a>
+        <strong>Россия</strong> — версия EZer
+        <a href="../../">Сменить страну</a>
+        &nbsp;|&nbsp;
+        <a href="../">View in English</a>
     </div>
     <nav class="unified-nav">
         <div class="unified-nav-inner">
             <a href="./" class="unified-logo">
-                <img src="../logo.png" alt="EZer" class="unified-logo-img">
+                <img src="../../logo.png" alt="EZer" class="unified-logo-img">
                 <span class="unified-logo-text">EZer app</span>
             </a>
             <div class="unified-links">
-                <a href="./" class="unified-link active">Home</a>
-                <a href="features.html" class="unified-link">Features</a>
-                <a href="pricing.html" class="unified-link">Pricing</a>
-                <a href="privacy.html" class="unified-link">Privacy</a>
-                <a href="terms.html" class="unified-link">Terms</a>
-                <a href="#download" class="unified-cta">Download Free</a>
+                <a href="./" class="unified-link active">Главная</a>
+                <a href="features.html" class="unified-link">Возможности</a>
+                <a href="pricing.html" class="unified-link">Цены</a>
+                <a href="privacy.html" class="unified-link">Конфиденциальность</a>
+                <a href="terms.html" class="unified-link">Условия</a>
+                <a href="#download" class="unified-cta">Скачать бесплатно</a>
             </div>
-            <button class="unified-mobile-btn" aria-label="Open menu" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
+            <button class="unified-mobile-btn" aria-label="Открыть меню" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
                 <span class="material-icons-outlined">menu</span>
             </button>
         </div>
         <div class="unified-mobile-menu">
-            <a href="./" class="unified-mobile-link active">Home</a>
-            <a href="features.html" class="unified-mobile-link">Features</a>
-            <a href="pricing.html" class="unified-mobile-link">Pricing</a>
-            <a href="privacy.html" class="unified-mobile-link">Privacy</a>
-            <a href="terms.html" class="unified-mobile-link">Terms</a>
-            <a href="#download" class="unified-mobile-cta">Download Free</a>
+            <a href="./" class="unified-mobile-link active">Главная</a>
+            <a href="features.html" class="unified-mobile-link">Возможности</a>
+            <a href="pricing.html" class="unified-mobile-link">Цены</a>
+            <a href="privacy.html" class="unified-mobile-link">Конфиденциальность</a>
+            <a href="terms.html" class="unified-mobile-link">Условия</a>
+            <a href="#download" class="unified-mobile-cta">Скачать бесплатно</a>
         </div>
     </nav>
 
@@ -1280,12 +1186,12 @@
                         100% конфиденциально. Работает офлайн.
                     </div>
                     <h1 class="hero-title"><span class='gradient'>Отслеживайте каждый рубль.</span></h1>
-                    <p class="hero-native">Track Every ₽. Save for What Matters.</p>
-                    <p class="hero-subtitle">The private expense tracker that works offline. No login. No cloud. Just you and your finances.</p>
+                    <p class="hero-native">Копите на то, что важно.</p>
+                    <p class="hero-subtitle">Приватный трекер расходов, который работает офлайн. Без регистрации. Без облака. Только вы и ваши финансы.</p>
                     <div class="hero-buttons">
                         <a href="#download" class="btn btn-primary">
                             <span class="material-icons-outlined">download</span>
-                            Скачать бесплатно - ₽0
+                            Скачать бесплатно — ₽0
                         </a>
                         <a href="#features" class="btn btn-secondary">Узнать больше</a>
                     </div>
@@ -1297,23 +1203,23 @@
                 <div class="hero-content">
                     <div class="hero-eyebrow">
                         <span class="material-icons-outlined">verified_user</span>
-                        100% Private. Works Offline. No Login Required.
+                        100% конфиденциально. Офлайн. Без регистрации.
                     </div>
-                    <h2 class="hero-title">Track Every ₽.</span><br><span class='gradient'>Save for What Matters.</h2>
+                    <h2 class="hero-title"><span class='gradient'>Копите на то, что важно.</span></h2>
                     
-                    <p class="hero-subtitle">The private expense tracker that works offline. No login. No cloud. Just you and your finances.</p>
+                    <p class="hero-subtitle">Приватный трекер расходов, который работает офлайн. Без регистрации. Без облака. Только вы и ваши финансы.</p>
                     <div class="hero-buttons">
                         <a href="#download" class="btn btn-primary">
                             <span class="material-icons-outlined">download</span>
-                            Download Free - ₽0
+                            Скачать бесплатно — ₽0
                         </a>
-                        <a href="#features" class="btn btn-secondary">See How It Works</a>
+                        <a href="#features" class="btn btn-secondary">Как это работает</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="slider-controls">
-            <div class="slider-lang">Swipe or click to see in your language</div>
+            <div class="slider-lang">Листайте для переключения языка</div>
             <div class="slider-dots">
                 <button class="slider-dot active" data-index="0" title="Русский"></button>
                 <button class="slider-dot " data-index="1" title="English"></button>
@@ -1325,10 +1231,10 @@
     <!-- Languages Bar -->
     <section class="languages-section">
         <div class="languages-inner">
-            <div class="languages-label">Available in 2 Languages</div>
+            <div class="languages-label">Доступно на 2 языках</div>
             <div class="languages-chips">
-                <a href="ru/" class="lang-chip">Русский</a>
-                <span class="lang-chip active">English</span>
+                <span class="lang-chip active">Русский</span>
+                <a href="../" class="lang-chip">English</a>
                 
             </div>
         </div>
@@ -1340,27 +1246,27 @@
             <div class="social-proof-inner">
                 <div class="proof-item">
                     <span class="material-icons-outlined">language</span>
-                    <span><span class="proof-value">29</span> Languages</span>
+                    <span><span class="proof-value">29</span> языков</span>
                 </div>
                 <div class="proof-item">
                     <span class="material-icons-outlined">public</span>
-                    <span><span class="proof-value">76</span> Countries</span>
+                    <span><span class="proof-value">76</span> стран</span>
                 </div>
                 <div class="proof-item">
                     <span class="material-icons-outlined">cloud_off</span>
-                    <span><span class="proof-value">100%</span> Offline</span>
+                    <span><span class="proof-value">100%</span> офлайн</span>
                 </div>
                 <div class="proof-item">
                     <span class="material-icons-outlined">enhanced_encryption</span>
-                    <span><span class="proof-value">AES-256</span> Encryption</span>
+                    <span><span class="proof-value">AES-256</span> шифрование</span>
                 </div>
                 <div class="proof-item">
                     <span class="material-icons-outlined">person_off</span>
-                    <span><span class="proof-value">No</span> Account Required</span>
+                    <span>Аккаунт <span class="proof-value">не нужен</span></span>
                 </div>
                 <div class="proof-item">
                     <span class="material-icons-outlined">block</span>
-                    <span><span class="proof-value">No</span> Ads Ever</span>
+                    <span><span class="proof-value">Без</span> рекламы</span>
                 </div>
             </div>
         </div>
@@ -1371,48 +1277,48 @@
     <section class="screenshots-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">See It In Action</span>
-                <h2 class="section-title">Beautiful. Private. Powerful.</h2>
-                <p class="section-subtitle">Dark & light modes, intuitive design, everything you need at your fingertips</p>
+                <span class="section-eyebrow">Посмотрите в действии</span>
+                <h2 class="section-title">Красиво. Приватно. Мощно.</h2>
+                <p class="section-subtitle">Тёмная и светлая тема, интуитивный дизайн, всё необходимое под рукой</p>
             </div>
         </div>
         <div class="screenshot-carousel">
             <div class="screenshot-card">
-                <img src="../assets/screenshots/en-US/1_en-US.png" alt="EZer Budgets - Set and track category budgets" width="1344" height="2992" title="Budgets - Track monthly budgets by category with progress bars" loading="lazy">
+                <img src="../../assets/screenshots/ru-RU/1_ru-RU.png" alt="EZer Budgets - Set and track category budgets" width="1344" height="2992" title="Budgets - Track monthly budgets by category with progress bars" loading="lazy">
                 <div class="screenshot-label">Budgets</div>
             </div>
             <div class="screenshot-card">
-                <img src="../assets/screenshots/en-US/2_en-US.png" alt="EZer Analytics - Income, expenses and spending breakdown" width="1344" height="2992" title="Analytics - Visual spending breakdown with income vs expenses charts" loading="lazy">
+                <img src="../../assets/screenshots/ru-RU/2_ru-RU.png" alt="EZer Analytics - Income, expenses and spending breakdown" width="1344" height="2992" title="Analytics - Visual spending breakdown with income vs expenses charts" loading="lazy">
                 <div class="screenshot-label">Analytics</div>
             </div>
             <div class="screenshot-card">
-                <img src="../assets/screenshots/en-US/3_en-US.png" alt="EZer Transactions - Full spending history" width="1344" height="2992" title="Transactions - Full transaction history with search and filters" loading="lazy">
+                <img src="../../assets/screenshots/ru-RU/3_ru-RU.png" alt="EZer Transactions - Full spending history" width="1344" height="2992" title="Transactions - Full transaction history with search and filters" loading="lazy">
                 <div class="screenshot-label">Transactions</div>
             </div>
             <div class="screenshot-card">
-                <img src="../assets/screenshots/en-US/4_en-US.png" alt="EZer Quick Add - Add expenses in 3 taps" width="1344" height="2992" title="Quick Add - Add expenses in 3 taps with smart categories" loading="lazy">
+                <img src="../../assets/screenshots/ru-RU/4_ru-RU.png" alt="EZer Quick Add - Add expenses in 3 taps" width="1344" height="2992" title="Quick Add - Add expenses in 3 taps with smart categories" loading="lazy">
                 <div class="screenshot-label">Quick Add</div>
             </div>
             <div class="screenshot-card">
-                <img src="../assets/screenshots/en-US/5_en-US.png" alt="EZer Goals - Save for what matters" width="1344" height="2992" title="Goals - Set savings goals and track your progress" loading="lazy">
+                <img src="../../assets/screenshots/ru-RU/5_ru-RU.png" alt="EZer Goals - Save for what matters" width="1344" height="2992" title="Goals - Set savings goals and track your progress" loading="lazy">
                 <div class="screenshot-label">Goals</div>
             </div>
             <div class="screenshot-card">
-                <img src="../assets/screenshots/en-US/6_en-US.png" alt="EZer Bills - Never miss a payment" width="1344" height="2992" title="Bills - Never miss a bill payment with reminders" loading="lazy">
+                <img src="../../assets/screenshots/ru-RU/6_ru-RU.png" alt="EZer Bills - Never miss a payment" width="1344" height="2992" title="Bills - Never miss a bill payment with reminders" loading="lazy">
                 <div class="screenshot-label">Bills</div>
             </div>
             <div class="screenshot-card">
-                <img src="../assets/screenshots/en-US/7_en-US.png" alt="EZer Budget Health - Track budget performance" width="1344" height="2992" title="Budget Health - Monitor budget performance and health scores" loading="lazy">
+                <img src="../../assets/screenshots/ru-RU/7_ru-RU.png" alt="EZer Budget Health - Track budget performance" width="1344" height="2992" title="Budget Health - Monitor budget performance and health scores" loading="lazy">
                 <div class="screenshot-label">Budget Health</div>
             </div>
             <div class="screenshot-card">
-                <img src="../assets/screenshots/en-US/8_en-US.png" alt="EZer Privacy Dashboard - Your data, your control" width="1344" height="2992" title="Privacy - Full control over your data permissions" loading="lazy">
+                <img src="../../assets/screenshots/ru-RU/8_ru-RU.png" alt="EZer Privacy Dashboard - Your data, your control" width="1344" height="2992" title="Privacy - Full control over your data permissions" loading="lazy">
                 <div class="screenshot-label">Privacy</div>
             </div>
         </div>
         <div class="screenshot-scroll-hint">
             <span class="material-icons-outlined" style="font-size:16px;vertical-align:middle;">swipe</span>
-            Swipe to explore all screens
+            Листайте для просмотра всех экранов
         </div>
     </section>
 
@@ -1420,50 +1326,50 @@
     <section class="section" id="features">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">Expense Tracking</span>
-                <h2 class="section-title">Track what people in Russia actually spend on</h2>
-                <p class="section-subtitle">Pre-built categories for everyday Russia expenses</p>
+                <span class="section-eyebrow">Учёт расходов</span>
+                <h2 class="section-title">Отслеживайте то, на что тратят люди в России</h2>
+                <p class="section-subtitle">Готовые категории для повседневных расходов в России</p>
             </div>
             <div class="card-grid">
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">restaurant</span></div>
-                    <h3>Lunch at university</h3>
-                    <p>Track restaurants expenses</p>
+                    <h3>Обед в университете</h3>
+                    <p>Отслеживайте расходы на рестораны</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">directions_car</span></div>
-                    <h3>Metro card top-up</h3>
-                    <p>Track travel expenses</p>
+                    <h3>Пополнение карты метро</h3>
+                    <p>Отслеживайте транспортные расходы</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">school</span></div>
-                    <h3>Textbooks at Ozon</h3>
-                    <p>Track education expenses</p>
+                    <h3>Учебники на Ozon</h3>
+                    <p>Отслеживайте расходы на образование</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">movie</span></div>
-                    <h3>Cinema at Karo</h3>
-                    <p>Track entertainment expenses</p>
+                    <h3>Кино в Каро</h3>
+                    <p>Отслеживайте расходы на развлечения</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">phone_android</span></div>
-                    <h3>MTS recharge</h3>
-                    <p>Track phone expenses</p>
+                    <h3>Пополнение МТС</h3>
+                    <p>Отслеживайте расходы на связь</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">home</span></div>
-                    <h3>Apartment rent</h3>
-                    <p>Track rent/mortgage expenses</p>
+                    <h3>Аренда квартиры</h3>
+                    <p>Отслеживайте расходы на жильё</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">delivery_dining</span></div>
-                    <h3>Yandex Eda order</h3>
-                    <p>Track food delivery expenses</p>
+                    <h3>Заказ Яндекс Еды</h3>
+                    <p>Отслеживайте расходы на доставку еды</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><span class="material-icons-outlined">checkroom</span></div>
-                    <h3>Lamoda shopping</h3>
-                    <p>Track clothing expenses</p>
+                    <h3>Покупки на Lamoda</h3>
+                    <p>Отслеживайте расходы на одежду</p>
                 </div>
             </div>
         </div>
@@ -1473,57 +1379,57 @@
     <section class="section section-alt">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">Savings Goals</span>
-                <h2 class="section-title">Save for goals that matter to you</h2>
-                <p class="section-subtitle">People in Russia are saving for these with EZer app</p>
+                <span class="section-eyebrow">Цели накоплений</span>
+                <h2 class="section-title">Копите на цели, которые важны для вас</h2>
+                <p class="section-subtitle">Люди в России копят на это с приложением EZer</p>
             </div>
             <div class="card-grid">
                 <div class="card goal-card">
                     <div class="goal-emoji">🛒</div>
                     <div>
-                        <h3>New Laptop</h3>
+                        <h3>Новый ноутбук</h3>
                         <span class="goal-amount">₽60,000</span>
-                        <p class="goal-desc">Save ₽24,000 for your goal</p>
+                        <p class="goal-desc">Накоплено ₽24 000 к цели</p>
                     </div>
                 </div>
                 <div class="card goal-card">
                     <div class="goal-emoji">🛡️</div>
                     <div>
-                        <h3>Emergency Fund</h3>
+                        <h3>Резервный фонд</h3>
                         <span class="goal-amount">₽300,000</span>
-                        <p class="goal-desc">Save ₽72,000 for your goal</p>
+                        <p class="goal-desc">Накоплено ₽72 000 к цели</p>
                     </div>
                 </div>
                 <div class="card goal-card">
                     <div class="goal-emoji">🏖️</div>
                     <div>
-                        <h3>Sochi Vacation</h3>
+                        <h3>Отпуск в Сочи</h3>
                         <span class="goal-amount">₽250,000</span>
-                        <p class="goal-desc">Save ₽180,000 for your goal</p>
+                        <p class="goal-desc">Накоплено ₽180 000 к цели</p>
                     </div>
                 </div>
                 <div class="card goal-card">
                     <div class="goal-emoji">🎓</div>
                     <div>
-                        <h3>Kids Education Fund</h3>
+                        <h3>Фонд образования детей</h3>
                         <span class="goal-amount">₽1,500,000</span>
-                        <p class="goal-desc">Save ₽720,000 for your goal</p>
+                        <p class="goal-desc">Накоплено ₽720 000 к цели</p>
                     </div>
                 </div>
                 <div class="card goal-card">
                     <div class="goal-emoji">🏖️</div>
                     <div>
-                        <h3>Family Vacation</h3>
+                        <h3>Семейный отпуск</h3>
                         <span class="goal-amount">₽350,000</span>
-                        <p class="goal-desc">Save ₽288,000 for your goal</p>
+                        <p class="goal-desc">Накоплено ₽288 000 к цели</p>
                     </div>
                 </div>
                 <div class="card goal-card">
                     <div class="goal-emoji">🛡️</div>
                     <div>
-                        <h3>Business Emergency Fund</h3>
+                        <h3>Резервный фонд бизнеса</h3>
                         <span class="goal-amount">₽500,000</span>
-                        <p class="goal-desc">Save ₽396,000 for your goal</p>
+                        <p class="goal-desc">Накоплено ₽396 000 к цели</p>
                     </div>
                 </div>
             </div>
@@ -1534,33 +1440,33 @@
     <section class="section">
         <div class="container">
             <div class="payments-box">
-                <h2 style="font-size: 28px; font-weight: 700; margin-bottom: 8px;">Works with how Russia pays</h2>
-                <p style="color: var(--text-secondary);">Track every transaction, however you pay</p>
+                <h2 style="font-size: 28px; font-weight: 700; margin-bottom: 8px;">Работает с платёжными методами России</h2>
+                <p style="color: var(--text-secondary);">Отслеживайте каждую транзакцию, как бы вы ни платили</p>
                 <div class="payments-grid">
                     <div class="payment-item">
                         <div class="payment-icon"><span class="material-icons-outlined">credit_card</span></div>
-                        <div class="payment-name">Credit Cards</div>
+                        <div class="payment-name">Кредитные карты</div>
                         <div class="payment-examples">Visa, Mastercard</div>
                     </div>
                     <div class="payment-item">
                         <div class="payment-icon"><span class="material-icons-outlined">credit_card</span></div>
-                        <div class="payment-name">Debit Cards</div>
-                        <div class="payment-examples">All banks</div>
+                        <div class="payment-name">Дебетовые карты</div>
+                        <div class="payment-examples">Все банки</div>
                     </div>
                     <div class="payment-item">
                         <div class="payment-icon"><span class="material-icons-outlined">account_balance_wallet</span></div>
-                        <div class="payment-name">Digital Wallets</div>
-                        <div class="payment-examples">Mobile payments</div>
+                        <div class="payment-name">Электронные кошельки</div>
+                        <div class="payment-examples">Мобильные платежи</div>
                     </div>
                     <div class="payment-item">
                         <div class="payment-icon"><span class="material-icons-outlined">payments</span></div>
-                        <div class="payment-name">Cash</div>
-                        <div class="payment-examples">Cash tracking</div>
+                        <div class="payment-name">Наличные</div>
+                        <div class="payment-examples">Учёт наличных</div>
                     </div>
                     <div class="payment-item">
                         <div class="payment-icon"><span class="material-icons-outlined">account_balance</span></div>
-                        <div class="payment-name">Bank Transfer</div>
-                        <div class="payment-examples">Direct transfers</div>
+                        <div class="payment-name">Банковский перевод</div>
+                        <div class="payment-examples">Прямые переводы</div>
                     </div>
                 </div>
             </div>
@@ -1571,22 +1477,22 @@
     <section class="section section-alt">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">Made for Russia</span>
-                <h2 class="section-title">Built for Russia</h2>
-                <p class="section-subtitle">Features you won't find elsewhere</p>
+                <span class="section-eyebrow">Создано для России</span>
+                <h2 class="section-title">Создано для России</h2>
+                <p class="section-subtitle">Возможности, которых нет в других приложениях</p>
             </div>
             <div class="card-grid">
                 <div class="card feature-card">
                     
-                    <h3>Bill Reminders</h3>
-                    <p>Never miss a payment</p>
-                    <div class="feature-example">Set reminders for recurring bills</div>
+                    <h3>Напоминания об оплате</h3>
+                    <p>Никогда не пропускайте платежи</p>
+                    <div class="feature-example">Установите напоминания для регулярных счетов</div>
                 </div>
                 <div class="card feature-card">
                     
-                    <h3>Receipt OCR</h3>
-                    <p>Scan receipts automatically</p>
-                    <div class="feature-example">Snap photos to track cash expenses</div>
+                    <h3>Сканирование чеков</h3>
+                    <p>Автоматическое сканирование чеков</p>
+                    <div class="feature-example">Фотографируйте чеки для учёта наличных</div>
                 </div>
             </div>
         </div>
@@ -1599,30 +1505,30 @@
                 <div class="trust-header">
                     <div class="trust-icon">🔒</div>
                     <div>
-                        <h2>Your data never leaves your phone</h2>
-                        <p>Bank-grade security</p>
+                        <h2>Ваши данные никогда не покидают телефон</h2>
+                        <p>Безопасность банковского уровня</p>
                     </div>
                 </div>
                 <div class="trust-grid">
                     <div class="trust-item">
                         <span class="material-icons-outlined">wifi_off</span>
-                        <span>100% offline - works without internet</span>
+                        <span>100% офлайн — работает без интернета</span>
                     </div>
                     <div class="trust-item">
                         <span class="material-icons-outlined">person_off</span>
-                        <span>No account or login required</span>
+                        <span>Не нужен аккаунт или вход</span>
                     </div>
                     <div class="trust-item">
                         <span class="material-icons-outlined">enhanced_encryption</span>
-                        <span>Bank-grade AES-256 encryption</span>
+                        <span>Шифрование AES-256 банковского уровня</span>
                     </div>
                     <div class="trust-item">
                         <span class="material-icons-outlined">cloud_off</span>
-                        <span>No data uploaded to any server</span>
+                        <span>Данные не загружаются ни на один сервер</span>
                     </div>
                     <div class="trust-item">
                         <span class="material-icons-outlined">fingerprint</span>
-                        <span>Privacy Law compliant</span>
+                        <span>Соответствует закону о конфиденциальности</span>
                     </div>
                 </div>
             </div>
@@ -1630,32 +1536,32 @@
     </section>
 
 
-    <!-- How It Works -->
+    <!-- Как это работает -->
     <section class="section" id="how-it-works">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">How It Works</span>
-                <h2 class="section-title">Get started in 30 seconds</h2>
-                <p class="section-subtitle">No sign-up. No credit card. No setup.</p>
+                <span class="section-eyebrow">Как это работает</span>
+                <h2 class="section-title">Начните за 30 секунд</h2>
+                <p class="section-subtitle">Без регистрации. Без карты. Без настройки.</p>
             </div>
             <div class="how-it-works-grid">
                 <div class="how-step">
                     <span class="material-icons-outlined">download</span>
                     <div class="how-step-number">1</div>
-                    <h3>Download Free</h3>
-                    <p>Install EZer from the App Store or Google Play. It's free and takes under 10 seconds.</p>
+                    <h3>Скачайте бесплатно</h3>
+                    <p>Установите EZer из App Store или Google Play. Это бесплатно и займёт менее 10 секунд.</p>
                 </div>
                 <div class="how-step">
                     <span class="material-icons-outlined">add_circle</span>
                     <div class="how-step-number">2</div>
-                    <h3>Add Your First Expense</h3>
-                    <p>Tap the + button, enter the amount, pick a category. Done in 3 taps.</p>
+                    <h3>Добавьте первый расход</h3>
+                    <p>Нажмите +, введите сумму, выберите категорию. Готово за 3 нажатия.</p>
                 </div>
                 <div class="how-step">
                     <span class="material-icons-outlined">insights</span>
                     <div class="how-step-number">3</div>
-                    <h3>See Where Your Money Goes</h3>
-                    <p>Instantly see spending breakdowns, track budgets, and watch your savings grow.</p>
+                    <h3>Узнайте, куда уходят деньги</h3>
+                    <p>Мгновенно смотрите разбивку расходов, следите за бюджетом и наблюдайте за ростом накоплений.</p>
                 </div>
             </div>
         </div>
@@ -1665,35 +1571,35 @@
     <section class="section section-alt" id="pricing">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">Pricing</span>
-                <h2 class="section-title">Simple, transparent pricing</h2>
-                <p class="section-subtitle">Start free, upgrade when you need more</p>
+                <span class="section-eyebrow">Цены</span>
+                <h2 class="section-title">Простые, прозрачные цены</h2>
+                <p class="section-subtitle">Начните бесплатно, обновите когда нужно больше</p>
             </div>
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3>Free</h3>
+                    <h3>Бесплатно</h3>
                     <div class="pricing-price">₽0</div>
-                    <div class="pricing-period">forever</div>
-                    <p class="pricing-desc">Everything you need to start tracking</p>
-                    <a href="#download" class="btn btn-secondary" style="width: 100%; justify-content: center;">Get Started</a>
+                    <div class="pricing-period">навсегда</div>
+                    <p class="pricing-desc">Всё, что нужно для начала учёта</p>
+                    <a href="#download" class="btn btn-secondary" style="width: 100%; justify-content: center;">Начать</a>
                 </div>
                 <div class="pricing-card featured">
                     <span class="plus-badge">Plus</span>
                     <h3 style="margin-top: 12px;">Plus</h3>
                     <div class="pricing-price">₽299</div>
-                    <div class="pricing-period">per month</div>
-                    <p class="pricing-desc">Unlimited everything for serious savers</p>
-                    <a href="#download" class="btn btn-primary" style="width: 100%; justify-content: center;">Upgrade to Plus</a>
-                    <div class="pricing-note">Less than a coffee</div>
+                    <div class="pricing-period">в месяц</div>
+                    <p class="pricing-desc">Безлимитные возможности для серьёзных накоплений</p>
+                    <a href="#download" class="btn btn-primary" style="width: 100%; justify-content: center;">Перейти на Plus</a>
+                    <div class="pricing-note">Дешевле чашки кофе</div>
                 </div>
             </div>
         
             <div style="text-align:center;margin-top:32px;padding:20px;border-radius:12px;background:rgba(99,102,241,0.1);border:1px solid rgba(99,102,241,0.2);">
                 <p style="color:var(--text-secondary);font-size:14px;margin:0;">
                     <span class="material-icons-outlined" style="font-size:16px;vertical-align:middle;margin-right:4px;">compare_arrows</span>
-                    <strong style="color:var(--text-primary);">Why EZer?</strong>
+                    <strong style="color:var(--text-primary);">Почему EZer?</strong>
                     YNAB charges $14.99/mo. Mint shut down. PocketGuard costs $12.99/mo.
-                    <strong style="color:#a5b4fc;">EZer is free forever</strong> — and your data never leaves your device.
+                    <strong style="color:#a5b4fc;">EZer бесплатен навсегда</strong> — и ваши данные никогда не покидают устройство.
                 </p>
             </div>
         </div>
@@ -1704,51 +1610,51 @@
     <section class="section section-alt" id="faq">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">FAQ</span>
-                <h2 class="section-title">Common questions</h2>
+                <span class="section-eyebrow">Частые вопросы</span>
+                <h2 class="section-title">Частые вопросы</h2>
             </div>
             <div class="faq-grid">
                 <div class="faq-item active">
                     <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
-                        <span>Is EZer really free?</span>
+                        <span>EZer действительно бесплатен?</span>
                         <span class="material-icons-outlined">expand_more</span>
                     </div>
-                    <div class="faq-answer">Yes. The free plan includes expense tracking, 3 budgets, 2 savings goals, analytics, and bill reminders. No trial period, no hidden fees. The optional Plus plan ($4.99/mo) unlocks unlimited budgets, goals, and advanced features.</div>
+                    <div class="faq-answer">Да. Бесплатный план включает учёт расходов, 3 бюджета, 2 цели накоплений, аналитику и напоминания об оплате. Без пробного периода, без скрытых платежей. Опциональный план Plus (₽299/мес) открывает безлимитные бюджеты, цели и продвинутые функции.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
-                        <span>Do I need to create an account?</span>
+                        <span>Нужно ли создавать аккаунт?</span>
                         <span class="material-icons-outlined">expand_more</span>
                     </div>
-                    <div class="faq-answer">No. EZer works without any account, email, or login. Just download and start tracking. Your data is stored locally on your device — we never see it.</div>
+                    <div class="faq-answer">Нет. EZer работает без аккаунта, email или входа. Просто скачайте и начните учёт. Ваши данные хранятся локально на устройстве — мы их никогда не видим.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
-                        <span>Is my financial data safe?</span>
+                        <span>Мои финансовые данные в безопасности?</span>
                         <span class="material-icons-outlined">expand_more</span>
                     </div>
-                    <div class="faq-answer">Absolutely. All data is encrypted with AES-256 (bank-grade encryption) and stored only on your device. Nothing is uploaded to any server. You can also enable biometric lock (Face ID / fingerprint) for extra security.</div>
+                    <div class="faq-answer">Абсолютно. Все данные зашифрованы AES-256 (банковское шифрование) и хранятся только на вашем устройстве. Ничего не загружается на сервер. Вы также можете включить биометрическую блокировку (Face ID / отпечаток) для дополнительной безопасности.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
-                        <span>Does it work offline?</span>
+                        <span>Работает ли офлайн?</span>
                         <span class="material-icons-outlined">expand_more</span>
                     </div>
-                    <div class="faq-answer">Yes, 100%. EZer works completely offline. No internet connection is ever required. This also means your data stays on your device and is never at risk from server breaches.</div>
+                    <div class="faq-answer">Да, на 100%. EZer работает полностью офлайн. Подключение к интернету не требуется. Это также означает, что ваши данные остаются на устройстве и никогда не подвергаются риску утечки с серверов.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
-                        <span>How is EZer different from YNAB or Mint?</span>
+                        <span>Чем EZer отличается от YNAB или Mint?</span>
                         <span class="material-icons-outlined">expand_more</span>
                     </div>
-                    <div class="faq-answer">YNAB costs $14.99/month and requires an account. Mint shut down in 2024. EZer is free forever, works offline, requires no login, and your data never leaves your device. It's the most private expense tracker available.</div>
+                    <div class="faq-answer">YNAB costs $14.99/month and requires an account. Mint shut down in 2024. EZer is free forever, works offline, requires no login, и ваши данные никогда не покидают устройство. It's the most private expense tracker available.</div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
-                        <span>What happens if I switch phones?</span>
+                        <span>Что будет, если я сменю телефон?</span>
                         <span class="material-icons-outlined">expand_more</span>
                     </div>
-                    <div class="faq-answer">You can export all your data from EZer and import it on your new device. We're also working on optional encrypted cloud backup so you can seamlessly transfer your data.</div>
+                    <div class="faq-answer">Вы можете экспортировать все данные из EZer и импортировать на новое устройство. Мы также работаем над опциональным зашифрованным облачным бэкапом для бесшовного переноса данных.</div>
                 </div>
             </div>
         </div>
@@ -1758,8 +1664,8 @@
     <section class="download-section" id="download">
         <div class="container">
             <div class="download-inner">
-                <h2>Start Tracking Today</h2>
-                <p>Join 3,000+ people across 73 countries managing their money privately. Download free — get started in 30 seconds.</p>
+                <h2>Начните учёт сегодня</h2>
+                <p>Присоединяйтесь к 3 000+ людям в 73 странах, которые управляют финансами приватно. Скачайте бесплатно — начните за 30 секунд.</p>
                                 <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;flex-wrap:wrap;">
                     <div style="display:flex;gap:2px;">
                         <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
@@ -1769,20 +1675,20 @@
                         <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
                     </div>
                     <span style="color:rgba(255,255,255,0.9);font-weight:700;font-size:16px;">4.8</span>
-                    <span style="color:rgba(255,255,255,0.6);font-size:14px;">from 3,000+ users</span>
+                    <span style="color:rgba(255,255,255,0.6);font-size:14px;">от 3 000+ пользователей</span>
                 </div>
 <div class="download-badges">
                     <a href="https://apps.apple.com/RU/app/ezer-budget-expense-tracker/id6738029702" class="store-badge" target="_blank" rel="noopener">
                         <span class="material-icons-outlined icon">apple</span>
                         <div class="text">
-                            <small>Download on the</small>
+                            <small>Загрузить в</small>
                             <span>App Store</span>
                         </div>
                     </a>
                     <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=RU" class="store-badge" target="_blank" rel="noopener">
                         <span class="material-icons-outlined icon">shop</span>
                         <div class="text">
-                            <small>Get it on</small>
+                            <small>Доступно в</small>
                             <span>Google Play</span>
                         </div>
                     </a>
@@ -1798,37 +1704,37 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
                 <div>
                     <a href="./" class="unified-logo" style="margin-bottom: 16px;">
-                        <img src="../logo.png" alt="EZer" class="unified-logo-img" loading="lazy">
+                        <img src="../../logo.png" alt="EZer" class="unified-logo-img" loading="lazy">
                         <span class="unified-logo-text">EZer app</span>
                     </a>
                     <p style="color: var(--text-secondary); font-size: 14px; margin-top: 16px;">
-                        Your Smart Finance Companion in Russia.
+                        Ваш умный финансовый помощник в России.
                     </p>
-                    <p style="color: #22c55e; font-weight: 600; font-size: 14px; margin-top: 12px;">Free to use</p>
+                    <p style="color: #22c55e; font-weight: 600; font-size: 14px; margin-top: 12px;">Бесплатно</p>
                 </div>
                 <div>
-                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Product</h4>
-                    <a href="features.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Features</a>
-                    <a href="pricing.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Pricing</a>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Продукт</h4>
+                    <a href="features.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Возможности</a>
+                    <a href="pricing.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Цены</a>
                 </div>
                 <div>
-                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Legal</h4>
-                    <a href="privacy.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Privacy Policy</a>
-                    <a href="terms.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Terms & Conditions</a>
-                    <a href="../data-deletion.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Data Deletion</a>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Правовая информация</h4>
+                    <a href="privacy.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Политика конфиденциальности</a>
+                    <a href="terms.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Условия использования</a>
+                    <a href="../../data-deletion.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Удаление данных</a>
                 </div>
                 <div>
-                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Support</h4>
-                    <a href="../feedback.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Feedback</a>
-                    <a href="../report.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Report Issue</a>
-                    <a href="mailto:support@ezerapp.com" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Contact Us</a>
-                    <a href="../" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Change Country</a>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Поддержка</h4>
+                    <a href="../../feedback.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Обратная связь</a>
+                    <a href="../../report.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Сообщить о проблеме</a>
+                    <a href="mailto:support@ezerapp.com" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Связаться с нами</a>
+                    <a href="../../" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Сменить страну</a>
                 </div>
             </div>
 
             <!-- Theme Toggle -->
             <div class="theme-toggle-container">
-                <span class="theme-toggle-label">Appearance</span>
+                <span class="theme-toggle-label">Оформление</span>
                 <div class="theme-toggle" aria-label="Toggle dark mode">
                     <button class="theme-btn" data-theme="light" title="Light mode">
                         <span class="material-icons-outlined" style="font-size: 18px;">light_mode</span>
@@ -1925,45 +1831,6 @@
             }, { threshold: 0.3 });
             observer.observe(downloadSection);
         }
-
-        // Language Detection for Russia - Redirect to Russian page
-        (function() {
-            // Get browser language (e.g., "ru-RU" -> "ru")
-            const browserLang = (navigator.language || navigator.userLanguage || 'en').split('-')[0].toLowerCase();
-
-            // Check if user has already made a choice
-            const langChoice = localStorage.getItem('ezer-lang-choice-ru');
-            if (langChoice) return;
-
-            // Check if browser language is Russian
-            if (browserLang === 'ru') {
-                // Show popup offering to switch to Russian page
-                setTimeout(() => {
-                    const popup = document.getElementById('langPopup');
-                    popup.classList.add('show');
-
-                    // Handle switch button - redirect to Russian page
-                    document.getElementById('popupSwitch').onclick = () => {
-                        localStorage.setItem('ezer-lang-choice-ru', 'ru');
-                        window.location.href = '/ru/ru/';
-                    };
-
-                    // Handle dismiss - stay on English
-                    document.getElementById('popupDismiss').onclick = () => {
-                        localStorage.setItem('ezer-lang-choice-ru', 'en');
-                        popup.classList.remove('show');
-                    };
-
-                    // Close on overlay click
-                    popup.onclick = (e) => {
-                        if (e.target === popup) {
-                            localStorage.setItem('ezer-lang-choice-ru', 'en');
-                            popup.classList.remove('show');
-                        }
-                    };
-                }, 1000);
-            }
-        })();
     </script>
 
     <!-- Mobile Sticky CTA -->
