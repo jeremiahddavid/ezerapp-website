@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服務條款 - EZer 台灣記帳App</title>
+    <meta name="description" content="EZer台灣服務條款。閱讀使用EZer記帳App的條款與細則。">
+
+    <link rel="canonical" href="https://www.ezerapp.com/tw/zh/terms.html">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Noto Sans TC', 'Inter', sans-serif; }
+
+        /* Plus Badge - matches app styling exactly */
+        .plus-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+            padding: 4px 14px;
+            background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%);
+            border-radius: 50px;
+            border: 1.2px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+            font-weight: 700;
+            color: #4C1D95;
+            font-size: inherit;
+            line-height: 1;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .plus-badge::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 35%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+            animation: shimmer 1.4s infinite;
+        }
+        @keyframes shimmer {
+            0% { left: -35%; }
+            100% { left: 135%; }
+        }
+        .plus-badge-sm {
+            padding: 2px 10px;
+            font-size: 0.75rem;
+        }
+    
+    /* 跳至主要內容 link */
+    .skip-to-content {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #4f46e5;
+        color: white;
+        padding: 8px 16px;
+        z-index: 10000;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 0 0 8px 0;
+        transition: top 0.3s;
+    }
+    .skip-to-content:focus {
+        top: 0;
+    }
+</style>
+
+    <!-- Theme System (works with Tailwind) -->
+    <link rel="stylesheet" href="../css/theme.css">
+    <style>
+        /* =============================================
+           DARK MODE OVERRIDES FOR TAILWIND
+           ============================================= */
+
+        /* Override Tailwind for themed elements */
+        .themed-nav {
+            background: var(--header-bg) !important;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .themed-banner {
+            background: linear-gradient(90deg, rgba(79, 70, 229, 0.15) 0%, rgba(147, 51, 234, 0.15) 100%) !important;
+        }
+        .themed-footer {
+            background: var(--bg-card) !important;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Ensure body respects theme */
+        body {
+            background: var(--bg-primary) !important;
+            color: var(--text-primary);
+            transition: background-color 0.3s ease;
+        }
+
+        /* ----- DARK MODE STYLES ----- */
+
+        /* Background colors */
+        [data-theme="dark"] .bg-gray-50,
+        [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
+        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+        [data-theme="dark"] .bg-gray-900 { background: var(--bg-card) !important; }
+
+        /* Colored backgrounds - make them darker/subtler */
+        [data-theme="dark"] .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
+        [data-theme="dark"] .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
+        [data-theme="dark"] .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
+        [data-theme="dark"] .bg-purple-100 { background: rgba(147, 51, 234, 0.15) !important; }
+        [data-theme="dark"] .bg-pink-100 { background: rgba(236, 72, 153, 0.15) !important; }
+        [data-theme="dark"] .bg-blue-100 { background: rgba(59, 130, 246, 0.15) !important; }
+
+        /* Gray text colors */
+        [data-theme="dark"] .text-gray-600,
+        [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .text-gray-800,
+        [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
+        [data-theme="dark"] .text-gray-400,
+        [data-theme="dark"] .text-gray-500 { color: var(--text-muted) !important; }
+
+        /* Colored text - brighten for dark backgrounds */
+        [data-theme="dark"] .text-indigo-600 { color: #818cf8 !important; }
+        [data-theme="dark"] .text-indigo-700 { color: #a5b4fc !important; }
+        [data-theme="dark"] .text-purple-600 { color: #c084fc !important; }
+        [data-theme="dark"] .text-green-600 { color: #4ade80 !important; }
+        [data-theme="dark"] .text-green-800 { color: #86efac !important; }
+        [data-theme="dark"] .text-blue-600 { color: #60a5fa !important; }
+
+        /* Keep white text white on gradients */
+        [data-theme="dark"] .bg-gradient-to-r .text-white,
+        [data-theme="dark"] .bg-gradient-to-br .text-white,
+        [data-theme="dark"] .bg-indigo-600 .text-white,
+        [data-theme="dark"] .bg-indigo-700 .text-white,
+        [data-theme="dark"] .bg-indigo-800 .text-white,
+        [data-theme="dark"] [class*="from-indigo"] .text-white { color: white !important; }
+
+        /* Gradient backgrounds should keep their text colors */
+        [data-theme="dark"] .bg-gradient-to-r .text-indigo-100,
+        [data-theme="dark"] .bg-gradient-to-r .text-indigo-200 { color: rgba(199, 210, 254, 0.9) !important; }
+
+        /* Border colors */
+        [data-theme="dark"] .border-gray-100,
+        [data-theme="dark"] .border-gray-200,
+        [data-theme="dark"] .border-gray-300 { border-color: var(--border) !important; }
+        [data-theme="dark"] .border-gray-800 { border-color: var(--border-light) !important; }
+
+        /* Shadows */
+        [data-theme="dark"] .shadow-sm,
+        [data-theme="dark"] .shadow,
+        [data-theme="dark"] .shadow-md,
+        [data-theme="dark"] .shadow-lg { box-shadow: 0 4px 20px var(--card-shadow) !important; }
+
+        /* Hover states */
+        [data-theme="dark"] .hover\:bg-gray-50:hover,
+        [data-theme="dark"] .hover\:bg-gray-100:hover { background: var(--bg-elevated) !important; }
+        [data-theme="dark"] .hover\:text-indigo-600:hover { color: #818cf8 !important; }
+
+        /* ----- LIGHT MODE FIXES ----- */
+
+        /* Ensure dark text on light backgrounds */
+        [data-theme="light"] .text-white:not(.bg-gradient-to-r *):not(.bg-gradient-to-br *):not([class*="bg-indigo-"] *) {
+            color: var(--text-primary) !important;
+        }
+
+        /* Keep gradient text white in light mode too */
+        [data-theme="light"] .bg-gradient-to-r .text-white,
+        [data-theme="light"] .bg-gradient-to-br .text-white,
+        [data-theme="light"] .bg-indigo-600 .text-white,
+        [data-theme="light"] .bg-indigo-700 .text-white,
+        [data-theme="light"] [class*="from-indigo"] .text-white { color: white !important; }
+
+        /* ----- SYSTEM PREFERENCE DARK MODE ----- */
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .bg-gray-50,
+            :root:not([data-theme="light"]) .bg-gray-100 { background: var(--bg-primary) !important; }
+            :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; }
+            :root:not([data-theme="light"]) .bg-gray-900 { background: var(--bg-card) !important; }
+
+            :root:not([data-theme="light"]) .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
+            :root:not([data-theme="light"]) .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
+            :root:not([data-theme="light"]) .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
+
+            :root:not([data-theme="light"]) .text-gray-600,
+            :root:not([data-theme="light"]) .text-gray-700 { color: var(--text-secondary) !important; }
+            :root:not([data-theme="light"]) .text-gray-800,
+            :root:not([data-theme="light"]) .text-gray-900 { color: var(--text-primary) !important; }
+            :root:not([data-theme="light"]) .text-gray-400,
+            :root:not([data-theme="light"]) .text-gray-500 { color: var(--text-muted) !important; }
+
+            :root:not([data-theme="light"]) .text-indigo-600 { color: #818cf8 !important; }
+            :root:not([data-theme="light"]) .text-indigo-700 { color: #a5b4fc !important; }
+            :root:not([data-theme="light"]) .text-purple-600 { color: #c084fc !important; }
+            :root:not([data-theme="light"]) .text-green-600 { color: #4ade80 !important; }
+
+            :root:not([data-theme="light"]) .border-gray-100,
+            :root:not([data-theme="light"]) .border-gray-200,
+            :root:not([data-theme="light"]) .border-gray-300 { border-color: var(--border) !important; }
+        }
+
+        /* Theme toggle button styles */
+        .theme-btn {
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .theme-btn:hover {
+            color: var(--text-primary);
+        }
+        .theme-btn.active {
+            background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
+            color: white;
+            box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+        }
+    </style>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+
+    <style>
+        /* Coming Soon Styling */
+        .coming-soon-btn {
+            position: relative;
+            opacity: 0.6;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        .coming-soon-badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+        }
+    </style>
+
+    <meta name="apple-itunes-app" content="app-id=6738029702">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+                {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.ezerapp.com/"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Taiwan",
+                        "item": "https://www.ezerapp.com/tw/"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Terms of Service",
+                        "item": "https://www.ezerapp.com/tw/terms.html"
+                }
+        ]
+}
+    </script>
+</head>
+<body class="bg-gray-50">
+<a href="#main-content" class="skip-to-content">跳至主要內容</a>
+        <!-- Themed Navigation -->
+    <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
+        <span class="mr-2">🇹🇼</span>
+        <strong>台灣</strong> — 使用條款
+        <a href="../../" class="text-indigo-600 hover:underline ml-2">變更國家</a>
+        &nbsp;|&nbsp;
+        <a href="../terms.html" class="text-indigo-600 hover:underline">切換至英文</a>
+    </div>
+
+    <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="../../logo.png" alt="EZer" class="h-10 w-10 rounded-xl object-contain">
+                    <div>
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                </a>
+                <div class="hidden lg:flex gap-1 items-center">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">首頁</a>
+                    <a href="features.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">功能</a>
+                    <a href="pricing.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">方案</a>
+                    <a href="privacy.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">隱私</a>
+                    <a href="terms.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50 text-indigo-600 bg-indigo-100 text-indigo-600 font-semibold">條款</a>
+                    <a href="https://apps.apple.com/TW/app/ezer-budget-expense-tracker/id6738029702" class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity" target="_blank" rel="noopener">免費下載</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-gray-200">
+                <a href="index.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">首頁</a>
+                <a href="features.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">功能</a>
+                <a href="pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">方案</a>
+                <a href="privacy.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">隱私</a>
+                <a href="terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50 bg-indigo-100 text-indigo-600 font-semibold">條款</a>
+                <a href="https://apps.apple.com/TW/app/ezer-budget-expense-tracker/id6738029702" class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold hover:opacity-90 transition-opacity" target="_blank" rel="noopener">免費下載</a>
+            </div>
+        </div>
+    </nav>
+<!-- Content -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
+            <h1 class="text-4xl font-bold mb-2">服務條款</h1>
+            <p class="text-gray-500 mb-8">最後更新：2025年11月</p>
+
+            <div class="prose prose-lg max-w-none">
+                <h2 class="text-2xl font-bold mt-8 mb-4">1. 接受條款</h2>
+                <p class="text-gray-700 mb-4">
+                    下載、安裝或使用EZer應用程式（「本App」），即表示您同意受本服務條款約束。如果您不同意這些條款，請勿使用本App。
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">2. 服務說明</h2>
+                <p class="text-gray-700 mb-4">
+                    EZer是一款個人財務追蹤應用程式，可協助您：
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>手動記錄支出與收入</li>
+                    <li>建立並管理儲蓄目標</li>
+                    <li>設定並監控預算</li>
+                    <li>查看分析報告與消費模式</li>
+                    <li>使用快速新增範本處理定期交易</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">3. EZer不提供的功能</h2>
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+                    <p class="text-gray-700">
+                        <strong>重要：</strong> EZer僅為追蹤與記帳工具。EZer不會：
+                    </p>
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mt-2">
+                        <li>提供財務、投資或稅務建議</li>
+                        <li>保證任何特定的財務結果</li>
+                        <li>直接連接您的銀行帳戶</li>
+                        <li>移動或轉移資金</li>
+                        <li>驗證您輸入資料的準確性</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">4. 使用者責任</h2>
+                <p class="text-gray-700 mb-4">您有責任：</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>確保您輸入的所有資料準確無誤</li>
+                    <li>維護您裝置的安全性</li>
+                    <li>自行做出財務決策</li>
+                    <li>就財務建議諮詢合格專業人士</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">5. 方案與定價</h2>
+                <p class="text-gray-700 mb-4">
+                    EZer提供兩種方案：
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li><strong>免費方案：</strong>基本功能含使用限制（3個帳戶、3個預算、2個目標等）— 永久免費</li>
+                    <li><strong>方案 <span class="plus-badge plus-badge-sm">Plus</span>：</strong>無限功能，台灣每月 NT$99</li>
+                </ul>
+                <h3 class="text-xl font-semibold mt-6 mb-3">自動續訂條款（Apple App Store）</h3>
+                <p class="text-gray-700 mb-4">
+                    在iOS訂閱 <span class="plus-badge plus-badge-sm">Plus</span>，即表示您同意以下條款：
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li><strong>付款：</strong>購買確認時，費用將從您的Apple ID帳戶扣除。</li>
+                    <li><strong>訂閱期間：</strong>EZer Plus為每月自動續訂的訂閱服務。</li>
+                    <li><strong>自動續訂：</strong>除非您在當前計費週期結束前至少24小時關閉自動續訂，否則訂閱將自動續訂。</li>
+                    <li><strong>續訂費用：</strong>您的Apple ID帳戶將在當前期間結束前24小時內以相同價格扣除續訂費用。</li>
+                    <li><strong>免費試用：</strong>若有提供，購買訂閱後未使用的免費試用期將予以取消。</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mt-6 mb-3">管理您的訂閱</h3>
+                <p class="text-gray-700 mb-4">
+                    您可以隨時管理或取消訂閱：
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li><strong>iPhone/iPad上：</strong>設定 → [您的姓名] → 訂閱 → EZer Plus → 取消訂閱</li>
+                    <li><strong>Mac上：</strong>App Store → 點擊您的名字 → 帳號設定 → 訂閱 → 管理 → EZer Plus</li>
+                    <li>取消將於當前計費週期結束時生效</li>
+                    <li>不提供部分訂閱期間的退款</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mt-6 mb-3">Google Play Store訂閱</h3>
+                <p class="text-gray-700 mb-4">
+                    透過Google Play訂閱的Android用戶：
+                </p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>購買確認時，費用將從您的Google Play帳戶扣除</li>
+                    <li>訂閱自動續訂，除非在當前週期結束前至少24小時取消</li>
+                    <li>管理訂閱：Google Play Store → 選單 → 訂閱</li>
+                </ul>
+
+<h2 class="text-2xl font-bold mt-8 mb-4">6. 智慧財產權</h2>
+                <p class="text-gray-700 mb-4">
+                    本App包含的所有內容、功能及特性均為EZer所有，受著作權、商標及其他智慧財產權法律保護。
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">7. 責任限制</h2>
+                <p class="text-gray-700 mb-4">
+                    在法律允許的最大範圍內，EZer對因您使用本App而產生的任何間接、附帶、特殊、後果性或懲罰性損害概不負責。
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">8. 免責聲明</h2>
+                <p class="text-gray-700 mb-4">
+                    本App以「現狀」提供，不附帶任何形式的保證。我們不保證App將無錯誤或不間斷運作。
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">9. 條款變更</h2>
+                <p class="text-gray-700 mb-4">
+                    我們可能會不時更新這些條款。變更後繼續使用App即表示接受新條款。
+                </p>
+
+                <h2 class="text-2xl font-bold mt-8 mb-4">10. 聯絡我們</h2>
+                <p class="text-gray-700 mb-4">
+                    如有關於這些條款的疑問，請聯絡我們：
+                </p>
+                <p class="text-gray-700">
+                    <strong>電子郵件：</strong> <a href="mailto:legal@ezerapp.com" class="text-indigo-600 hover:underline">legal@ezerapp.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Themed Footer -->
+    <footer class="themed-footer py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain" loading="lazy">
+                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
+                    </div>
+                    <p class="text-sm mb-4" style="color: var(--text-secondary);">您在台灣的智慧理財好幫手。</p>
+                    <p class="text-green-500 font-semibold">免費使用</p>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">產品</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="features.html" class="block hover:text-indigo-600 transition-colors">功能</a>
+                        <a href="pricing.html" class="block hover:text-indigo-600 transition-colors">方案</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">法律</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="privacy.html" class="block hover:text-indigo-600 transition-colors">隱私權政策</a>
+                        <a href="terms.html" class="block hover:text-indigo-600 transition-colors">服務條款</a>
+                        <a href="../../data-deletion.html" class="block hover:text-indigo-600 transition-colors">資料刪除</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">支援</h4>
+                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
+                        <a href="../../feedback.html" class="block hover:text-indigo-600 transition-colors">意見回饋</a>
+                        <a href="../../report.html" class="block hover:text-indigo-600 transition-colors">回報問題</a>
+                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600 transition-colors">聯繫我們</a>
+                        <a href="../../" class="block hover:text-indigo-600 transition-colors">變更國家</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Theme Toggle -->
+            <div class="theme-toggle-container flex items-center justify-center gap-3 py-5 border-t" style="border-color: var(--border);">
+                <span class="text-sm" style="color: var(--text-muted);">外觀</span>
+                <div class="theme-toggle flex items-center gap-1 p-1 rounded-full" style="background: var(--bg-elevated); border: 1px solid var(--border);">
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="light" title="淺色">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="system" title="系統">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
+                    </button>
+                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="dark" title="深色">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center pt-6 text-sm" style="color: var(--text-muted); border-top: 1px solid var(--border);">
+                <p>&copy; 2025 EZer. 版權所有。</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme & Mobile Menu Scripts -->
+    <script src="../../js/theme.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
+            document.getElementById('mobile-menu')?.classList.toggle('hidden');
+        });
+        // Initialize Lucide icons if present
+        if (typeof lucide !== 'undefined') lucide.createIcons();
+    </script>
+
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+    <script>
+    // Smart platform detection - highlight relevant store
+    (function() {
+        var ua = navigator.userAgent || '';
+        var isIOS = /iPhone|iPad|iPod/i.test(ua);
+        var isAndroid = /Android/i.test(ua);
+        // Sticky CTA: highlight the relevant platform
+        var sticky = document.querySelector('.mobile-sticky-cta');
+        if (sticky) {
+            var iosBtn = sticky.querySelector('.btn-sticky-ios') || sticky.querySelector('.btn-secondary');
+            var androidBtn = sticky.querySelector('.btn-sticky-android') || sticky.querySelector('.btn-primary');
+            if (isIOS && iosBtn && androidBtn) {
+                iosBtn.style.background = 'linear-gradient(135deg, #6366f1, #8b5cf6)';
+                iosBtn.style.border = 'none';
+                iosBtn.style.fontWeight = '700';
+                androidBtn.style.background = 'rgba(255,255,255,0.1)';
+                androidBtn.style.border = '1px solid rgba(255,255,255,0.2)';
+                androidBtn.style.fontWeight = '400';
+            }
+        }
+        // Download badges: add subtle highlight
+        var badges = document.querySelectorAll('.store-badge');
+        if (badges.length === 2) {
+            if (isIOS) {
+                badges[0].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
+                badges[0].style.borderColor = 'rgba(99, 102, 241, 0.6)';
+            } else if (isAndroid) {
+                badges[1].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
+                badges[1].style.borderColor = 'rgba(99, 102, 241, 0.6)';
+            }
+        }
+    })();
+    </script>
+</body>
+</html>
