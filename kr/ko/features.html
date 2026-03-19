@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기능 - EZer 대한민국 무료 가계부 앱</title>
+    <meta name="description" content="EZer 기능: 무료 지출 추적, 빠른 추가 템플릿, 분석, 저축 목표, 예산 관리. 대한민국에서 이용 가능.">
+
+    <link rel="canonical" href="https://www.ezerapp.com/kr/ko/features.html">
+    <link rel="alternate" hreflang="ko-KR" href="https://www.ezerapp.com/kr/ko/features.html">
+    <link rel="alternate" hreflang="en-KR" href="https://www.ezerapp.com/kr/features.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+
+    <style>
+        :root {
+            --indigo: #4f46e5; --purple: #9333ea; --pink: #ec4899;
+            --gradient-hero: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 50%, var(--pink) 100%);
+            --gradient-cta: linear-gradient(90deg, var(--indigo) 0%, var(--purple) 100%);
+            --gradient-text: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 50%, var(--pink) 100%);
+            --gold-start: #FBBF24; --gold-end: #F59E0B; --plus-text: #4C1D95;
+            --bg-dark: #0f0f1a; --bg-card: #1a1a2e; --bg-elevated: #242442;
+            --text-primary: #ffffff; --text-secondary: #a1a1aa; --text-muted: #71717a;
+            --border: rgba(255,255,255,0.1); --border-light: rgba(255,255,255,0.15);
+            --hero-accent: #a5b4fc; --card-shadow: rgba(0,0,0,0.3);
+        }
+        [data-theme="light"] {
+            --bg-dark: #f8fafc; --bg-card: #ffffff; --bg-elevated: #f1f5f9;
+            --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #64748b;
+            --border: rgba(0,0,0,0.08); --border-light: rgba(0,0,0,0.12);
+            --hero-accent: var(--indigo); --card-shadow: rgba(0,0,0,0.08);
+        }
+        @media (prefers-color-scheme: light) {
+            :root:not([data-theme="dark"]) {
+                --bg-dark: #f8fafc; --bg-card: #ffffff; --bg-elevated: #f1f5f9;
+                --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #64748b;
+                --border: rgba(0,0,0,0.08); --border-light: rgba(0,0,0,0.12);
+                --hero-accent: var(--indigo); --card-shadow: rgba(0,0,0,0.08);
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg-dark); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 max(16px, 5vw); }
+        .section { padding: clamp(48px, 10vw, 100px) 0; }
+        .section-alt { background: var(--bg-card); }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-eyebrow { display: inline-block; font-size: 13px; font-weight: 600; color: #a5b4fc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px; }
+        .section-title { font-size: clamp(28px, 5vw, 44px); font-weight: 800; margin-bottom: 16px; }
+        .section-subtitle { font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+
+        .unified-banner {
+            background: linear-gradient(90deg, rgba(79,70,229,0.15) 0%, rgba(147,51,234,0.15) 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 8px 16px; text-align: center; font-size: 14px; color: var(--text-secondary);
+        }
+        .unified-banner a { color: var(--indigo); text-decoration: none; margin-left: 8px; font-weight: 500; }
+        .unified-nav {
+            background: var(--bg-card); backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000;
+        }
+        .unified-nav-inner {
+            max-width: 1200px; margin: 0 auto; padding: 12px max(16px, 4vw);
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .unified-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .unified-logo-img { width: 44px; height: 44px; border-radius: 12px; object-fit: contain; }
+        .unified-logo-text { font-size: 24px; font-weight: 800; background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .unified-links { display: flex; align-items: center; gap: 4px; }
+        .unified-link { color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500; transition: all 0.2s; }
+        .unified-link:hover, .unified-link.active { color: var(--indigo); background: rgba(79,70,229,0.1); }
+        .unified-cta { background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%); color: white !important; padding: 12px 24px; border-radius: 10px; font-size: 15px; font-weight: 600; text-decoration: none; margin-left: 16px; transition: all 0.2s; box-shadow: 0 4px 15px rgba(79,70,229,0.3); }
+        .unified-cta:hover { transform: scale(1.02); }
+        .unified-mobile-btn { display: none; background: none; border: none; color: var(--text-primary); padding: 8px; cursor: pointer; }
+        .unified-mobile-menu { display: none; background: var(--bg-card); border-top: 1px solid var(--border); padding: 16px; }
+        .unified-mobile-menu.open { display: block; }
+        .unified-mobile-link { display: block; color: var(--text-secondary); text-decoration: none; padding: 14px 16px; border-radius: 10px; font-size: 16px; font-weight: 500; }
+        .unified-mobile-link:hover, .unified-mobile-link.active { color: var(--indigo); background: rgba(79,70,229,0.1); }
+        .unified-mobile-cta { display: block; background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%); color: white !important; padding: 14px 24px; border-radius: 10px; font-size: 16px; font-weight: 600; text-decoration: none; text-align: center; margin-top: 12px; }
+        @media (max-width: 768px) { .unified-links, .unified-cta { display: none; } .unified-mobile-btn { display: block; } }
+
+        .feature-hero { background: var(--gradient-hero); padding: clamp(60px, 10vw, 100px) 0; text-align: center; }
+        .feature-hero h1 { font-size: clamp(32px, 6vw, 52px); font-weight: 900; color: white; margin-bottom: 16px; }
+        .feature-hero p { font-size: 18px; color: rgba(255,255,255,0.85); max-width: 600px; margin: 0 auto; }
+
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; }
+        .feature-item {
+            background: var(--bg-elevated); border: 1px solid var(--border);
+            border-radius: 20px; padding: 32px; transition: all 0.3s;
+        }
+        .feature-item:hover { transform: translateY(-4px); border-color: rgba(79,70,229,0.3); }
+        .feature-icon {
+            width: 64px; height: 64px;
+            background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1));
+            border-radius: 18px; display: flex; align-items: center; justify-content: center;
+            margin-bottom: 20px; color: #a5b4fc; font-size: 32px;
+        }
+        .feature-item h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+        .feature-item p { color: var(--text-secondary); font-size: 15px; line-height: 1.7; margin-bottom: 16px; }
+        .feature-tag {
+            display: inline-block; background: rgba(79,70,229,0.15); color: #a5b4fc;
+            padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;
+        }
+        .free-tag { background: rgba(34,197,94,0.15); color: #4ade80; }
+
+        .plus-badge {
+            display: inline-flex; align-items: center; gap: 4px;
+            background: linear-gradient(135deg, var(--gold-start) 0%, var(--gold-end) 100%);
+            color: var(--plus-text); padding: 4px 14px; border-radius: 50px;
+            font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+        }
+
+        .comparison-table { width: 100%; border-collapse: collapse; }
+        .comparison-table th, .comparison-table td { padding: 16px; text-align: left; border-bottom: 1px solid var(--border); font-size: 15px; }
+        .comparison-table th { font-weight: 700; color: var(--text-primary); }
+        .comparison-table td:first-child { color: var(--text-secondary); }
+        .check { color: #4ade80; font-size: 20px; }
+        .cross { color: #f87171; font-size: 20px; }
+
+        .theme-toggle-container { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 0; border-top: 1px solid var(--border); margin-top: 24px; }
+        .theme-toggle-label { font-size: 13px; color: var(--text-muted); }
+        .theme-toggle { display: flex; align-items: center; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 50px; padding: 4px; gap: 4px; }
+        .theme-btn { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; border: none; background: transparent; color: var(--text-muted); cursor: pointer; transition: all 0.2s; }
+        .theme-btn.active { background: var(--gradient-cta); color: white; }
+        .theme-btn .material-icons-outlined { font-size: 18px; }
+
+        .skip-to-content { position: absolute; top: -40px; left: 0; background: #4f46e5; color: white; padding: 8px 16px; z-index: 10000; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 0 0 8px 0; transition: top 0.3s; }
+        .skip-to-content:focus { top: 0; }
+    </style>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">콘텐츠로 이동</a>
+
+    <!-- Navigation -->
+    <div class="unified-banner">
+        <span>🇰🇷</span>
+        <strong>대한민국</strong> — EZer 한국어 버전
+        <a href="../../">국가 변경</a>
+        &nbsp;|&nbsp;
+        <a href="../features.html">영어로 보기</a>
+    </div>
+    <nav class="unified-nav">
+        <div class="unified-nav-inner">
+            <a href="./" class="unified-logo">
+                <img src="../../logo.png" alt="EZer" class="unified-logo-img">
+                <span class="unified-logo-text">EZer app</span>
+            </a>
+            <div class="unified-links">
+                <a href="./" class="unified-link">홈</a>
+                <a href="features.html" class="unified-link active">기능</a>
+                <a href="pricing.html" class="unified-link">요금제</a>
+                <a href="privacy.html" class="unified-link">개인정보처리방침</a>
+                <a href="terms.html" class="unified-link">이용약관</a>
+                <a href="index.html#download" class="unified-cta">무료 다운로드</a>
+            </div>
+            <button class="unified-mobile-btn" aria-label="메뉴 열기" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
+                <span class="material-icons-outlined">menu</span>
+            </button>
+        </div>
+        <div class="unified-mobile-menu">
+            <a href="./" class="unified-mobile-link">홈</a>
+            <a href="features.html" class="unified-mobile-link active">기능</a>
+            <a href="pricing.html" class="unified-mobile-link">요금제</a>
+            <a href="privacy.html" class="unified-mobile-link">개인정보처리방침</a>
+            <a href="terms.html" class="unified-mobile-link">이용약관</a>
+            <a href="index.html#download" class="unified-mobile-cta">무료 다운로드</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="main-content" class="feature-hero">
+        <div class="container">
+            <h1>모든 기능. 복잡함 없이.</h1>
+            <p>강력한 재정 관리 — 모두 무료로. 오프라인 작동. 계정 불필요.</p>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">핵심 기능</span>
+                <h2 class="section-title">재정 관리에 필요한 모든 것</h2>
+                <p class="section-subtitle">지출 추적부터 저축 목표까지, EZer가 모두 지원합니다</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">add_circle</span></div>
+                    <h3>빠른 지출 추가</h3>
+                    <p>3번 탭으로 지출을 추가하세요. 금액 입력, 카테고리 선택, 완료. 이보다 더 쉬울 수 없습니다.</p>
+                    <span class="feature-tag free-tag">무료</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">account_balance_wallet</span></div>
+                    <h3>예산 관리</h3>
+                    <p>카테고리별 월간 예산을 설정하고 진행 상황을 실시간으로 추적하세요. 한도 초과 전에 알림을 받으세요.</p>
+                    <span class="feature-tag free-tag">무료 — 예산 3개</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">bar_chart</span></div>
+                    <h3>스마트 분석</h3>
+                    <p>아름다운 차트로 소비 패턴을 이해하세요. 월별 지출, 카테고리별 내역, 수입 대비 지출을 한눈에.</p>
+                    <span class="feature-tag free-tag">무료</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">savings</span></div>
+                    <h3>저축 목표</h3>
+                    <p>새 노트북, 해외여행, 전세 보증금 — 목표를 설정하고 저축 진행 상황을 추적하세요.</p>
+                    <span class="feature-tag free-tag">무료 — 목표 2개</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">notifications</span></div>
+                    <h3>청구서 알림</h3>
+                    <p>월세, 통신비, 보험료 — 납부 기한을 절대 놓치지 마세요. 맞춤 알림 설정 가능.</p>
+                    <span class="feature-tag free-tag">무료</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">document_scanner</span></div>
+                    <h3>영수증 스캔 (OCR)</h3>
+                    <p>영수증 사진을 찍으면 자동으로 금액과 날짜를 인식합니다. 현금 영수증도 간편하게.</p>
+                    <span class="feature-tag">Plus</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">copy_all</span></div>
+                    <h3>빠른 추가 템플릿</h3>
+                    <p>반복 지출을 위한 템플릿을 만드세요. 월세, 구독 서비스, 정기 지출을 한 번의 탭으로.</p>
+                    <span class="feature-tag free-tag">무료 — 템플릿 3개</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">enhanced_encryption</span></div>
+                    <h3>은행 수준 보안</h3>
+                    <p>모든 데이터는 AES-256으로 암호화되어 기기에만 저장됩니다. 어떤 서버에도 업로드되지 않습니다.</p>
+                    <span class="feature-tag free-tag">무료</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">fingerprint</span></div>
+                    <h3>생체인식 잠금</h3>
+                    <p>Face ID 또는 지문으로 앱을 보호하세요. 개인 재정 정보를 안전하게 지키세요.</p>
+                    <span class="feature-tag free-tag">무료</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">무료 vs Plus 비교</span>
+                <h2 class="section-title">내게 맞는 플랜 선택</h2>
+            </div>
+            <div style="overflow-x: auto;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>기능</th>
+                            <th>무료</th>
+                            <th><span class="plus-badge">Plus</span> ₩3,900/월</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>지출 추적</td><td><span class="check">✓</span> 무제한</td><td><span class="check">✓</span> 무제한</td></tr>
+                        <tr><td>예산</td><td>최대 3개</td><td><span class="check">✓</span> 무제한</td></tr>
+                        <tr><td>저축 목표</td><td>최대 2개</td><td><span class="check">✓</span> 무제한</td></tr>
+                        <tr><td>빠른 추가 템플릿</td><td>최대 3개</td><td><span class="check">✓</span> 무제한</td></tr>
+                        <tr><td>분석 대시보드</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+                        <tr><td>청구서 알림</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+                        <tr><td>영수증 스캔 (OCR)</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+                        <tr><td>CSV/PDF 가져오기</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+                        <tr><td>PDF 보고서</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+                        <tr><td>계정 수</td><td>최대 2개</td><td><span class="check">✓</span> 무제한</td></tr>
+                        <tr><td>오프라인 작동</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+                        <tr><td>광고 없음</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section style="background: var(--gradient-hero); padding: 80px 0; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: clamp(28px, 5vw, 42px); font-weight: 900; color: white; margin-bottom: 16px;">지금 무료로 시작하세요</h2>
+            <p style="font-size: 18px; color: rgba(255,255,255,0.85); margin-bottom: 32px;">30초 만에 설정. 계정 불필요. 영구 무료.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://apps.apple.com/KR/app/ezer-budget-expense-tracker/id6738029702" style="display: flex; align-items: center; gap: 14px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.2); padding: 14px 28px; border-radius: 14px; text-decoration: none; color: white;" target="_blank" rel="noopener">
+                    <span class="material-icons-outlined" style="font-size: 36px;">apple</span>
+                    <div><small style="font-size: 12px; opacity: 0.8; display: block;">다운로드</small><span style="font-size: 18px; font-weight: 700;">App Store</span></div>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=KR" style="display: flex; align-items: center; gap: 14px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.2); padding: 14px 28px; border-radius: 14px; text-decoration: none; color: white;" target="_blank" rel="noopener">
+                    <span class="material-icons-outlined" style="font-size: 36px;">shop</span>
+                    <div><small style="font-size: 12px; opacity: 0.8; display: block;">다운로드</small><span style="font-size: 18px; font-weight: 700;">Google Play</span></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--bg-card); border-top: 1px solid var(--border); padding: 48px 0 24px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <a href="./" class="unified-logo" style="margin-bottom: 16px;">
+                        <img src="../../logo.png" alt="EZer" class="unified-logo-img" loading="lazy">
+                        <span class="unified-logo-text">EZer app</span>
+                    </a>
+                    <p style="color: var(--text-secondary); font-size: 14px; margin-top: 16px;">대한민국을 위한 스마트 재정 도우미.</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">제품</h4>
+                    <a href="features.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">기능</a>
+                    <a href="pricing.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">요금제</a>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">법적 정보</h4>
+                    <a href="privacy.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">개인정보처리방침</a>
+                    <a href="terms.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">이용약관</a>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">지원</h4>
+                    <a href="mailto:support@ezerapp.com" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">문의하기</a>
+                    <a href="../../" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">국가 변경</a>
+                </div>
+            </div>
+            <div class="theme-toggle-container">
+                <span class="theme-toggle-label">테마</span>
+                <div class="theme-toggle">
+                    <button class="theme-btn" data-theme="light" title="라이트"><span class="material-icons-outlined">light_mode</span></button>
+                    <button class="theme-btn" data-theme="system" title="시스템"><span class="material-icons-outlined">contrast</span></button>
+                    <button class="theme-btn" data-theme="dark" title="다크"><span class="material-icons-outlined">dark_mode</span></button>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px;">
+                <p>&copy; 2025 EZer. 모든 권리 보유.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const themeBtns = document.querySelectorAll('.theme-btn');
+        const html = document.documentElement;
+        function applyTheme(theme) {
+            if (theme === 'system') html.removeAttribute('data-theme');
+            else html.setAttribute('data-theme', theme);
+            themeBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.theme === theme));
+            localStorage.setItem('ezer-theme', theme);
+        }
+        applyTheme(localStorage.getItem('ezer-theme') || 'system');
+        themeBtns.forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.theme)));
+    </script>
+</body>
+</html>

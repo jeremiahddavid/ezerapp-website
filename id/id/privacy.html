@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - EZer Indonesia</title>
+    <meta name="description" content="Kebijakan Privasi EZer untuk Indonesia. Pelajari bagaimana kami melindungi data keuangan Anda. Semua data tersimpan hanya di perangkat Anda.">
+
+    <link rel="canonical" href="https://www.ezerapp.com/id/id/privacy.html">
+    <link rel="alternate" hreflang="id-ID" href="https://www.ezerapp.com/id/id/privacy.html">
+    <link rel="alternate" hreflang="en-ID" href="https://www.ezerapp.com/id/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <style>
+        :root {
+            --indigo: #4f46e5; --purple: #9333ea; --pink: #ec4899;
+            --gradient-cta: linear-gradient(90deg, var(--indigo) 0%, var(--purple) 100%);
+            --bg-dark: #0f0f1a; --bg-card: #1a1a2e; --bg-elevated: #242442;
+            --text-primary: #ffffff; --text-secondary: #a1a1aa; --text-muted: #71717a;
+            --border: rgba(255,255,255,0.1);
+        }
+        [data-theme="light"] {
+            --bg-dark: #f8fafc; --bg-card: #ffffff; --bg-elevated: #f1f5f9;
+            --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #64748b;
+            --border: rgba(0,0,0,0.08);
+        }
+        @media (prefers-color-scheme: light) {
+            :root:not([data-theme="dark"]) {
+                --bg-dark: #f8fafc; --bg-card: #ffffff; --bg-elevated: #f1f5f9;
+                --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #64748b;
+                --border: rgba(0,0,0,0.08);
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg-dark); color: var(--text-primary); line-height: 1.6; }
+
+        .skip-to-content { position: absolute; top: -40px; left: 0; background: #4f46e5; color: white; padding: 8px 16px; z-index: 10000; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 0 0 8px 0; transition: top 0.3s; }
+        .skip-to-content:focus { top: 0; }
+
+        .unified-banner { background: linear-gradient(90deg, rgba(79,70,229,0.15) 0%, rgba(147,51,234,0.15) 100%); border-bottom: 1px solid var(--border); padding: 8px 16px; text-align: center; font-size: 14px; color: var(--text-secondary); }
+        .unified-banner a { color: var(--indigo); text-decoration: none; margin-left: 8px; font-weight: 500; }
+        .unified-nav { background: var(--bg-card); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; }
+        .unified-nav-inner { max-width: 1200px; margin: 0 auto; padding: 12px max(16px,4vw); display: flex; align-items: center; justify-content: space-between; }
+        .unified-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .unified-logo-img { width: 44px; height: 44px; border-radius: 12px; object-fit: contain; }
+        .unified-logo-text { font-size: 24px; font-weight: 800; background: linear-gradient(135deg,#4f46e5 0%,#9333ea 50%,#ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .unified-links { display: flex; align-items: center; gap: 4px; }
+        .unified-link { color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500; transition: all 0.2s ease; }
+        .unified-link:hover { color: var(--indigo); background: rgba(79,70,229,0.1); }
+        .unified-link.active { color: var(--indigo); background: rgba(79,70,229,0.1); }
+        .unified-cta { background: linear-gradient(90deg,#4f46e5 0%,#9333ea 100%); color: white !important; padding: 12px 24px; border-radius: 10px; font-size: 15px; font-weight: 600; text-decoration: none; margin-left: 16px; transition: all 0.2s ease; }
+        .unified-mobile-btn { display: none; background: none; border: none; color: var(--text-primary); padding: 8px; cursor: pointer; }
+        .unified-mobile-menu { display: none; background: var(--bg-card); border-top: 1px solid var(--border); padding: 16px; }
+        .unified-mobile-menu.open { display: block; }
+        .unified-mobile-link { display: block; color: var(--text-secondary); text-decoration: none; padding: 14px 16px; border-radius: 10px; font-size: 16px; font-weight: 500; }
+        .unified-mobile-link:hover, .unified-mobile-link.active { color: var(--indigo); background: rgba(79,70,229,0.1); }
+        .unified-mobile-cta { display: block; background: linear-gradient(90deg,#4f46e5 0%,#9333ea 100%); color: white !important; padding: 14px 24px; border-radius: 10px; font-size: 16px; font-weight: 600; text-decoration: none; text-align: center; margin-top: 12px; }
+        @media (max-width: 768px) { .unified-links { display: none; } .unified-cta { display: none; } .unified-mobile-btn { display: block; } }
+
+        .container { max-width: 800px; margin: 0 auto; padding: 0 max(16px,5vw); }
+        .page-hero { background: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 50%, var(--pink) 100%); padding: 64px 24px; text-align: center; }
+        .page-hero h1 { font-size: clamp(28px,4vw,40px); font-weight: 900; color: white; margin-bottom: 12px; }
+        .page-hero p { font-size: 16px; color: rgba(255,255,255,0.85); }
+
+        .content-section { padding: clamp(40px,6vw,64px) 0; }
+        .privacy-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; padding: 40px; margin-bottom: 32px; }
+        .privacy-card h2 { font-size: 22px; font-weight: 700; margin-bottom: 16px; color: var(--text-primary); }
+        .privacy-card h3 { font-size: 18px; font-weight: 600; margin: 24px 0 12px; color: var(--text-primary); }
+        .privacy-card p { color: var(--text-secondary); font-size: 15px; line-height: 1.7; margin-bottom: 12px; }
+        .privacy-card ul { list-style: none; padding-left: 0; }
+        .privacy-card ul li { display: flex; align-items: flex-start; gap: 10px; padding: 6px 0; color: var(--text-secondary); font-size: 15px; }
+        .privacy-card ul li::before { content: '✓'; color: #22c55e; font-weight: 700; flex-shrink: 0; }
+        .highlight-box { background: rgba(79,70,229,0.1); border: 1px solid rgba(79,70,229,0.3); border-radius: 12px; padding: 20px; margin: 20px 0; }
+        .highlight-box p { color: #a5b4fc; margin: 0; font-weight: 500; }
+
+        .theme-toggle-container { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 0; border-top: 1px solid var(--border); margin-top: 24px; }
+        .theme-toggle-label { font-size: 13px; color: var(--text-muted); }
+        .theme-toggle { display: flex; align-items: center; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 50px; padding: 4px; gap: 4px; }
+        .theme-btn { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; border: none; background: transparent; color: var(--text-muted); cursor: pointer; transition: all 0.2s ease; }
+        .theme-btn.active { background: linear-gradient(90deg,#4f46e5 0%,#9333ea 100%); color: white; }
+    </style>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Lewati ke konten</a>
+
+    <div class="unified-banner">
+        <span>🇮🇩</span>
+        Kebijakan Privasi EZer — <strong>Indonesia</strong>
+        <a href="../../">Ganti Negara</a>
+        &nbsp;|&nbsp;
+        <a href="../privacy.html">Lihat dalam Bahasa Inggris</a>
+    </div>
+    <nav class="unified-nav">
+        <div class="unified-nav-inner">
+            <a href="index.html" class="unified-logo">
+                <img src="../../logo.png" alt="EZer" class="unified-logo-img">
+                <span class="unified-logo-text">EZer app</span>
+            </a>
+            <div class="unified-links">
+                <a href="index.html" class="unified-link">Beranda</a>
+                <a href="features.html" class="unified-link">Fitur</a>
+                <a href="pricing.html" class="unified-link">Harga</a>
+                <a href="privacy.html" class="unified-link active">Privasi</a>
+                <a href="terms.html" class="unified-link">Syarat</a>
+                <a href="index.html#download" class="unified-cta">Unduh Gratis</a>
+            </div>
+            <button class="unified-mobile-btn" aria-label="Buka menu" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
+                <span class="material-icons-outlined">menu</span>
+            </button>
+        </div>
+        <div class="unified-mobile-menu">
+            <a href="index.html" class="unified-mobile-link">Beranda</a>
+            <a href="features.html" class="unified-mobile-link">Fitur</a>
+            <a href="pricing.html" class="unified-mobile-link">Harga</a>
+            <a href="privacy.html" class="unified-mobile-link active">Privasi</a>
+            <a href="terms.html" class="unified-mobile-link">Syarat</a>
+            <a href="index.html#download" class="unified-mobile-cta">Unduh Gratis</a>
+        </div>
+    </nav>
+
+    <div class="page-hero" id="main-content">
+        <h1>Kebijakan Privasi</h1>
+        <p>Terakhir diperbarui: Maret 2025</p>
+    </div>
+
+    <div class="content-section">
+        <div class="container">
+
+            <div class="privacy-card">
+                <h2>Ringkasan: Privasi Anda adalah Prioritas Kami</h2>
+                <div class="highlight-box">
+                    <p>🔒 EZer adalah aplikasi yang mengutamakan privasi dan offline-first. Data keuangan Anda TIDAK PERNAH meninggalkan perangkat Anda. Kami tidak mengumpulkan, menyimpan, atau menjual data pribadi Anda.</p>
+                </div>
+                <ul>
+                    <li>Semua data keuangan disimpan hanya di perangkat Anda</li>
+                    <li>Tidak diperlukan akun atau login</li>
+                    <li>Tidak ada cloud sync untuk data keuangan</li>
+                    <li>Enkripsi AES-256 untuk semua data yang disimpan</li>
+                    <li>Tidak ada pelacakan perilaku pengguna</li>
+                </ul>
+            </div>
+
+            <div class="privacy-card">
+                <h2>1. Informasi yang Kami Kumpulkan</h2>
+                <h3>Data yang Tidak Kami Kumpulkan</h3>
+                <p>EZer dirancang dengan privasi sebagai inti. Kami TIDAK mengumpulkan:</p>
+                <ul>
+                    <li>Data transaksi atau keuangan Anda</li>
+                    <li>Informasi pribadi (nama, email, telepon)</li>
+                    <li>Data lokasi</li>
+                    <li>Kontak atau data SMS</li>
+                    <li>Riwayat penelusuran atau penggunaan aplikasi lain</li>
+                </ul>
+
+                <h3>Data Analitik Anonim (Opsional)</h3>
+                <p>Dengan izin Anda, kami dapat mengumpulkan data analitik anonim untuk meningkatkan aplikasi, seperti:</p>
+                <ul>
+                    <li>Jumlah pengguna aktif (tanpa identifikasi)</li>
+                    <li>Fitur yang digunakan (tanpa konten)</li>
+                    <li>Laporan crash untuk memperbaiki bug</li>
+                </ul>
+            </div>
+
+            <div class="privacy-card">
+                <h2>2. Penyimpanan Data</h2>
+                <p>Semua data keuangan Anda disimpan secara lokal di perangkat menggunakan SQLite dengan enkripsi SQLCipher (AES-256). Data ini tidak pernah diunggah ke server kami atau server pihak ketiga mana pun.</p>
+                <div class="highlight-box">
+                    <p>💾 Data Anda ada di ponsel Anda. Hanya Anda yang memiliki akses.</p>
+                </div>
+            </div>
+
+            <div class="privacy-card">
+                <h2>3. Izin Aplikasi</h2>
+                <p>EZer hanya meminta izin yang diperlukan:</p>
+                <ul>
+                    <li><strong>Kamera</strong> — Untuk scan struk (Plus). Foto tidak pernah diunggah.</li>
+                    <li><strong>Biometrik</strong> — Untuk kunci aplikasi dengan sidik jari atau Face ID.</li>
+                    <li><strong>Notifikasi</strong> — Untuk pengingat tagihan (opsional).</li>
+                    <li><strong>SMS</strong> (Android) — Untuk deteksi otomatis transaksi (opsional, dapat dimatikan).</li>
+                </ul>
+            </div>
+
+            <div class="privacy-card">
+                <h2>4. Berbagi Data dengan Pihak Ketiga</h2>
+                <p>Kami tidak menjual, menyewakan, atau berbagi data pribadi Anda dengan pihak ketiga. Satu-satunya layanan pihak ketiga yang digunakan adalah:</p>
+                <ul>
+                    <li><strong>Firebase Analytics</strong> — Hanya data anonim jika fitur analitik diaktifkan</li>
+                    <li><strong>Apple/Google</strong> — Untuk pemrosesan pembayaran in-app (Plus)</li>
+                </ul>
+            </div>
+
+            <div class="privacy-card">
+                <h2>5. Keamanan Data</h2>
+                <p>Langkah keamanan yang kami terapkan:</p>
+                <ul>
+                    <li>Enkripsi AES-256 untuk semua data tersimpan</li>
+                    <li>Kunci biometrik opsional</li>
+                    <li>Tidak ada transmisi data keuangan melalui jaringan</li>
+                    <li>Aplikasi bekerja sepenuhnya offline</li>
+                </ul>
+            </div>
+
+            <div class="privacy-card">
+                <h2>6. Hak Anda</h2>
+                <p>Anda memiliki kendali penuh atas data Anda:</p>
+                <ul>
+                    <li>Ekspor semua data kapan saja</li>
+                    <li>Hapus semua data dari pengaturan aplikasi</li>
+                    <li>Ajukan permintaan penghapusan data melalui email</li>
+                </ul>
+                <p>Untuk permintaan penghapusan data: <a href="mailto:support@ezerapp.com" style="color: var(--indigo);">support@ezerapp.com</a></p>
+            </div>
+
+            <div class="privacy-card">
+                <h2>7. Hubungi Kami</h2>
+                <p>Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, hubungi kami:</p>
+                <p>Email: <a href="mailto:support@ezerapp.com" style="color: var(--indigo);">support@ezerapp.com</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: var(--bg-card); border-top: 1px solid var(--border); padding: 48px 0 24px;">
+        <div class="container" style="max-width: 1200px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <a href="index.html" class="unified-logo" style="margin-bottom: 16px;">
+                        <img src="../../logo.png" alt="EZer" class="unified-logo-img" loading="lazy">
+                        <span class="unified-logo-text">EZer app</span>
+                    </a>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">Navigasi</h4>
+                    <a href="features.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Fitur</a>
+                    <a href="pricing.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Harga</a>
+                    <a href="privacy.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Kebijakan Privasi</a>
+                    <a href="terms.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">Syarat Penggunaan</a>
+                </div>
+            </div>
+            <div class="theme-toggle-container">
+                <span class="theme-toggle-label">Tampilan</span>
+                <div class="theme-toggle">
+                    <button class="theme-btn" data-theme="light" title="Terang"><span class="material-icons-outlined" style="font-size:18px;">light_mode</span></button>
+                    <button class="theme-btn" data-theme="system" title="Sistem"><span class="material-icons-outlined" style="font-size:18px;">contrast</span></button>
+                    <button class="theme-btn" data-theme="dark" title="Gelap"><span class="material-icons-outlined" style="font-size:18px;">dark_mode</span></button>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px;">
+                <p>&copy; 2025 EZer. Hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const themeBtns = document.querySelectorAll('.theme-btn');
+        const html = document.documentElement;
+        function getSavedTheme() { return localStorage.getItem('ezer-theme') || 'system'; }
+        function applyTheme(theme) {
+            if (theme === 'system') { html.removeAttribute('data-theme'); }
+            else { html.setAttribute('data-theme', theme); }
+            themeBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.theme === theme));
+            localStorage.setItem('ezer-theme', theme);
+        }
+        applyTheme(getSavedTheme());
+        themeBtns.forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.theme)));
+    </script>
+</body>
+</html>

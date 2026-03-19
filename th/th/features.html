@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คุณสมบัติ - EZer แอปติดตามค่าใช้จ่ายฟรีสำหรับประเทศไทย</title>
+    <meta name="description" content="คุณสมบัติ EZer: ติดตามค่าใช้จ่ายฟรี เพิ่มรายการด่วน การวิเคราะห์ เป้าหมายออม และจัดการงบประมาณ พร้อมใช้งานในประเทศไทย">
+    <link rel="canonical" href="https://www.ezerapp.com/th/th/features.html">
+    <link rel="alternate" hreflang="th-TH" href="https://www.ezerapp.com/th/th/features.html">
+    <link rel="alternate" hreflang="en-TH" href="https://www.ezerapp.com/th/features.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        :root {
+            --bg-primary: #f8fafc; --bg-card: #ffffff; --bg-elevated: #f1f5f9;
+            --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #64748b;
+            --border: rgba(0, 0, 0, 0.08); --indigo: #4f46e5;
+        }
+        [data-theme="dark"] {
+            --bg-primary: #0f0f1a; --bg-card: #1a1a2e; --bg-elevated: #242442;
+            --text-primary: #ffffff; --text-secondary: #a1a1aa; --text-muted: #71717a;
+            --border: rgba(255,255,255,0.1);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+                --bg-primary: #0f0f1a; --bg-card: #1a1a2e; --bg-elevated: #242442;
+                --text-primary: #ffffff; --text-secondary: #a1a1aa; --text-muted: #71717a;
+                --border: rgba(255,255,255,0.1);
+            }
+        }
+        body { background: var(--bg-primary) !important; color: var(--text-primary); transition: background-color 0.3s ease; }
+        .plus-badge {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 4px 14px; background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%);
+            border-radius: 50px; border: 1.2px solid rgba(255,255,255,0.35);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.25); font-weight: 700; color: #4C1D95;
+            font-size: inherit; line-height: 1; letter-spacing: 1px;
+            position: relative; overflow: hidden;
+        }
+        .skip-to-content {
+            position: absolute; top: -40px; left: 0; background: #4f46e5; color: white;
+            padding: 8px 16px; z-index: 10000; font-size: 14px; font-weight: 600;
+            text-decoration: none; border-radius: 0 0 8px 0; transition: top 0.3s;
+        }
+        .skip-to-content:focus { top: 0; }
+        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+        [data-theme="dark"] .bg-gray-50, [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
+        [data-theme="dark"] .text-gray-600, [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .text-gray-800, [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
+        [data-theme="dark"] .border-gray-100, [data-theme="dark"] .border-gray-200 { border-color: var(--border) !important; }
+        [data-theme="dark"] .shadow-sm, [data-theme="dark"] .shadow-md { box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important; }
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; }
+            :root:not([data-theme="light"]) .bg-gray-50, :root:not([data-theme="light"]) .bg-gray-100 { background: var(--bg-primary) !important; }
+            :root:not([data-theme="light"]) .text-gray-600, :root:not([data-theme="light"]) .text-gray-700 { color: var(--text-secondary) !important; }
+            :root:not([data-theme="light"]) .text-gray-800, :root:not([data-theme="light"]) .text-gray-900 { color: var(--text-primary) !important; }
+        }
+        .theme-btn { color: var(--text-muted); cursor: pointer; transition: all 0.2s; border: none; background: transparent; padding: 8px; border-radius: 50%; }
+        .theme-btn:hover { color: var(--text-primary); background: rgba(79,70,229,0.1); }
+        .theme-btn.active { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%); color: white; box-shadow: 0 2px 8px rgba(79,70,229,0.3); }
+    </style>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body class="bg-gray-50">
+<a href="#main-content" class="skip-to-content">ข้ามไปยังเนื้อหา</a>
+
+    <!-- Banner -->
+    <div style="background: linear-gradient(90deg, rgba(79,70,229,0.15), rgba(147,51,234,0.15)); border-bottom: 1px solid rgba(79,70,229,0.2); padding: 8px 16px; text-align: center; font-size: 14px; color: var(--text-secondary);">
+        <span>🇹🇭</span>
+        คุณสมบัติสำหรับ <strong>ประเทศไทย</strong>
+        <a href="../../" style="color: #4f46e5; text-decoration: none; margin-left: 8px; font-weight: 500;">เปลี่ยนประเทศ</a>
+        &nbsp;|&nbsp;
+        <a href="../features.html" style="color: #4f46e5; text-decoration: none; font-weight: 500;">ดูเป็นภาษาอังกฤษ</a>
+    </div>
+
+    <!-- Nav -->
+    <nav style="background: var(--bg-card); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(20px);">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 12px max(16px, 4vw); display: flex; align-items: center; justify-content: space-between;">
+            <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                <img src="../../logo.png" alt="EZer" style="width: 44px; height: 44px; border-radius: 12px; object-fit: contain;">
+                <span style="font-size: 24px; font-weight: 800; background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">EZer app</span>
+            </a>
+            <div style="display: flex; align-items: center; gap: 4px;" class="hidden lg:flex">
+                <a href="index.html" style="color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">หน้าหลัก</a>
+                <a href="features.html" style="color: #4f46e5; background: rgba(79,70,229,0.1); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">คุณสมบัติ</a>
+                <a href="pricing.html" style="color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">ราคา</a>
+                <a href="privacy.html" style="color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">นโยบายความเป็นส่วนตัว</a>
+                <a href="terms.html" style="color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">ข้อกำหนดการใช้งาน</a>
+                <a href="https://apps.apple.com/TH/app/ezer-budget-expense-tracker/id6738029702" style="background: linear-gradient(90deg, #4f46e5, #9333ea); color: white; text-decoration: none; padding: 12px 24px; border-radius: 10px; font-size: 15px; font-weight: 600; margin-left: 16px;" target="_blank" rel="noopener">ดาวน์โหลดฟรี</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="main-content" style="max-width: 1200px; margin: 0 auto; padding: 48px max(16px, 5vw);">
+
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <span style="display: inline-block; font-size: 13px; font-weight: 600; color: #a5b4fc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px;">คุณสมบัติ</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">ทุกสิ่งที่คุณต้องการสำหรับจัดการเงิน</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">EZer มีฟีเจอร์ครบครันเพื่อช่วยให้คนไทยติดตาม จัดการ และออมเงินได้อย่างมีประสิทธิภาพ</p>
+        </div>
+
+        <!-- Core Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">add_circle</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">เพิ่มรายการด่วน</h3>
+                <p class="text-gray-600">บันทึกค่าใช้จ่ายใน 3 แตะ เลือกหมวดหมู่อัจฉริยะ ใส่จำนวนเงิน แล้วเสร็จ ง่ายมาก</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">pie_chart</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">การวิเคราะห์ขั้นสูง</h3>
+                <p class="text-gray-600">แผนภูมิสวยงามแสดงการใช้จ่าย รายได้เทียบรายจ่าย แนวโน้ม และการแบ่งหมวดหมู่</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">account_balance_wallet</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">งบประมาณ</h3>
+                <p class="text-gray-600">ตั้งงบประมาณตามหมวดหมู่ ติดตามความคืบหน้า รับการแจ้งเตือนก่อนเกินงบ</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">savings</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">เป้าหมายออม</h3>
+                <p class="text-gray-600">สร้างเป้าหมายออมเงิน ติดตามความคืบหน้า และเฉลิมฉลองเมื่อบรรลุเป้าหมาย</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">notification_important</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">แจ้งเตือนบิล</h3>
+                <p class="text-gray-600">ไม่พลาดการชำระเงินอีกต่อไป ตั้งการแจ้งเตือนสำหรับค่าเช่า ค่าน้ำ ค่าไฟ และอื่นๆ</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">document_scanner</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">สแกนใบเสร็จ</h3>
+                <p class="text-gray-600">ถ่ายรูปใบเสร็จแล้วแอปจะกรอกข้อมูลให้อัตโนมัติ ง่ายสำหรับการจ่ายเงินสด</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">credit_card</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">หลายบัญชี</h3>
+                <p class="text-gray-600">จัดการหลายบัญชีธนาคาร บัตรเครดิต และกระเป๋าเงิน ในแอปเดียว</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">picture_as_pdf</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">รายงาน PDF <span class="plus-badge plus-badge-sm">Plus</span></h3>
+                <p class="text-gray-600">สร้างรายงานการเงินสวยงามในรูปแบบ PDF สำหรับการวางแผนหรือการจัดเก็บบันทึก</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">fingerprint</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">ล็อกด้วยไบโอเมตริก</h3>
+                <p class="text-gray-600">ปกป้องข้อมูลทางการเงินด้วย Face ID หรือลายนิ้วมือ ความปลอดภัยสูงสุด</p>
+            </div>
+        </div>
+
+        <!-- Privacy Section -->
+        <div style="background: linear-gradient(135deg, rgba(79,70,229,0.1), rgba(236,72,153,0.05)); border: 1px solid rgba(79,70,229,0.25); border-radius: 28px; padding: 60px; margin-bottom: 48px;">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">🔒 ความเป็นส่วนตัวเป็นหัวใจหลัก</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: rgba(0,0,0,0.1); border-radius: 14px;">
+                    <span class="material-icons-outlined" style="color: #a5b4fc;">wifi_off</span>
+                    <span class="text-gray-700">100% ออฟไลน์ — ทำงานโดยไม่ต้องเชื่อมต่ออินเทอร์เน็ต</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: rgba(0,0,0,0.1); border-radius: 14px;">
+                    <span class="material-icons-outlined" style="color: #a5b4fc;">person_off</span>
+                    <span class="text-gray-700">ไม่ต้องสร้างบัญชีหรือให้ข้อมูลส่วนตัว</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: rgba(0,0,0,0.1); border-radius: 14px;">
+                    <span class="material-icons-outlined" style="color: #a5b4fc;">enhanced_encryption</span>
+                    <span class="text-gray-700">การเข้ารหัส AES-256 ระดับธนาคาร</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: rgba(0,0,0,0.1); border-radius: 14px;">
+                    <span class="material-icons-outlined" style="color: #a5b4fc;">cloud_off</span>
+                    <span class="text-gray-700">ข้อมูลไม่ถูกส่งขึ้นเซิร์ฟเวอร์ใดๆ ทั้งสิ้น</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">พร้อมเริ่มต้นแล้วหรือยัง?</h2>
+            <p class="text-xl text-gray-600 mb-8">ดาวน์โหลด EZer ฟรีวันนี้ ไม่ต้องสมัครสมาชิก</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://apps.apple.com/TH/app/ezer-budget-expense-tracker/id6738029702" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 28px; border-radius: 12px; font-size: 16px; font-weight: 600; text-decoration: none; background: linear-gradient(90deg, #4f46e5, #9333ea); color: white; box-shadow: 0 4px 20px rgba(79,70,229,0.4);" target="_blank" rel="noopener">
+                    <span class="material-icons-outlined">apple</span>
+                    App Store
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=TH" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 28px; border-radius: 12px; font-size: 16px; font-weight: 600; text-decoration: none; background: linear-gradient(90deg, #4f46e5, #9333ea); color: white; box-shadow: 0 4px 20px rgba(79,70,229,0.4);" target="_blank" rel="noopener">
+                    <span class="material-icons-outlined">shop</span>
+                    Google Play
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: var(--bg-card); border-top: 1px solid var(--border); padding: 48px 0 24px; margin-top: 48px;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 max(16px, 5vw);">
+            <div style="text-align: center; color: var(--text-muted); font-size: 13px; padding-top: 24px;">
+                <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="privacy.html" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">นโยบายความเป็นส่วนตัว</a>
+                    <a href="terms.html" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">ข้อกำหนดการใช้งาน</a>
+                    <a href="pricing.html" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">ราคา</a>
+                    <a href="../../" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">เปลี่ยนประเทศ</a>
+                </div>
+                <!-- Theme Toggle -->
+                <div style="display: flex; align-items: center; justify-content: center; gap: 12px; padding: 16px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin-bottom: 16px;">
+                    <span style="font-size: 13px; color: var(--text-muted);">ธีม</span>
+                    <div style="display: flex; align-items: center; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 50px; padding: 4px; gap: 4px;">
+                        <button class="theme-btn" data-theme="light" title="สว่าง"><span class="material-icons-outlined" style="font-size: 18px;">light_mode</span></button>
+                        <button class="theme-btn" data-theme="system" title="ระบบ"><span class="material-icons-outlined" style="font-size: 18px;">contrast</span></button>
+                        <button class="theme-btn" data-theme="dark" title="มืด"><span class="material-icons-outlined" style="font-size: 18px;">dark_mode</span></button>
+                    </div>
+                </div>
+                <p>&copy; 2025 EZer. สงวนลิขสิทธิ์</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const themeBtns = document.querySelectorAll('.theme-btn');
+        const html = document.documentElement;
+        function getSavedTheme() { return localStorage.getItem('ezer-theme') || 'system'; }
+        function applyTheme(theme) {
+            if (theme === 'system') { html.removeAttribute('data-theme'); }
+            else { html.setAttribute('data-theme', theme); }
+            themeBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.theme === theme));
+            localStorage.setItem('ezer-theme', theme);
+        }
+        applyTheme(getSavedTheme());
+        themeBtns.forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.theme)));
+
+        // Mobile menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        }
+    </script>
+</body>
+</html>

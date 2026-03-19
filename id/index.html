@@ -1126,9 +1126,56 @@
         ]
 }
     </script>
+    <style>
+        /* Language Detection Popup */
+        .lang-popup-overlay {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(4px);
+            z-index: 10000; display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; transition: all 0.3s ease;
+        }
+        .lang-popup-overlay.show { opacity: 1; visibility: visible; }
+        .lang-popup {
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px;
+            padding: 32px; max-width: 400px; width: 90%; text-align: center;
+            transform: scale(0.9); transition: transform 0.3s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+        .lang-popup-overlay.show .lang-popup { transform: scale(1); }
+        .lang-popup-icon { font-size: 48px; margin-bottom: 16px; }
+        .lang-popup-title { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+        .lang-popup-native { font-size: 18px; color: #a5b4fc; margin-bottom: 16px; }
+        .lang-popup-desc { color: var(--text-secondary); font-size: 14px; margin-bottom: 24px; line-height: 1.6; }
+        .lang-popup-buttons { display: flex; gap: 12px; flex-direction: column; }
+        .lang-popup-btn {
+            padding: 14px 24px; border-radius: 12px; font-size: 15px; font-weight: 600;
+            cursor: pointer; border: none; transition: all 0.2s ease;
+        }
+        .lang-popup-btn.primary { background: linear-gradient(90deg, #4f46e5, #9333ea); color: white; }
+        .lang-popup-btn.primary:hover { transform: scale(1.02); }
+        .lang-popup-btn.secondary { background: var(--bg-elevated); color: var(--text-secondary); border: 1px solid var(--border); }
+        .lang-popup-btn.secondary:hover { background: rgba(79, 70, 229, 0.1); }
+    </style>
 </head>
 <body>
 <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+    <!-- Language Detection Popup -->
+    <div class="lang-popup-overlay" id="langPopup">
+        <div class="lang-popup">
+            <div class="lang-popup-icon">🌐</div>
+            <div class="lang-popup-title">Lihat dalam Bahasa Indonesia?</div>
+            <div class="lang-popup-native">View in Indonesian?</div>
+            <div class="lang-popup-desc">
+                EZer tersedia dalam Bahasa Indonesia. Beralih sekarang untuk pengalaman yang lebih baik.
+            </div>
+            <div class="lang-popup-buttons">
+                <button class="lang-popup-btn primary" id="popupSwitch">Beralih ke Bahasa Indonesia</button>
+                <button class="lang-popup-btn secondary" id="popupDismiss">Continue in English</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
         <!-- LOCKED: Navigation - DO NOT MODIFY (see .claude/CLAUDE.md) -->
     <!-- Unified Navigation -->
@@ -1867,6 +1914,36 @@
                 badges[1].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
                 badges[1].style.borderColor = 'rgba(99, 102, 241, 0.6)';
             }
+        }
+    })();
+    </script>
+
+    <script>
+    // Language Detection for Indonesian page
+    (function() {
+        const browserLang = (navigator.language || navigator.userLanguage || 'en').split('-')[0].toLowerCase();
+        const langChoice = localStorage.getItem('ezer-lang-choice-id');
+        if (langChoice) return;
+        if (browserLang === 'id') {
+            setTimeout(() => {
+                const popup = document.getElementById('langPopup');
+                if (!popup) return;
+                popup.classList.add('show');
+                document.getElementById('popupSwitch').onclick = () => {
+                    localStorage.setItem('ezer-lang-choice-id', 'id');
+                    window.location.href = '/id/id/';
+                };
+                document.getElementById('popupDismiss').onclick = () => {
+                    localStorage.setItem('ezer-lang-choice-id', 'en');
+                    popup.classList.remove('show');
+                };
+                popup.onclick = (e) => {
+                    if (e.target === popup) {
+                        localStorage.setItem('ezer-lang-choice-id', 'en');
+                        popup.classList.remove('show');
+                    }
+                };
+            }, 1000);
         }
     })();
     </script>

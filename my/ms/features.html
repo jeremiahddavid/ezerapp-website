@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciri-ciri EZer Malaysia | Aplikasi Bajet & Kewangan Peribadi</title>
+    <meta name="description" content="Terokai semua ciri EZer — penjejak perbelanjaan, bajet, matlamat simpanan, peringatan bil, analitik dan lagi. 100% luar talian. Percuma untuk dimuat turun.">
+    <link rel="canonical" href="https://www.ezerapp.com/my/ms/features.html">
+    <link rel="alternate" hreflang="ms-MY" href="https://www.ezerapp.com/my/ms/features.html">
+    <link rel="alternate" hreflang="en-MY" href="https://www.ezerapp.com/my/features.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ezerapp.com/my/ms/features.html">
+    <meta property="og:title" content="Ciri-ciri EZer - Aplikasi Kewangan Terbaik Malaysia">
+    <meta property="og:description" content="Jejak perbelanjaan, urus bajet, dan capai matlamat kewangan. 100% luar talian, tiada akaun diperlukan.">
+    <meta property="og:image" content="https://www.ezerapp.com/og-image.png">
+    <meta property="og:locale" content="ms_MY">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+    <style>
+        :root {
+            --indigo: #4f46e5; --purple: #9333ea; --pink: #ec4899;
+            --bg: #0f0f1a; --bg-card: #1a1a2e; --bg-elevated: #242442;
+            --text: #ffffff; --text-secondary: #a1a1aa; --text-muted: #71717a;
+            --border: rgba(255,255,255,0.1); --gradient: linear-gradient(135deg,#4f46e5,#9333ea,#ec4899);
+        }
+        [data-theme="light"] {
+            --bg: #f8fafc; --bg-card: #ffffff; --bg-elevated: #f1f5f9;
+            --text: #0f172a; --text-secondary: #475569; --text-muted: #64748b;
+            --border: rgba(0,0,0,0.08);
+        }
+        @media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+            --bg: #f8fafc; --bg-card: #ffffff; --bg-elevated: #f1f5f9;
+            --text: #0f172a; --text-secondary: #475569; --text-muted: #64748b;
+            --border: rgba(0,0,0,0.08);
+        }}
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+        .container { max-width:1200px; margin:0 auto; padding:0 max(16px,5vw); }
+        .banner {
+            background: linear-gradient(90deg, rgba(79,70,229,0.15), rgba(147,51,234,0.15));
+            border-bottom: 1px solid var(--border); padding:8px 16px;
+            text-align:center; font-size:14px; color:var(--text-secondary);
+        }
+        .banner a { color:var(--indigo); text-decoration:none; margin-left:8px; font-weight:500; }
+        nav {
+            background:var(--bg-card); border-bottom:1px solid var(--border);
+            position:sticky; top:0; z-index:1000;
+        }
+        .nav-inner {
+            max-width:1200px; margin:0 auto; padding:12px max(16px,4vw);
+            display:flex; align-items:center; justify-content:space-between;
+        }
+        .logo { display:flex; align-items:center; gap:12px; text-decoration:none; }
+        .logo img { width:40px; height:40px; border-radius:10px; }
+        .logo span { font-size:22px; font-weight:800; background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+        .nav-links { display:flex; align-items:center; gap:4px; }
+        .nav-link { color:var(--text-secondary); text-decoration:none; padding:10px 16px; border-radius:10px; font-size:15px; font-weight:500; transition:all 0.2s; }
+        .nav-link:hover, .nav-link.active { color:var(--indigo); background:rgba(79,70,229,0.1); }
+        .nav-cta { background:linear-gradient(90deg,#4f46e5,#9333ea); color:white !important; padding:12px 24px; border-radius:10px; font-size:15px; font-weight:600; text-decoration:none; margin-left:16px; }
+        .mobile-btn { display:none; background:none; border:none; color:var(--text); padding:8px; cursor:pointer; }
+        .mobile-menu { display:none; background:var(--bg-card); border-top:1px solid var(--border); padding:16px; }
+        .mobile-menu.open { display:block; }
+        .mobile-link { display:block; color:var(--text-secondary); text-decoration:none; padding:14px 16px; border-radius:10px; font-size:16px; font-weight:500; }
+        .mobile-link:hover, .mobile-link.active { color:var(--indigo); background:rgba(79,70,229,0.1); }
+        .mobile-cta { display:block; background:linear-gradient(90deg,#4f46e5,#9333ea); color:white !important; padding:14px 24px; border-radius:10px; font-size:16px; font-weight:600; text-decoration:none; text-align:center; margin-top:12px; }
+        @media(max-width:768px){.nav-links{display:none;}.nav-cta{display:none;}.mobile-btn{display:block;}}
+        .hero { background:linear-gradient(135deg,var(--bg) 0%,#1a1035 50%,var(--bg) 100%); padding:80px 0; text-align:center; }
+        .eyebrow { display:inline-block; font-size:13px; font-weight:600; color:#a5b4fc; text-transform:uppercase; letter-spacing:2px; margin-bottom:16px; }
+        h1 { font-size:clamp(32px,6vw,56px); font-weight:900; margin-bottom:20px; }
+        .gradient-text { background:var(--gradient); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+        .subtitle { font-size:18px; color:var(--text-secondary); max-width:600px; margin:0 auto 32px; }
+        .btn { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; border-radius:12px; font-size:16px; font-weight:600; text-decoration:none; transition:all 0.3s; }
+        .btn-primary { background:linear-gradient(90deg,#4f46e5,#9333ea); color:white; box-shadow:0 4px 20px rgba(79,70,229,0.4); }
+        .btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 30px rgba(79,70,229,0.5); }
+        .section { padding:clamp(48px,10vw,100px) 0; }
+        .section-alt { background:var(--bg-card); }
+        .section-header { text-align:center; margin-bottom:60px; }
+        h2 { font-size:clamp(26px,5vw,40px); font-weight:800; margin-bottom:16px; }
+        .section-sub { font-size:18px; color:var(--text-secondary); max-width:600px; margin:0 auto; }
+        .features-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:32px; }
+        .feature-block {
+            background:var(--bg-elevated); border:1px solid var(--border); border-radius:20px; padding:36px;
+        }
+        .feature-block.highlight { background:linear-gradient(135deg,rgba(79,70,229,0.1),transparent); border-color:rgba(79,70,229,0.25); }
+        .feature-icon { font-size:40px; margin-bottom:16px; }
+        .feature-block h3 { font-size:20px; font-weight:700; margin-bottom:12px; }
+        .feature-block p { color:var(--text-secondary); font-size:15px; line-height:1.7; }
+        .feature-list { list-style:none; margin-top:16px; }
+        .feature-list li { display:flex; align-items:center; gap:10px; color:var(--text-secondary); font-size:14px; padding:6px 0; }
+        .feature-list li::before { content:'✓'; color:#a5b4fc; font-weight:700; }
+        .compare-table { width:100%; border-collapse:collapse; border-radius:16px; overflow:hidden; }
+        .compare-table th { background:rgba(79,70,229,0.15); color:var(--text); font-weight:700; padding:18px 24px; text-align:left; }
+        .compare-table th:nth-child(2), .compare-table th:nth-child(3) { text-align:center; }
+        .compare-table td { padding:16px 24px; border-bottom:1px solid var(--border); color:var(--text-secondary); }
+        .compare-table td:nth-child(2), .compare-table td:nth-child(3) { text-align:center; font-size:18px; }
+        .compare-table tr:last-child td { border-bottom:none; }
+        .compare-table tr:hover td { background:rgba(79,70,229,0.05); }
+        .plus-col { color:#FBBF24 !important; }
+        .cta-section { background:linear-gradient(135deg,#4f46e5,#9333ea,#ec4899); padding:80px 0; text-align:center; }
+        .cta-section h2 { color:white; }
+        .cta-section p { color:rgba(255,255,255,0.85); margin-bottom:32px; }
+        footer { background:var(--bg-card); border-top:1px solid var(--border); padding:40px 0 24px; }
+        .footer-inner { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:32px; margin-bottom:32px; }
+        footer h4 { font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:16px; color:var(--text); }
+        footer a { display:block; color:var(--text-secondary); text-decoration:none; font-size:14px; padding:5px 0; }
+        footer a:hover { color:var(--indigo); }
+        .footer-bottom { border-top:1px solid var(--border); padding-top:20px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+        .footer-copy { color:var(--text-muted); font-size:14px; }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <span>🇲🇾</span>
+        <strong>Malaysia</strong> — versi EZer
+        <a href="../../">Tukar Negara</a>
+        &nbsp;|&nbsp;
+        <a href="../features.html">Lihat dalam Bahasa Inggeris</a>
+    </div>
+    <nav>
+        <div class="nav-inner">
+            <a href="./" class="logo">
+                <img src="../../logo.png" alt="EZer">
+                <span>EZer app</span>
+            </a>
+            <div class="nav-links">
+                <a href="./" class="nav-link">Utama</a>
+                <a href="features.html" class="nav-link active">Ciri-ciri</a>
+                <a href="pricing.html" class="nav-link">Harga</a>
+                <a href="privacy.html" class="nav-link">Privasi</a>
+                <a href="terms.html" class="nav-link">Terma</a>
+                <a href="./#download" class="nav-cta">Muat Turun Percuma</a>
+            </div>
+            <button class="mobile-btn" aria-label="Buka menu" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
+                <span class="material-icons-outlined">menu</span>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="./" class="mobile-link">Utama</a>
+            <a href="features.html" class="mobile-link active">Ciri-ciri</a>
+            <a href="pricing.html" class="mobile-link">Harga</a>
+            <a href="privacy.html" class="mobile-link">Privasi</a>
+            <a href="terms.html" class="mobile-link">Terma</a>
+            <a href="./#download" class="mobile-cta">Muat Turun Percuma</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="eyebrow">Semua Ciri-ciri</div>
+            <h1>Semua yang anda perlukan untuk <span class="gradient-text">mengurus ringgit anda</span></h1>
+            <p class="subtitle">Penjejak perbelanjaan, bajet, matlamat simpanan, peringatan bil — semua dalam satu aplikasi. 100% luar talian. Percuma.</p>
+            <a href="./#download" class="btn btn-primary">
+                <span class="material-icons-outlined">download</span>
+                Muat Turun Percuma — RM0
+            </a>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="eyebrow">Ciri Utama</div>
+                <h2>Semua yang anda perlukan</h2>
+                <p class="section-sub">Ciri-ciri lengkap yang direka khusus untuk pengguna Malaysia</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-block highlight">
+                    <div class="feature-icon">💸</div>
+                    <h3>Tambah Cepat</h3>
+                    <p>Rekod perbelanjaan dalam masa 3 saat. Pilih amaun, pilih kategori, selesai. Tiada borang panjang, tiada masa terbuang.</p>
+                    <ul class="feature-list">
+                        <li>Tambah perbelanjaan dalam 3 ketukan</li>
+                        <li>Cadangan kategori pintar</li>
+                        <li>Sokongan berbilang mata wang</li>
+                        <li>Nota dan tag pilihan</li>
+                    </ul>
+                </div>
+                <div class="feature-block highlight">
+                    <div class="feature-icon">📊</div>
+                    <h3>Bajet Bulanan</h3>
+                    <p>Tetapkan had perbelanjaan mengikut kategori. Pantau kemajuan anda dalam masa nyata. Dapatkan amaran sebelum anda melanggar had.</p>
+                    <ul class="feature-list">
+                        <li>Sehingga 3 bajet (percuma)</li>
+                        <li>Bar kemajuan visual</li>
+                        <li>Amaran apabila menghampiri had</li>
+                        <li>Perbandingan bulan ke bulan</li>
+                    </ul>
+                </div>
+                <div class="feature-block highlight">
+                    <div class="feature-icon">📈</div>
+                    <h3>Analitik 7 Tab</h3>
+                    <p>Analisis terperinci perbelanjaan anda merentasi 7 paparan berbeza. Fahami di mana wang anda pergi dan bagaimana untuk memperbaikinya.</p>
+                    <ul class="feature-list">
+                        <li>Graf pendapatan vs perbelanjaan</li>
+                        <li>Carta pai kategori</li>
+                        <li>Trend harian dan bulanan</li>
+                        <li>Skor kesihatan kewangan</li>
+                    </ul>
+                </div>
+                <div class="feature-block">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Matlamat Simpanan</h3>
+                    <p>Tetapkan matlamat simpanan dan jejak kemajuan anda setiap hari. Dari deposit rumah hingga percutian impian.</p>
+                    <ul class="feature-list">
+                        <li>Matlamat tidak terhad</li>
+                        <li>Jejak sumbangan berkala</li>
+                        <li>Anggaran tarikh siap</li>
+                        <li>Pemberitahuan kemajuan</li>
+                    </ul>
+                </div>
+                <div class="feature-block">
+                    <div class="feature-icon">🔔</div>
+                    <h3>Peringatan Bil</h3>
+                    <p>Jangan terlepas pembayaran bil lagi. EZer mengingatkan anda sebelum tarikh akhir bil dan langganan anda.</p>
+                    <ul class="feature-list">
+                        <li>Peringatan bil berulang</li>
+                        <li>Pemberitahuan tempatan</li>
+                        <li>Tandakan bil sebagai dibayar</li>
+                        <li>Jejak sejarah pembayaran</li>
+                    </ul>
+                </div>
+                <div class="feature-block">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privasi & Keselamatan</h3>
+                    <p>Data anda disulitkan dengan AES-256 dan disimpan di peranti anda sahaja. Tiada awan, tiada pelayan, tiada kebocoran data.</p>
+                    <ul class="feature-list">
+                        <li>Penyulitan SQLCipher AES-256</li>
+                        <li>Kunci biometrik (cap jari / muka)</li>
+                        <li>100% luar talian — tiada internet</li>
+                        <li>Tiada akaun diperlukan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <div class="eyebrow">Percuma vs Plus</div>
+                <h2>Pilih pelan yang sesuai</h2>
+                <p class="section-sub">Semua ciri utama percuma. Plus untuk pengguna kuasa.</p>
+            </div>
+            <div style="overflow-x:auto;">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Ciri</th>
+                            <th>Percuma</th>
+                            <th class="plus-col">✦ Plus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Penjejak perbelanjaan</td><td>✓</td><td class="plus-col">✓</td></tr>
+                        <tr><td>Analitik kewangan</td><td>✓</td><td class="plus-col">✓</td></tr>
+                        <tr><td>Matlamat simpanan</td><td>✓</td><td class="plus-col">✓</td></tr>
+                        <tr><td>Peringatan bil</td><td>✓</td><td class="plus-col">✓</td></tr>
+                        <tr><td>Penyulitan AES-256</td><td>✓</td><td class="plus-col">✓</td></tr>
+                        <tr><td>Mod gelap &amp; cerah</td><td>✓</td><td class="plus-col">✓</td></tr>
+                        <tr><td>Bilangan bajet</td><td>Sehingga 3</td><td class="plus-col">Tidak terhad</td></tr>
+                        <tr><td>Bilangan akaun</td><td>Sehingga 2</td><td class="plus-col">Tidak terhad</td></tr>
+                        <tr><td>Import CSV/PDF</td><td>—</td><td class="plus-col">✓</td></tr>
+                        <tr><td>Imbas resit</td><td>—</td><td class="plus-col">✓</td></tr>
+                        <tr><td>Eksport laporan PDF</td><td>—</td><td class="plus-col">✓</td></tr>
+                        <tr><td>Sokongan keutamaan</td><td>—</td><td class="plus-col">✓</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Mula jejak kewangan anda hari ini</h2>
+            <p>Muat turun percuma. Tiada kad kredit. Tiada akaun. Tiada risiko.</p>
+            <a href="./#download" class="btn btn-primary" style="background:white;color:#4f46e5;">
+                <span class="material-icons-outlined">download</span>
+                Muat Turun Percuma
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div>
+                    <h4>EZer</h4>
+                    <a href="./">Utama</a>
+                    <a href="features.html">Ciri-ciri</a>
+                    <a href="pricing.html">Harga</a>
+                </div>
+                <div>
+                    <h4>Undang-undang</h4>
+                    <a href="privacy.html">Dasar Privasi</a>
+                    <a href="terms.html">Terma Penggunaan</a>
+                </div>
+                <div>
+                    <h4>Negara lain</h4>
+                    <a href="../../sg/">Singapura</a>
+                    <a href="../../id/">Indonesia</a>
+                    <a href="../../">Semua Negara</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="footer-copy">© 2025 EZer. Hak cipta terpelihara.</span>
+                <span class="footer-copy">🇲🇾 Dibuat untuk Malaysia</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+        (function(){const s=localStorage.getItem('ezer-theme');if(s==='light')document.documentElement.setAttribute('data-theme','light');else if(s==='dark')document.documentElement.setAttribute('data-theme','dark');})();
+    </script>
+</body>
+</html>

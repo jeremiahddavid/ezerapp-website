@@ -1020,6 +1020,40 @@
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
             z-index: 10;
         }
+
+        /* Language detection popup */
+        .lang-popup-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);
+            z-index: 99999; display: flex; align-items: center; justify-content: center;
+            padding: 24px; opacity: 0; visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .lang-popup-overlay.show { opacity: 1; visibility: visible; }
+        .lang-popup {
+            background: #1a1a2e; border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 24px; padding: 40px 32px; max-width: 420px; width: 100%;
+            text-align: center; box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+            transform: scale(0.92); transition: transform 0.3s ease;
+        }
+        .lang-popup-overlay.show .lang-popup { transform: scale(1); }
+        .lang-popup-icon { font-size: 48px; margin-bottom: 16px; }
+        .lang-popup-title { font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 8px; }
+        .lang-popup-subtitle { font-size: 16px; color: #a1a1aa; margin-bottom: 8px; }
+        .lang-popup-desc { font-size: 14px; color: #71717a; margin-bottom: 28px; }
+        .lang-popup-btn {
+            display: block; width: 100%; padding: 14px 24px; border-radius: 12px;
+            font-size: 16px; font-weight: 600; border: none; cursor: pointer;
+            text-decoration: none; margin-bottom: 12px; transition: all 0.2s;
+        }
+        .lang-popup-btn.primary {
+            background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%);
+            color: white; box-shadow: 0 4px 15px rgba(79,70,229,0.4);
+        }
+        .lang-popup-btn.primary:hover { transform: translateY(-1px); }
+        .lang-popup-btn.secondary {
+            background: rgba(255,255,255,0.07); color: #a1a1aa; border: 1px solid rgba(255,255,255,0.1);
+        }
+        .lang-popup-btn.secondary:hover { background: rgba(255,255,255,0.12); }
     </style>
 
 
@@ -1867,6 +1901,45 @@
                 badges[1].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
                 badges[1].style.borderColor = 'rgba(99, 102, 241, 0.6)';
             }
+        }
+    })();
+    </script>
+
+    <!-- Chinese language detection popup -->
+    <div class="lang-popup-overlay" id="langPopup">
+        <div class="lang-popup">
+            <div class="lang-popup-icon">🇨🇳</div>
+            <div class="lang-popup-title">切换到中文版？</div>
+            <div class="lang-popup-subtitle">Would you like to switch to Chinese?</div>
+            <div class="lang-popup-desc">EZer 完整支持简体中文</div>
+            <button class="lang-popup-btn primary" id="popupSwitch">查看中文版</button>
+            <button class="lang-popup-btn secondary" id="popupDismiss">继续使用英文</button>
+        </div>
+    </div>
+    <script>
+    (function() {
+        var browserLang = (navigator.language || navigator.userLanguage || 'en').split('-')[0].toLowerCase();
+        var langChoice = localStorage.getItem('ezer-lang-choice-cn');
+        if (langChoice) return;
+        if (browserLang === 'zh') {
+            setTimeout(function() {
+                var popup = document.getElementById('langPopup');
+                popup.classList.add('show');
+                document.getElementById('popupSwitch').onclick = function() {
+                    localStorage.setItem('ezer-lang-choice-cn', 'zh');
+                    window.location.href = '/cn/zh/';
+                };
+                document.getElementById('popupDismiss').onclick = function() {
+                    localStorage.setItem('ezer-lang-choice-cn', 'en');
+                    popup.classList.remove('show');
+                };
+                popup.onclick = function(e) {
+                    if (e.target === popup) {
+                        localStorage.setItem('ezer-lang-choice-cn', 'en');
+                        popup.classList.remove('show');
+                    }
+                };
+            }, 1000);
         }
     })();
     </script>

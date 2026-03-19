@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính năng - EZer Ứng dụng theo dõi chi tiêu miễn phí cho Việt Nam</title>
+    <meta name="description" content="Tính năng EZer: theo dõi chi tiêu miễn phí, thêm giao dịch nhanh, phân tích, mục tiêu tiết kiệm và quản lý ngân sách. Dành cho người dùng Việt Nam.">
+    <link rel="canonical" href="https://www.ezerapp.com/vn/vi/features.html">
+    <link rel="alternate" hreflang="vi-VN" href="https://www.ezerapp.com/vn/vi/features.html">
+    <link rel="alternate" hreflang="en-VN" href="https://www.ezerapp.com/vn/features.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        :root {
+            --bg-primary: #f8fafc; --bg-card: #ffffff; --bg-elevated: #f1f5f9;
+            --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #64748b;
+            --border: rgba(0, 0, 0, 0.08); --indigo: #4f46e5;
+        }
+        [data-theme="dark"] {
+            --bg-primary: #0f0f1a; --bg-card: #1a1a2e; --bg-elevated: #242442;
+            --text-primary: #ffffff; --text-secondary: #a1a1aa; --text-muted: #71717a;
+            --border: rgba(255,255,255,0.1);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+                --bg-primary: #0f0f1a; --bg-card: #1a1a2e; --bg-elevated: #242442;
+                --text-primary: #ffffff; --text-secondary: #a1a1aa; --text-muted: #71717a;
+                --border: rgba(255,255,255,0.1);
+            }
+        }
+        body { background: var(--bg-primary) !important; color: var(--text-primary); transition: background-color 0.3s ease; }
+        .plus-badge {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 4px 14px; background: linear-gradient(90deg, #FBBF24 0%, #F59E0B 100%);
+            border-radius: 50px; border: 1.2px solid rgba(255,255,255,0.35);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.25); font-weight: 700; color: #4C1D95;
+            font-size: inherit; line-height: 1; letter-spacing: 1px;
+            position: relative; overflow: hidden;
+        }
+        .skip-to-content {
+            position: absolute; top: -40px; left: 0; background: #4f46e5; color: white;
+            padding: 8px 16px; z-index: 10000; font-size: 14px; font-weight: 600;
+            text-decoration: none; border-radius: 0 0 8px 0; transition: top 0.3s;
+        }
+        .skip-to-content:focus { top: 0; }
+        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+        [data-theme="dark"] .bg-gray-50, [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
+        [data-theme="dark"] .text-gray-600, [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .text-gray-800, [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
+        [data-theme="dark"] .border-gray-100, [data-theme="dark"] .border-gray-200 { border-color: var(--border) !important; }
+        [data-theme="dark"] .shadow-sm, [data-theme="dark"] .shadow-md { box-shadow: 0 4px 20px rgba(0,0,0,0.3) !important; }
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; }
+            :root:not([data-theme="light"]) .bg-gray-50, :root:not([data-theme="light"]) .bg-gray-100 { background: var(--bg-primary) !important; }
+            :root:not([data-theme="light"]) .text-gray-600, :root:not([data-theme="light"]) .text-gray-700 { color: var(--text-secondary) !important; }
+            :root:not([data-theme="light"]) .text-gray-800, :root:not([data-theme="light"]) .text-gray-900 { color: var(--text-primary) !important; }
+        }
+        .theme-btn { color: var(--text-muted); cursor: pointer; transition: all 0.2s; border: none; background: transparent; padding: 8px; border-radius: 50%; }
+        .theme-btn:hover { color: var(--text-primary); background: rgba(79,70,229,0.1); }
+        .theme-btn.active { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%); color: white; box-shadow: 0 2px 8px rgba(79,70,229,0.3); }
+    </style>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body class="bg-gray-50">
+<a href="#main-content" class="skip-to-content">Chuyển đến nội dung</a>
+
+    <!-- Banner -->
+    <div style="background: linear-gradient(90deg, rgba(79,70,229,0.15), rgba(147,51,234,0.15)); border-bottom: 1px solid rgba(79,70,229,0.2); padding: 8px 16px; text-align: center; font-size: 14px; color: var(--text-secondary);">
+        <span>🇻🇳</span>
+        Tính năng dành cho <strong>Việt Nam</strong>
+        <a href="../../" style="color: #4f46e5; text-decoration: none; margin-left: 8px; font-weight: 500;">Đổi quốc gia</a>
+        &nbsp;|&nbsp;
+        <a href="../features.html" style="color: #4f46e5; text-decoration: none; font-weight: 500;">Xem bằng tiếng Anh</a>
+    </div>
+
+    <!-- Nav -->
+    <nav style="background: var(--bg-card); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(20px);">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 12px max(16px, 4vw); display: flex; align-items: center; justify-content: space-between;">
+            <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                <img src="../../logo.png" alt="EZer" style="width: 44px; height: 44px; border-radius: 12px; object-fit: contain;">
+                <span style="font-size: 24px; font-weight: 800; background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">EZer app</span>
+            </a>
+            <div style="display: flex; align-items: center; gap: 4px;" class="hidden lg:flex">
+                <a href="index.html" style="color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">Trang chủ</a>
+                <a href="features.html" style="color: #4f46e5; background: rgba(79,70,229,0.1); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">Tính năng</a>
+                <a href="pricing.html" style="color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">Bảng giá</a>
+                <a href="privacy.html" style="color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">Chính sách bảo mật</a>
+                <a href="terms.html" style="color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">Điều khoản sử dụng</a>
+                <a href="https://apps.apple.com/VN/app/ezer-budget-expense-tracker/id6738029702?l=vi&gl=VN" style="background: linear-gradient(90deg, #4f46e5, #9333ea); color: white; text-decoration: none; padding: 12px 24px; border-radius: 10px; font-size: 15px; font-weight: 600; margin-left: 16px;" target="_blank" rel="noopener">Tải miễn phí</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="main-content" style="max-width: 1200px; margin: 0 auto; padding: 48px max(16px, 5vw);">
+
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <span style="display: inline-block; font-size: 13px; font-weight: 600; color: #a5b4fc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px;">Tính năng</span>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Tất cả những gì bạn cần để quản lý tài chính</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">EZer cung cấp đầy đủ tính năng giúp người dùng Việt Nam theo dõi, quản lý và tiết kiệm tiền hiệu quả.</p>
+        </div>
+
+        <!-- Core Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">add_circle</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Thêm giao dịch nhanh</h3>
+                <p class="text-gray-600">Ghi lại chi tiêu chỉ trong 3 bước. Chọn danh mục thông minh, nhập số tiền, xong ngay.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">pie_chart</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Phân tích nâng cao</h3>
+                <p class="text-gray-600">Biểu đồ trực quan thể hiện chi tiêu theo danh mục, thu nhập so chi phí, xu hướng tháng.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">account_balance_wallet</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Ngân sách</h3>
+                <p class="text-gray-600">Đặt ngân sách theo danh mục, theo dõi tiến độ và nhận cảnh báo trước khi vượt chi.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">savings</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Mục tiêu tiết kiệm</h3>
+                <p class="text-gray-600">Tạo mục tiêu tiết kiệm, theo dõi tiến độ và ăn mừng khi hoàn thành mục tiêu.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">notification_important</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Nhắc nhở hóa đơn</h3>
+                <p class="text-gray-600">Không bao giờ bỏ lỡ thanh toán nữa. Đặt nhắc nhở cho tiền thuê nhà, điện, nước và nhiều hơn.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">document_scanner</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Quét hóa đơn</h3>
+                <p class="text-gray-600">Chụp ảnh hóa đơn và ứng dụng tự động điền thông tin. Lý tưởng cho thanh toán tiền mặt.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">credit_card</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Nhiều tài khoản</h3>
+                <p class="text-gray-600">Quản lý nhiều tài khoản ngân hàng, thẻ tín dụng và ví điện tử trong một ứng dụng duy nhất.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">picture_as_pdf</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Báo cáo PDF <span class="plus-badge plus-badge-sm">Plus</span></h3>
+                <p class="text-gray-600">Tạo báo cáo tài chính đẹp ở định dạng PDF để lập kế hoạch hoặc lưu trữ hồ sơ.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #a5b4fc; font-size: 28px;">
+                    <span class="material-icons-outlined">fingerprint</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Khóa sinh trắc học</h3>
+                <p class="text-gray-600">Bảo vệ dữ liệu tài chính bằng Face ID hoặc vân tay. Bảo mật tối đa cho dữ liệu của bạn.</p>
+            </div>
+        </div>
+
+        <!-- Privacy Section -->
+        <div style="background: linear-gradient(135deg, rgba(79,70,229,0.1), rgba(236,72,153,0.05)); border: 1px solid rgba(79,70,229,0.25); border-radius: 28px; padding: 60px; margin-bottom: 48px;">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">🔒 Quyền riêng tư là cốt lõi</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: rgba(0,0,0,0.1); border-radius: 14px;">
+                    <span class="material-icons-outlined" style="color: #a5b4fc;">wifi_off</span>
+                    <span class="text-gray-700">100% ngoại tuyến — hoạt động không cần kết nối internet</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: rgba(0,0,0,0.1); border-radius: 14px;">
+                    <span class="material-icons-outlined" style="color: #a5b4fc;">person_off</span>
+                    <span class="text-gray-700">Không cần tạo tài khoản hay cung cấp thông tin cá nhân</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: rgba(0,0,0,0.1); border-radius: 14px;">
+                    <span class="material-icons-outlined" style="color: #a5b4fc;">enhanced_encryption</span>
+                    <span class="text-gray-700">Mã hóa AES-256 cấp độ ngân hàng</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 14px; padding: 18px 20px; background: rgba(0,0,0,0.1); border-radius: 14px;">
+                    <span class="material-icons-outlined" style="color: #a5b4fc;">cloud_off</span>
+                    <span class="text-gray-700">Dữ liệu không bao giờ rời khỏi thiết bị của bạn</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Sẵn sàng bắt đầu chưa?</h2>
+            <p class="text-xl text-gray-600 mb-8">Tải EZer miễn phí ngay hôm nay. Không cần đăng ký.</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://apps.apple.com/VN/app/ezer-budget-expense-tracker/id6738029702?l=vi&gl=VN" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 28px; border-radius: 12px; font-size: 16px; font-weight: 600; text-decoration: none; background: linear-gradient(90deg, #4f46e5, #9333ea); color: white; box-shadow: 0 4px 20px rgba(79,70,229,0.4);" target="_blank" rel="noopener">
+                    <span class="material-icons-outlined">apple</span>
+                    App Store
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=VN" style="display: inline-flex; align-items: center; gap: 10px; padding: 16px 28px; border-radius: 12px; font-size: 16px; font-weight: 600; text-decoration: none; background: linear-gradient(90deg, #4f46e5, #9333ea); color: white; box-shadow: 0 4px 20px rgba(79,70,229,0.4);" target="_blank" rel="noopener">
+                    <span class="material-icons-outlined">shop</span>
+                    Google Play
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: var(--bg-card); border-top: 1px solid var(--border); padding: 48px 0 24px; margin-top: 48px;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 max(16px, 5vw);">
+            <div style="text-align: center; color: var(--text-muted); font-size: 13px; padding-top: 24px;">
+                <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 16px;">
+                    <a href="privacy.html" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Chính sách bảo mật</a>
+                    <a href="terms.html" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Điều khoản sử dụng</a>
+                    <a href="pricing.html" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Bảng giá</a>
+                    <a href="../../" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Đổi quốc gia</a>
+                </div>
+                <!-- Theme Toggle -->
+                <div style="display: flex; align-items: center; justify-content: center; gap: 12px; padding: 16px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin-bottom: 16px;">
+                    <span style="font-size: 13px; color: var(--text-muted);">Giao diện</span>
+                    <div style="display: flex; align-items: center; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 50px; padding: 4px; gap: 4px;">
+                        <button class="theme-btn" data-theme="light" title="Sáng"><span class="material-icons-outlined" style="font-size: 18px;">light_mode</span></button>
+                        <button class="theme-btn" data-theme="system" title="Hệ thống"><span class="material-icons-outlined" style="font-size: 18px;">contrast</span></button>
+                        <button class="theme-btn" data-theme="dark" title="Tối"><span class="material-icons-outlined" style="font-size: 18px;">dark_mode</span></button>
+                    </div>
+                </div>
+                <p>&copy; 2025 EZer. Bảo lưu mọi quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const themeBtns = document.querySelectorAll('.theme-btn');
+        const html = document.documentElement;
+        function getSavedTheme() { return localStorage.getItem('ezer-theme') || 'system'; }
+        function applyTheme(theme) {
+            if (theme === 'system') { html.removeAttribute('data-theme'); }
+            else { html.setAttribute('data-theme', theme); }
+            themeBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.theme === theme));
+            localStorage.setItem('ezer-theme', theme);
+        }
+        applyTheme(getSavedTheme());
+        themeBtns.forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.theme)));
+    </script>
+</body>
+</html>

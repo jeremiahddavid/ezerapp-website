@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务条款 - EZer 中国</title>
+    <meta name="description" content="EZer服务条款。了解使用EZer个人财务App的相关条款和条件。">
+
+    <link rel="canonical" href="https://www.ezerapp.com/cn/zh/terms.html">
+    <link rel="alternate" hreflang="zh-CN" href="https://www.ezerapp.com/cn/zh/terms.html">
+    <link rel="alternate" hreflang="en-CN" href="https://www.ezerapp.com/cn/terms.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+
+    <style>
+        :root {
+            --indigo: #4f46e5; --purple: #9333ea; --pink: #ec4899;
+            --gradient-hero: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 50%, var(--pink) 100%);
+            --gradient-cta: linear-gradient(90deg, var(--indigo) 0%, var(--purple) 100%);
+            --gold-start: #FBBF24; --gold-end: #F59E0B; --plus-text: #4C1D95;
+            --bg-dark: #0f0f1a; --bg-card: #1a1a2e; --bg-elevated: #242442;
+            --text-primary: #ffffff; --text-secondary: #a1a1aa; --text-muted: #71717a;
+            --border: rgba(255,255,255,0.1); --border-light: rgba(255,255,255,0.15);
+        }
+        [data-theme="light"] {
+            --bg-dark: #f8fafc; --bg-card: #ffffff; --bg-elevated: #f1f5f9;
+            --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #64748b;
+            --border: rgba(0,0,0,0.08); --border-light: rgba(0,0,0,0.12);
+        }
+        @media (prefers-color-scheme: light) {
+            :root:not([data-theme="dark"]) {
+                --bg-dark: #f8fafc; --bg-card: #ffffff; --bg-elevated: #f1f5f9;
+                --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #64748b;
+                --border: rgba(0,0,0,0.08); --border-light: rgba(0,0,0,0.12);
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg-dark); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 0 max(16px, 5vw); }
+        .container-wide { max-width: 1200px; margin: 0 auto; padding: 0 max(16px, 5vw); }
+
+        .unified-banner { background: linear-gradient(90deg, rgba(79,70,229,0.15) 0%, rgba(147,51,234,0.15) 100%); border-bottom: 1px solid var(--border); padding: 8px 16px; text-align: center; font-size: 14px; color: var(--text-secondary); }
+        .unified-banner a { color: var(--indigo); text-decoration: none; margin-left: 8px; font-weight: 500; }
+        .unified-nav { background: var(--bg-card); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; }
+        .unified-nav-inner { max-width: 1200px; margin: 0 auto; padding: 12px max(16px, 4vw); display: flex; align-items: center; justify-content: space-between; }
+        .unified-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .unified-logo-img { width: 44px; height: 44px; border-radius: 12px; object-fit: contain; }
+        .unified-logo-text { font-size: 24px; font-weight: 800; background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .unified-links { display: flex; align-items: center; gap: 4px; }
+        .unified-link { color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500; transition: all 0.2s; }
+        .unified-link:hover, .unified-link.active { color: var(--indigo); background: rgba(79,70,229,0.1); }
+        .unified-cta { background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%); color: white !important; padding: 12px 24px; border-radius: 10px; font-size: 15px; font-weight: 600; text-decoration: none; margin-left: 16px; transition: all 0.2s; box-shadow: 0 4px 15px rgba(79,70,229,0.3); }
+        .unified-cta:hover { transform: scale(1.02); }
+        .unified-mobile-btn { display: none; background: none; border: none; color: var(--text-primary); padding: 8px; cursor: pointer; }
+        .unified-mobile-menu { display: none; background: var(--bg-card); border-top: 1px solid var(--border); padding: 16px; }
+        .unified-mobile-menu.open { display: block; }
+        .unified-mobile-link { display: block; color: var(--text-secondary); text-decoration: none; padding: 14px 16px; border-radius: 10px; font-size: 16px; font-weight: 500; }
+        .unified-mobile-link:hover, .unified-mobile-link.active { color: var(--indigo); background: rgba(79,70,229,0.1); }
+        .unified-mobile-cta { display: block; background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%); color: white !important; padding: 14px 24px; border-radius: 10px; font-size: 16px; font-weight: 600; text-decoration: none; text-align: center; margin-top: 12px; }
+        @media (max-width: 768px) { .unified-links, .unified-cta { display: none; } .unified-mobile-btn { display: block; } }
+
+        .page-hero { background: var(--gradient-hero); padding: clamp(48px, 8vw, 80px) 0; text-align: center; }
+        .page-hero h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 900; color: white; margin-bottom: 12px; }
+        .page-hero p { font-size: 16px; color: rgba(255,255,255,0.8); }
+
+        .prose { padding: 60px 0; }
+        .prose h2 { font-size: 22px; font-weight: 700; margin: 40px 0 16px; color: var(--text-primary); }
+        .prose p { color: var(--text-secondary); font-size: 15px; line-height: 1.8; margin-bottom: 16px; }
+        .prose ul { color: var(--text-secondary); font-size: 15px; line-height: 1.8; margin-bottom: 16px; padding-left: 24px; }
+        .prose ul li { margin-bottom: 8px; }
+        .prose a { color: var(--indigo); }
+
+        .theme-toggle-container { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 0; border-top: 1px solid var(--border); margin-top: 24px; }
+        .theme-toggle-label { font-size: 13px; color: var(--text-muted); }
+        .theme-toggle { display: flex; align-items: center; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 50px; padding: 4px; gap: 4px; }
+        .theme-btn { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; border: none; background: transparent; color: var(--text-muted); cursor: pointer; transition: all 0.2s; }
+        .theme-btn.active { background: var(--gradient-cta); color: white; }
+        .theme-btn .material-icons-outlined { font-size: 18px; }
+
+        .skip-to-content { position: absolute; top: -40px; left: 0; background: #4f46e5; color: white; padding: 8px 16px; z-index: 10000; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 0 0 8px 0; transition: top 0.3s; }
+        .skip-to-content:focus { top: 0; }
+    </style>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">跳至主要内容</a>
+
+    <!-- Navigation -->
+    <div class="unified-banner">
+        <span>🇨🇳</span>
+        <strong>中国</strong> — EZer 简体中文版
+        <a href="../../">切换国家</a>
+        &nbsp;|&nbsp;
+        <a href="../terms.html">切换至英文</a>
+    </div>
+    <nav class="unified-nav">
+        <div class="unified-nav-inner">
+            <a href="./" class="unified-logo">
+                <img src="../../logo.png" alt="EZer" class="unified-logo-img">
+                <span class="unified-logo-text">EZer app</span>
+            </a>
+            <div class="unified-links">
+                <a href="./" class="unified-link">首页</a>
+                <a href="features.html" class="unified-link">功能</a>
+                <a href="pricing.html" class="unified-link">定价</a>
+                <a href="privacy.html" class="unified-link">隐私政策</a>
+                <a href="terms.html" class="unified-link active">服务条款</a>
+                <a href="index.html#download" class="unified-cta">免费下载</a>
+            </div>
+            <button class="unified-mobile-btn" aria-label="打开菜单" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
+                <span class="material-icons-outlined">menu</span>
+            </button>
+        </div>
+        <div class="unified-mobile-menu">
+            <a href="./" class="unified-mobile-link">首页</a>
+            <a href="features.html" class="unified-mobile-link">功能</a>
+            <a href="pricing.html" class="unified-mobile-link">定价</a>
+            <a href="privacy.html" class="unified-mobile-link">隐私政策</a>
+            <a href="terms.html" class="unified-mobile-link active">服务条款</a>
+            <a href="index.html#download" class="unified-mobile-cta">免费下载</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="main-content" class="page-hero">
+        <div class="container">
+            <h1>服务条款</h1>
+            <p>最后更新：2025年1月</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <main class="prose">
+        <div class="container">
+            <h2>1. 接受条款</h2>
+            <p>通过下载或使用EZer（"本App"），即表示您同意受本服务条款（"条款"）约束。如果您不同意这些条款，请不要使用本App。</p>
+
+            <h2>2. 服务说明</h2>
+            <p>EZer是一款个人财务管理App，提供以下功能：</p>
+            <ul>
+                <li>收支追踪与分类</li>
+                <li>预算设置与监控</li>
+                <li>储蓄目标管理</li>
+                <li>账单提醒与通知</li>
+                <li>财务分析与报告</li>
+                <li>小票扫描（OCR，仅限Plus用户）</li>
+            </ul>
+            <p>本App旨在用于个人财务管理，不提供财务建议、投资建议或任何专业金融服务。</p>
+
+            <h2>3. 用户账户</h2>
+            <p>EZer在访客模式下运行，无需创建账户。您的所有数据均存储在本地设备上，不与任何账户关联。这意味着：</p>
+            <ul>
+                <li>如果您删除该App，您的数据将被永久删除</li>
+                <li>您的数据不会在不同设备间同步</li>
+                <li>我们无法帮助您恢复已删除的数据</li>
+            </ul>
+
+            <h2>4. 免费版与Plus订阅</h2>
+            <p><strong>免费版：</strong>EZer提供永久免费的基础版本，包含核心功能，无需支付任何费用。</p>
+            <p><strong>EZer Plus：</strong>高级订阅服务提供附加功能，费用为¥18/月。订阅通过Apple App Store或Google Play管理。</p>
+            <ul>
+                <li>订阅将在当前计费周期结束前24小时自动续订</li>
+                <li>您可以随时通过您的App Store或Google Play账户设置管理或取消订阅</li>
+                <li>取消后，在当前已付费期间结束前您仍可继续使用Plus功能</li>
+                <li>部分地区可能提供免费试用，具体详情以应用内说明为准</li>
+            </ul>
+
+            <h2>5. 可接受的使用</h2>
+            <p>您同意不以以下方式使用本App：</p>
+            <ul>
+                <li>以任何违法或欺诈目的使用</li>
+                <li>尝试对App进行反向工程、反编译或破解</li>
+                <li>使用本App进行洗钱或其他金融犯罪活动</li>
+                <li>尝试访问其他用户的数据（如有）</li>
+                <li>以违反本条款或任何适用法律的方式使用本App</li>
+            </ul>
+
+            <h2>6. 知识产权</h2>
+            <p>EZer及其所有内容、功能和特性（包括但不限于所有信息、软件、文本、显示内容、图像和设计）均归EZer所有，受版权、商标及其他知识产权法律保护。</p>
+
+            <h2>7. 免责声明</h2>
+            <p>EZer按"现状"和"可用状态"提供，不提供任何明示或暗示的保证。我们不保证：</p>
+            <ul>
+                <li>本App将不间断运行或无错误运行</li>
+                <li>通过App提供的任何信息的准确性或完整性</li>
+                <li>本App将满足您的特定需求</li>
+            </ul>
+            <p>EZer不是持牌金融顾问，不提供财务建议。您应基于自己的判断做出所有财务决策，必要时咨询专业财务顾问。</p>
+
+            <h2>8. 责任限制</h2>
+            <p>在法律允许的最大范围内，EZer不对任何间接、偶然、特殊、后果性或惩罚性损害承担责任，包括但不限于利润损失、数据丢失或其他无形损失，即使EZer已被告知此类损害的可能性。</p>
+
+            <h2>9. 数据备份</h2>
+            <p>您有责任维护本App中数据的备份。由于本App以离线方式运行，所有数据均存储在本地，我们无法恢复丢失的数据。我们建议您定期使用App内的导出功能备份您的财务记录。</p>
+
+            <h2>10. 终止</h2>
+            <p>您可以随时通过删除本App来终止对本服务的使用。删除App将永久删除所有本地存储的数据。如果您违反本条款，我们保留在不另行通知的情况下终止或暂停您对本App访问的权利。</p>
+
+            <h2>11. 条款变更</h2>
+            <p>我们保留随时修改本条款的权利。如发生重大变更，我们将在应用内通知您。继续使用本App即表示您接受修订后的条款。</p>
+
+            <h2>12. 适用法律</h2>
+            <p>本条款受EZer成立地所在地的法律管辖，不考虑法律冲突原则。</p>
+
+            <h2>13. 联系我们</h2>
+            <p>如果您对本服务条款有任何疑问，请联系：</p>
+            <p><a href="mailto:legal@ezerapp.com">legal@ezerapp.com</a></p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: var(--bg-card); border-top: 1px solid var(--border); padding: 48px 0 24px;">
+        <div class="container-wide">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <a href="./" class="unified-logo" style="margin-bottom: 16px;">
+                        <img src="../../logo.png" alt="EZer" class="unified-logo-img" loading="lazy">
+                        <span class="unified-logo-text">EZer app</span>
+                    </a>
+                    <p style="color: var(--text-secondary); font-size: 14px; margin-top: 16px;">专为中国用户打造的智能财务助手。</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">产品</h4>
+                    <a href="features.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">功能</a>
+                    <a href="pricing.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">定价</a>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">法律</h4>
+                    <a href="privacy.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">隐私政策</a>
+                    <a href="terms.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">服务条款</a>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">支持</h4>
+                    <a href="mailto:support@ezerapp.com" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">联系我们</a>
+                    <a href="../../" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">切换国家</a>
+                </div>
+            </div>
+            <div class="theme-toggle-container">
+                <span class="theme-toggle-label">主题</span>
+                <div class="theme-toggle">
+                    <button class="theme-btn" data-theme="light" title="浅色"><span class="material-icons-outlined">light_mode</span></button>
+                    <button class="theme-btn" data-theme="system" title="系统"><span class="material-icons-outlined">contrast</span></button>
+                    <button class="theme-btn" data-theme="dark" title="深色"><span class="material-icons-outlined">dark_mode</span></button>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px;">
+                <p>&copy; 2025 EZer. 版权所有。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const themeBtns = document.querySelectorAll('.theme-btn');
+        const html = document.documentElement;
+        function applyTheme(theme) {
+            if (theme === 'system') html.removeAttribute('data-theme');
+            else html.setAttribute('data-theme', theme);
+            themeBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.theme === theme));
+            localStorage.setItem('ezer-theme', theme);
+        }
+        applyTheme(localStorage.getItem('ezer-theme') || 'system');
+        themeBtns.forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.theme)));
+    </script>
+</body>
+</html>

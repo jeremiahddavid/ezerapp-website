@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>นโยบายความเป็นส่วนตัว - EZer ประเทศไทย</title>
+    <meta name="description" content="นโยบายความเป็นส่วนตัวของ EZer สำหรับประเทศไทย เรียนรู้วิธีที่เราปกป้องข้อมูลทางการเงินของคุณ">
+    <link rel="canonical" href="https://www.ezerapp.com/th/th/privacy.html">
+    <link rel="alternate" hreflang="th-TH" href="https://www.ezerapp.com/th/th/privacy.html">
+    <link rel="alternate" hreflang="en-TH" href="https://www.ezerapp.com/th/privacy.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        :root { --bg-primary: #f8fafc; --bg-card: #ffffff; --bg-elevated: #f1f5f9; --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #64748b; --border: rgba(0,0,0,0.08); }
+        [data-theme="dark"] { --bg-primary: #0f0f1a; --bg-card: #1a1a2e; --bg-elevated: #242442; --text-primary: #ffffff; --text-secondary: #a1a1aa; --text-muted: #71717a; --border: rgba(255,255,255,0.1); }
+        @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg-primary: #0f0f1a; --bg-card: #1a1a2e; --bg-elevated: #242442; --text-primary: #ffffff; --text-secondary: #a1a1aa; --text-muted: #71717a; --border: rgba(255,255,255,0.1); } }
+        body { background: var(--bg-primary) !important; color: var(--text-primary); }
+        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
+        [data-theme="dark"] .bg-gray-50 { background: var(--bg-primary) !important; }
+        [data-theme="dark"] .text-gray-600, [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
+        [data-theme="dark"] .text-gray-800, [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
+        [data-theme="dark"] .border-gray-200 { border-color: var(--border) !important; }
+        @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; } :root:not([data-theme="light"]) .text-gray-600, :root:not([data-theme="light"]) .text-gray-700 { color: var(--text-secondary) !important; } :root:not([data-theme="light"]) .text-gray-800, :root:not([data-theme="light"]) .text-gray-900 { color: var(--text-primary) !important; } }
+        .theme-btn { color: var(--text-muted); cursor: pointer; transition: all 0.2s; border: none; background: transparent; padding: 8px; border-radius: 50%; }
+        .theme-btn.active { background: linear-gradient(135deg, #4f46e5, #9333ea); color: white; }
+        .skip-to-content { position: absolute; top: -40px; left: 0; background: #4f46e5; color: white; padding: 8px 16px; z-index: 10000; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 0 0 8px 0; transition: top 0.3s; }
+        .skip-to-content:focus { top: 0; }
+        .prose h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; color: var(--text-primary); }
+        .prose p { color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7; }
+        .prose ul { color: var(--text-secondary); margin-bottom: 1rem; padding-left: 1.5rem; }
+        .prose li { margin-bottom: 0.5rem; line-height: 1.7; }
+        .prose strong { color: var(--text-primary); }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+</head>
+<body class="bg-gray-50">
+<a href="#main-content" class="skip-to-content">ข้ามไปยังเนื้อหา</a>
+
+    <div style="background: linear-gradient(90deg, rgba(79,70,229,0.15), rgba(147,51,234,0.15)); border-bottom: 1px solid rgba(79,70,229,0.2); padding: 8px 16px; text-align: center; font-size: 14px; color: var(--text-secondary);">
+        <span>🇹🇭</span> นโยบายความเป็นส่วนตัวสำหรับ <strong>ประเทศไทย</strong>
+        <a href="../../" style="color: #4f46e5; text-decoration: none; margin-left: 8px; font-weight: 500;">เปลี่ยนประเทศ</a>
+        &nbsp;|&nbsp;
+        <a href="../privacy.html" style="color: #4f46e5; text-decoration: none; font-weight: 500;">ดูเป็นภาษาอังกฤษ</a>
+    </div>
+
+    <nav style="background: var(--bg-card); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(20px);">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 12px max(16px, 4vw); display: flex; align-items: center; justify-content: space-between;">
+            <a href="index.html" style="display: flex; align-items: center; gap: 12px; text-decoration: none;">
+                <img src="../../logo.png" alt="EZer" style="width: 44px; height: 44px; border-radius: 12px; object-fit: contain;">
+                <span style="font-size: 24px; font-weight: 800; background: linear-gradient(135deg, #4f46e5, #9333ea, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">EZer app</span>
+            </a>
+            <div style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+                <a href="index.html" style="color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">หน้าหลัก</a>
+                <a href="features.html" style="color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">คุณสมบัติ</a>
+                <a href="pricing.html" style="color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">ราคา</a>
+                <a href="privacy.html" style="color: #4f46e5; background: rgba(79,70,229,0.1); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">นโยบายความเป็นส่วนตัว</a>
+                <a href="terms.html" style="color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500;">ข้อกำหนดการใช้งาน</a>
+                <a href="https://apps.apple.com/TH/app/ezer-budget-expense-tracker/id6738029702" style="background: linear-gradient(90deg, #4f46e5, #9333ea); color: white; text-decoration: none; padding: 12px 24px; border-radius: 10px; font-size: 15px; font-weight: 600; margin-left: 16px;" target="_blank" rel="noopener">ดาวน์โหลดฟรี</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="main-content" style="max-width: 800px; margin: 0 auto; padding: 48px max(16px, 5vw);">
+        <div class="bg-white rounded-2xl shadow-sm p-8 md:p-12">
+            <h1 class="text-4xl font-bold mb-2 text-gray-900">นโยบายความเป็นส่วนตัว</h1>
+            <p class="text-gray-500 mb-8">อัปเดตล่าสุด: พฤศจิกายน 2025</p>
+
+            <div class="prose">
+                <h2>บทนำ</h2>
+                <p>EZer ("เรา", "ของเรา") ให้ความสำคัญกับความเป็นส่วนตัวของคุณอย่างจริงจัง นโยบายนี้อธิบายวิธีที่เราจัดการข้อมูลของคุณเมื่อคุณใช้แอป EZer</p>
+
+                <h2>ข้อมูลที่เราไม่เก็บรวบรวม</h2>
+                <p><strong>EZer ออกแบบมาเพื่อความเป็นส่วนตัวเป็นหลัก:</strong></p>
+                <ul>
+                    <li>ข้อมูลทางการเงินทั้งหมดของคุณถูกเก็บไว้บนอุปกรณ์ในเครื่องเท่านั้น</li>
+                    <li>เราไม่เคยอัปโหลดข้อมูลการทำธุรกรรมหรืองบประมาณของคุณไปยังเซิร์ฟเวอร์ใดๆ</li>
+                    <li>เราไม่ต้องการบัญชี อีเมล หรือข้อมูลส่วนบุคคลใดๆ</li>
+                    <li>เราไม่ขายข้อมูลของคุณให้กับบุคคลที่สาม</li>
+                </ul>
+
+                <h2>ข้อมูลที่จัดเก็บในเครื่อง</h2>
+                <p>ข้อมูลต่อไปนี้ถูกจัดเก็บบนอุปกรณ์ของคุณเท่านั้น:</p>
+                <ul>
+                    <li>ธุรกรรมทางการเงิน (รายรับและรายจ่าย)</li>
+                    <li>งบประมาณและหมวดหมู่</li>
+                    <li>เป้าหมายการออม</li>
+                    <li>บัญชีและการตั้งค่า</li>
+                    <li>รูปภาพใบเสร็จ (สำหรับการสแกน OCR)</li>
+                </ul>
+                <p>ข้อมูลทั้งหมดถูกเข้ารหัสด้วย AES-256 และจัดเก็บอย่างปลอดภัยบนอุปกรณ์ของคุณ</p>
+
+                <h2>การวิเคราะห์ที่ไม่ระบุตัวตน</h2>
+                <p>เราอาจรวบรวมข้อมูลการวิเคราะห์แบบไม่ระบุตัวตนผ่าน Firebase Analytics เพื่อพัฒนาแอปให้ดียิ่งขึ้น ซึ่งรวมถึง:</p>
+                <ul>
+                    <li>จำนวนผู้ใช้ที่ไม่ระบุตัวตน</li>
+                    <li>รายงานข้อผิดพลาดของแอป</li>
+                    <li>ข้อมูลประสิทธิภาพการทำงานทั่วไป</li>
+                </ul>
+                <p>ข้อมูลนี้ไม่เคยรวมข้อมูลทางการเงินหรือข้อมูลส่วนบุคคลที่ระบุตัวตนได้</p>
+
+                <h2>ความปลอดภัยของข้อมูล</h2>
+                <p>เราปกป้องข้อมูลของคุณด้วยมาตรการรักษาความปลอดภัยหลายชั้น:</p>
+                <ul>
+                    <li><strong>การเข้ารหัส AES-256:</strong> ข้อมูลทั้งหมดในฐานข้อมูลท้องถิ่นถูกเข้ารหัส</li>
+                    <li><strong>ไบโอเมตริก:</strong> รองรับ Face ID และลายนิ้วมือเพื่อเพิ่มความปลอดภัย</li>
+                    <li><strong>ออฟไลน์:</strong> ไม่มีการส่งข้อมูลทางเครือข่าย</li>
+                    <li><strong>ไม่มีเซิร์ฟเวอร์:</strong> ไม่มีฐานข้อมูลคลาวด์ที่อาจถูกละเมิด</li>
+                </ul>
+
+                <h2>สิทธิ์ของคุณ</h2>
+                <p>เนื่องจากข้อมูลทั้งหมดอยู่บนอุปกรณ์ของคุณ คุณจึงมีการควบคุมอย่างสมบูรณ์:</p>
+                <ul>
+                    <li>ส่งออกข้อมูลทั้งหมดได้ตลอดเวลา</li>
+                    <li>ลบบัญชีและข้อมูลทั้งหมดจากการตั้งค่าแอป</li>
+                    <li>ข้อมูลของคุณจะถูกลบทันทีเมื่อถอนการติดตั้งแอป</li>
+                </ul>
+
+                <h2>ความสอดคล้องกับ PDPA</h2>
+                <p>EZer ได้รับการออกแบบให้สอดคล้องกับพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล (PDPA) ของประเทศไทย เนื่องจากเราไม่เก็บรวบรวมหรือประมวลผลข้อมูลส่วนบุคคลบนเซิร์ฟเวอร์ของเรา</p>
+
+                <h2>การเปลี่ยนแปลงนโยบาย</h2>
+                <p>เราอาจอัปเดตนโยบายความเป็นส่วนตัวนี้เป็นครั้งคราว การเปลี่ยนแปลงที่สำคัญจะแจ้งให้ทราบผ่านการอัปเดตแอป</p>
+
+                <h2>ติดต่อเรา</h2>
+                <p>หากคุณมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ โปรดติดต่อเราที่: <a href="mailto:privacy@ezerapp.com" style="color: #4f46e5;">privacy@ezerapp.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer style="background: var(--bg-card); border-top: 1px solid var(--border); padding: 32px 0 24px; margin-top: 48px;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 max(16px, 5vw); text-align: center; color: var(--text-muted); font-size: 13px;">
+            <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 16px;">
+                <a href="features.html" style="color: var(--text-secondary); text-decoration: none;">คุณสมบัติ</a>
+                <a href="pricing.html" style="color: var(--text-secondary); text-decoration: none;">ราคา</a>
+                <a href="terms.html" style="color: var(--text-secondary); text-decoration: none;">ข้อกำหนดการใช้งาน</a>
+                <a href="../../data-deletion.html" style="color: var(--text-secondary); text-decoration: none;">ลบข้อมูล</a>
+                <a href="../../" style="color: var(--text-secondary); text-decoration: none;">เปลี่ยนประเทศ</a>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px; padding: 16px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); margin-bottom: 16px;">
+                <span style="font-size: 13px; color: var(--text-muted);">ธีม</span>
+                <div style="display: flex; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 50px; padding: 4px; gap: 4px;">
+                    <button class="theme-btn" data-theme="light" title="สว่าง"><span class="material-icons-outlined" style="font-size: 18px;">light_mode</span></button>
+                    <button class="theme-btn" data-theme="system" title="ระบบ"><span class="material-icons-outlined" style="font-size: 18px;">contrast</span></button>
+                    <button class="theme-btn" data-theme="dark" title="มืด"><span class="material-icons-outlined" style="font-size: 18px;">dark_mode</span></button>
+                </div>
+            </div>
+            <p>&copy; 2025 EZer. สงวนลิขสิทธิ์</p>
+        </div>
+    </footer>
+
+    <script>
+        const themeBtns = document.querySelectorAll('.theme-btn');
+        const html = document.documentElement;
+        function getSavedTheme() { return localStorage.getItem('ezer-theme') || 'system'; }
+        function applyTheme(theme) {
+            if (theme === 'system') { html.removeAttribute('data-theme'); }
+            else { html.setAttribute('data-theme', theme); }
+            themeBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.theme === theme));
+            localStorage.setItem('ezer-theme', theme);
+        }
+        applyTheme(getSavedTheme());
+        themeBtns.forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.theme)));
+    </script>
+</body>
+</html>

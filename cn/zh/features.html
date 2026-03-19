@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>功能 - EZer 中国免费记账App</title>
+    <meta name="description" content="EZer功能：免费支出追踪、快速添加模板、分析图表、储蓄目标、预算管理。在中国可用。">
+
+    <link rel="canonical" href="https://www.ezerapp.com/cn/zh/features.html">
+    <link rel="alternate" hreflang="zh-CN" href="https://www.ezerapp.com/cn/zh/features.html">
+    <link rel="alternate" hreflang="en-CN" href="https://www.ezerapp.com/cn/features.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
+
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
+    <script src="/js/analytics.js"></script>
+
+    <style>
+        :root {
+            --indigo: #4f46e5; --purple: #9333ea; --pink: #ec4899;
+            --gradient-hero: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 50%, var(--pink) 100%);
+            --gradient-cta: linear-gradient(90deg, var(--indigo) 0%, var(--purple) 100%);
+            --gradient-text: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 50%, var(--pink) 100%);
+            --gold-start: #FBBF24; --gold-end: #F59E0B; --plus-text: #4C1D95;
+            --bg-dark: #0f0f1a; --bg-card: #1a1a2e; --bg-elevated: #242442;
+            --text-primary: #ffffff; --text-secondary: #a1a1aa; --text-muted: #71717a;
+            --border: rgba(255,255,255,0.1); --border-light: rgba(255,255,255,0.15);
+            --hero-accent: #a5b4fc; --card-shadow: rgba(0,0,0,0.3);
+        }
+        [data-theme="light"] {
+            --bg-dark: #f8fafc; --bg-card: #ffffff; --bg-elevated: #f1f5f9;
+            --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #64748b;
+            --border: rgba(0,0,0,0.08); --border-light: rgba(0,0,0,0.12);
+            --hero-accent: var(--indigo); --card-shadow: rgba(0,0,0,0.08);
+        }
+        @media (prefers-color-scheme: light) {
+            :root:not([data-theme="dark"]) {
+                --bg-dark: #f8fafc; --bg-card: #ffffff; --bg-elevated: #f1f5f9;
+                --text-primary: #0f172a; --text-secondary: #475569; --text-muted: #64748b;
+                --border: rgba(0,0,0,0.08); --border-light: rgba(0,0,0,0.12);
+                --hero-accent: var(--indigo); --card-shadow: rgba(0,0,0,0.08);
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg-dark); color: var(--text-primary); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 max(16px, 5vw); }
+        .section { padding: clamp(48px, 10vw, 100px) 0; }
+        .section-alt { background: var(--bg-card); }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-eyebrow { display: inline-block; font-size: 13px; font-weight: 600; color: #a5b4fc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px; }
+        .section-title { font-size: clamp(28px, 5vw, 44px); font-weight: 800; margin-bottom: 16px; }
+        .section-subtitle { font-size: 18px; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+
+        .unified-banner {
+            background: linear-gradient(90deg, rgba(79,70,229,0.15) 0%, rgba(147,51,234,0.15) 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 8px 16px; text-align: center; font-size: 14px; color: var(--text-secondary);
+        }
+        .unified-banner a { color: var(--indigo); text-decoration: none; margin-left: 8px; font-weight: 500; }
+        .unified-nav {
+            background: var(--bg-card); backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000;
+        }
+        .unified-nav-inner {
+            max-width: 1200px; margin: 0 auto; padding: 12px max(16px, 4vw);
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .unified-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .unified-logo-img { width: 44px; height: 44px; border-radius: 12px; object-fit: contain; }
+        .unified-logo-text { font-size: 24px; font-weight: 800; background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .unified-links { display: flex; align-items: center; gap: 4px; }
+        .unified-link { color: var(--text-secondary); text-decoration: none; padding: 10px 16px; border-radius: 10px; font-size: 15px; font-weight: 500; transition: all 0.2s; }
+        .unified-link:hover, .unified-link.active { color: var(--indigo); background: rgba(79,70,229,0.1); }
+        .unified-cta { background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%); color: white !important; padding: 12px 24px; border-radius: 10px; font-size: 15px; font-weight: 600; text-decoration: none; margin-left: 16px; transition: all 0.2s; box-shadow: 0 4px 15px rgba(79,70,229,0.3); }
+        .unified-cta:hover { transform: scale(1.02); }
+        .unified-mobile-btn { display: none; background: none; border: none; color: var(--text-primary); padding: 8px; cursor: pointer; }
+        .unified-mobile-menu { display: none; background: var(--bg-card); border-top: 1px solid var(--border); padding: 16px; }
+        .unified-mobile-menu.open { display: block; }
+        .unified-mobile-link { display: block; color: var(--text-secondary); text-decoration: none; padding: 14px 16px; border-radius: 10px; font-size: 16px; font-weight: 500; }
+        .unified-mobile-link:hover, .unified-mobile-link.active { color: var(--indigo); background: rgba(79,70,229,0.1); }
+        .unified-mobile-cta { display: block; background: linear-gradient(90deg, #4f46e5 0%, #9333ea 100%); color: white !important; padding: 14px 24px; border-radius: 10px; font-size: 16px; font-weight: 600; text-decoration: none; text-align: center; margin-top: 12px; }
+        @media (max-width: 768px) { .unified-links, .unified-cta { display: none; } .unified-mobile-btn { display: block; } }
+
+        .feature-hero { background: var(--gradient-hero); padding: clamp(60px, 10vw, 100px) 0; text-align: center; }
+        .feature-hero h1 { font-size: clamp(32px, 6vw, 52px); font-weight: 900; color: white; margin-bottom: 16px; }
+        .feature-hero p { font-size: 18px; color: rgba(255,255,255,0.85); max-width: 600px; margin: 0 auto; }
+
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; }
+        .feature-item {
+            background: var(--bg-elevated); border: 1px solid var(--border);
+            border-radius: 20px; padding: 32px; transition: all 0.3s;
+        }
+        .feature-item:hover { transform: translateY(-4px); border-color: rgba(79,70,229,0.3); }
+        .feature-icon {
+            width: 64px; height: 64px;
+            background: linear-gradient(135deg, rgba(79,70,229,0.2), rgba(147,51,234,0.1));
+            border-radius: 18px; display: flex; align-items: center; justify-content: center;
+            margin-bottom: 20px; color: #a5b4fc; font-size: 32px;
+        }
+        .feature-item h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+        .feature-item p { color: var(--text-secondary); font-size: 15px; line-height: 1.7; margin-bottom: 16px; }
+        .feature-tag {
+            display: inline-block; background: rgba(79,70,229,0.15); color: #a5b4fc;
+            padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;
+        }
+        .free-tag { background: rgba(34,197,94,0.15); color: #4ade80; }
+
+        .plus-badge {
+            display: inline-flex; align-items: center; gap: 4px;
+            background: linear-gradient(135deg, var(--gold-start) 0%, var(--gold-end) 100%);
+            color: var(--plus-text); padding: 4px 14px; border-radius: 50px;
+            font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+        }
+
+        .comparison-table { width: 100%; border-collapse: collapse; }
+        .comparison-table th, .comparison-table td { padding: 16px; text-align: left; border-bottom: 1px solid var(--border); font-size: 15px; }
+        .comparison-table th { font-weight: 700; color: var(--text-primary); }
+        .comparison-table td:first-child { color: var(--text-secondary); }
+        .check { color: #4ade80; font-size: 20px; }
+        .cross { color: #f87171; font-size: 20px; }
+
+        .theme-toggle-container { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 0; border-top: 1px solid var(--border); margin-top: 24px; }
+        .theme-toggle-label { font-size: 13px; color: var(--text-muted); }
+        .theme-toggle { display: flex; align-items: center; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 50px; padding: 4px; gap: 4px; }
+        .theme-btn { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; border: none; background: transparent; color: var(--text-muted); cursor: pointer; transition: all 0.2s; }
+        .theme-btn.active { background: var(--gradient-cta); color: white; }
+        .theme-btn .material-icons-outlined { font-size: 18px; }
+
+        .skip-to-content { position: absolute; top: -40px; left: 0; background: #4f46e5; color: white; padding: 8px 16px; z-index: 10000; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 0 0 8px 0; transition: top 0.3s; }
+        .skip-to-content:focus { top: 0; }
+    </style>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">跳至主要内容</a>
+
+    <!-- Navigation -->
+    <div class="unified-banner">
+        <span>🇨🇳</span>
+        <strong>中国</strong> — EZer 简体中文版
+        <a href="../../">切换国家</a>
+        &nbsp;|&nbsp;
+        <a href="../features.html">切换至英文</a>
+    </div>
+    <nav class="unified-nav">
+        <div class="unified-nav-inner">
+            <a href="./" class="unified-logo">
+                <img src="../../logo.png" alt="EZer" class="unified-logo-img">
+                <span class="unified-logo-text">EZer app</span>
+            </a>
+            <div class="unified-links">
+                <a href="./" class="unified-link">首页</a>
+                <a href="features.html" class="unified-link active">功能</a>
+                <a href="pricing.html" class="unified-link">定价</a>
+                <a href="privacy.html" class="unified-link">隐私政策</a>
+                <a href="terms.html" class="unified-link">服务条款</a>
+                <a href="index.html#download" class="unified-cta">免费下载</a>
+            </div>
+            <button class="unified-mobile-btn" aria-label="打开菜单" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
+                <span class="material-icons-outlined">menu</span>
+            </button>
+        </div>
+        <div class="unified-mobile-menu">
+            <a href="./" class="unified-mobile-link">首页</a>
+            <a href="features.html" class="unified-mobile-link active">功能</a>
+            <a href="pricing.html" class="unified-mobile-link">定价</a>
+            <a href="privacy.html" class="unified-mobile-link">隐私政策</a>
+            <a href="terms.html" class="unified-mobile-link">服务条款</a>
+            <a href="index.html#download" class="unified-mobile-cta">免费下载</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="main-content" class="feature-hero">
+        <div class="container">
+            <h1>全部功能。简单易用。</h1>
+            <p>强大的财务管理工具 — 全部免费。离线运行。无需账号。</p>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">核心功能</span>
+                <h2 class="section-title">财务管理所需的一切</h2>
+                <p class="section-subtitle">从支出追踪到储蓄目标，EZer全面支持您的财务生活</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">add_circle</span></div>
+                    <h3>快速添加支出</h3>
+                    <p>三步记录支出。输入金额，选择分类，完成。从未如此简单。</p>
+                    <span class="feature-tag free-tag">免费</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">account_balance_wallet</span></div>
+                    <h3>预算管理</h3>
+                    <p>按分类设置月度预算，实时追踪执行情况。超支前及时收到提醒通知。</p>
+                    <span class="feature-tag free-tag">免费 — 最多3个预算</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">bar_chart</span></div>
+                    <h3>智能分析</h3>
+                    <p>通过精美图表了解消费规律。月度支出、分类明细、收支对比一目了然。</p>
+                    <span class="feature-tag free-tag">免费</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">savings</span></div>
+                    <h3>储蓄目标</h3>
+                    <p>新手机、出行旅游、房屋首付 — 设定目标，追踪储蓄进度，实现财务梦想。</p>
+                    <span class="feature-tag free-tag">免费 — 最多2个目标</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">notifications</span></div>
+                    <h3>账单提醒</h3>
+                    <p>房租、手机费、保险费 — 再也不会错过任何还款截止日期。支持自定义提醒。</p>
+                    <span class="feature-tag free-tag">免费</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">document_scanner</span></div>
+                    <h3>小票扫描 (OCR)</h3>
+                    <p>拍摄小票照片，自动识别金额和日期。现金消费轻松记录，告别手动输入。</p>
+                    <span class="feature-tag">Plus</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">copy_all</span></div>
+                    <h3>快速添加模板</h3>
+                    <p>为重复支出创建模板。房租、订阅服务、定期支出一键记录，省时省力。</p>
+                    <span class="feature-tag free-tag">免费 — 最多3个模板</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">enhanced_encryption</span></div>
+                    <h3>银行级安全</h3>
+                    <p>所有数据采用AES-256加密，仅存储在您的设备上。不上传至任何服务器，完全私密。</p>
+                    <span class="feature-tag free-tag">免费</span>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><span class="material-icons-outlined">fingerprint</span></div>
+                    <h3>生物识别锁定</h3>
+                    <p>使用Face ID或指纹保护您的App。个人财务信息安全无忧，只有您才能访问。</p>
+                    <span class="feature-tag free-tag">免费</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-eyebrow">免费版 vs Plus版对比</span>
+                <h2 class="section-title">选择适合您的方案</h2>
+            </div>
+            <div style="overflow-x: auto;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>功能</th>
+                            <th>免费版</th>
+                            <th><span class="plus-badge">Plus</span> ¥18/每月</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>支出追踪</td><td><span class="check">✓</span> 无限制</td><td><span class="check">✓</span> 无限制</td></tr>
+                        <tr><td>预算</td><td>最多3个</td><td><span class="check">✓</span> 无限制</td></tr>
+                        <tr><td>储蓄目标</td><td>最多2个</td><td><span class="check">✓</span> 无限制</td></tr>
+                        <tr><td>快速添加模板</td><td>最多3个</td><td><span class="check">✓</span> 无限制</td></tr>
+                        <tr><td>分析仪表板</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+                        <tr><td>账单提醒</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+                        <tr><td>小票扫描 (OCR)</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+                        <tr><td>CSV/PDF导入</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+                        <tr><td>PDF报告</td><td><span class="cross">✗</span></td><td><span class="check">✓</span></td></tr>
+                        <tr><td>账户数量</td><td>最多2个</td><td><span class="check">✓</span> 无限制</td></tr>
+                        <tr><td>离线运行</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+                        <tr><td>无广告</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section style="background: var(--gradient-hero); padding: 80px 0; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: clamp(28px, 5vw, 42px); font-weight: 900; color: white; margin-bottom: 16px;">立即免费开始</h2>
+            <p style="font-size: 18px; color: rgba(255,255,255,0.85); margin-bottom: 32px;">30秒完成设置。无需账号。永久免费。</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://apps.apple.com/CN/app/ezer-budget-expense-tracker/id6738029702" style="display: flex; align-items: center; gap: 14px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.2); padding: 14px 28px; border-radius: 14px; text-decoration: none; color: white;" target="_blank" rel="noopener">
+                    <span class="material-icons-outlined" style="font-size: 36px;">apple</span>
+                    <div><small style="font-size: 12px; opacity: 0.8; display: block;">下载</small><span style="font-size: 18px; font-weight: 700;">App Store</span></div>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=CN" style="display: flex; align-items: center; gap: 14px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.2); padding: 14px 28px; border-radius: 14px; text-decoration: none; color: white;" target="_blank" rel="noopener">
+                    <span class="material-icons-outlined" style="font-size: 36px;">shop</span>
+                    <div><small style="font-size: 12px; opacity: 0.8; display: block;">下载</small><span style="font-size: 18px; font-weight: 700;">Google Play</span></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--bg-card); border-top: 1px solid var(--border); padding: 48px 0 24px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <a href="./" class="unified-logo" style="margin-bottom: 16px;">
+                        <img src="../../logo.png" alt="EZer" class="unified-logo-img" loading="lazy">
+                        <span class="unified-logo-text">EZer app</span>
+                    </a>
+                    <p style="color: var(--text-secondary); font-size: 14px; margin-top: 16px;">专为中国用户打造的智能财务助手。</p>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">产品</h4>
+                    <a href="features.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">功能</a>
+                    <a href="pricing.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">定价</a>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">法律</h4>
+                    <a href="privacy.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">隐私政策</a>
+                    <a href="terms.html" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">服务条款</a>
+                </div>
+                <div>
+                    <h4 style="color: var(--text-primary); font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;">支持</h4>
+                    <a href="mailto:support@ezerapp.com" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">联系我们</a>
+                    <a href="../../" style="display: block; color: var(--text-secondary); text-decoration: none; font-size: 14px; padding: 6px 0;">切换国家</a>
+                </div>
+            </div>
+            <div class="theme-toggle-container">
+                <span class="theme-toggle-label">主题</span>
+                <div class="theme-toggle">
+                    <button class="theme-btn" data-theme="light" title="浅色"><span class="material-icons-outlined">light_mode</span></button>
+                    <button class="theme-btn" data-theme="system" title="系统"><span class="material-icons-outlined">contrast</span></button>
+                    <button class="theme-btn" data-theme="dark" title="深色"><span class="material-icons-outlined">dark_mode</span></button>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 13px;">
+                <p>&copy; 2025 EZer. 版权所有。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const themeBtns = document.querySelectorAll('.theme-btn');
+        const html = document.documentElement;
+        function applyTheme(theme) {
+            if (theme === 'system') html.removeAttribute('data-theme');
+            else html.setAttribute('data-theme', theme);
+            themeBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.theme === theme));
+            localStorage.setItem('ezer-theme', theme);
+        }
+        applyTheme(localStorage.getItem('ezer-theme') || 'system');
+        themeBtns.forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.theme)));
+    </script>
+</body>
+</html>

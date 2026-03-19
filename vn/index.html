@@ -1022,6 +1022,37 @@
         }
     </style>
 
+    <style>
+        /* Language Detection Popup */
+        .lang-popup-overlay {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(4px);
+            z-index: 10000; display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; transition: all 0.3s ease;
+        }
+        .lang-popup-overlay.show { opacity: 1; visibility: visible; }
+        .lang-popup {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 20px; padding: 32px; max-width: 400px; width: 90%;
+            text-align: center; transform: scale(0.9); transition: transform 0.3s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+        .lang-popup-overlay.show .lang-popup { transform: scale(1); }
+        .lang-popup-icon { font-size: 48px; margin-bottom: 16px; }
+        .lang-popup-title { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+        .lang-popup-native { font-size: 20px; color: #a5b4fc; margin-bottom: 16px; }
+        .lang-popup-desc { color: var(--text-secondary); font-size: 14px; margin-bottom: 24px; line-height: 1.6; }
+        .lang-popup-buttons { display: flex; gap: 12px; flex-direction: column; }
+        .lang-popup-btn {
+            padding: 14px 24px; border-radius: 12px; font-size: 15px; font-weight: 600;
+            cursor: pointer; border: none; transition: all 0.2s ease;
+        }
+        .lang-popup-btn.primary { background: linear-gradient(135deg, #4f46e5, #9333ea); color: white; }
+        .lang-popup-btn.primary:hover { transform: scale(1.02); }
+        .lang-popup-btn.secondary { background: var(--bg-elevated); color: var(--text-secondary); border: 1px solid var(--border); }
+        .lang-popup-btn.secondary:hover { background: rgba(79, 70, 229, 0.1); color: var(--text-primary); }
+    </style>
+
 
     <script type="application/ld+json">
     {
@@ -1129,6 +1160,23 @@
 </head>
 <body>
 <a href="#main-content" class="skip-to-content">Skip to content</a>
+
+    <!-- Language Detection Popup -->
+    <div class="lang-popup-overlay" id="langPopup">
+        <div class="lang-popup">
+            <div class="lang-popup-icon">🌐</div>
+            <div class="lang-popup-title" id="popupTitle">Xem bằng tiếng Việt?</div>
+            <div class="lang-popup-native" id="popupNative">View in Vietnamese?</div>
+            <div class="lang-popup-desc" id="popupDesc">
+                EZer có sẵn bằng tiếng Việt. Chuyển ngay để có trải nghiệm tốt hơn.
+            </div>
+            <div class="lang-popup-buttons">
+                <button class="lang-popup-btn primary" id="popupSwitch">Xem bằng tiếng Việt</button>
+                <button class="lang-popup-btn secondary" id="popupDismiss">Continue in English</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
         <!-- LOCKED: Navigation - DO NOT MODIFY (see .claude/CLAUDE.md) -->
     <!-- Unified Navigation -->
@@ -1823,6 +1871,33 @@
             }, { threshold: 0.3 });
             observer.observe(downloadSection);
         }
+
+        // Language Detection for Vietnam - offer Vietnamese page to Vietnamese speakers
+        (function() {
+            const browserLang = (navigator.language || navigator.userLanguage || 'en').split('-')[0].toLowerCase();
+            const langChoice = localStorage.getItem('ezer-lang-choice-vn');
+            if (langChoice) return;
+            if (browserLang === 'vi') {
+                setTimeout(() => {
+                    const popup = document.getElementById('langPopup');
+                    popup.classList.add('show');
+                    document.getElementById('popupSwitch').onclick = () => {
+                        localStorage.setItem('ezer-lang-choice-vn', 'vi');
+                        window.location.href = '/vn/vi/';
+                    };
+                    document.getElementById('popupDismiss').onclick = () => {
+                        localStorage.setItem('ezer-lang-choice-vn', 'en');
+                        popup.classList.remove('show');
+                    };
+                    popup.onclick = (e) => {
+                        if (e.target === popup) {
+                            localStorage.setItem('ezer-lang-choice-vn', 'en');
+                            popup.classList.remove('show');
+                        }
+                    };
+                }, 1000);
+            }
+        })();
     </script>
 
     <!-- Mobile Sticky CTA -->
