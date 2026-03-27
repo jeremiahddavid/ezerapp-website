@@ -35,7 +35,7 @@
     <meta name="twitter:image" content="https://www.ezerapp.com/og-image.png">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <!-- Fonts -->
@@ -60,7 +60,7 @@
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
-            "ratingCount": "3000",
+            "ratingCount": "1247",
             "bestRating": "5",
             "worstRating": "1"
         },
@@ -495,67 +495,18 @@
 
         @media (max-width: 768px) {
             .mobile-sticky-cta { display: flex; }
-            .hero-content { padding-bottom: 80px; } /* Space for slider controls */
             .hero-buttons { flex-direction: column; align-items: center; }
             .btn { width: 100%; max-width: 280px; justify-content: center; }
             .trust-box { padding: clamp(24px, 6vw, 40px); }
             .trust-header { flex-direction: column; text-align: center; }
             .download-section { padding-bottom: 100px; }
         }
-    
-    /* Skip to content link */
-    .skip-to-content {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: #4f46e5;
-        color: white;
-        padding: 8px 16px;
-        z-index: 10000;
-        font-size: 14px;
-        font-weight: 600;
-        text-decoration: none;
-        border-radius: 0 0 8px 0;
-        transition: top 0.3s;
-    }
-    .skip-to-content:focus {
-        top: 0;
-    }
-</style>
+    </style>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
-    <meta name="apple-itunes-app" content="app-id=6738029702">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-                {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.ezerapp.com/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Pakistan",
-                        "item": "https://www.ezerapp.com/pk/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Punjabi",
-                        "item": "https://www.ezerapp.com/pk/pa/"
-                }
-        ]
-}
-    </script>
 </head>
 <body>
-<a href="#main-content" class="skip-to-content">Skip to content</a>
     <!-- Language Banner -->
     <div class="unified-banner">
         <span>🇵🇰</span>
@@ -578,7 +529,7 @@
                 <a href="terms.html" class="unified-link">ਸ਼ਰਤਾਂ</a>
                 <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=pk" class="unified-cta">ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ</a>
             </div>
-            <button class="unified-mobile-btn" aria-label="Open menu" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
+            <button class="unified-mobile-btn" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
                 <span class="material-icons-outlined">menu</span>
             </button>
         </div>
@@ -593,7 +544,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="main-content" class="hero-section">
+    <section class="hero-section">
         <div class="hero-orb purple"></div>
         <div class="hero-orb pink"></div>
         <div class="hero-content">
@@ -792,25 +743,15 @@
             <div class="download-inner">
                 <h2>ਅੱਜ ਹੀ ਟ੍ਰੈਕਿੰਗ ਸ਼ੁਰੂ ਕਰੋ</h2>
                 <p>iOS ਜਾਂ Android 'ਤੇ EZer ਐਪ ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ। ਕੋਈ ਸਾਈਨ-ਅੱਪ ਨਹੀਂ। ਤੁਹਾਡਾ ਡਾਟਾ ਤੁਹਾਡੇ ਡਿਵਾਈਸ 'ਤੇ ਰਹਿੰਦਾ ਹੈ।</p>
-                                <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;flex-wrap:wrap;">
-                    <div style="display:flex;gap:2px;">
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                    </div>
-                    <span style="color:rgba(255,255,255,0.9);font-weight:700;font-size:16px;">4.8</span>
-                    <span style="color:rgba(255,255,255,0.6);font-size:14px;">3,000+ ਉਪਭੋਗਤਾਵਾਂ ਤੋਂ</span>
-                </div>
-<div class="download-badges">
-                    <a href="https://apps.apple.com/PK/app/ezer-budget-expense-tracker/id6738029702" class="store-badge" target="_blank" rel="noopener">
+                <div class="download-badges">
+                    <div class="store-badge coming-soon">
+                        <span class="coming-soon-ribbon">ਜਲਦੀ ਆ ਰਿਹਾ</span>
                         <span class="material-icons-outlined icon">apple</span>
                         <div class="text">
                             <small>ਡਾਊਨਲੋਡ ਕਰੋ</small>
                             <span>App Store</span>
                         </div>
-                    </a>
+                    </div>
                     <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=PK" class="store-badge" target="_blank" rel="noopener">
                         <span class="material-icons-outlined icon">shop</span>
                         <div class="text">
@@ -829,7 +770,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
                 <div>
                     <a href="./" class="unified-logo" style="margin-bottom: 16px;">
-                        <img src="../../logo.png" alt="EZer" class="unified-logo-img" loading="lazy">
+                        <img src="../../logo.png" alt="EZer" class="unified-logo-img">
                         <span class="unified-logo-text">EZer app</span>
                     </a>
                     <p style="color: var(--text-secondary); font-size: 14px; margin-top: 16px;">
@@ -857,18 +798,10 @@
                 </div>
             </div>
 
-            <!-- Language Switcher -->
-            <div style="display: flex; align-items: center; justify-content: center; gap: 12px; padding: 16px 0; border-top: 1px solid var(--border);">
-                <span style="font-size: 13px; color: var(--text-muted);">ਭਾਸ਼ਾ:</span>
-                <a href="../index.html" style="font-size: 13px; color: var(--text-secondary); text-decoration: none;">English</a>
-                <span style="color: var(--text-muted);">|</span>
-                <a href="index.html" style="font-size: 13px; font-weight: 600; color: var(--indigo); text-decoration: none;">ਪੰਜਾਬੀ</a>
-            </div>
-
             <!-- Theme Toggle -->
             <div class="theme-toggle-container">
                 <span class="theme-toggle-label">ਦਿੱਖ</span>
-                <div class="theme-toggle" aria-label="Toggle dark mode">
+                <div class="theme-toggle">
                     <button class="theme-btn" data-theme="light" title="ਲਾਈਟ ਮੋਡ">
                         <span class="material-icons-outlined" style="font-size: 18px;">light_mode</span>
                     </button>
@@ -936,40 +869,6 @@
             }, { threshold: 0.3 });
             observer.observe(downloadSection);
         }
-    </script>
-
-    <script>
-    // Smart platform detection - highlight relevant store
-    (function() {
-        var ua = navigator.userAgent || '';
-        var isIOS = /iPhone|iPad|iPod/i.test(ua);
-        var isAndroid = /Android/i.test(ua);
-        // Sticky CTA: highlight the relevant platform
-        var sticky = document.querySelector('.mobile-sticky-cta');
-        if (sticky) {
-            var iosBtn = sticky.querySelector('.btn-sticky-ios') || sticky.querySelector('.btn-secondary');
-            var androidBtn = sticky.querySelector('.btn-sticky-android') || sticky.querySelector('.btn-primary');
-            if (isIOS && iosBtn && androidBtn) {
-                iosBtn.style.background = 'linear-gradient(135deg, #6366f1, #8b5cf6)';
-                iosBtn.style.border = 'none';
-                iosBtn.style.fontWeight = '700';
-                androidBtn.style.background = 'rgba(255,255,255,0.1)';
-                androidBtn.style.border = '1px solid rgba(255,255,255,0.2)';
-                androidBtn.style.fontWeight = '400';
-            }
-        }
-        // Download badges: add subtle highlight
-        var badges = document.querySelectorAll('.store-badge');
-        if (badges.length === 2) {
-            if (isIOS) {
-                badges[0].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
-                badges[0].style.borderColor = 'rgba(99, 102, 241, 0.6)';
-            } else if (isAndroid) {
-                badges[1].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
-                badges[1].style.borderColor = 'rgba(99, 102, 241, 0.6)';
-            }
-        }
-    })();
     </script>
 </body>
 </html>

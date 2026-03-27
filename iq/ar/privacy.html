@@ -9,7 +9,7 @@
     <link rel="alternate" hreflang="ar-IQ" href="https://www.ezerapp.com/iq/ar/privacy.html">
     <link rel="alternate" hreflang="en-IQ" href="https://www.ezerapp.com/iq/privacy.html">
     <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/iq/privacy.html">
-    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <style>
@@ -50,66 +50,12 @@
         .theme-toggle{display:flex;background:var(--bg-elevated);border:1px solid var(--border);border-radius:50px;padding:4px;gap:4px}
         .theme-btn{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;border:none;background:transparent;color:var(--text-muted);cursor:pointer}
         .theme-btn.active{background:var(--gradient-cta);color:white}
-    
-    /* Skip to content link */
-    .skip-to-content {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: #4f46e5;
-        color: white;
-        padding: 8px 16px;
-        z-index: 10000;
-        font-size: 14px;
-        font-weight: 600;
-        text-decoration: none;
-        border-radius: 0 0 8px 0;
-        transition: top 0.3s;
-    }
-    .skip-to-content:focus {
-        top: 0;
-    }
-</style>
+    </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
-    <meta name="apple-itunes-app" content="app-id=6738029702">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-                {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.ezerapp.com/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Iraq",
-                        "item": "https://www.ezerapp.com/iq/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Arabic",
-                        "item": "https://www.ezerapp.com/iq/ar/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 4,
-                        "name": "Privacy Policy",
-                        "item": "https://www.ezerapp.com/iq/ar/privacy.html"
-                }
-        ]
-}
-    </script>
 </head>
 <body>
-<a href="#main-content" class="skip-to-content">انتقل إلى المحتوى</a>
-    <div class="lang-switch-banner"><span>🇮🇶</span> أنت تشاهد EZer بالعربية <a href="../privacy.html">عرض بالإنجليزية</a></div>
+    <div class="lang-switch-banner"><span>🇮🇶</span> أنت تشاهد EZer بالعربية <a href="../privacy.html">View in English</a></div>
     <nav class="unified-nav">
         <div class="unified-nav-inner">
             <a href="./" class="unified-logo"><img src="../../logo.png" alt="EZer" class="unified-logo-img"><span class="unified-logo-text">EZer app</span></a>
@@ -121,7 +67,7 @@
                 <a href="terms.html" class="unified-link">الشروط</a>
                 <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=IQ" class="unified-cta">تحميل مجاني</a>
             </div>
-            <button class="unified-mobile-btn" aria-label="Open menu" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')"><span class="material-icons-outlined">menu</span></button>
+            <button class="unified-mobile-btn" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')"><span class="material-icons-outlined">menu</span></button>
         </div>
         <div class="unified-mobile-menu">
             <a href="./" class="unified-mobile-link">الرئيسية</a>
@@ -223,20 +169,12 @@
     <footer class="site-footer">
         <div class="container" style="max-width:1200px">
             <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;margin-bottom:40px">
-                <div><a href="./" class="unified-logo"><img src="../../logo.png" alt="EZer" class="unified-logo-img" loading="lazy"><span class="unified-logo-text">EZer app</span></a><p style="color:var(--text-secondary);font-size:14px;margin-top:12px">تطبيق إدارة المالية الشخصية رقم ١ في العراق</p></div>
+                <div><a href="./" class="unified-logo"><img src="../../logo.png" alt="EZer" class="unified-logo-img"><span class="unified-logo-text">EZer app</span></a><p style="color:var(--text-secondary);font-size:14px;margin-top:12px">تطبيق إدارة المالية الشخصية رقم ١ في العراق</p></div>
                 <div><h4 style="color:var(--text-primary);font-size:14px;font-weight:600;margin-bottom:16px">المنتج</h4><a href="features.html" style="display:block;color:var(--text-secondary);text-decoration:none;font-size:14px;padding:6px 0">الميزات</a><a href="pricing.html" style="display:block;color:var(--text-secondary);text-decoration:none;font-size:14px;padding:6px 0">الأسعار</a></div>
                 <div><h4 style="color:var(--text-primary);font-size:14px;font-weight:600;margin-bottom:16px">قانوني</h4><a href="privacy.html" style="display:block;color:var(--text-secondary);text-decoration:none;font-size:14px;padding:6px 0">سياسة الخصوصية</a><a href="terms.html" style="display:block;color:var(--text-secondary);text-decoration:none;font-size:14px;padding:6px 0">الشروط والأحكام</a></div>
-                <div><h4 style="color:var(--text-primary);font-size:14px;font-weight:600;margin-bottom:16px">الدعم</h4><a href="mailto:support@ezerapp.com" style="display:block;color:var(--text-secondary);text-decoration:none;font-size:14px;padding:6px 0">اتصل بنا</a><a href="../" style="display:block;color:var(--text-secondary);text-decoration:none;font-size:14px;padding:6px 0">عرض بالإنجليزية</a></div>
+                <div><h4 style="color:var(--text-primary);font-size:14px;font-weight:600;margin-bottom:16px">الدعم</h4><a href="mailto:support@ezerapp.com" style="display:block;color:var(--text-secondary);text-decoration:none;font-size:14px;padding:6px 0">اتصل بنا</a><a href="../" style="display:block;color:var(--text-secondary);text-decoration:none;font-size:14px;padding:6px 0">View in English</a></div>
             </div>
-            <!-- Language Switcher -->
-            <div style="display: flex; align-items: center; justify-content: center; gap: 12px; padding: 16px 0; border-top: 1px solid var(--border);">
-                <span style="font-size: 13px; color: var(--text-muted);">اللغة:</span>
-                <a href="../privacy.html" style="font-size: 13px; color: var(--text-secondary); text-decoration: none;">English</a>
-                <span style="color: var(--text-muted);">|</span>
-                <a href="privacy.html" style="font-size: 13px; font-weight: 600; color: var(--indigo); text-decoration: none;">العربية</a>
-            </div>
-
-            <div class="theme-toggle-container"><span class="theme-toggle-label">المظهر</span><div class="theme-toggle" aria-label="Toggle dark mode"><button class="theme-btn" data-theme="light"><span class="material-icons-outlined" style="font-size:18px">light_mode</span></button><button class="theme-btn" data-theme="system"><span class="material-icons-outlined" style="font-size:18px">contrast</span></button><button class="theme-btn" data-theme="dark"><span class="material-icons-outlined" style="font-size:18px">dark_mode</span></button></div></div>
+            <div class="theme-toggle-container"><span class="theme-toggle-label">المظهر</span><div class="theme-toggle"><button class="theme-btn" data-theme="light"><span class="material-icons-outlined" style="font-size:18px">light_mode</span></button><button class="theme-btn" data-theme="system"><span class="material-icons-outlined" style="font-size:18px">contrast</span></button><button class="theme-btn" data-theme="dark"><span class="material-icons-outlined" style="font-size:18px">dark_mode</span></button></div></div>
             <div style="text-align:center;padding-top:24px;border-top:1px solid var(--border);color:var(--text-muted);font-size:13px"><p>&copy; 2025 EZer. جميع الحقوق محفوظة.</p></div>
         </div>
     </footer>

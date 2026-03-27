@@ -187,115 +187,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
         body { font-family: 'Inter', sans-serif; }
         .gradient-hero { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 50%, #ec4899 100%); }
-    
-    /* Skip to content link */
-    .skip-to-content {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: #4f46e5;
-        color: white;
-        padding: 8px 16px;
-        z-index: 10000;
-        font-size: 14px;
-        font-weight: 600;
-        text-decoration: none;
-        border-radius: 0 0 8px 0;
-        transition: top 0.3s;
-    }
-    .skip-to-content:focus {
-        top: 0;
-    }
-
-    /* How It Works */
-    .how-it-works-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 32px;
-        max-width: 900px;
-        margin: 0 auto;
-    }
-    .how-step {
-        text-align: center;
-        padding: 32px 20px;
-    }
-    .how-step-number {
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        background: var(--gradient-hero);
-        color: white;
-        font-weight: 800;
-        font-size: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 16px;
-    }
-    .how-step h3 {
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 8px;
-        color: var(--text-primary);
-    }
-    .how-step p {
-        font-size: 14px;
-        color: var(--text-secondary);
-        line-height: 1.6;
-    }
-    .how-step .material-icons-outlined {
-        font-size: 40px;
-        color: #a5b4fc;
-        margin-bottom: 12px;
-    }
-    @media (max-width: 640px) {
-        .how-it-works-grid { grid-template-columns: 1fr; gap: 16px; }
-    }
-
-    /* FAQ Section */
-    .faq-grid {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    .faq-item {
-        border-bottom: 1px solid var(--border);
-        padding: 24px 0;
-    }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-question {
-        font-size: 16px;
-        font-weight: 700;
-        color: var(--text-primary);
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 16px;
-    }
-    .faq-question .material-icons-outlined {
-        font-size: 20px;
-        color: var(--text-secondary);
-        transition: transform 0.3s;
-    }
-    .faq-item.active .faq-question .material-icons-outlined {
-        transform: rotate(180deg);
-    }
-    .faq-answer {
-        font-size: 15px;
-        color: var(--text-secondary);
-        line-height: 1.7;
-        margin-top: 12px;
-        display: none;
-    }
-    .faq-item.active .faq-answer { display: block; }
-</style>
+    </style>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
-    <meta name="apple-itunes-app" content="app-id=6738029702">
 </head>
 <body class="bg-gray-50">
-<a href="#main-content" class="skip-to-content">Skip to content</a>
     <!-- Hero -->
     <div class="gradient-hero text-white py-16">
         <div class="container mx-auto px-4 text-center">
@@ -578,40 +475,6 @@
                 dropdown.classList.add('hidden');
             }
         });
-    </script>
-
-    <script>
-    // Smart platform detection - highlight relevant store
-    (function() {
-        var ua = navigator.userAgent || '';
-        var isIOS = /iPhone|iPad|iPod/i.test(ua);
-        var isAndroid = /Android/i.test(ua);
-        // Sticky CTA: highlight the relevant platform
-        var sticky = document.querySelector('.mobile-sticky-cta');
-        if (sticky) {
-            var iosBtn = sticky.querySelector('.btn-sticky-ios') || sticky.querySelector('.btn-secondary');
-            var androidBtn = sticky.querySelector('.btn-sticky-android') || sticky.querySelector('.btn-primary');
-            if (isIOS && iosBtn && androidBtn) {
-                iosBtn.style.background = 'linear-gradient(135deg, #6366f1, #8b5cf6)';
-                iosBtn.style.border = 'none';
-                iosBtn.style.fontWeight = '700';
-                androidBtn.style.background = 'rgba(255,255,255,0.1)';
-                androidBtn.style.border = '1px solid rgba(255,255,255,0.2)';
-                androidBtn.style.fontWeight = '400';
-            }
-        }
-        // Download badges: add subtle highlight
-        var badges = document.querySelectorAll('.store-badge');
-        if (badges.length === 2) {
-            if (isIOS) {
-                badges[0].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
-                badges[0].style.borderColor = 'rgba(99, 102, 241, 0.6)';
-            } else if (isAndroid) {
-                badges[1].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
-                badges[1].style.borderColor = 'rgba(99, 102, 241, 0.6)';
-            }
-        }
-    })();
     </script>
 </body>
 </html>

@@ -47,7 +47,6 @@
     <!-- App Links -->
     <meta property="al:android:package" content="com.ezer.personal_finance">
     <meta property="al:android:app_name" content="EZer">
-    <meta name="apple-itunes-app" content="app-id=6738029702">
     <meta property="al:android:url" content="https://play.google.com/store/apps/details?id=com.ezer.personal_finance">
     <meta property="al:ios:app_store_id" content="6740245492">
     <meta property="al:ios:app_name" content="EZer">
@@ -121,13 +120,13 @@
     </script>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Gujarati:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
     <style>
@@ -159,7 +158,7 @@
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Noto Sans Gujarati', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--bg-dark);
             color: var(--text-primary);
             line-height: 1.6;
@@ -355,45 +354,7 @@
         .store-badge .icon { font-size: 32px; }
         .store-badge .text small { font-size: 12px; opacity: 0.8; display: block; }
         .store-badge .text span { font-size: 18px; font-weight: 700; }
-
-        /* Coming Soon Badge for App Store */
-        .store-badge.coming-soon {
-            position: relative;
-            opacity: 0.7;
-            cursor: default;
-            pointer-events: none;
-        }
-        .store-badge.coming-soon:hover {
-            transform: none;
-            box-shadow: none;
-        }
-        .coming-soon-ribbon {
-            position: absolute;
-            top: -8px;
-            right: -8px;
-            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-            color: white;
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 10px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-            z-index: 1;
-        }
-        /* Mobile sticky CTA coming soon */
-        .mobile-sticky-cta .btn.coming-soon {
-            position: relative;
-            opacity: 0.6;
-            pointer-events: none;
-        }
-        .mobile-sticky-cta .coming-soon-label {
-            font-size: 8px;
-            display: block;
-            margin-top: 2px;
-            opacity: 0.8;
-        }
+        .store-badge.coming-soon { opacity: 0.6; pointer-events: none; cursor: not-allowed; }
 
         /* Footer */
         .footer { background: var(--bg-card); border-top: 1px solid var(--border); padding: 60px 24px 24px; }
@@ -414,7 +375,6 @@
             .nav-links { display: none; }
             .nav-cta { display: none; }
             .theme-toggle { display: none; }
-            .hero-content { padding-bottom: 80px; } /* Space for slider controls */
             .hero-buttons { flex-direction: column; align-items: center; }
             .btn { width: 100%; max-width: 280px; justify-content: center; }
             .mobile-sticky-cta { display: block; }
@@ -424,60 +384,13 @@
             .lang-chip { padding: 5px 10px; font-size: 12px; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
         }
-    
-    /* Skip to content link */
-    .skip-to-content {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: #4f46e5;
-        color: white;
-        padding: 8px 16px;
-        z-index: 10000;
-        font-size: 14px;
-        font-weight: 600;
-        text-decoration: none;
-        border-radius: 0 0 8px 0;
-        transition: top 0.3s;
-    }
-    .skip-to-content:focus {
-        top: 0;
-    }
-</style>
+    </style>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-                {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.ezerapp.com/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "India",
-                        "item": "https://www.ezerapp.com/in/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Gujarati",
-                        "item": "https://www.ezerapp.com/in/gu/"
-                }
-        ]
-}
-    </script>
 </head>
 <body>
-<a href="#main-content" class="skip-to-content">Skip to content</a>
     <!-- Language Banner -->
     <div class="lang-banner">
         🇮🇳 EZer ગુજરાતીમાં જુઓ
@@ -521,15 +434,20 @@
                 <a href="./" class="nav-link">હોમ</a>
                 <a href="./features.html" class="nav-link">ફીચર્સ</a>
                 <a href="./pricing.html" class="nav-link">કિંમત</a>
-                <a href="./privacy.html" class="nav-link">ગોપનીયતા</a>
-                <a href="./terms.html" class="nav-link">શરતો</a>
             </div>
-            <a href="#download" class="nav-cta">મફત ડાઉનલોડ કરો - ₹0</a>
+            <div style="display: flex; align-items: center;">
+                <a href="#download" class="nav-cta">મફત ડાઉનલોડ કરો - ₹0</a>
+                <div class="theme-toggle">
+                    <button onclick="setTheme('light')" title="લાઈટ">☀️</button>
+                    <button onclick="setTheme('dark')" title="ડાર્ક">🌙</button>
+                    <button onclick="setTheme('system')" title="સિસ્ટમ">💻</button>
+                </div>
+            </div>
         </div>
     </nav>
 
     <!-- Hero -->
-    <section id="main-content" class="hero">
+    <section class="hero">
         <div class="hero-orb purple"></div>
         <div class="hero-orb pink"></div>
         <div class="hero-content">
@@ -820,25 +738,14 @@
         <div class="container">
             <h2>આજે જ ટ્રેકિંગ શરૂ કરો</h2>
             <p>EZer મફત ડાઉનલોડ કરો. સાઈન-અપ જરૂરી નથી.</p>
-                            <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;flex-wrap:wrap;">
-                    <div style="display:flex;gap:2px;">
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                    </div>
-                    <span style="color:rgba(255,255,255,0.9);font-weight:700;font-size:16px;">4.8</span>
-                    <span style="color:rgba(255,255,255,0.6);font-size:14px;">3,000+ વપરાશકર્તાઓ તરફથી</span>
-                </div>
-<div class="download-badges">
-                <a href="https://apps.apple.com/IN/app/ezer-budget-expense-tracker/id6738029702" class="store-badge" target="_blank" rel="noopener">
-                        <span class="material-icons-outlined icon">apple</span>
+            <div class="download-badges">
+                <a class="store-badge coming-soon" title="ટૂંક સમયમાં આવશે">
+                    <span class="material-icons-outlined icon">apple</span>
                     <div class="text">
-                        <small>ડાઉનલોડ કરો</small>
+                        <small>ટૂંક સમયમાં આવશે</small>
                         <span>App Store</span>
                     </div>
-                    </a>
+                </a>
                 <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=IN" class="store-badge" target="_blank" rel="noopener">
                     <span class="material-icons-outlined icon">shop</span>
                     <div class="text">
@@ -856,7 +763,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="./" class="nav-logo">
-                        <img src="../../logo.png" alt="EZer" loading="lazy">
+                        <img src="../../logo.png" alt="EZer">
                         <span>EZer</span>
                     </a>
                     <p>દરેક રૂપિયાનો હિસાબ રાખો. 100% ઓફલાઈન, પ્રાઈવેટ ખર્ચ ટ્રેકર.</p>
@@ -868,8 +775,6 @@
                     <a href="./pricing.html">કિંમત</a>
                     <a href="./privacy.html">ગોપનીયતા</a>
                     <a href="./terms.html">શરતો</a>
-                    <a href="../../feedback.html">ફીડબૅક</a>
-                    <a href="../../report.html">સમસ્યા જણાવો</a>
                 </div>
                 <div class="footer-section">
                     <h4>ભાષાઓ</h4>
@@ -889,29 +794,13 @@
                     <a href="../or/">ଓଡ଼ିଆ</a>
                 </div>
             </div>
-            <!-- Language Switcher -->
-            <div style="display: flex; align-items: center; justify-content: center; gap: 12px; padding: 16px 0; border-top: 1px solid var(--border);">
-                <span style="font-size: 13px; color: var(--text-muted);">ભાષા:</span>
-                <a href="../index.html" style="font-size: 13px; color: var(--text-secondary); text-decoration: none;">English</a>
-                <span style="color: var(--text-muted);">|</span>
-                <a href="index.html" style="font-size: 13px; font-weight: 600; color: var(--indigo); text-decoration: none;">ગુજરાતી</a>
-            </div>
-            <div class="theme-toggle-container" style="display: flex; align-items: center; justify-content: center; gap: 12px; padding: 16px 0; border-top: 1px solid var(--border);">
-                <span style="font-size: 13px; color: var(--text-muted);">થીમ</span>
-                <div class="theme-toggle" aria-label="Toggle dark mode" style="display: flex; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 10px; padding: 4px;">
-                    <button class="theme-btn" data-theme="light" title="લાઈટ" style="background: none; border: none; padding: 8px; border-radius: 8px; cursor: pointer; color: var(--text-muted);">
-                        <span class="material-icons-outlined" style="font-size: 18px;">light_mode</span>
-                    </button>
-                    <button class="theme-btn" data-theme="system" title="સિસ્ટમ" style="background: none; border: none; padding: 8px; border-radius: 8px; cursor: pointer; color: var(--text-muted);">
-                        <span class="material-icons-outlined" style="font-size: 18px;">contrast</span>
-                    </button>
-                    <button class="theme-btn" data-theme="dark" title="ડાર્ક" style="background: none; border: none; padding: 8px; border-radius: 8px; cursor: pointer; color: var(--text-muted);">
-                        <span class="material-icons-outlined" style="font-size: 18px;">dark_mode</span>
-                    </button>
-                </div>
-            </div>
             <div class="footer-bottom">
                 <p class="footer-copy">&copy; 2025 EZer. સર્વ હક્ક અનામત.</p>
+                <div class="theme-toggle">
+                    <button onclick="setTheme('light')" title="લાઈટ">☀️</button>
+                    <button onclick="setTheme('dark')" title="ડાર્ક">🌙</button>
+                    <button onclick="setTheme('system')" title="સિસ્ટમ">💻</button>
+                </div>
             </div>
         </div>
     </footer>
@@ -926,31 +815,41 @@
 
     <script>
         // Theme Management
-        const themeBtns = document.querySelectorAll('.theme-btn');
-        const html = document.documentElement;
-
-        function applyTheme(theme) {
+        function setTheme(theme) {
             if (theme === 'system') {
-                html.removeAttribute('data-theme');
+                localStorage.removeItem('theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
             } else {
-                html.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                document.documentElement.setAttribute('data-theme', theme);
             }
-            themeBtns.forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.theme === theme);
-                if (btn.classList.contains('active')) {
-                    btn.style.background = 'linear-gradient(135deg, #4f46e5 0%, #9333ea 100%)';
-                    btn.style.color = 'white';
-                } else {
-                    btn.style.background = 'none';
-                    btn.style.color = 'var(--text-muted)';
+            updateThemeButtons();
+        }
+
+        function updateThemeButtons() {
+            const savedTheme = localStorage.getItem('theme');
+            document.querySelectorAll('.theme-toggle button').forEach((btn, index) => {
+                btn.classList.remove('active');
+                if ((index === 0 && savedTheme === 'light') ||
+                    (index === 1 && savedTheme === 'dark') ||
+                    (index === 2 && !savedTheme)) {
+                    btn.classList.add('active');
                 }
             });
-            localStorage.setItem('ezer-theme', theme);
         }
 
         // Initialize theme
-        applyTheme(localStorage.getItem('ezer-theme') || 'system');
-        themeBtns.forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.theme)));
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            } else {
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+            }
+            updateThemeButtons();
+        })();
 
         // Hide mobile CTA when near download section
         const downloadSection = document.getElementById('download');
@@ -964,40 +863,6 @@
             }, { threshold: 0.1 });
             observer.observe(downloadSection);
         }
-    </script>
-
-    <script>
-    // Smart platform detection - highlight relevant store
-    (function() {
-        var ua = navigator.userAgent || '';
-        var isIOS = /iPhone|iPad|iPod/i.test(ua);
-        var isAndroid = /Android/i.test(ua);
-        // Sticky CTA: highlight the relevant platform
-        var sticky = document.querySelector('.mobile-sticky-cta');
-        if (sticky) {
-            var iosBtn = sticky.querySelector('.btn-sticky-ios') || sticky.querySelector('.btn-secondary');
-            var androidBtn = sticky.querySelector('.btn-sticky-android') || sticky.querySelector('.btn-primary');
-            if (isIOS && iosBtn && androidBtn) {
-                iosBtn.style.background = 'linear-gradient(135deg, #6366f1, #8b5cf6)';
-                iosBtn.style.border = 'none';
-                iosBtn.style.fontWeight = '700';
-                androidBtn.style.background = 'rgba(255,255,255,0.1)';
-                androidBtn.style.border = '1px solid rgba(255,255,255,0.2)';
-                androidBtn.style.fontWeight = '400';
-            }
-        }
-        // Download badges: add subtle highlight
-        var badges = document.querySelectorAll('.store-badge');
-        if (badges.length === 2) {
-            if (isIOS) {
-                badges[0].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
-                badges[0].style.borderColor = 'rgba(99, 102, 241, 0.6)';
-            } else if (isAndroid) {
-                badges[1].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
-                badges[1].style.borderColor = 'rgba(99, 102, 241, 0.6)';
-            }
-        }
-    })();
     </script>
 </body>
 </html>

@@ -26,8 +26,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap');
-        body { font-family: 'Noto Sans Bengali', 'Inter', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
 
         /* Plus Badge - matches app styling exactly */
         .plus-badge {
@@ -67,26 +67,7 @@
             padding: 2px 10px;
             font-size: 0.75rem;
         }
-    
-    /* Skip to content link */
-    .skip-to-content {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: #4f46e5;
-        color: white;
-        padding: 8px 16px;
-        z-index: 10000;
-        font-size: 14px;
-        font-weight: 600;
-        text-decoration: none;
-        border-radius: 0 0 8px 0;
-        transition: top 0.3s;
-    }
-    .skip-to-content:focus {
-        top: 0;
-    }
-</style>
+    </style>
 
     <!-- Theme System (works with Tailwind) -->
     <link rel="stylesheet" href="../../css/theme.css">
@@ -237,68 +218,8 @@
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
-
-    <style>
-        /* Coming Soon Styling */
-        .coming-soon-btn {
-            position: relative;
-            opacity: 0.6;
-            cursor: not-allowed;
-            pointer-events: none;
-        }
-        .coming-soon-badge {
-            position: absolute;
-            top: -8px;
-            right: -8px;
-            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 9px;
-            font-weight: 700;
-            text-transform: uppercase;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-            z-index: 10;
-        }
-    </style>
-
-    <meta name="apple-itunes-app" content="app-id=6738029702">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-                {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.ezerapp.com/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "India",
-                        "item": "https://www.ezerapp.com/in/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Bengali",
-                        "item": "https://www.ezerapp.com/in/bn/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 4,
-                        "name": "Terms of Service",
-                        "item": "https://www.ezerapp.com/in/bn/terms.html"
-                }
-        ]
-}
-    </script>
 </head>
 <body class="bg-gray-50">
-<a href="#main-content" class="skip-to-content">বিষয়বস্তুতে যান</a>
         <!-- Themed Navigation -->
     <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
         <span class="mr-2">🇮🇳</span>
@@ -321,7 +242,10 @@
                     <a href="./pricing.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">মূল্য</a>
                     <a href="./privacy.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">গোপনীয়তা</a>
                     <a href="./terms.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50 text-indigo-600 bg-indigo-100 text-indigo-600 font-semibold">শর্তাবলী</a>
-                    <a href="https://apps.apple.com/IN/app/ezer-budget-expense-tracker/id6738029702" class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity" target="_blank" rel="noopener">বিনামূল্যে ডাউনলোড</a>
+                    <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702"
+                       class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:shadow-lg transition-all">
+                        বিনামূল্যে ডাউনলোড
+                    </a>
                 </div>
 
                 <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
@@ -338,123 +262,103 @@
                 <a href="./pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">মূল্য</a>
                 <a href="./privacy.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">গোপনীয়তা</a>
                 <a href="./terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50 bg-indigo-100 text-indigo-600 font-semibold">শর্তাবলী</a>
-                <a href="https://apps.apple.com/IN/app/ezer-budget-expense-tracker/id6738029702" class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold hover:opacity-90 transition-opacity" target="_blank" rel="noopener">বিনামূল্যে ডাউনলোড</a>
+                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702"
+                   class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold">
+                    বিনামূল্যে ডাউনলোড
+                </a>
             </div>
         </div>
     </nav>
 <!-- Content -->
     <div class="container mx-auto px-4 py-12">
         <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
-            <h1 class="text-4xl font-bold mb-2">সেবার শর্তাবলী</h1>
-            <p class="text-gray-500 mb-8">সর্বশেষ আপডেট: নভেম্বর 2025</p>
+            <h1 class="text-4xl font-bold mb-2">Terms of Service</h1>
+            <p class="text-gray-500 mb-8">Last updated: November 2025</p>
 
             <div class="prose prose-lg max-w-none">
-                
-                <h3 class="text-xl font-semibold mt-6 mb-3">Auto-Renewable Subscription Terms (Apple App Store)</h3>
+                <h2 class="text-2xl font-bold mt-8 mb-4">1. Acceptance of Terms</h2>
                 <p class="text-gray-700 mb-4">
-                    By subscribing to <span class="plus-badge plus-badge-sm">Plus</span> on iOS, you agree to the following:
-                </p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong>Payment:</strong> Payment will be charged to your Apple ID Account at confirmation of purchase.</li>
-                    <li><strong>Subscription Period:</strong> EZer Plus is a monthly auto-renewable subscription.</li>
-                    <li><strong>Auto-Renewal:</strong> Your subscription will automatically renew unless you turn off auto-renewal at least 24 hours before the end of the current billing period.</li>
-                    <li><strong>Renewal Charge:</strong> Your Apple ID Account will be charged for renewal within 24 hours prior to the end of the current period at the same price.</li>
-                    <li><strong>Free Trial:</strong> If offered, any unused portion of a free trial will be forfeited when you purchase a subscription.</li>
-                </ul>
-
-                <h3 class="text-xl font-semibold mt-6 mb-3">Managing Your Subscription</h3>
-                <p class="text-gray-700 mb-4">You can manage or cancel your subscription at any time:</p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong>iPhone/iPad:</strong> Settings → [Your Name] → Subscriptions → EZer Plus</li>
-                    <li><strong>Mac:</strong> App Store → Account → Account Settings → Subscriptions</li>
-                </ul>
-                <p class="text-gray-700 mb-4">Cancellation will take effect at the end of the current billing period. You will retain access to Plus features until then.</p>
-
-                <h3 class="text-xl font-semibold mt-6 mb-3">Google Play Store Subscriptions</h3>
-                <p class="text-gray-700 mb-4">For Android users, subscriptions are managed through Google Play Store. To manage or cancel: Google Play Store → Menu → Subscriptions → EZer Plus.</p>
-<h2 class="text-2xl font-bold mt-8 mb-4">1. শর্তাবলীর গ্রহণযোগ্যতা</h2>
-                <p class="text-gray-700 mb-4">
-                    EZer অ্যাপ ("অ্যাপ") ডাউনলোড, ইনস্টল বা ব্যবহার করে, আপনি এই সেবার শর্তাবলী মেনে চলতে সম্মত হন। আপনি যদি এই শর্তাবলীতে সম্মত না হন, অনুগ্রহ করে অ্যাপটি ব্যবহার করবেন না।
+                    By downloading, installing, or using EZer app ("the App"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the App.
                 </p>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">2. সেবার বিবরণ</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">2. Description of Service</h2>
                 <p class="text-gray-700 mb-4">
-                    EZer একটি ব্যক্তিগত অর্থ ট্র্যাকিং অ্যাপ্লিকেশন যা আপনাকে সাহায্য করে:
+                    EZer is a personal finance tracking application that helps you:
                 </p>
                 <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>ম্যানুয়ালি খরচ এবং আয় ট্র্যাক করুন</li>
-                    <li>সঞ্চয় লক্ষ্য তৈরি এবং পরিচালনা করুন</li>
-                    <li>বাজেট সেট করুন এবং নিরীক্ষণ করুন</li>
-                    <li>বিশ্লেষণ এবং খরচের প্যাটার্ন দেখুন</li>
-                    <li>পুনরাবৃত্ত লেনদেনের জন্য কুইক অ্যাড টেমপ্লেট ব্যবহার করুন</li>
+                    <li>Manually track expenses and income</li>
+                    <li>Create and manage savings goals</li>
+                    <li>Set and monitor budgets</li>
+                    <li>View analytics and spending patterns</li>
+                    <li>Use quick add templates for recurring transactions</li>
                 </ul>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">3. EZer কী নয়</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">3. What EZer Is NOT</h2>
                 <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
                     <p class="text-gray-700">
-                        <strong>গুরুত্বপূর্ণ:</strong> EZer শুধুমাত্র একটি ট্র্যাকিং এবং অর্গানাইজেশন টুল। EZer এটি করে না:
+                        <strong>Important:</strong> EZer is a tracking and organization tool only. EZer does NOT:
                     </p>
                     <ul class="list-disc pl-6 text-gray-700 space-y-2 mt-2">
-                        <li>আর্থিক, বিনিয়োগ বা কর পরামর্শ প্রদান</li>
-                        <li>কোনো নির্দিষ্ট আর্থিক ফলাফলের গ্যারান্টি</li>
-                        <li>সরাসরি আপনার ব্যাংক অ্যাকাউন্টের সাথে সংযোগ</li>
-                        <li>অর্থ স্থানান্তর বা ট্রান্সফার</li>
-                        <li>আপনি প্রবেশ করা ডেটার নির্ভুলতা যাচাই</li>
+                        <li>Provide financial, investment, or tax advice</li>
+                        <li>Guarantee any specific financial outcomes</li>
+                        <li>Connect directly to your bank accounts</li>
+                        <li>Move or transfer money</li>
+                        <li>Verify the accuracy of data you enter</li>
                     </ul>
                 </div>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">4. ব্যবহারকারীর দায়িত্ব</h2>
-                <p class="text-gray-700 mb-4">আপনি দায়ী:</p>
+                <h2 class="text-2xl font-bold mt-8 mb-4">4. User Responsibilities</h2>
+                <p class="text-gray-700 mb-4">You are responsible for:</p>
                 <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>আপনি প্রবেশ করা সমস্ত ডেটা সঠিক তা নিশ্চিত করতে</li>
-                    <li>আপনার অ্যাকাউন্টের নিরাপত্তা বজায় রাখতে</li>
-                    <li>আপনার নিজের আর্থিক সিদ্ধান্ত নিতে</li>
-                    <li>আর্থিক পরামর্শের জন্য যোগ্য পেশাদারদের পরামর্শ নিতে</li>
+                    <li>Ensuring all data you enter is accurate</li>
+                    <li>Maintaining the security of your account</li>
+                    <li>Making your own financial decisions</li>
+                    <li>Consulting qualified professionals for financial advice</li>
                 </ul>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">5. প্ল্যান এবং মূল্য</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">5. Plans & Pricing</h2>
                 <p class="text-gray-700 mb-4">
-                    EZer দুটি প্ল্যান অফার করে:
+                    EZer offers two plans:
                 </p>
                 <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong>ফ্রি প্ল্যান:</strong> ব্যবহারের সীমা সহ মৌলিক বৈশিষ্ট্য (3টি অ্যাকাউন্ট, 3টি বাজেট, 2টি লক্ষ্য, ইত্যাদি) - চিরতরে বিনামূল্যে</li>
-                    <li><strong><span class="plus-badge plus-badge-sm">Plus</span> প্ল্যান:</strong> ভারতে ₹99/মাসে সীমাহীন বৈশিষ্ট্য</li>
+                    <li><strong>Free Plan:</strong> Basic features with usage limits (3 accounts, 3 budgets, 2 goals, etc.) - free forever</li>
+                    <li><strong><span class="plus-badge plus-badge-sm">Plus</span> Plan:</strong> Unlimited features at ₹99/month for India</li>
                 </ul>
                 <p class="text-gray-700 mb-4">
-                    <span class="plus-badge plus-badge-sm">Plus</span> এ সাবস্ক্রাইব করে, আপনি সম্মত হন:
+                    By subscribing to <span class="plus-badge plus-badge-sm">Plus</span>, you agree to:
                 </p>
                 <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>সাবস্ক্রিপশনের সাথে সাথে পেমেন্ট চার্জ করা হয়</li>
-                    <li>বাতিল না করলে স্বয়ংক্রিয় মাসিক পুনর্নবীকরণ</li>
-                    <li>আপনার অ্যাপ স্টোরের মাধ্যমে যেকোনো সময় বাতিল করা যায়</li>
+                    <li>Payment is charged immediately upon subscription</li>
+                    <li>Automatic monthly renewal unless cancelled</li>
+                    <li>Cancellation at any time through your app store</li>
                 </ul>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">6. মেধা সম্পত্তি</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">6. Intellectual Property</h2>
                 <p class="text-gray-700 mb-4">
-                    অ্যাপ, সমস্ত বিষয়বস্তু, বৈশিষ্ট্য এবং কার্যকারিতা সহ, EZer-এর মালিকানাধীন এবং কপিরাইট, ট্রেডমার্ক এবং অন্যান্য মেধা সম্পত্তি আইন দ্বারা সুরক্ষিত।
+                    The App, including all content, features, and functionality, is owned by EZer and is protected by copyright, trademark, and other intellectual property laws.
                 </p>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">7. দায়বদ্ধতার সীমাবদ্ধতা</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">7. Limitation of Liability</h2>
                 <p class="text-gray-700 mb-4">
-                    আইন দ্বারা অনুমোদিত সর্বাধিক পরিমাণে, অ্যাপ ব্যবহারের ফলে উদ্ভূত কোনো পরোক্ষ, আকস্মিক, বিশেষ, পরিণামগত বা শাস্তিমূলক ক্ষতির জন্য EZer দায়ী থাকবে না।
+                    To the maximum extent permitted by law, EZer shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of the App.
                 </p>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">8. দাবিত্যাগ</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">8. Disclaimer</h2>
                 <p class="text-gray-700 mb-4">
-                    অ্যাপটি কোনো ধরনের ওয়ারেন্টি ছাড়াই "যেমন আছে" প্রদান করা হয়। আমরা গ্যারান্টি দিই না যে অ্যাপটি ত্রুটি-মুক্ত বা বাধাহীন হবে।
+                    The App is provided "as is" without warranties of any kind. We do not guarantee that the App will be error-free or uninterrupted.
                 </p>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">9. শর্তাবলীতে পরিবর্তন</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">9. Changes to Terms</h2>
                 <p class="text-gray-700 mb-4">
-                    আমরা সময়ে সময়ে এই শর্তাবলী আপডেট করতে পারি। পরিবর্তনের পরে অ্যাপের অব্যাহত ব্যবহার নতুন শর্তাবলীর গ্রহণযোগ্যতা নির্দেশ করে।
+                    We may update these Terms from time to time. Continued use of the App after changes constitutes acceptance of the new Terms.
                 </p>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">10. যোগাযোগ</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">10. Contact</h2>
                 <p class="text-gray-700 mb-4">
-                    এই শর্তাবলী সম্পর্কে প্রশ্নের জন্য, আমাদের সাথে যোগাযোগ করুন:
+                    For questions about these Terms, contact us at:
                 </p>
                 <p class="text-gray-700">
-                    <strong>ইমেল:</strong> <a href="mailto:legal@ezerapp.com" class="text-indigo-600 hover:underline">legal@ezerapp.com</a>
+                    <strong>Email:</strong> <a href="mailto:legal@ezerapp.com" class="text-indigo-600 hover:underline">legal@ezerapp.com</a>
                 </p>
             </div>
         </div>
@@ -466,7 +370,7 @@
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <div class="flex items-center gap-3 mb-4">
-                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain" loading="lazy">
+                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain">
                         <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
                     </div>
                     <p class="text-sm mb-4" style="color: var(--text-secondary);">ভারতে আপনার স্মার্ট অর্থ সঙ্গী।</p>
@@ -541,40 +445,6 @@
             var menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         });
-    </script>
-
-    <script>
-    // Smart platform detection - highlight relevant store
-    (function() {
-        var ua = navigator.userAgent || '';
-        var isIOS = /iPhone|iPad|iPod/i.test(ua);
-        var isAndroid = /Android/i.test(ua);
-        // Sticky CTA: highlight the relevant platform
-        var sticky = document.querySelector('.mobile-sticky-cta');
-        if (sticky) {
-            var iosBtn = sticky.querySelector('.btn-sticky-ios') || sticky.querySelector('.btn-secondary');
-            var androidBtn = sticky.querySelector('.btn-sticky-android') || sticky.querySelector('.btn-primary');
-            if (isIOS && iosBtn && androidBtn) {
-                iosBtn.style.background = 'linear-gradient(135deg, #6366f1, #8b5cf6)';
-                iosBtn.style.border = 'none';
-                iosBtn.style.fontWeight = '700';
-                androidBtn.style.background = 'rgba(255,255,255,0.1)';
-                androidBtn.style.border = '1px solid rgba(255,255,255,0.2)';
-                androidBtn.style.fontWeight = '400';
-            }
-        }
-        // Download badges: add subtle highlight
-        var badges = document.querySelectorAll('.store-badge');
-        if (badges.length === 2) {
-            if (isIOS) {
-                badges[0].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
-                badges[0].style.borderColor = 'rgba(99, 102, 241, 0.6)';
-            } else if (isAndroid) {
-                badges[1].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
-                badges[1].style.borderColor = 'rgba(99, 102, 241, 0.6)';
-            }
-        }
-    })();
     </script>
 </body>
 </html>

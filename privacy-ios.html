@@ -3,746 +3,446 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EZer Privacy Policy for iOS - Your financial data stays on your device with bank-grade encryption">
     <title>Privacy Policy - EZer Finance App (iOS)</title>
-    <meta name="description" content="EZer Privacy Policy for iOS - Your financial data stays on your device with bank-grade encryption.">
-
-    <link rel="canonical" href="https://www.ezerapp.com/privacy-ios.html">
-
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-    
-    /* Skip to content link */
-    .skip-to-content {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: #4f46e5;
-        color: white;
-        padding: 8px 16px;
-        z-index: 10000;
-        font-size: 14px;
-        font-weight: 600;
-        text-decoration: none;
-        border-radius: 0 0 8px 0;
-        transition: top 0.3s;
-    }
-    .skip-to-content:focus {
-        top: 0;
-    }
-</style>
-
-    <!-- Theme System (works with Tailwind) -->
-    <link rel="stylesheet" href="css/theme.css">
-    <style>
-        /* =============================================
-           DARK MODE OVERRIDES FOR TAILWIND
-           ============================================= */
-
-        /* Override Tailwind for themed elements */
-        .themed-nav {
-            background: var(--header-bg) !important;
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
-        .themed-footer {
-            background: var(--bg-card) !important;
-            border-top: 1px solid var(--border);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        /* Ensure body respects theme */
         body {
-            background: var(--bg-primary) !important;
-            color: var(--text-primary);
-            transition: background-color 0.3s ease;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f7;
+            padding: 20px;
         }
 
-        /* ----- DARK MODE STYLES ----- */
-
-        /* Background colors */
-        [data-theme="dark"] .bg-gray-50,
-        [data-theme="dark"] .bg-gray-100 { background: var(--bg-primary) !important; }
-        [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
-        [data-theme="dark"] .bg-gray-900 { background: var(--bg-card) !important; }
-
-        /* Colored backgrounds - make them darker/subtler */
-        [data-theme="dark"] .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
-        [data-theme="dark"] .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
-        [data-theme="dark"] .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
-        [data-theme="dark"] .bg-purple-100 { background: rgba(147, 51, 234, 0.15) !important; }
-        [data-theme="dark"] .bg-pink-100 { background: rgba(236, 72, 153, 0.15) !important; }
-        [data-theme="dark"] .bg-blue-50,
-        [data-theme="dark"] .bg-blue-100 { background: rgba(59, 130, 246, 0.15) !important; }
-        [data-theme="dark"] .bg-yellow-50 { background: rgba(234, 179, 8, 0.15) !important; }
-        [data-theme="dark"] .bg-red-50 { background: rgba(239, 68, 68, 0.15) !important; }
-
-        /* Gray text colors */
-        [data-theme="dark"] .text-gray-600,
-        [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
-        [data-theme="dark"] .text-gray-800,
-        [data-theme="dark"] .text-gray-900 { color: var(--text-primary) !important; }
-        [data-theme="dark"] .text-gray-400,
-        [data-theme="dark"] .text-gray-500 { color: var(--text-muted) !important; }
-
-        /* Colored text - brighten for dark backgrounds */
-        [data-theme="dark"] .text-indigo-600 { color: #818cf8 !important; }
-        [data-theme="dark"] .text-indigo-700 { color: #a5b4fc !important; }
-        [data-theme="dark"] .text-purple-600 { color: #c084fc !important; }
-        [data-theme="dark"] .text-green-600 { color: #4ade80 !important; }
-        [data-theme="dark"] .text-green-800 { color: #86efac !important; }
-        [data-theme="dark"] .text-blue-600 { color: #60a5fa !important; }
-        [data-theme="dark"] .text-blue-700 { color: #93bbfd !important; }
-        [data-theme="dark"] .text-blue-900 { color: #bfdbfe !important; }
-        [data-theme="dark"] .text-red-600 { color: #f87171 !important; }
-
-        /* Keep white text white on gradients */
-        [data-theme="dark"] .bg-gradient-to-r .text-white,
-        [data-theme="dark"] .bg-gradient-to-br .text-white,
-        [data-theme="dark"] .bg-indigo-600 .text-white,
-        [data-theme="dark"] .bg-indigo-700 .text-white,
-        [data-theme="dark"] .bg-indigo-800 .text-white,
-        [data-theme="dark"] [class*="from-indigo"] .text-white { color: white !important; }
-
-        /* Gradient backgrounds should keep their text colors */
-        [data-theme="dark"] .bg-gradient-to-r .text-indigo-100,
-        [data-theme="dark"] .bg-gradient-to-r .text-indigo-200 { color: rgba(199, 210, 254, 0.9) !important; }
-
-        /* Border colors */
-        [data-theme="dark"] .border-gray-100,
-        [data-theme="dark"] .border-gray-200,
-        [data-theme="dark"] .border-gray-300 { border-color: var(--border) !important; }
-        [data-theme="dark"] .border-gray-800 { border-color: var(--border-light) !important; }
-        [data-theme="dark"] .border-blue-200 { border-color: rgba(59, 130, 246, 0.3) !important; }
-        [data-theme="dark"] .border-red-400 { border-color: rgba(239, 68, 68, 0.4) !important; }
-        [data-theme="dark"] .border-yellow-400 { border-color: rgba(234, 179, 8, 0.4) !important; }
-        [data-theme="dark"] .border-indigo-200 { border-color: rgba(79, 70, 229, 0.3) !important; }
-
-        /* Shadows */
-        [data-theme="dark"] .shadow-sm,
-        [data-theme="dark"] .shadow,
-        [data-theme="dark"] .shadow-md,
-        [data-theme="dark"] .shadow-lg { box-shadow: 0 4px 20px var(--card-shadow) !important; }
-
-        /* Hover states */
-        [data-theme="dark"] .hover\:bg-gray-50:hover,
-        [data-theme="dark"] .hover\:bg-gray-100:hover { background: var(--bg-elevated) !important; }
-        [data-theme="dark"] .hover\:text-indigo-600:hover { color: #818cf8 !important; }
-
-        /* Table styles for dark mode */
-        [data-theme="dark"] table th { background: var(--bg-elevated) !important; color: var(--text-primary) !important; }
-        [data-theme="dark"] table td { color: var(--text-secondary) !important; }
-        [data-theme="dark"] table th,
-        [data-theme="dark"] table td { border-color: var(--border) !important; }
-
-        /* ----- LIGHT MODE FIXES ----- */
-
-        /* Ensure dark text on light backgrounds */
-        [data-theme="light"] .text-white:not(.bg-gradient-to-r *):not(.bg-gradient-to-br *):not([class*="bg-indigo-"] *) {
-            color: var(--text-primary) !important;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
-        /* Keep gradient text white in light mode too */
-        [data-theme="light"] .bg-gradient-to-r .text-white,
-        [data-theme="light"] .bg-gradient-to-br .text-white,
-        [data-theme="light"] .bg-indigo-600 .text-white,
-        [data-theme="light"] .bg-indigo-700 .text-white,
-        [data-theme="light"] [class*="from-indigo"] .text-white { color: white !important; }
-
-        /* ----- SYSTEM PREFERENCE DARK MODE ----- */
-        @media (prefers-color-scheme: dark) {
-            :root:not([data-theme="light"]) .bg-gray-50,
-            :root:not([data-theme="light"]) .bg-gray-100 { background: var(--bg-primary) !important; }
-            :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; }
-            :root:not([data-theme="light"]) .bg-gray-900 { background: var(--bg-card) !important; }
-
-            :root:not([data-theme="light"]) .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
-            :root:not([data-theme="light"]) .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
-            :root:not([data-theme="light"]) .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
-            :root:not([data-theme="light"]) .bg-blue-50 { background: rgba(59, 130, 246, 0.15) !important; }
-            :root:not([data-theme="light"]) .bg-yellow-50 { background: rgba(234, 179, 8, 0.15) !important; }
-            :root:not([data-theme="light"]) .bg-red-50 { background: rgba(239, 68, 68, 0.15) !important; }
-
-            :root:not([data-theme="light"]) .text-gray-600,
-            :root:not([data-theme="light"]) .text-gray-700 { color: var(--text-secondary) !important; }
-            :root:not([data-theme="light"]) .text-gray-800,
-            :root:not([data-theme="light"]) .text-gray-900 { color: var(--text-primary) !important; }
-            :root:not([data-theme="light"]) .text-gray-400,
-            :root:not([data-theme="light"]) .text-gray-500 { color: var(--text-muted) !important; }
-
-            :root:not([data-theme="light"]) .text-indigo-600 { color: #818cf8 !important; }
-            :root:not([data-theme="light"]) .text-indigo-700 { color: #a5b4fc !important; }
-            :root:not([data-theme="light"]) .text-purple-600 { color: #c084fc !important; }
-            :root:not([data-theme="light"]) .text-green-600 { color: #4ade80 !important; }
-
-            :root:not([data-theme="light"]) .border-gray-100,
-            :root:not([data-theme="light"]) .border-gray-200,
-            :root:not([data-theme="light"]) .border-gray-300 { border-color: var(--border) !important; }
-
-            :root:not([data-theme="light"]) table th { background: var(--bg-elevated) !important; }
-            :root:not([data-theme="light"]) table td { color: var(--text-secondary) !important; }
-            :root:not([data-theme="light"]) table th,
-            :root:not([data-theme="light"]) table td { border-color: var(--border) !important; }
+        h1 {
+            color: #1d1d1f;
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 600;
         }
 
-        /* Theme toggle button styles */
-        .theme-btn {
-            color: var(--text-muted);
-            cursor: pointer;
-            transition: all 0.2s;
+        .last-updated {
+            color: #6e6e73;
+            font-size: 14px;
+            margin-bottom: 30px;
         }
-        .theme-btn:hover {
-            color: var(--text-primary);
+
+        h2 {
+            color: #1d1d1f;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-weight: 600;
         }
-        .theme-btn.active {
-            background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%);
-            color: white;
-            box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+
+        h3 {
+            color: #1d1d1f;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p, li {
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+
+        ul {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            background-color: #f0f0f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #0071e3;
+        }
+
+        .important {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+
+        strong {
+            font-weight: 600;
+            color: #0071e3;
+        }
+
+        .contact {
+            background-color: #f0f0f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f5;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
         }
     </style>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
-
-    <style>
-        /* Coming Soon Styling */
-        .coming-soon-btn {
-            position: relative;
-            opacity: 0.6;
-            cursor: not-allowed;
-            pointer-events: none;
-        }
-        .coming-soon-badge {
-            position: absolute;
-            top: -8px;
-            right: -8px;
-            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 9px;
-            font-weight: 700;
-            text-transform: uppercase;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-            z-index: 10;
-        }
-
-        /* Table styling */
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        th, td { padding: 12px 16px; border: 1px solid #e5e7eb; text-align: left; font-size: 0.875rem; }
-        th { background-color: #f9fafb; font-weight: 600; }
-    </style>
-
-    <meta name="apple-itunes-app" content="app-id=6738029702">
 </head>
-<body class="bg-gray-50">
-<a href="#main-content" class="skip-to-content">Skip to content</a>
+<body>
+    <div class="container">
+        <h1>Privacy Policy - EZer Finance App</h1>
+        <p class="last-updated"><strong>Platform:</strong> iOS | <strong>Effective Date:</strong> January 1, 2025 | <strong>Last Updated:</strong> November 24, 2025</p>
 
-    <!-- Navigation -->
-    <nav class="themed-nav shadow-sm sticky top-0 z-50 border-b border-gray-200">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="flex items-center gap-3">
-                    <img src="logo.png" alt="EZer" class="h-10 w-10 rounded-xl object-contain">
-                    <div>
-                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
-                    </div>
-                </a>
-                <div class="hidden lg:flex gap-1 items-center">
-                    <a href="index.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Home</a>
-                    <a href="us/features.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Features</a>
-                    <a href="us/pricing.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Pricing</a>
-                    <a href="privacy-ios.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50 bg-indigo-100 text-indigo-600 font-semibold">Privacy</a>
-                    <a href="terms.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">Terms</a>
-                    <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity" target="_blank" rel="noopener">Download Free</a>
-                </div>
-
-                <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden lg:hidden py-4 border-t border-gray-200">
-                <a href="index.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Home</a>
-                <a href="us/features.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Features</a>
-                <a href="us/pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Pricing</a>
-                <a href="privacy-ios.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50 bg-indigo-100 text-indigo-600 font-semibold">Privacy</a>
-                <a href="terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">Terms</a>
-                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702" class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold hover:opacity-90 transition-opacity" target="_blank" rel="noopener">Download Free</a>
-            </div>
+        <div class="highlight">
+            <p><strong>🔒 Privacy-First Design:</strong> EZer stores ALL your financial data locally on your device using bank-grade encryption. Your transactions, budgets, and financial information never leave your device unless you explicitly choose to export or back up your data.</p>
         </div>
-    </nav>
 
-    <!-- Content -->
-    <div class="container mx-auto px-4 py-12">
-        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
-            <h1 class="text-4xl font-bold mb-2">Privacy Policy</h1>
-            <p class="text-gray-500 mb-4"><strong class="text-gray-700">Platform:</strong> iOS | <strong class="text-gray-700">Effective Date:</strong> January 1, 2025 | <strong class="text-gray-700">Last Updated:</strong> February 18, 2026</p>
+        <h2>1. Introduction</h2>
+        <p>Welcome to EZer, a personal finance management application designed with your privacy as our top priority. This Privacy Policy explains how we handle your information when you use our iOS app.</p>
 
-            <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-4 mb-8 flex items-start gap-3">
-                <span class="text-2xl mt-0.5">&#128274;</span>
-                <div>
-                    <div class="font-semibold text-indigo-900">Privacy-First Design</div>
-                    <div class="text-sm text-indigo-700">EZer stores ALL your financial data locally on your device using bank-grade encryption. Your transactions, budgets, and financial information never leave your device unless you explicitly choose to export or back up your data.</div>
-                </div>
-            </div>
+        <p><strong>Developer:</strong> EZer Team<br>
+        <strong>Contact:</strong> privacy@ezerapp.com</p>
 
-            <div class="prose prose-lg max-w-none">
+        <h2>2. Information We Store Locally</h2>
+        <p>The following information is stored <strong>only on your device</strong> using encrypted SQLCipher database:</p>
+        <ul>
+            <li><strong>Financial Transactions:</strong> Income, expenses, transfers with dates, amounts, categories, and notes</li>
+            <li><strong>Accounts:</strong> Bank accounts, credit cards, wallets (names and balances only - no account numbers)</li>
+            <li><strong>Budgets:</strong> Budget categories, limits, and spending tracking</li>
+            <li><strong>Goals:</strong> Financial goals, target amounts, and progress</li>
+            <li><strong>Bills:</strong> Recurring bill reminders and payment history</li>
+            <li><strong>Loans:</strong> Loan tracking information (principal, interest rate, EMI)</li>
+            <li><strong>Categories:</strong> Custom transaction categories</li>
+            <li><strong>Receipts:</strong> Photos of receipts attached to transactions (stored in local photo library)</li>
+            <li><strong>App Settings:</strong> User preferences, theme selection, language, currency</li>
+        </ul>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">1. Introduction</h2>
-                <p class="text-gray-700 mb-4">
-                    Welcome to EZer, a personal finance management application designed with your privacy as our top priority. This Privacy Policy explains how we handle your information when you use our iOS app.
-                </p>
-                <p class="text-gray-700 mb-4">
-                    <strong class="text-gray-900">Developer:</strong> EZer Team<br>
-                    <strong class="text-gray-900">Contact:</strong> <a href="mailto:privacy@ezerapp.com" class="text-indigo-600 hover:underline">privacy@ezerapp.com</a>
-                </p>
-
-                <h2 class="text-2xl font-bold mt-8 mb-4">2. Information We Store Locally</h2>
-                <p class="text-gray-700 mb-4">
-                    The following information is stored <strong class="text-gray-900">only on your device</strong> using encrypted SQLCipher database:
-                </p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong class="text-gray-900">Financial Transactions:</strong> Income, expenses, transfers with dates, amounts, categories, and notes</li>
-                    <li><strong class="text-gray-900">Accounts:</strong> Bank accounts, credit cards, wallets (names and balances only - no account numbers)</li>
-                    <li><strong class="text-gray-900">Budgets:</strong> Budget categories, limits, and spending tracking</li>
-                    <li><strong class="text-gray-900">Goals:</strong> Financial goals, target amounts, and progress</li>
-                    <li><strong class="text-gray-900">Bills:</strong> Recurring bill reminders and payment history</li>
-                    <li><strong class="text-gray-900">Loans:</strong> Loan tracking information (principal, interest rate, EMI)</li>
-                    <li><strong class="text-gray-900">Categories:</strong> Custom transaction categories</li>
-                    <li><strong class="text-gray-900">Receipts:</strong> Photos of receipts attached to transactions (stored in local photo library)</li>
-                    <li><strong class="text-gray-900">App Settings:</strong> User preferences, theme selection, language, currency</li>
-                </ul>
-
-                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
-                    <p class="text-gray-700">
-                        <strong class="text-gray-900">Important:</strong> All this data is stored locally on your device with SQLCipher encryption. We do NOT have access to your financial data. If you delete the app or lose your device, this data cannot be recovered unless you have created a backup.
-                    </p>
-                </div>
-
-                <h2 class="text-2xl font-bold mt-8 mb-4">3. Data We Do NOT Collect</h2>
-                <p class="text-gray-700 mb-4">
-                    EZer does NOT collect or transmit the following to any servers:
-                </p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>Transaction amounts or details</li>
-                    <li>Merchant names or payment information</li>
-                    <li>Bank account numbers or credentials</li>
-                    <li>Credit card numbers</li>
-                    <li>Personal identification information (PII)</li>
-                    <li>Location data</li>
-                    <li>Contact information</li>
-                    <li>Device identifiers (IDFA/advertising ID)</li>
-                </ul>
-
-                <h2 class="text-2xl font-bold mt-8 mb-4">4. Optional Data Collection (Opt-In Only)</h2>
-                <p class="text-gray-700 mb-4">
-                    You can choose to enable the following optional features. All are OFF by default and require your explicit consent:
-                </p>
-
-                <h3 class="text-xl font-semibold mt-6 mb-3">4.1 Anonymous Analytics (via Firebase Analytics)</h3>
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">What we collect (if enabled):</strong></p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>Screen navigation patterns (which screens you visit)</li>
-                    <li>Feature usage (which buttons you tap, which features you use)</li>
-                    <li>App performance metrics (load times, errors)</li>
-                    <li>Device type and OS version (e.g., "iPhone 14, iOS 17.0")</li>
-                    <li>App version</li>
-                </ul>
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">What we DO NOT collect:</strong></p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>No transaction amounts, merchant names, or financial details</li>
-                    <li>No personal information or identifiers</li>
-                    <li>No account information</li>
-                </ul>
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">Purpose:</strong> Understand how users navigate the app to improve user experience and fix bugs.</p>
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">Third Party:</strong> Google Firebase Analytics (<a href="https://firebase.google.com/support/privacy" target="_blank" class="text-indigo-600 hover:underline">Privacy Policy</a>)</p>
-                <p class="text-gray-700 mb-4"><strong class="text-gray-900">Control:</strong> Enable/disable anytime in Settings &rarr; Privacy Dashboard</p>
-
-                <h3 class="text-xl font-semibold mt-6 mb-3">4.2 Crash Reporting (via Firebase Crashlytics)</h3>
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">What we collect (if enabled):</strong></p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>Crash logs and stack traces</li>
-                    <li>Device information (model, OS version)</li>
-                    <li>App state at time of crash</li>
-                </ul>
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">What we DO NOT collect:</strong></p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>No financial data</li>
-                    <li>No user-identifiable information</li>
-                </ul>
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">Purpose:</strong> Identify and fix bugs that cause the app to crash.</p>
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">Third Party:</strong> Google Firebase Crashlytics (<a href="https://firebase.google.com/support/privacy" target="_blank" class="text-indigo-600 hover:underline">Privacy Policy</a>)</p>
-                <p class="text-gray-700 mb-4"><strong class="text-gray-900">Control:</strong> Enable/disable anytime in Settings &rarr; Privacy Dashboard</p>
-
-                <h3 class="text-xl font-semibold mt-6 mb-3">4.3 Notifications</h3>
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">What we use notifications for:</strong></p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>Bill payment reminders</li>
-                    <li>Budget limit alerts</li>
-                    <li>Goal milestone celebrations</li>
-                </ul>
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">Important:</strong> All notifications are generated locally on your device. No data is sent to servers for notifications.</p>
-                <p class="text-gray-700 mb-4"><strong class="text-gray-900">Control:</strong> Enable/disable in iOS Settings or in-app Privacy Dashboard</p>
-
-                <h3 class="text-xl font-semibold mt-6 mb-3">4.4 Google Drive Backup (Optional)</h3>
-                <p class="text-gray-700 mb-4">You can optionally back up your encrypted database to your personal Google Drive account.</p>
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">What happens when you enable backup:</strong></p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>You sign in with your Google account (Google Sign-In)</li>
-                    <li>Your encrypted database file is uploaded to YOUR Google Drive</li>
-                    <li>The backup is stored in YOUR Google Drive storage (not our servers)</li>
-                    <li>Only you can access this backup file</li>
-                </ul>
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">What we DO NOT do:</strong></p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>We do NOT have access to your Google Drive</li>
-                    <li>We do NOT store your data on our servers</li>
-                    <li>We do NOT decrypt your backup</li>
-                </ul>
-                <p class="text-gray-700 mb-4"><strong class="text-gray-900">Third Party:</strong> Google Drive API (<a href="https://policies.google.com/privacy" target="_blank" class="text-indigo-600 hover:underline">Google Privacy Policy</a>)</p>
-
-                <h3 class="text-xl font-semibold mt-6 mb-3">4.5 Referral System (Optional)</h3>
-                <p class="text-gray-700 mb-2">If you participate in the referral program:</p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong class="text-gray-900">Data stored:</strong> Referral code, Firebase UID (anonymous identifier), referral count</li>
-                    <li><strong class="text-gray-900">Where stored:</strong> Cloud Firestore (Google)</li>
-                    <li><strong class="text-gray-900">What we DO NOT collect:</strong> No personal information, no financial data</li>
-                </ul>
-                <p class="text-gray-700 mb-4"><strong class="text-gray-900">Third Party:</strong> Cloud Firestore (<a href="https://firebase.google.com/support/privacy" target="_blank" class="text-indigo-600 hover:underline">Privacy Policy</a>)</p>
-
-                <h2 class="text-2xl font-bold mt-8 mb-4">5. iOS-Specific Features</h2>
-
-                <h3 class="text-xl font-semibold mt-6 mb-3">5.1 SMS Import - NOT AVAILABLE on iOS</h3>
-                <p class="text-gray-700 mb-4">Due to iOS platform limitations, SMS transaction import is NOT available on iOS. This feature is only available on Android devices.</p>
-
-                <h3 class="text-xl font-semibold mt-6 mb-3">5.2 Permissions We Request</h3>
-                <p class="text-gray-700 mb-2">EZer requests the following iOS permissions only when needed:</p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong class="text-gray-900">Camera:</strong> To scan receipts for expense tracking (optional)</li>
-                    <li><strong class="text-gray-900">Photo Library:</strong> To attach receipt images to transactions (optional)</li>
-                    <li><strong class="text-gray-900">Face ID / Touch ID:</strong> To secure app with biometric authentication (optional)</li>
-                    <li><strong class="text-gray-900">Notifications:</strong> To send bill reminders and budget alerts (optional)</li>
-                </ul>
-                <p class="text-gray-700 mb-4">All permissions can be revoked anytime in iOS Settings &rarr; EZer.</p>
-
-                <h3 class="text-xl font-semibold mt-6 mb-3">5.3 In-App Purchases & Subscriptions</h3>
-                <p class="text-gray-700 mb-4">EZer offers an optional <strong class="text-gray-900">EZer Plus</strong> monthly subscription through the Apple App Store. Here is how your data is handled during this process:</p>
-
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">Payment processing:</strong></p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>All payments are processed <strong class="text-gray-900">entirely by Apple</strong> through the App Store</li>
-                    <li>EZer <strong class="text-gray-900">never</strong> receives, processes, or stores your credit card number, billing address, or Apple ID credentials</li>
-                    <li>Apple's payment terms and refund policies apply &mdash; see <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" class="text-indigo-600 hover:underline">Apple Media Services Terms</a></li>
-                </ul>
-
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">What EZer receives from Apple after a purchase:</strong></p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>A <strong class="text-gray-900">transaction receipt</strong> (a cryptographic proof of purchase)</li>
-                    <li>The <strong class="text-gray-900">product identifier</strong> (e.g., "ezer_plus_monthly")</li>
-                    <li>A <strong class="text-gray-900">transaction ID</strong> (a unique purchase reference)</li>
-                </ul>
-
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">How this data is used:</strong></p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>The receipt is used to verify your purchase and activate your EZer Plus subscription</li>
-                    <li>Your subscription status (tier and expiry date) is stored <strong class="text-gray-900">locally on your device</strong></li>
-                    <li>If analytics is enabled, the receipt may be sent to a secure cloud function for server-side validation only &mdash; no financial data is extracted or stored</li>
-                </ul>
-
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">What EZer does NOT collect during purchases:</strong></p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>Credit or debit card numbers</li>
-                    <li>Billing name or address</li>
-                    <li>Apple ID email or password</li>
-                    <li>Payment method details</li>
-                </ul>
-
-                <p class="text-gray-700 mb-4"><strong class="text-gray-900">Subscription management:</strong> You can view, modify, or cancel your subscription at any time in iOS Settings &rarr; [Your Name] &rarr; Subscriptions.</p>
-
-                <h2 class="text-2xl font-bold mt-8 mb-4">6. Data Security</h2>
-                <p class="text-gray-700 mb-4">We take your financial data security seriously:</p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong class="text-gray-900">SQLCipher Encryption:</strong> All data stored with 256-bit AES encryption</li>
-                    <li><strong class="text-gray-900">Secure Storage:</strong> Sensitive data (keys, tokens) stored in iOS Keychain</li>
-                    <li><strong class="text-gray-900">Screenshot Prevention:</strong> Financial screens cannot be screenshot (release mode)</li>
-                    <li><strong class="text-gray-900">App Lock:</strong> Optional Face ID/Touch ID protection</li>
-                    <li><strong class="text-gray-900">Local-Only Storage:</strong> Data never transmitted to servers</li>
-                </ul>
-
-                <h2 class="text-2xl font-bold mt-8 mb-4">7. Third-Party Services</h2>
-                <p class="text-gray-700 mb-4">EZer integrates with the following third-party services (all opt-in):</p>
-
-                <div class="overflow-x-auto mb-4">
-                    <table class="min-w-full">
-                        <thead>
-                            <tr>
-                                <th>Service</th>
-                                <th>Purpose</th>
-                                <th>Default</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Apple App Store (StoreKit)</td>
-                                <td>In-app purchase & subscription processing</td>
-                                <td>Only during purchase</td>
-                            </tr>
-                            <tr>
-                                <td>Firebase Analytics</td>
-                                <td>Anonymous usage analytics</td>
-                                <td>OFF</td>
-                            </tr>
-                            <tr>
-                                <td>Firebase Crashlytics</td>
-                                <td>Crash reporting</td>
-                                <td>OFF</td>
-                            </tr>
-                            <tr>
-                                <td>Google Drive</td>
-                                <td>Optional encrypted backup</td>
-                                <td>OFF</td>
-                            </tr>
-                            <tr>
-                                <td>Cloud Firestore</td>
-                                <td>Referral system only</td>
-                                <td>OFF</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <p class="text-gray-700 mb-4"><strong class="text-gray-900">Important:</strong> You can disable ALL third-party services and still use 100% of EZer's core functionality.</p>
-
-                <h3 class="text-xl font-semibold mt-6 mb-3">7.1 Detailed Third-Party Service Disclosure</h3>
-
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">Firebase Analytics (Google):</strong></p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong class="text-gray-900">If enabled:</strong> Collects anonymous usage patterns, screen views, feature interactions</li>
-                    <li><strong class="text-gray-900">Does NOT collect:</strong> Transaction amounts, merchant names, account details</li>
-                    <li><strong class="text-gray-900">Purpose:</strong> Improve app performance and user experience</li>
-                    <li><strong class="text-gray-900">Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" class="text-indigo-600 hover:underline">https://firebase.google.com/support/privacy</a></li>
-                </ul>
-
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">Firebase Crashlytics (Google):</strong></p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong class="text-gray-900">If enabled:</strong> Collects device information, crash logs, app version</li>
-                    <li><strong class="text-gray-900">Does NOT collect:</strong> Financial data or personal information</li>
-                    <li><strong class="text-gray-900">Purpose:</strong> Identify and fix bugs</li>
-                    <li><strong class="text-gray-900">Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" class="text-indigo-600 hover:underline">https://firebase.google.com/support/privacy</a></li>
-                </ul>
-
-                <p class="text-gray-700 mb-2"><strong class="text-gray-900">Cloud Firestore (Google):</strong></p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong class="text-gray-900">If enabled:</strong> Stores referral codes, Firebase UID (anonymous)</li>
-                    <li><strong class="text-gray-900">Does NOT collect:</strong> Transaction data or personal information</li>
-                    <li><strong class="text-gray-900">Purpose:</strong> Manage referral rewards</li>
-                    <li><strong class="text-gray-900">Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" class="text-indigo-600 hover:underline">https://firebase.google.com/support/privacy</a></li>
-                </ul>
-
-                <p class="text-gray-700 mb-4"><strong class="text-gray-900">IMPORTANT:</strong> You can disable all third-party services in the Privacy Dashboard. All financial data remains on your device regardless of these settings.</p>
-
-                <h2 class="text-2xl font-bold mt-8 mb-4">8. Your Privacy Rights & Controls</h2>
-                <p class="text-gray-700 mb-4">You have complete control over your data:</p>
-
-                <h3 class="text-xl font-semibold mt-6 mb-3">8.1 Privacy Dashboard</h3>
-                <p class="text-gray-700 mb-2">Access: Settings &rarr; Privacy Dashboard</p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong class="text-gray-900">View all consents:</strong> See exactly what you've enabled</li>
-                    <li><strong class="text-gray-900">Toggle features:</strong> Enable/disable analytics, crash reporting, notifications</li>
-                    <li><strong class="text-gray-900">Consent history:</strong> View audit log of all consent changes with timestamps</li>
-                    <li><strong class="text-gray-900">Export data:</strong> Download all your data in CSV, JSON, or ZIP format</li>
-                    <li><strong class="text-gray-900">Delete all data:</strong> Permanently delete all financial data from device</li>
-                </ul>
-
-                <h3 class="text-xl font-semibold mt-6 mb-3">8.2 Data Portability</h3>
-                <p class="text-gray-700 mb-2">Export your data anytime in multiple formats:</p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong class="text-gray-900">CSV:</strong> Import into Excel or Google Sheets</li>
-                    <li><strong class="text-gray-900">JSON:</strong> For developers or advanced users</li>
-                    <li><strong class="text-gray-900">ZIP:</strong> Complete database backup</li>
-                </ul>
-
-                <h3 class="text-xl font-semibold mt-6 mb-3">8.3 Right to Deletion</h3>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>Delete individual transactions, accounts, or budgets</li>
-                    <li>Delete all data via Privacy Dashboard</li>
-                    <li>Uninstall app to remove all data</li>
-                </ul>
-
-                <h2 class="text-2xl font-bold mt-8 mb-4">9. Children's Privacy (COPPA)</h2>
-                <p class="text-gray-700 mb-4">
-                    EZer is not intended for use by children under the age of 13. We do not knowingly collect information from children under 13. If you are a parent or guardian and believe your child under 13 has provided us with personal information, please contact us.
-                </p>
-
-                <h2 class="text-2xl font-bold mt-8 mb-4">10. Data Retention</h2>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong class="text-gray-900">Financial Data:</strong> Retained on your device until you delete it</li>
-                    <li><strong class="text-gray-900">Consent Logs:</strong> Retained for 3 years for compliance purposes</li>
-                    <li><strong class="text-gray-900">Analytics Data:</strong> Anonymous data retained by Google for 2 years (if enabled)</li>
-                    <li><strong class="text-gray-900">Deleted Data:</strong> Permanently removed and cannot be recovered</li>
-                </ul>
-
-                <h2 class="text-2xl font-bold mt-8 mb-4">11. International Users & Compliance</h2>
-                <p class="text-gray-700 mb-4">EZer complies with:</p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong class="text-gray-900">India:</strong> Digital Personal Data Protection Act (DPDP) 2023</li>
-                    <li><strong class="text-gray-900">Europe:</strong> General Data Protection Regulation (GDPR)</li>
-                    <li><strong class="text-gray-900">United States:</strong> COPPA, state privacy laws</li>
-                    <li><strong class="text-gray-900">Apple:</strong> App Store Privacy Requirements</li>
-                </ul>
-
-                <h2 class="text-2xl font-bold mt-8 mb-4">12. Financial Disclaimer</h2>
-                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
-                    <p class="text-gray-700 mb-2"><strong class="text-gray-900">Important Disclaimer:</strong></p>
-                    <p class="text-gray-700 mb-2">EZer is a personal finance tracking tool. We do NOT provide:</p>
-                    <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-2">
-                        <li>Financial advice</li>
-                        <li>Investment recommendations</li>
-                        <li>Tax advice</li>
-                        <li>Legal advice</li>
-                        <li>Loans or credit</li>
-                    </ul>
-                    <p class="text-gray-700">EZer only helps you track and organize your existing financial information. Any financial decisions you make are your sole responsibility. Consult qualified professionals for financial advice.</p>
-                </div>
-
-                <h2 class="text-2xl font-bold mt-8 mb-4">13. Changes to This Privacy Policy</h2>
-                <p class="text-gray-700 mb-4">We may update this Privacy Policy from time to time. When we make changes:</p>
-                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>We will update the "Last Updated" date at the top</li>
-                    <li>Major changes will be announced in the app</li>
-                    <li>Continued use of the app after changes constitutes acceptance</li>
-                </ul>
-
-                <h2 class="text-2xl font-bold mt-8 mb-4">14. Contact Us</h2>
-                <div class="bg-indigo-50 border border-indigo-200 rounded-lg p-4 mb-4">
-                    <p class="text-gray-700 mb-2">If you have questions about this Privacy Policy or how we handle your data:</p>
-                    <p class="text-gray-700 mb-1"><strong class="text-gray-900">Email:</strong> <a href="mailto:privacy@ezerapp.com" class="text-indigo-600 hover:underline">privacy@ezerapp.com</a></p>
-                    <p class="text-gray-700 mb-1"><strong class="text-gray-900">Support:</strong> <a href="mailto:support@ezerapp.com" class="text-indigo-600 hover:underline">support@ezerapp.com</a></p>
-                    <p class="text-gray-700 mb-3"><strong class="text-gray-900">General:</strong> <a href="mailto:feedback@ezerapp.com" class="text-indigo-600 hover:underline">feedback@ezerapp.com</a></p>
-                    <p class="text-gray-700"><strong class="text-gray-900">Response Time:</strong> We aim to respond to all privacy inquiries within 48 hours.</p>
-                </div>
-
-                <h2 class="text-2xl font-bold mt-8 mb-4">15. Consent</h2>
-                <p class="text-gray-700 mb-4">
-                    By using EZer, you consent to this Privacy Policy. You can withdraw consent for optional features anytime via the Privacy Dashboard.
-                </p>
-            </div>
+        <div class="important">
+            <p><strong>⚠️ Important:</strong> All this data is stored locally on your device with SQLCipher encryption. We do NOT have access to your financial data. If you delete the app or lose your device, this data cannot be recovered unless you have created a backup.</p>
         </div>
+
+        <h2>3. Data We Do NOT Collect</h2>
+        <p>EZer does NOT collect or transmit the following to any servers:</p>
+        <ul>
+            <li>❌ Transaction amounts or details</li>
+            <li>❌ Merchant names or payment information</li>
+            <li>❌ Bank account numbers or credentials</li>
+            <li>❌ Credit card numbers</li>
+            <li>❌ Personal identification information (PII)</li>
+            <li>❌ Location data</li>
+            <li>❌ Contact information</li>
+            <li>❌ Device identifiers (IDFA/advertising ID)</li>
+        </ul>
+
+        <h2>4. Optional Data Collection (Opt-In Only)</h2>
+        <p>You can choose to enable the following optional features. All are OFF by default and require your explicit consent:</p>
+
+        <h3>4.1 Anonymous Analytics (via Firebase Analytics)</h3>
+        <p><strong>What we collect (if enabled):</strong></p>
+        <ul>
+            <li>Screen navigation patterns (which screens you visit)</li>
+            <li>Feature usage (which buttons you tap, which features you use)</li>
+            <li>App performance metrics (load times, errors)</li>
+            <li>Device type and OS version (e.g., "iPhone 14, iOS 17.0")</li>
+            <li>App version</li>
+        </ul>
+
+        <p><strong>What we DO NOT collect:</strong></p>
+        <ul>
+            <li>❌ No transaction amounts, merchant names, or financial details</li>
+            <li>❌ No personal information or identifiers</li>
+            <li>❌ No account information</li>
+        </ul>
+
+        <p><strong>Purpose:</strong> Understand how users navigate the app to improve user experience and fix bugs.</p>
+        <p><strong>Third Party:</strong> Google Firebase Analytics (<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>)</p>
+        <p><strong>Control:</strong> Enable/disable anytime in Settings → Privacy Dashboard</p>
+
+        <h3>4.2 Crash Reporting (via Firebase Crashlytics)</h3>
+        <p><strong>What we collect (if enabled):</strong></p>
+        <ul>
+            <li>Crash logs and stack traces</li>
+            <li>Device information (model, OS version)</li>
+            <li>App state at time of crash</li>
+        </ul>
+
+        <p><strong>What we DO NOT collect:</strong></p>
+        <ul>
+            <li>❌ No financial data</li>
+            <li>❌ No user-identifiable information</li>
+        </ul>
+
+        <p><strong>Purpose:</strong> Identify and fix bugs that cause the app to crash.</p>
+        <p><strong>Third Party:</strong> Google Firebase Crashlytics (<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>)</p>
+        <p><strong>Control:</strong> Enable/disable anytime in Settings → Privacy Dashboard</p>
+
+        <h3>4.3 Notifications</h3>
+        <p><strong>What we use notifications for:</strong></p>
+        <ul>
+            <li>Bill payment reminders</li>
+            <li>Budget limit alerts</li>
+            <li>Goal milestone celebrations</li>
+        </ul>
+
+        <p><strong>Important:</strong> All notifications are generated locally on your device. No data is sent to servers for notifications.</p>
+        <p><strong>Control:</strong> Enable/disable in iOS Settings or in-app Privacy Dashboard</p>
+
+        <h3>4.4 Google Drive Backup (Optional)</h3>
+        <p>You can optionally back up your encrypted database to your personal Google Drive account.</p>
+
+        <p><strong>What happens when you enable backup:</strong></p>
+        <ul>
+            <li>You sign in with your Google account (Google Sign-In)</li>
+            <li>Your encrypted database file is uploaded to YOUR Google Drive</li>
+            <li>The backup is stored in YOUR Google Drive storage (not our servers)</li>
+            <li>Only you can access this backup file</li>
+        </ul>
+
+        <p><strong>What we DO NOT do:</strong></p>
+        <ul>
+            <li>❌ We do NOT have access to your Google Drive</li>
+            <li>❌ We do NOT store your data on our servers</li>
+            <li>❌ We do NOT decrypt your backup</li>
+        </ul>
+
+        <p><strong>Third Party:</strong> Google Drive API (<a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>)</p>
+
+        <h3>4.5 Referral System (Optional)</h3>
+        <p>If you participate in the referral program:</p>
+        <ul>
+            <li><strong>Data stored:</strong> Referral code, Firebase UID (anonymous identifier), referral count</li>
+            <li><strong>Where stored:</strong> Cloud Firestore (Google)</li>
+            <li><strong>What we DO NOT collect:</strong> No personal information, no financial data</li>
+        </ul>
+        <p><strong>Third Party:</strong> Cloud Firestore (<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>)</p>
+
+        <h2>5. iOS-Specific Features</h2>
+
+        <h3>5.1 SMS Import - NOT AVAILABLE on iOS</h3>
+        <p>Due to iOS platform limitations, SMS transaction import is NOT available on iOS. This feature is only available on Android devices.</p>
+
+        <h3>5.2 Permissions We Request</h3>
+        <p>EZer requests the following iOS permissions only when needed:</p>
+        <ul>
+            <li><strong>Camera:</strong> To scan receipts for expense tracking (optional)</li>
+            <li><strong>Photo Library:</strong> To attach receipt images to transactions (optional)</li>
+            <li><strong>Face ID / Touch ID:</strong> To secure app with biometric authentication (optional)</li>
+            <li><strong>Notifications:</strong> To send bill reminders and budget alerts (optional)</li>
+        </ul>
+        <p>All permissions can be revoked anytime in iOS Settings → EZer.</p>
+
+        <h2>6. Data Security</h2>
+        <p>We take your financial data security seriously:</p>
+        <ul>
+            <li><strong>🔐 SQLCipher Encryption:</strong> All data stored with 256-bit AES encryption</li>
+            <li><strong>🔑 Secure Storage:</strong> Sensitive data (keys, tokens) stored in iOS Keychain</li>
+            <li><strong>🚫 Screenshot Prevention:</strong> Financial screens cannot be screenshot (release mode)</li>
+            <li><strong>🔒 App Lock:</strong> Optional Face ID/Touch ID protection</li>
+            <li><strong>💾 Local-Only Storage:</strong> Data never transmitted to servers</li>
+        </ul>
+
+        <h2>7. Third-Party Services</h2>
+        <p>EZer integrates with the following third-party services (all opt-in):</p>
+
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Purpose</th>
+                <th>Default</th>
+            </tr>
+            <tr>
+                <td>Firebase Analytics</td>
+                <td>Anonymous usage analytics</td>
+                <td>OFF</td>
+            </tr>
+            <tr>
+                <td>Firebase Crashlytics</td>
+                <td>Crash reporting</td>
+                <td>OFF</td>
+            </tr>
+            <tr>
+                <td>Google Drive</td>
+                <td>Optional encrypted backup</td>
+                <td>OFF</td>
+            </tr>
+            <tr>
+                <td>Cloud Firestore</td>
+                <td>Referral system only</td>
+                <td>OFF</td>
+            </tr>
+        </table>
+
+        <p><strong>Important:</strong> You can disable ALL third-party services and still use 100% of EZer's core functionality.</p>
+
+        <h3>7.1 Detailed Third-Party Service Disclosure</h3>
+        <p><strong>Firebase Analytics (Google):</strong></p>
+        <ul>
+            <li><strong>If enabled:</strong> Collects anonymous usage patterns, screen views, feature interactions</li>
+            <li><strong>Does NOT collect:</strong> Transaction amounts, merchant names, account details</li>
+            <li><strong>Purpose:</strong> Improve app performance and user experience</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+        </ul>
+
+        <p><strong>Firebase Crashlytics (Google):</strong></p>
+        <ul>
+            <li><strong>If enabled:</strong> Collects device information, crash logs, app version</li>
+            <li><strong>Does NOT collect:</strong> Financial data or personal information</li>
+            <li><strong>Purpose:</strong> Identify and fix bugs</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+        </ul>
+
+        <p><strong>Cloud Firestore (Google):</strong></p>
+        <ul>
+            <li><strong>If enabled:</strong> Stores referral codes, Firebase UID (anonymous)</li>
+            <li><strong>Does NOT collect:</strong> Transaction data or personal information</li>
+            <li><strong>Purpose:</strong> Manage referral rewards</li>
+            <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+        </ul>
+
+        <p><strong>IMPORTANT:</strong> You can disable all third-party services in the Privacy Dashboard. All financial data remains on your device regardless of these settings.</p>
+
+        <h2>8. Your Privacy Rights & Controls</h2>
+        <p>You have complete control over your data:</p>
+
+        <h3>8.1 Privacy Dashboard</h3>
+        <p>Access: Settings → Privacy Dashboard</p>
+        <ul>
+            <li><strong>View all consents:</strong> See exactly what you've enabled</li>
+            <li><strong>Toggle features:</strong> Enable/disable analytics, crash reporting, notifications</li>
+            <li><strong>Consent history:</strong> View audit log of all consent changes with timestamps</li>
+            <li><strong>Export data:</strong> Download all your data in CSV, JSON, or ZIP format</li>
+            <li><strong>Delete all data:</strong> Permanently delete all financial data from device</li>
+        </ul>
+
+        <h3>8.2 Data Portability</h3>
+        <p>Export your data anytime in multiple formats:</p>
+        <ul>
+            <li><strong>CSV:</strong> Import into Excel or Google Sheets</li>
+            <li><strong>JSON:</strong> For developers or advanced users</li>
+            <li><strong>ZIP:</strong> Complete database backup</li>
+        </ul>
+
+        <h3>8.3 Right to Deletion</h3>
+        <ul>
+            <li>Delete individual transactions, accounts, or budgets</li>
+            <li>Delete all data via Privacy Dashboard</li>
+            <li>Uninstall app to remove all data</li>
+        </ul>
+
+        <h2>9. Children's Privacy (COPPA)</h2>
+        <p>EZer is not intended for use by children under the age of 13. We do not knowingly collect information from children under 13. If you are a parent or guardian and believe your child under 13 has provided us with personal information, please contact us.</p>
+
+        <h2>10. Data Retention</h2>
+        <ul>
+            <li><strong>Financial Data:</strong> Retained on your device until you delete it</li>
+            <li><strong>Consent Logs:</strong> Retained for 3 years for compliance purposes</li>
+            <li><strong>Analytics Data:</strong> Anonymous data retained by Google for 2 years (if enabled)</li>
+            <li><strong>Deleted Data:</strong> Permanently removed and cannot be recovered</li>
+        </ul>
+
+        <h2>11. International Users & Compliance</h2>
+        <p>EZer complies with:</p>
+        <ul>
+            <li><strong>🇮🇳 India:</strong> Digital Personal Data Protection Act (DPDP) 2023</li>
+            <li><strong>🇪🇺 Europe:</strong> General Data Protection Regulation (GDPR)</li>
+            <li><strong>🇺🇸 United States:</strong> COPPA, state privacy laws</li>
+            <li><strong>🍎 Apple:</strong> App Store Privacy Requirements</li>
+        </ul>
+
+        <h2>12. Financial Disclaimer</h2>
+        <div class="important">
+            <p><strong>⚠️ Important Disclaimer:</strong></p>
+            <p>EZer is a personal finance tracking tool. We do NOT provide:</p>
+            <ul>
+                <li>❌ Financial advice</li>
+                <li>❌ Investment recommendations</li>
+                <li>❌ Tax advice</li>
+                <li>❌ Legal advice</li>
+                <li>❌ Loans or credit</li>
+            </ul>
+            <p>EZer only helps you track and organize your existing financial information. Any financial decisions you make are your sole responsibility. Consult qualified professionals for financial advice.</p>
+        </div>
+
+        <h2>13. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we make changes:</p>
+        <ul>
+            <li>We will update the "Last Updated" date at the top</li>
+            <li>Major changes will be announced in the app</li>
+            <li>Continued use of the app after changes constitutes acceptance</li>
+        </ul>
+
+        <h2>14. Contact Us</h2>
+        <div class="contact">
+            <p>If you have questions about this Privacy Policy or how we handle your data:</p>
+            <p><strong>Email:</strong> <a href="mailto:privacy@ezerapp.com">privacy@ezerapp.com</a></p>
+            <p><strong>Support:</strong> <a href="mailto:support@ezer.app">support@ezer.app</a></p>
+            <p><strong>General:</strong> <a href="mailto:feedback@ezer.app">feedback@ezer.app</a></p>
+
+            <p style="margin-top: 20px;"><strong>Response Time:</strong> We aim to respond to all privacy inquiries within 48 hours.</p>
+        </div>
+
+        <h2>15. Consent</h2>
+        <p>By using EZer, you consent to this Privacy Policy. You can withdraw consent for optional features anytime via the Privacy Dashboard.</p>
+
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+
+        <p style="text-align: center; color: #6e6e73; font-size: 14px;">
+            © 2025 EZer Finance App. All rights reserved.<br>
+            <a href="https://www.ezerapp.com/terms-of-service">Terms of Service</a> |
+            <a href="https://www.ezerapp.com/privacy-ios.html">Privacy Policy</a> |
+            <a href="mailto:support@ezer.app">Contact</a>
+        </p>
     </div>
-
-    <!-- Themed Footer -->
-    <footer class="themed-footer py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain" loading="lazy">
-                        <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
-                    </div>
-                    <p class="text-sm mb-4" style="color: var(--text-secondary);">Your Smart Finance Companion.</p>
-                    <p class="text-green-500 font-semibold">Free to use</p>
-                </div>
-
-                <div>
-                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Product</h4>
-                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
-                        <a href="us/features.html" class="block hover:text-indigo-600 transition-colors">Features</a>
-                        <a href="us/pricing.html" class="block hover:text-indigo-600 transition-colors">Pricing</a>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Legal</h4>
-                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
-                        <a href="privacy-ios.html" class="block hover:text-indigo-600 transition-colors">Privacy Policy</a>
-                        <a href="terms.html" class="block hover:text-indigo-600 transition-colors">Terms & Conditions</a>
-                        <a href="data-deletion.html" class="block hover:text-indigo-600 transition-colors">Data Deletion</a>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 class="font-semibold mb-4" style="color: var(--text-primary);">Support</h4>
-                    <div class="space-y-2 text-sm" style="color: var(--text-secondary);">
-                        <a href="feedback.html" class="block hover:text-indigo-600 transition-colors">Feedback</a>
-                        <a href="report.html" class="block hover:text-indigo-600 transition-colors">Report Issue</a>
-                        <a href="mailto:support@ezerapp.com" class="block hover:text-indigo-600 transition-colors">Contact Us</a>
-                        <a href="index.html" class="block hover:text-indigo-600 transition-colors">Change Country</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Theme Toggle -->
-            <div class="theme-toggle-container flex items-center justify-center gap-3 py-5 border-t" style="border-color: var(--border);">
-                <span class="text-sm" style="color: var(--text-muted);">Appearance</span>
-                <div class="theme-toggle flex items-center gap-1 p-1 rounded-full" style="background: var(--bg-elevated); border: 1px solid var(--border);">
-                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="light" title="Light">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-                    </button>
-                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="system" title="System">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20"/></svg>
-                    </button>
-                    <button class="theme-btn w-9 h-9 rounded-full flex items-center justify-center transition-all" data-theme="dark" title="Dark">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-                    </button>
-                </div>
-            </div>
-
-            <div class="text-center pt-6 text-sm" style="color: var(--text-muted); border-top: 1px solid var(--border);">
-                <p>&copy; 2025 EZer. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Theme & Mobile Menu Scripts -->
-    <script src="js/theme.js"></script>
-    <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
-            document.getElementById('mobile-menu')?.classList.toggle('hidden');
-        });
-    </script>
-
-
-    <script>
-    // Smart platform detection - highlight relevant store
-    (function() {
-        var ua = navigator.userAgent || '';
-        var isIOS = /iPhone|iPad|iPod/i.test(ua);
-        var isAndroid = /Android/i.test(ua);
-        // Sticky CTA: highlight the relevant platform
-        var sticky = document.querySelector('.mobile-sticky-cta');
-        if (sticky) {
-            var iosBtn = sticky.querySelector('.btn-sticky-ios') || sticky.querySelector('.btn-secondary');
-            var androidBtn = sticky.querySelector('.btn-sticky-android') || sticky.querySelector('.btn-primary');
-            if (isIOS && iosBtn && androidBtn) {
-                iosBtn.style.background = 'linear-gradient(135deg, #6366f1, #8b5cf6)';
-                iosBtn.style.border = 'none';
-                iosBtn.style.fontWeight = '700';
-                androidBtn.style.background = 'rgba(255,255,255,0.1)';
-                androidBtn.style.border = '1px solid rgba(255,255,255,0.2)';
-                androidBtn.style.fontWeight = '400';
-            }
-        }
-        // Download badges: add subtle highlight
-        var badges = document.querySelectorAll('.store-badge');
-        if (badges.length === 2) {
-            if (isIOS) {
-                badges[0].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
-                badges[0].style.borderColor = 'rgba(99, 102, 241, 0.6)';
-            } else if (isAndroid) {
-                badges[1].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
-                badges[1].style.borderColor = 'rgba(99, 102, 241, 0.6)';
-            }
-        }
-    })();
-    </script>
 </body>
 </html>

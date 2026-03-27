@@ -27,28 +27,9 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700;800&display=swap');
-        body { font-family: 'Noto Sans Kannada', 'Inter', sans-serif; }
-    
-    /* Skip to content link */
-    .skip-to-content {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: #4f46e5;
-        color: white;
-        padding: 8px 16px;
-        z-index: 10000;
-        font-size: 14px;
-        font-weight: 600;
-        text-decoration: none;
-        border-radius: 0 0 8px 0;
-        transition: top 0.3s;
-    }
-    .skip-to-content:focus {
-        top: 0;
-    }
-</style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 
     <!-- Theme System (works with Tailwind) -->
     <link rel="stylesheet" href="../../css/theme.css">
@@ -199,68 +180,8 @@
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
-
-    <style>
-        /* Coming Soon Styling */
-        .coming-soon-btn {
-            position: relative;
-            opacity: 0.6;
-            cursor: not-allowed;
-            pointer-events: none;
-        }
-        .coming-soon-badge {
-            position: absolute;
-            top: -8px;
-            right: -8px;
-            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 9px;
-            font-weight: 700;
-            text-transform: uppercase;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-            z-index: 10;
-        }
-    </style>
-
-    <meta name="apple-itunes-app" content="app-id=6738029702">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-                {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.ezerapp.com/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "India",
-                        "item": "https://www.ezerapp.com/in/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Kannada",
-                        "item": "https://www.ezerapp.com/in/kn/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 4,
-                        "name": "Privacy Policy",
-                        "item": "https://www.ezerapp.com/in/kn/privacy.html"
-                }
-        ]
-}
-    </script>
 </head>
 <body class="bg-gray-50">
-<a href="#main-content" class="skip-to-content">ವಿಷಯಕ್ಕೆ ಹೋಗಿ</a>
         <!-- Themed Navigation -->
     <div class="themed-banner py-2 px-4 text-center text-sm border-b border-gray-200">
         <span class="mr-2">🇮🇳</span>
@@ -283,7 +204,10 @@
                     <a href="./pricing.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">ಬೆಲೆ</a>
                     <a href="./privacy.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50 text-indigo-600 bg-indigo-100 text-indigo-600 font-semibold">ಗೌಪ್ಯತೆ</a>
                     <a href="./terms.html" class="px-4 py-2 rounded-lg text-sm transition-colors hover:bg-indigo-50">ನಿಯಮಗಳು</a>
-                    <a href="https://apps.apple.com/IN/app/ezer-budget-expense-tracker/id6738029702" class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity" target="_blank" rel="noopener">ಉಚಿತ ಡೌನ್‌ಲೋಡ್</a>
+                    <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702"
+                       class="ml-4 px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-sm font-semibold hover:shadow-lg transition-all">
+                        ಉಚಿತ ಡೌನ್‌ಲೋಡ್
+                    </a>
                 </div>
 
                 <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
@@ -300,103 +224,106 @@
                 <a href="./pricing.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">ಬೆಲೆ</a>
                 <a href="./privacy.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50 bg-indigo-100 text-indigo-600 font-semibold">ಗೌಪ್ಯತೆ</a>
                 <a href="./terms.html" class="block px-4 py-3 rounded-lg hover:bg-gray-50">ನಿಯಮಗಳು</a>
-                <a href="https://apps.apple.com/IN/app/ezer-budget-expense-tracker/id6738029702" class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold hover:opacity-90 transition-opacity" target="_blank" rel="noopener">ಉಚಿತ ಡೌನ್‌ಲೋಡ್</a>
+                <a href="https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702"
+                   class="block mt-2 mx-4 px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg text-center font-semibold">
+                    ಉಚಿತ ಡೌನ್‌ಲೋಡ್
+                </a>
             </div>
         </div>
     </nav>
 <!-- Content -->
     <div class="container mx-auto px-4 py-12">
         <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 md:p-12">
-            <h1 class="text-4xl font-bold mb-2">ಗೌಪ್ಯತಾ ನೀತಿ</h1>
-            <p class="text-gray-500 mb-8">ಕೊನೆಯದಾಗಿ ನವೀಕರಿಸಲಾಗಿದೆ: ನವೆಂಬರ್ 2025</p>
+            <h1 class="text-4xl font-bold mb-2">Privacy Policy</h1>
+            <p class="text-gray-500 mb-8">Last updated: November 2025</p>
 
             <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8 flex items-center gap-3">
                 <span class="text-2xl">🇮🇳</span>
                 <div>
-                    <div class="font-semibold text-blue-900">DPDP ಅನುಸರಣೆ</div>
-                    <div class="text-sm text-blue-700">ಈ ನೀತಿಯು ಭಾರತದ ಡಿಜಿಟಲ್ ವೈಯಕ್ತಿಕ ಡೇಟಾ ಸಂರಕ್ಷಣಾ ಕಾಯ್ದೆಗೆ ಅನುಸಾರವಾಗಿದೆ</div>
+                    <div class="font-semibold text-blue-900">DPDP Compliant</div>
+                    <div class="text-sm text-blue-700">This policy complies with India's Digital Personal Data Protection Act</div>
                 </div>
             </div>
 
             <div class="prose prose-lg max-w-none">
-                <h2 class="text-2xl font-bold mt-8 mb-4">ಪರಿಚಯ</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">Introduction</h2>
                 <p class="text-gray-700 mb-4">
-                    EZer ("ನಾವು", "ನಮ್ಮ", ಅಥವಾ "ನಮಗೆ") ನಿಮ್ಮ ಗೌಪ್ಯತೆಯನ್ನು ರಕ್ಷಿಸಲು ಬದ್ಧವಾಗಿದೆ. ನೀವು ನಮ್ಮ ಮೊಬೈಲ್ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಬಳಸುವಾಗ ನಿಮ್ಮ ಮಾಹಿತಿಯನ್ನು ನಾವು ಹೇಗೆ ಸಂಗ್ರಹಿಸುತ್ತೇವೆ, ಬಳಸುತ್ತೇವೆ ಮತ್ತು ರಕ್ಷಿಸುತ್ತೇವೆ ಎಂಬುದನ್ನು ಈ ಗೌಪ್ಯತಾ ನೀತಿ ವಿವರಿಸುತ್ತದೆ.
+                    EZer ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.
                 </p>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">ನಾವು ಸಂಗ್ರಹಿಸುವ ಮಾಹಿತಿ</h2>
-                <p class="text-gray-700 mb-4">ನಾವು ಈ ಕೆಳಗಿನ ಪ್ರಕಾರದ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸುತ್ತೇವೆ:</p>
+                <h2 class="text-2xl font-bold mt-8 mb-4">Information We Collect</h2>
+                <p class="text-gray-700 mb-4">We collect the following types of information:</p>
                 <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong>ಖಾತೆ ಮಾಹಿತಿ:</strong> ನೀವು ಖಾತೆಯನ್ನು ರಚಿಸುವಾಗ ಇಮೇಲ್ ವಿಳಾಸ ಮತ್ತು ಹೆಸರು</li>
-                    <li><strong>ಹಣಕಾಸು ಡೇಟಾ:</strong> ನೀವು ಆ್ಯಪ್‌ನಲ್ಲಿ ಕೈಯಾರೆ ಸೇರಿಸುವ ವೆಚ್ಚ ಮತ್ತು ಆದಾಯ ನಮೂದುಗಳು</li>
-                    <li><strong>ಗುರಿಗಳ ಡೇಟಾ:</strong> ನೀವು ರಚಿಸುವ ಉಳಿತಾಯ ಗುರಿಗಳು ಮತ್ತು ನಿಧಿ ಹಂಚಿಕೆಗಳು</li>
-                    <li><strong>ಬಜೆಟ್ ಡೇಟಾ:</strong> ನೀವು ಹೊಂದಿಸುವ ಬಜೆಟ್ ವಿಭಾಗಗಳು ಮತ್ತು ಮಿತಿಗಳು</li>
-                    <li><strong>ಬಳಕೆ ಡೇಟಾ:</strong> ನಮ್ಮ ಸೇವೆಯನ್ನು ಸುಧಾರಿಸಲು ನೀವು ಆ್ಯಪ್‌ನೊಂದಿಗೆ ಹೇಗೆ ಸಂವಹನ ನಡೆಸುತ್ತೀರಿ</li>
+                    <li><strong>Account Information:</strong> Email address and name when you create an account</li>
+                    <li><strong>Financial Data:</strong> Expense and income entries you manually add to the app</li>
+                    <li><strong>Goals Data:</strong> Savings goals and fund allocations you create</li>
+                    <li><strong>Budget Data:</strong> Budget categories and limits you set</li>
+                    <li><strong>Usage Data:</strong> How you interact with the app to improve our service</li>
                 </ul>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">ನಿಮ್ಮ ಮಾಹಿತಿಯನ್ನು ನಾವು ಹೇಗೆ ಬಳಸುತ್ತೇವೆ</h2>
-                <p class="text-gray-700 mb-4">ನಿಮ್ಮ ಮಾಹಿತಿಯನ್ನು ನಾವು ಈ ಕೆಳಗಿನವುಗಳಿಗೆ ಬಳಸುತ್ತೇವೆ:</p>
+                <h2 class="text-2xl font-bold mt-8 mb-4">How We Use Your Information</h2>
+                <p class="text-gray-700 mb-4">We use your information to:</p>
                 <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>EZer ಸೇವೆಯನ್ನು ಒದಗಿಸುವುದು ಮತ್ತು ನಿರ್ವಹಿಸುವುದು</li>
-                    <li>ಆ್ಯಪ್ ಒಳಗೆ ನಿಮ್ಮ ಹಣಕಾಸು ಡೇಟಾವನ್ನು ಪ್ರದರ್ಶಿಸುವುದು</li>
-                    <li>ನಿಮ್ಮ ಖರ್ಚಿನ ಬಗ್ಗೆ ವಿಶ್ಲೇಷಣೆಗಳು ಮತ್ತು ಒಳನೋಟಗಳನ್ನು ರಚಿಸುವುದು</li>
-                    <li>ನಿಮ್ಮ ಡೇಟಾವನ್ನು ಸಾಧನಗಳಲ್ಲಿ ಸಿಂಕ್ ಮಾಡುವುದು (ನೀವು ಕ್ಲೌಡ್ ಬ್ಯಾಕಪ್ ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ)</li>
-                    <li>ಪ್ರಮುಖ ಸೇವಾ ಅಧಿಸೂಚನೆಗಳನ್ನು ಕಳುಹಿಸುವುದು</li>
+                    <li>Provide and maintain the EZer service</li>
+                    <li>Display your financial data within the app</li>
+                    <li>Generate analytics and insights about your spending</li>
+                    <li>Sync your data across devices (if you enable cloud backup)</li>
+                    <li>Send important service notifications</li>
                 </ul>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">ಡೇಟಾ ಸಂಗ್ರಹಣೆ & ಭದ್ರತೆ</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">Data Storage & Security</h2>
                 <p class="text-gray-700 mb-4">
-                    ನಿಮ್ಮ ಹಣಕಾಸು ಡೇಟಾವನ್ನು ಡೀಫಾಲ್ಟ್ ಆಗಿ ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಸ್ಥಳೀಯವಾಗಿ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ. ನೀವು ಕ್ಲೌಡ್ ಬ್ಯಾಕಪ್ ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ:
+                    Your financial data is stored locally on your device by default. If you enable cloud backup:
                 </p>
                 <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li>ಅಪ್‌ಲೋಡ್ ಮಾಡುವ ಮೊದಲು ಡೇಟಾವನ್ನು AES-256 ಎನ್‌ಕ್ರಿಪ್ಷನ್‌ನೊಂದಿಗೆ ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮಾಡಲಾಗುತ್ತದೆ</li>
-                    <li>ನಾವು ಸುರಕ್ಷಿತ ಕ್ಲೌಡ್ ಮೂಲಸೌಕರ್ಯವನ್ನು (Google Firebase) ಬಳಸುತ್ತೇವೆ</li>
-                    <li>ಡೇಟಾವನ್ನು ಸಾಗಣೆ ಮತ್ತು ವಿಶ್ರಾಂತಿ ಎರಡರಲ್ಲೂ ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮಾಡಲಾಗುತ್ತದೆ</li>
-                    <li>ನಿಮ್ಮ ಡೇಟಾವನ್ನು ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮಾಡದೆ ನಾವು ಎಂದಿಗೂ ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ</li>
+                    <li>Data is encrypted with AES-256 encryption before upload</li>
+                    <li>We use secure cloud infrastructure (Google Firebase)</li>
+                    <li>Data is encrypted both in transit and at rest</li>
+                    <li>We never store your data unencrypted</li>
                 </ul>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">ನಾವು ಮಾಡದಿರುವುದು</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">What We Don't Do</h2>
                 <div class="bg-red-50 border-l-4 border-red-400 p-4 mb-4">
                     <ul class="text-gray-700 space-y-2">
-                        <li>ನಿಮ್ಮ ಡೇಟಾವನ್ನು ಮೂರನೇ ಪಕ್ಷಗಳಿಗೆ ನಾವು <strong>ಮಾರಾಟ ಮಾಡುವುದಿಲ್ಲ</strong></li>
-                        <li>ನಿಮ್ಮ ಡೇಟಾವನ್ನು ಜಾಹೀರಾತುದಾರರೊಂದಿಗೆ ನಾವು <strong>ಹಂಚಿಕೊಳ್ಳುವುದಿಲ್ಲ</strong></li>
-                        <li>ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ಖಾತೆಗಳನ್ನು ನೇರವಾಗಿ ನಾವು <strong>ಪ್ರವೇಶಿಸುವುದಿಲ್ಲ</strong></li>
-                        <li>ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ಪಾಸ್‌ವರ್ಡ್‌ಗಳನ್ನು ನಾವು <strong>ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ</strong></li>
-                        <li>SMS ಸಂದೇಶಗಳನ್ನು (iOS) ನಾವು <strong>ಓದುವುದಿಲ್ಲ</strong> ಅಥವಾ ಸರ್ವರ್‌ಗಳಲ್ಲಿ SMS ವಿಷಯವನ್ನು ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ</li>
+                        <li>We <strong>DO NOT</strong> sell your data to third parties</li>
+                        <li>We <strong>DO NOT</strong> share your data with advertisers</li>
+                        <li>We <strong>DO NOT</strong> access your bank accounts directly</li>
+                        <li>We <strong>DO NOT</strong> store your bank passwords</li>
+                        <li>We <strong>DO NOT</strong> read SMS messages (iOS) or store SMS content on servers</li>
                     </ul>
                 </div>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">ನಿಮ್ಮ ಹಕ್ಕುಗಳು (DPDP ಕಾಯ್ದೆ)</h2>
-                <p class="text-gray-700 mb-4">ಭಾರತದ ಡಿಜಿಟಲ್ ವೈಯಕ್ತಿಕ ಡೇಟಾ ಸಂರಕ್ಷಣಾ ಕಾಯ್ದೆಯ ಅಡಿಯಲ್ಲಿ, ನಿಮಗೆ ಈ ಕೆಳಗಿನ ಹಕ್ಕುಗಳಿವೆ:</p>
+                <h2 class="text-2xl font-bold mt-8 mb-4">Your Rights (DPDP Act)</h2>
+                <p class="text-gray-700 mb-4">Under India's Digital Personal Data Protection Act, you have the following rights:</p>
                 <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-                    <li><strong>ಪ್ರವೇಶ ಹಕ್ಕು:</strong> ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಡೇಟಾ ಬಗ್ಗೆ ಮಾಹಿತಿ ಪಡೆಯುವುದು</li>
-                    <li><strong>ತಿದ್ದುಪಡಿ ಹಕ್ಕು:</strong> ತಪ್ಪಾದ ಡೇಟಾದ ತಿದ್ದುಪಡಿಯನ್ನು ವಿನಂತಿಸುವುದು</li>
-                    <li><strong>ಅಳಿಸುವ ಹಕ್ಕು:</strong> ನಿಮ್ಮ ಡೇಟಾವನ್ನು ಅಳಿಸಲು ವಿನಂತಿಸುವುದು</li>
-                    <li><strong>ದೂರು ಪರಿಹಾರ ಹಕ್ಕು:</strong> ಡೇಟಾ ಸಂಸ್ಕರಣೆ ಬಗ್ಗೆ ದೂರುಗಳನ್ನು ಸಲ್ಲಿಸುವುದು</li>
+                    <li><strong>Right to Access:</strong> Obtain information about your personal data</li>
+                    <li><strong>Right to Correction:</strong> Request correction of inaccurate data</li>
+                    <li><strong>Right to Erasure:</strong> Request erasure of your data</li>
+                    <li><strong>Right to Grievance Redressal:</strong> File complaints about data processing</li>
                 </ul>
-                <p class="text-gray-700 mb-4">ಈ ಹಕ್ಕುಗಳನ್ನು ಚಲಾಯಿಸಲು, privacy@ezerapp.com ನಲ್ಲಿ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</p>
+                <p class="text-gray-700 mb-4">To exercise these rights, contact us at privacy@ezerapp.com</p>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">ಡೇಟಾ ಧಾರಣೆ</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">Data Retention</h2>
                 <p class="text-gray-700 mb-4">
-                    ನಿಮ್ಮ ಖಾತೆ ಸಕ್ರಿಯವಾಗಿರುವವರೆಗೆ ನಿಮ್ಮ ಡೇಟಾವನ್ನು ನಾವು ಇಟ್ಟುಕೊಳ್ಳುತ್ತೇವೆ. ಆ್ಯಪ್ ಒಳಗಿನಿಂದ ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ನಿಮ್ಮ ಖಾತೆ ಮತ್ತು ಎಲ್ಲಾ ಸಂಬಂಧಿತ ಡೇಟಾವನ್ನು ನೀವು ಅಳಿಸಬಹುದು.
+                    We retain your data for as long as your account is active. You can delete your account and all associated data at any time from within the app.
                 </p>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">ಮಕ್ಕಳ ಗೌಪ್ಯತೆ</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">Children's Privacy</h2>
                 <p class="text-gray-700 mb-4">
-                    EZer 13 ವರ್ಷಕ್ಕಿಂತ ಕಡಿಮೆ ವಯಸ್ಸಿನ ಮಕ್ಕಳಿಗೆ ಉದ್ದೇಶಿಸಿಲ್ಲ. 13 ವರ್ಷಕ್ಕಿಂತ ಕಡಿಮೆ ವಯಸ್ಸಿನ ಮಕ್ಕಳಿಂದ ಮಾಹಿತಿಯನ್ನು ನಾವು ತಿಳಿದೇ ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ.
+                    EZer is not intended for children under 13. We do not knowingly collect information from children under 13.
                 </p>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">ಈ ನೀತಿಯಲ್ಲಿ ಬದಲಾವಣೆಗಳು</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">Changes to This Policy</h2>
                 <p class="text-gray-700 mb-4">
-                    ನಾವು ಈ ಗೌಪ್ಯತಾ ನೀತಿಯನ್ನು ಕಾಲಕಾಲಕ್ಕೆ ನವೀಕರಿಸಬಹುದು. ಈ ಪುಟದಲ್ಲಿ ಹೊಸ ಗೌಪ್ಯತಾ ನೀತಿಯನ್ನು ಪೋಸ್ಟ್ ಮಾಡುವ ಮೂಲಕ ಮತ್ತು "ಕೊನೆಯದಾಗಿ ನವೀಕರಿಸಲಾಗಿದೆ" ದಿನಾಂಕವನ್ನು ನವೀಕರಿಸುವ ಮೂಲಕ ಯಾವುದೇ ಬದಲಾವಣೆಗಳ ಬಗ್ಗೆ ನಿಮಗೆ ತಿಳಿಸುತ್ತೇವೆ.
+                    We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.
                 </p>
 
-                <h2 class="text-2xl font-bold mt-8 mb-4">ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</h2>
+                <h2 class="text-2xl font-bold mt-8 mb-4">Contact Us</h2>
                 <p class="text-gray-700 mb-4">
-                    ಈ ಗೌಪ್ಯತಾ ನೀತಿ ಬಗ್ಗೆ ನಿಮಗೆ ಪ್ರಶ್ನೆಗಳಿದ್ದರೆ, ದಯವಿಟ್ಟು ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ:
+                    If you have questions about this Privacy Policy, please contact us at:
                 </p>
                 <p class="text-gray-700">
-                    <strong>ಇಮೇಲ್:</strong> <a href="mailto:privacy@ezerapp.com" class="text-indigo-600 hover:underline">privacy@ezerapp.com</a>
+                    <strong>Email:</strong> <a href="mailto:privacy@ezerapp.com" class="text-indigo-600 hover:underline">privacy@ezerapp.com</a>
                 </p>
             </div>
         </div>
@@ -408,7 +335,7 @@
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <div class="flex items-center gap-3 mb-4">
-                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain" loading="lazy">
+                        <img src="../../logo.png" alt="EZer" class="h-12 w-12 rounded-xl object-contain">
                         <div class="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">EZer app</div>
                     </div>
                     <p class="text-sm mb-4" style="color: var(--text-secondary);">ಭಾರತದಲ್ಲಿ ನಿಮ್ಮ ಸ್ಮಾರ್ಟ್ ಹಣಕಾಸು ಸಹಚರ.</p>
@@ -483,40 +410,6 @@
             var menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         });
-    </script>
-
-    <script>
-    // Smart platform detection - highlight relevant store
-    (function() {
-        var ua = navigator.userAgent || '';
-        var isIOS = /iPhone|iPad|iPod/i.test(ua);
-        var isAndroid = /Android/i.test(ua);
-        // Sticky CTA: highlight the relevant platform
-        var sticky = document.querySelector('.mobile-sticky-cta');
-        if (sticky) {
-            var iosBtn = sticky.querySelector('.btn-sticky-ios') || sticky.querySelector('.btn-secondary');
-            var androidBtn = sticky.querySelector('.btn-sticky-android') || sticky.querySelector('.btn-primary');
-            if (isIOS && iosBtn && androidBtn) {
-                iosBtn.style.background = 'linear-gradient(135deg, #6366f1, #8b5cf6)';
-                iosBtn.style.border = 'none';
-                iosBtn.style.fontWeight = '700';
-                androidBtn.style.background = 'rgba(255,255,255,0.1)';
-                androidBtn.style.border = '1px solid rgba(255,255,255,0.2)';
-                androidBtn.style.fontWeight = '400';
-            }
-        }
-        // Download badges: add subtle highlight
-        var badges = document.querySelectorAll('.store-badge');
-        if (badges.length === 2) {
-            if (isIOS) {
-                badges[0].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
-                badges[0].style.borderColor = 'rgba(99, 102, 241, 0.6)';
-            } else if (isAndroid) {
-                badges[1].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
-                badges[1].style.borderColor = 'rgba(99, 102, 241, 0.6)';
-            }
-        }
-    })();
     </script>
 </body>
 </html>

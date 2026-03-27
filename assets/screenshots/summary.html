@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EZer Play Store Screenshots — Status Summary</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #1a1a1a; }
+  h1 { color: #5b21b6; border-bottom: 3px solid #5b21b6; padding-bottom: 10px; }
+  h2 { color: #374151; margin-top: 32px; }
+  .section { background: #f9fafb; border-radius: 12px; padding: 20px 24px; margin: 16px 0; border-left: 4px solid #e5e7eb; }
+  .done { border-left-color: #10b981; background: #f0fdf4; }
+  .pending { border-left-color: #f59e0b; background: #fffbeb; }
+  .action { border-left-color: #5b21b6; background: #faf5ff; }
+  .tag { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; margin: 2px; }
+  .tag-done { background: #d1fae5; color: #065f46; }
+  .tag-pending { background: #fef3c7; color: #92400e; }
+  .tag-fail { background: #fee2e2; color: #991b1b; }
+  code { background: #1e1e2e; color: #cdd6f4; padding: 12px 16px; border-radius: 8px; display: block; font-size: 13px; margin: 8px 0; white-space: pre; }
+  .count { font-size: 28px; font-weight: 700; color: #5b21b6; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 8px; }
+  .stat { text-align: center; background: white; border-radius: 8px; padding: 12px; border: 1px solid #e5e7eb; }
+  .stat-num { font-size: 24px; font-weight: 700; }
+  .stat-label { font-size: 12px; color: #6b7280; margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+  th { background: #5b21b6; color: white; padding: 8px 12px; text-align: left; font-size: 13px; }
+  td { padding: 8px 12px; border-bottom: 1px solid #e5e7eb; font-size: 13px; }
+  tr:hover { background: #f3f4f6; }
+  .badge-done { color: #065f46; font-weight: 600; }
+  .badge-pending { color: #92400e; font-weight: 600; }
+  .badge-fail { color: #991b1b; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<h1>📱 EZer — Play Store Screenshots Status</h1>
+<p style="color: #6b7280;">Generated: 2026-03-18 &nbsp;|&nbsp; For confirmation before commit &amp; upload</p>
+
+<div class="section">
+  <div class="grid">
+    <div class="stat"><div class="stat-num" style="color:#10b981">33</div><div class="stat-label">Locales with Screenshots</div></div>
+    <div class="stat"><div class="stat-num" style="color:#5b21b6">264</div><div class="stat-label">Total Screenshots</div></div>
+    <div class="stat"><div class="stat-num" style="color:#f59e0b">13</div><div class="stat-label">Locales Still Needed</div></div>
+  </div>
+</div>
+
+<h2>✅ 1. Files to Commit to Git (EZer App Repo)</h2>
+<div class="section done">
+  <p><strong>A) Budget fixes — preset_data.json</strong> (9 regions had budgets at wrong scale)</p>
+  <table>
+    <tr><th>Region</th><th>Issue Fixed</th><th>Result</th></tr>
+    <tr><td>japan</td><td>Budgets were 100× too low (¥1,750 instead of ¥175,000)</td><td class="badge-done">✓ Fixed</td></tr>
+    <tr><td>south_korea</td><td>Budgets were 100× too low (₩18,500 instead of ₩1,850,000)</td><td class="badge-done">✓ Fixed</td></tr>
+    <tr><td>vietnam</td><td>Budgets ~10× too low</td><td class="badge-done">✓ Fixed</td></tr>
+    <tr><td>indonesia</td><td>Living/Food budgets 100× too low</td><td class="badge-done">✓ Fixed</td></tr>
+    <tr><td>india</td><td>Budgets ~2× too low vs transactions</td><td class="badge-done">✓ Fixed</td></tr>
+    <tr><td>bangladesh</td><td>Budgets ~2× too low</td><td class="badge-done">✓ Fixed</td></tr>
+    <tr><td>thailand</td><td>Budgets ~2× too low</td><td class="badge-done">✓ Fixed</td></tr>
+    <tr><td>turkey</td><td>Budgets too low for TRY scale</td><td class="badge-done">✓ Fixed</td></tr>
+    <tr><td>russia</td><td>Budgets too low for RUB scale</td><td class="badge-done">✓ Fixed</td></tr>
+    <tr><td>taiwan</td><td>Budgets too low for TWD scale</td><td class="badge-done">✓ Fixed</td></tr>
+  </table>
+
+  <p style="margin-top:16px"><strong>B) Fastlane updates</strong></p>
+  <table>
+    <tr><th>File</th><th>Change</th></tr>
+    <tr><td>fastlane/Fastfile</td><td>Added <code style="display:inline;background:#e5e7eb;color:#1a1a1a;padding:2px 6px;border-radius:4px">upload_screenshots</code> lane with sync_image_upload: true</td></tr>
+    <tr><td>fastlane/metadata/android/*/images/phoneScreenshots/</td><td>264 new/updated PNG screenshots across 33 locales</td></tr>
+  </table>
+
+  <p style="margin-top:16px"><strong>Suggested commit message:</strong></p>
+  <code>feat(aso): Add Play Store screenshots for 33 locales with currency-correct preset data
+
+- Generate 264 screenshots across 33 Play Store locales
+- Fix budget scaling in preset_data.json for 10 regions (JP, KR, VN, ID, IN, BD, TH, TR, RU, TW)
+- Add fastlane upload_screenshots lane for automated Play Store upload</code>
+</div>
+
+<h2>⬆️ 2. Upload to Play Store via Fastlane</h2>
+<div class="section action">
+  <p><strong>Already uploaded (31 locales):</strong></p>
+  <p>
+    <span class="tag tag-done">ar</span><span class="tag tag-done">en-US</span><span class="tag tag-done">en-GB</span><span class="tag tag-done">en-AU</span><span class="tag tag-done">en-CA</span><span class="tag tag-done">en-IN</span><span class="tag tag-done">en-SG</span><span class="tag tag-done">en-ZA</span><span class="tag tag-done">de-DE</span><span class="tag tag-done">es-ES</span><span class="tag tag-done">es-419</span><span class="tag tag-done">fr-FR</span><span class="tag tag-done">it-IT</span><span class="tag tag-done">nl-NL</span><span class="tag tag-done">pt-BR</span><span class="tag tag-done">ja-JP</span><span class="tag tag-done">ko-KR</span><span class="tag tag-done">zh-CN</span><span class="tag tag-done">hi-IN</span><span class="tag tag-done">ta-IN</span><span class="tag tag-done">te-IN</span><span class="tag tag-done">kn-IN</span><span class="tag tag-done">ml-IN</span><span class="tag tag-done">mr-IN</span><span class="tag tag-done">gu</span><span class="tag tag-done">pa</span><span class="tag tag-done">bn-BD</span><span class="tag tag-done">id</span><span class="tag tag-done">ms</span><span class="tag tag-done">th</span><span class="tag tag-done">vi</span>
+  </p>
+
+  <p style="margin-top:12px"><strong>Ready to upload now (2 new locales just completed):</strong></p>
+  <p>
+    <span class="tag tag-pending">ru-RU</span><span class="tag tag-pending">zh-TW</span>
+  </p>
+  <code>fastlane android upload_screenshots</code>
+</div>
+
+<h2>⏳ 3. Still Needed (Tomorrow)</h2>
+<div class="section pending">
+  <p><strong>13 locales — no screenshots yet:</strong></p>
+  <p>
+    <span class="tag tag-fail">es-US</span><span class="tag tag-fail">fr-CA</span><span class="tag tag-fail">pt-PT</span><span class="tag tag-fail">cs-CZ</span><span class="tag tag-fail">da-DK</span><span class="tag tag-fail">el-GR</span><span class="tag tag-fail">fi-FI</span><span class="tag tag-fail">hu-HU</span><span class="tag tag-fail">no-NO</span><span class="tag tag-fail">ro</span><span class="tag tag-fail">sv-SE</span><span class="tag tag-fail">iw-IL</span><span class="tag tag-fail">zh-HK</span>
+  </p>
+  <p style="margin-top:8px; color:#92400e; font-size:13px">⚠️ Note: es-US and fr-CA ran but saved 0 screenshots — investigate script issue for these locales.</p>
+</div>
+
+<h2>🌐 4. Website (docs/) — Stale Screenshot Copies</h2>
+<div class="section pending">
+  <p>These website copies were made before budget fixes and should be updated after upload:</p>
+  <p><span class="tag tag-pending">ja-JP</span><span class="tag tag-pending">en-IN</span></p>
+  <p style="font-size:13px; color:#6b7280;">Location: docs/assets/screenshots/</p>
+</div>
+
+<hr style="margin: 40px 0; border-color: #e5e7eb;">
+<p style="color: #9ca3af; font-size: 12px; text-align:center;">EZer App — Internal Review Document — 2026-03-18</p>
+</body>
+</html>

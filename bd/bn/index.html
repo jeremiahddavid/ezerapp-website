@@ -44,10 +44,9 @@
     <meta property="al:android:url" content="ezer://"/>
     <meta property="al:android:package" content="com.ezer.personal_finance"/>
     <meta property="al:android:app_name" content="EZer"/>
-    <meta name="apple-itunes-app" content="app-id=6738029702">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <!-- Preconnect & Performance -->
@@ -75,7 +74,7 @@
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.8",
-            "ratingCount": "3000",
+            "ratingCount": "1247",
             "bestRating": "5",
             "worstRating": "1"
         },
@@ -314,29 +313,6 @@
         .btn-secondary { background: var(--bg-elevated); color: var(--text-primary); border: 1px solid var(--border-light); }
         .btn-secondary:hover { background: rgba(79, 70, 229, 0.15); border-color: var(--indigo); transform: translateY(-2px); }
 
-        /* Languages Section */
-        .languages-section {
-            background: var(--bg-card);
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-            padding: 24px;
-        }
-        .languages-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
-        .languages-label { font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 16px; }
-        .languages-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
-        .lang-chip {
-            background: var(--bg-elevated);
-            border: 1px solid var(--border);
-            padding: 10px 18px;
-            border-radius: 50px;
-            font-size: 14px;
-            color: var(--text-secondary);
-            cursor: pointer;
-            transition: all 0.2s ease;
-            text-decoration: none;
-        }
-        .lang-chip:hover, .lang-chip.active { background: rgba(79, 70, 229, 0.15); border-color: var(--indigo); color: #a5b4fc; }
-
         /* Social Proof */
         .social-proof-bar {
             background: linear-gradient(90deg, rgba(79, 70, 229, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%);
@@ -349,52 +325,6 @@
         .proof-value { font-weight: 700; color: var(--text-primary); font-size: 18px; }
 
         /* Sections */
-        
-    /* App Screenshots Carousel */
-    .screenshots-section { padding: clamp(48px, 8vw, 80px) 0; overflow: hidden; }
-    .screenshots-section .section-header { margin-bottom: 40px; }
-    .screenshot-carousel {
-        display: flex;
-        gap: 20px;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        padding: 0 max(16px, calc((100vw - 1200px) / 2));
-        scrollbar-width: none;
-    }
-    .screenshot-carousel::-webkit-scrollbar { display: none; }
-    .screenshot-card {
-        flex: 0 0 auto;
-        scroll-snap-align: center;
-        text-align: center;
-        transition: transform 0.3s ease;
-    }
-    .screenshot-card:hover { transform: translateY(-8px); }
-    .screenshot-card img {
-        height: clamp(350px, 50vw, 500px);
-        width: auto;
-        border-radius: 20px;
-        border: 2px solid rgba(255,255,255,0.1);
-        box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-    }
-    [data-theme="light"] .screenshot-card img {
-        border-color: rgba(0,0,0,0.1);
-        box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-    }
-    .screenshot-label {
-        margin-top: 12px;
-        font-size: 13px;
-        color: var(--text-secondary);
-        font-weight: 500;
-    }
-    .screenshot-scroll-hint {
-        text-align: center;
-        margin-top: 24px;
-        font-size: 13px;
-        color: var(--text-secondary);
-        opacity: 0.6;
-    }
-
         .section-alt { background: var(--bg-card); }
         .section-header { text-align: center; margin-bottom: 60px; }
         .section-eyebrow { display: inline-block; font-size: 13px; font-weight: 600; color: #a5b4fc; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px; }
@@ -422,9 +352,6 @@
         }
         .card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; }
         .card p { color: var(--text-secondary); font-size: 15px; line-height: 1.6; }
-        .feature-card { position: relative; background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), transparent); border: 1px solid rgba(79, 70, 229, 0.2); }
-        .feature-example { margin-top: 16px; background: rgba(0, 0, 0, 0.3); padding: 12px 16px; border-radius: 10px; font-size: 14px; color: #a5b4fc; }
-        [data-theme="light"] .feature-example { background: rgba(79, 70, 229, 0.08); color: var(--indigo); }
 
         /* Goals */
         .goal-card { display: flex; align-items: flex-start; gap: 20px; }
@@ -528,7 +455,6 @@
 
         @media (max-width: 768px) {
             .mobile-sticky-cta { display: flex; }
-            .hero-content { padding-bottom: 80px; } /* Space for slider controls */
             .hero-buttons { flex-direction: column; align-items: center; }
             .btn { width: 100%; max-width: 280px; justify-content: center; }
             .payments-box, .trust-box { padding: clamp(24px, 6vw, 40px); }
@@ -540,142 +466,12 @@
             .card-grid { grid-template-columns: 1fr; gap: 16px; }
             .pricing-grid { grid-template-columns: 1fr; }
         }
-    
-    /* Skip to content link */
-    .skip-to-content {
-        position: absolute;
-        top: -40px;
-        left: 0;
-        background: #4f46e5;
-        color: white;
-        padding: 8px 16px;
-        z-index: 10000;
-        font-size: 14px;
-        font-weight: 600;
-        text-decoration: none;
-        border-radius: 0 0 8px 0;
-        transition: top 0.3s;
-    }
-    .skip-to-content:focus {
-        top: 0;
-    }
-</style>
+    </style>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-                {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.ezerapp.com/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Bangladesh",
-                        "item": "https://www.ezerapp.com/bd/"
-                },
-                {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Bengali",
-                        "item": "https://www.ezerapp.com/bd/bn/"
-                }
-        ]
-}
-    </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ImageGallery",
-        "name": "EZer App Screenshots",
-        "description": "Screenshots of EZer budget and expense tracker app showing budgets, analytics, transactions, goals, bills, and privacy features",
-        "image": [
-                {
-                        "@type": "ImageObject",
-                        "name": "EZer App - Budgets",
-                        "description": "Track monthly budgets by category with progress bars",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/bn-BD/1_bn-BD.png",
-                        "width": 1344,
-                        "height": 2992,
-                        "encodingFormat": "image/png"
-                },
-                {
-                        "@type": "ImageObject",
-                        "name": "EZer App - Analytics",
-                        "description": "Visual spending breakdown with income vs expenses charts",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/bn-BD/2_bn-BD.png",
-                        "width": 1344,
-                        "height": 2992,
-                        "encodingFormat": "image/png"
-                },
-                {
-                        "@type": "ImageObject",
-                        "name": "EZer App - Transactions",
-                        "description": "Full transaction history with search and filters",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/bn-BD/3_bn-BD.png",
-                        "width": 1344,
-                        "height": 2992,
-                        "encodingFormat": "image/png"
-                },
-                {
-                        "@type": "ImageObject",
-                        "name": "EZer App - Quick Add",
-                        "description": "Add expenses in 3 taps with smart categories",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/bn-BD/4_bn-BD.png",
-                        "width": 1344,
-                        "height": 2992,
-                        "encodingFormat": "image/png"
-                },
-                {
-                        "@type": "ImageObject",
-                        "name": "EZer App - Goals",
-                        "description": "Set savings goals and track your progress",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/bn-BD/5_bn-BD.png",
-                        "width": 1344,
-                        "height": 2992,
-                        "encodingFormat": "image/png"
-                },
-                {
-                        "@type": "ImageObject",
-                        "name": "EZer App - Bills",
-                        "description": "Never miss a bill payment with reminders",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/bn-BD/6_bn-BD.png",
-                        "width": 1344,
-                        "height": 2992,
-                        "encodingFormat": "image/png"
-                },
-                {
-                        "@type": "ImageObject",
-                        "name": "EZer App - Budget Health",
-                        "description": "Monitor budget performance and health scores",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/bn-BD/7_bn-BD.png",
-                        "width": 1344,
-                        "height": 2992,
-                        "encodingFormat": "image/png"
-                },
-                {
-                        "@type": "ImageObject",
-                        "name": "EZer App - Privacy",
-                        "description": "Full control over your data permissions",
-                        "contentUrl": "https://www.ezerapp.com/assets/screenshots/bn-BD/8_bn-BD.png",
-                        "width": 1344,
-                        "height": 2992,
-                        "encodingFormat": "image/png"
-                }
-        ]
-}
-    </script>
 </head>
 <body>
-<a href="#main-content" class="skip-to-content">বিষয়বস্তুতে যান</a>
     <!-- Language Switch Banner -->
     <div class="lang-switch-banner">
         <span>🇧🇩</span>
@@ -698,7 +494,7 @@
                 <a href="terms.html" class="unified-link">শর্তাবলী</a>
                 <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=BD" class="unified-cta">বিনামূল্যে ডাউনলোড</a>
             </div>
-            <button class="unified-mobile-btn" aria-label="Open menu" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
+            <button class="unified-mobile-btn" onclick="document.querySelector('.unified-mobile-menu').classList.toggle('open')">
                 <span class="material-icons-outlined">menu</span>
             </button>
         </div>
@@ -713,7 +509,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="main-content" class="hero-section">
+    <section class="hero-section">
         <div class="hero-orb purple"></div>
         <div class="hero-orb pink"></div>
         <div class="hero-content">
@@ -729,17 +525,6 @@
                     বিনামূল্যে ডাউনলোড - ৳০
                 </a>
                 <a href="#features" class="btn btn-secondary">আরও জানুন</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Languages Bar -->
-    <section class="languages-section">
-        <div class="languages-inner">
-            <div class="languages-label">২টি ভাষায় উপলব্ধ</div>
-            <div class="languages-chips">
-                <a href="../" class="lang-chip">English</a>
-                <span class="lang-chip active">বাংলা</span>
             </div>
         </div>
     </section>
@@ -769,56 +554,6 @@
                     <span><span class="proof-value">কোন</span> অ্যাকাউন্ট নেই</span>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-    <!-- App Screenshots -->
-    <section class="screenshots-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-eyebrow">অ্যাপটি দেখুন</span>
-                <h2 class="section-title">সুন্দর। ব্যক্তিগত। শক্তিশালী।</h2>
-                <p class="section-subtitle">ডার্ক ও লাইট মোড, সহজ ডিজাইন, আপনার প্রয়োজনীয় সবকিছু</p>
-            </div>
-        </div>
-        <div class="screenshot-carousel">
-            <div class="screenshot-card">
-                <img src="../../assets/screenshots/bn-BD/1_bn-BD.png" alt="EZer Budgets - Set and track category budgets" width="1344" height="2992" title="Budgets - Track monthly budgets by category with progress bars" loading="lazy">
-                <div class="screenshot-label">Budgets</div>
-            </div>
-            <div class="screenshot-card">
-                <img src="../../assets/screenshots/bn-BD/2_bn-BD.png" alt="EZer Analytics - Income, expenses and spending breakdown" width="1344" height="2992" title="Analytics - Visual spending breakdown with income vs expenses charts" loading="lazy">
-                <div class="screenshot-label">Analytics</div>
-            </div>
-            <div class="screenshot-card">
-                <img src="../../assets/screenshots/bn-BD/3_bn-BD.png" alt="EZer Transactions - Full spending history" width="1344" height="2992" title="Transactions - Full transaction history with search and filters" loading="lazy">
-                <div class="screenshot-label">Transactions</div>
-            </div>
-            <div class="screenshot-card">
-                <img src="../../assets/screenshots/bn-BD/4_bn-BD.png" alt="EZer Quick Add - Add expenses in 3 taps" width="1344" height="2992" title="Quick Add - Add expenses in 3 taps with smart categories" loading="lazy">
-                <div class="screenshot-label">Quick Add</div>
-            </div>
-            <div class="screenshot-card">
-                <img src="../../assets/screenshots/bn-BD/5_bn-BD.png" alt="EZer Goals - Save for what matters" width="1344" height="2992" title="Goals - Set savings goals and track your progress" loading="lazy">
-                <div class="screenshot-label">Goals</div>
-            </div>
-            <div class="screenshot-card">
-                <img src="../../assets/screenshots/bn-BD/6_bn-BD.png" alt="EZer Bills - Never miss a payment" width="1344" height="2992" title="Bills - Never miss a bill payment with reminders" loading="lazy">
-                <div class="screenshot-label">Bills</div>
-            </div>
-            <div class="screenshot-card">
-                <img src="../../assets/screenshots/bn-BD/7_bn-BD.png" alt="EZer Budget Health - Track budget performance" width="1344" height="2992" title="Budget Health - Monitor budget performance and health scores" loading="lazy">
-                <div class="screenshot-label">Budget Health</div>
-            </div>
-            <div class="screenshot-card">
-                <img src="../../assets/screenshots/bn-BD/8_bn-BD.png" alt="EZer Privacy Dashboard - Your data, your control" width="1344" height="2992" title="Privacy - Full control over your data permissions" loading="lazy">
-                <div class="screenshot-label">Privacy</div>
-            </div>
-        </div>
-        <div class="screenshot-scroll-hint">
-            <span class="material-icons-outlined" style="font-size:16px;vertical-align:middle;">swipe</span>
-            Swipe to explore all screens
         </div>
     </section>
 
@@ -973,33 +708,8 @@
         </div>
     </section>
 
-    <!-- Built for Bangladesh Features -->
-    <section class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-eyebrow">বাংলাদেশের জন্য তৈরি</span>
-                <h2 class="section-title">বাংলাদেশের জন্য নির্মিত</h2>
-                <p class="section-subtitle">অন্য কোথাও পাবেন না এমন বৈশিষ্ট্য</p>
-            </div>
-            <div class="card-grid">
-                <div class="card feature-card">
-                    <div class="card-icon"><span class="material-icons-outlined">notifications_active</span></div>
-                    <h3>বিল রিমাইন্ডার</h3>
-                    <p>কোন পেমেন্ট মিস করবেন না</p>
-                    <div class="feature-example">নিয়মিত বিলের জন্য রিমাইন্ডার সেট করুন</div>
-                </div>
-                <div class="card feature-card">
-                    <div class="card-icon"><span class="material-icons-outlined">document_scanner</span></div>
-                    <h3>রিসিট OCR</h3>
-                    <p>স্বয়ংক্রিয়ভাবে রিসিট স্ক্যান করুন</p>
-                    <div class="feature-example">নগদ খরচ ট্র্যাক করতে ছবি তুলুন</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Trust -->
-    <section class="section">
+    <section class="section section-alt">
         <div class="container">
             <div class="trust-box">
                 <div class="trust-header">
@@ -1070,25 +780,15 @@
             <div class="download-inner">
                 <h2>আজই ট্র্যাকিং শুরু করুন</h2>
                 <p>iOS বা Android এ EZer অ্যাপ বিনামূল্যে ডাউনলোড করুন। কোন সাইন-আপ প্রয়োজন নেই। আপনার ডেটা আপনার ডিভাইসে থাকে।</p>
-                                <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;flex-wrap:wrap;">
-                    <div style="display:flex;gap:2px;">
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                        <span style="color:#FBBF24;font-size:20px;">&#9733;</span>
-                    </div>
-                    <span style="color:rgba(255,255,255,0.9);font-weight:700;font-size:16px;">4.8</span>
-                    <span style="color:rgba(255,255,255,0.6);font-size:14px;">3,000+ ব্যবহারকারীদের থেকে</span>
-                </div>
-<div class="download-badges">
-                    <a href="https://apps.apple.com/BD/app/ezer-budget-expense-tracker/id6738029702" class="store-badge" target="_blank" rel="noopener">
+                <div class="download-badges">
+                    <div class="store-badge coming-soon">
+                        <span class="coming-soon-ribbon">শীঘ্রই আসছে</span>
                         <span class="material-icons-outlined icon">apple</span>
                         <div class="text">
                             <small>ডাউনলোড করুন</small>
                             <span>App Store</span>
                         </div>
-                    </a>
+                    </div>
                     <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=BD" class="store-badge" target="_blank" rel="noopener">
                         <span class="material-icons-outlined icon">shop</span>
                         <div class="text">
@@ -1107,7 +807,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
                 <div>
                     <a href="./" class="unified-logo" style="margin-bottom: 16px;">
-                        <img src="../../logo.png" alt="EZer" class="unified-logo-img" loading="lazy">
+                        <img src="../../logo.png" alt="EZer" class="unified-logo-img">
                         <span class="unified-logo-text">EZer app</span>
                     </a>
                     <p style="color: var(--text-secondary); font-size: 14px; margin-top: 16px;">
@@ -1135,18 +835,10 @@
                 </div>
             </div>
 
-            <!-- Language Switcher -->
-            <div style="display: flex; align-items: center; justify-content: center; gap: 12px; padding: 16px 0; border-top: 1px solid var(--border);">
-                <span style="font-size: 13px; color: var(--text-muted);">ভাষা:</span>
-                <a href="../" style="font-size: 13px; color: var(--text-secondary); text-decoration: none;">English</a>
-                <span style="color: var(--text-muted);">|</span>
-                <span style="font-size: 13px; font-weight: 600; color: var(--indigo);">বাংলা</span>
-            </div>
-
             <!-- Theme Toggle -->
             <div class="theme-toggle-container">
                 <span class="theme-toggle-label">থিম</span>
-                <div class="theme-toggle" aria-label="Toggle dark mode">
+                <div class="theme-toggle">
                     <button class="theme-btn" data-theme="light" title="লাইট মোড">
                         <span class="material-icons-outlined" style="font-size: 18px;">light_mode</span>
                     </button>
@@ -1206,48 +898,14 @@
 
     <!-- Mobile Sticky CTA -->
     <div class="mobile-sticky-cta">
-        <a href="https://apps.apple.com/BD/app/ezer-budget-expense-tracker/id6738029702" class="btn btn-secondary" target="_blank" rel="noopener">
+        <div class="btn btn-secondary coming-soon">
             <span class="material-icons-outlined">apple</span>
-            <div>iOS</div>
-        </a>
+            <div>iOS<span class="coming-soon-label">শীঘ্রই আসছে</span></div>
+        </div>
         <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance&gl=BD" class="btn btn-primary" target="_blank" rel="noopener">
             <span class="material-icons-outlined">shop</span>
             Android
         </a>
     </div>
-
-    <script>
-    // Smart platform detection - highlight relevant store
-    (function() {
-        var ua = navigator.userAgent || '';
-        var isIOS = /iPhone|iPad|iPod/i.test(ua);
-        var isAndroid = /Android/i.test(ua);
-        // Sticky CTA: highlight the relevant platform
-        var sticky = document.querySelector('.mobile-sticky-cta');
-        if (sticky) {
-            var iosBtn = sticky.querySelector('.btn-sticky-ios') || sticky.querySelector('.btn-secondary');
-            var androidBtn = sticky.querySelector('.btn-sticky-android') || sticky.querySelector('.btn-primary');
-            if (isIOS && iosBtn && androidBtn) {
-                iosBtn.style.background = 'linear-gradient(135deg, #6366f1, #8b5cf6)';
-                iosBtn.style.border = 'none';
-                iosBtn.style.fontWeight = '700';
-                androidBtn.style.background = 'rgba(255,255,255,0.1)';
-                androidBtn.style.border = '1px solid rgba(255,255,255,0.2)';
-                androidBtn.style.fontWeight = '400';
-            }
-        }
-        // Download badges: add subtle highlight
-        var badges = document.querySelectorAll('.store-badge');
-        if (badges.length === 2) {
-            if (isIOS) {
-                badges[0].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
-                badges[0].style.borderColor = 'rgba(99, 102, 241, 0.6)';
-            } else if (isAndroid) {
-                badges[1].style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.4)';
-                badges[1].style.borderColor = 'rgba(99, 102, 241, 0.6)';
-            }
-        }
-    })();
-    </script>
 </body>
 </html>
