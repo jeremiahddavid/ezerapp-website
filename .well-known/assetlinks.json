@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.jd.ezer",
+      "sha256_cert_fingerprints": [
+        "47:17:C4:36:00:7B:67:CC:71:C2:EE:6E:BE:59:A8:E3:12:EC:DC:1C:58:1F:29:7F:B8:CB:BF:8B:48:4D:77:89"
+      ]
+    }
+  }
+]

@@ -19,3 +19,7 @@ deploy*.js
 !robots.txt
 !llms.txt
 !sitemap.xml
+
+# App verification files (must be tracked)
+!.well-known/apple-app-site-association
+!.well-known/assetlinks.json
