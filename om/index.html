@@ -83,6 +83,7 @@
     <link rel="alternate" hreflang="en-RO" href="https://www.ezerapp.com/ro/">
     <link rel="alternate" hreflang="en-IL" href="https://www.ezerapp.com/il/">
     <link rel="alternate" hreflang="en-IQ" href="https://www.ezerapp.com/iq/">
+    <link rel="alternate" hreflang="ar-OM" href="https://www.ezerapp.com/om/ar/">
     <link rel="alternate" hreflang="x-default" href="https://www.ezerapp.com/">
 
     <!-- Favicons -->
@@ -90,6 +91,17 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
 
+    <!-- Auto-redirect for ar speakers -->
+    <script>
+    (function() {
+        if (sessionStorage.getItem('ezer-lang-choice')) return;
+        var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+        if (lang.startsWith('ar')) {
+            sessionStorage.setItem('ezer-lang-choice', 'true');
+            window.location.replace('./ar/');
+        }
+    })();
+    </script>
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.ezerapp.com/om/">
