@@ -170,6 +170,32 @@
                     We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.
                 </p>
 
+                <section id="ai-parse" class="privacy-section">
+                  <h2>AI Statement Parsing (Plus feature)</h2>
+                  <p>The AI Parse feature, available to Plus subscribers, uses third-party AI providers to extract transactions from bank and credit card statements. When you use this feature, the statement file (PDF, image, or CSV) is sent to the AI provider you select.</p>
+                  <h3>Subprocessors</h3>
+                  <ul>
+                    <li><strong>Anthropic</strong> (Claude) &mdash; United States</li>
+                    <li><strong>OpenAI</strong> (GPT-4o) &mdash; United States</li>
+                    <li><strong>Google</strong> (Gemini) &mdash; United States</li>
+                  </ul>
+                  <h3>What is sent</h3>
+                  <ul>
+                    <li>The bank or credit card statement file you upload</li>
+                    <li>Country code (for regional parsing hints, e.g. date formats)</li>
+                    <li>Currency code</li>
+                  </ul>
+                  <h3>What is NOT sent</h3>
+                  <ul>
+                    <li>Your name, email, or account credentials</li>
+                    <li>Statements from previous uploads (each parse is isolated)</li>
+                    <li>Device identifiers beyond what Firebase Auth requires</li>
+                  </ul>
+                  <h3>Data retention</h3>
+                  <p>EZer does NOT store your statement file on its servers. AI providers may retain the file temporarily (typically 30 days) for abuse prevention and service quality, per their own privacy policies.</p>
+                  <h3>Your choice</h3>
+                  <p>AI Parse is opt-in only &mdash; you are prompted for explicit consent on first use. You can revoke consent anytime in Settings &rarr; Privacy. Without consent, AI Parse is disabled; all other features continue to work locally.</p>
+                </section>
                 <h2 class="text-2xl font-bold mt-8 mb-4">Contact Us</h2>
                 <p class="text-gray-700 mb-4">
                     If you have questions about this Privacy Policy, please contact us at:
