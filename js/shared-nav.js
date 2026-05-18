@@ -190,6 +190,7 @@
                         <div>
                             <h4 class="font-semibold mb-4">Support</h4>
                             <div class="space-y-2 text-gray-400 text-sm">
+                                <a href="/help/household.html" class="block hover:text-white transition-colors">Household Help</a>
                                 <a href="/feedback.html" class="block hover:text-white transition-colors">Feedback</a>
                                 <a href="/report.html" class="block hover:text-white transition-colors">Report Issue</a>
                                 <a href="mailto:support@ezerapp.com" class="block hover:text-white transition-colors">Contact Us</a>
