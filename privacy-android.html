@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - EZer for Android</title>
-    <meta name="description" content="Comprehensive Privacy Policy for EZer Android app. Learn how we protect your financial data with local encryption, privacy-first design, and full GDPR and international privacy law compliance.">
+    <meta name="description" content="Privacy Policy for the EZer Android app. Your financial data is encrypted on your device; learn exactly what leaves it when you use AI statement parsing or cloud backup.">
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -15,7 +15,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.ezerapp.com/privacy-android.html">
     <meta property="og:title" content="Privacy Policy - EZer for Android">
-    <meta property="og:description" content="Privacy-first personal finance app. Your data stays encrypted on your device.">
+    <meta property="og:description" content="Privacy-first personal finance app. Your everyday data stays encrypted on your device; optional cloud features are explained in full.">
     <meta property="og:image" content="https://www.ezerapp.com/logo-512.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -79,33 +79,44 @@
         <div class="flex items-center justify-between mb-8">
             <h1 class="text-4xl font-bold">Privacy Policy for Android</h1>
             <a href="privacy-ios.html" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-semibold">
-                View iOS Version →
+                View iOS Version &rarr;
             </a>
         </div>
 
         <div class="prose prose-lg max-w-none">
             <div class="bg-green-50 border-l-4 border-green-600 p-4 mb-6 not-prose">
                 <p class="font-semibold text-green-800">Privacy Policy for Android</p>
-                <p class="text-sm text-green-700">Effective Date: October 20, 2025 | Last Updated: April 25, 2026 | Version 1.1</p>
+                <p class="text-sm text-green-700">Effective Date: October 20, 2025 | Last Updated: September 27, 2026 | Version 2.0</p>
             </div>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">Introduction</h2>
             <p class="mb-4">Welcome to EZer ("we," "our," or "us"). We are committed to protecting your privacy and ensuring the security of your personal financial data. This Privacy Policy explains how we collect, use, store, and protect your information when you use the EZer mobile application on Android devices.</p>
+
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6 not-prose">
+                <p class="font-semibold text-blue-800 mb-2">In short:</p>
+                <ul class="text-sm text-blue-700 space-y-1 list-disc pl-5">
+                    <li>Your financial data is stored in an encrypted database on your device.</li>
+                    <li>It leaves your device only when you turn on a cloud feature: AI statement parsing or cloud backup. Each is optional and explained below.</li>
+                    <li>Even if you use no cloud feature, the app uses an anonymous account ID, an app-integrity check and crash reports (see section 1.2 and "Crash Reporting").</li>
+                    <li>We do not sell your data and we do not show ads.</li>
+                </ul>
+            </div>
+
             <p class="mb-4"><strong>By using EZer on Android, you agree to this Privacy Policy and consent to the data practices described herein.</strong></p>
+            <!-- [LEGAL: "consent to the data practices described herein" by use alone does not satisfy GDPR/DPDP consent for the consent-based features; those features ask separately in the app. Confirm this sentence can stay.] -->
 
             <h2 class="text-2xl font-bold mt-8 mb-4">1. Information We Collect</h2>
 
             <h3 class="text-xl font-bold mt-6 mb-3">1.1 Information You Provide Directly</h3>
             <p class="mb-4"><strong>Account Information:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Name (optional)</li>
-                <li>Email address (for account creation and recovery)</li>
-                <li>Profile information (optional)</li>
-                <li>Currency and language preferences</li>
-                <li>Regional settings</li>
+                <li>Sign-in is optional. It is required only for backups. If you sign in with Google or Microsoft, our authentication service (Firebase Authentication, provided by Google) receives the name, email address and account identifier from that provider.</li>
+                <li>Profile information you enter in the app (stored on your device)</li>
+                <li>Currency and language preferences (stored on your device)</li>
+                <li>Regional settings (stored on your device)</li>
             </ul>
 
-            <p class="mb-4"><strong>Financial Data You Enter:</strong></p>
+            <p class="mb-4"><strong>Financial Data You Enter (stored on your device):</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>Transactions (manual entries)</li>
                 <li>Bank account names and types (not actual bank credentials)</li>
@@ -118,109 +129,97 @@
             </ul>
 
             <div class="bg-red-50 border-l-4 border-red-600 p-4 mb-6 not-prose">
-                <p class="font-semibold text-red-800">Important: We NEVER ask for or store:</p>
+                <p class="font-semibold text-red-800">Important: We NEVER ask for:</p>
                 <ul class="list-disc pl-6 text-red-700 text-sm mt-2">
                     <li>Bank account passwords or login credentials</li>
-                    <li>Credit/debit card numbers</li>
+                    <li>Full credit/debit card numbers</li>
                     <li>CVV/PIN codes</li>
                     <li>Social Security Numbers</li>
                     <li>Government ID numbers</li>
                 </ul>
+                <p class="text-red-700 text-sm mt-2">If a statement you send for AI parsing shows your name, your bank's name or the last digits of an account, those details can appear in the parsed result that we store (see <a href="#ai-parse" class="underline">AI Statement Parsing</a>).</p>
             </div>
 
-            <h3 class="text-xl font-bold mt-6 mb-3">1.2 Information Collected Automatically (Android-Specific)</h3>
+            <h3 class="text-xl font-bold mt-6 mb-3">1.2 Information Collected Automatically</h3>
 
-            <p class="mb-4"><strong>SMS Messages (Android Only - Requires Your Permission):</strong></p>
-            <p class="mb-4">When you grant SMS permission, EZer reads your SMS messages to automatically extract financial transaction information from:</p>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Bank transaction alerts</li>
-                <li>Credit card transaction notifications</li>
-                <li>UPI payment confirmations (GPay, PhonePe, PayTM, BHIM, etc.)</li>
-                <li>Bill payment confirmations</li>
-                <li>EMI payment alerts</li>
-                <li>Merchant transaction receipts</li>
-            </ul>
+            <p class="mb-4"><strong>Anonymous account ID (all users):</strong></p>
+            <p class="mb-4">When the app first starts, it creates an anonymous account with Firebase Authentication. This account has a random identifier and no name or email. The app uses it to authenticate its requests to our servers (Google Cloud Functions), for example to check your EZer Plus subscription, to record your privacy choices, to look up currency rates and, if you use them, for AI statement parsing and cloud backup.</p>
 
-            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6 not-prose">
-                <p class="font-semibold text-blue-800 mb-2">What We Do With SMS Data:</p>
-                <ul class="text-sm text-blue-700 space-y-1">
-                    <li>✅ Process SMS locally on your device to extract transaction details (amount, merchant, date, account)</li>
-                    <li>✅ Create transaction records from extracted data</li>
-                    <li>✅ Redact sensitive information (card numbers, full account numbers) before storage</li>
-                    <li>✅ Delete original SMS content immediately after processing</li>
-                    <li>❌ We NEVER store complete SMS message text</li>
-                    <li>❌ We NEVER upload SMS content to our servers</li>
-                    <li>❌ We NEVER share SMS data with third parties</li>
-                    <li>❌ We NEVER use SMS for marketing or advertising</li>
-                </ul>
-            </div>
+            <p class="mb-4"><strong>App integrity check (all users):</strong></p>
+            <p class="mb-4">To protect our servers from abuse, the app uses Firebase App Check with Google Play Integrity. Google checks that the request comes from a genuine copy of EZer on a genuine device, and the resulting token is sent with the app's requests to our servers.</p>
 
-            <p class="mb-4"><strong>Notification Access (Android Only - Optional):</strong></p>
-            <p class="mb-4">When you grant notification listener permission, EZer can:</p>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Read financial transaction notifications from banking apps</li>
-                <li>Extract transaction data from payment app notifications</li>
-                <li>Process notification data locally on your device</li>
-                <li>Create automatic transaction entries</li>
-            </ul>
+            <p class="mb-4"><strong>Subscription status checks (all users):</strong></p>
+            <p class="mb-4">While you use the app, it asks our servers for your current EZer Plus status (about once an hour, sooner after a failed attempt). The request carries your account ID and the app-integrity token. Purchases themselves are handled by Google Play; see section 3.4 for the purchase records we keep.</p>
 
-            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6 not-prose">
-                <p class="font-semibold text-blue-800 mb-2">What We Do With Notification Data:</p>
-                <ul class="text-sm text-blue-700 space-y-1">
-                    <li>✅ Process notifications locally on your device only</li>
-                    <li>✅ Extract financial transaction details only</li>
-                    <li>✅ Immediately discard notification content after processing</li>
-                    <li>❌ We NEVER store notification text</li>
-                    <li>❌ We NEVER access non-financial notifications</li>
-                    <li>❌ We NEVER upload notification data to servers</li>
-                </ul>
-            </div>
+            <p class="mb-4"><strong>Privacy choice records (all users):</strong></p>
+            <p class="mb-4">When you give or withdraw a consent in the app (for example crash reporting, analytics or AI statement parsing), a record is sent to our servers: the consent type, whether it was given, the time, the policy version, the app version, the platform and your account ID. We keep these records as proof of your choices (see section 3.4).</p>
 
             <p class="mb-4"><strong>Device Information:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Device model and manufacturer</li>
-                <li>Operating system version (Android version)</li>
-                <li>App version</li>
-                <li>Device language and timezone</li>
-                <li>Screen size and resolution (for UI optimization)</li>
-                <li>Unique device identifier (for session management, encrypted)</li>
+                <li>Device model and manufacturer, Android version and app version (used on your device and included in crash reports)</li>
+                <li>Device language and time zone (used on your device)</li>
+                <li>A random installation ID created by the app (not your advertising ID). It is attached to AI parsing history records and to feedback you choose to send, so that feedback sent from your device can be deleted when you delete your data.</li>
+                <li>A Firebase installation ID, used by crash reporting and by push notifications</li>
             </ul>
 
-            <p class="mb-4"><strong>Usage Data:</strong></p>
+            <p class="mb-4"><strong>Usage Data (only if you opt in):</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>App features used and frequency</li>
-                <li>Screen views and navigation patterns</li>
-                <li>Error logs and crash reports (anonymized)</li>
-                <li>Performance metrics (app load time, response time)</li>
+                <li>Usage analytics are off by default. If you turn them on in the Privacy Dashboard, Google Analytics for Firebase receives the app features you use and the screens you view, without transaction amounts, merchant names or account details.</li>
+                <li>Error logs and crash reports are described under "Crash Reporting" below.</li>
             </ul>
+
+            <p class="mb-4"><strong>Currency rate lookups (all users):</strong></p>
+            <p class="mb-4">When you have accounts or transactions in more than one currency, the app asks our server for an exchange rate. The request contains only the two currency codes and a date, together with the anonymous account ID and app-integrity token that every request to our servers carries. No amounts or transaction details are sent. Our server obtains rates from the European Central Bank and keeps them in a cache organised by date and currency pair that is not linked to you. This lookup is free and needs no separate consent.</p>
 
             <h3 class="text-xl font-bold mt-6 mb-3">1.3 Information from Imported Files</h3>
             <p class="mb-4"><strong>Bank Statement Imports:</strong></p>
-            <p class="mb-4">When you import bank statements (PDF, CSV, Excel):</p>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Transaction history from your bank statements</li>
-                <li>Account information (account nicknames, not full account numbers)</li>
-                <li>Transaction dates, amounts, descriptions, and categories</li>
-            </ul>
+            <p class="mb-4">In this version the only way to import a bank statement is AI statement parsing (EZer Plus, optional), which sends the statement off your device as described in <a href="#ai-parse" class="text-indigo-600 underline">AI Statement Parsing</a>. The transactions it returns are stored in your encrypted database on your device.</p>
 
             <p class="mb-4"><strong>Receipt Images:</strong></p>
-            <p class="mb-4">When you scan receipts using your camera:</p>
+            <p class="mb-4">When you scan receipts using your camera, text is read on your device with Google ML Kit. The following is stored on your device:</p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>Receipt images</li>
                 <li>OCR-extracted text (merchant name, amount, date, items)</li>
             </ul>
+            <p class="mb-4"><strong>Receipt scan feedback (optional):</strong> if you choose to share a scan that did not read correctly, we receive the receipt image with its top and bottom blurred, the scanned text with card numbers, names and phone numbers removed, the corrections you made, your region, the app version and the app installation ID. We use it only to improve receipt scanning. The app asks before the first time this is sent.</p>
+
+            <h2 id="ai-parse" class="text-2xl font-bold mt-8 mb-4">AI Statement Parsing (EZer Plus, Optional)</h2>
+            <p class="mb-4">AI statement parsing reads a bank or credit card statement that you choose (PDF, image or CSV) and turns it into transactions. It is off until you give consent in the app, and you can withdraw consent at any time in Settings &rarr; Privacy Dashboard. All other features keep working without it.</p>
+
+            <p class="mb-4"><strong>What is sent, and to whom:</strong></p>
+            <ul class="list-disc pl-6 mb-4 space-y-2">
+                <li>The app sends the statement file (or, for CSV, its text) to our server over an encrypted connection, together with the country and currency codes, the statement type, the page count, the names of your categories (so the AI can suggest one), the app installation ID and your account ID.</li>
+                <li>Our server sends the statement content, country and currency codes, statement type and category names to one AI provider, which extracts the transactions. It does not send your account ID, name or email to the provider.</li>
+                <li>Providers: <strong>Google</strong> (Gemini) for Quick parsing and <strong>Anthropic</strong> (Claude) for Accurate parsing. These providers process the statement on our behalf under their API terms and are located in the United States.</li>
+                <li>AI providers may keep what they receive for a limited period (for example, up to 30 days) for abuse and misuse monitoring, as described in their own terms. <!-- [LEGAL: confirm each provider's current API data terms, including whether the Gemini API project is on a paid tier. Do not add any statement about model training until those terms are confirmed (founder decision H3-1).] --></li>
+            </ul>
+
+            <p class="mb-4"><strong>What we keep on our servers:</strong></p>
+            <ul class="list-disc pl-6 mb-4 space-y-2">
+                <li><strong>The statement file itself is not stored</strong> on our servers.</li>
+                <li><strong>Parse cache:</strong> the parsed result (transactions with their dates, descriptions and amounts, and any account holder name, bank name or last digits of an account that appear on the statement) is stored in our database (Google Cloud Firestore), linked to your account, so that parsing the same statement again is instant and not charged again.</li>
+                <li><strong>Parse job:</strong> the result is also saved with the parse request, so you still receive it if the app is closed or loses its connection while parsing.</li>
+                <li><strong>Parse history:</strong> for billing and support we keep a record of each parse: date, model used, country, currency, statement type, page count, number of transactions, credits charged and the app installation ID. It does not contain transactions.</li>
+                <li><strong>Retention:</strong> the parse cache, parse jobs and parse history are kept until you delete your data with Delete All Data (section 6.3), which removes them. There is no automatic expiry: nothing is deleted on a timer. If you do not want parsed results kept, turn on "Don't cache my statements on our servers" (below).</li>
+            </ul>
+
+            <p class="mb-4"><strong>Turning the cache off:</strong> in Settings &rarr; Security Settings, switch on "Don't cache my statements on our servers". While it is on, the parsed result is not stored in the parse cache or with the parse job (only the job's status is kept); the parse history record is still kept, and every parse is charged.</p>
+
+            <p class="mb-4"><strong>Reporting a parsing problem (optional, separate consent):</strong> if you report a problem with a parsed statement, we receive the parsed transactions (not the statement file), your description, the country and currency codes, the model, the page count, error details, the app version and the app installation ID. We use it only to improve parsing. These reports are deleted with Delete All Data.</p>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">Crash Reporting (Legitimate Interest)</h2>
             <p class="mb-4">
-                We collect anonymous crash reports and non-fatal error logs through Firebase Crashlytics under our legitimate interest in keeping the app stable (GDPR Article 6(1)(f); equivalent legal bases under DPDPA and similar frameworks). These reports help us identify and fix bugs quickly. Reports include:
+                We collect crash reports and non-fatal error logs through Firebase Crashlytics under our legitimate interest in keeping the app stable (GDPR Article 6(1)(f); equivalent legal bases under DPDPA and similar frameworks). These reports help us identify and fix bugs quickly. Reports include:
             </p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>Crash stack traces and error context</li>
                 <li>Device model, operating system version, and app version</li>
-                <li>Approximate region (derived from IP; the IP itself is not stored)</li>
+                <li>A Firebase installation ID and app session information (Firebase Sessions)</li>
+                <li>For some errors, the internal identifier of the record involved (for example a transaction ID), never its contents</li>
+                <li>Approximate region (derived from IP; the IP itself is not stored) <!-- [LEGAL: verify against Firebase's Crashlytics data disclosure before publishing.] --></li>
             </ul>
             <p class="mb-4">
-                We never include your transactions, balances, names, or other personal information in crash reports. Crash reporting is on by default but you can disable it at any time in Settings &rarr; Privacy &rarr; Crash Reporting.
+                We do not add your transactions, balances or names to crash reports. Crash reporting is on by default but you can turn it off at any time in Settings &rarr; Privacy Dashboard &rarr; Crash Reporting.
             </p>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">2. How We Use Your Information</h2>
@@ -235,14 +234,21 @@
                 <li>Track savings goals and progress</li>
                 <li>Provide financial insights and analytics</li>
                 <li>Create reports and visualizations</li>
+                <li>Convert amounts between currencies</li>
             </ul>
 
-            <p class="mb-4"><strong>To Enable Automatic Transaction Capture (Android):</strong></p>
+            <p class="mb-4"><strong>To Provide Optional Cloud Features (only when you turn them on):</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Parse SMS messages for transaction data</li>
-                <li>Read financial notifications for automatic entry</li>
-                <li>Extract transaction details using pattern matching</li>
-                <li>Prevent duplicate transaction entries</li>
+                <li>Extract transactions from statements you choose (AI statement parsing)</li>
+                <li>Keep an encrypted backup you can restore on a new phone (cloud backup)</li>
+            </ul>
+
+            <p class="mb-4"><strong>To Operate and Protect the Service:</strong></p>
+            <ul class="list-disc pl-6 mb-4 space-y-2">
+                <li>Authenticate requests with the anonymous account ID and app-integrity check</li>
+                <li>Check subscription status and credit balances</li>
+                <li>Keep a record of your privacy choices</li>
+                <li>Find and fix crashes</li>
             </ul>
 
             <p class="mb-4"><strong>To Improve Your Experience:</strong></p>
@@ -254,33 +260,28 @@
                 <li>Improve transaction categorization accuracy over time</li>
             </ul>
 
-            <h3 class="text-xl font-bold mt-6 mb-3">2.2 Machine Learning and AI</h3>
-            <p class="mb-4"><strong>Local Machine Learning:</strong></p>
+            <h3 class="text-xl font-bold mt-6 mb-3">2.2 Categorization and AI</h3>
+            <p class="mb-4"><strong>On your device:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Train categorization models locally on your device</li>
-                <li>Improve merchant recognition</li>
-                <li>Detect anomalies in spending patterns</li>
-                <li>Generate personalized financial insights</li>
+                <li>Transactions are categorized on your device using built-in merchant rules and the corrections you make</li>
+                <li>Spending insights are calculated on your device</li>
             </ul>
 
             <div class="bg-blue-50 border-l-4 border-blue-600 p-4 mb-6 not-prose">
                 <p class="font-semibold text-blue-800 mb-2">What We Do:</p>
                 <ul class="text-sm text-blue-700 space-y-1">
-                    <li>✅ All ML processing happens on your device</li>
-                    <li>✅ Models learn from your anonymized transaction patterns</li>
-                    <li>✅ You can disable ML features anytime</li>
-                    <li>❌ We don't send your raw transaction data to external servers for ML training</li>
+                    <li>Categorization and insights are computed on your device.</li>
+                    <li>We do not send your transactions off your device for categorization.</li>
+                    <li>The only AI processing outside your device is AI statement parsing, which you turn on yourself (see <a href="#ai-parse" class="underline">AI Statement Parsing</a>).</li>
                 </ul>
             </div>
 
             <h3 class="text-xl font-bold mt-6 mb-3">2.3 Communications</h3>
-            <p class="mb-4"><strong>Service Communications:</strong></p>
+            <p class="mb-4"><strong>Service Communications (notifications created on your device):</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Transaction confirmation notifications</li>
                 <li>Bill payment reminders</li>
                 <li>Budget threshold alerts</li>
                 <li>Goal milestone achievements</li>
-                <li>Security alerts (unusual activity, login from new device)</li>
                 <li>App update notifications</li>
             </ul>
 
@@ -299,39 +300,36 @@
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>All financial data is stored in an encrypted SQLCipher database on your device</li>
                 <li>AES-256 encryption standard</li>
-                <li>Encryption keys are unique to your device and never leave your device</li>
-                <li>Data cannot be accessed without your biometric authentication or PIN</li>
+                <li>The database key is created on your device and kept in Android's secure storage; EZer does not upload it</li>
+                <li>If you turn on app lock, opening the app requires your biometrics or device PIN</li>
             </ul>
 
             <p class="mb-4"><strong>Secure Preferences:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>App settings stored using Android Encrypted Shared Preferences</li>
+                <li>Sensitive settings and keys stored using Android encrypted storage</li>
                 <li>Biometric credentials managed by Android Keystore System</li>
             </ul>
 
-            <h3 class="text-xl font-bold mt-6 mb-3">3.2 Cloud Backup (Optional - Your Choice)</h3>
-            <p class="mb-4"><strong>Google Drive Backup (If You Enable It):</strong></p>
+            <h3 id="backup" class="text-xl font-bold mt-6 mb-3">3.2 Cloud Backup (EZer Plus, Optional)</h3>
+            <p class="mb-4">Cloud backup (Google Drive / OneDrive) is part of EZer Plus where available. It requires you to sign in. Backups are encrypted on your device with AES-256 before they are uploaded to the app folder of <strong>your own</strong> cloud storage account. Our servers never receive the backup file, and we cannot access your cloud storage account.</p>
+            <p class="mb-4"><strong>The backup encryption key:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Complete encrypted backup of your financial database</li>
-                <li>Stored in your personal Google Drive account</li>
-                <li>Encrypted before upload (you control the encryption key)</li>
-                <li>Only you can access and restore your backups</li>
-                <li>We cannot access your Google Drive files</li>
+                <li>The key is generated for your EZer account and stored on our servers (Google Cloud Firestore), so that you can restore a backup on a new phone by signing in with the same account. The app also keeps a copy on your device so backup and restore work offline.</li>
+                <li>The key can be read only through our authenticated server function for your own account. Because the key is on our servers, EZer could in principle decrypt a backup file if it obtained one; we never receive the file. People with administrative access to our cloud project could technically access the key; we do not access it.</li>
+                <li>Deleting your EZer data with Delete All Data deletes the key. After that, existing backup files can no longer be restored.</li>
             </ul>
 
             <p class="mb-4"><strong>What's Backed Up:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>Transaction history</li>
                 <li>Account information</li>
-                <li>Budget and goal data</li>
+                <li>Budget, bill, loan and goal data</li>
                 <li>App preferences</li>
-                <li>Receipt images (optional)</li>
+                <li>Receipt records and attachments</li>
             </ul>
 
             <p class="mb-4"><strong>What's NOT Backed Up:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>SMS messages (never stored)</li>
-                <li>Notification content (never stored)</li>
                 <li>Temporary cache data</li>
             </ul>
 
@@ -344,8 +342,9 @@
 
             <p class="mb-4"><strong>Cloud Backups:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Retained in your Google Drive until you delete them</li>
-                <li>You control backup retention through Google Drive settings</li>
+                <li>Retained in your own cloud storage account until you delete them</li>
+                <li>You control backup retention through that storage account</li>
+                <li>After you delete your EZer data, remaining backup files cannot be restored because the key is deleted</li>
             </ul>
 
             <p class="mb-4"><strong>Deleted Data:</strong></p>
@@ -354,6 +353,67 @@
                 <li>Deleted data may remain in cloud backups until you delete the backup</li>
                 <li>We cannot recover deleted data</li>
             </ul>
+
+            <h3 class="text-xl font-bold mt-6 mb-3">3.4 Data Held on Our Servers</h3>
+            <p class="mb-4">Our servers run on Google Cloud (Firebase). This is everything we hold about you there, and for how long:</p>
+            <div class="overflow-x-auto mb-6 not-prose">
+                <table class="min-w-full bg-white border border-gray-300">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="border border-gray-300 px-4 py-2 text-left">Data</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left">When</th>
+                            <th class="border border-gray-300 px-4 py-2 text-left">Kept until</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Anonymous account ID</td>
+                            <td class="border border-gray-300 px-4 py-2">All users</td>
+                            <td class="border border-gray-300 px-4 py-2">Delete All Data (uninstalling the app does not remove it)</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Sign-in account (name, email, provider ID)</td>
+                            <td class="border border-gray-300 px-4 py-2">If you sign in</td>
+                            <td class="border border-gray-300 px-4 py-2">Delete All Data</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Subscription and purchase records (store purchase token and transaction ID), credit balance and credit history</td>
+                            <td class="border border-gray-300 px-4 py-2">If you buy EZer Plus or credits</td>
+                            <td class="border border-gray-300 px-4 py-2">Delete All Data <!-- [LEGAL: confirm whether tax or accounting law requires keeping purchase records longer.] --></td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Privacy choice records</td>
+                            <td class="border border-gray-300 px-4 py-2">All users</td>
+                            <td class="border border-gray-300 px-4 py-2">Delete All Data; a copy without your account ID (replaced by a one-way pseudonym) is kept for 7 years as proof of consent</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">AI parse cache, parse jobs, parse history</td>
+                            <td class="border border-gray-300 px-4 py-2">If you use AI statement parsing</td>
+                            <td class="border border-gray-300 px-4 py-2">Delete All Data; no automatic expiry. Parse cache and parse jobs are not kept while "Don't cache my statements on our servers" is on (see <a href="#ai-parse" class="text-indigo-600 underline">AI Statement Parsing</a>)</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Parsing problem reports and receipt scan feedback</td>
+                            <td class="border border-gray-300 px-4 py-2">Only if you send them</td>
+                            <td class="border border-gray-300 px-4 py-2">Delete All Data (including receipt images)</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Backup encryption key</td>
+                            <td class="border border-gray-300 px-4 py-2">If you use cloud backup</td>
+                            <td class="border border-gray-300 px-4 py-2">Delete All Data (existing backups then cannot be restored)</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Push notification token with platform and app language</td>
+                            <td class="border border-gray-300 px-4 py-2">Signed-in users only</td>
+                            <td class="border border-gray-300 px-4 py-2">Delete All Data</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Crash reports (Firebase Crashlytics)</td>
+                            <td class="border border-gray-300 px-4 py-2">Unless you turn crash reporting off</td>
+                            <td class="border border-gray-300 px-4 py-2">The retention period set by Firebase Crashlytics (not removed by Delete All Data)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">4. How We Share Your Information</h2>
 
@@ -367,27 +427,49 @@
             </ul>
 
             <h3 class="text-xl font-bold mt-6 mb-3">4.2 Third-Party Services We Use</h3>
-            <p class="mb-4"><strong>Google Services (If You Enable Cloud Backup):</strong></p>
+            <p class="mb-4"><strong>Google Firebase (all users):</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li><strong>Google Drive API:</strong> For encrypted backup storage</li>
-                <li><strong>Google Sign-In:</strong> For authentication (optional)</li>
-                <li><strong>What they receive:</strong> Encrypted backup files only (they cannot decrypt)</li>
-                <li><strong>Privacy Policy:</strong> https://policies.google.com/privacy</li>
+                <li><strong>Firebase Authentication:</strong> anonymous account ID for every install; name, email and provider ID if you sign in</li>
+                <li><strong>Cloud Functions and Cloud Firestore:</strong> our server code (United States, us-central1) and database for the data listed in section 3.4</li>
+                <li><strong>Firebase App Check with Google Play Integrity:</strong> app-integrity check</li>
+                <li><strong>Firebase Crashlytics:</strong> crash reports (on by default, can be turned off)</li>
+                <li><strong>Google Analytics for Firebase:</strong> usage analytics, only if you opt in</li>
+                <li><strong>Firebase Cloud Messaging:</strong> push notification token for signed-in users</li>
+                <li><strong>Cloud Storage for Firebase:</strong> receipt scan feedback images you choose to send</li>
+                <li><strong>Privacy Policy:</strong> https://firebase.google.com/support/privacy</li>
+            </ul>
+
+            <p class="mb-4"><strong>Google Sign-In and Microsoft sign-in (optional):</strong></p>
+            <ul class="list-disc pl-6 mb-4 space-y-2">
+                <li>Used to sign in. The provider shares your name, email and account identifier with us.</li>
+            </ul>
+
+            <p class="mb-4"><strong>Cloud storage for backups (if you enable Cloud Backup; part of EZer Plus where available):</strong></p>
+            <ul class="list-disc pl-6 mb-4 space-y-2">
+                <li><strong>Google Drive / Microsoft OneDrive:</strong> the cloud storage account you choose stores your encrypted backup file in its app folder</li>
+                <li><strong>What they receive:</strong> the encrypted backup file only. The key is not stored with the file.</li>
+                <li><strong>Privacy Policies:</strong> https://policies.google.com/privacy and https://privacy.microsoft.com/privacystatement</li>
+            </ul>
+
+            <p class="mb-4"><strong>AI providers (only if you use AI statement parsing):</strong></p>
+            <ul class="list-disc pl-6 mb-4 space-y-2">
+                <li><strong>Google (Gemini API) and Anthropic (Claude API):</strong> receive the statement content you choose, with country and currency codes, statement type and your category names. See <a href="#ai-parse" class="text-indigo-600 underline">AI Statement Parsing</a>.</li>
             </ul>
 
             <p class="mb-4"><strong>Google ML Kit (For Receipt OCR):</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li><strong>What it does:</strong> Processes receipt images locally on device to extract text</li>
                 <li><strong>What they receive:</strong> Nothing - processing is entirely on-device</li>
-                <li><strong>Privacy:</strong> No data sent to Google servers</li>
             </ul>
 
-            <p class="mb-4"><strong>Analytics Services (Anonymized Only):</strong></p>
+            <p class="mb-4"><strong>Google Play Billing:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li><strong>Google Analytics for Firebase:</strong> App usage statistics (anonymized)</li>
-                <li><strong>What they receive:</strong> Anonymized app usage metrics, crash reports</li>
-                <li><strong>What they DON'T receive:</strong> Your financial data, SMS content, personal information</li>
-                <li><strong>You can opt out</strong> in Settings > Privacy</li>
+                <li>Handles EZer Plus and credit purchases. We never receive your payment card details.</li>
+            </ul>
+
+            <p class="mb-4"><strong>European Central Bank:</strong></p>
+            <ul class="list-disc pl-6 mb-4 space-y-2">
+                <li>Our server downloads public exchange rates. Nothing about you is sent.</li>
             </ul>
 
             <h3 class="text-xl font-bold mt-6 mb-3">4.3 Legal Requirements</h3>
@@ -415,24 +497,6 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="border border-gray-300 px-4 py-2"><strong>READ_SMS</strong></td>
-                            <td class="border border-gray-300 px-4 py-2">Automatic transaction capture from bank SMS</td>
-                            <td class="border border-gray-300 px-4 py-2 text-orange-600">Optional</td>
-                            <td class="border border-gray-300 px-4 py-2">Only financial SMS messages</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-gray-300 px-4 py-2"><strong>RECEIVE_SMS</strong></td>
-                            <td class="border border-gray-300 px-4 py-2">Real-time transaction detection</td>
-                            <td class="border border-gray-300 px-4 py-2 text-orange-600">Optional</td>
-                            <td class="border border-gray-300 px-4 py-2">Only financial SMS alerts</td>
-                        </tr>
-                        <tr>
-                            <td class="border border-gray-300 px-4 py-2"><strong>NOTIFICATION_LISTENER</strong></td>
-                            <td class="border border-gray-300 px-4 py-2">Read transaction notifications</td>
-                            <td class="border border-gray-300 px-4 py-2 text-orange-600">Optional</td>
-                            <td class="border border-gray-300 px-4 py-2">Only banking/payment app notifications</td>
-                        </tr>
-                        <tr>
                             <td class="border border-gray-300 px-4 py-2"><strong>POST_NOTIFICATIONS</strong></td>
                             <td class="border border-gray-300 px-4 py-2">Send bill reminders and alerts</td>
                             <td class="border border-gray-300 px-4 py-2 text-orange-600">Optional</td>
@@ -451,7 +515,7 @@
                             <td class="border border-gray-300 px-4 py-2">Only selected images</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-300 px-4 py-2"><strong>USE_BIOMETRIC</strong></td>
+                            <td class="border border-gray-300 px-4 py-2"><strong>USE_BIOMETRIC / USE_FINGERPRINT</strong></td>
                             <td class="border border-gray-300 px-4 py-2">Secure app lock with fingerprint/face</td>
                             <td class="border border-gray-300 px-4 py-2 text-orange-600">Optional</td>
                             <td class="border border-gray-300 px-4 py-2">Biometric authentication only</td>
@@ -463,10 +527,22 @@
                             <td class="border border-gray-300 px-4 py-2">N/A</td>
                         </tr>
                         <tr>
+                            <td class="border border-gray-300 px-4 py-2"><strong>RECEIVE_BOOT_COMPLETED</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">Restore scheduled reminders after the phone restarts</td>
+                            <td class="border border-gray-300 px-4 py-2 text-green-600">Required</td>
+                            <td class="border border-gray-300 px-4 py-2">N/A</td>
+                        </tr>
+                        <tr>
                             <td class="border border-gray-300 px-4 py-2"><strong>INTERNET</strong></td>
-                            <td class="border border-gray-300 px-4 py-2">Cloud backup, app updates</td>
+                            <td class="border border-gray-300 px-4 py-2">Cloud features, subscription checks, currency rates, crash reports</td>
                             <td class="border border-gray-300 px-4 py-2 text-green-600">Required</td>
                             <td class="border border-gray-300 px-4 py-2">Network access</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2"><strong>BILLING</strong></td>
+                            <td class="border border-gray-300 px-4 py-2">EZer Plus and credit purchases through Google Play</td>
+                            <td class="border border-gray-300 px-4 py-2 text-green-600">Required</td>
+                            <td class="border border-gray-300 px-4 py-2">Google Play purchase records for EZer</td>
                         </tr>
                         <tr>
                             <td class="border border-gray-300 px-4 py-2"><strong>WAKE_LOCK</strong></td>
@@ -483,6 +559,7 @@
                     </tbody>
                 </table>
             </div>
+            <p class="mb-4">EZer does not request permission to read SMS messages, notifications from other apps, your contacts or your location.</p>
 
             <h3 class="text-xl font-bold mt-6 mb-3">5.2 How to Manage Permissions</h3>
             <p class="mb-4"><strong>You can control all permissions:</strong></p>
@@ -494,7 +571,6 @@
 
             <p class="mb-4"><strong>Impact of Denying Permissions:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li><strong>SMS/Notifications:</strong> Manual transaction entry required</li>
                 <li><strong>Camera:</strong> Cannot scan receipts (can still attach from gallery)</li>
                 <li><strong>Biometric:</strong> PIN protection only</li>
                 <li><strong>Storage:</strong> Cannot attach images to transactions</li>
@@ -506,45 +582,49 @@
             <h3 class="text-xl font-bold mt-6 mb-3">6.1 Access and Control</h3>
             <p class="mb-4"><strong>You have the right to:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>✅ Access all your data stored in the app</li>
-                <li>✅ Export your data (CSV, JSON, Excel, PDF formats)</li>
-                <li>✅ Delete specific transactions or all data</li>
-                <li>✅ Modify or correct any information</li>
-                <li>✅ Disable specific features (SMS parsing, ML, analytics)</li>
+                <li>Access all your data stored in the app</li>
+                <li>Export your data (a ZIP of CSV and JSON files from the Privacy Dashboard; PDF and Excel reports from Reports)</li>
+                <li>Delete specific transactions or all data, including the data we hold on our servers</li>
+                <li>Modify or correct any information</li>
+                <li>Turn off optional features (AI statement parsing, analytics, crash reporting, cloud backup)</li>
             </ul>
 
             <p class="mb-4"><strong>How to exercise these rights:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Settings > Privacy Dashboard</li>
-                <li>Settings > Data & Export</li>
-                <li>Settings > Delete All Data</li>
+                <li>Settings > Privacy Dashboard (consents, Export my data, Delete All Data)</li>
+                <li>Settings > Delete Account</li>
             </ul>
 
             <h3 class="text-xl font-bold mt-6 mb-3">6.2 Data Portability</h3>
             <p class="mb-4"><strong>Export Your Data:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Go to Settings > Data & Export</li>
-                <li>Choose format: CSV, JSON, Excel, or PDF</li>
-                <li>Select date range and data types</li>
-                <li>Download to your device or share</li>
+                <li>Go to Settings > Privacy Dashboard > Export my data</li>
+                <li>It creates one ZIP file: transactions.csv, accounts.csv, budgets.csv and categories.csv, your settings and privacy choice history as JSON files, and a README</li>
+                <li>Save it to your device or share it</li>
             </ul>
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-6 not-prose">
+                <p class="text-sm text-yellow-800"><strong>Exported files are not encrypted.</strong> Anyone you share the file with, or anyone who can open it on your device or storage, can read it. To keep an encrypted copy, use Backup. Export exists so you can take your data elsewhere.</p>
+            </div>
 
             <h3 class="text-xl font-bold mt-6 mb-3">6.3 Right to be Forgotten</h3>
             <p class="mb-4"><strong>Delete Your Account and Data:</strong></p>
             <ol class="list-decimal pl-6 mb-4 space-y-2">
-                <li>Settings > Privacy > Delete Account</li>
-                <li>Confirm deletion (this is permanent)</li>
-                <li>All local data is immediately deleted</li>
-                <li>Cloud backups remain until you delete them from Google Drive</li>
+                <li>Settings > Delete Account, or Settings > Privacy Dashboard > Delete All Data (both run the same deletion, called "Delete All Data" in this policy)</li>
+                <li>Confirm deletion by typing DELETE (this is permanent)</li>
+                <li>The app first asks our server to delete your server-side data, then wipes the EZer database on your device. A few local settings (for example the app-lock PIN and cached sign-in tokens) may remain on the device until you uninstall the app</li>
+                <li>On our servers we delete: your account (anonymous or signed-in), subscription and purchase records and the link between your store purchase and your account, credits, AI parse cache, parse jobs and parse history, parsing problem reports and receipt scan feedback (including images), privacy choice records (a pseudonymized proof-of-consent copy is kept for 7 years), your push notification tokens and your backup encryption key</li>
+                <li>Backup files already in your own cloud storage account stay there until you delete them, but they can no longer be restored because the key is deleted</li>
+                <li>Exported files you saved or shared are not affected</li>
                 <li>We cannot recover deleted data</li>
             </ol>
+            <p class="mb-4">If deletion from our servers fails in the app, you can retry or email privacy@ezerapp.com. You can also request deletion at https://www.ezerapp.com/data-deletion.html.</p>
 
             <h3 class="text-xl font-bold mt-6 mb-3">6.4 Consent Management</h3>
             <p class="mb-4"><strong>You can withdraw consent anytime:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>Settings > Privacy Dashboard</li>
                 <li>Toggle off specific data collection features</li>
-                <li>SMS access, notifications, analytics, ML features</li>
+                <li>Notifications, usage analytics, crash reporting, AI statement parsing, AI parsing problem reports, cloud backup</li>
             </ul>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">7. Security Measures</h2>
@@ -554,8 +634,8 @@
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>AES-256 encryption for all local data storage</li>
                 <li>SQLCipher encrypted database</li>
-                <li>Encrypted cloud backups</li>
-                <li>TLS/SSL for network communications</li>
+                <li>Cloud backups encrypted on your device before upload (key held on our servers, see section 3.2)</li>
+                                <li>TLS for network communications</li>
             </ul>
 
             <p class="mb-4"><strong>Authentication:</strong></p>
@@ -569,55 +649,36 @@
             <p class="mb-4"><strong>App Security:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>Screenshot prevention on sensitive screens</li>
-                <li>Secure keyboard for PIN entry</li>
-                <li>Memory protection (prevents data leakage)</li>
-                <li>Code obfuscation to prevent reverse engineering</li>
             </ul>
 
-            <h3 class="text-xl font-bold mt-6 mb-3">7.2 SMS and Notification Security (Android-Specific)</h3>
-            <p class="mb-4"><strong>How We Protect SMS Data:</strong></p>
+            <h3 class="text-xl font-bold mt-6 mb-3">7.2 Server Security</h3>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>SMS processed entirely on your device (never sent to servers)</li>
-                <li>Original SMS content discarded immediately after parsing</li>
-                <li>Only extracted transaction data (amount, merchant) is stored</li>
-                <li>Sensitive information (card numbers, account numbers) is redacted</li>
-                <li>SMS content is never included in backups</li>
-                <li>SMS content is never included in crash reports or logs</li>
-            </ul>
-
-            <p class="mb-4"><strong>Notification Security:</strong></p>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Notifications processed locally only</li>
-                <li>Content immediately discarded after extraction</li>
-                <li>Non-financial notifications ignored</li>
-                <li>Never uploaded to cloud or servers</li>
+                <li>Requests to our servers must carry a valid account token and, for most functions, a valid app-integrity token</li>
+                <li>Database access rules limit each user to their own data</li>
+                <li>The backup encryption key cannot be read directly from the database by any app; only our server function returns it, and only to the account it belongs to</li>
             </ul>
 
             <h3 class="text-xl font-bold mt-6 mb-3">7.3 Third-Party Security Audits</h3>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Regular security assessments (planned)</li>
-                <li>Penetration testing (planned)</li>
-                <li>Vulnerability disclosure program</li>
-                <li>Bug bounty program (coming soon)</li>
-            </ul>
+            <p class="mb-4">We have not yet commissioned an independent security review. If you find a security problem, please report it to privacy@ezerapp.com.</p>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">8. Children's Privacy</h2>
-            <p class="mb-4">EZer is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we discover that a child under 13 has provided us with personal information, we will delete it immediately.</p>
-            <p class="mb-4">If you are a parent or guardian and believe your child under 13 has provided us with personal information, please contact us at privacy@ezer.app.</p>
+            <p class="mb-4">EZer is intended for adults and is not intended for anyone under 18 years of age. We do not knowingly collect personal information from children. If we discover that a child has provided us with personal information, we will delete it.</p>
+            <p class="mb-4">If you are a parent or guardian and believe your child has provided us with personal information, please contact us at privacy@ezerapp.com.</p>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">9. International Data Transfers</h2>
             <p class="mb-4"><strong>Data Location:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Your data is stored locally on your Android device</li>
-                <li>Cloud backups are stored in your Google Drive (location depends on your Google account settings)</li>
-                <li>We do not transfer data to servers outside your country (local-first approach)</li>
+                <li>Your financial data is stored locally on your Android device</li>
+                <li>Data held on our servers (section 3.4) is processed by Google Cloud (Firebase). Our server functions run in the United States (us-central1); our database is located in [FOUNDER: Firestore database location from the Firebase console]</li>
+                <li>AI statement parsing sends statement content to AI providers in the United States</li>
+                <li>Cloud backups are stored by your cloud storage provider in locations that depend on your account with them</li>
             </ul>
 
-            <p class="mb-4"><strong>For users in the European Union:</strong></p>
+            <p class="mb-4"><strong>For users in the European Union and other regions with transfer rules:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>We comply with GDPR requirements</li>
-                <li>Your data is processed on your device (local processing)</li>
-                <li>Cloud backups follow Google's GDPR compliance measures</li>
+                <li>Most of your data is processed on your device</li>
+                <li>When data is transferred to another country, we rely on [LEGAL: transfer mechanism, for example the European Commission's Standard Contractual Clauses in our providers' data processing terms]</li>
+                <li>Cloud backups follow the data protection terms of your cloud storage provider</li>
             </ul>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">10. Changes to This Privacy Policy</h2>
@@ -625,61 +686,52 @@
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>We will notify you via in-app notification</li>
                 <li>The "Last Updated" date will be revised</li>
-                <li>Significant changes will require your consent</li>
+                <li>If a change affects a feature you have consented to (such as AI statement parsing or cloud backup), the app asks you to confirm your consent again</li>
             </ul>
             <p class="mb-4"><strong>Your continued use of EZer after changes indicates acceptance of the updated Privacy Policy.</strong></p>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">11. Your Choices and Controls</h2>
 
-            <h3 class="text-xl font-bold mt-6 mb-3">11.1 SMS and Notification Access</h3>
+            <h3 class="text-xl font-bold mt-6 mb-3">11.1 AI Statement Parsing</h3>
             <p class="mb-4"><strong>You can:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Enable/disable SMS access anytime in Settings</li>
-                <li>Enable/disable notification listener anytime</li>
-                <li>Review which SMS patterns are being matched</li>
-                <li>See a log of automatically captured transactions</li>
-                <li>Delete any auto-captured transactions</li>
+                <li>Give or withdraw consent in Settings > Privacy Dashboard</li>
+                <li>Stop results being cached on our servers in Settings > Security Settings > "Don't cache my statements on our servers"</li>
+                <li>Delete any transactions created by AI parsing</li>
+                <li>Delete everything we hold with Delete All Data</li>
             </ul>
 
-            <p class="mb-4"><strong>To disable:</strong></p>
+            <h3 class="text-xl font-bold mt-6 mb-3">11.2 Analytics and Crash Reporting</h3>
+            <p class="mb-4"><strong>You can:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Settings > Permissions > SMS Access > Disable</li>
-                <li>Or Android Settings > Apps > EZer > Permissions > SMS > Deny</li>
+                <li>Turn usage analytics on or off (off by default)</li>
+                <li>Turn crash reporting off (on by default)</li>
             </ul>
-
-            <h3 class="text-xl font-bold mt-6 mb-3">11.2 Analytics and Tracking</h3>
-            <p class="mb-4"><strong>You can opt out of:</strong></p>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Usage analytics</li>
-                <li>Crash reporting</li>
-                <li>Performance monitoring</li>
-                <li>ML-based insights</li>
-            </ul>
-            <p class="mb-4"><strong>How:</strong> Settings > Privacy > Analytics > Disable</p>
+            <p class="mb-4"><strong>How:</strong> Settings > Privacy Dashboard</p>
+            <p class="mb-4">The anonymous account ID and the app-integrity check cannot be turned off, because the app's requests to our servers depend on them.</p>
 
             <h3 class="text-xl font-bold mt-6 mb-3">11.3 Cloud Backup</h3>
             <p class="mb-4"><strong>You can:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>Enable/disable cloud backup anytime</li>
-                <li>Delete all cloud backups</li>
-                <li>Choose what to backup (transactions, receipts, settings)</li>
-                <li>Set backup frequency (manual, daily, weekly, monthly)</li>
+                <li>Turn automatic backup on or off</li>
+                <li>Delete backup files from your own cloud storage account</li>
             </ul>
             <p class="mb-4"><strong>How:</strong> Settings > Backup & Restore</p>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">12. Contact Us</h2>
             <p class="mb-4">If you have questions, concerns, or requests regarding this Privacy Policy or your data:</p>
             <ul class="list-none mb-4 space-y-2">
-                <li><strong>Email:</strong> privacy@ezer.app</li>
-                <li><strong>Support:</strong> support@ezer.app</li>
-                <li><strong>Website:</strong> https://ezer.app/privacy</li>
-                <li><strong>Address:</strong> [Your Company Address]</li>
+                <li><strong>Email:</strong> privacy@ezerapp.com</li>
+                <li><strong>Support:</strong> support@ezerapp.com</li>
+                <li><strong>Website:</strong> https://www.ezerapp.com/privacy-android.html</li>
+                <li><strong>Address:</strong> [FOUNDER: legal entity name and postal address]</li>
             </ul>
-            <p class="mb-4"><strong>Data Protection Officer:</strong> [Name] (dpo@ezer.app)</p>
+            <p class="mb-4"><strong>Data Protection Officer:</strong> [FOUNDER: named DPO (dpo@ezerapp.com), or replace this line with "Data protection contact: privacy@ezerapp.com"]</p>
             <p class="mb-4"><strong>Response Time:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>Privacy requests: Within 7 business days</li>
-                <li>Data deletion requests: Within 14 business days</li>
+                <li>Data deletion requests: Within [FOUNDER: one deletion SLA, 7 or 14 business days, the same on data-deletion.html]</li>
                 <li>General inquiries: Within 48 hours</li>
             </ul>
 
@@ -689,68 +741,20 @@
                 <li>General Data Protection Regulation (GDPR) - EU</li>
                 <li>California Consumer Privacy Act (CCPA) - USA</li>
                 <li>Personal Data Protection Act (PDPA) - Singapore</li>
-                <li>Information Technology Act - India</li>
-                <li>Android Developer Policies and Guidelines</li>
+                <li>Digital Personal Data Protection Act, 2023 and Information Technology Act - India</li>
+                <li>Google Play Developer Policies</li>
             </ul>
 
             <p class="mb-4"><strong>Security Standards:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>SOC 2 Type II (planned)</li>
                 <li>ISO 27001 (planned)</li>
-                <li>PCI DSS for payment data handling</li>
+                <li>We do not process payment card data; purchases are handled by Google Play</li>
             </ul>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">14. Important Disclaimers</h2>
 
-            <h3 class="text-xl font-bold mt-6 mb-3">14.1 SMS Access Disclaimer (Android-Specific)</h3>
-            <p class="mb-4"><strong>EZer's SMS access is strictly limited to:</strong></p>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Reading financial transaction SMS messages only</li>
-                <li>Extracting transaction data for automatic entry</li>
-                <li>Local on-device processing only</li>
-            </ul>
-
-            <p class="mb-4"><strong>We do NOT:</strong></p>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Read personal or non-financial SMS messages</li>
-                <li>Store complete SMS message content</li>
-                <li>Upload SMS data to any server</li>
-                <li>Share SMS data with any third party</li>
-                <li>Use SMS for any purpose other than transaction capture</li>
-            </ul>
-
-            <p class="mb-4"><strong>Technical Implementation:</strong></p>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>SMS content is parsed using pattern matching for known bank/payment formats</li>
-                <li>Only messages matching financial transaction patterns are processed</li>
-                <li>Messages are filtered by sender (known banks, payment apps only)</li>
-                <li>Non-matching SMS are immediately ignored (not read, not stored)</li>
-            </ul>
-
-            <h3 class="text-xl font-bold mt-6 mb-3">14.2 Notification Listener Disclaimer (Android-Specific)</h3>
-            <p class="mb-4"><strong>EZer's notification listener is strictly limited to:</strong></p>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Reading notifications from banking and payment apps only</li>
-                <li>Extracting transaction data from notification content</li>
-                <li>Local on-device processing only</li>
-            </ul>
-
-            <p class="mb-4"><strong>We do NOT:</strong></p>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Read notifications from social media, messaging, or other apps</li>
-                <li>Store notification content</li>
-                <li>Upload notification data to servers</li>
-                <li>Access notification actions or respond to notifications</li>
-            </ul>
-
-            <p class="mb-4"><strong>Technical Implementation:</strong></p>
-            <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Notification listener filters by app package name (banking apps only)</li>
-                <li>Only notifications matching transaction patterns are processed</li>
-                <li>Non-financial notifications are immediately ignored</li>
-            </ul>
-
-            <h3 class="text-xl font-bold mt-6 mb-3">14.3 No Bank Account Access</h3>
+            <h3 class="text-xl font-bold mt-6 mb-3">14.1 No Bank Account Access</h3>
             <p class="mb-4"><strong>Important:</strong> EZer does NOT:</p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>Connect to your bank accounts directly</li>
@@ -761,8 +765,7 @@
 
             <p class="mb-4"><strong>We only:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Read transaction SMS/notifications that banks send to you</li>
-                <li>Allow you to manually import bank statement files</li>
+                <li>Allow you to import bank statement files with AI statement parsing, if you choose it</li>
                 <li>Let you manually enter transactions</li>
             </ul>
 
@@ -770,66 +773,58 @@
 
             <div class="space-y-4 mb-6">
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold mb-2">Q: Can EZer read all my SMS messages?</p>
-                    <p class="text-sm text-gray-700">A: Technically, the Android SMS permission allows reading all SMS. However, EZer is programmed to only read and process financial transaction SMS from known banks and payment apps. All other SMS are ignored and never stored. This is enforced in our code and can be verified through code audits.</p>
+                    <p class="font-semibold mb-2">Q: Does EZer read my SMS messages or notifications?</p>
+                    <p class="text-sm text-gray-700">A: No. The app does not request permission to read SMS messages or notifications from other apps.</p>
                 </div>
 
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold mb-2">Q: Is my SMS data sent to your servers?</p>
-                    <p class="text-sm text-gray-700">A: No. SMS processing happens entirely on your device. We never upload SMS content to any server. Only the extracted transaction data (amount, merchant, date) is stored locally in your encrypted database.</p>
+                    <p class="font-semibold mb-2">Q: Is my statement sent to an AI company?</p>
+                    <p class="text-sm text-gray-700">A: Only if you use AI statement parsing and give consent. The statement goes through our server to Google (Gemini) or Anthropic (Claude). We do not store the file, but we store the parsed result linked to your account unless you turn the cache off. See <a href="#ai-parse" class="text-indigo-600 underline">AI Statement Parsing</a>.</p>
                 </div>
 
                 <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold mb-2">Q: Can I use EZer without giving SMS permission?</p>
-                    <p class="text-sm text-gray-700">A: Yes! SMS access is completely optional. You can use EZer by manually entering transactions or importing bank statements. All features work without SMS access except automatic transaction capture.</p>
-                </div>
-
-                <div class="bg-gray-50 p-4 rounded-lg">
-                    <p class="font-semibold mb-2">Q: What happens if I revoke SMS permission later?</p>
-                    <p class="text-sm text-gray-700">A: You can revoke SMS permission anytime. EZer will stop reading SMS immediately. Your existing transaction data remains intact. You'll need to enter transactions manually going forward.</p>
+                    <p class="font-semibold mb-2">Q: Can I use EZer without any cloud feature?</p>
+                    <p class="text-sm text-gray-700">A: Yes. You can enter transactions, scan receipts and use budgets, bills and goals without AI parsing or cloud backup. The app still uses an anonymous account ID, an app-integrity check, subscription status checks, currency rate lookups and crash reports (which you can turn off).</p>
                 </div>
 
                 <div class="bg-gray-50 p-4 rounded-lg">
                     <p class="font-semibold mb-2">Q: How do I know my data is secure?</p>
-                    <p class="text-sm text-gray-700">A: Your data is encrypted on your device using AES-256 encryption. Cloud backups are also encrypted before upload. We use the same encryption standards as banking apps. You can also enable biometric lock for additional security.</p>
+                    <p class="text-sm text-gray-700">A: Your data is encrypted on your device using AES-256 encryption. Cloud backups are also encrypted before upload. You can also enable biometric lock for additional security.</p>
                 </div>
 
                 <div class="bg-gray-50 p-4 rounded-lg">
                     <p class="font-semibold mb-2">Q: Can EZer employees access my financial data?</p>
-                    <p class="text-sm text-gray-700">A: No. Your data is encrypted on your device with keys we don't have access to. Cloud backups are encrypted with your personal encryption key. We cannot decrypt or view your financial data.</p>
+                    <p class="text-sm text-gray-700">A: Data that stays on your device: no. Some data is on our servers in a form we could technically read: AI parsing results (unless you turn the cache off; see <a href="#ai-parse" class="text-indigo-600 underline">AI Statement Parsing</a>) and the backup encryption key, which is stored on our servers so you can restore on a new phone. We do not access this data except where needed to operate the service or where required by law.</p>
                 </div>
 
                 <div class="bg-gray-50 p-4 rounded-lg">
                     <p class="font-semibold mb-2">Q: What happens to my data if I uninstall the app?</p>
-                    <p class="text-sm text-gray-700">A: All local data is deleted when you uninstall. Cloud backups remain in your Google Drive until you delete them. You can restore your data if you reinstall EZer and use the same Google account.</p>
+                    <p class="text-sm text-gray-700">A: Uninstalling deletes the data on your phone. Cloud backups remain in your own cloud storage account, and you can restore them if you reinstall EZer, sign in with the same account and have not used Delete All Data. Uninstalling does not delete what we hold on our servers; use Delete All Data before uninstalling, or email privacy@ezerapp.com.</p>
                 </div>
 
                 <div class="bg-gray-50 p-4 rounded-lg">
                     <p class="font-semibold mb-2">Q: Do you share data with Google?</p>
-                    <p class="text-sm text-gray-700">A: We use Google Drive for optional cloud backups (encrypted) and Google ML Kit for on-device receipt OCR (no data sent to Google). We also use Firebase Analytics with anonymized, aggregated data only (no personal or financial information).</p>
+                    <p class="text-sm text-gray-700">A: Google provides our cloud infrastructure (Firebase): anonymous accounts, app-integrity checks, crash reports, our server functions and database, and analytics if you opt in. Google Drive stores encrypted backups if you choose it for cloud backup, Google ML Kit reads receipts on your device (nothing sent), and Google's Gemini API processes statements if you use Quick AI parsing.</p>
                 </div>
             </div>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">16. Android-Specific Privacy Features</h2>
             <p class="mb-4"><strong>Android Privacy Dashboard Integration:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>View EZer's data access in Android Privacy Dashboard (Android 12+)</li>
-                <li>See when SMS, Camera, and Location were accessed</li>
+                <li>View EZer's permission use in the Android Privacy Dashboard (Android 12+)</li>
+                <li>See when the camera was accessed</li>
                 <li>Review app permissions timeline</li>
             </ul>
 
-            <p class="mb-4"><strong>Background Access Indicators:</strong></p>
+            <p class="mb-4"><strong>Access Indicators:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Android shows indicator when app accesses SMS in background</li>
-                <li>Android shows camera/mic indicator when in use</li>
-                <li>You can monitor all background access</li>
+                <li>Android shows the camera indicator when it is in use</li>
             </ul>
 
-            <p class="mb-4"><strong>Approximate Location:</strong></p>
+            <p class="mb-4"><strong>Location:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>EZer uses approximate location only (city-level) for regional features</li>
-                <li>Never uses precise GPS location</li>
-                <li>Location access is optional</li>
+                <li>EZer does not request location permission</li>
+                <li>Your region comes from your device settings or the region you choose in the app</li>
             </ul>
 
             <p class="mb-4"><strong>Clipboard Access:</strong></p>
@@ -842,37 +837,35 @@
 
             <div class="grid md:grid-cols-2 gap-4 mb-6 not-prose">
                 <div class="bg-green-50 border border-green-300 p-4 rounded-lg">
-                    <h4 class="font-bold text-green-800 mb-2">✅ What We DO:</h4>
+                    <h4 class="font-bold text-green-800 mb-2">What We DO:</h4>
                     <ul class="text-sm text-green-700 space-y-1">
-                        <li>• Store data locally in encrypted database on your device</li>
-                        <li>• Process SMS/notifications locally on-device only</li>
-                        <li>• Encrypt cloud backups before upload</li>
-                        <li>• Give you complete control over your data</li>
-                        <li>• Allow data export in multiple formats</li>
-                        <li>• Let you delete all data anytime</li>
-                        <li>• Use industry-standard security measures</li>
-                        <li>• Comply with GDPR, CCPA, and privacy regulations</li>
+                        <li>&bull; Store data locally in an encrypted database on your device</li>
+                        <li>&bull; Use an anonymous account ID, an app-integrity check and crash reports</li>
+                        <li>&bull; Send data off your device for AI parsing or cloud backup only when you turn them on</li>
+                        <li>&bull; Encrypt cloud backups before upload, with a key held on our servers for restore</li>
+                        <li>&bull; Allow data export (unencrypted, with a warning)</li>
+                        <li>&bull; Let you delete all data, on your device and on our servers</li>
+                        <li>&bull; Use industry-standard security measures</li>
                     </ul>
                 </div>
                 <div class="bg-red-50 border border-red-300 p-4 rounded-lg">
-                    <h4 class="font-bold text-red-800 mb-2">❌ What We DON'T DO:</h4>
+                    <h4 class="font-bold text-red-800 mb-2">What We DON'T DO:</h4>
                     <ul class="text-sm text-red-700 space-y-1">
-                        <li>• Sell your data to third parties</li>
-                        <li>• Share financial data with advertisers</li>
-                        <li>• Store complete SMS messages</li>
-                        <li>• Upload SMS content to servers</li>
-                        <li>• Access your bank accounts directly</li>
-                        <li>• Store bank passwords or credentials</li>
-                        <li>• Read non-financial SMS or notifications</li>
-                        <li>• Access your clipboard</li>
-                        <li>• Track your precise location</li>
-                        <li>• Show ads based on your financial data</li>
+                        <li>&bull; Sell your data to third parties</li>
+                        <li>&bull; Share financial data with advertisers</li>
+                        <li>&bull; Read your SMS messages or other apps' notifications</li>
+                        <li>&bull; Access your bank accounts directly</li>
+                        <li>&bull; Store bank passwords or credentials</li>
+                        <li>&bull; Access your clipboard</li>
+                        <li>&bull; Track your location</li>
+                        <li>&bull; Show ads</li>
                     </ul>
                 </div>
             </div>
 
             <h2 class="text-2xl font-bold mt-8 mb-4">18. Legal Basis for Processing (GDPR)</h2>
             <p class="mb-4">For EU users, our legal basis for processing your data:</p>
+            <!-- [LEGAL: confirm each basis] -->
             <div class="overflow-x-auto mb-6 not-prose">
                 <table class="min-w-full bg-white border border-gray-300">
                     <thead class="bg-gray-100">
@@ -884,7 +877,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="border border-gray-300 px-4 py-2">Account information</td>
+                            <td class="border border-gray-300 px-4 py-2">Account information (anonymous ID, sign-in details)</td>
                             <td class="border border-gray-300 px-4 py-2">Contract</td>
                             <td class="border border-gray-300 px-4 py-2">Provide app services</td>
                         </tr>
@@ -894,37 +887,67 @@
                             <td class="border border-gray-300 px-4 py-2">Finance management features</td>
                         </tr>
                         <tr>
-                            <td class="border border-gray-300 px-4 py-2">SMS content (Android)</td>
-                            <td class="border border-gray-300 px-4 py-2">Consent</td>
-                            <td class="border border-gray-300 px-4 py-2">Automatic transaction capture</td>
+                            <td class="border border-gray-300 px-4 py-2">App-integrity tokens</td>
+                            <td class="border border-gray-300 px-4 py-2">Legitimate Interest</td>
+                            <td class="border border-gray-300 px-4 py-2">Protect our servers from abuse</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Crash reports</td>
+                            <td class="border border-gray-300 px-4 py-2">Legitimate Interest</td>
+                            <td class="border border-gray-300 px-4 py-2">Keep the app stable</td>
                         </tr>
                         <tr>
                             <td class="border border-gray-300 px-4 py-2">Usage analytics</td>
-                            <td class="border border-gray-300 px-4 py-2">Legitimate Interest</td>
+                            <td class="border border-gray-300 px-4 py-2">Consent</td>
                             <td class="border border-gray-300 px-4 py-2">Improve app performance</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">AI statement parsing (statement content, parse results)</td>
+                            <td class="border border-gray-300 px-4 py-2">Consent</td>
+                            <td class="border border-gray-300 px-4 py-2">Extract transactions from statements</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Parsing problem reports and receipt scan feedback</td>
+                            <td class="border border-gray-300 px-4 py-2">Consent</td>
+                            <td class="border border-gray-300 px-4 py-2">Improve parsing and scanning</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Cloud backups and backup key</td>
+                            <td class="border border-gray-300 px-4 py-2">Consent</td>
+                            <td class="border border-gray-300 px-4 py-2">Data backup and recovery</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Subscription and purchase records</td>
+                            <td class="border border-gray-300 px-4 py-2">Contract</td>
+                            <td class="border border-gray-300 px-4 py-2">Provide EZer Plus and credits</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Privacy choice records</td>
+                            <td class="border border-gray-300 px-4 py-2">Legal Obligation</td>
+                            <td class="border border-gray-300 px-4 py-2">Demonstrate consent</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-gray-300 px-4 py-2">Currency rate lookups</td>
+                            <td class="border border-gray-300 px-4 py-2">Contract</td>
+                            <td class="border border-gray-300 px-4 py-2">Convert amounts between currencies</td>
                         </tr>
                         <tr>
                             <td class="border border-gray-300 px-4 py-2">Marketing emails</td>
                             <td class="border border-gray-300 px-4 py-2">Consent</td>
                             <td class="border border-gray-300 px-4 py-2">Promotional communications</td>
                         </tr>
-                        <tr>
-                            <td class="border border-gray-300 px-4 py-2">Cloud backups</td>
-                            <td class="border border-gray-300 px-4 py-2">Consent</td>
-                            <td class="border border-gray-300 px-4 py-2">Data backup and recovery</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
-            <p class="mb-4">You can withdraw consent anytime in Settings > Privacy.</p>
+            <p class="mb-4">You can withdraw consent anytime in Settings > Privacy Dashboard.</p>
 
             <div class="bg-gray-100 p-6 rounded-lg mt-8 not-prose">
                 <p class="font-semibold text-center mb-2">By using EZer on Android, you acknowledge that you have read and understood this Privacy Policy.</p>
                 <p class="text-sm text-gray-700 text-center mt-4">
-                    <strong>Last Reviewed:</strong> October 20, 2025 | <strong>Next Review:</strong> April 20, 2026
+                    <strong>Last Reviewed:</strong> September 27, 2026 | <strong>Next Review:</strong> March 27, 2027
                 </p>
                 <p class="text-xs text-gray-600 text-center mt-2">
-                    © 2025 EZer. All rights reserved.
+                    &copy; 2025 EZer. All rights reserved.
                 </p>
             </div>
         </div>
@@ -972,7 +995,7 @@
             </div>
 
             <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-                <p>© 2025 EZer. All rights reserved.</p>
+                <p>&copy; 2025 EZer. All rights reserved.</p>
                 <p class="mt-2">Email: support@ezerapp.com | Website: https://www.ezerapp.com</p>
             </div>
         </div>

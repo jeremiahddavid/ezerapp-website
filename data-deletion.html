@@ -69,7 +69,7 @@
                 </li>
                 <li class="flex items-start gap-3">
                     <span class="flex-shrink-0 w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-sm font-bold">2</span>
-                    <span>Go to <strong>Settings → Privacy → Delete Account</strong></span>
+                    <span>Go to <strong>Settings → Delete Account</strong>, or <strong>Settings → Privacy Dashboard → Delete All Data</strong></span>
                 </li>
                 <li class="flex items-start gap-3">
                     <span class="flex-shrink-0 w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-sm font-bold">3</span>
@@ -81,7 +81,7 @@
                 </li>
                 <li class="flex items-start gap-3">
                     <span class="flex-shrink-0 w-6 h-6 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-sm font-bold">5</span>
-                    <span>Confirm by entering your PIN or using biometric authentication</span>
+                    <span>Type <strong>DELETE</strong> to confirm</span>
                 </li>
             </ol>
 
@@ -92,7 +92,7 @@
                     </svg>
                     <h4 class="font-bold text-amber-800">Important</h4>
                 </div>
-                <p class="text-amber-700 text-sm">Deleting your data in-app is <strong>immediate and permanent</strong>. This action cannot be undone.</p>
+                <p class="text-amber-700 text-sm">Deleting your data in-app is <strong>immediate and permanent</strong>. This action cannot be undone. The app first asks our server to delete your server-side data, then wipes the EZer database on your device. A few local settings (for example the app-lock PIN and cached sign-in tokens) may remain on the device until you uninstall the app.</p>
             </div>
         </div>
 
@@ -105,6 +105,7 @@
                     </svg>
                     What Gets Deleted
                 </h3>
+                <p class="text-sm font-semibold text-gray-800 mb-2">On your device:</p>
                 <ul class="space-y-2 text-sm text-gray-700">
                     <li class="flex items-center gap-2"><span class="text-green-500">✓</span> All financial transactions and records</li>
                     <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Account information</li>
@@ -112,6 +113,15 @@
                     <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Scanned receipts and images</li>
                     <li class="flex items-center gap-2"><span class="text-green-500">✓</span> App preferences and settings</li>
                     <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Local encrypted database</li>
+                </ul>
+                <p class="text-sm font-semibold text-gray-800 mt-4 mb-2">On our servers:</p>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Your anonymous account (and the Google or Microsoft sign-in linked to it)</li>
+                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Parsed statements (parse cache), parse jobs and parse history</li>
+                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Credit wallet and credit history, and your subscription record</li>
+                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Privacy choice records (a pseudonymised copy is archived for 7 years, as proof of consent)</li>
+                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> AI-parse problem reports and receipt scan feedback you sent, including images</li>
+                    <li class="flex items-center gap-2"><span class="text-green-500">✓</span> Your cloud-backup encryption key</li>
                 </ul>
             </div>
 
@@ -123,10 +133,12 @@
                     NOT Deleted Automatically
                 </h3>
                 <ul class="space-y-2 text-sm text-gray-700">
-                    <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Cloud backups in Google Drive</li>
-                    <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Exported files saved to device</li>
+                    <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Backup files already in your own cloud storage account</li>
+                    <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Exported files saved to your device</li>
+                    <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Statement copies kept by the AI provider for their own retention period (typically up to 30 days)</li>
+                    <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Crash and analytics data kept by Firebase under its retention settings</li>
                 </ul>
-                <p class="mt-4 text-xs text-gray-500">You must delete these separately from Google Drive.</p>
+                <p class="mt-4 text-xs text-gray-500">Cloud backup (Google Drive / OneDrive) is part of EZer Plus where available. Backup files stay in your cloud account, but they cannot be restored after deletion because the encryption key is deleted with your data. Delete them from the EZer app folder of your cloud storage account if you want them gone too.</p>
             </div>
         </div>
 
@@ -152,15 +164,11 @@
             <ul class="space-y-2 text-sm text-gray-700 mb-6">
                 <li class="flex items-center gap-2">
                     <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
-                    Your name (as registered in the app)
+                    If you signed in: the Google or Microsoft email address you signed in with
                 </li>
                 <li class="flex items-center gap-2">
                     <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
-                    Email address associated with your account
-                </li>
-                <li class="flex items-center gap-2">
-                    <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
-                    Device ID (if known, found in Settings → About)
+                    If you never signed in, your EZer account is anonymous and has no name or email, so we cannot find it from an email request. Please use Delete All Data in the app (Option 1).
                 </li>
                 <li class="flex items-center gap-2">
                     <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
@@ -173,11 +181,9 @@
                 <p class="mb-4">Subject: Data Deletion Request</p>
                 <p>Dear EZer Privacy Team,</p>
                 <p class="mt-2">I am requesting the deletion of all my personal data associated with my EZer account.</p>
-                <p class="mt-4">Name: [Your Name]</p>
-                <p>Email: [Your Email]</p>
-                <p>Device ID: [Your Device ID or "Unknown"]</p>
+                <p class="mt-4">Sign-in email (Google or Microsoft): [Your Email]</p>
                 <p class="mt-4">I understand that this action is permanent and cannot be undone.</p>
-                <p class="mt-4">Thank you,<br>[Your Name]</p>
+                <p class="mt-4">Thank you</p>
             </div>
         </div>
 
@@ -204,7 +210,7 @@
                     </div>
                     <div>
                         <p class="font-semibold">Completion</p>
-                        <p class="text-sm text-gray-600">Within 7 business days</p>
+                        <p class="text-sm text-gray-600">Within [FOUNDER: one deletion SLA, 7 or 14 business days, the same on privacy-android.html]</p>
                     </div>
                 </div>
             </div>
@@ -260,7 +266,7 @@
                 </div>
             </div>
 
-            <p class="mt-6 text-sm text-gray-600">To exercise any of these rights, contact us at <a href="mailto:dpo@ezerapp.com" class="text-indigo-600 hover:underline">dpo@ezerapp.com</a></p>
+            <p class="mt-6 text-sm text-gray-600">To exercise any of these rights, contact us at <a href="mailto:privacy@ezerapp.com" class="text-indigo-600 hover:underline">privacy@ezerapp.com</a> [FOUNDER: or dpo@ezerapp.com, only if a Data Protection Officer is named]</p>
         </div>
 
         <!-- FAQ -->
@@ -270,23 +276,23 @@
             <div class="space-y-6">
                 <div>
                     <h3 class="font-bold text-gray-800 mb-2">Will deleting data in-app also delete my cloud backups?</h3>
-                    <p class="text-gray-600">No. Cloud backups are stored in your Google Drive and must be deleted separately from Google Drive.</p>
+                    <p class="text-gray-600">No. Backup files are stored in your own cloud storage account and must be deleted there. After Delete All Data they can no longer be restored, because the encryption key is deleted with your data.</p>
                 </div>
                 <div>
                     <h3 class="font-bold text-gray-800 mb-2">Can I recover my data after deletion?</h3>
-                    <p class="text-gray-600">No. Data deletion is permanent and cannot be undone. If you have cloud backups and haven't deleted them, you can restore from those backups.</p>
+                    <p class="text-gray-600">No. Data deletion is permanent and cannot be undone. Backup files made before the deletion cannot be restored either, because the backup encryption key is deleted with your data.</p>
                 </div>
                 <div>
                     <h3 class="font-bold text-gray-800 mb-2">What happens if I just uninstall the app?</h3>
-                    <p class="text-gray-600">Uninstalling removes all local data from your device. Cloud backups remain in your Google Drive. If you reinstall EZer and sign in with the same Google account, you can restore from cloud backups.</p>
+                    <p class="text-gray-600">Uninstalling removes the data on your phone only. Your server-side data (see "On our servers" above) remains until you delete it in the app or by email. Backups in your own cloud account remain and can be restored after reinstalling if you sign in with the same account and have not deleted your data.</p>
                 </div>
                 <div>
                     <h3 class="font-bold text-gray-800 mb-2">Does EZer keep any data on its servers after I delete my account?</h3>
-                    <p class="text-gray-600">EZer is a local-first app. We don't store your financial data on our servers. All your data is stored locally on your device or in your personal Google Drive (if you enabled cloud backup).</p>
+                    <p class="text-gray-600">Your everyday data is stored on your device. If you use AI statement parsing, the parsed transactions are stored on our servers until you delete them (or you can switch caching off in Security Settings with "Don't cache my statements on our servers"); there is no automatic expiry. After Delete All Data we keep only a pseudonymised consent record for 7 years, as the law requires, and aggregate crash and analytics data that cannot be linked back to you.</p>
                 </div>
                 <div>
                     <h3 class="font-bold text-gray-800 mb-2">How do I export my data before deleting?</h3>
-                    <p class="text-gray-600">Before deleting, go to <strong>Settings → Data & Export</strong>. Export your data in CSV, JSON, Excel, or PDF format. Save the exported files to your device.</p>
+                    <p class="text-gray-600">Before deleting, go to <strong>Settings → Privacy Dashboard → Export my data</strong>. You receive one ZIP with CSV and JSON files. Save it to your device; exported files are not encrypted.</p>
                 </div>
             </div>
         </div>
@@ -305,9 +311,9 @@
                     <p class="font-semibold text-indigo-400">Support</p>
                     <p class="text-sm text-gray-400">support@ezerapp.com</p>
                 </a>
-                <a href="mailto:dpo@ezerapp.com" class="bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition-colors">
-                    <p class="font-semibold text-indigo-400">Data Protection Officer</p>
-                    <p class="text-sm text-gray-400">dpo@ezerapp.com</p>
+                <a href="mailto:privacy@ezerapp.com" class="bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition-colors">
+                    <p class="font-semibold text-indigo-400">Data protection contact</p>
+                    <p class="text-sm text-gray-400">privacy@ezerapp.com [FOUNDER: or a named DPO]</p>
                 </a>
             </div>
         </div>
