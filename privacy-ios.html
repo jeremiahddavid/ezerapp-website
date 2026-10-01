@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EZer Privacy Policy for iOS - Your financial data stays on your device with bank-grade encryption">
+    <meta name="description" content="EZer Privacy Policy for iOS - your financial data is stored encrypted on your device; optional cloud features are explained in full">
     <title>Privacy Policy - EZer Finance App (iOS)</title>
     <style>
         * {
@@ -142,319 +142,360 @@
 <body>
     <div class="container">
         <h1>Privacy Policy - EZer Finance App</h1>
-        <p class="last-updated"><strong>Platform:</strong> iOS | <strong>Effective Date:</strong> January 1, 2025 | <strong>Last Updated:</strong> April 25, 2026</p>
+        <p class="last-updated"><strong>Platform:</strong> iOS | <strong>Effective Date:</strong> January 1, 2025 | <strong>Last Updated:</strong> October 2, 2026 | <strong>App version:</strong> 2.1.1</p>
 
         <div class="highlight">
-            <p><strong>🔒 Privacy-First Design:</strong> EZer stores ALL your financial data locally on your device using bank-grade encryption. Your transactions, budgets, and financial information never leave your device unless you explicitly choose to export or back up your data.</p>
+            <p><strong>In short:</strong></p>
+            <ul>
+                <li>Your financial data is stored in an encrypted database on your iPhone or iPad.</li>
+                <li>It leaves your device only when you export it or turn on a cloud feature: AI statement parsing or cloud backup. Each is optional and explained below.</li>
+                <li>Even if you use no cloud feature, the app uses an anonymous account ID, an app-integrity check and crash reports (see sections 3 and 4).</li>
+                <li>We do not sell your data, we do not show ads and we do not track you across other companies' apps or websites.</li>
+            </ul>
         </div>
 
         <h2>1. Introduction</h2>
-        <p>Welcome to EZer, a personal finance management application designed with your privacy as our top priority. This Privacy Policy explains how we handle your information when you use our iOS app.</p>
+        <p>Welcome to EZer, a personal finance management application. This Privacy Policy explains what information the EZer iOS app (version 2.1.1) handles, where it is stored, who receives it and how you can control it.</p>
 
-        <p><strong>Developer:</strong> EZer Team<br>
-        <strong>Contact:</strong> privacy@ezerapp.com</p>
+        <p><strong>Data controller:</strong> Jeremiah Divyan David (trading as EZer), Kanchipuram, Tamil Nadu, India<br>
+        <strong>Privacy contact:</strong> <a href="mailto:privacy@ezerapp.com">privacy@ezerapp.com</a></p>
 
-        <h2>2. Information We Store Locally</h2>
-        <p>The following information is stored <strong>only on your device</strong> using encrypted SQLCipher database:</p>
+        <h2>2. Information Stored on Your Device</h2>
+        <p>The following information is stored on your device in an encrypted SQLCipher database (AES-256):</p>
         <ul>
             <li><strong>Financial Transactions:</strong> Income, expenses, transfers with dates, amounts, categories, and notes</li>
-            <li><strong>Accounts:</strong> Bank accounts, credit cards, wallets (names and balances only - no account numbers)</li>
+            <li><strong>Accounts:</strong> Bank accounts, credit cards, wallets (names and balances only - no account numbers or login credentials)</li>
             <li><strong>Budgets:</strong> Budget categories, limits, and spending tracking</li>
             <li><strong>Goals:</strong> Financial goals, target amounts, and progress</li>
             <li><strong>Bills:</strong> Recurring bill reminders and payment history</li>
             <li><strong>Loans:</strong> Loan tracking information (principal, interest rate, EMI)</li>
             <li><strong>Categories:</strong> Custom transaction categories</li>
-            <li><strong>Receipts:</strong> Photos of receipts attached to transactions (stored in local photo library)</li>
-            <li><strong>App Settings:</strong> User preferences, theme selection, language, currency</li>
+            <li><strong>Receipts:</strong> Receipt images you attach and the text read from them</li>
+            <li><strong>App Settings:</strong> User preferences, theme selection, language, currency, region</li>
         </ul>
+        <p>Transactions are categorized on your device using built-in merchant rules and the corrections you make. Spending insights are calculated on your device. We do not send your transactions off your device for categorization.</p>
 
         <div class="important">
-            <p><strong>⚠️ Important:</strong> All this data is stored locally on your device with SQLCipher encryption. We do NOT have access to your financial data. If you delete the app or lose your device, this data cannot be recovered unless you have created a backup.</p>
+            <p><strong>Important:</strong> If you delete the app or lose your device, this data cannot be recovered unless you have created a backup (section 6).</p>
         </div>
 
-        <h2>3. Data We Do NOT Collect</h2>
-        <p>EZer does NOT collect or transmit the following to any servers:</p>
-        <ul>
-            <li>❌ Transaction amounts or details</li>
-            <li>❌ Merchant names or payment information</li>
-            <li>❌ Bank account numbers or credentials</li>
-            <li>❌ Credit card numbers</li>
-            <li>❌ Personal identification information (PII)</li>
-            <li>❌ Location data</li>
-            <li>❌ Contact information</li>
-            <li>❌ Device identifiers (IDFA/advertising ID)</li>
-        </ul>
+        <p>We NEVER ask for bank account passwords or login credentials, full credit/debit card numbers, CVV/PIN codes, Social Security Numbers or government ID numbers. If a statement you send for AI parsing shows your name, your bank's name or the last digits of an account, those details can appear in the parsed result that we store (see section 5).</p>
 
-        <h2>Crash Reporting (Legitimate Interest)</h2>
-        <p>
-            We collect anonymous crash reports and non-fatal error logs through Firebase Crashlytics under our legitimate interest in keeping the app stable (GDPR Article 6(1)(f); equivalent legal bases under DPDPA and similar frameworks). These reports help us identify and fix bugs quickly. Reports include:
-        </p>
+        <h2>3. Information Sent to Our Servers for All Users</h2>
+        <p>Our servers run on Google Cloud (Firebase). The following happens even if you never turn on a cloud feature:</p>
+
+        <h3>3.1 Anonymous account ID</h3>
+        <p>When the app first starts, it creates an anonymous account with Firebase Authentication. This account has a random identifier and no name or email. The app uses it to authenticate its requests to our servers (Google Cloud Functions), for example to check your EZer Plus subscription, to record your privacy choices, to look up currency rates and, if you use them, for AI statement parsing and cloud backup.</p>
+
+        <h3>3.2 App integrity check</h3>
+        <p>To protect our servers from abuse, the app uses Firebase App Check with Apple DeviceCheck. Apple and Google check that the request comes from a genuine copy of EZer on a genuine Apple device, and the resulting token is sent with the app's requests to our servers.</p>
+
+        <h3>3.3 Subscription status and purchases</h3>
+        <p>Purchases of EZer Plus and credits are handled by Apple through the App Store. We never receive your payment card details. After a purchase, the app sends the App Store transaction record to our server, which verifies it with Apple and stores the transaction identifiers, product, purchase and expiry dates, linked to your account ID. Apple also sends our server notifications about renewals, cancellations and refunds of EZer purchases. While you use the app, it asks our servers for your current EZer Plus status (about once an hour, sooner after a failed attempt).</p>
+
+        <h3>3.4 Privacy choice records</h3>
+        <p>When you give or withdraw a consent in the app (for example crash reporting, analytics or AI statement parsing), a record is sent to our servers: the consent type, whether it was given, the time, the policy version, the app version, the platform and your account ID. We keep these records as proof of your choices (see section 9).</p>
+
+        <h3>3.5 Currency rate lookups</h3>
+        <p>When you have accounts or transactions in more than one currency, the app asks our server for an exchange rate. The request contains only the two currency codes and a date, together with the anonymous account ID and app-integrity token that every request to our servers carries. No amounts or transaction details are sent. Our server obtains rates from the European Central Bank and keeps them in a cache organised by date and currency pair that is not linked to you.</p>
+
+        <h3>3.6 App configuration</h3>
+        <p>The app downloads configuration settings (for example, switching a feature on or off) from Firebase Remote Config. The request identifies the app installation with a Firebase installation ID. Nothing about your finances is sent.</p>
+
+        <h3>3.7 Device information</h3>
+        <ul>
+            <li>Device model, iOS version and app version (used on your device and included in crash reports)</li>
+            <li>Device language and time zone (used on your device)</li>
+            <li>A random installation ID created by the app (not your advertising identifier). It is attached to AI parsing history records and to feedback you choose to send, so that feedback sent from your device can be deleted when you delete your data.</li>
+            <li>A Firebase installation ID, used by crash reporting, app configuration and push notifications</li>
+        </ul>
+        <p>EZer does not access the advertising identifier (IDFA) and does not ask for App Tracking Transparency permission.</p>
+
+        <h2>4. Crash Reporting and Analytics</h2>
+
+        <h3>4.1 Crash Reporting (Legitimate Interest, on by default)</h3>
+        <p>We collect crash reports and non-fatal error logs through Firebase Crashlytics under our legitimate interest in keeping the app stable (GDPR Article 6(1)(f); equivalent legal bases under DPDPA and similar frameworks). Reports include:</p>
         <ul>
             <li>Crash stack traces and error context</li>
             <li>Device model, operating system version, and app version</li>
+            <li>A Firebase installation ID and app session information (Firebase Sessions)</li>
+            <li>For some errors, the internal identifier of the record involved (for example a transaction ID), never its contents</li>
             <li>Approximate region (derived from IP; the IP itself is not stored)</li>
         </ul>
-        <p>
-            We never include your transactions, balances, names, or other personal information in crash reports. Crash reporting is on by default but you can disable it at any time in Settings &rarr; Privacy &rarr; Crash Reporting.
-        </p>
+        <p>We do not add your transactions, balances or names to crash reports. Crash reporting is on by default but you can turn it off at any time in Settings &rarr; Privacy Dashboard &rarr; Crash Reporting.</p>
 
-        <h2>4. Optional Data Collection (Opt-In Only)</h2>
-        <p>You can choose to enable the following optional features. All are OFF by default and require your explicit consent:</p>
+        <h3>4.2 Usage Analytics (opt-in, off by default)</h3>
+        <p>Usage analytics are off by default. If you turn them on in the Privacy Dashboard, Google Analytics for Firebase receives the app features you use and the screens you view, without transaction amounts, merchant names or account details. You can turn them off again at any time.</p>
 
-        <h3>4.1 Anonymous Analytics (via Firebase Analytics)</h3>
-        <p><strong>What we collect (if enabled):</strong></p>
+        <h2 id="ai-parse">5. AI Statement Parsing (EZer Plus, Optional)</h2>
+        <p>AI statement parsing reads a bank or credit card statement that you choose (PDF, image or CSV) and turns it into transactions. It is off until you give consent in the app, and you can withdraw consent at any time in Settings &rarr; Privacy Dashboard. All other features keep working without it.</p>
+
+        <p><strong>What is sent, and to whom:</strong></p>
         <ul>
-            <li>Screen navigation patterns (which screens you visit)</li>
-            <li>Feature usage (which buttons you tap, which features you use)</li>
-            <li>App performance metrics (load times, errors)</li>
-            <li>Device type and OS version (e.g., "iPhone 14, iOS 17.0")</li>
-            <li>App version</li>
+            <li>The app sends the statement file (or, for CSV, its text) to our server on Google Cloud over an encrypted connection, together with the country and currency codes, the statement type, the page count, the names of your categories (so the AI can suggest one), the app installation ID and your account ID.</li>
+            <li>Our server sends the statement content, country and currency codes, statement type and category names to Anthropic (Claude), which extracts the transactions. It does not send your account ID, name or email to Anthropic.</li>
+            <li>Anthropic processes the statement on our behalf under its API terms and is located in the United States. It may keep what it receives for a limited period (for example, up to 30 days) for abuse and misuse monitoring, as described in its own terms.</li>
         </ul>
 
-        <p><strong>What we DO NOT collect:</strong></p>
+        <p><strong>What we keep on our servers:</strong></p>
         <ul>
-            <li>❌ No transaction amounts, merchant names, or financial details</li>
-            <li>❌ No personal information or identifiers</li>
-            <li>❌ No account information</li>
+            <li>The statement file itself is not stored on our servers.</li>
+            <li><strong>Parse cache:</strong> the parsed result (transactions with their dates, descriptions and amounts, and any account holder name, bank name or last digits of an account that appear on the statement) is stored in our database (Google Cloud Firestore), linked to your account, so that parsing the same statement again is instant and not charged again.</li>
+            <li><strong>Parse job:</strong> the result is also saved with the parse request, so you still receive it if the app is closed or loses its connection while parsing.</li>
+            <li><strong>Parse history:</strong> for billing and support we keep a record of each parse: date, model used, country, currency, statement type, page count, number of transactions, credits charged and the app installation ID. It does not contain transactions.</li>
+            <li><strong>Retention:</strong> the parse cache, parse jobs and parse history are kept until you delete your data with Delete All Data (section 10.3), which removes them. There is no automatic expiry. If you do not want parsed results kept, turn on "Don't cache my statements on our servers" (below).</li>
         </ul>
 
-        <p><strong>Purpose:</strong> Understand how users navigate the app to improve user experience and fix bugs.</p>
-        <p><strong>Third Party:</strong> Google Firebase Analytics (<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>)</p>
-        <p><strong>Control:</strong> Enable/disable anytime in Settings → Privacy Dashboard</p>
+        <p><strong>Turning the cache off:</strong> in Settings &rarr; Security Settings, switch on "Don't cache my statements on our servers". While it is on, the parsed result is not stored in the parse cache or with the parse job (only the job's status is kept); the parse history record is still kept, and every parse is charged.</p>
 
-        <h3>4.2 Crash Reporting (via Firebase Crashlytics)</h3>
-        <p><strong>What we collect (if enabled):</strong></p>
+        <p><strong>Reporting a parsing problem (optional, separate consent):</strong> if you report a problem with a parsed statement, we receive the parsed transactions (not the statement file), your description, the country and currency codes, the model, the page count, error details, the app version and the app installation ID. We use it only to improve parsing. These reports are deleted with Delete All Data.</p>
+
+        <h2>6. Sign-In and Backups</h2>
+
+        <h3>6.1 Optional sign-in</h3>
+        <p>Sign-in is optional. It is required only for backups. You can sign in with Apple, Google or Microsoft. Our authentication service (Firebase Authentication, provided by Google) then receives the name, email address and account identifier that the provider shares. If you use Sign in with Apple and choose "Hide My Email", we receive only the relay address Apple creates.</p>
+
+        <h3>6.2 Backups (local and cloud)</h3>
+        <p>Every backup file, local or cloud, is encrypted on your device with AES-256 before it is saved or uploaded. Cloud backup (iCloud Drive, Google Drive or Microsoft OneDrive) is part of EZer Plus and is started by you in Settings &rarr; Backup &amp; Restore. The encrypted file is stored in EZer's app folder in the cloud storage account you choose (for iCloud, EZer's iCloud container on your Apple ID). Our servers never receive the backup file, and we cannot access your cloud storage account.</p>
+
+        <p><strong>The backup encryption key:</strong></p>
         <ul>
-            <li>Crash logs and stack traces</li>
-            <li>Device information (model, OS version)</li>
-            <li>App state at time of crash</li>
+            <li>The key is generated for your EZer account and stored on our servers (Google Cloud Firestore), so that you can restore a backup on a new device by signing in with the same account. The app also keeps a copy on your device so backup and restore work offline.</li>
+            <li>The key can be read only through our authenticated server function for your own account. Because the key is on our servers, EZer could in principle decrypt a backup file if it obtained one; we never receive the file. People with administrative access to our cloud project could technically access the key; we do not access it.</li>
+            <li>Deleting your EZer data with Delete All Data deletes the key. After that, existing backup files can no longer be restored.</li>
         </ul>
 
-        <p><strong>What we DO NOT collect:</strong></p>
+        <p><strong>What's backed up:</strong> transaction history, account information, budget, bill, loan and goal data, app preferences, receipt records and attachments.</p>
+        <p><strong>Third parties:</strong> Apple iCloud (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a>), Google Drive (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>), Microsoft OneDrive (<a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">Microsoft Privacy Statement</a>). They receive the encrypted backup file only; the key is not stored with the file.</p>
+
+        <h2>7. Receipt Scanning and Notifications</h2>
+
+        <h3>7.1 Receipt scanning</h3>
+        <p>When you scan a receipt, its text is read on your device with Google ML Kit. Nothing is sent to Google for this. The receipt image and the text read from it are stored on your device.</p>
+        <p><strong>Receipt scan feedback (optional):</strong> the app asks before the first time this is sent, and you can choose "No thanks". If you choose to share a scan that did not read correctly, we receive the receipt image with its top and bottom blurred, the scanned text with card numbers, names and phone numbers removed, the corrections you made, your region, the OCR engine and confidence, the app version and the app installation ID. If the image cannot be blurred (for example a PDF), nothing is sent. We use it only to improve receipt scanning. It is stored in Cloud Firestore and Cloud Storage for Firebase and is deleted with Delete All Data.</p>
+
+        <h3>7.2 Notifications</h3>
+        <p>Bill payment reminders, budget limit alerts and goal milestones are generated locally on your device. If you are signed in, the app also registers a push notification token (Firebase Cloud Messaging, delivered through Apple Push Notification service) with your platform and app language, so that our servers can send you notifications. You can turn notifications off in iOS Settings or in the app.</p>
+
+        <h2>8. iOS Permissions</h2>
+        <p>EZer requests the following iOS permissions only when needed. All are optional:</p>
         <ul>
-            <li>❌ No financial data</li>
-            <li>❌ No user-identifiable information</li>
+            <li><strong>Camera:</strong> To scan receipts</li>
+            <li><strong>Photo Library:</strong> To attach receipt images to transactions, and to save scanned receipt images if you choose</li>
+            <li><strong>Face ID / Touch ID:</strong> To lock the app with biometric authentication</li>
+            <li><strong>Notifications:</strong> To send bill reminders and budget alerts</li>
         </ul>
+        <p>EZer does not request access to your location, contacts, microphone, SMS messages or clipboard monitoring. SMS transaction import is not available on iOS. All permissions can be revoked anytime in iOS Settings &rarr; EZer.</p>
 
-        <p><strong>Purpose:</strong> Identify and fix bugs that cause the app to crash.</p>
-        <p><strong>Third Party:</strong> Google Firebase Crashlytics (<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>)</p>
-        <p><strong>Control:</strong> Enable/disable anytime in Settings → Privacy Dashboard</p>
-
-        <h3>4.3 Notifications</h3>
-        <p><strong>What we use notifications for:</strong></p>
-        <ul>
-            <li>Bill payment reminders</li>
-            <li>Budget limit alerts</li>
-            <li>Goal milestone celebrations</li>
-        </ul>
-
-        <p><strong>Important:</strong> All notifications are generated locally on your device. No data is sent to servers for notifications.</p>
-        <p><strong>Control:</strong> Enable/disable in iOS Settings or in-app Privacy Dashboard</p>
-
-        <h3>4.4 Google Drive Backup (Optional)</h3>
-        <p>You can optionally back up your encrypted database to your personal Google Drive account.</p>
-
-        <p><strong>What happens when you enable backup:</strong></p>
-        <ul>
-            <li>You sign in with your Google account (Google Sign-In)</li>
-            <li>Your encrypted database file is uploaded to YOUR Google Drive</li>
-            <li>The backup is stored in YOUR Google Drive storage (not our servers)</li>
-            <li>Only you can access this backup file</li>
-        </ul>
-
-        <p><strong>What we DO NOT do:</strong></p>
-        <ul>
-            <li>❌ We do NOT have access to your Google Drive</li>
-            <li>❌ We do NOT store your data on our servers</li>
-            <li>❌ We do NOT decrypt your backup</li>
-        </ul>
-
-        <p><strong>Third Party:</strong> Google Drive API (<a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>)</p>
-
-        <h3>4.5 Referral System (Optional)</h3>
-        <p>If you participate in the referral program:</p>
-        <ul>
-            <li><strong>Data stored:</strong> Referral code, Firebase UID (anonymous identifier), referral count</li>
-            <li><strong>Where stored:</strong> Cloud Firestore (Google)</li>
-            <li><strong>What we DO NOT collect:</strong> No personal information, no financial data</li>
-        </ul>
-        <p><strong>Third Party:</strong> Cloud Firestore (<a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>)</p>
-
-        <h2>5. iOS-Specific Features</h2>
-
-        <h3>5.1 SMS Import - NOT AVAILABLE on iOS</h3>
-        <p>Due to iOS platform limitations, SMS transaction import is NOT available on iOS. This feature is only available on Android devices.</p>
-
-        <h3>5.2 Permissions We Request</h3>
-        <p>EZer requests the following iOS permissions only when needed:</p>
-        <ul>
-            <li><strong>Camera:</strong> To scan receipts for expense tracking (optional)</li>
-            <li><strong>Photo Library:</strong> To attach receipt images to transactions (optional)</li>
-            <li><strong>Face ID / Touch ID:</strong> To secure app with biometric authentication (optional)</li>
-            <li><strong>Notifications:</strong> To send bill reminders and budget alerts (optional)</li>
-        </ul>
-        <p>All permissions can be revoked anytime in iOS Settings → EZer.</p>
-
-        <h2>6. Data Security</h2>
-        <p>We take your financial data security seriously:</p>
-        <ul>
-            <li><strong>🔐 SQLCipher Encryption:</strong> All data stored with 256-bit AES encryption</li>
-            <li><strong>🔑 Secure Storage:</strong> Sensitive data (keys, tokens) stored in iOS Keychain</li>
-            <li><strong>🚫 Screenshot Prevention:</strong> Financial screens cannot be screenshot (release mode)</li>
-            <li><strong>🔒 App Lock:</strong> Optional Face ID/Touch ID protection</li>
-            <li><strong>💾 Local-Only Storage:</strong> Data never transmitted to servers</li>
-        </ul>
-
-        <h2>7. Third-Party Services</h2>
-        <p>EZer integrates with the following third-party services (all opt-in):</p>
-
+        <h2>9. Data Held on Our Servers</h2>
+        <p>This is everything we hold about you on our servers, and for how long:</p>
         <table>
             <tr>
-                <th>Service</th>
-                <th>Purpose</th>
-                <th>Default</th>
+                <th>Data</th>
+                <th>When</th>
+                <th>Kept until</th>
             </tr>
             <tr>
-                <td>Firebase Analytics</td>
-                <td>Anonymous usage analytics</td>
-                <td>OFF</td>
+                <td>Anonymous account ID</td>
+                <td>All users</td>
+                <td>Delete All Data (uninstalling the app does not remove it)</td>
+            </tr>
+            <tr>
+                <td>Sign-in account (name, email, provider ID)</td>
+                <td>If you sign in</td>
+                <td>Delete All Data</td>
+            </tr>
+            <tr>
+                <td>Subscription and purchase records (App Store transaction identifiers), credit balance and credit history</td>
+                <td>If you buy EZer Plus or credits</td>
+                <td>Delete All Data</td>
+            </tr>
+            <tr>
+                <td>Privacy choice records</td>
+                <td>All users</td>
+                <td>Delete All Data; a copy without your account ID (replaced by a one-way pseudonym) is kept for 7 years as proof of consent</td>
+            </tr>
+            <tr>
+                <td>AI parse cache, parse jobs, parse history</td>
+                <td>If you use AI statement parsing</td>
+                <td>Delete All Data; no automatic expiry. Parse cache and parse jobs are not kept while "Don't cache my statements on our servers" is on</td>
+            </tr>
+            <tr>
+                <td>Parsing problem reports and receipt scan feedback</td>
+                <td>Only if you send them</td>
+                <td>Delete All Data (including receipt images)</td>
+            </tr>
+            <tr>
+                <td>Backup encryption key</td>
+                <td>If you use backup</td>
+                <td>Delete All Data (existing backups then cannot be restored)</td>
+            </tr>
+            <tr>
+                <td>Push notification token with platform and app language</td>
+                <td>Signed-in users only</td>
+                <td>Delete All Data</td>
+            </tr>
+            <tr>
+                <td>Crash reports (Firebase Crashlytics)</td>
+                <td>Unless you turn crash reporting off</td>
+                <td>The retention period set by Firebase Crashlytics (not removed by Delete All Data)</td>
+            </tr>
+        </table>
+        <p>Data on our servers is processed by Google Cloud (Firebase). Our server functions run in the United States (us-central1); our database is located in India (Mumbai, asia-south1).</p>
+
+        <h2>10. Your Privacy Rights and Controls</h2>
+
+        <h3>10.1 Privacy Dashboard</h3>
+        <p>Access: Settings &rarr; Privacy Dashboard</p>
+        <ul>
+            <li>Give or withdraw consent for usage analytics, crash reporting, AI statement parsing and AI parsing problem reports</li>
+            <li>View the history of your consent changes</li>
+            <li>Export my data</li>
+            <li>Delete All Data</li>
+        </ul>
+        <p>The anonymous account ID and the app-integrity check cannot be turned off, because the app's requests to our servers depend on them.</p>
+
+        <h3>10.2 Data Portability</h3>
+        <p>Settings &rarr; Privacy Dashboard &rarr; Export my data creates one ZIP file: transactions.csv, accounts.csv, budgets.csv and categories.csv, your settings and privacy choice history as JSON files, and a README. PDF and Excel reports are available from Reports.</p>
+        <p>Exported files are not encrypted. Anyone you share the file with, or anyone who can open it on your device or storage, can read it. To keep an encrypted copy, use Backup.</p>
+
+        <h3>10.3 Right to Deletion (Delete All Data)</h3>
+        <ul>
+            <li>Settings &rarr; Delete Account, or Settings &rarr; Privacy Dashboard &rarr; Delete All Data (both run the same deletion, called "Delete All Data" in this policy)</li>
+            <li>Confirm deletion by typing DELETE (this is permanent)</li>
+            <li>The app first asks our server to delete your server-side data, then wipes the EZer database on your device. A few local settings (for example the app-lock PIN and cached sign-in tokens) may remain on the device until you uninstall the app</li>
+            <li>On our servers we delete: your account (anonymous or signed-in), subscription and purchase records and the link between your store purchase and your account, credits, AI parse cache, parse jobs and parse history, parsing problem reports and receipt scan feedback (including images), privacy choice records (a pseudonymized proof-of-consent copy is kept for 7 years), your push notification tokens and your backup encryption key</li>
+            <li>Backup files already in your own cloud storage account stay there until you delete them, but they can no longer be restored because the key is deleted</li>
+            <li>Exported files you saved or shared are not affected. We cannot recover deleted data</li>
+        </ul>
+        <p>Deleting your EZer data does not cancel an App Store subscription. Manage or cancel it in iOS Settings &rarr; your name &rarr; Subscriptions. If deletion from our servers fails in the app, you can retry or email <a href="mailto:privacy@ezerapp.com">privacy@ezerapp.com</a>. You can also request deletion at <a href="https://www.ezerapp.com/data-deletion.html">https://www.ezerapp.com/data-deletion.html</a>. We complete deletion requests within 30 days.</p>
+
+        <h2>11. Data Security</h2>
+        <ul>
+            <li><strong>SQLCipher Encryption:</strong> All data on your device is stored with 256-bit AES encryption</li>
+            <li><strong>Secure Storage:</strong> The database key and other sensitive values are stored in the iOS Keychain; EZer does not upload the database key</li>
+            <li><strong>App Lock:</strong> Optional Face ID / Touch ID protection</li>
+            <li><strong>App switcher cover:</strong> When EZer goes to the background, its screen is covered so your finances do not appear in the app switcher</li>
+            <li><strong>Encrypted backups:</strong> Backups are encrypted on your device before upload (key held on our servers, see section 6.2)</li>
+            <li><strong>Network:</strong> TLS for all network communications; requests to our servers must carry a valid account token and, for most functions, a valid app-integrity token; database access rules limit each user to their own data</li>
+        </ul>
+        <p>We have not yet commissioned an independent security review. If you find a security problem, please report it to <a href="mailto:privacy@ezerapp.com">privacy@ezerapp.com</a>.</p>
+
+        <h2>12. Service Providers</h2>
+        <p>We do not sell your data and do not share it with advertisers or data brokers. These providers process data on our behalf:</p>
+        <table>
+            <tr>
+                <th>Provider</th>
+                <th>Purpose</th>
+                <th>When</th>
+            </tr>
+            <tr>
+                <td>Google Firebase (Authentication, Cloud Functions, Cloud Firestore, App Check, Remote Config, Cloud Storage)</td>
+                <td>Anonymous account, server functions, database, app-integrity check, app configuration, receipt feedback images</td>
+                <td>All users</td>
             </tr>
             <tr>
                 <td>Firebase Crashlytics</td>
-                <td>Crash reporting</td>
-                <td>OFF</td>
+                <td>Crash reports</td>
+                <td>On by default, can be turned off</td>
             </tr>
             <tr>
-                <td>Google Drive</td>
-                <td>Optional encrypted backup</td>
-                <td>OFF</td>
+                <td>Google Analytics for Firebase</td>
+                <td>Usage analytics</td>
+                <td>Only if you opt in</td>
             </tr>
             <tr>
-                <td>Cloud Firestore</td>
-                <td>Referral system only</td>
-                <td>OFF</td>
+                <td>Firebase Cloud Messaging / Apple Push Notification service</td>
+                <td>Push notifications</td>
+                <td>Signed-in users</td>
+            </tr>
+            <tr>
+                <td>Apple (App Store, DeviceCheck, Sign in with Apple, iCloud)</td>
+                <td>Purchases, app-integrity check, optional sign-in, optional backup</td>
+                <td>As described above</td>
+            </tr>
+            <tr>
+                <td>Anthropic (Claude API)</td>
+                <td>AI statement parsing</td>
+                <td>Only if you use AI statement parsing</td>
+            </tr>
+            <tr>
+                <td>Google Sign-In, Google Drive; Microsoft sign-in, OneDrive</td>
+                <td>Optional sign-in and encrypted backup storage</td>
+                <td>Only if you choose them</td>
+            </tr>
+            <tr>
+                <td>Google ML Kit</td>
+                <td>Receipt text recognition on your device</td>
+                <td>Nothing is sent</td>
+            </tr>
+            <tr>
+                <td>European Central Bank</td>
+                <td>Public exchange rates downloaded by our server</td>
+                <td>Nothing about you is sent</td>
             </tr>
         </table>
+        <p>Firebase privacy information: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">https://firebase.google.com/support/privacy</a></p>
+        <p>We may disclose information if required by law, in response to valid legal requests, to protect our rights, to investigate fraud or security issues, or to protect user safety.</p>
 
-        <p><strong>Important:</strong> You can disable ALL third-party services and still use 100% of EZer's core functionality.</p>
-
-        <h3>7.1 Detailed Third-Party Service Disclosure</h3>
-        <p><strong>Firebase Analytics (Google):</strong></p>
+        <h2>13. International Data Transfers</h2>
         <ul>
-            <li><strong>If enabled:</strong> Collects anonymous usage patterns, screen views, feature interactions</li>
-            <li><strong>Does NOT collect:</strong> Transaction amounts, merchant names, account details</li>
-            <li><strong>Purpose:</strong> Improve app performance and user experience</li>
-            <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+            <li>Your financial data is stored locally on your device</li>
+            <li>Data held on our servers (section 9) is processed by Google Cloud in the United States and India</li>
+            <li>AI statement parsing sends statement content to Anthropic in the United States</li>
+            <li>Cloud backups are stored by your cloud storage provider in locations that depend on your account with them</li>
+            <li>When data is transferred to another country, we rely on <span class="important" style="display:inline; padding:2px 6px; margin:0;">[LEGAL: transfer mechanism, for example the European Commission's Standard Contractual Clauses in our providers' data processing terms]</span></li>
         </ul>
 
-        <p><strong>Firebase Crashlytics (Google):</strong></p>
-        <ul>
-            <li><strong>If enabled:</strong> Collects device information, crash logs, app version</li>
-            <li><strong>Does NOT collect:</strong> Financial data or personal information</li>
-            <li><strong>Purpose:</strong> Identify and fix bugs</li>
-            <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
-        </ul>
+        <h2>14. Legal Basis for Processing (GDPR)</h2>
+        <table>
+            <tr>
+                <th>Data</th>
+                <th>Legal Basis</th>
+            </tr>
+            <tr><td>Account information (anonymous ID, sign-in details), transaction data, subscription and purchase records, currency rate lookups</td><td>Contract</td></tr>
+            <tr><td>App-integrity tokens, crash reports</td><td>Legitimate interest</td></tr>
+            <tr><td>Usage analytics, AI statement parsing, parsing problem reports, receipt scan feedback, backups</td><td>Consent</td></tr>
+            <tr><td>Privacy choice records</td><td>Legal obligation</td></tr>
+        </table>
 
-        <p><strong>Cloud Firestore (Google):</strong></p>
-        <ul>
-            <li><strong>If enabled:</strong> Stores referral codes, Firebase UID (anonymous)</li>
-            <li><strong>Does NOT collect:</strong> Transaction data or personal information</li>
-            <li><strong>Purpose:</strong> Manage referral rewards</li>
-            <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
-        </ul>
+        <h2>15. Children's Privacy</h2>
+        <p>EZer is intended for adults and is not intended for use by anyone under the age of 18. We do not knowingly collect information from anyone under 18. If you are a parent or guardian and believe your child has provided us with personal information, please contact us and we will delete it.</p>
 
-        <p><strong>IMPORTANT:</strong> You can disable all third-party services in the Privacy Dashboard. All financial data remains on your device regardless of these settings.</p>
+        <h2>16. Compliance</h2>
+        <p>We aim to comply with the Digital Personal Data Protection Act, 2023 (India), the General Data Protection Regulation (EU), applicable US state privacy laws, and the App Store Review Guidelines on data collection and storage.</p>
 
-        <h2>8. Your Privacy Rights & Controls</h2>
-        <p>You have complete control over your data:</p>
-
-        <h3>8.1 Privacy Dashboard</h3>
-        <p>Access: Settings → Privacy Dashboard</p>
-        <ul>
-            <li><strong>View all consents:</strong> See exactly what you've enabled</li>
-            <li><strong>Toggle features:</strong> Enable/disable analytics, crash reporting, notifications</li>
-            <li><strong>Consent history:</strong> View audit log of all consent changes with timestamps</li>
-            <li><strong>Export data:</strong> Download all your data in CSV, JSON, or ZIP format</li>
-            <li><strong>Delete all data:</strong> Permanently delete all financial data from device</li>
-        </ul>
-
-        <h3>8.2 Data Portability</h3>
-        <p>Export your data anytime in multiple formats:</p>
-        <ul>
-            <li><strong>CSV:</strong> Import into Excel or Google Sheets</li>
-            <li><strong>JSON:</strong> For developers or advanced users</li>
-            <li><strong>ZIP:</strong> Complete database backup</li>
-        </ul>
-
-        <h3>8.3 Right to Deletion</h3>
-        <ul>
-            <li>Delete individual transactions, accounts, or budgets</li>
-            <li>Delete all data via Privacy Dashboard</li>
-            <li>Uninstall app to remove all data</li>
-        </ul>
-
-        <h2>9. Children's Privacy (COPPA)</h2>
-        <p>EZer is not intended for use by children under the age of 13. We do not knowingly collect information from children under 13. If you are a parent or guardian and believe your child under 13 has provided us with personal information, please contact us.</p>
-
-        <h2>10. Data Retention</h2>
-        <ul>
-            <li><strong>Financial Data:</strong> Retained on your device until you delete it</li>
-            <li><strong>Consent Logs:</strong> Retained for 3 years for compliance purposes</li>
-            <li><strong>Analytics Data:</strong> Anonymous data retained by Google for 2 years (if enabled)</li>
-            <li><strong>Deleted Data:</strong> Permanently removed and cannot be recovered</li>
-        </ul>
-
-        <h2>11. International Users & Compliance</h2>
-        <p>EZer complies with:</p>
-        <ul>
-            <li><strong>🇮🇳 India:</strong> Digital Personal Data Protection Act (DPDP) 2023</li>
-            <li><strong>🇪🇺 Europe:</strong> General Data Protection Regulation (GDPR)</li>
-            <li><strong>🇺🇸 United States:</strong> COPPA, state privacy laws</li>
-            <li><strong>🍎 Apple:</strong> App Store Privacy Requirements</li>
-        </ul>
-
-        <h2>12. Financial Disclaimer</h2>
+        <h2>17. Financial Disclaimer</h2>
         <div class="important">
-            <p><strong>⚠️ Important Disclaimer:</strong></p>
-            <p>EZer is a personal finance tracking tool. We do NOT provide:</p>
-            <ul>
-                <li>❌ Financial advice</li>
-                <li>❌ Investment recommendations</li>
-                <li>❌ Tax advice</li>
-                <li>❌ Legal advice</li>
-                <li>❌ Loans or credit</li>
-            </ul>
-            <p>EZer only helps you track and organize your existing financial information. Any financial decisions you make are your sole responsibility. Consult qualified professionals for financial advice.</p>
+            <p><strong>Important:</strong> EZer is a personal finance tracking tool. It does not connect to your bank accounts, and we do not provide financial, investment, tax or legal advice, loans or credit. Any financial decisions you make are your sole responsibility.</p>
         </div>
 
-        <h2>13. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time. When we make changes:</p>
+        <h2>18. Changes to This Privacy Policy</h2>
         <ul>
             <li>We will update the "Last Updated" date at the top</li>
             <li>Major changes will be announced in the app</li>
-            <li>Continued use of the app after changes constitutes acceptance</li>
+            <li>If a change affects a feature you have consented to (such as AI statement parsing), the app asks you to confirm your consent again</li>
         </ul>
 
-        <h2>14. Contact Us</h2>
+        <h2>19. Contact Us</h2>
         <div class="contact">
             <p>If you have questions about this Privacy Policy or how we handle your data:</p>
-            <p><strong>Email:</strong> <a href="mailto:privacy@ezerapp.com">privacy@ezerapp.com</a></p>
-            <p><strong>Support:</strong> <a href="mailto:support@ezer.app">support@ezer.app</a></p>
-            <p><strong>General:</strong> <a href="mailto:feedback@ezer.app">feedback@ezer.app</a></p>
+            <p><strong>Data controller:</strong> Jeremiah Divyan David (trading as EZer), Kanchipuram, Tamil Nadu, India</p>
+            <p><strong>Privacy:</strong> <a href="mailto:privacy@ezerapp.com">privacy@ezerapp.com</a></p>
+            <p><strong>Support:</strong> <a href="mailto:support@ezerapp.com">support@ezerapp.com</a></p>
+            <p><strong>Website:</strong> <a href="https://www.ezerapp.com/privacy-ios.html">https://www.ezerapp.com/privacy-ios.html</a></p>
 
-            <p style="margin-top: 20px;"><strong>Response Time:</strong> We aim to respond to all privacy inquiries within 48 hours.</p>
+            <p style="margin-top: 20px;"><strong>Response Time:</strong> Privacy requests within 7 business days; data deletion requests within 30 days.</p>
         </div>
-
-        <h2>15. Consent</h2>
-        <p>By using EZer, you consent to this Privacy Policy. You can withdraw consent for optional features anytime via the Privacy Dashboard.</p>
 
         <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
 
         <p style="text-align: center; color: #6e6e73; font-size: 14px;">
-            © 2025 EZer Finance App. All rights reserved.<br>
-            <a href="https://www.ezerapp.com/terms-of-service">Terms of Service</a> |
+            &copy; 2025 EZer Finance App. All rights reserved.<br>
+            <a href="https://www.ezerapp.com/terms.html">Terms of Service</a> |
             <a href="https://www.ezerapp.com/privacy-ios.html">Privacy Policy</a> |
-            <a href="mailto:support@ezer.app">Contact</a>
+            <a href="https://www.ezerapp.com/data-deletion.html">Data Deletion</a> |
+            <a href="mailto:support@ezerapp.com">Contact</a>
         </p>
     </div>
 </body>
