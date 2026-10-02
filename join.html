@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join a Household - EZer</title>
+    <meta name="description" content="You've been invited to join a household on EZer. Open the invite in the EZer app.">
+    <!-- Invite pages are per-person and carry a private code: never index them. -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- The invite code is in this page's URL. Never send it to another site
+         (Tailwind CDN, Google Fonts, Play Store) in a Referer header. -->
+    <meta name="referrer" content="no-referrer">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+
+        .nav-link { transition: all 0.2s ease; }
+        .nav-link:hover { color: #4f46e5; }
+        .invite-code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+            overflow-wrap: anywhere;
+            word-break: break-all;
+        }
+    </style>
+    <!-- No analytics on this page by design: the URL carries a private invite code. -->
+</head>
+<body class="bg-gray-50">
+    <!-- Shared Header -->
+    <div id="shared-header"></div>
+
+    <!-- Page Header -->
+    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-10 md:py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-3">You're invited to an EZer household</h1>
+            <p class="text-lg md:text-xl text-indigo-100">Open this invite in the EZer app to join</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 md:py-12 max-w-2xl">
+
+        <!-- Invite code -->
+        <section id="code-card" class="bg-white rounded-2xl shadow-lg p-6 md:p-8 mb-6" hidden>
+            <h2 class="text-xl md:text-2xl font-bold mb-2">Your invite code</h2>
+            <p class="text-gray-600 mb-4">Keep this code private. Anyone who has it can ask to join the household.</p>
+            <div class="bg-gray-100 rounded-xl p-4 mb-4">
+                <p id="invite-code" class="invite-code text-base md:text-lg font-semibold text-gray-900"></p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <button id="copy-btn" type="button"
+                        class="flex-1 inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-5 rounded-xl transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                    </svg>
+                    <span id="copy-label">Copy code</span>
+                </button>
+                <a id="open-app-btn" href="#"
+                   class="flex-1 inline-flex items-center justify-center gap-2 bg-white border-2 border-indigo-600 text-indigo-700 hover:bg-indigo-50 font-semibold py-3 px-5 rounded-xl transition-colors">
+                    Open in EZer
+                </a>
+            </div>
+            <p id="copy-status" class="text-sm text-green-700 mt-3" role="status" aria-live="polite"></p>
+        </section>
+
+        <!-- No / invalid code -->
+        <section id="no-code-card" class="bg-amber-50 border-l-4 border-amber-500 rounded-r-2xl p-5 mb-6" hidden>
+            <h2 class="font-bold text-amber-800 mb-1">No invite code in this link</h2>
+            <p class="text-amber-700 text-sm">Ask the person who invited you to share the invite again, or to send you the code directly.</p>
+        </section>
+
+        <!-- How to join -->
+        <section class="bg-white rounded-2xl shadow-lg p-6 md:p-8 mb-6">
+            <h2 class="text-xl md:text-2xl font-bold mb-4">How to join</h2>
+            <ol class="space-y-3">
+                <li class="flex items-start gap-3">
+                    <span class="flex-shrink-0 w-7 h-7 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-sm font-bold">1</span>
+                    <span>Install EZer from Google Play, if you don't have it yet.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="flex-shrink-0 w-7 h-7 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                    <span>Open EZer and go to <strong>Household</strong>, then tap <strong>"Got an invite code?"</strong></span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="flex-shrink-0 w-7 h-7 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-sm font-bold">3</span>
+                    <span>Enter the invite code from your invite and follow the steps.</span>
+                </li>
+            </ol>
+            <p id="open-hint" class="text-gray-600 text-sm mt-4" hidden>Already have EZer installed? Tap <strong>Open in EZer</strong> above and the code is filled in for you.</p>
+        </section>
+
+        <!-- Get the app -->
+        <section class="bg-white rounded-2xl shadow-lg p-6 md:p-8 mb-6">
+            <h2 class="text-xl md:text-2xl font-bold mb-4">Get EZer</h2>
+            <a href="https://play.google.com/store/apps/details?id=com.ezer.personal_finance"
+               rel="noopener noreferrer"
+               class="inline-flex items-center gap-3 bg-gray-900 hover:bg-gray-800 text-white py-3 px-5 rounded-xl transition-colors">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M3.6 1.8c-.3.3-.4.7-.4 1.2v18c0 .5.1.9.4 1.2l.1.1L13.8 12.2v-.3L3.7 1.7l-.1.1zM17.2 15.6l-3.4-3.4v-.3l3.4-3.4.1.1 4 2.3c1.1.7 1.1 1.7 0 2.4l-4 2.3h-.1zM17.3 15.5L13.8 12 3.6 22.2c.4.4 1 .4 1.7.1l12-6.8M17.3 8.5L5.3 1.7c-.7-.4-1.3-.3-1.7.1L13.8 12l3.5-3.5z"/>
+                </svg>
+                <span class="text-left leading-tight">
+                    <span class="block text-xs text-gray-300">Get it on</span>
+                    <span class="block text-lg font-semibold">Google Play</span>
+                </span>
+            </a>
+            <p class="text-gray-600 text-sm mt-4">Households are available on Android for now. They are not yet available in the iPhone app.</p>
+        </section>
+
+        <p class="text-center text-sm text-gray-500">
+            Need help? <a href="mailto:support@ezerapp.com" class="text-indigo-600 hover:underline">support@ezerapp.com</a>
+        </p>
+    </main>
+
+    <!-- Shared Footer -->
+    <div id="shared-footer"></div>
+
+    <!-- Shared Navigation Script -->
+    <script src="/js/shared-nav.js"></script>
+    <script>
+        initSharedNav({ activePage: null });
+    </script>
+
+    <script>
+        (function () {
+            'use strict';
+
+            // The app shares https://www.ezerapp.com/join?invite=<token>
+            // (household_page.dart, household_setup_wizard.dart). The app's own
+            // deep-link handler reads ?token=, so accept both, plus ?code=.
+            // Tokens are crypto.randomBytes(24).toString('base64url') = 32 chars
+            // of [A-Za-z0-9_-] (firebase/functions/src/household/createInvite.ts).
+            var TOKEN_RE = /^[A-Za-z0-9_-]{8,128}$/;
+            var PLAY_URL = 'https://play.google.com/store/apps/details?id=com.ezer.personal_finance';
+
+            function readToken() {
+                var params = new URLSearchParams(window.location.search);
+                var keys = ['invite', 'token', 'code'];
+                for (var i = 0; i < keys.length; i++) {
+                    var v = (params.get(keys[i]) || '').trim();
+                    if (v) return v;
+                }
+                // Also accept #<token> or #invite=<token>.
+                var hash = window.location.hash.replace(/^#/, '');
+                if (hash) {
+                    var hp = new URLSearchParams(hash);
+                    for (var j = 0; j < keys.length; j++) {
+                        var hv = (hp.get(keys[j]) || '').trim();
+                        if (hv) return hv;
+                    }
+                    if (TOKEN_RE.test(hash)) return hash;
+                }
+                return '';
+            }
+
+            var token = readToken();
+            if (!TOKEN_RE.test(token)) {
+                document.getElementById('no-code-card').hidden = false;
+                return;
+            }
+
+            document.getElementById('code-card').hidden = false;
+            document.getElementById('open-hint').hidden = false;
+            // textContent, never innerHTML: the value comes from the URL.
+            document.getElementById('invite-code').textContent = token;
+
+            // Open in EZer. On Android Chrome an intent:// URL opens the app if it
+            // is installed and falls back to the Play Store if not. Elsewhere use
+            // the app's own custom scheme (ezer://join?token=X, handled by
+            // lib/core/deep_link/deep_link_service.dart).
+            var openBtn = document.getElementById('open-app-btn');
+            var isAndroid = /Android/i.test(navigator.userAgent);
+            if (isAndroid) {
+                openBtn.href = 'intent://join?token=' + encodeURIComponent(token) +
+                    '#Intent;scheme=ezer;package=com.ezer.personal_finance;' +
+                    'S.browser_fallback_url=' + encodeURIComponent(PLAY_URL) + ';end';
+            } else {
+                openBtn.href = 'ezer://join?token=' + encodeURIComponent(token);
+            }
+
+            var status = document.getElementById('copy-status');
+            var label = document.getElementById('copy-label');
+
+            function copied(ok) {
+                status.textContent = ok
+                    ? 'Code copied. Paste it in EZer under Household.'
+                    : 'Could not copy automatically. Press and hold the code to copy it.';
+                status.className = 'text-sm mt-3 ' + (ok ? 'text-green-700' : 'text-amber-700');
+                if (ok) {
+                    label.textContent = 'Copied';
+                    setTimeout(function () { label.textContent = 'Copy code'; }, 2000);
+                }
+            }
+
+            function fallbackCopy() {
+                try {
+                    var ta = document.createElement('textarea');
+                    ta.value = token;
+                    ta.setAttribute('readonly', '');
+                    ta.style.position = 'fixed';
+                    ta.style.top = '-1000px';
+                    document.body.appendChild(ta);
+                    ta.select();
+                    var ok = document.execCommand('copy');
+                    document.body.removeChild(ta);
+                    copied(ok);
+                } catch (e) {
+                    copied(false);
+                }
+            }
+
+            document.getElementById('copy-btn').addEventListener('click', function () {
+                if (navigator.clipboard && window.isSecureContext) {
+                    navigator.clipboard.writeText(token).then(
+                        function () { copied(true); },
+                        fallbackCopy
+                    );
+                } else {
+                    fallbackCopy();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
