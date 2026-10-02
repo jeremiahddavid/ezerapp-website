@@ -189,9 +189,9 @@
             <p class="mb-4"><strong>What is sent, and to whom:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>The app sends the statement file (or, for CSV, its text) to our server over an encrypted connection, together with the country and currency codes, the statement type, the page count, the names of your categories (so the AI can suggest one), the app installation ID and your account ID.</li>
-                <li>Our server sends the statement content, country and currency codes, statement type and category names to one AI provider, which extracts the transactions. It does not send your account ID, name or email to the provider.</li>
-                <li>Providers: <strong>Google</strong> (Gemini) for Quick parsing and <strong>Anthropic</strong> (Claude) for Accurate parsing. These providers process the statement on our behalf under their API terms and are located in the United States.</li>
-                <li>AI providers may keep what they receive for a limited period (for example, up to 30 days) for abuse and misuse monitoring, as described in their own terms. <!-- [LEGAL: confirm each provider's current API data terms, including whether the Gemini API project is on a paid tier. Do not add any statement about model training until those terms are confirmed (founder decision H3-1).] --></li>
+                <li>Our server sends the statement content, country and currency codes, statement type and category names to our AI provider, which extracts the transactions. It does not send your account ID, name or email to the provider.</li>
+                <li>Provider: <strong>Anthropic</strong> (Claude). Anthropic processes the statement on our behalf under its API terms and is located in the United States. No other AI provider receives your statement.</li>
+                <li>The AI provider may keep what it receives for a limited period (for example, up to 30 days) for abuse and misuse monitoring, as described in its own terms. <!-- [LEGAL: confirm each provider's current API data terms, including whether the Gemini API project is on a paid tier. Do not add any statement about model training until those terms are confirmed (founder decision H3-1).] --></li>
             </ul>
 
             <p class="mb-4"><strong>What we keep on our servers:</strong></p>
@@ -451,9 +451,9 @@
                 <li><strong>Privacy Policies:</strong> https://policies.google.com/privacy and https://privacy.microsoft.com/privacystatement</li>
             </ul>
 
-            <p class="mb-4"><strong>AI providers (only if you use AI statement parsing):</strong></p>
+            <p class="mb-4"><strong>AI provider (only if you use AI statement parsing):</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li><strong>Google (Gemini API) and Anthropic (Claude API):</strong> receive the statement content you choose, with country and currency codes, statement type and your category names. See <a href="#ai-parse" class="text-indigo-600 underline">AI Statement Parsing</a>.</li>
+                <li><strong>Anthropic (Claude API):</strong> receives the statement content you choose, with country and currency codes, statement type and your category names. See <a href="#ai-parse" class="text-indigo-600 underline">AI Statement Parsing</a>.</li>
             </ul>
 
             <p class="mb-4"><strong>Google ML Kit (For Receipt OCR):</strong></p>
@@ -670,7 +670,7 @@
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>Your financial data is stored locally on your Android device</li>
                 <li>Data held on our servers (section 3.4) is processed by Google Cloud (Firebase). Our server functions run in the United States (us-central1); our database is located in India (Mumbai, asia-south1)</li>
-                <li>AI statement parsing sends statement content to AI providers in the United States</li>
+                <li>AI statement parsing sends statement content to Anthropic in the United States</li>
                 <li>Cloud backups are stored by your cloud storage provider in locations that depend on your account with them</li>
             </ul>
 
@@ -779,7 +779,7 @@
 
                 <div class="bg-gray-50 p-4 rounded-lg">
                     <p class="font-semibold mb-2">Q: Is my statement sent to an AI company?</p>
-                    <p class="text-sm text-gray-700">A: Only if you use AI statement parsing and give consent. The statement goes through our server to Google (Gemini) or Anthropic (Claude). We do not store the file, but we store the parsed result linked to your account unless you turn the cache off. See <a href="#ai-parse" class="text-indigo-600 underline">AI Statement Parsing</a>.</p>
+                    <p class="text-sm text-gray-700">A: Only if you use AI statement parsing and give consent. The statement goes through our server to Anthropic (Claude). We do not store the file, but we store the parsed result linked to your account unless you turn the cache off. See <a href="#ai-parse" class="text-indigo-600 underline">AI Statement Parsing</a>.</p>
                 </div>
 
                 <div class="bg-gray-50 p-4 rounded-lg">
@@ -804,7 +804,7 @@
 
                 <div class="bg-gray-50 p-4 rounded-lg">
                     <p class="font-semibold mb-2">Q: Do you share data with Google?</p>
-                    <p class="text-sm text-gray-700">A: Google provides our cloud infrastructure (Firebase): anonymous accounts, app-integrity checks, crash reports, our server functions and database, and analytics if you opt in. Google Drive stores encrypted backups if you choose it for cloud backup, Google ML Kit reads receipts on your device (nothing sent), and Google's Gemini API processes statements if you use Quick AI parsing.</p>
+                    <p class="text-sm text-gray-700">A: Google provides our cloud infrastructure (Firebase): anonymous accounts, app-integrity checks, crash reports, our server functions and database, and analytics if you opt in. Google Drive stores encrypted backups if you choose it for cloud backup, and Google ML Kit reads receipts on your device (nothing sent). Google does not process your statements: AI statement parsing uses Anthropic only.</p>
                 </div>
             </div>
 
