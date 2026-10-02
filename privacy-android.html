@@ -96,7 +96,7 @@
                 <p class="font-semibold text-blue-800 mb-2">In short:</p>
                 <ul class="text-sm text-blue-700 space-y-1 list-disc pl-5">
                     <li>Your financial data is stored in an encrypted database on your device.</li>
-                    <li>It leaves your device only when you turn on a cloud feature: AI statement parsing or cloud backup. Each is optional and explained below.</li>
+                    <li>It leaves your device only when you turn on a cloud feature: AI statement parsing, cloud backup or Household sharing. Each is optional and explained below.</li>
                     <li>Even if you use no cloud feature, the app uses an anonymous account ID, an app-integrity check and crash reports (see section 1.2 and "Crash Reporting").</li>
                     <li>We do not sell your data and we do not show ads.</li>
                 </ul>
@@ -110,7 +110,7 @@
             <h3 class="text-xl font-bold mt-6 mb-3">1.1 Information You Provide Directly</h3>
             <p class="mb-4"><strong>Account Information:</strong></p>
             <ul class="list-disc pl-6 mb-4 space-y-2">
-                <li>Sign-in is optional. It is required only for backups. If you sign in with Google or Microsoft, our authentication service (Firebase Authentication, provided by Google) receives the name, email address and account identifier from that provider.</li>
+                <li>Sign-in is optional. It is required only for backups and Household sharing. If you sign in with Google or Microsoft, our authentication service (Firebase Authentication, provided by Google) receives the name, email address and account identifier from that provider.</li>
                 <li>Profile information you enter in the app (stored on your device)</li>
                 <li>Currency and language preferences (stored on your device)</li>
                 <li>Regional settings (stored on your device)</li>
@@ -143,7 +143,7 @@
             <h3 class="text-xl font-bold mt-6 mb-3">1.2 Information Collected Automatically</h3>
 
             <p class="mb-4"><strong>Anonymous account ID (all users):</strong></p>
-            <p class="mb-4">When the app first starts, it creates an anonymous account with Firebase Authentication. This account has a random identifier and no name or email. The app uses it to authenticate its requests to our servers (Google Cloud Functions), for example to check your EZer Plus subscription, to record your privacy choices, to look up currency rates and, if you use them, for AI statement parsing and cloud backup.</p>
+            <p class="mb-4">When the app first starts, it creates an anonymous account with Firebase Authentication. This account has a random identifier and no name or email. The app uses it to authenticate its requests to our servers (Google Cloud Functions), for example to check your EZer Plus subscription, to record your privacy choices, to look up currency rates and, if you use them, for AI statement parsing, cloud backup and Household sharing.</p>
 
             <p class="mb-4"><strong>App integrity check (all users):</strong></p>
             <p class="mb-4">To protect our servers from abuse, the app uses Firebase App Check with Google Play Integrity. Google checks that the request comes from a genuine copy of EZer on a genuine device, and the resulting token is sent with the app's requests to our servers.</p>
@@ -262,6 +262,7 @@
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>Extract transactions from statements you choose (AI statement parsing)</li>
                 <li>Keep an encrypted backup you can restore on a new phone (cloud backup)</li>
+                <li>Share transactions, budgets, goals and bills with the members of your household (Household sharing)</li>
             </ul>
 
             <p class="mb-4"><strong>To Operate and Protect the Service:</strong></p>
@@ -619,7 +620,7 @@
                 <li>Export your data (a ZIP of CSV and JSON files from the Privacy Dashboard; PDF and Excel reports from Reports)</li>
                 <li>Delete specific transactions or all data, including the data we hold on our servers</li>
                 <li>Modify or correct any information</li>
-                <li>Turn off optional features (AI statement parsing, analytics, crash reporting, cloud backup)</li>
+                <li>Turn off optional features (AI statement parsing, analytics, crash reporting, cloud backup, Household sharing)</li>
             </ul>
 
             <p class="mb-4"><strong>How to exercise these rights:</strong></p>
@@ -645,7 +646,7 @@
                 <li>Settings > Delete Account, or Settings > Privacy Dashboard > Delete All Data (both run the same deletion, called "Delete All Data" in this policy)</li>
                 <li>Confirm deletion by typing DELETE (this is permanent)</li>
                 <li>The app first asks our server to delete your server-side data, then wipes the EZer database on your device. A few local settings (for example the app-lock PIN and cached sign-in tokens) may remain on the device until you uninstall the app</li>
-                <li>On our servers we delete: your account (anonymous or signed-in), subscription and purchase records and the link between your store purchase and your account, credits, AI parse cache, parse jobs and parse history, parsing problem reports and receipt scan feedback (including images), privacy choice records (a pseudonymized proof-of-consent copy is kept for 7 years), your push notification tokens and your backup encryption key</li>
+                <li>On our servers we delete: your account (anonymous or signed-in), subscription and purchase records and the link between your store purchase and your account, credits, AI parse cache, parse jobs and parse history, parsing problem reports and receipt scan feedback (including images), privacy choice records (a pseudonymized proof-of-consent copy is kept for 7 years), your push notification tokens and your backup encryption key. If you are in a household, the items you shared are deleted (a deletion marker without amounts or details stays for up to 180 days, see <a href="#household" class="text-indigo-600 underline">Household Sharing</a>), your member record is kept as "Former Member" without your name, and any household you own is deleted</li>
                 <li>Backup files already in your own cloud storage account stay there until you delete them, but they can no longer be restored because the key is deleted</li>
                 <li>Exported files you saved or shared are not affected</li>
                 <li>We cannot recover deleted data</li>
@@ -687,7 +688,7 @@
             <h3 class="text-xl font-bold mt-6 mb-3">7.2 Server Security</h3>
             <ul class="list-disc pl-6 mb-4 space-y-2">
                 <li>Requests to our servers must carry a valid account token and, for most functions, a valid app-integrity token</li>
-                <li>Database access rules limit each user to their own data</li>
+                <li>Database access rules limit each user to their own data and, for Household sharing, to the shared items of their own household</li>
                 <li>The backup encryption key cannot be read directly from the database by any app; only our server function returns it, and only to the account it belongs to</li>
             </ul>
 
@@ -820,7 +821,7 @@
 
                 <div class="bg-gray-50 p-4 rounded-lg">
                     <p class="font-semibold mb-2">Q: Can I use EZer without any cloud feature?</p>
-                    <p class="text-sm text-gray-700">A: Yes. You can enter transactions, scan receipts and use budgets, bills and goals without AI parsing or cloud backup. The app still uses an anonymous account ID, an app-integrity check, subscription status checks, currency rate lookups and crash reports (which you can turn off).</p>
+                    <p class="text-sm text-gray-700">A: Yes. You can enter transactions, scan receipts and use budgets, bills and goals without AI parsing, cloud backup or Household sharing. The app still uses an anonymous account ID, an app-integrity check, subscription status checks, currency rate lookups and crash reports (which you can turn off).</p>
                 </div>
 
                 <div class="bg-gray-50 p-4 rounded-lg">
@@ -830,7 +831,7 @@
 
                 <div class="bg-gray-50 p-4 rounded-lg">
                     <p class="font-semibold mb-2">Q: Can EZer employees access my financial data?</p>
-                    <p class="text-sm text-gray-700">A: Data that stays on your device: no. Some data is on our servers in a form we could technically read: AI parsing results (unless you turn the cache off; see <a href="#ai-parse" class="text-indigo-600 underline">AI Statement Parsing</a>) and the backup encryption key, which is stored on our servers so you can restore on a new phone. We do not access this data except where needed to operate the service or where required by law.</p>
+                    <p class="text-sm text-gray-700">A: Data that stays on your device: no. Some data is on our servers in a form we could technically read: AI parsing results (unless you turn the cache off; see <a href="#ai-parse" class="text-indigo-600 underline">AI Statement Parsing</a>) and the backup encryption key, which is stored on our servers so you can restore on a new phone. For Household sharing, the amounts and details of shared items are encrypted on your phone and we cannot read them, but the household name, member names and the dates, types and status of shared items are stored in a form we could read (see <a href="#household" class="text-indigo-600 underline">Household Sharing</a>). We do not access this data except where needed to operate the service or where required by law.</p>
                 </div>
 
                 <div class="bg-gray-50 p-4 rounded-lg">
@@ -877,7 +878,7 @@
                     <ul class="text-sm text-green-700 space-y-1">
                         <li>&bull; Store data locally in an encrypted database on your device</li>
                         <li>&bull; Use an anonymous account ID, an app-integrity check and crash reports</li>
-                        <li>&bull; Send data off your device for AI parsing or cloud backup only when you turn them on</li>
+                        <li>&bull; Send data off your device for AI parsing, cloud backup or Household sharing only when you turn them on</li>
                         <li>&bull; Encrypt cloud backups before upload, with a key held on our servers for restore</li>
                         <li>&bull; Allow data export (unencrypted, with a warning)</li>
                         <li>&bull; Let you delete all data, on your device and on our servers</li>
