@@ -1,10 +1,13 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.ezer.personal_finance",
       "sha256_cert_fingerprints": [
+        "32:FC:67:42:8F:9F:5B:04:67:A5:D0:78:F4:68:E3:F2:A1:DE:CE:61:C7:2E:8E:4C:E8:CF:1C:C8:F6:2F:E4:4C",
         "47:17:C4:36:00:7B:67:CC:71:C2:EE:6E:BE:59:A8:E3:12:EC:DC:1C:58:1F:29:7F:B8:CB:BF:8B:48:4D:77:89"
       ]
     }
