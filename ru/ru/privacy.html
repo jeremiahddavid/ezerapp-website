@@ -498,31 +498,23 @@
                 <p class="text-gray-700 mb-4">Мы собираем анонимные отчёты о сбоях и журналы нефатальных ошибок на основании нашего законного интереса в обеспечении стабильности приложения (GDPR Статья 6(1)(f); эквивалентные правовые основания в рамках DPDPA и аналогичных нормативных актов). Отчёты включают трассировки стека, модель устройства, версию операционной системы, версию приложения и приблизительный регион (определяется по IP; сам IP не сохраняется). Мы никогда не включаем ваши транзакции, балансы, имена или другую личную информацию. Вы можете отключить отчёты о сбоях в любое время в Настройки → Конфиденциальность → Отчёты о сбоях.</p>
 
                 
+    <!-- privacy-2.1.1 -->
     <section id="ai-parse" class="privacy-section">
-      <h2>AI Statement Parsing (Plus feature)</h2>
-      <p>The AI Parse feature, available to Plus subscribers, uses third-party AI providers to extract transactions from bank and credit card statements. When you use this feature, the statement file (PDF, image, or CSV) is sent to the AI provider you select.</p>
-      <h3>Subprocessors</h3>
-      <ul>
-        <li><strong>Anthropic</strong> (Claude) &mdash; United States</li>
-        <li><strong>OpenAI</strong> (GPT-4o) &mdash; United States</li>
-        <li><strong>Google</strong> (Gemini) &mdash; United States</li>
-      </ul>
-      <h3>What is sent</h3>
-      <ul>
-        <li>The bank or credit card statement file you upload</li>
-        <li>Country code (for regional parsing hints, e.g. date formats)</li>
-        <li>Currency code</li>
-      </ul>
-      <h3>What is NOT sent</h3>
-      <ul>
-        <li>Your name, email, or account credentials</li>
-        <li>Statements from previous uploads (each parse is isolated)</li>
-        <li>Device identifiers beyond what Firebase Auth requires</li>
-      </ul>
-      <h3>Data retention</h3>
-      <p>EZer does NOT store your statement file on its servers. AI providers may retain the file temporarily (typically 30 days) for abuse prevention and service quality, per their own privacy policies.</p>
-      <h3>Your choice</h3>
-      <p>AI Parse is opt-in only &mdash; you are prompted for explicit consent on first use. You can revoke consent anytime in Settings &rarr; Privacy. Without consent, AI Parse is disabled; all other features continue to work locally.</p>
+      <h2 class="text-2xl font-bold mt-8 mb-4">Разбор выписок с помощью ИИ (EZer Plus, по желанию)</h2>
+      <p class="text-gray-700 mb-4">Разбор с помощью ИИ превращает выбранную вами банковскую выписку или выписку по кредитной карте (PDF, изображение или CSV) в транзакции. Функция выключена, пока вы не дадите согласие в приложении; отозвать его можно в любой момент в разделе «Настройки → Панель конфиденциальности». Все остальные функции работают без неё.</p>
+      <p class="text-gray-700 mb-4">Приложение отправляет выписку на наш сервер, который передаёт её содержимое вместе с кодами страны и валюты, типом выписки и названиями ваших категорий нашему поставщику ИИ — Anthropic (Claude), США. Ваше имя, адрес электронной почты и ID аккаунта в Anthropic не передаются, и никакой другой поставщик ИИ вашу выписку не получает. Anthropic может хранить полученные данные ограниченное время (например, до 30 дней) для выявления злоупотреблений.</p>
+      <p class="text-gray-700 mb-4">Файл выписки на наших серверах не хранится. Результат разбора хранится в нашей базе данных и привязан к вашему аккаунту, чтобы одну и ту же выписку не разбирать и не оплачивать повторно; это можно отключить в разделе «Настройки → Безопасность», а функция «Удалить все данные» его удаляет.</p>
     </section>
+    <section id="household" class="privacy-section">
+      <h2 class="text-2xl font-bold mt-8 mb-4">Общий бюджет семьи (EZer Plus, по желанию, Android)</h2>
+      <p class="text-gray-700 mb-4">В приложении для Android до 6 человек могут вести общие транзакции, бюджеты, цели и счета, делить расходы и взаимозачёты как одна семья. Каждому участнику нужна подписка EZer Plus и вход через Google или Microsoft; присоединиться можно только по приглашению участника. После вступления всё, что вы записываете, по умолчанию доступно семье; в разделе «Настройки → Семья» можно исключить категории, скрыть счета или перестать делиться отдельными записями. Ваши общие записи видят только другие участники вашей семьи.</p>
+      <p class="text-gray-700 mb-4">Общие записи защищены сквозным шифрованием: суммы, описания, продавцы, заметки, категории и другие сведения шифруются на вашем телефоне (AES-256-GCM) ключом семьи, который никогда не попадает на наши серверы в читаемом виде, поэтому мы не можем их прочитать. Для работы семьи наш сервер хранит название семьи, имя, роль и ID аккаунта каждого участника, а также дату, тип и статус каждой общей записи в Google Cloud Firestore в Индии (Мумбаи, asia-south1); серверные функции семьи работают в том же регионе. При выходе вы можете удалить то, чем делились; владелец может удалить семью; функция «Удалить все данные» удаляет ваши общие записи и любую семью, владельцем которой вы являетесь.</p>
+    </section>
+    <section id="data-transfers" class="privacy-section">
+      <h2 class="text-2xl font-bold mt-8 mb-4">Международная передача данных</h2>
+      <p class="text-gray-700 mb-4">Данные на наших серверах обрабатывает Google Cloud (Firebase). Наша база данных находится в Индии (Мумбаи, asia-south1). Функции общего бюджета семьи работают в Индии (asia-south1); функции разбора с помощью ИИ, подписок и покупок — в США (us-central1). Кроме того, при разборе выписки её содержимое передаётся Anthropic в США. При передаче ваших данных за пределы вашей страны мы опираемся на Стандартные договорные положения Европейской комиссии (а для пользователей из Великобритании — на Дополнение Великобритании о международной передаче данных), включённые в Соглашения об обработке данных Google Cloud и Anthropic. Копию можно запросить по адресу privacy@ezerapp.com.</p>
+      <p class="text-gray-700 mb-4">Подробнее: <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">Политика конфиденциальности для Android</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">Политика конфиденциальности для iOS</a></p>
+    </section>
+    <!-- /privacy-2.1.1 -->
 </body>
 </html>

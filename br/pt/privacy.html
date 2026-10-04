@@ -512,32 +512,24 @@
                 <p class="text-gray-700 mb-4">Coletamos relatórios anônimos de falhas e logs de erros não fatais sob nosso interesse legítimo em manter o aplicativo estável (RGPD Artigo 6(1)(f); bases legais equivalentes sob DPDPA e estruturas similares). Os relatórios incluem rastros de pilha, modelo do dispositivo, versão do sistema operacional, versão do aplicativo e região aproximada (derivada do IP; o próprio IP não é armazenado). Nunca incluímos suas transações, saldos, nomes ou outras informações pessoais. Você pode desativar os relatórios de falhas a qualquer momento em Configurações → Privacidade → Relatórios de Falhas.</p>
 
                 
+    <!-- privacy-2.1.1 -->
     <section id="ai-parse" class="privacy-section">
-      <h2>AI Statement Parsing (Plus feature)</h2>
-      <p>The AI Parse feature, available to Plus subscribers, uses third-party AI providers to extract transactions from bank and credit card statements. When you use this feature, the statement file (PDF, image, or CSV) is sent to the AI provider you select.</p>
-      <h3>Subprocessors</h3>
-      <ul>
-        <li><strong>Anthropic</strong> (Claude) &mdash; United States</li>
-        <li><strong>OpenAI</strong> (GPT-4o) &mdash; United States</li>
-        <li><strong>Google</strong> (Gemini) &mdash; United States</li>
-      </ul>
-      <h3>What is sent</h3>
-      <ul>
-        <li>The bank or credit card statement file you upload</li>
-        <li>Country code (for regional parsing hints, e.g. date formats)</li>
-        <li>Currency code</li>
-      </ul>
-      <h3>What is NOT sent</h3>
-      <ul>
-        <li>Your name, email, or account credentials</li>
-        <li>Statements from previous uploads (each parse is isolated)</li>
-        <li>Device identifiers beyond what Firebase Auth requires</li>
-      </ul>
-      <h3>Data retention</h3>
-      <p>EZer does NOT store your statement file on its servers. AI providers may retain the file temporarily (typically 30 days) for abuse prevention and service quality, per their own privacy policies.</p>
-      <h3>Your choice</h3>
-      <p>AI Parse is opt-in only &mdash; you are prompted for explicit consent on first use. You can revoke consent anytime in Settings &rarr; Privacy. Without consent, AI Parse is disabled; all other features continue to work locally.</p>
+      <h2 class="text-2xl font-bold mt-8 mb-4">Análise de extratos com IA (EZer Plus, opcional)</h2>
+      <p class="text-gray-700 mb-4">A análise de extratos com IA transforma em transações um extrato bancário ou de cartão de crédito que você escolhe (PDF, imagem ou CSV). Ela fica desativada até você dar seu consentimento no app, e você pode retirá-lo a qualquer momento em Configurações → Painel de privacidade. Todos os outros recursos funcionam sem ela.</p>
+      <p class="text-gray-700 mb-4">O app envia o extrato ao nosso servidor, que envia o conteúdo, com os códigos de país e moeda, o tipo de extrato e os nomes das suas categorias, ao nosso provedor de IA: Anthropic (Claude), nos Estados Unidos. Seu nome, e-mail e ID da conta não são enviados à Anthropic, e nenhum outro provedor de IA recebe seu extrato. A Anthropic pode guardar o que recebe por um período limitado (por exemplo, até 30 dias) para monitorar abusos.</p>
+      <p class="text-gray-700 mb-4">O arquivo do extrato não é armazenado em nossos servidores. O resultado da análise fica em nosso banco de dados, vinculado à sua conta, para que o mesmo extrato não seja analisado e cobrado de novo; você pode desativar isso em Configurações → Segurança, e “Excluir todos os dados” o remove.</p>
     </section>
+    <section id="household" class="privacy-section">
+      <h2 class="text-2xl font-bold mt-8 mb-4">Compartilhamento familiar (EZer Plus, opcional, Android)</h2>
+      <p class="text-gray-700 mb-4">No app para Android, até 6 pessoas podem compartilhar transações, orçamentos, metas e contas, dividir despesas e acertar contas como um grupo familiar. Cada membro precisa do EZer Plus e deve entrar com Google ou Microsoft, e você só entra por convite de um membro. Depois de entrar, o que você registra é compartilhado com o grupo por padrão; em Configurações → Família você pode excluir categorias, ocultar contas ou parar de compartilhar itens específicos. Só os outros membros do seu grupo veem seus itens compartilhados.</p>
+      <p class="text-gray-700 mb-4">Os itens compartilhados têm criptografia de ponta a ponta: valores, descrições, estabelecimentos, notas, categorias e outros detalhes são criptografados no seu celular (AES-256-GCM) com uma chave do grupo que nunca chega legível aos nossos servidores, por isso não conseguimos lê-los. Para operar o grupo, nosso servidor guarda o nome do grupo, o nome, a função e o ID da conta de cada membro e a data, o tipo e o status de cada item compartilhado, no Google Cloud Firestore na Índia (Mumbai, asia-south1); as funções de servidor do grupo rodam na mesma região. Ao sair, você pode excluir o que compartilhou; o proprietário pode excluir o grupo; e “Excluir todos os dados” remove seus itens compartilhados e qualquer grupo do qual você seja proprietário.</p>
+    </section>
+    <section id="data-transfers" class="privacy-section">
+      <h2 class="text-2xl font-bold mt-8 mb-4">Transferências internacionais de dados</h2>
+      <p class="text-gray-700 mb-4">Os dados em nossos servidores são processados pelo Google Cloud (Firebase). Nosso banco de dados fica na Índia (Mumbai, asia-south1). As funções de compartilhamento familiar rodam na Índia (asia-south1); as de análise com IA, assinaturas e compras rodam nos Estados Unidos (us-central1). A análise com IA também envia o conteúdo do extrato à Anthropic nos Estados Unidos. Quando seus dados são transferidos para fora do seu país, nos baseamos nas Cláusulas Contratuais Padrão da Comissão Europeia (e, para usuários do Reino Unido, no Adendo de Transferência Internacional de Dados do Reino Unido) incluídas no Adendo de Processamento de Dados do Google Cloud e no da Anthropic. Você pode pedir uma cópia em privacy@ezerapp.com.</p>
+      <p class="text-gray-700 mb-4">Detalhes completos: <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">Política de privacidade do Android</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">Política de privacidade do iOS</a></p>
+    </section>
+    <!-- /privacy-2.1.1 -->
     <!-- AUTO-INSERT, PENDING TRANSLATION -->
     <section id="art22" class="privacy-section">
       <h2>Automated Decision-Making (GDPR Art. 22)</h2>

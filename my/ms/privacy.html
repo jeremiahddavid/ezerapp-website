@@ -277,31 +277,23 @@
                 <p class="text-gray-700 mb-4">Kami mengumpul laporan kerosakan tanpa nama dan log ralat tidak maut berdasarkan kepentingan sah kami untuk memastikan kestabilan aplikasi (GDPR Perkara 6(1)(f); asas undang-undang setara di bawah DPDPA dan rangka kerja serupa). Laporan termasuk jejak tindanan, model peranti, versi sistem pengendalian, versi aplikasi, dan kawasan anggaran (diperolehi daripada IP; IP itu sendiri tidak disimpan). Kami tidak pernah memasukkan transaksi, baki, nama, atau maklumat peribadi lain anda. Anda boleh melumpuhkan laporan kerosakan pada bila-bila masa di Tetapan → Privasi → Laporan Kerosakan.</p>
 
                 
+    <!-- privacy-2.1.1 -->
     <section id="ai-parse" class="privacy-section">
-      <h2>AI Statement Parsing (Plus feature)</h2>
-      <p>The AI Parse feature, available to Plus subscribers, uses third-party AI providers to extract transactions from bank and credit card statements. When you use this feature, the statement file (PDF, image, or CSV) is sent to the AI provider you select.</p>
-      <h3>Subprocessors</h3>
-      <ul>
-        <li><strong>Anthropic</strong> (Claude) &mdash; United States</li>
-        <li><strong>OpenAI</strong> (GPT-4o) &mdash; United States</li>
-        <li><strong>Google</strong> (Gemini) &mdash; United States</li>
-      </ul>
-      <h3>What is sent</h3>
-      <ul>
-        <li>The bank or credit card statement file you upload</li>
-        <li>Country code (for regional parsing hints, e.g. date formats)</li>
-        <li>Currency code</li>
-      </ul>
-      <h3>What is NOT sent</h3>
-      <ul>
-        <li>Your name, email, or account credentials</li>
-        <li>Statements from previous uploads (each parse is isolated)</li>
-        <li>Device identifiers beyond what Firebase Auth requires</li>
-      </ul>
-      <h3>Data retention</h3>
-      <p>EZer does NOT store your statement file on its servers. AI providers may retain the file temporarily (typically 30 days) for abuse prevention and service quality, per their own privacy policies.</p>
-      <h3>Your choice</h3>
-      <p>AI Parse is opt-in only &mdash; you are prompted for explicit consent on first use. You can revoke consent anytime in Settings &rarr; Privacy. Without consent, AI Parse is disabled; all other features continue to work locally.</p>
+      <h2 class="text-2xl font-bold mt-8 mb-4">Penghuraian Penyata dengan AI (EZer Plus, pilihan)</h2>
+      <p class="text-gray-700 mb-4">Penghuraian dengan AI menukar penyata bank atau kad kredit yang anda pilih (PDF, imej atau CSV) kepada transaksi. Ciri ini dimatikan sehingga anda memberi persetujuan dalam aplikasi, dan anda boleh menarik balik persetujuan pada bila-bila masa di Tetapan → Papan Pemuka Privasi. Semua ciri lain berfungsi tanpanya.</p>
+      <p class="text-gray-700 mb-4">Aplikasi menghantar penyata ke pelayan kami, yang menghantar kandungannya, bersama kod negara dan mata wang, jenis penyata dan nama kategori anda, kepada penyedia AI kami: Anthropic (Claude), di Amerika Syarikat. Nama, e-mel dan ID akaun anda tidak dihantar kepada Anthropic, dan tiada penyedia AI lain menerima penyata anda. Anthropic mungkin menyimpan apa yang diterimanya untuk tempoh terhad (contohnya sehingga 30 hari) bagi pemantauan penyalahgunaan.</p>
+      <p class="text-gray-700 mb-4">Fail penyata tidak disimpan di pelayan kami. Hasil penghuraian disimpan dalam pangkalan data kami, dipautkan kepada akaun anda, supaya penyata yang sama tidak dihurai dan dicaj semula; anda boleh mematikannya di Tetapan → Keselamatan, dan "Padam Semua Data" memadamkannya.</p>
     </section>
+    <section id="household" class="privacy-section">
+      <h2 class="text-2xl font-bold mt-8 mb-4">Perkongsian Isi Rumah (EZer Plus, pilihan, Android)</h2>
+      <p class="text-gray-700 mb-4">Dalam aplikasi Android, sehingga 6 orang boleh berkongsi transaksi, bajet, matlamat dan bil, membahagi perbelanjaan dan menyelesaikan hutang sebagai satu isi rumah. Setiap ahli memerlukan EZer Plus dan mesti log masuk dengan Google atau Microsoft, dan anda hanya menyertai melalui jemputan daripada ahli. Selepas menyertai, apa yang anda rekod dikongsi dengan isi rumah secara lalai; di Tetapan → Isi Rumah anda boleh mengecualikan kategori, menyembunyikan akaun atau berhenti berkongsi item tertentu. Hanya ahli lain dalam isi rumah anda melihat item yang anda kongsi.</p>
+      <p class="text-gray-700 mb-4">Item yang dikongsi disulitkan hujung ke hujung: jumlah, keterangan, peniaga, nota, kategori dan butiran lain disulitkan pada telefon anda (AES-256-GCM) dengan kunci isi rumah yang tidak pernah sampai ke pelayan kami dalam bentuk yang boleh dibaca, jadi kami tidak boleh membacanya. Untuk menjalankan isi rumah, pelayan kami menyimpan nama isi rumah, nama, peranan dan ID akaun setiap ahli, serta tarikh, jenis dan status setiap item yang dikongsi, dalam Google Cloud Firestore di India (Mumbai, asia-south1); fungsi pelayan isi rumah berjalan di rantau yang sama. Apabila keluar, anda boleh memadam item yang anda kongsi; pemilik boleh memadam isi rumah; dan "Padam Semua Data" memadam item yang anda kongsi dan mana-mana isi rumah milik anda.</p>
+    </section>
+    <section id="data-transfers" class="privacy-section">
+      <h2 class="text-2xl font-bold mt-8 mb-4">Pemindahan Data Antarabangsa</h2>
+      <p class="text-gray-700 mb-4">Data di pelayan kami diproses oleh Google Cloud (Firebase). Pangkalan data kami terletak di India (Mumbai, asia-south1). Fungsi perkongsian isi rumah berjalan di India (asia-south1); fungsi penghuraian dengan AI, langganan dan pembelian berjalan di Amerika Syarikat (us-central1). Penghuraian dengan AI juga menghantar kandungan penyata kepada Anthropic di Amerika Syarikat. Apabila data anda dipindahkan ke luar negara anda, kami bergantung pada Klausa Kontrak Standard Suruhanjaya Eropah (dan, bagi pengguna UK, Adendum Pemindahan Data Antarabangsa UK) yang termasuk dalam Adendum Pemprosesan Data Google Cloud dan Anthropic. Anda boleh meminta salinan di privacy@ezerapp.com.</p>
+      <p class="text-gray-700 mb-4">Butiran penuh: <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">Dasar privasi Android</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">Dasar privasi iOS</a></p>
+    </section>
+    <!-- /privacy-2.1.1 -->
 </body>
 </html>

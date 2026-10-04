@@ -195,32 +195,24 @@
                 <p class="text-gray-700 mb-4">Recopilamos informes anónimos de fallos y registros de errores no fatales bajo nuestro interés legítimo en mantener la estabilidad de la aplicación (RGPD Artículo 6(1)(f); bases legales equivalentes bajo DPDPA y marcos similares). Estos informes incluyen rastros de pila, modelo de dispositivo, versión del sistema operativo, versión de la aplicación y región aproximada (derivada de la IP; la IP en sí no se almacena). Nunca incluimos tus transacciones, saldos, nombres u otra información personal. Puedes desactivar los informes de fallos en cualquier momento en Configuración → Privacidad → Reportes de Fallos.</p>
 
                 
+                <!-- privacy-2.1.1 -->
                 <section id="ai-parse" class="privacy-section">
-                  <h2>AI Statement Parsing (Plus feature)</h2>
-                  <p>The AI Parse feature, available to Plus subscribers, uses third-party AI providers to extract transactions from bank and credit card statements. When you use this feature, the statement file (PDF, image, or CSV) is sent to the AI provider you select.</p>
-                  <h3>Subprocessors</h3>
-                  <ul>
-                    <li><strong>Anthropic</strong> (Claude) &mdash; United States</li>
-                    <li><strong>OpenAI</strong> (GPT-4o) &mdash; United States</li>
-                    <li><strong>Google</strong> (Gemini) &mdash; United States</li>
-                  </ul>
-                  <h3>What is sent</h3>
-                  <ul>
-                    <li>The bank or credit card statement file you upload</li>
-                    <li>Country code (for regional parsing hints, e.g. date formats)</li>
-                    <li>Currency code</li>
-                  </ul>
-                  <h3>What is NOT sent</h3>
-                  <ul>
-                    <li>Your name, email, or account credentials</li>
-                    <li>Statements from previous uploads (each parse is isolated)</li>
-                    <li>Device identifiers beyond what Firebase Auth requires</li>
-                  </ul>
-                  <h3>Data retention</h3>
-                  <p>EZer does NOT store your statement file on its servers. AI providers may retain the file temporarily (typically 30 days) for abuse prevention and service quality, per their own privacy policies.</p>
-                  <h3>Your choice</h3>
-                  <p>AI Parse is opt-in only &mdash; you are prompted for explicit consent on first use. You can revoke consent anytime in Settings &rarr; Privacy. Without consent, AI Parse is disabled; all other features continue to work locally.</p>
+                  <h2 class="text-2xl font-bold mt-8 mb-4">Análisis de extractos con IA (EZer Plus, opcional)</h2>
+                  <p class="text-gray-700 mb-4">El análisis de extractos con IA convierte en transacciones un extracto bancario o de tarjeta de crédito que tú eliges (PDF, imagen o CSV). Está desactivado hasta que das tu consentimiento en la app, y puedes retirarlo en cualquier momento en Ajustes → Panel de privacidad. Todas las demás funciones siguen funcionando sin él.</p>
+                  <p class="text-gray-700 mb-4">La app envía el extracto a nuestro servidor, que envía su contenido, junto con los códigos de país y moneda, el tipo de extracto y los nombres de tus categorías, a nuestro proveedor de IA: Anthropic (Claude), en Estados Unidos. Tu nombre, tu correo electrónico y tu ID de cuenta no se envían a Anthropic, y ningún otro proveedor de IA recibe tu extracto. Anthropic puede conservar lo que recibe durante un periodo limitado (por ejemplo, hasta 30 días) para vigilar abusos.</p>
+                  <p class="text-gray-700 mb-4">El archivo del extracto no se guarda en nuestros servidores. El resultado del análisis se guarda en nuestra base de datos, vinculado a tu cuenta, para no analizar ni cobrar dos veces el mismo extracto; puedes desactivarlo en Ajustes → Seguridad, y «Borrar todos los datos» lo elimina.</p>
                 </section>
+                <section id="household" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">Hogar compartido (EZer Plus, opcional, Android)</h2>
+                  <p class="text-gray-700 mb-4">En la app de Android, hasta 6 personas pueden compartir transacciones, presupuestos, metas y facturas, dividir gastos y saldar cuentas como un hogar. Cada miembro necesita EZer Plus y debe iniciar sesión con Google o Microsoft, y solo te unes mediante una invitación de un miembro. Al unirte, lo que registras se comparte con el hogar por defecto; en Ajustes → Hogar puedes excluir categorías, ocultar cuentas o dejar de compartir elementos concretos. Solo los demás miembros de tu hogar ven lo que compartes.</p>
+                  <p class="text-gray-700 mb-4">Los elementos compartidos tienen cifrado de extremo a extremo: importes, descripciones, comercios, notas, categorías y demás detalles se cifran en tu teléfono (AES-256-GCM) con una clave del hogar que nunca llega legible a nuestros servidores, por lo que no podemos leerlos. Para gestionar el hogar, nuestro servidor guarda el nombre del hogar, el nombre, el rol y el ID de cuenta de cada miembro, y la fecha, el tipo y el estado de cada elemento compartido, en Google Cloud Firestore en India (Bombay, asia-south1); las funciones de servidor del hogar se ejecutan en la misma región. Al salir puedes borrar lo que compartiste, el propietario puede eliminar el hogar, y «Borrar todos los datos» elimina tus elementos compartidos y cualquier hogar del que seas propietario.</p>
+                </section>
+                <section id="data-transfers" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">Transferencias internacionales de datos</h2>
+                  <p class="text-gray-700 mb-4">Los datos de nuestros servidores los procesa Google Cloud (Firebase). Nuestra base de datos está en India (Bombay, asia-south1). Las funciones del hogar compartido se ejecutan en India (asia-south1); las de análisis con IA, suscripciones y compras se ejecutan en Estados Unidos (us-central1). El análisis con IA envía además el contenido del extracto a Anthropic en Estados Unidos. Cuando tus datos se transfieren fuera de tu país, nos basamos en las Cláusulas Contractuales Tipo de la Comisión Europea (y, para usuarios del Reino Unido, el Addendum de Transferencia Internacional de Datos del Reino Unido) incluidas en el Anexo de Tratamiento de Datos de Google Cloud y en el de Anthropic. Puedes pedir una copia en privacy@ezerapp.com.</p>
+                  <p class="text-gray-700 mb-4">Información completa: <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">Política de privacidad de Android</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">Política de privacidad de iOS</a></p>
+                </section>
+                <!-- /privacy-2.1.1 -->
                 <h2 class="text-2xl font-bold mt-8 mb-4">7. Contacto</h2>
                 <p class="text-gray-700 mb-4">Para cualquier pregunta sobre privacidad, contáctanos en:</p>
                 <p class="text-gray-700"><strong>Correo electrónico:</strong> <a href="mailto:privacy@ezerapp.com" class="text-indigo-600 hover:underline">privacy@ezerapp.com</a></p>

@@ -392,31 +392,23 @@
                 <p class="text-gray-700 mb-4">অ্যাপটিকে স্থিতিশীল রাখার জন্য আমাদের বৈধ স্বার্থের অধীনে (GDPR অনুচ্ছেদ 6(1)(f); DPDPA এবং অনুরূপ ফ্রেমওয়ার্কের অধীনে সমতুল্য আইনি ভিত্তি) আমরা বেনামী ক্র্যাশ রিপোর্ট এবং অ-মারাত্মক ত্রুটি লগ সংগ্রহ করি। রিপোর্টগুলিতে স্ট্যাক ট্রেস, ডিভাইসের মডেল, অপারেটিং সিস্টেম সংস্করণ, অ্যাপ সংস্করণ এবং আনুমানিক অঞ্চল (IP থেকে প্রাপ্ত; IP নিজেই সংরক্ষিত নয়) অন্তর্ভুক্ত রয়েছে। আমরা কখনই আপনার লেনদেন, ব্যালেন্স, নাম বা অন্যান্য ব্যক্তিগত তথ্য অন্তর্ভুক্ত করি না। আপনি যেকোনো সময় সেটিংস → গোপনীয়তা → ক্র্যাশ রিপোর্টিং থেকে এটি নিষ্ক্রিয় করতে পারেন।</p>
 
                 
+    <!-- privacy-2.1.1 -->
     <section id="ai-parse" class="privacy-section">
-      <h2>AI Statement Parsing (Plus feature)</h2>
-      <p>The AI Parse feature, available to Plus subscribers, uses third-party AI providers to extract transactions from bank and credit card statements. When you use this feature, the statement file (PDF, image, or CSV) is sent to the AI provider you select.</p>
-      <h3>Subprocessors</h3>
-      <ul>
-        <li><strong>Anthropic</strong> (Claude) &mdash; United States</li>
-        <li><strong>OpenAI</strong> (GPT-4o) &mdash; United States</li>
-        <li><strong>Google</strong> (Gemini) &mdash; United States</li>
-      </ul>
-      <h3>What is sent</h3>
-      <ul>
-        <li>The bank or credit card statement file you upload</li>
-        <li>Country code (for regional parsing hints, e.g. date formats)</li>
-        <li>Currency code</li>
-      </ul>
-      <h3>What is NOT sent</h3>
-      <ul>
-        <li>Your name, email, or account credentials</li>
-        <li>Statements from previous uploads (each parse is isolated)</li>
-        <li>Device identifiers beyond what Firebase Auth requires</li>
-      </ul>
-      <h3>Data retention</h3>
-      <p>EZer does NOT store your statement file on its servers. AI providers may retain the file temporarily (typically 30 days) for abuse prevention and service quality, per their own privacy policies.</p>
-      <h3>Your choice</h3>
-      <p>AI Parse is opt-in only &mdash; you are prompted for explicit consent on first use. You can revoke consent anytime in Settings &rarr; Privacy. Without consent, AI Parse is disabled; all other features continue to work locally.</p>
+      <h2 class="text-2xl font-bold mt-8 mb-4">AI দিয়ে স্টেটমেন্ট পার্সিং (EZer Plus, ঐচ্ছিক)</h2>
+      <p class="text-gray-700 mb-4">AI স্টেটমেন্ট পার্সিং আপনার বেছে নেওয়া ব্যাংক বা ক্রেডিট কার্ড স্টেটমেন্ট (PDF, ছবি বা CSV) লেনদেনে রূপান্তর করে। অ্যাপে আপনি সম্মতি না দেওয়া পর্যন্ত এটি বন্ধ থাকে, এবং সেটিংস → প্রাইভেসি ড্যাশবোর্ড থেকে যেকোনো সময় সম্মতি প্রত্যাহার করতে পারেন। অন্য সব ফিচার এটি ছাড়াই কাজ করে।</p>
+      <p class="text-gray-700 mb-4">অ্যাপ স্টেটমেন্টটি আমাদের সার্ভারে পাঠায়, যা এর বিষয়বস্তু দেশ ও মুদ্রার কোড, স্টেটমেন্টের ধরন এবং আপনার ক্যাটাগরির নামসহ আমাদের AI প্রদানকারী Anthropic (Claude), মার্কিন যুক্তরাষ্ট্র, এর কাছে পাঠায়। আপনার নাম, ইমেল ও অ্যাকাউন্ট ID Anthropic-এ পাঠানো হয় না, এবং অন্য কোনো AI প্রদানকারী আপনার স্টেটমেন্ট পায় না। অপব্যবহার পর্যবেক্ষণের জন্য Anthropic প্রাপ্ত তথ্য সীমিত সময় (যেমন, ৩০ দিন পর্যন্ত) রাখতে পারে।</p>
+      <p class="text-gray-700 mb-4">স্টেটমেন্ট ফাইলটি আমাদের সার্ভারে সংরক্ষণ করা হয় না। পার্স করা ফলাফল আপনার অ্যাকাউন্টের সঙ্গে যুক্ত করে আমাদের ডেটাবেসে রাখা হয়, যাতে একই স্টেটমেন্ট আবার পার্স ও চার্জ না হয়; সেটিংস → নিরাপত্তা থেকে এটি বন্ধ করতে পারেন, এবং "সব ডেটা মুছুন" এটি মুছে দেয়।</p>
     </section>
+    <section id="household" class="privacy-section">
+      <h2 class="text-2xl font-bold mt-8 mb-4">পরিবার শেয়ারিং (EZer Plus, ঐচ্ছিক, Android)</h2>
+      <p class="text-gray-700 mb-4">Android অ্যাপে সর্বোচ্চ ৬ জন একটি পরিবার হিসেবে লেনদেন, বাজেট, লক্ষ্য ও বিল শেয়ার করতে, খরচ ভাগ করতে এবং হিসাব মেটাতে পারেন। প্রত্যেক সদস্যের EZer Plus প্রয়োজন এবং Google বা Microsoft দিয়ে সাইন ইন করতে হয়; শুধু কোনো সদস্যের আমন্ত্রণের মাধ্যমেই যোগ দেওয়া যায়। যোগ দেওয়ার পর আপনি যা লেখেন তা ডিফল্টভাবে পরিবারের সঙ্গে শেয়ার হয়; সেটিংস → পরিবার থেকে ক্যাটাগরি বাদ দিতে, অ্যাকাউন্ট লুকাতে বা নির্দিষ্ট আইটেম শেয়ার করা বন্ধ করতে পারেন। আপনার শেয়ার করা আইটেম শুধু আপনার পরিবারের অন্য সদস্যরাই দেখেন।</p>
+      <p class="text-gray-700 mb-4">শেয়ার করা আইটেম এন্ড-টু-এন্ড এনক্রিপ্টেড: পরিমাণ, বিবরণ, বিক্রেতা, নোট, ক্যাটাগরি ও অন্যান্য তথ্য আপনার ফোনেই পরিবারের কী দিয়ে এনক্রিপ্ট (AES-256-GCM) করা হয়, যা কখনো পড়ার উপযোগী রূপে আমাদের সার্ভারে পৌঁছায় না, তাই আমরা এগুলো পড়তে পারি না। পরিবার চালাতে আমাদের সার্ভার পরিবারের নাম, প্রত্যেক সদস্যের নাম, ভূমিকা ও অ্যাকাউন্ট ID, এবং প্রতিটি শেয়ার করা আইটেমের তারিখ, ধরন ও অবস্থা ভারতের Google Cloud Firestore-এ (মুম্বাই, asia-south1) সংরক্ষণ করে; পরিবারের সার্ভার ফাংশনও একই অঞ্চলে চলে। চলে যাওয়ার সময় আপনি শেয়ার করা আইটেম মুছতে পারেন, মালিক পরিবার মুছতে পারেন, এবং "সব ডেটা মুছুন" আপনার শেয়ার করা আইটেম ও আপনার মালিকানাধীন যেকোনো পরিবার মুছে দেয়।</p>
+    </section>
+    <section id="data-transfers" class="privacy-section">
+      <h2 class="text-2xl font-bold mt-8 mb-4">আন্তর্জাতিক ডেটা স্থানান্তর</h2>
+      <p class="text-gray-700 mb-4">আমাদের সার্ভারে রাখা ডেটা Google Cloud (Firebase) প্রক্রিয়া করে। আমাদের ডেটাবেস ভারতে (মুম্বাই, asia-south1)। পরিবার শেয়ারিংয়ের ফাংশন ভারতে (asia-south1) চলে; AI স্টেটমেন্ট পার্সিং, সাবস্ক্রিপশন ও কেনাকাটার ফাংশন মার্কিন যুক্তরাষ্ট্রে (us-central1) চলে। AI স্টেটমেন্ট পার্সিং স্টেটমেন্টের বিষয়বস্তু মার্কিন যুক্তরাষ্ট্রে Anthropic-এও পাঠায়। আপনার ডেটা আপনার দেশের বাইরে স্থানান্তরিত হলে আমরা Google Cloud ও Anthropic-এর ডেটা প্রসেসিং অ্যাডেন্ডামে অন্তর্ভুক্ত ইউরোপীয় কমিশনের স্ট্যান্ডার্ড কন্ট্রাকচুয়াল ক্লজ (এবং যুক্তরাজ্যের ব্যবহারকারীদের জন্য UK ইন্টারন্যাশনাল ডেটা ট্রান্সফার অ্যাডেন্ডাম) এর ওপর নির্ভর করি। privacy@ezerapp.com-এ এর কপি চাইতে পারেন।</p>
+      <p class="text-gray-700 mb-4">সম্পূর্ণ তথ্য: <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">Android গোপনীয়তা নীতি</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">iOS গোপনীয়তা নীতি</a></p>
+    </section>
+    <!-- /privacy-2.1.1 -->
 </body>
 </html>

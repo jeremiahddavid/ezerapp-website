@@ -174,31 +174,23 @@
                 <p class="text-gray-700 mb-4">เราเก็บรวบรวมรายงานข้อขัดข้องที่ไม่ระบุตัวตนและบันทึกข้อผิดพลาดที่ไม่ร้ายแรงภายใต้ผลประโยชน์อันชอบธรรมของเราในการรักษาเสถียรภาพของแอป (GDPR มาตรา 6(1)(f); ฐานทางกฎหมายที่เทียบเท่าภายใต้ DPDPA และกรอบงานที่คล้ายกัน) รายงานประกอบด้วยการติดตามสแตก รุ่นอุปกรณ์ เวอร์ชันระบบปฏิบัติการ เวอร์ชันแอป และภูมิภาคโดยประมาณ (มาจาก IP; ไม่มีการจัดเก็บ IP เอง) เราจะไม่รวมธุรกรรม ยอดเงิน ชื่อ หรือข้อมูลส่วนบุคคลอื่น ๆ ของคุณ คุณสามารถปิดใช้งานการรายงานข้อขัดข้องได้ตลอดเวลาที่ การตั้งค่า → ความเป็นส่วนตัว → รายงานข้อขัดข้อง.</p>
 
                 
+    <!-- privacy-2.1.1 -->
     <section id="ai-parse" class="privacy-section">
-      <h2>AI Statement Parsing (Plus feature)</h2>
-      <p>The AI Parse feature, available to Plus subscribers, uses third-party AI providers to extract transactions from bank and credit card statements. When you use this feature, the statement file (PDF, image, or CSV) is sent to the AI provider you select.</p>
-      <h3>Subprocessors</h3>
-      <ul>
-        <li><strong>Anthropic</strong> (Claude) &mdash; United States</li>
-        <li><strong>OpenAI</strong> (GPT-4o) &mdash; United States</li>
-        <li><strong>Google</strong> (Gemini) &mdash; United States</li>
-      </ul>
-      <h3>What is sent</h3>
-      <ul>
-        <li>The bank or credit card statement file you upload</li>
-        <li>Country code (for regional parsing hints, e.g. date formats)</li>
-        <li>Currency code</li>
-      </ul>
-      <h3>What is NOT sent</h3>
-      <ul>
-        <li>Your name, email, or account credentials</li>
-        <li>Statements from previous uploads (each parse is isolated)</li>
-        <li>Device identifiers beyond what Firebase Auth requires</li>
-      </ul>
-      <h3>Data retention</h3>
-      <p>EZer does NOT store your statement file on its servers. AI providers may retain the file temporarily (typically 30 days) for abuse prevention and service quality, per their own privacy policies.</p>
-      <h3>Your choice</h3>
-      <p>AI Parse is opt-in only &mdash; you are prompted for explicit consent on first use. You can revoke consent anytime in Settings &rarr; Privacy. Without consent, AI Parse is disabled; all other features continue to work locally.</p>
+      <h2 class="text-2xl font-bold mt-8 mb-4">การอ่านใบแจ้งยอดด้วย AI (EZer Plus, ไม่บังคับ)</h2>
+      <p class="text-gray-700 mb-4">การอ่านใบแจ้งยอดด้วย AI จะแปลงใบแจ้งยอดธนาคารหรือบัตรเครดิตที่คุณเลือก (PDF รูปภาพ หรือ CSV) เป็นรายการธุรกรรม ฟีเจอร์นี้ปิดอยู่จนกว่าคุณจะให้ความยินยอมในแอป และคุณถอนความยินยอมได้ทุกเมื่อที่ การตั้งค่า → แดชบอร์ดความเป็นส่วนตัว ฟีเจอร์อื่นทั้งหมดใช้งานได้โดยไม่ต้องใช้ฟีเจอร์นี้</p>
+      <p class="text-gray-700 mb-4">แอปจะส่งใบแจ้งยอดไปยังเซิร์ฟเวอร์ของเรา ซึ่งจะส่งเนื้อหาพร้อมรหัสประเทศและสกุลเงิน ประเภทใบแจ้งยอด และชื่อหมวดหมู่ของคุณ ไปยังผู้ให้บริการ AI ของเรา คือ Anthropic (Claude) ในสหรัฐอเมริกา ชื่อ อีเมล และ ID บัญชีของคุณจะไม่ถูกส่งไปยัง Anthropic และไม่มีผู้ให้บริการ AI รายอื่นได้รับใบแจ้งยอดของคุณ Anthropic อาจเก็บสิ่งที่ได้รับไว้ในระยะเวลาจำกัด (เช่น สูงสุด 30 วัน) เพื่อตรวจสอบการใช้งานในทางที่ผิด</p>
+      <p class="text-gray-700 mb-4">ไฟล์ใบแจ้งยอดจะไม่ถูกจัดเก็บบนเซิร์ฟเวอร์ของเรา ผลการอ่านจะถูกเก็บไว้ในฐานข้อมูลของเราโดยเชื่อมกับบัญชีของคุณ เพื่อไม่ให้อ่านและเรียกเก็บเงินใบแจ้งยอดเดียวกันซ้ำ คุณปิดการเก็บนี้ได้ที่ การตั้งค่า → ความปลอดภัย และ "ลบข้อมูลทั้งหมด" จะลบข้อมูลนี้</p>
     </section>
+    <section id="household" class="privacy-section">
+      <h2 class="text-2xl font-bold mt-8 mb-4">การแชร์ในครัวเรือน (EZer Plus, ไม่บังคับ, Android)</h2>
+      <p class="text-gray-700 mb-4">ในแอป Android สมาชิกสูงสุด 6 คนสามารถแชร์ธุรกรรม งบประมาณ เป้าหมาย และบิล แบ่งค่าใช้จ่าย และชำระยอดระหว่างกันในฐานะครัวเรือน สมาชิกทุกคนต้องมี EZer Plus และต้องลงชื่อเข้าใช้ด้วย Google หรือ Microsoft และเข้าร่วมได้ผ่านคำเชิญจากสมาชิกเท่านั้น เมื่อเข้าร่วมแล้ว สิ่งที่คุณบันทึกจะแชร์กับครัวเรือนโดยค่าเริ่มต้น คุณสามารถยกเว้นหมวดหมู่ ซ่อนบัญชี หรือหยุดแชร์รายการเดี่ยวได้ที่ การตั้งค่า → ครัวเรือน มีเพียงสมาชิกคนอื่นในครัวเรือนของคุณเท่านั้นที่เห็นรายการที่คุณแชร์</p>
+      <p class="text-gray-700 mb-4">รายการที่แชร์จะได้รับการเข้ารหัสแบบต้นทางถึงปลายทาง: จำนวนเงิน คำอธิบาย ร้านค้า บันทึก หมวดหมู่ และรายละเอียดอื่น ๆ จะถูกเข้ารหัสบนโทรศัพท์ของคุณ (AES-256-GCM) ด้วยกุญแจของครัวเรือนที่ไม่เคยไปถึงเซิร์ฟเวอร์ของเราในรูปแบบที่อ่านได้ เราจึงอ่านข้อมูลเหล่านี้ไม่ได้ เพื่อให้ครัวเรือนทำงานได้ เซิร์ฟเวอร์ของเราจะจัดเก็บชื่อครัวเรือน ชื่อ บทบาท และ ID บัญชีของสมาชิกแต่ละคน รวมถึงวันที่ ประเภท และสถานะของแต่ละรายการที่แชร์ ไว้ใน Google Cloud Firestore ในอินเดีย (มุมไบ, asia-south1) และฟังก์ชันเซิร์ฟเวอร์ของครัวเรือนทำงานในภูมิภาคเดียวกัน เมื่อออกจากครัวเรือน คุณลบรายการที่คุณแชร์ได้ เจ้าของสามารถลบครัวเรือนได้ และ "ลบข้อมูลทั้งหมด" จะลบรายการที่คุณแชร์และครัวเรือนที่คุณเป็นเจ้าของ</p>
+    </section>
+    <section id="data-transfers" class="privacy-section">
+      <h2 class="text-2xl font-bold mt-8 mb-4">การโอนข้อมูลระหว่างประเทศ</h2>
+      <p class="text-gray-700 mb-4">ข้อมูลบนเซิร์ฟเวอร์ของเราประมวลผลโดย Google Cloud (Firebase) ฐานข้อมูลของเราอยู่ในอินเดีย (มุมไบ, asia-south1) ฟังก์ชันการแชร์ในครัวเรือนทำงานในอินเดีย (asia-south1) ส่วนฟังก์ชันการอ่านใบแจ้งยอดด้วย AI การสมัครสมาชิก และการซื้อ ทำงานในสหรัฐอเมริกา (us-central1) การอ่านใบแจ้งยอดด้วย AI ยังส่งเนื้อหาใบแจ้งยอดไปยัง Anthropic ในสหรัฐอเมริกาด้วย เมื่อข้อมูลของคุณถูกโอนออกนอกประเทศของคุณ เราอาศัยข้อสัญญามาตรฐานของคณะกรรมาธิการยุโรป (และสำหรับผู้ใช้ในสหราชอาณาจักร คือภาคผนวกการโอนข้อมูลระหว่างประเทศของสหราชอาณาจักร) ที่รวมอยู่ในภาคผนวกการประมวลผลข้อมูลของ Google Cloud และของ Anthropic คุณขอสำเนาได้ที่ privacy@ezerapp.com</p>
+      <p class="text-gray-700 mb-4">รายละเอียดทั้งหมด: <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">นโยบายความเป็นส่วนตัวสำหรับ Android</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">นโยบายความเป็นส่วนตัวสำหรับ iOS</a></p>
+    </section>
+    <!-- /privacy-2.1.1 -->
 </body>
 </html>
