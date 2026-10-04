@@ -94,6 +94,26 @@
         .theme-btn { color: var(--text-muted); cursor: pointer; transition: all 0.2s; }
         .theme-btn:hover { color: var(--text-primary); }
         .theme-btn.active { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%); color: white; box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3); }
+        /* system dark mirrors the [data-theme="dark"] rules above */
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .bg-gray-50, :root:not([data-theme="light"]) .bg-gray-100 { background: var(--bg-primary) !important; }
+            :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; }
+            :root:not([data-theme="light"]) .bg-indigo-50 { background: rgba(79, 70, 229, 0.15) !important; }
+            :root:not([data-theme="light"]) .bg-indigo-100 { background: rgba(79, 70, 229, 0.2) !important; }
+            :root:not([data-theme="light"]) .bg-green-100 { background: rgba(34, 197, 94, 0.15) !important; }
+            :root:not([data-theme="light"]) .bg-purple-100 { background: rgba(147, 51, 234, 0.15) !important; }
+            :root:not([data-theme="light"]) .bg-pink-100 { background: rgba(236, 72, 153, 0.15) !important; }
+            :root:not([data-theme="light"]) .bg-blue-100 { background: rgba(59, 130, 246, 0.15) !important; }
+            :root:not([data-theme="light"]) .text-gray-600, :root:not([data-theme="light"]) .text-gray-700 { color: var(--text-secondary) !important; }
+            :root:not([data-theme="light"]) .text-gray-800, :root:not([data-theme="light"]) .text-gray-900 { color: var(--text-primary) !important; }
+            :root:not([data-theme="light"]) .text-gray-400, :root:not([data-theme="light"]) .text-gray-500 { color: var(--text-muted) !important; }
+            :root:not([data-theme="light"]) .text-indigo-600 { color: #818cf8 !important; }
+            :root:not([data-theme="light"]) .text-green-600 { color: #4ade80 !important; }
+            :root:not([data-theme="light"]) .text-green-800 { color: #86efac !important; }
+            :root:not([data-theme="light"]) .bg-gradient-to-l .text-white, :root:not([data-theme="light"]) .bg-gradient-to-br .text-white, :root:not([data-theme="light"]) [class*="from-indigo"] .text-white { color: white !important; }
+            :root:not([data-theme="light"]) .border-gray-100, :root:not([data-theme="light"]) .border-gray-200 { border-color: var(--border) !important; }
+            :root:not([data-theme="light"]) .shadow-sm, :root:not([data-theme="light"]) .shadow, :root:not([data-theme="light"]) .shadow-lg { box-shadow: 0 4px 20px var(--card-shadow) !important; }
+        }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
     <script src="/js/analytics.js"></script>

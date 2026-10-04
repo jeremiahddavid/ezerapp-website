@@ -32,7 +32,7 @@
         [data-theme="dark"] .bg-white { background: var(--bg-card) !important; }
         [data-theme="dark"] .text-gray-600, [data-theme="dark"] .text-gray-700 { color: var(--text-secondary) !important; }
         [data-theme="dark"] .border-gray-200 { border-color: var(--border) !important; }
-        [data-theme="dark"] .bg-gray-50 { background: var(--bg-secondary) !important; }
+        [data-theme="dark"] .bg-gray-50 { background: var(--bg-primary) !important; }
         .theme-btn { color: var(--text-muted); cursor: pointer; }
         .theme-btn.active { background: linear-gradient(135deg, #4f46e5 0%, #9333ea 100%); color: white; }
     
@@ -97,6 +97,13 @@
     .skip-to-content:focus {
         top: 0;
     }
+        /* system dark mirrors the [data-theme="dark"] rules above */
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) .bg-white { background: var(--bg-card) !important; }
+            :root:not([data-theme="light"]) .text-gray-600, :root:not([data-theme="light"]) .text-gray-700 { color: var(--text-secondary) !important; }
+            :root:not([data-theme="light"]) .border-gray-200 { border-color: var(--border) !important; }
+            :root:not([data-theme="light"]) .bg-gray-50 { background: var(--bg-primary) !important; }
+        }
 </style>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QSMLH8YQKG"></script>
