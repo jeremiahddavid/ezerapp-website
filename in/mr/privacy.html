@@ -332,32 +332,24 @@
                 </p>
 
                 <!-- AUTO-INSERT, PENDING TRANSLATION -->
+                <!-- privacy-2.1.1 -->
                 <section id="ai-parse" class="privacy-section">
-                  <h2>AI Statement Parsing (Plus feature)</h2>
-                  <p>The AI Parse feature, available to Plus subscribers, uses third-party AI providers to extract transactions from bank and credit card statements. When you use this feature, the statement file (PDF, image, or CSV) is sent to the AI provider you select.</p>
-                  <h3>Subprocessors</h3>
-                  <ul>
-                    <li><strong>Anthropic</strong> (Claude) &mdash; United States</li>
-                    <li><strong>OpenAI</strong> (GPT-4o) &mdash; United States</li>
-                    <li><strong>Google</strong> (Gemini) &mdash; United States</li>
-                  </ul>
-                  <h3>What is sent</h3>
-                  <ul>
-                    <li>The bank or credit card statement file you upload</li>
-                    <li>Country code (for regional parsing hints, e.g. date formats)</li>
-                    <li>Currency code</li>
-                  </ul>
-                  <h3>What is NOT sent</h3>
-                  <ul>
-                    <li>Your name, email, or account credentials</li>
-                    <li>Statements from previous uploads (each parse is isolated)</li>
-                    <li>Device identifiers beyond what Firebase Auth requires</li>
-                  </ul>
-                  <h3>Data retention</h3>
-                  <p>EZer does NOT store your statement file on its servers. AI providers may retain the file temporarily (typically 30 days) for abuse prevention and service quality, per their own privacy policies.</p>
-                  <h3>Your choice</h3>
-                  <p>AI Parse is opt-in only &mdash; you are prompted for explicit consent on first use. You can revoke consent anytime in Settings &rarr; Privacy. Without consent, AI Parse is disabled; all other features continue to work locally.</p>
+                  <h2 class="text-2xl font-bold mt-8 mb-4">AI Statement Parsing (EZer Plus, optional)</h2>
+                  <p class="text-gray-700 mb-4">AI statement parsing turns a bank or credit card statement that you choose (PDF, image or CSV) into transactions. It is off until you give consent in the app, and you can withdraw consent at any time in Settings → Privacy Dashboard. All other features work without it.</p>
+                  <p class="text-gray-700 mb-4">The app sends the statement to our server, which sends its content, with the country and currency codes, statement type and your category names, to our AI provider: Anthropic (Claude), in the United States. Your name, email and account ID are not sent to Anthropic, and no other AI provider receives your statement. Anthropic may keep what it receives for a limited period (for example, up to 30 days) for abuse monitoring.</p>
+                  <p class="text-gray-700 mb-4">The statement file is not stored on our servers. The parsed result is kept in our database, linked to your account, so the same statement is not parsed and charged again; you can turn this off in Settings → Security Settings, and Delete All Data removes it.</p>
                 </section>
+                <section id="household" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">Household Sharing (EZer Plus, optional, Android)</h2>
+                  <p class="text-gray-700 mb-4">In the Android app, up to 6 people can share transactions, budgets, goals and bills, split bills and settle up as a household. Every member needs EZer Plus and must sign in with Google or Microsoft, and you join only through an invite from a member. Once you join, what you record is shared with the household by default; in Settings → Household you can exclude categories, hide accounts or stop sharing single items. Only the other members of your household see your shared items.</p>
+                  <p class="text-gray-700 mb-4">Shared items are end-to-end encrypted: amounts, descriptions, merchants, notes, categories and other details are encrypted on your phone (AES-256-GCM) with a household key that never reaches our servers in readable form, so we cannot read them. To run the household, our server stores the household name, each member's name, role and account ID, and the date, type and status of each shared item, in Google Cloud Firestore in India (Mumbai, asia-south1); the household server functions run in the same region. When you leave you can delete the items you shared, the owner can delete the household, and Delete All Data deletes your shared items and any household you own.</p>
+                </section>
+                <section id="data-transfers" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">International Data Transfers</h2>
+                  <p class="text-gray-700 mb-4">Data held on our servers is processed by Google Cloud (Firebase). Our database is in India (Mumbai, asia-south1). Household sharing functions run in India (asia-south1); AI statement parsing, subscription and purchase functions run in the United States (us-central1). AI statement parsing also sends statement content to Anthropic in the United States. Where your data is transferred outside your country, we rely on the European Commission's Standard Contractual Clauses (and, for UK users, the UK International Data Transfer Addendum) included in Google's Cloud Data Processing Addendum and Anthropic's Data Processing Addendum. You can ask for a copy at privacy@ezerapp.com.</p>
+                  <p class="text-gray-700 mb-4">Full details: <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">Android privacy policy</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">iOS privacy policy</a></p>
+                </section>
+                <!-- /privacy-2.1.1 -->
                 <h2 class="text-2xl font-bold mt-8 mb-4">Contact Us</h2>
                 <p class="text-gray-700 mb-4">
                     If you have questions about this Privacy Policy, please contact us at:
