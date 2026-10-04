@@ -23,5 +23,5 @@ on your device, encrypted, and under your control.
 No cloud. No login. No tracking. Just budgeting.
 
 Website: https://www.ezerapp.com
-iOS: https://apps.apple.com/app/ezer-budget-expense-tracker/id6738029702
+iOS: https://apps.apple.com/app/ezer-expense-tracker/id6755685289
 Android: https://play.google.com/store/apps/details?id=com.ezer.personal_finance
