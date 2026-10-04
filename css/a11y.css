@@ -1,0 +1,59 @@
+/**
+ * EZer - shared accessibility fixes (linked from every page).
+ *
+ * Touch targets: footer links, footer theme buttons and the mobile menu
+ * button reach at least 44x44 CSS px on phones / touch screens
+ * (Apple HIG, WCAG 2.5.5). Desktop with a fine pointer is untouched.
+ *
+ * Every rule uses !important because the Tailwind CDN injects its
+ * utilities after this sheet, and several templates set display/padding
+ * inline on the links.
+ */
+@media (max-width: 767px), (pointer: coarse) {
+    /* Stacked (block) footer links: grow the row to 44px, keep the text
+       vertically centred and keep text-align (column flex stretches the
+       anonymous text box to full width). */
+    footer a[href].block,
+    footer a[href][style*="display: block"],
+    footer a[href][style*="display:block"],
+    footer .footer-column a[href],
+    footer .footer-links a[href],
+    footer li > a[href] {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 44px !important;
+        box-sizing: border-box;
+    }
+
+    /* The 44px row already contains the old line + gap, so drop the
+       space-y-* gap between stacked links to keep the column compact. */
+    footer [class*="space-y-"] > a[href] {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* Inline footer links (horizontal link rows, copyright lines). */
+    footer a[href]:not(.block):not([style*="display: block"]):not([style*="display:block"]):not(.footer-column a):not(.footer-links a):not(li > a) {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px !important;
+        min-width: 44px;
+        box-sizing: border-box;
+    }
+
+    /* Footer appearance (light / system / dark) buttons. */
+    footer button,
+    footer .theme-btn {
+        min-width: 44px !important;
+        min-height: 44px !important;
+    }
+
+    /* Mobile menu (hamburger) button. */
+    #mobile-menu-btn,
+    .mobile-menu-btn {
+        min-width: 44px !important;
+        min-height: 44px !important;
+    }
+}
