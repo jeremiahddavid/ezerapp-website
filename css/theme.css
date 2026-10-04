@@ -443,3 +443,91 @@ body {
         text-align: center;
     }
 }
+
+
+/* ============================================
+   Dark mode: pale Tailwind tint boxes (bg-*-50 / bg-*-100)
+   Callout boxes ("Importante") and stat cards kept their light pastel
+   background in dark mode while the body text inside them turned light
+   grey (--text-secondary): about 2.5:1. Swap the pastel for a
+   translucent tint of the same hue and lighten the coloured text on or
+   inside it, so every line is >= 4.5:1 (WCAG AA). Explicit dark and
+   system dark only; light mode is unchanged. Page-level <style> rules
+   that already handle a tint load later and still take precedence.
+   ============================================ */
+
+[data-theme="dark"] :is(.bg-green-50, .bg-green-100) { background: rgba(34, 197, 94, 0.15) !important; }
+[data-theme="dark"] :is(.bg-green-50, .bg-green-100) :is(.text-green-500, .text-green-600), [data-theme="dark"] :is(.bg-green-50, .bg-green-100):is(.text-green-500, .text-green-600) { color: #86efac !important; }
+[data-theme="dark"] :is(.bg-green-50, .bg-green-100) :is(.text-green-700, .text-green-800, .text-green-900), [data-theme="dark"] :is(.bg-green-50, .bg-green-100):is(.text-green-700, .text-green-800, .text-green-900) { color: #bbf7d0 !important; }
+[data-theme="dark"] :is(.bg-green-50, .bg-green-100).border-green-400 { border-color: rgba(34, 197, 94, 0.5) !important; }
+[data-theme="dark"] :is(.bg-blue-50, .bg-blue-100) { background: rgba(59, 130, 246, 0.15) !important; }
+[data-theme="dark"] :is(.bg-blue-50, .bg-blue-100) :is(.text-blue-500, .text-blue-600), [data-theme="dark"] :is(.bg-blue-50, .bg-blue-100):is(.text-blue-500, .text-blue-600) { color: #93c5fd !important; }
+[data-theme="dark"] :is(.bg-blue-50, .bg-blue-100) :is(.text-blue-700, .text-blue-800, .text-blue-900), [data-theme="dark"] :is(.bg-blue-50, .bg-blue-100):is(.text-blue-700, .text-blue-800, .text-blue-900) { color: #bfdbfe !important; }
+[data-theme="dark"] :is(.bg-blue-50, .bg-blue-100).border-blue-400 { border-color: rgba(59, 130, 246, 0.5) !important; }
+[data-theme="dark"] :is(.bg-purple-50, .bg-purple-100) { background: rgba(147, 51, 234, 0.15) !important; }
+[data-theme="dark"] :is(.bg-purple-50, .bg-purple-100) :is(.text-purple-500, .text-purple-600), [data-theme="dark"] :is(.bg-purple-50, .bg-purple-100):is(.text-purple-500, .text-purple-600) { color: #d8b4fe !important; }
+[data-theme="dark"] :is(.bg-purple-50, .bg-purple-100) :is(.text-purple-700, .text-purple-800, .text-purple-900), [data-theme="dark"] :is(.bg-purple-50, .bg-purple-100):is(.text-purple-700, .text-purple-800, .text-purple-900) { color: #e9d5ff !important; }
+[data-theme="dark"] :is(.bg-purple-50, .bg-purple-100).border-purple-400 { border-color: rgba(147, 51, 234, 0.5) !important; }
+[data-theme="dark"] :is(.bg-yellow-50, .bg-yellow-100) { background: rgba(234, 179, 8, 0.15) !important; }
+[data-theme="dark"] :is(.bg-yellow-50, .bg-yellow-100) :is(.text-yellow-500, .text-yellow-600), [data-theme="dark"] :is(.bg-yellow-50, .bg-yellow-100):is(.text-yellow-500, .text-yellow-600) { color: #fde047 !important; }
+[data-theme="dark"] :is(.bg-yellow-50, .bg-yellow-100) :is(.text-yellow-700, .text-yellow-800, .text-yellow-900), [data-theme="dark"] :is(.bg-yellow-50, .bg-yellow-100):is(.text-yellow-700, .text-yellow-800, .text-yellow-900) { color: #fef08a !important; }
+[data-theme="dark"] :is(.bg-yellow-50, .bg-yellow-100).border-yellow-400 { border-color: rgba(234, 179, 8, 0.5) !important; }
+[data-theme="dark"] :is(.bg-amber-50, .bg-amber-100) { background: rgba(245, 158, 11, 0.15) !important; }
+[data-theme="dark"] :is(.bg-amber-50, .bg-amber-100) :is(.text-amber-500, .text-amber-600), [data-theme="dark"] :is(.bg-amber-50, .bg-amber-100):is(.text-amber-500, .text-amber-600) { color: #fcd34d !important; }
+[data-theme="dark"] :is(.bg-amber-50, .bg-amber-100) :is(.text-amber-700, .text-amber-800, .text-amber-900), [data-theme="dark"] :is(.bg-amber-50, .bg-amber-100):is(.text-amber-700, .text-amber-800, .text-amber-900) { color: #fde68a !important; }
+[data-theme="dark"] :is(.bg-amber-50, .bg-amber-100).border-amber-400 { border-color: rgba(245, 158, 11, 0.5) !important; }
+[data-theme="dark"] :is(.bg-red-50, .bg-red-100) { background: rgba(239, 68, 68, 0.15) !important; }
+[data-theme="dark"] :is(.bg-red-50, .bg-red-100) :is(.text-red-500, .text-red-600), [data-theme="dark"] :is(.bg-red-50, .bg-red-100):is(.text-red-500, .text-red-600) { color: #fca5a5 !important; }
+[data-theme="dark"] :is(.bg-red-50, .bg-red-100) :is(.text-red-700, .text-red-800, .text-red-900), [data-theme="dark"] :is(.bg-red-50, .bg-red-100):is(.text-red-700, .text-red-800, .text-red-900) { color: #fecaca !important; }
+[data-theme="dark"] :is(.bg-red-50, .bg-red-100).border-red-400 { border-color: rgba(239, 68, 68, 0.5) !important; }
+[data-theme="dark"] :is(.bg-indigo-50, .bg-indigo-100) { background: rgba(79, 70, 229, 0.15) !important; }
+[data-theme="dark"] :is(.bg-indigo-50, .bg-indigo-100) :is(.text-indigo-500, .text-indigo-600), [data-theme="dark"] :is(.bg-indigo-50, .bg-indigo-100):is(.text-indigo-500, .text-indigo-600) { color: #a5b4fc !important; }
+[data-theme="dark"] :is(.bg-indigo-50, .bg-indigo-100) :is(.text-indigo-700, .text-indigo-800, .text-indigo-900), [data-theme="dark"] :is(.bg-indigo-50, .bg-indigo-100):is(.text-indigo-700, .text-indigo-800, .text-indigo-900) { color: #c7d2fe !important; }
+[data-theme="dark"] :is(.bg-indigo-50, .bg-indigo-100).border-indigo-400 { border-color: rgba(79, 70, 229, 0.5) !important; }
+[data-theme="dark"] :is(.bg-orange-50, .bg-orange-100) { background: rgba(249, 115, 22, 0.15) !important; }
+[data-theme="dark"] :is(.bg-orange-50, .bg-orange-100) :is(.text-orange-500, .text-orange-600), [data-theme="dark"] :is(.bg-orange-50, .bg-orange-100):is(.text-orange-500, .text-orange-600) { color: #fdba74 !important; }
+[data-theme="dark"] :is(.bg-orange-50, .bg-orange-100) :is(.text-orange-700, .text-orange-800, .text-orange-900), [data-theme="dark"] :is(.bg-orange-50, .bg-orange-100):is(.text-orange-700, .text-orange-800, .text-orange-900) { color: #fed7aa !important; }
+[data-theme="dark"] :is(.bg-orange-50, .bg-orange-100).border-orange-400 { border-color: rgba(249, 115, 22, 0.5) !important; }
+[data-theme="dark"] :is(.bg-pink-50, .bg-pink-100) { background: rgba(236, 72, 153, 0.15) !important; }
+[data-theme="dark"] :is(.bg-pink-50, .bg-pink-100) :is(.text-pink-500, .text-pink-600), [data-theme="dark"] :is(.bg-pink-50, .bg-pink-100):is(.text-pink-500, .text-pink-600) { color: #f9a8d4 !important; }
+[data-theme="dark"] :is(.bg-pink-50, .bg-pink-100) :is(.text-pink-700, .text-pink-800, .text-pink-900), [data-theme="dark"] :is(.bg-pink-50, .bg-pink-100):is(.text-pink-700, .text-pink-800, .text-pink-900) { color: #fbcfe8 !important; }
+[data-theme="dark"] :is(.bg-pink-50, .bg-pink-100).border-pink-400 { border-color: rgba(236, 72, 153, 0.5) !important; }
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) :is(.bg-green-50, .bg-green-100) { background: rgba(34, 197, 94, 0.15) !important; }
+    :root:not([data-theme="light"]) :is(.bg-green-50, .bg-green-100) :is(.text-green-500, .text-green-600), :root:not([data-theme="light"]) :is(.bg-green-50, .bg-green-100):is(.text-green-500, .text-green-600) { color: #86efac !important; }
+    :root:not([data-theme="light"]) :is(.bg-green-50, .bg-green-100) :is(.text-green-700, .text-green-800, .text-green-900), :root:not([data-theme="light"]) :is(.bg-green-50, .bg-green-100):is(.text-green-700, .text-green-800, .text-green-900) { color: #bbf7d0 !important; }
+    :root:not([data-theme="light"]) :is(.bg-green-50, .bg-green-100).border-green-400 { border-color: rgba(34, 197, 94, 0.5) !important; }
+    :root:not([data-theme="light"]) :is(.bg-blue-50, .bg-blue-100) { background: rgba(59, 130, 246, 0.15) !important; }
+    :root:not([data-theme="light"]) :is(.bg-blue-50, .bg-blue-100) :is(.text-blue-500, .text-blue-600), :root:not([data-theme="light"]) :is(.bg-blue-50, .bg-blue-100):is(.text-blue-500, .text-blue-600) { color: #93c5fd !important; }
+    :root:not([data-theme="light"]) :is(.bg-blue-50, .bg-blue-100) :is(.text-blue-700, .text-blue-800, .text-blue-900), :root:not([data-theme="light"]) :is(.bg-blue-50, .bg-blue-100):is(.text-blue-700, .text-blue-800, .text-blue-900) { color: #bfdbfe !important; }
+    :root:not([data-theme="light"]) :is(.bg-blue-50, .bg-blue-100).border-blue-400 { border-color: rgba(59, 130, 246, 0.5) !important; }
+    :root:not([data-theme="light"]) :is(.bg-purple-50, .bg-purple-100) { background: rgba(147, 51, 234, 0.15) !important; }
+    :root:not([data-theme="light"]) :is(.bg-purple-50, .bg-purple-100) :is(.text-purple-500, .text-purple-600), :root:not([data-theme="light"]) :is(.bg-purple-50, .bg-purple-100):is(.text-purple-500, .text-purple-600) { color: #d8b4fe !important; }
+    :root:not([data-theme="light"]) :is(.bg-purple-50, .bg-purple-100) :is(.text-purple-700, .text-purple-800, .text-purple-900), :root:not([data-theme="light"]) :is(.bg-purple-50, .bg-purple-100):is(.text-purple-700, .text-purple-800, .text-purple-900) { color: #e9d5ff !important; }
+    :root:not([data-theme="light"]) :is(.bg-purple-50, .bg-purple-100).border-purple-400 { border-color: rgba(147, 51, 234, 0.5) !important; }
+    :root:not([data-theme="light"]) :is(.bg-yellow-50, .bg-yellow-100) { background: rgba(234, 179, 8, 0.15) !important; }
+    :root:not([data-theme="light"]) :is(.bg-yellow-50, .bg-yellow-100) :is(.text-yellow-500, .text-yellow-600), :root:not([data-theme="light"]) :is(.bg-yellow-50, .bg-yellow-100):is(.text-yellow-500, .text-yellow-600) { color: #fde047 !important; }
+    :root:not([data-theme="light"]) :is(.bg-yellow-50, .bg-yellow-100) :is(.text-yellow-700, .text-yellow-800, .text-yellow-900), :root:not([data-theme="light"]) :is(.bg-yellow-50, .bg-yellow-100):is(.text-yellow-700, .text-yellow-800, .text-yellow-900) { color: #fef08a !important; }
+    :root:not([data-theme="light"]) :is(.bg-yellow-50, .bg-yellow-100).border-yellow-400 { border-color: rgba(234, 179, 8, 0.5) !important; }
+    :root:not([data-theme="light"]) :is(.bg-amber-50, .bg-amber-100) { background: rgba(245, 158, 11, 0.15) !important; }
+    :root:not([data-theme="light"]) :is(.bg-amber-50, .bg-amber-100) :is(.text-amber-500, .text-amber-600), :root:not([data-theme="light"]) :is(.bg-amber-50, .bg-amber-100):is(.text-amber-500, .text-amber-600) { color: #fcd34d !important; }
+    :root:not([data-theme="light"]) :is(.bg-amber-50, .bg-amber-100) :is(.text-amber-700, .text-amber-800, .text-amber-900), :root:not([data-theme="light"]) :is(.bg-amber-50, .bg-amber-100):is(.text-amber-700, .text-amber-800, .text-amber-900) { color: #fde68a !important; }
+    :root:not([data-theme="light"]) :is(.bg-amber-50, .bg-amber-100).border-amber-400 { border-color: rgba(245, 158, 11, 0.5) !important; }
+    :root:not([data-theme="light"]) :is(.bg-red-50, .bg-red-100) { background: rgba(239, 68, 68, 0.15) !important; }
+    :root:not([data-theme="light"]) :is(.bg-red-50, .bg-red-100) :is(.text-red-500, .text-red-600), :root:not([data-theme="light"]) :is(.bg-red-50, .bg-red-100):is(.text-red-500, .text-red-600) { color: #fca5a5 !important; }
+    :root:not([data-theme="light"]) :is(.bg-red-50, .bg-red-100) :is(.text-red-700, .text-red-800, .text-red-900), :root:not([data-theme="light"]) :is(.bg-red-50, .bg-red-100):is(.text-red-700, .text-red-800, .text-red-900) { color: #fecaca !important; }
+    :root:not([data-theme="light"]) :is(.bg-red-50, .bg-red-100).border-red-400 { border-color: rgba(239, 68, 68, 0.5) !important; }
+    :root:not([data-theme="light"]) :is(.bg-indigo-50, .bg-indigo-100) { background: rgba(79, 70, 229, 0.15) !important; }
+    :root:not([data-theme="light"]) :is(.bg-indigo-50, .bg-indigo-100) :is(.text-indigo-500, .text-indigo-600), :root:not([data-theme="light"]) :is(.bg-indigo-50, .bg-indigo-100):is(.text-indigo-500, .text-indigo-600) { color: #a5b4fc !important; }
+    :root:not([data-theme="light"]) :is(.bg-indigo-50, .bg-indigo-100) :is(.text-indigo-700, .text-indigo-800, .text-indigo-900), :root:not([data-theme="light"]) :is(.bg-indigo-50, .bg-indigo-100):is(.text-indigo-700, .text-indigo-800, .text-indigo-900) { color: #c7d2fe !important; }
+    :root:not([data-theme="light"]) :is(.bg-indigo-50, .bg-indigo-100).border-indigo-400 { border-color: rgba(79, 70, 229, 0.5) !important; }
+    :root:not([data-theme="light"]) :is(.bg-orange-50, .bg-orange-100) { background: rgba(249, 115, 22, 0.15) !important; }
+    :root:not([data-theme="light"]) :is(.bg-orange-50, .bg-orange-100) :is(.text-orange-500, .text-orange-600), :root:not([data-theme="light"]) :is(.bg-orange-50, .bg-orange-100):is(.text-orange-500, .text-orange-600) { color: #fdba74 !important; }
+    :root:not([data-theme="light"]) :is(.bg-orange-50, .bg-orange-100) :is(.text-orange-700, .text-orange-800, .text-orange-900), :root:not([data-theme="light"]) :is(.bg-orange-50, .bg-orange-100):is(.text-orange-700, .text-orange-800, .text-orange-900) { color: #fed7aa !important; }
+    :root:not([data-theme="light"]) :is(.bg-orange-50, .bg-orange-100).border-orange-400 { border-color: rgba(249, 115, 22, 0.5) !important; }
+    :root:not([data-theme="light"]) :is(.bg-pink-50, .bg-pink-100) { background: rgba(236, 72, 153, 0.15) !important; }
+    :root:not([data-theme="light"]) :is(.bg-pink-50, .bg-pink-100) :is(.text-pink-500, .text-pink-600), :root:not([data-theme="light"]) :is(.bg-pink-50, .bg-pink-100):is(.text-pink-500, .text-pink-600) { color: #f9a8d4 !important; }
+    :root:not([data-theme="light"]) :is(.bg-pink-50, .bg-pink-100) :is(.text-pink-700, .text-pink-800, .text-pink-900), :root:not([data-theme="light"]) :is(.bg-pink-50, .bg-pink-100):is(.text-pink-700, .text-pink-800, .text-pink-900) { color: #fbcfe8 !important; }
+    :root:not([data-theme="light"]) :is(.bg-pink-50, .bg-pink-100).border-pink-400 { border-color: rgba(236, 72, 153, 0.5) !important; }
+}
