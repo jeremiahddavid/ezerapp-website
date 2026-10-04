@@ -68,9 +68,9 @@
         <div class="container mx-auto px-4 text-center">
             <div class="text-5xl mb-4">🔒</div>
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Informativa sulla Privacy</h1>
-            <p class="text-xl text-indigo-100">EZer è progettata con la privacy al centro. I tuoi dati finanziari rimangono sempre sul tuo dispositivo.</p>
+            <p class="text-xl text-indigo-100">EZer è progettata con la privacy al centro. I tuoi dati finanziari restano sul tuo dispositivo, salvo quando usi una funzione cloud facoltativa.</p>
             <div class="mt-4 inline-block bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
-                100% offline per dati finanziari • Crittografia AES-256 (vedi sezione "Segnalazioni di crash" per la telemetria di stabilità)
+                Dati finanziari sul dispositivo, cloud solo se lo scegli • Crittografia AES-256 (vedi sezione "Segnalazioni di crash" per la telemetria di stabilità)
             </div>
         </div>
     </div>
@@ -83,8 +83,8 @@
                 <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <span class="material-icons-outlined text-green-600" style="font-size:32px;">wifi_off</span>
                 </div>
-                <h3 class="font-bold text-gray-900 mb-2">100% Offline</h3>
-                <p class="text-gray-600 text-sm">L'app funziona completamente offline. Non inviamo mai i tuoi dati a server esterni.</p>
+                <h3 class="font-bold text-gray-900 mb-2">Funzioni base offline</h3>
+                <p class="text-gray-600 text-sm">Le funzioni principali funzionano offline. I dati lasciano il dispositivo solo con le funzioni cloud facoltative: analisi degli estratti conto con IA, backup su cloud e condivisione familiare.</p>
             </div>
             <div class="bg-white rounded-2xl p-6 shadow-sm text-center">
                 <div class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -98,7 +98,7 @@
                     <span class="material-icons-outlined text-purple-600" style="font-size:32px;">person_off</span>
                 </div>
                 <h3 class="font-bold text-gray-900 mb-2">Nessun Account</h3>
-                <p class="text-gray-600 text-sm">Non ti chiediamo mai email, nome o dati personali. Zero identificazione.</p>
+                <p class="text-gray-600 text-sm">L'accesso non è obbligatorio. Riceviamo nome ed email da Google o Microsoft solo se accedi per il backup su cloud o la condivisione familiare.</p>
             </div>
         </div>
 
@@ -107,12 +107,12 @@
 
             <div>
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">1. Raccolta dei dati</h2>
-                <p class="text-gray-600 mb-4">EZer non raccoglie dati finanziari personali. Tutti i dati che inserisci — transazioni, budget, obiettivi — rimangono esclusivamente sul tuo dispositivo e non vengono mai trasmessi a noi o a terze parti.</p>
+                <p class="text-gray-600 mb-4">Tutti i dati che inserisci — transazioni, budget, obiettivi — restano sul tuo dispositivo. Ci vengono inviati solo se usi una funzione cloud facoltativa: l'analisi degli estratti conto con IA e la condivisione familiare inviano dati ai nostri server, e il backup su cloud viene caricato, crittografato, sul tuo servizio cloud.</p>
                 <div class="bg-green-50 rounded-xl p-4">
                     <p class="text-green-800 font-semibold">Non raccogliamo mai:</p>
                     <ul class="text-green-700 mt-2 space-y-1">
-                        <li>• Dati finanziari o transazioni</li>
-                        <li>• Informazioni personali identificabili</li>
+                        <li>• Dati finanziari o transazioni (salvo quelli che invii con una funzione cloud facoltativa)</li>
+                        <li>• Informazioni personali identificabili (salvo nome ed email se accedi con Google o Microsoft)</li>
                         <li>• Posizione geografica</li>
                         <li>• Contatti o dati del dispositivo sensibili</li>
                     </ul>
@@ -132,23 +132,23 @@
 
             <div>
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">4. Conformità GDPR</h2>
-                <p class="text-gray-600">Poiché non raccogliamo dati personali identificabili, EZer è conforme al Regolamento Generale sulla Protezione dei Dati (GDPR) dell'Unione Europea. I tuoi dati finanziari rimangono sempre sotto il tuo completo controllo.</p>
+                <p class="text-gray-600">EZer tratta i dati personali in conformità al Regolamento Generale sulla Protezione dei Dati (GDPR) dell'Unione Europea. I tuoi dati finanziari rimangono sempre sotto il tuo completo controllo.</p>
             </div>
 
             <div>
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">5. Sicurezza</h2>
                 <p class="text-gray-600 mb-4">Prendiamo la sicurezza molto sul serio:</p>
                 <ul class="text-gray-600 space-y-2">
-                    <li class="flex items-start gap-2"><span class="material-icons-outlined text-indigo-500 mt-0.5" style="font-size:18px;">security</span>Crittografia AES-256 per tutti i dati archiviati</li>
+                    <li class="flex items-start gap-2"><span class="material-icons-outlined text-indigo-500 mt-0.5" style="font-size:18px;">security</span>Crittografia AES-256 per tutti i dati archiviati sul dispositivo</li>
                     <li class="flex items-start gap-2"><span class="material-icons-outlined text-indigo-500 mt-0.5" style="font-size:18px;">fingerprint</span>Supporto opzionale per Face ID / impronta digitale</li>
-                    <li class="flex items-start gap-2"><span class="material-icons-outlined text-indigo-500 mt-0.5" style="font-size:18px;">cloud_off</span>Nessuna trasmissione di dati su internet</li>
+                    <li class="flex items-start gap-2"><span class="material-icons-outlined text-indigo-500 mt-0.5" style="font-size:18px;">cloud_off</span>Nessuna trasmissione di dati finanziari su internet, salvo con le funzioni cloud facoltative (connessione crittografata)</li>
                     <li class="flex items-start gap-2"><span class="material-icons-outlined text-indigo-500 mt-0.5" style="font-size:18px;">lock</span>Codice PIN opzionale per accesso all'app</li>
                 </ul>
             </div>
 
             <div>
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">6. Cancellazione dei dati</h2>
-                <p class="text-gray-600">Puoi eliminare tutti i tuoi dati in qualsiasi momento direttamente dall'app nelle impostazioni, oppure disinstallando l'applicazione. Poiché non archiviamo nulla sui nostri server, la disinstallazione rimuove completamente tutti i tuoi dati.</p>
+                <p class="text-gray-600">Puoi eliminare tutti i tuoi dati in qualsiasi momento direttamente dall'app nelle impostazioni: questa opzione elimina anche i dati sui nostri server. La disinstallazione rimuove solo i dati sul dispositivo.</p>
             </div>
 
             <div>

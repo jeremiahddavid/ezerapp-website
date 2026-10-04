@@ -139,13 +139,13 @@
             <div class="privacy-card">
                 <h2>Ringkasan: Privasi Anda adalah Prioritas Kami</h2>
                 <div class="highlight-box">
-                    <p>🔒 EZer adalah aplikasi yang mengutamakan privasi dan offline-first. Data keuangan Anda TIDAK PERNAH meninggalkan perangkat Anda. Kami tidak mengumpulkan, menyimpan, atau menjual data pribadi Anda.</p>
+                    <p>🔒 EZer adalah aplikasi yang mengutamakan privasi dan offline-first. Data keuangan Anda tersimpan terenkripsi di perangkat Anda dan hanya keluar dari perangkat jika Anda memakai fitur cloud opsional (pembacaan rekening koran dengan AI, cadangan cloud, atau berbagi rumah tangga). Kami tidak menjual data pribadi Anda.</p>
                 </div>
                 <ul>
-                    <li>Semua data keuangan disimpan hanya di perangkat Anda</li>
+                    <li>Data keuangan inti disimpan di perangkat Anda</li>
                     <li>Tidak diperlukan akun atau login</li>
-                    <li>Tidak ada cloud sync untuk data keuangan</li>
-                    <li>Enkripsi AES-256 untuk semua data yang disimpan</li>
+                    <li>Fitur cloud bersifat opsional: pembacaan dengan AI dan berbagi rumah tangga mengirim data ke server kami; cadangan cloud diunggah terenkripsi ke penyedia cloud Anda</li>
+                    <li>Enkripsi AES-256 untuk data di perangkat Anda</li>
                     <li>Tidak ada pelacakan perilaku pengguna</li>
                 </ul>
             </div>
@@ -155,8 +155,8 @@
                 <h3>Data yang Tidak Kami Kumpulkan</h3>
                 <p>EZer dirancang dengan privasi sebagai inti. Kami TIDAK mengumpulkan:</p>
                 <ul>
-                    <li>Data transaksi atau keuangan Anda</li>
-                    <li>Informasi pribadi (nama, email, telepon)</li>
+                    <li>Data transaksi atau keuangan Anda (kecuali yang Anda kirim lewat fitur cloud opsional)</li>
+                    <li>Informasi pribadi (nama, email, telepon), kecuali nama dan email dari Google atau Microsoft jika Anda masuk untuk cadangan cloud atau berbagi rumah tangga</li>
                     <li>Data lokasi</li>
                     <li>Kontak atau data SMS</li>
                     <li>Riwayat penelusuran atau penggunaan aplikasi lain</li>
@@ -173,9 +173,9 @@
 
             <div class="privacy-card">
                 <h2>2. Penyimpanan Data</h2>
-                <p>Semua data keuangan Anda disimpan secara lokal di perangkat menggunakan SQLite dengan enkripsi SQLCipher (AES-256). Data ini tidak pernah diunggah ke server kami atau server pihak ketiga mana pun.</p>
+                <p>Semua data keuangan Anda disimpan secara lokal di perangkat menggunakan SQLite dengan enkripsi SQLCipher (AES-256). Data ini hanya keluar dari perangkat jika Anda memakai fitur cloud opsional: pembacaan dengan AI dan berbagi rumah tangga mengirim data ke server kami, dan cadangan cloud diunggah terenkripsi ke penyedia cloud Anda.</p>
                 <div class="highlight-box">
-                    <p>💾 Data Anda ada di ponsel Anda. Hanya Anda yang memiliki akses.</p>
+                    <p>💾 Data Anda ada di ponsel Anda, kecuali yang Anda kirim lewat fitur cloud opsional.</p>
                 </div>
             </div>
 
@@ -192,7 +192,7 @@
 
             <div class="privacy-card">
                 <h2>4. Berbagi Data dengan Pihak Ketiga</h2>
-                <p>Kami tidak menjual, menyewakan, atau berbagi data pribadi Anda dengan pihak ketiga. Satu-satunya layanan pihak ketiga yang digunakan adalah:</p>
+                <p>Kami tidak menjual, menyewakan, atau berbagi data pribadi Anda dengan pihak ketiga. Layanan pihak ketiga yang digunakan antara lain (penyedia untuk fitur cloud opsional dijelaskan di bagian pembacaan dengan AI dan transfer data di bawah):</p>
                 <ul>
                     <li><strong>Firebase Analytics</strong> — Hanya data anonim jika fitur analitik diaktifkan</li>
                     <li><strong>Apple/Google</strong> — Untuk pemrosesan pembayaran in-app (Plus)</li>
@@ -203,10 +203,10 @@
                 <h2>5. Keamanan Data</h2>
                 <p>Langkah keamanan yang kami terapkan:</p>
                 <ul>
-                    <li>Enkripsi AES-256 untuk semua data tersimpan</li>
+                    <li>Enkripsi AES-256 untuk semua data di perangkat Anda</li>
                     <li>Kunci biometrik opsional</li>
-                    <li>Tidak ada transmisi data keuangan melalui jaringan</li>
-                    <li>Aplikasi bekerja sepenuhnya offline</li>
+                    <li>Data keuangan hanya dikirim lewat jaringan saat Anda memakai fitur cloud opsional, melalui koneksi terenkripsi</li>
+                    <li>Fitur inti bekerja tanpa internet</li>
                 </ul>
             </div>
 
