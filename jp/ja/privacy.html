@@ -353,6 +353,27 @@
                     We may update this プライバシーポリシー from time to time. We will notify you of any changes by posting the new プライバシーポリシー on this page and updating the "Last updated" date.
                 </p>
 
+                <!-- AUTO-INSERT, PENDING TRANSLATION -->
+                <h2 class="text-2xl font-bold mt-8 mb-4">クラッシュレポート</h2>
+                <p class="text-gray-700 mb-4">アプリの安定性を維持するという正当な利益（GDPR 第6条(1)(f)、DPDPA およびその他の同様の枠組みにおける同等の法的根拠）に基づき、匿名のクラッシュレポートおよび非致命的なエラーログを収集します。レポートには、スタックトレース、デバイスモデル、OSバージョン、アプリバージョン、おおよその地域（IPアドレスから推定。IPアドレス自体は保存されません）が含まれます。クラッシュレポートには、お客様の取引、残高、名前、その他の個人情報を一切含めません。クラッシュレポートはいつでも 設定 → プライバシー → クラッシュレポート で無効にできます。</p>
+                <!-- privacy-2.1.1 -->
+                <section id="ai-parse" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">AIによる明細書の読み取り（EZer Plus・任意）</h2>
+                  <p class="text-gray-700 mb-4">AIによる明細書の読み取りは、お客様が選んだ銀行またはクレジットカードの明細書（PDF、画像、CSV）を取引データに変換します。アプリで同意するまでは無効で、同意は「設定 → プライバシーダッシュボード」からいつでも撤回できます。その他の機能はすべてこの機能なしで使えます。</p>
+                  <p class="text-gray-700 mb-4">アプリは明細書を当社サーバーに送信し、サーバーはその内容を国コード・通貨コード・明細書の種類・カテゴリー名とともに、当社のAIプロバイダーである米国のAnthropic（Claude）に送信します。お名前、メールアドレス、アカウントIDはAnthropicに送信されず、他のAIプロバイダーが明細書を受け取ることはありません。Anthropicは受け取った内容を、不正利用の監視のため一定期間（例：最大30日間）保持することがあります。</p>
+                  <p class="text-gray-700 mb-4">明細書ファイル自体は当社サーバーに保存されません。読み取り結果は、同じ明細書を再度読み取って課金しないよう、お客様のアカウントに紐づけて当社データベースに保存されます。この保存は「設定 → セキュリティ」でオフにでき、「すべてのデータを削除」で削除されます。</p>
+                </section>
+                <section id="household" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">世帯共有（EZer Plus・任意・Android）</h2>
+                  <p class="text-gray-700 mb-4">Androidアプリでは、最大6人が世帯として取引・予算・目標・請求書を共有し、割り勘や精算ができます。各メンバーにEZer Plusが必要で、GoogleまたはMicrosoftでのサインインが必要です。参加はメンバーからの招待経由のみです。参加後は、記録した内容が初期設定で世帯と共有されます。「設定 → 世帯」でカテゴリーの除外、口座の非表示、個別項目の共有停止ができます。共有した項目を見られるのは同じ世帯の他のメンバーだけです。</p>
+                  <p class="text-gray-700 mb-4">共有項目はエンドツーエンドで暗号化されます。金額、説明、店舗、メモ、カテゴリーなどの詳細は、お客様の端末上で世帯キーにより暗号化（AES-256-GCM）され、このキーは読める形で当社サーバーに届くことはないため、当社は内容を読めません。世帯を運営するため、当社サーバーは世帯名、各メンバーの名前・役割・アカウントID、各共有項目の日付・種類・状態を、インドのGoogle Cloud Firestore（ムンバイ、asia-south1）に保存します。世帯用のサーバー機能も同じリージョンで動作します。退出時には共有した項目を削除でき、オーナーは世帯を削除でき、「すべてのデータを削除」を行うと共有項目とお客様がオーナーの世帯が削除されます。</p>
+                </section>
+                <section id="data-transfers" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">国際的なデータ移転</h2>
+                  <p class="text-gray-700 mb-4">当社サーバー上のデータはGoogle Cloud（Firebase）が処理します。データベースはインド（ムンバイ、asia-south1）にあります。世帯共有のサーバー機能はインド（asia-south1）で、AIによる読み取り・サブスクリプション・購入の機能は米国（us-central1）で動作します。AIによる読み取りでは、明細書の内容が米国のAnthropicにも送信されます。データがお客様の国の外に移転される場合、当社はGoogle CloudおよびAnthropicのデータ処理補遺に含まれる欧州委員会の標準契約条項（英国のお客様には英国国際データ移転補遺）に依拠します。写しはprivacy@ezerapp.comにご請求いただけます。</p>
+                  <p class="text-gray-700 mb-4">詳細： <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">Android版プライバシーポリシー</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">iOS版プライバシーポリシー</a></p>
+                </section>
+                <!-- /privacy-2.1.1 -->
                 <h2 class="text-2xl font-bold mt-8 mb-4">お問い合わせ</h2>
                 <p class="text-gray-700 mb-4">
                     If you have questions about this プライバシーポリシー, please contact us at:
@@ -480,28 +501,5 @@
         }
     })();
     </script>
-    <!-- AUTO-INSERT, PENDING TRANSLATION -->
-                <h2 class="text-2xl font-bold mt-8 mb-4">クラッシュレポート</h2>
-                <p class="text-gray-700 mb-4">アプリの安定性を維持するという正当な利益（GDPR 第6条(1)(f)、DPDPA およびその他の同様の枠組みにおける同等の法的根拠）に基づき、匿名のクラッシュレポートおよび非致命的なエラーログを収集します。レポートには、スタックトレース、デバイスモデル、OSバージョン、アプリバージョン、おおよその地域（IPアドレスから推定。IPアドレス自体は保存されません）が含まれます。クラッシュレポートには、お客様の取引、残高、名前、その他の個人情報を一切含めません。クラッシュレポートはいつでも 設定 → プライバシー → クラッシュレポート で無効にできます。</p>
-
-                
-    <!-- privacy-2.1.1 -->
-    <section id="ai-parse" class="privacy-section">
-      <h2 class="text-2xl font-bold mt-8 mb-4">AIによる明細書の読み取り（EZer Plus・任意）</h2>
-      <p class="text-gray-700 mb-4">AIによる明細書の読み取りは、お客様が選んだ銀行またはクレジットカードの明細書（PDF、画像、CSV）を取引データに変換します。アプリで同意するまでは無効で、同意は「設定 → プライバシーダッシュボード」からいつでも撤回できます。その他の機能はすべてこの機能なしで使えます。</p>
-      <p class="text-gray-700 mb-4">アプリは明細書を当社サーバーに送信し、サーバーはその内容を国コード・通貨コード・明細書の種類・カテゴリー名とともに、当社のAIプロバイダーである米国のAnthropic（Claude）に送信します。お名前、メールアドレス、アカウントIDはAnthropicに送信されず、他のAIプロバイダーが明細書を受け取ることはありません。Anthropicは受け取った内容を、不正利用の監視のため一定期間（例：最大30日間）保持することがあります。</p>
-      <p class="text-gray-700 mb-4">明細書ファイル自体は当社サーバーに保存されません。読み取り結果は、同じ明細書を再度読み取って課金しないよう、お客様のアカウントに紐づけて当社データベースに保存されます。この保存は「設定 → セキュリティ」でオフにでき、「すべてのデータを削除」で削除されます。</p>
-    </section>
-    <section id="household" class="privacy-section">
-      <h2 class="text-2xl font-bold mt-8 mb-4">世帯共有（EZer Plus・任意・Android）</h2>
-      <p class="text-gray-700 mb-4">Androidアプリでは、最大6人が世帯として取引・予算・目標・請求書を共有し、割り勘や精算ができます。各メンバーにEZer Plusが必要で、GoogleまたはMicrosoftでのサインインが必要です。参加はメンバーからの招待経由のみです。参加後は、記録した内容が初期設定で世帯と共有されます。「設定 → 世帯」でカテゴリーの除外、口座の非表示、個別項目の共有停止ができます。共有した項目を見られるのは同じ世帯の他のメンバーだけです。</p>
-      <p class="text-gray-700 mb-4">共有項目はエンドツーエンドで暗号化されます。金額、説明、店舗、メモ、カテゴリーなどの詳細は、お客様の端末上で世帯キーにより暗号化（AES-256-GCM）され、このキーは読める形で当社サーバーに届くことはないため、当社は内容を読めません。世帯を運営するため、当社サーバーは世帯名、各メンバーの名前・役割・アカウントID、各共有項目の日付・種類・状態を、インドのGoogle Cloud Firestore（ムンバイ、asia-south1）に保存します。世帯用のサーバー機能も同じリージョンで動作します。退出時には共有した項目を削除でき、オーナーは世帯を削除でき、「すべてのデータを削除」を行うと共有項目とお客様がオーナーの世帯が削除されます。</p>
-    </section>
-    <section id="data-transfers" class="privacy-section">
-      <h2 class="text-2xl font-bold mt-8 mb-4">国際的なデータ移転</h2>
-      <p class="text-gray-700 mb-4">当社サーバー上のデータはGoogle Cloud（Firebase）が処理します。データベースはインド（ムンバイ、asia-south1）にあります。世帯共有のサーバー機能はインド（asia-south1）で、AIによる読み取り・サブスクリプション・購入の機能は米国（us-central1）で動作します。AIによる読み取りでは、明細書の内容が米国のAnthropicにも送信されます。データがお客様の国の外に移転される場合、当社はGoogle CloudおよびAnthropicのデータ処理補遺に含まれる欧州委員会の標準契約条項（英国のお客様には英国国際データ移転補遺）に依拠します。写しはprivacy@ezerapp.comにご請求いただけます。</p>
-      <p class="text-gray-700 mb-4">詳細： <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">Android版プライバシーポリシー</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">iOS版プライバシーポリシー</a></p>
-    </section>
-    <!-- /privacy-2.1.1 -->
 </body>
 </html>

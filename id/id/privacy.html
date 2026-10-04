@@ -222,6 +222,30 @@
             </div>
 
             <div class="privacy-card">
+                <!-- AUTO-INSERT, PENDING TRANSLATION -->
+                <h2 class="text-2xl font-bold mt-8 mb-4">Laporan Kerusakan</h2>
+                <p class="text-gray-700 mb-4">Kami mengumpulkan laporan kerusakan anonim dan log kesalahan non-fatal berdasarkan kepentingan sah kami dalam menjaga aplikasi tetap stabil (GDPR Pasal 6(1)(f); dasar hukum setara di bawah DPDPA dan kerangka kerja serupa). Laporan mencakup jejak tumpukan, model perangkat, versi sistem operasi, versi aplikasi, dan perkiraan wilayah (berasal dari IP; IP itu sendiri tidak disimpan). Kami tidak pernah menyertakan transaksi, saldo, nama, atau informasi pribadi lainnya. Anda dapat menonaktifkan pelaporan kerusakan kapan saja di Pengaturan → Privasi → Laporan Kerusakan.</p>
+                <!-- privacy-2.1.1 -->
+                <section id="ai-parse" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">Pembacaan Rekening Koran dengan AI (EZer Plus, opsional)</h2>
+                  <p class="text-gray-700 mb-4">Pembacaan dengan AI mengubah rekening koran bank atau tagihan kartu kredit yang Anda pilih (PDF, gambar, atau CSV) menjadi transaksi. Fitur ini nonaktif sampai Anda memberikan persetujuan di aplikasi, dan Anda dapat menarik persetujuan kapan saja di Pengaturan → Dasbor Privasi. Semua fitur lain tetap berfungsi tanpanya.</p>
+                  <p class="text-gray-700 mb-4">Aplikasi mengirim dokumen ke server kami, yang mengirim isinya, beserta kode negara dan mata uang, jenis dokumen, dan nama kategori Anda, ke penyedia AI kami: Anthropic (Claude), di Amerika Serikat. Nama, email, dan ID akun Anda tidak dikirim ke Anthropic, dan tidak ada penyedia AI lain yang menerima dokumen Anda. Anthropic dapat menyimpan apa yang diterimanya untuk jangka waktu terbatas (misalnya hingga 30 hari) untuk pemantauan penyalahgunaan.</p>
+                  <p class="text-gray-700 mb-4">File dokumen tidak disimpan di server kami. Hasil pembacaan disimpan di basis data kami, terhubung ke akun Anda, agar dokumen yang sama tidak dibaca dan ditagih lagi; Anda dapat menonaktifkannya di Pengaturan → Keamanan, dan "Hapus Semua Data" menghapusnya.</p>
+                </section>
+                <section id="household" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">Berbagi Rumah Tangga (EZer Plus, opsional, Android)</h2>
+                  <p class="text-gray-700 mb-4">Di aplikasi Android, hingga 6 orang dapat berbagi transaksi, anggaran, tujuan, dan tagihan, membagi biaya, dan menyelesaikan utang sebagai satu rumah tangga. Setiap anggota memerlukan EZer Plus dan harus masuk dengan Google atau Microsoft, dan Anda hanya bergabung melalui undangan dari anggota. Setelah bergabung, apa yang Anda catat dibagikan ke rumah tangga secara default; di Pengaturan → Rumah Tangga Anda dapat mengecualikan kategori, menyembunyikan akun, atau berhenti membagikan item tertentu. Hanya anggota lain di rumah tangga Anda yang melihat item yang Anda bagikan.</p>
+                  <p class="text-gray-700 mb-4">Item yang dibagikan dienkripsi end-to-end: jumlah, deskripsi, merchant, catatan, kategori, dan detail lainnya dienkripsi di ponsel Anda (AES-256-GCM) dengan kunci rumah tangga yang tidak pernah sampai ke server kami dalam bentuk yang dapat dibaca, sehingga kami tidak dapat membacanya. Untuk menjalankan rumah tangga, server kami menyimpan nama rumah tangga, nama, peran, dan ID akun setiap anggota, serta tanggal, jenis, dan status setiap item yang dibagikan, di Google Cloud Firestore di India (Mumbai, asia-south1); fungsi server rumah tangga berjalan di region yang sama. Saat keluar, Anda dapat menghapus item yang Anda bagikan; pemilik dapat menghapus rumah tangga; dan "Hapus Semua Data" menghapus item yang Anda bagikan dan rumah tangga mana pun milik Anda.</p>
+                </section>
+                <section id="data-transfers" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">Transfer Data Internasional</h2>
+                  <p class="text-gray-700 mb-4">Data di server kami diproses oleh Google Cloud (Firebase). Basis data kami berada di India (Mumbai, asia-south1). Fungsi berbagi rumah tangga berjalan di India (asia-south1); fungsi pembacaan dengan AI, langganan, dan pembelian berjalan di Amerika Serikat (us-central1). Pembacaan dengan AI juga mengirim isi dokumen ke Anthropic di Amerika Serikat. Jika data Anda ditransfer ke luar negara Anda, kami mengandalkan Klausul Kontrak Standar Komisi Eropa (dan, bagi pengguna di Inggris, Adendum Transfer Data Internasional Inggris) yang termuat dalam Adendum Pemrosesan Data Google Cloud dan milik Anthropic. Anda dapat meminta salinannya di privacy@ezerapp.com.</p>
+                  <p class="text-gray-700 mb-4">Detail lengkap: <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">Kebijakan privasi Android</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">Kebijakan privasi iOS</a></p>
+                </section>
+                <!-- /privacy-2.1.1 -->
+            </div>
+
+            <div class="privacy-card">
                 <h2>7. Hubungi Kami</h2>
                 <p>Jika Anda memiliki pertanyaan tentang kebijakan privasi ini, hubungi kami:</p>
                 <p>Email: <a href="mailto:support@ezerapp.com" style="color: var(--indigo);">support@ezerapp.com</a></p>
@@ -275,28 +299,5 @@
         applyTheme(getSavedTheme());
         themeBtns.forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.theme)));
     </script>
-    <!-- AUTO-INSERT, PENDING TRANSLATION -->
-                <h2 class="text-2xl font-bold mt-8 mb-4">Laporan Kerusakan</h2>
-                <p class="text-gray-700 mb-4">Kami mengumpulkan laporan kerusakan anonim dan log kesalahan non-fatal berdasarkan kepentingan sah kami dalam menjaga aplikasi tetap stabil (GDPR Pasal 6(1)(f); dasar hukum setara di bawah DPDPA dan kerangka kerja serupa). Laporan mencakup jejak tumpukan, model perangkat, versi sistem operasi, versi aplikasi, dan perkiraan wilayah (berasal dari IP; IP itu sendiri tidak disimpan). Kami tidak pernah menyertakan transaksi, saldo, nama, atau informasi pribadi lainnya. Anda dapat menonaktifkan pelaporan kerusakan kapan saja di Pengaturan → Privasi → Laporan Kerusakan.</p>
-
-                
-    <!-- privacy-2.1.1 -->
-    <section id="ai-parse" class="privacy-section">
-      <h2 class="text-2xl font-bold mt-8 mb-4">Pembacaan Rekening Koran dengan AI (EZer Plus, opsional)</h2>
-      <p class="text-gray-700 mb-4">Pembacaan dengan AI mengubah rekening koran bank atau tagihan kartu kredit yang Anda pilih (PDF, gambar, atau CSV) menjadi transaksi. Fitur ini nonaktif sampai Anda memberikan persetujuan di aplikasi, dan Anda dapat menarik persetujuan kapan saja di Pengaturan → Dasbor Privasi. Semua fitur lain tetap berfungsi tanpanya.</p>
-      <p class="text-gray-700 mb-4">Aplikasi mengirim dokumen ke server kami, yang mengirim isinya, beserta kode negara dan mata uang, jenis dokumen, dan nama kategori Anda, ke penyedia AI kami: Anthropic (Claude), di Amerika Serikat. Nama, email, dan ID akun Anda tidak dikirim ke Anthropic, dan tidak ada penyedia AI lain yang menerima dokumen Anda. Anthropic dapat menyimpan apa yang diterimanya untuk jangka waktu terbatas (misalnya hingga 30 hari) untuk pemantauan penyalahgunaan.</p>
-      <p class="text-gray-700 mb-4">File dokumen tidak disimpan di server kami. Hasil pembacaan disimpan di basis data kami, terhubung ke akun Anda, agar dokumen yang sama tidak dibaca dan ditagih lagi; Anda dapat menonaktifkannya di Pengaturan → Keamanan, dan "Hapus Semua Data" menghapusnya.</p>
-    </section>
-    <section id="household" class="privacy-section">
-      <h2 class="text-2xl font-bold mt-8 mb-4">Berbagi Rumah Tangga (EZer Plus, opsional, Android)</h2>
-      <p class="text-gray-700 mb-4">Di aplikasi Android, hingga 6 orang dapat berbagi transaksi, anggaran, tujuan, dan tagihan, membagi biaya, dan menyelesaikan utang sebagai satu rumah tangga. Setiap anggota memerlukan EZer Plus dan harus masuk dengan Google atau Microsoft, dan Anda hanya bergabung melalui undangan dari anggota. Setelah bergabung, apa yang Anda catat dibagikan ke rumah tangga secara default; di Pengaturan → Rumah Tangga Anda dapat mengecualikan kategori, menyembunyikan akun, atau berhenti membagikan item tertentu. Hanya anggota lain di rumah tangga Anda yang melihat item yang Anda bagikan.</p>
-      <p class="text-gray-700 mb-4">Item yang dibagikan dienkripsi end-to-end: jumlah, deskripsi, merchant, catatan, kategori, dan detail lainnya dienkripsi di ponsel Anda (AES-256-GCM) dengan kunci rumah tangga yang tidak pernah sampai ke server kami dalam bentuk yang dapat dibaca, sehingga kami tidak dapat membacanya. Untuk menjalankan rumah tangga, server kami menyimpan nama rumah tangga, nama, peran, dan ID akun setiap anggota, serta tanggal, jenis, dan status setiap item yang dibagikan, di Google Cloud Firestore di India (Mumbai, asia-south1); fungsi server rumah tangga berjalan di region yang sama. Saat keluar, Anda dapat menghapus item yang Anda bagikan; pemilik dapat menghapus rumah tangga; dan "Hapus Semua Data" menghapus item yang Anda bagikan dan rumah tangga mana pun milik Anda.</p>
-    </section>
-    <section id="data-transfers" class="privacy-section">
-      <h2 class="text-2xl font-bold mt-8 mb-4">Transfer Data Internasional</h2>
-      <p class="text-gray-700 mb-4">Data di server kami diproses oleh Google Cloud (Firebase). Basis data kami berada di India (Mumbai, asia-south1). Fungsi berbagi rumah tangga berjalan di India (asia-south1); fungsi pembacaan dengan AI, langganan, dan pembelian berjalan di Amerika Serikat (us-central1). Pembacaan dengan AI juga mengirim isi dokumen ke Anthropic di Amerika Serikat. Jika data Anda ditransfer ke luar negara Anda, kami mengandalkan Klausul Kontrak Standar Komisi Eropa (dan, bagi pengguna di Inggris, Adendum Transfer Data Internasional Inggris) yang termuat dalam Adendum Pemrosesan Data Google Cloud dan milik Anthropic. Anda dapat meminta salinannya di privacy@ezerapp.com.</p>
-      <p class="text-gray-700 mb-4">Detail lengkap: <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">Kebijakan privasi Android</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">Kebijakan privasi iOS</a></p>
-    </section>
-    <!-- /privacy-2.1.1 -->
 </body>
 </html>

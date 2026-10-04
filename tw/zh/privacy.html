@@ -368,6 +368,27 @@
                     我們可能會不時更新本隱私政策。我們將透過在本頁面發布新的隱私政策並更新「最後更新」日期來通知您任何變更。
                 </p>
 
+                <!-- AUTO-INSERT, PENDING TRANSLATION -->
+                <h2 class="text-2xl font-bold mt-8 mb-4">崩溃报告</h2>
+                <p class="text-gray-700 mb-4">我们根据保持应用稳定的合法利益（GDPR 第 6(1)(f) 条；DPDPA 和类似框架下的同等法律依据）收集匿名崩溃报告和非致命错误日志。报告包括堆栈跟踪、设备型号、操作系统版本、应用版本和大致地区（从 IP 派生；IP 本身不存储）。我们绝不在崩溃报告中包含您的交易、余额、姓名或其他个人信息。您可以随时在设置 → 隐私 → 崩溃报告中禁用崩溃报告。</p>
+                <!-- privacy-2.1.1 -->
+                <section id="ai-parse" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">AI 帳單解析（EZer Plus，選用）</h2>
+                  <p class="text-gray-700 mb-4">AI 帳單解析可將您選擇的銀行或信用卡帳單（PDF、圖片或 CSV）轉換為交易紀錄。在您於應用程式中同意之前，此功能為關閉狀態；您可隨時在「設定 → 隱私儀表板」中撤回同意。其他所有功能無需此功能即可使用。</p>
+                  <p class="text-gray-700 mb-4">應用程式會將帳單傳送到我們的伺服器，伺服器再將帳單內容連同國家與貨幣代碼、帳單類型及您的分類名稱傳送給我們的 AI 供應商：位於美國的 Anthropic（Claude）。您的姓名、電子郵件和帳戶 ID 不會傳送給 Anthropic，也不會有其他 AI 供應商收到您的帳單。Anthropic 可能會在有限期間內（例如最長 30 天）保留所收到的內容，用於濫用監控。</p>
+                  <p class="text-gray-700 mb-4">帳單檔案本身不會儲存在我們的伺服器上。解析結果會與您的帳戶連結並保存在我們的資料庫中，以免同一帳單被重複解析和收費；您可在「設定 → 安全性設定」中關閉此功能，「刪除所有資料」也會將其刪除。</p>
+                </section>
+                <section id="household" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">家庭共享（EZer Plus，選用，Android）</h2>
+                  <p class="text-gray-700 mb-4">在 Android 應用程式中，最多 6 人可以作為一個家庭共享交易、預算、目標和帳單，並分攤費用、結清帳目。每位成員都需要 EZer Plus，並須使用 Google 或 Microsoft 登入；只能透過成員發出的邀請加入。加入後，您記錄的內容預設與家庭共享；您可在「設定 → 家庭」中排除分類、隱藏帳戶或停止共享單一項目。只有您家庭中的其他成員能看到您共享的項目。</p>
+                  <p class="text-gray-700 mb-4">共享項目採用端對端加密：金額、說明、商家、備註、分類等詳細資訊會在您的手機上以家庭金鑰加密（AES-256-GCM），此金鑰絕不會以可讀形式到達我們的伺服器，因此我們無法讀取這些內容。為了運作家庭功能，我們的伺服器會在位於印度的 Google Cloud Firestore（孟買，asia-south1）中儲存家庭名稱、每位成員的姓名、角色和帳戶 ID，以及每個共享項目的日期、類型和狀態；家庭伺服器功能也在同一區域執行。退出時您可以刪除自己共享的項目，擁有者可以刪除家庭，「刪除所有資料」會刪除您共享的項目以及您擁有的任何家庭。</p>
+                </section>
+                <section id="data-transfers" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">資料跨境傳輸</h2>
+                  <p class="text-gray-700 mb-4">我們伺服器上的資料由 Google Cloud（Firebase）處理。我們的資料庫位於印度（孟買，asia-south1）。家庭共享的伺服器功能在印度（asia-south1）執行；AI 帳單解析、訂閱和購買功能在美國（us-central1）執行。AI 帳單解析也會將帳單內容傳送給位於美國的 Anthropic。當您的資料被傳輸到您所在國家/地區以外時，我們依據 Google Cloud 與 Anthropic 資料處理附錄中所含的歐盟執委會標準契約條款（對於英國使用者，另依據英國國際資料傳輸附錄）。您可透過 privacy@ezerapp.com 索取副本。</p>
+                  <p class="text-gray-700 mb-4">完整資訊： <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">Android 隱私權政策</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">iOS 隱私權政策</a></p>
+                </section>
+                <!-- /privacy-2.1.1 -->
                 <h2 class="text-2xl font-bold mt-8 mb-4">聯繫我們</h2>
                 <p class="text-gray-700 mb-4">
                     如果您對本隱私政策有任何疑問，請聯絡我們：
@@ -495,28 +516,5 @@
         }
     })();
     </script>
-    <!-- AUTO-INSERT, PENDING TRANSLATION -->
-                <h2 class="text-2xl font-bold mt-8 mb-4">崩溃报告</h2>
-                <p class="text-gray-700 mb-4">我们根据保持应用稳定的合法利益（GDPR 第 6(1)(f) 条；DPDPA 和类似框架下的同等法律依据）收集匿名崩溃报告和非致命错误日志。报告包括堆栈跟踪、设备型号、操作系统版本、应用版本和大致地区（从 IP 派生；IP 本身不存储）。我们绝不在崩溃报告中包含您的交易、余额、姓名或其他个人信息。您可以随时在设置 → 隐私 → 崩溃报告中禁用崩溃报告。</p>
-
-                
-    <!-- privacy-2.1.1 -->
-    <section id="ai-parse" class="privacy-section">
-      <h2 class="text-2xl font-bold mt-8 mb-4">AI 帳單解析（EZer Plus，選用）</h2>
-      <p class="text-gray-700 mb-4">AI 帳單解析可將您選擇的銀行或信用卡帳單（PDF、圖片或 CSV）轉換為交易紀錄。在您於應用程式中同意之前，此功能為關閉狀態；您可隨時在「設定 → 隱私儀表板」中撤回同意。其他所有功能無需此功能即可使用。</p>
-      <p class="text-gray-700 mb-4">應用程式會將帳單傳送到我們的伺服器，伺服器再將帳單內容連同國家與貨幣代碼、帳單類型及您的分類名稱傳送給我們的 AI 供應商：位於美國的 Anthropic（Claude）。您的姓名、電子郵件和帳戶 ID 不會傳送給 Anthropic，也不會有其他 AI 供應商收到您的帳單。Anthropic 可能會在有限期間內（例如最長 30 天）保留所收到的內容，用於濫用監控。</p>
-      <p class="text-gray-700 mb-4">帳單檔案本身不會儲存在我們的伺服器上。解析結果會與您的帳戶連結並保存在我們的資料庫中，以免同一帳單被重複解析和收費；您可在「設定 → 安全性設定」中關閉此功能，「刪除所有資料」也會將其刪除。</p>
-    </section>
-    <section id="household" class="privacy-section">
-      <h2 class="text-2xl font-bold mt-8 mb-4">家庭共享（EZer Plus，選用，Android）</h2>
-      <p class="text-gray-700 mb-4">在 Android 應用程式中，最多 6 人可以作為一個家庭共享交易、預算、目標和帳單，並分攤費用、結清帳目。每位成員都需要 EZer Plus，並須使用 Google 或 Microsoft 登入；只能透過成員發出的邀請加入。加入後，您記錄的內容預設與家庭共享；您可在「設定 → 家庭」中排除分類、隱藏帳戶或停止共享單一項目。只有您家庭中的其他成員能看到您共享的項目。</p>
-      <p class="text-gray-700 mb-4">共享項目採用端對端加密：金額、說明、商家、備註、分類等詳細資訊會在您的手機上以家庭金鑰加密（AES-256-GCM），此金鑰絕不會以可讀形式到達我們的伺服器，因此我們無法讀取這些內容。為了運作家庭功能，我們的伺服器會在位於印度的 Google Cloud Firestore（孟買，asia-south1）中儲存家庭名稱、每位成員的姓名、角色和帳戶 ID，以及每個共享項目的日期、類型和狀態；家庭伺服器功能也在同一區域執行。退出時您可以刪除自己共享的項目，擁有者可以刪除家庭，「刪除所有資料」會刪除您共享的項目以及您擁有的任何家庭。</p>
-    </section>
-    <section id="data-transfers" class="privacy-section">
-      <h2 class="text-2xl font-bold mt-8 mb-4">資料跨境傳輸</h2>
-      <p class="text-gray-700 mb-4">我們伺服器上的資料由 Google Cloud（Firebase）處理。我們的資料庫位於印度（孟買，asia-south1）。家庭共享的伺服器功能在印度（asia-south1）執行；AI 帳單解析、訂閱和購買功能在美國（us-central1）執行。AI 帳單解析也會將帳單內容傳送給位於美國的 Anthropic。當您的資料被傳輸到您所在國家/地區以外時，我們依據 Google Cloud 與 Anthropic 資料處理附錄中所含的歐盟執委會標準契約條款（對於英國使用者，另依據英國國際資料傳輸附錄）。您可透過 privacy@ezerapp.com 索取副本。</p>
-      <p class="text-gray-700 mb-4">完整資訊： <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">Android 隱私權政策</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">iOS 隱私權政策</a></p>
-    </section>
-    <!-- /privacy-2.1.1 -->
 </body>
 </html>

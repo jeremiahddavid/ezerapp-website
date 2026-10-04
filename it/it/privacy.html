@@ -152,6 +152,35 @@
             </div>
 
             <div>
+                <!-- AUTO-INSERT, PENDING TRANSLATION -->
+                <h2 class="text-2xl font-bold mt-8 mb-4">Segnalazioni di crash</h2>
+                <p class="text-gray-700 mb-4">Raccogliamo segnalazioni anonime di crash e log di errori non fatali in base al nostro legittimo interesse a mantenere l'app stabile (GDPR Articolo 6(1)(f); basi giuridiche equivalenti ai sensi del DPDPA e di quadri normativi simili). I rapporti includono stack trace, modello del dispositivo, versione del sistema operativo, versione dell'app e regione approssimativa (derivata dall'IP; l'IP stesso non viene memorizzato). Non includiamo mai le tue transazioni, saldi, nomi o altre informazioni personali. Puoi disattivare le segnalazioni di crash in qualsiasi momento in Impostazioni → Privacy → Segnalazioni di crash.</p>
+                <!-- privacy-2.1.1 -->
+                <section id="ai-parse" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">Analisi degli estratti conto con IA (EZer Plus, facoltativa)</h2>
+                  <p class="text-gray-700 mb-4">L'analisi con IA trasforma in transazioni un estratto conto bancario o della carta di credito che scegli tu (PDF, immagine o CSV). È disattivata finché non dai il consenso nell'app, e puoi revocarlo in qualsiasi momento in Impostazioni → Pannello privacy. Tutte le altre funzioni funzionano senza di essa.</p>
+                  <p class="text-gray-700 mb-4">L'app invia l'estratto conto al nostro server, che ne invia il contenuto, con i codici di paese e valuta, il tipo di estratto e i nomi delle tue categorie, al nostro fornitore di IA: Anthropic (Claude), negli Stati Uniti. Il tuo nome, la tua email e l'ID del tuo account non vengono inviati ad Anthropic, e nessun altro fornitore di IA riceve il tuo estratto conto. Anthropic può conservare ciò che riceve per un periodo limitato (ad esempio fino a 30 giorni) per il monitoraggio degli abusi.</p>
+                  <p class="text-gray-700 mb-4">Il file dell'estratto conto non viene conservato sui nostri server. Il risultato dell'analisi resta nel nostro database, collegato al tuo account, così lo stesso estratto non viene analizzato e addebitato di nuovo; puoi disattivarlo in Impostazioni → Sicurezza, e «Elimina tutti i dati» lo rimuove.</p>
+                </section>
+                <section id="household" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">Condivisione familiare (EZer Plus, facoltativa, Android)</h2>
+                  <p class="text-gray-700 mb-4">Nell'app Android, fino a 6 persone possono condividere transazioni, budget, obiettivi e bollette, dividere le spese e saldare i conti come un nucleo familiare. Ogni membro deve avere EZer Plus e accedere con Google o Microsoft, e ci si unisce solo tramite invito di un membro. Dopo l'ingresso, ciò che registri viene condiviso con il nucleo per impostazione predefinita; in Impostazioni → Famiglia puoi escludere categorie, nascondere conti o smettere di condividere singoli elementi. Solo gli altri membri del tuo nucleo vedono gli elementi che condividi.</p>
+                  <p class="text-gray-700 mb-4">Gli elementi condivisi sono crittografati end-to-end: importi, descrizioni, esercenti, note, categorie e altri dettagli vengono crittografati sul tuo telefono (AES-256-GCM) con una chiave del nucleo che non arriva mai in forma leggibile ai nostri server, quindi non possiamo leggerli. Per gestire il nucleo, il nostro server conserva il nome del nucleo, il nome, il ruolo e l'ID account di ogni membro e la data, il tipo e lo stato di ogni elemento condiviso, in Google Cloud Firestore in India (Mumbai, asia-south1); le funzioni server del nucleo vengono eseguite nella stessa regione. Quando esci puoi eliminare ciò che hai condiviso, il proprietario può eliminare il nucleo, e «Elimina tutti i dati» elimina i tuoi elementi condivisi e ogni nucleo di cui sei proprietario.</p>
+                </section>
+                <section id="data-transfers" class="privacy-section">
+                  <h2 class="text-2xl font-bold mt-8 mb-4">Trasferimenti internazionali di dati</h2>
+                  <p class="text-gray-700 mb-4">I dati sui nostri server sono trattati da Google Cloud (Firebase). Il nostro database si trova in India (Mumbai, asia-south1). Le funzioni della condivisione familiare vengono eseguite in India (asia-south1); quelle per l'analisi con IA, gli abbonamenti e gli acquisti negli Stati Uniti (us-central1). L'analisi con IA invia inoltre il contenuto dell'estratto conto ad Anthropic negli Stati Uniti. Quando i tuoi dati vengono trasferiti fuori dal tuo paese, ci basiamo sulle Clausole Contrattuali Standard della Commissione europea (e, per gli utenti del Regno Unito, sull'Addendum del Regno Unito sul trasferimento internazionale dei dati) incluse nell'Addendum sul trattamento dei dati di Google Cloud e in quello di Anthropic. Puoi chiederne una copia a privacy@ezerapp.com.</p>
+                  <p class="text-gray-700 mb-4">Dettagli completi: <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">Informativa privacy Android</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">Informativa privacy iOS</a></p>
+                </section>
+                <!-- /privacy-2.1.1 -->
+                <!-- AUTO-INSERT, PENDING TRANSLATION -->
+                <section id="art22" class="privacy-section">
+                  <h2>Automated Decision-Making (GDPR Art. 22)</h2>
+                  <p>You have the right not to be subject to decisions based solely on automated processing. EZer's AI categorization and parse results are recommendations; you can always review, edit, or reject them before importing. You can request human review by contacting support@ezerapp.com.</p>
+                </section>
+            </div>
+
+            <div>
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">7. Contatti</h2>
                 <p class="text-gray-600">Per domande sulla privacy, contattaci a: <a href="mailto:privacy@ezerapp.com" class="text-indigo-600 hover:underline">privacy@ezerapp.com</a></p>
                 <p class="text-gray-500 text-sm mt-4">Ultimo aggiornamento: ottobre 2026</p>
@@ -177,33 +206,5 @@
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
     </script>
-    <!-- AUTO-INSERT, PENDING TRANSLATION -->
-                <h2 class="text-2xl font-bold mt-8 mb-4">Segnalazioni di crash</h2>
-                <p class="text-gray-700 mb-4">Raccogliamo segnalazioni anonime di crash e log di errori non fatali in base al nostro legittimo interesse a mantenere l'app stabile (GDPR Articolo 6(1)(f); basi giuridiche equivalenti ai sensi del DPDPA e di quadri normativi simili). I rapporti includono stack trace, modello del dispositivo, versione del sistema operativo, versione dell'app e regione approssimativa (derivata dall'IP; l'IP stesso non viene memorizzato). Non includiamo mai le tue transazioni, saldi, nomi o altre informazioni personali. Puoi disattivare le segnalazioni di crash in qualsiasi momento in Impostazioni → Privacy → Segnalazioni di crash.</p>
-
-                
-    <!-- privacy-2.1.1 -->
-    <section id="ai-parse" class="privacy-section">
-      <h2 class="text-2xl font-bold mt-8 mb-4">Analisi degli estratti conto con IA (EZer Plus, facoltativa)</h2>
-      <p class="text-gray-700 mb-4">L'analisi con IA trasforma in transazioni un estratto conto bancario o della carta di credito che scegli tu (PDF, immagine o CSV). È disattivata finché non dai il consenso nell'app, e puoi revocarlo in qualsiasi momento in Impostazioni → Pannello privacy. Tutte le altre funzioni funzionano senza di essa.</p>
-      <p class="text-gray-700 mb-4">L'app invia l'estratto conto al nostro server, che ne invia il contenuto, con i codici di paese e valuta, il tipo di estratto e i nomi delle tue categorie, al nostro fornitore di IA: Anthropic (Claude), negli Stati Uniti. Il tuo nome, la tua email e l'ID del tuo account non vengono inviati ad Anthropic, e nessun altro fornitore di IA riceve il tuo estratto conto. Anthropic può conservare ciò che riceve per un periodo limitato (ad esempio fino a 30 giorni) per il monitoraggio degli abusi.</p>
-      <p class="text-gray-700 mb-4">Il file dell'estratto conto non viene conservato sui nostri server. Il risultato dell'analisi resta nel nostro database, collegato al tuo account, così lo stesso estratto non viene analizzato e addebitato di nuovo; puoi disattivarlo in Impostazioni → Sicurezza, e «Elimina tutti i dati» lo rimuove.</p>
-    </section>
-    <section id="household" class="privacy-section">
-      <h2 class="text-2xl font-bold mt-8 mb-4">Condivisione familiare (EZer Plus, facoltativa, Android)</h2>
-      <p class="text-gray-700 mb-4">Nell'app Android, fino a 6 persone possono condividere transazioni, budget, obiettivi e bollette, dividere le spese e saldare i conti come un nucleo familiare. Ogni membro deve avere EZer Plus e accedere con Google o Microsoft, e ci si unisce solo tramite invito di un membro. Dopo l'ingresso, ciò che registri viene condiviso con il nucleo per impostazione predefinita; in Impostazioni → Famiglia puoi escludere categorie, nascondere conti o smettere di condividere singoli elementi. Solo gli altri membri del tuo nucleo vedono gli elementi che condividi.</p>
-      <p class="text-gray-700 mb-4">Gli elementi condivisi sono crittografati end-to-end: importi, descrizioni, esercenti, note, categorie e altri dettagli vengono crittografati sul tuo telefono (AES-256-GCM) con una chiave del nucleo che non arriva mai in forma leggibile ai nostri server, quindi non possiamo leggerli. Per gestire il nucleo, il nostro server conserva il nome del nucleo, il nome, il ruolo e l'ID account di ogni membro e la data, il tipo e lo stato di ogni elemento condiviso, in Google Cloud Firestore in India (Mumbai, asia-south1); le funzioni server del nucleo vengono eseguite nella stessa regione. Quando esci puoi eliminare ciò che hai condiviso, il proprietario può eliminare il nucleo, e «Elimina tutti i dati» elimina i tuoi elementi condivisi e ogni nucleo di cui sei proprietario.</p>
-    </section>
-    <section id="data-transfers" class="privacy-section">
-      <h2 class="text-2xl font-bold mt-8 mb-4">Trasferimenti internazionali di dati</h2>
-      <p class="text-gray-700 mb-4">I dati sui nostri server sono trattati da Google Cloud (Firebase). Il nostro database si trova in India (Mumbai, asia-south1). Le funzioni della condivisione familiare vengono eseguite in India (asia-south1); quelle per l'analisi con IA, gli abbonamenti e gli acquisti negli Stati Uniti (us-central1). L'analisi con IA invia inoltre il contenuto dell'estratto conto ad Anthropic negli Stati Uniti. Quando i tuoi dati vengono trasferiti fuori dal tuo paese, ci basiamo sulle Clausole Contrattuali Standard della Commissione europea (e, per gli utenti del Regno Unito, sull'Addendum del Regno Unito sul trasferimento internazionale dei dati) incluse nell'Addendum sul trattamento dei dati di Google Cloud e in quello di Anthropic. Puoi chiederne una copia a privacy@ezerapp.com.</p>
-      <p class="text-gray-700 mb-4">Dettagli completi: <a href="https://www.ezerapp.com/privacy-android.html" class="text-indigo-600 hover:underline">Informativa privacy Android</a> · <a href="https://www.ezerapp.com/privacy-ios.html" class="text-indigo-600 hover:underline">Informativa privacy iOS</a></p>
-    </section>
-    <!-- /privacy-2.1.1 -->
-    <!-- AUTO-INSERT, PENDING TRANSLATION -->
-    <section id="art22" class="privacy-section">
-      <h2>Automated Decision-Making (GDPR Art. 22)</h2>
-      <p>You have the right not to be subject to decisions based solely on automated processing. EZer's AI categorization and parse results are recommendations; you can always review, edit, or reject them before importing. You can request human review by contacting support@ezerapp.com.</p>
-    </section>
 </body>
 </html>
