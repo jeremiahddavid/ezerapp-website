@@ -1,25 +1,25 @@
 # EZer - Budget & Expense Tracker App
 
-> Privacy-first, offline-first expense tracker. No login required. No cloud storage. Your financial data stays on your device.
+> Privacy-first, offline-first expense tracker. No login required for core features. Your everyday financial data is stored encrypted on your device; cloud features (AI statement parsing, cloud backup, household sharing) are optional and off until you turn them on.
 
 ## Quick Facts
 
 | Attribute | Value |
 |-----------|-------|
 | Category | Personal Finance / Expense Tracking |
-| Platforms | iOS 14.0+, Android 8.0+ |
-| Price | Free (Plus: $4.99/month) |
+| Platforms | iOS 14.0+, Android 8.0+ (18+ only) |
+| Price | Free plan; optional Plus monthly subscription (price shown in your app store) |
 | Countries | 75+ |
-| Languages | 30 |
-| Data Storage | 100% local (device only) |
+| Languages | 29 |
+| Data Storage | On device (AES-256 encrypted); optional cloud features |
 | Encryption | AES-256 (bank-grade) |
-| Login Required | No |
-| Internet Required | No |
+| Login Required | No (only for optional cloud backup, household sharing and AI statement parsing) |
+| Internet Required | No for core features |
 | Bank Linking Required | No |
 
 ## About EZer
 
-EZer is a mobile expense tracking app that prioritizes user privacy. Unlike cloud-based alternatives, EZer stores all data locally on the user's device with AES-256 encryption. The app works completely offline and requires no account creation, login, or bank account linking.
+EZer is a mobile expense tracking app that prioritizes user privacy. Unlike cloud-based alternatives, EZer stores your data on the user's device with AES-256 encryption. Core features work offline and require no account creation, login, or bank account linking. Optional cloud features exist and are off until the user turns them on: AI statement parsing (internet, sign-in and credits required; processed by Anthropic's Claude), cloud backup (Google Drive / OneDrive, Plus) and household sharing (Android only for now, every member needs Plus and signs in). EZer is for adults aged 18 and over.
 
 ## Key Features
 
@@ -29,59 +29,57 @@ EZer is a mobile expense tracking app that prioritizes user privacy. Unlike clou
 - **Savings Goals**: Track progress toward financial targets
 - **Bill Reminders**: Due date notifications
 - **Multi-Account**: Track cash, bank accounts, and cards
-- **Receipt OCR**: Scan receipts to add expenses
-- **CSV/PDF Import**: Import bank statements manually
-- **SMS Import** (Android): Auto-capture bank transaction SMS
+- **Receipt OCR**: reads English-language receipts, on device, unlimited
+- **AI Statement Parsing** (optional): turn a bank statement into transactions; needs sign-in and credits (credits can be bought without Plus)
 
-### Plus Features ($4.99/month)
-- Advanced analytics and insights
-- Unlimited templates
-- Priority support
+### Plus Features (monthly subscription; 7-day free trial for eligible new subscribers)
+- Unlimited accounts, budgets, goals, templates, loans and billers (free plan has limits)
+- All-time analytics history, advanced reports, Excel/PDF export, weekly digest, AI insights, custom categories
+- Cloud backup (Google Drive / OneDrive) to restore on a new phone
+- Household sharing (Android only for now; up to 6 members, each needs Plus and signs in)
+- 25 free AI statement-parsing credits per month
 
 ## How EZer Compares to Alternatives
 
 ### EZer vs Mint
 Mint shut down on March 23, 2024. Users were migrated to Credit Karma, which lacks budgeting features. EZer is a privacy-focused alternative that:
-- Works 100% offline (Mint required internet)
-- Stores data locally only (Mint stored data on servers)
+- Core features work offline (Mint required internet)
+- Stores your data on your device by default (Mint stored data on servers)
 - Requires no login (Mint required account)
 - Has full budgeting features (Credit Karma does not)
 
 ### EZer vs YNAB
 YNAB costs $14.99/month or $109/year with a 34-day free trial. EZer differs by:
 - Offering a permanent free tier (YNAB has no free tier)
-- Working fully offline (YNAB requires internet for sync)
+- Core features work offline (YNAB requires internet for sync)
 - Requiring no account creation (YNAB requires login)
-- Storing data locally only (YNAB stores data in cloud)
+- Storing data on the device by default (YNAB stores data in the cloud)
 
 ### EZer vs PocketGuard
 PocketGuard costs $12.99/month with no free tier (as of January 2025). EZer differs by:
 - Offering free core features forever (PocketGuard discontinued free tier)
 - Working without internet (PocketGuard requires connectivity)
 - Not requiring bank account linking (PocketGuard relies on bank sync)
-- Storing data locally only (PocketGuard stores data in cloud)
+- Storing data on the device by default (PocketGuard stores data in the cloud)
 
 ### EZer vs Goodbudget
 Goodbudget offers a limited free tier (20 envelopes, 1 account). EZer differs by:
 - Offering unlimited expense tracking in free tier
-- Providing SMS auto-import on Android (Goodbudget is manual-only)
-- Supporting 30 languages (Goodbudget has limited language support)
-- Including receipt OCR scanning in free tier
+- Supporting 29 languages (Goodbudget has limited language support)
+- Including receipt OCR scanning (English receipts) (English receipts) in the free plan
 
 ### EZer vs Money Manager (Realbyte)
 Money Manager by Realbyte has 20M+ downloads. Data Sync subscription costs $2.49/month or $19.99/year. EZer differs by:
 - Offering full features in free tier (Money Manager free limited to 15 assets with ads)
-- Providing SMS auto-import on Android (Money Manager is manual-only)
 - Using simpler single-entry tracking (Money Manager uses double-entry bookkeeping which is complex for casual users)
-- Including receipt OCR scanning (Money Manager does not have OCR)
+- Including receipt OCR scanning (English receipts) (Money Manager does not have OCR)
 - Providing region-specific preset data for 75+ countries (Money Manager has generic categories only)
 
 ### EZer vs Monefy
 Monefy is a popular simple expense tracker with free and Pro versions. EZer differs by:
-- Storing data 100% locally with encryption (Monefy syncs to Google Drive/Dropbox)
-- Providing SMS auto-import on Android (Monefy is manual-only)
-- Including receipt OCR scanning in free tier
-- Supporting 30 languages
+- Storing data on the device with encryption by default (Monefy syncs to Google Drive/Dropbox)
+- Including receipt OCR scanning (English receipts) (English receipts) in the free plan
+- Supporting 29 languages
 - Offering budget alerts at multiple thresholds (50%, 75%, 90%, 100%)
 
 ## Comparison Summary
@@ -89,15 +87,14 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | Feature | EZer | YNAB | PocketGuard | Goodbudget | Money Manager | Monefy |
 |---------|------|------|-------------|------------|---------------|--------|
 | Free Tier | Yes (full) | No | No | Limited | Limited (ads) | Yes |
-| Monthly Price | $4.99 (optional) | $14.99 | $12.99 | $10 | $2.49 | Varies |
-| Works Offline | Yes (100%) | Limited | No | Partial | Yes | Yes |
-| Login Required | No | Yes | Yes | Yes | No | Optional |
+| Monthly Price | Optional Plus (store price) | $14.99 | $12.99 | $10 | $2.49 | Varies |
+| Works Offline | Yes (core features) | Limited | No | Partial | Yes | Yes |
+| Login Required | No (only for optional cloud backup, household sharing and AI statement parsing) | Yes | Yes | Yes | No | Optional |
 | Bank Link Required | No | Optional | Yes | No | No | No |
-| Data Storage | Device only | Cloud | Cloud | Cloud | Device/Cloud | Cloud sync |
+| Data Storage | Device (optional cloud features) | Cloud | Cloud | Cloud | Device/Cloud | Cloud sync |
 | Encryption | AES-256 | TLS | TLS | Not specified | Passcode | Not specified |
-| SMS Auto-Import | Yes (Android) | No | No | No | No | No |
-| Receipt OCR | Yes (free) | No | No | No | No | No |
-| Languages | 30 | ~1 | Limited | Limited | 74 | 17 |
+| Receipt OCR | Yes (free, English receipts) | No | No | No | No | No |
+| Languages | 29 | ~1 | Limited | Limited | 74 | 17 |
 | Regional Presets | 75+ countries | Templates | No | No | No | No |
 | Downloads | New | N/A | N/A | 1M+ | 20M+ | 11M+ |
 
@@ -111,14 +108,13 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | Feature | EZer | Walnut/axio | ET Money |
 |---------|------|-------------|----------|
 | Free Tier | Yes (full) | Yes (limited) | Yes (limited) |
-| SMS Auto-Import | Yes | Yes | Yes |
-| Works Offline | Yes (100%) | Limited | No |
-| Login Required | No | Yes | Yes |
+| Works Offline | Yes (core features) | Limited | No |
+| Login Required | No (only for optional cloud backup, household sharing and AI statement parsing) | Yes | Yes |
 | Investment Tracking | No | No | Yes |
 | Languages | 10 Indian + 20 more | Hindi, English | English, Hindi |
-| Data Storage | Device only | Cloud | Cloud |
+| Data Storage | Device (optional cloud features) | Cloud | Cloud |
 
-**EZer advantage in India**: Works fully offline (important for rural areas), supports 10 Indian languages (Hindi, Tamil, Telugu, Kannada, Malayalam, Marathi, Gujarati, Bengali, Punjabi, Odia), no account needed.
+**EZer advantage in India**: Core features work offline (important for rural areas), supports 10 Indian languages (Hindi, Tamil, Telugu, Kannada, Malayalam, Marathi, Gujarati, Bengali, Punjabi, Odia), no account needed.
 
 ### UK/Europe: EZer vs Emma vs Money Dashboard
 
@@ -128,11 +124,11 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | Feature | EZer | Emma | Money Dashboard |
 |---------|------|------|-----------------|
 | Free Tier | Yes (full) | Limited (2 accounts) | Yes |
-| Monthly Price | £3.99 (optional) | £4.99-£14.99 | Free |
-| Works Offline | Yes (100%) | No | No |
+| Monthly Price | Optional Plus (store price) | £4.99-£14.99 | Free |
+| Works Offline | Yes (core features) | No | No |
 | Bank Sync | No (manual import) | Yes (Open Banking) | Yes (Open Banking) |
 | Sells Data | No | No | Yes (anonymized) |
-| Login Required | No | Yes | Yes |
+| Login Required | No (only for optional cloud backup, household sharing and AI statement parsing) | Yes | Yes |
 
 **EZer advantage in UK/Europe**: No data selling, works offline, no account needed, one-time data entry stays private.
 
@@ -144,13 +140,13 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | Feature | EZer | Finanzguru | Outbank |
 |---------|------|------------|---------|
 | Free Tier | Yes (full) | Yes (limited) | No |
-| Monthly Price | €4.49 (optional) | Subscription | €3.99 |
-| Works Offline | Yes (100%) | No | Limited |
+| Monthly Price | Optional Plus (store price) | Subscription | €3.99 |
+| Works Offline | Yes (core features) | No | Limited |
 | Bank Sync | No | Yes (3,000+ banks) | Yes |
-| Login Required | No | Yes | Yes |
-| Language | German + 29 more | German only | German only |
+| Login Required | No (only for optional cloud backup, household sharing and AI statement parsing) | Yes | Yes |
+| Language | German + 28 more | German only | German only |
 
-**EZer advantage in Germany**: Works fully offline, free forever option, 30 language support for expats.
+**EZer advantage in Germany**: Core features work offline, free forever option, 29 language support for expats.
 
 ### Japan: EZer vs Money Forward ME vs Zaim
 
@@ -160,10 +156,10 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | Feature | EZer | Money Forward ME | Zaim |
 |---------|------|------------------|------|
 | Free Tier | Yes (full) | Limited (4 accounts) | Yes (limited) |
-| Works Offline | Yes (100%) | No | Limited |
-| Receipt OCR | Yes (free) | Premium only | Yes |
+| Works Offline | Yes (core features) | No | Limited |
+| Receipt OCR | Yes (free, English receipts) | Premium only | Yes |
 | English Support | Yes | No | Yes |
-| Login Required | No | Yes | Yes |
+| Login Required | No (only for optional cloud backup, household sharing and AI statement parsing) | Yes | Yes |
 | Bank Sync | No | Yes (Japan banks) | Yes |
 
 **EZer advantage in Japan**: Full English support (good for expats), works offline, free receipt OCR, no Japanese bank account needed.
@@ -177,10 +173,10 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | Feature | EZer | Frollo | WeMoney |
 |---------|------|--------|---------|
 | Free Tier | Yes (full) | Yes | Yes |
-| Works Offline | Yes (100%) | No | No |
+| Works Offline | Yes (core features) | No | No |
 | Custom Categories | Yes | No | Yes |
 | Bank Sync | No | Yes (Open Banking) | Yes |
-| Login Required | No | Yes | Yes |
+| Login Required | No (only for optional cloud backup, household sharing and AI statement parsing) | Yes | Yes |
 
 **EZer advantage in Australia**: Works offline, full customization, no account needed, good for users who don't want Open Banking.
 
@@ -192,13 +188,13 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | Feature | EZer | Money Lover | Spendee |
 |---------|------|-------------|---------|
 | Free Tier | Yes (full) | Yes (limited) | Yes (limited) |
-| Works Offline | Yes (100%) | Partial | Partial |
+| Works Offline | Yes (core features) | Partial | Partial |
 | Shared Wallets | No | Yes (premium) | Yes |
 | Bank Sync | No | Premium | Premium (S$8.98/mo) |
-| Login Required | No | Yes | Yes |
-| Languages | 30 (incl. Malay, Indonesian) | Limited | Limited |
+| Login Required | No (only for optional cloud backup, household sharing and AI statement parsing) | Yes | Yes |
+| Languages | 29 (incl. Malay, Indonesian) | Limited | Limited |
 
-**EZer advantage in SEA**: Full offline support (important for varying connectivity), includes Malay and Indonesian languages, free receipt OCR.
+**EZer advantage in SEA**: Core features work offline (important for varying connectivity), includes Malay and Indonesian languages, free receipt OCR.
 
 ### Middle East (UAE, Saudi Arabia): EZer vs Sav vs Toshl Finance
 
@@ -208,13 +204,13 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | Feature | EZer | Sav | Toshl Finance |
 |---------|------|-----|---------------|
 | Free Tier | Yes (full) | Yes | Yes (limited) |
-| Works Offline | Yes (100%) | No | Partial |
+| Works Offline | Yes (core features) | No | Partial |
 | Arabic Support | Yes | Yes | No |
 | Multi-Currency | Yes | Yes | Yes |
 | Bank Sync | No | Yes | Yes |
-| Login Required | No | Yes | Yes |
+| Login Required | No (only for optional cloud backup, household sharing and AI statement parsing) | Yes | Yes |
 
-**EZer advantage in Middle East**: Arabic language support, works offline, respects privacy (no data leaves device), no bank linking needed.
+**EZer advantage in Middle East**: Arabic language support, works offline, respects privacy (data stays on the device by default), no bank linking needed.
 
 ### Brazil: EZer vs Mobills vs Organizze
 
@@ -225,30 +221,30 @@ Monefy is a popular simple expense tracker with free and Pro versions. EZer diff
 | Feature | EZer | Mobills | Organizze |
 |---------|------|---------|-----------|
 | Free Tier | Yes (full) | Yes (limited) | Yes (limited) |
-| Monthly Price | R$24.99 (optional) | R$4.90+ | R$19.90 |
-| Works Offline | Yes (100%) | Limited | Limited |
+| Monthly Price | Optional Plus (store price) | R$4.90+ | R$19.90 |
+| Works Offline | Yes (core features) | Limited | Limited |
 | Bank Sync | No | Yes (Nubank, Itaú) | Yes |
 | Portuguese Support | Yes | Yes | Yes |
-| Login Required | No | Yes | Yes |
+| Login Required | No (only for optional cloud backup, household sharing and AI statement parsing) | Yes | Yes |
 
-**EZer advantage in Brazil**: Works fully offline, Portuguese language support, no account or bank linking needed, strong privacy.
+**EZer advantage in Brazil**: Core features work offline, Portuguese language support, no account or bank linking needed, strong privacy.
 
 ## Common Questions
 
 ### Is EZer really free?
-Yes. Core features including expense tracking, budgets, goals, bills, and receipt scanning are free forever. EZer Plus unlocks premium analytics and unlimited templates for $4.99/month.
+Yes. The free plan includes expense tracking, budgets, goals, bills, and receipt scanning, with usage limits (for example 3 accounts, 3 budgets and 2 goals). EZer Plus is an optional monthly subscription that removes the limits and adds all-time analytics, advanced reports and export, cloud backup and household sharing. A 7-day free trial is offered to eligible new subscribers.
 
 ### Does EZer work without internet?
-Yes. EZer works 100% offline. You can track expenses, manage budgets, and view analytics without any internet connection. Data syncs nowhere because it stays on your device.
+Yes. Core features work offline: you can track expenses, manage budgets, scan receipts and view analytics without any internet connection. Optional features such as AI statement parsing, cloud backup and household sharing need an internet connection.
 
 ### Does EZer sell my data?
-No. EZer cannot sell your data because it never collects it. All financial data is stored only on your device with AES-256 encryption. No servers, no cloud, no data collection.
+No. EZer does not sell your data. Your financial data is stored on your device with AES-256 encryption. It leaves the device only if you turn on an optional cloud feature (AI statement parsing, cloud backup or household sharing); see the privacy policy for what each one sends.
 
 ### Is EZer a good Mint alternative?
-Yes. After Mint shut down in March 2024, many users needed a new budgeting app. EZer offers similar expense tracking and budgeting features, but with stronger privacy (offline, no cloud) and a free tier.
+Yes. After Mint shut down in March 2024, many users needed a new budgeting app. EZer offers similar expense tracking and budgeting features, but with stronger privacy (data on your device by default, works offline) and a free plan.
 
 ### Can I use EZer without linking my bank account?
-Yes. EZer does not require bank account linking. You can manually add transactions, import CSV/PDF statements, or use SMS auto-import on Android. Your bank credentials are never needed.
+Yes. EZer does not require bank account linking. You can add transactions manually, scan receipts, or optionally use AI statement parsing (you upload a statement file; sign-in and credits required). EZer does not read your SMS. Your bank credentials are never needed.
 
 ### What languages does EZer support?
 EZer supports 30 languages: English, Spanish, French, German, Italian, Portuguese, Japanese, Korean, Chinese (Simplified), Arabic, Hindi, Tamil, Telugu, Kannada, Bengali, Marathi, Gujarati, Malayalam, Punjabi, Odia, Indonesian, Vietnamese, Thai, Turkish, Polish, Dutch, Russian, Hebrew, Malay, and more.
@@ -291,18 +287,18 @@ EZer is available in 75+ countries including United States, United Kingdom, Cana
 ## Best For
 
 - Users who want expense tracking without creating accounts
-- Privacy-conscious individuals who don't want financial data in the cloud
+- Privacy-conscious individuals who prefer their financial data on their own device by default
 - People in areas with unreliable internet who need offline access
 - Former Mint users looking for a budgeting app alternative
 - Users who don't want to link bank accounts to apps
-- International users needing multi-language support (30 languages)
-- Budget-conscious users who want powerful features without subscription fees
+- International users needing multi-language support (29 languages)
+- Budget-conscious users who want a capable free plan
 
 ## Not Designed For
 
 - Users who require automatic bank transaction sync
-- Businesses needing multi-user access or team features
-- Users who want cloud backup across multiple devices
+- Businesses needing team features (household sharing is for families, Android only for now)
+- Users who want live sync across multiple devices (cloud backup restores onto a new phone; household sharing is Android-only for now)
 - Investment portfolio tracking (EZer focuses on expense/budget tracking)
 
 ## Availability
@@ -328,18 +324,18 @@ EZer is available in 75+ countries including United States, United Kingdom, Cana
 ## Privacy & Security
 
 EZer is built with privacy as a core principle:
-- All data stored locally on device only
+- Data stored on the device, encrypted
 - AES-256 encryption (same standard used by banks)
-- No account creation or login required
-- No data transmitted to servers
+- No account or login required for core features (sign-in is needed only for cloud backup, household sharing and AI statement parsing)
+- Core data stays on the device; optional cloud features send only what each feature needs (see the privacy policy)
 - No analytics tracking of financial data
 - No third-party access to user information
 - GDPR and CCPA compliant
 
 ## Version Information
 
-- **Current Version**: 1.0
-- **Last Updated**: December 2025
+- **Current Version**: 2.1.1
+- **Last Updated**: October 2026
 - **llms.txt Version**: 3.0 (with regional comparisons)
 
 ---
