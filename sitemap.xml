@@ -2256,4 +2256,28 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://www.ezerapp.com/help/household.html</loc>
+        <lastmod>2026-10-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.ezerapp.com/blog.html</loc>
+        <lastmod>2026-10-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.ezerapp.com/blog-first-budget.html</loc>
+        <lastmod>2026-10-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.ezerapp.com/blog-money-mistakes.html</loc>
+        <lastmod>2026-10-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
 </urlset>
