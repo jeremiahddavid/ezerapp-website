@@ -5,7 +5,7 @@ Location: Global
 
 /* SITE */
 Last update: 2026-01-02
-Language: English (primary), 30 languages supported
+Language: English (primary), 29 languages supported
 Standards: HTML5, CSS3, JavaScript
 Software: Static HTML, GitHub Pages
 Analytics: Minimal (privacy-first)
@@ -20,7 +20,7 @@ EZer exists to provide a privacy-first expense tracking
 experience. We believe your financial data should stay
 on your device, encrypted, and under your control.
 
-No cloud. No login. No tracking. Just budgeting.
+Offline-first. No login for core features. No tracking of your financial data. Just budgeting.
 
 Website: https://www.ezerapp.com
 iOS: https://apps.apple.com/app/ezer-expense-tracker/id6755685289
